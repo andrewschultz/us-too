@@ -11,6 +11,7 @@ w1 (text)	w2 (text)	posthom (text)	hom-txt-rule (rule)	think-cue	okflip	core	idi
 "a"	"stew"	--	--	false	true	true	false	mine ooh	pre-a-stew rule	post-a-stew rule	--	"You can make [b]A STEW[r] [once-now of pre-a-stew rule] you have all the ingredients you need."
 "herb"	"ranch"	--	--	false	true	true	false	ur branch	pre-herb-ranch rule	post-herb-ranch rule	--	--
 "pie"	"crust"	--	--	false	true	true	false	summer bay	pre-pie-crust rule	post-pie-crust rule	--	--
+"summer"	"bay"	--	--	false	true	true	false	ur branch	pre-summer-bay rule	post-summer-bay rule	--	--
 
 chapter mine ooh scoring
 
@@ -64,6 +65,22 @@ this is the post-herb-ranch rule:
 	now sco-herb-ranch is true;
 	say "You find a path to a herb ranch. Of course every stew needs herbs. The farmer there gives you a sample saying 'Some herb, eh?' The phrase sticks with you.";
 	now player has some herb eh;
+
+section ur branch scoring
+
+a wordtwisting rule (this is the pre-summer-bay rule):
+	if player does not have herb, unavailable;
+	if sco-summer-bay is true:
+		vcal "You already used the herb!";
+		already-done;
+	if player is not in ur branch:
+		vcp "Nothing happens with the herb. Maybe be somewhere else.";
+		not-yet;
+	ready;
+
+this is the post-summer-bay rule:
+	now sco-summer-bay is true;
+	say "Hooray! You figured what to do! You get a point!";
 
 section summer bay scoring
 

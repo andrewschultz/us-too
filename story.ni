@@ -34,7 +34,7 @@ Ur Branch is a room in universal. It is outside of My New Mine Ooh. printed name
 
 chapter herbs
 
-some herb eh is a thing. description is "It's some herb, eh? Apparently it can give enlightenment to new life paths, but, uh, not THAT way.". printed name is "'some herb, eh?'"
+some herb eh is a thing. description is "It's some herb, eh? [if sco-summer-bay is true]It helped you find a new place to visit, and it's still edible![else]Apparently it can give enlightenment to new life paths, but, uh, not THAT way.[end if]". printed name is "'some herb, eh?'"
 
 book Summer Bay
 
@@ -53,6 +53,10 @@ the pike is a thing. "[if sco-pie-crust is false]Oh boy, the pike has some rust 
 section pike rust
 
 the pike rust is a thing. "It's on the pike. Perhaps it is better as something else."
+
+volume verbs
+
+check taking: say "You never need to take anything explicitly in [this-game]." instead;
 
 volume thinking (can be moved to core?)
 
