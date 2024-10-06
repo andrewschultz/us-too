@@ -30,6 +30,10 @@ Ur Branch is a room in universal. It is outside of My New Mine Ooh. printed name
 
 [cur, car, bar, or, saw branches]
 
+chapter herbs
+
+some herb eh is a thing. description is "It's some herb, eh? Apparently it can give enlightenment to new life paths, but, uh, not THAT way.". printed name is "'some herb, eh?'"
+
 volume thinking (can be moved to core?)
 
 check thinking:
