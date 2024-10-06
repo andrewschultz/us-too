@@ -10,6 +10,7 @@ w1 (text)	w2 (text)	posthom (text)	hom-txt-rule (rule)	think-cue	okflip	core	idi
 "be"	"strong"	--	--	false	true	true	false	mine ooh	pre-be-strong rule	post-be-strong rule	--	--
 "a"	"stew"	--	--	false	true	true	false	mine ooh	pre-a-stew rule	post-a-stew rule	--	"You can make [b]A STEW[r] [once-now of pre-a-stew rule] you have all the ingredients you need."
 "herb"	"ranch"	--	--	false	true	true	false	ur branch	pre-herb-ranch rule	post-herb-ranch rule	--	--
+"pie"	"crust"	--	--	false	true	true	false	summer bay	pre-pie-crust rule	post-pie-crust rule	--	--
 
 chapter mine ooh scoring
 
@@ -62,6 +63,21 @@ this is the post-herb-ranch rule:
 	now sco-herb-ranch is true;
 	say "You find a path to a herb ranch. Of course every stew needs herbs. The farmer there gives you a sample saying 'Some herb, eh?' The phrase sticks with you.";
 	now player has some herb eh;
+
+section summer bay scoring
+
+a wordtwisting rule (this is the pre-pie-crust rule):
+	if player is not in summer bay, unavailable;
+	if pike is not touchable, unavailable;
+	if sco-pie-crust is true:
+		vcal "You already de-rusted the pike!";
+		already-done;
+	ready;
+
+this is the post-pie-crust rule:
+	now sco-pie-crust is true;
+	say "Yup! Pie crust!";
+	now player has pie crust;
 
 volume directions
 

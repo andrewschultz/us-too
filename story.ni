@@ -34,6 +34,24 @@ chapter herbs
 
 some herb eh is a thing. description is "It's some herb, eh? Apparently it can give enlightenment to new life paths, but, uh, not THAT way.". printed name is "'some herb, eh?'"
 
+book Summer Bay
+
+Summer Bay is a room in universal.
+
+chapter pie crust
+
+the pie crust is a thing.
+
+volume unsorted
+
+chapter pike
+
+the pike is a thing. "[if sco-pie-crust is false]Oh boy, the pike has some rust on it.  Pike rust![else]The pike is shiny and new now you repurposed its rust.[end if]"
+
+section pike rust
+
+the pike rust is a thing. "It's on the pike. Perhaps it is better as something else."
+
 volume thinking (can be moved to core?)
 
 check thinking:
