@@ -8,6 +8,7 @@ table of main oronyms
 w1 (text)	w2 (text)	posthom (text)	hom-txt-rule (rule)	think-cue	okflip	core	idid	best-room	check-rule	run-rule	wfull (topic)	think-advice (text)
 "nice"	"warm"	--	--	false	true	true	false	mine ooh	pre-nice-warm rule	post-nice-warm rule	--	--
 "be"	"strong"	--	--	false	true	true	false	mine ooh	pre-be-strong rule	post-be-strong rule	--	--
+"a"	"stew"	--	--	false	true	true	false	mine ooh	pre-a-stew rule	post-a-stew rule	--	"You can make [b]A STEW[r] [once-now of pre-a-stew rule] you have all the ingredients you need."
 
 chapter mine ooh scoring
 
@@ -32,6 +33,20 @@ a wordtwisting rule (this is the pre-be-strong rule):
 this is the post-be-strong rule:
 	now sco-be-strong is true;
 	say "Hooray! You figured what to do! You get a point!";
+
+a wordtwisting rule (this is the pre-a-stew rule):
+	if player is not in mine ooh:
+		vcp "You need to be back in your mine for this.";
+		not-yet;
+	if sco-a-stew is false:
+		vcp "You don't have all the ingredients of stew you need!";
+		not-yet;
+	ready;
+
+this is the post-a-stew rule:
+	now sco-a-stew is true;
+	say "Well, that does it! You make the stew, and you win.";
+	end the story saying "Me-Ill Meal!";	
 
 volume directions
 

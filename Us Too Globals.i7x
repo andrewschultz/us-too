@@ -12,6 +12,8 @@ sco-beast-wrong is a truth state that varies.
 
 sco-be-strong is a truth state that varies.
 
+sco-a-stew is a truth state that varies.
+
 Us Too Globals ends here.
 
 ---- DOCUMENTATION ----
