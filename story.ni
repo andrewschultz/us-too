@@ -14,7 +14,9 @@ volume rooms
 
 book my new mine ooh
 
-My New Mine Ooh is a room in universal. printed name is "My New Mine, Ooh!". description is "You can go outside here.".
+My New Mine Ooh is a room in universal. printed name is "My New Mine, Ooh!". description is "You can go outside here. Well, you could, but the way out is blocked.".
+
+check going outside in Mine Ooh when sco-be-strong is false: say "[The beast] blocks your way." instead;
 
 chapter nigh swarm
 
@@ -22,7 +24,7 @@ the nigh swarm is a thing in My New Mine Ooh. [nice warm]
 
 chapter beast wrong
 
-the beast wrong is a thing in My New Mine Ooh. [be strong]
+the beast wrong is a thing in My New Mine Ooh. printed name is "beast (wrong)". "A beast (wrong) blocks your way out. You know it shouldn't be there. You know you shouldn't be afraid of it. But you are."
 
 book ur branch
 

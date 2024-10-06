@@ -34,7 +34,8 @@ a wordtwisting rule (this is the pre-be-strong rule):
 
 this is the post-be-strong rule:
 	now sco-be-strong is true;
-	say "Hooray! You figured what to do! You get a point!";
+	say "You manage to stand up to the beast a bit. It could beat you, sure, but you're not worth the effort. It trudges off, no longer blocking you from leaving. It has easier prey.";
+	moot beast wrong;
 
 a wordtwisting rule (this is the pre-a-stew rule):
 	if player is not in mine ooh:
