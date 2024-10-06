@@ -4,15 +4,21 @@ Version 1/241005 of Us Too Globals by Andrew Schultz begins here.
 
 volume game variables
 
+main-table is table of main oronyms.
+
+chapter my new mine oo
+
+sco-a-stew is a truth state that varies.
+
+chapter ur branch
+
+sco-herb-ranch is a truth state that varies.
+
 chapter unsorted
 
 sco-nice-warm is a truth state that varies.
 
-sco-beast-wrong is a truth state that varies.
-
 sco-be-strong is a truth state that varies.
-
-sco-a-stew is a truth state that varies.
 
 Us Too Globals ends here.
 

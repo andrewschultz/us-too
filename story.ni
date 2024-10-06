@@ -14,7 +14,7 @@ volume rooms
 
 book my new mine ooh
 
-My New Mine Ooh is a room in universal. printed name is "My New Mine, Ooh!".
+My New Mine Ooh is a room in universal. printed name is "My New Mine, Ooh!". description is "You can go outside here.".
 
 chapter nigh swarm
 
@@ -23,6 +23,12 @@ the nigh swarm is a thing in My New Mine Ooh. [nice warm]
 chapter beast wrong
 
 the beast wrong is a thing in My New Mine Ooh. [be strong]
+
+book ur branch
+
+Ur Branch is a room in universal. It is outside of My New Mine Ooh. printed name is "Ur-Branch". "There are so many branches here! [if sco-herb-ranch is false]You have no idea where to go. You could spend too much time wandering around. You could lose focus[else]You found one path through, and you doubt you need to find another[end if]."
+
+[cur, car, bar, or, saw branches]
 
 volume thinking (can be moved to core?)
 
