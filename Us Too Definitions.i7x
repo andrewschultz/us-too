@@ -13,6 +13,24 @@ to game-specific-cleanup: do nothing;
 
 to decide which region is mrlp: decide on map region of location of player.
 
+volume score and thinking
+
+the score and thinking changes rule is listed instead of the notify score changes rule in the turn sequence rulebook.
+
+this is the score and thinking changes rule:
+	let sco-delt be current-score - last-current-score;
+	let bonus-delt be cur-bonus - last-cur-bonus;
+	if sco-delt is 0 and bonus-delt is 0, continue the action;
+	if bonus-delt > 0:
+		say "[i][bracket]Your score just went up by [if bonus-delt is 1]a bonus point[else][bonus-delt in words] bonus points[end if]![close bracket][r][line break]";
+		now last-cur-bonus is cur-bonus;
+		now last-current-score is last-current-score + bonus-delt;
+		now sco-delt is sco-delt - bonus-delt;
+	if sco-delt > 0:
+		if bonus-delt > 0, say "[line break]";
+		say "[i][bracket]Your score just went up by [if sco-delt is 1]a point[else][sco-delt in words] points[end if]![close bracket][r][line break]";
+		now last-current-score is current-score;
+
 volume command parsing
 
 the check forks rule is listed first in the for printing a parser error rulebook.
