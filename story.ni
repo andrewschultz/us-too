@@ -10,6 +10,14 @@ include Us Too Tables by Andrew Schultz.
 
 include Us Too Globals by Andrew Schultz.
 
+volume intro
+
+book tour ad
+
+the player carries the too rad tour ad. printed name of tour ad is "too-rad tour ad.".
+
+description of tour ad is "It describes your new mine in detail. But you need your friends to help explore it.".
+
 volume rooms
 
 book my new mine ooh
@@ -24,7 +32,7 @@ the nigh swarm is a thing in My New Mine Ooh. [nice warm]
 
 chapter beast wrong
 
-the beast wrong is a thing in My New Mine Ooh. printed name is "beast (wrong)". "A beast (wrong) blocks your way out. You know it shouldn't be there. You know you shouldn't be afraid of it. But you are."
+the beast wrong is a thing in My New Mine Ooh. printed name is "beast (wrong)". "A beast (wrong) blocks your way out. You know it shouldn't be there. You know you shouldn't be afraid of it. But you are.". description is "You feel as though you shouldn't be as frightened as you are by it, but you just can't flip that switch."
 
 book ur branch
 

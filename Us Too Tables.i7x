@@ -49,8 +49,8 @@ a wordtwisting rule (this is the pre-a-stew rule):
 
 this is the post-a-stew rule:
 	now sco-a-stew is true;
-	say "Well, that does it! You make the stew, and you win.";
-	end the story saying "Me-Ill Meal!";	
+	say "Well, that does it! You make the stew, and you win. As you make the stew, you reflect it is not MY stew, which would be kind of a me-ill meal, but A stew.[paragraph break]You make other random seeming stews over there years, but none quite has the flavor of this one.";
+	end the story saying "On ice! Aw, nice!";
 
 chapter ur branch scoring
 
@@ -80,7 +80,8 @@ a wordtwisting rule (this is the pre-summer-bay rule):
 
 this is the post-summer-bay rule:
 	now sco-summer-bay is true;
-	say "Hooray! You figured what to do! You get a point!";
+	say "The herb gives off a weird ... well, not quite a smell. But it opens your mind to new passages. And you find one east.";
+	reveal summer bay to east;
 
 section summer bay scoring
 
