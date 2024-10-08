@@ -62,9 +62,20 @@ section pike rust
 
 the pike rust is a thing. "It's on the pike. Perhaps it is better as something else."
 
-volume verbs
+volume regular verbs
 
 check taking: say "You never need to take anything explicitly in [this-game]." instead;
+
+volume meta-verbs
+
+book swearing
+
+the block swearing obscenely rule is not listed in any rulebook.
+the block swearing mildly rule is not listed in any rulebook.
+
+check swearing obscenely: say "I scold, ice-cold![one of][line break][i][bracket]There's no optional section for this, as there was in [b]Why Pout[r][i]. Sorry.[close bracket][r][line break][or][stopping]" instead;
+
+check swearing mildly: try swearing obscenely instead;
 
 volume thinking (can be moved to core?)
 
