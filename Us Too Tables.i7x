@@ -105,9 +105,6 @@ this is the post-pie-crust rule:
 chapter sore dark scoring
 
 a wordtwisting rule (this is the pre-sword-ark rule):
-	if sco-sword-ark is false:
-		vcp "You still need to do something!";
-		not-yet;
 	if sco-sword-ark is true:
 		vcal "You don't need another sword! You just want to get out of here.";
 		already-done;
@@ -122,11 +119,8 @@ chapter bore dread scoring
 
 a wordtwisting rule (this is the pre-board-red rule):
 	if player is not in bore dread, unavailable;
-	if sco-board-red is false:
-		vcp "You still need to do something!";
-		not-yet;
 	if sco-board-red is true:
-		vcal "You already did this!";
+		vcal "You shouldn't need another board!";
 		already-done;
 	ready;
 
