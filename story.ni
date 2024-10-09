@@ -24,11 +24,7 @@ book my new mine ooh
 
 My New Mine Ooh is a room in universal. printed name is "My New Mine, Ooh!". description is "You can go outside here. Well, you could, but the way out is blocked.".
 
-check going outside in Mine Ooh when sco-be-strong is false: say "[The beast] blocks your way." instead;
-
-chapter nigh swarm
-
-the nigh swarm is a thing in My New Mine Ooh. [nice warm]
+check going outside in Mine Ooh when sco-be-strong is false: say "[The beast] blocks your way. How wrong of it! You try physically shifting around, but it's unmoved. Maybe adjusting your mental attitude will do the trick." instead;
 
 chapter beast wrong
 
@@ -61,6 +57,14 @@ book Summer Bay
 
 Summer Bay is a room in universal.
 
+chapter nigh swarm
+
+the nigh swarm is a thing in My New Mine Ooh. [nice warm]
+
+chapter Sir Frighteous
+
+Sir Frighteous is a sentient.
+
 chapter pie crust
 
 the pie crust is a thing. description is "Not very fancy, but it's good enough."
@@ -85,7 +89,7 @@ volume unsorted
 
 chapter pike
 
-the pike is a thing. "[if sco-pie-crust is false]Oh boy, the pike has some rust on it.  Pike rust![else]The pike is shiny and new now you repurposed its rust.[end if]"
+the pike is a thing. "Sir Frighteously left his pike behind. [if sco-pie-crust is false]And, oh boy, it has some rust on it.  Pike rust![else]IT is shiny and new now you repurposed its rust.[end if]"
 
 section pike rust
 

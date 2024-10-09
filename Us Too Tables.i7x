@@ -139,7 +139,7 @@ volume directions
 
 table of noways
 noway-rm	noway-txt
-My New Mine Ooh	"Fill this in later."
+My New Mine Ooh	"You could explore your mine, but you want your friends near first[if sco-be-strong is false]. Besides, you need to get that beast out of the way, to see your surroundings[end if]."
 
 Us Too Tables ends here.
 
