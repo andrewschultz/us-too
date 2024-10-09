@@ -10,7 +10,16 @@ include Us Too Tables by Andrew Schultz.
 
 include Us Too Globals by Andrew Schultz.
 
+[ section beta heading (later) ]
+
+section testing headings - not for release
+
+include Us Too Tests by Andrew Schultz.
+
 volume intro
+
+when play begins:
+	now left hand status line is "[location of player]";
 
 book tour ad
 
@@ -99,6 +108,8 @@ the pike rust is a thing. "It's on the pike. Perhaps it is better as something e
 volume regular verbs
 
 check taking: say "You never need to take anything explicitly in [this-game]." instead;
+
+check dropping: say "You never need to drop anything explicitly in [this-game]. Often, when you're done with something, it will be consumed. Also, there is no inventory limit." instead;
 
 volume meta-verbs
 

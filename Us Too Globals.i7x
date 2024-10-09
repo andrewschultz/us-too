@@ -6,6 +6,12 @@ volume game variables
 
 main-table is table of main oronyms.
 
+core-max is a number that varies. core-max is 6.
+
+cur-max-bonus is a number that varies. cur-max-bonus is 0.
+
+max-bonus is a number that varies. max-bonus is 1.
+
 chapter game states
 
 chapter my new mine oo
