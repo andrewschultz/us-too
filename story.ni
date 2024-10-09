@@ -50,7 +50,15 @@ Summer Bay is a room in universal.
 
 chapter pie crust
 
-the pie crust is a thing.
+the pie crust is a thing. description is "Not very fancy, but it's good enough."
+
+book Sore Dark
+
+Sore Dark is a room in universal. description is "[if sco-sword-ark is false]You can't see much here, but maybe if you fumble around for what you need, you'll find it[else]The thought of having to stay here after finding something cool leaves you, well, sore[end if]. Good thing you have that blah string to lead your way back out southeast!"
+
+chapter sword
+
+The Terra Blade is a thing.
 
 volume unsorted
 

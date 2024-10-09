@@ -12,6 +12,7 @@ w1 (text)	w2 (text)	posthom (text)	hom-txt-rule (rule)	think-cue	okflip	core	idi
 "herb"	"ranch"	--	--	false	true	true	false	ur branch	pre-herb-ranch rule	post-herb-ranch rule	--	--
 "pie"	"crust"	--	--	false	true	true	false	summer bay	pre-pie-crust rule	post-pie-crust rule	--	--
 "summer"	"bay"	--	--	false	true	true	false	ur branch	pre-summer-bay rule	post-summer-bay rule	--	--
+"sword"	"ark"	--	--	false	true	true	false	sore dark	pre-sword-ark rule	post-sword-ark rule	--	--
 
 chapter mine ooh scoring
 
@@ -97,6 +98,23 @@ this is the post-pie-crust rule:
 	now sco-pie-crust is true;
 	say "Yup! Pie crust!";
 	now player has pie crust;
+
+chapter sore dark scoring
+
+a wordtwisting rule (this is the pre-sword-ark rule):
+	if sco-sword-ark is false:
+		vcp "You still need to do something!";
+		not-yet;
+	if sco-sword-ark is true:
+		vcal "You don't need another sword! You just want to get out of here.";
+		already-done;
+	ready;
+
+this is the post-sword-ark rule:
+	now sco-sword-ark is true;
+	say "It takes a while of feeling around, but your blah string does the job. You find a sword ark. You worry you may not be worthy of the sword you find. It is found in an earthen recess. Perhaps you are not. But you are not killed when you take it. So that's something![paragraph break]Looking on its hilt, you see you are now in possession of the TERRA BLADE.";
+	now player has Terra Blade;
+
 
 volume directions
 

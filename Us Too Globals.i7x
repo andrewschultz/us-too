@@ -25,6 +25,8 @@ sco-nice-warm is a truth state that varies.
 
 sco-be-strong is a truth state that varies.
 
+sco-sword-ark is a truth state that varies.
+
 Us Too Globals ends here.
 
 ---- DOCUMENTATION ----
