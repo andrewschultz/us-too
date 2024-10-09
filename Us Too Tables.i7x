@@ -13,6 +13,7 @@ w1 (text)	w2 (text)	posthom (text)	hom-txt-rule (rule)	think-cue	okflip	core	idi
 "pie"	"crust"	--	--	false	true	true	false	summer bay	pre-pie-crust rule	post-pie-crust rule	--	--
 "summer"	"bay"	--	--	false	true	true	false	ur branch	pre-summer-bay rule	post-summer-bay rule	--	--
 "sword"	"ark"	--	--	false	true	true	false	sore dark	pre-sword-ark rule	post-sword-ark rule	--	--
+"board"	"red"	--	--	false	true	true	false	bore dread	pre-board-red rule	post-board-red rule	--	--
 
 chapter mine ooh scoring
 
@@ -115,6 +116,22 @@ this is the post-sword-ark rule:
 	say "It takes a while of feeling around, but your blah string does the job. You find a sword ark. You worry you may not be worthy of the sword you find. It is found in an earthen recess. Perhaps you are not. But you are not killed when you take it. So that's something![paragraph break]Looking on its hilt, you see you are now in possession of the TERRA BLADE.";
 	now player has Terra Blade;
 
+chapter bore dread scoring
+
+a wordtwisting rule (this is the pre-board-red rule):
+	if player is not in bore dread, unavailable;
+	if sco-board-red is false:
+		vcp "You still need to do something!";
+		not-yet;
+	if sco-board-red is true:
+		vcal "You already did this!";
+		already-done;
+	ready;
+
+this is the post-board-red rule:
+	now sco-board-red is true;
+	say "You turn up a board (red) ... it's narrow and six feet long, made of styrofoam, with CATCH THE WAVES and STAND ON THIS SIDE written on one side. Since it wasn't hard to find, you don't feel excited you found it, but you carry it anyway.";
+	now player has board red;
 
 volume directions
 

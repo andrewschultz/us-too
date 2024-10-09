@@ -60,6 +60,14 @@ chapter sword
 
 The Terra Blade is a thing.
 
+book Bore Dread
+
+Bore Dread is a room in universal. description is "[if sco-board-red is false]My goodness, there seems to be nothing to do here except go back southwest. Or maybe search for some random item[else]Finding the board (red) was almost exciting. But you can't hope for anything else interesting here. Maybe just go back southwest[end if]."
+
+chapter board red
+
+The board red is a thing. printed name is "board (red)". "It's about six feet long and one foot wide, or it would be when unfolded (it snaps into and out of its full length easily. You checked.) It has THIS SIDE UP and CATCH THE WAVES on it."
+
 volume unsorted
 
 chapter pike
