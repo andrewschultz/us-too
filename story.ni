@@ -21,7 +21,37 @@ volume intro
 when play begins:
 	now left hand status line is "[location of player]";
 
-book tour ad
+book you
+
+Ho Pal Hope Al is a person. the player is Ho Pal Hope Al. description of Al is "You are 'Ho-Pal-Hope' Al."
+
+chapter "item using"
+
+the player carries Aight Amusing Item Using. description of Aight is "It's a recipe, actually.".
+
+to default-x-to-aight:
+	say "Note that [b]X[r] will default to [using] in the future.";
+	now gs-using-known is true;
+
+report examining Aight Amusing Item Using when gs-using-known is false:
+	default-x-to-aight;
+	continue the action;
+
+understand "x" and "examine" as examining.
+
+rule for supplying a missing noun when examining:
+	if gs-using-known is true:
+		now the noun is Aight Amusing;
+	else:
+		say "(yourself, but [b]I[r] for inventory will reveal an item that [b]X[r] will map to in the future.)";
+		now noun is Hope Al;
+	continue the action;
+
+report taking inventory when gs-using-known is false:
+	default-x-to-aight;
+	continue the action;
+
+chapter too rad tour ad
 
 the player carries the too rad tour ad. printed name of tour ad is "too-rad tour ad.".
 

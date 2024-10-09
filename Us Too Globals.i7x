@@ -12,7 +12,11 @@ cur-max-bonus is a number that varies. cur-max-bonus is 0.
 
 max-bonus is a number that varies. max-bonus is 1.
 
+volume booleans
+
 chapter game states
+
+gs-using-known is a truth state that varies.
 
 chapter my new mine oo
 
