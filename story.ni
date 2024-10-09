@@ -2,7 +2,7 @@
 
 volume includes
 
-include Spoonerism and Oronym Core by Andrew Schultz.
+include Oronym Core by Andrew Schultz.
 
 include Us Too Definitions by Andrew Schultz.
 
@@ -41,12 +41,13 @@ NORTHEAST = Bore Dread
 Ur Branch is a room in universal. It is outside of My New Mine Ooh. printed name is "Ur-Branch". "There are so many branches here! [if sco-herb-ranch is false]You have no idea where to go. You could spend too much time wandering around. You could lose focus[else]You found one path through, and you doubt you need to find another[end if]."
 
 after printing the locale description for ur branch:
-	if gs-branch-north-diagonal is true:
+	if sco-herb-ranch is true:
 		say "[one of]You are now aware of passages northeast and northwest. As you understand, this sort of thing usually isn't kosher, but you ARE at an ur-branch[or]Passages lead northwest and northeast[stopping].";
 	continue the action;
 
 check going northwest in ur branch when sco-sword-ark is true: say "You can't imagine anything is in the dark other than the Terra Blade." instead;
 check going northeast in ur branch when sco-board-red is true: say "You can't imagine anything is in the bore-dread area besides the board (red.)" instead;
+
 [cur, car, bar, or, saw branches]
 
 chapter herbs
@@ -128,3 +129,9 @@ check thinking:
 	if got-think is false:
 		say "Nothing comes to mind."
 
+volume misc map
+
+index map with ur branch mapped northeast of my new mine ooh.
+index map with bore dread mapped northwest of my new mine ooh.
+index map with sore dark mapped west of ur branch	.
+index map with summer bay mapped east of ur branch.

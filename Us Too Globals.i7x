@@ -6,6 +6,8 @@ volume game variables
 
 main-table is table of main oronyms.
 
+chapter game states
+
 chapter my new mine oo
 
 sco-a-stew is a truth state that varies.

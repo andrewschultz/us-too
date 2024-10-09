@@ -65,12 +65,12 @@ a wordtwisting rule (this is the pre-herb-ranch rule):
 
 this is the post-herb-ranch rule:
 	now sco-herb-ranch is true;
-	say "You find a path to a herb ranch. Of course every stew needs herbs. The farmer there gives you a sample saying 'Some herb, eh?' The phrase sticks with you as conversation continues.[paragraph break]It's a surprisingly enlightening one, opening your consciousness further to the oddness of diagonally directional pathways, and how they might not be strictly necessary most of the time, but in the Ur-Branch, well, they are a bit more appropriate.[paragraph brea]On return, you notice new branches: northeast and northwest!";
+	say "You find a path to a herb ranch. Of course every stew needs herbs. The farmer there gives you a sample saying 'Some herb, eh?' The phrase sticks with you as conversation continues.[paragraph break]It's a surprisingly enlightening one, opening your consciousness further to the oddness of diagonally directional pathways, and how they might not be strictly necessary most of the time, but in the Ur-Branch, well, they are a bit more appropriate.[paragraph break]On return, you notice new branches: northeast and northwest!";
 	now player has some herb eh;
 	reveal bore dread to northeast;
 	reveal sore dark to northwest;
 
-section ur branch scoring
+chapter ur branch scoring
 
 a wordtwisting rule (this is the pre-summer-bay rule):
 	if player does not have herb, unavailable;
@@ -87,7 +87,7 @@ this is the post-summer-bay rule:
 	say "The herb gives off a weird ... well, not quite a smell. But it opens your mind to new passages. And you find one east.";
 	reveal summer bay to east;
 
-section summer bay scoring
+chapter summer bay scoring
 
 a wordtwisting rule (this is the pre-pie-crust rule):
 	if player is not in summer bay, unavailable;
