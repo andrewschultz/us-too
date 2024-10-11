@@ -65,11 +65,14 @@ book my new mine ooh
 
 My New Mine Ooh is a room in universal. printed name is "My New Mine, Ooh!". description is "You can go outside here. Well, you could, but the way out is blocked.".
 
-check going outside in Mine Ooh when sco-be-strong is false: say "[The beast] blocks your way. How wrong of it! You try physically shifting around, but it's unmoved. Maybe adjusting your mental attitude will do the trick." instead;
+check going outside in Mine Ooh:
+	if sco-my-quest is false, say "You don't want to go wandering outside after you just got here! You need to catch your bearings. Have something to focus on, instead." instead;
+	if sco-be-strong is false, say "[The beast] blocks your way. How wrong of it! You try physically shifting around, but it's unmoved. Maybe adjusting your mental attitude will do the trick." instead;
+	if ur branch is unvisited, say "So you begin your quest...";
 
 chapter beast wrong
 
-the beast wrong is a thing in My New Mine Ooh. printed name is "beast (wrong)". "A beast (wrong) blocks your way out. You know it shouldn't be there. You know you shouldn't be afraid of it. But you are.". description is "You feel as though you shouldn't be as frightened as you are by it, but you just can't flip that switch."
+the beast wrong is a sentient. printed name is "beast (wrong)". "A beast (wrong) blocks your way out. You know it shouldn't be there. You know you shouldn't be afraid of it. But you are.". description is "You feel as though you shouldn't be as frightened as you are by it, but you just can't flip that switch."
 
 book ur branch
 
