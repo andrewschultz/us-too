@@ -32,15 +32,14 @@ this is the post-my-quest rule:
 	now player has aight;
 
 a wordtwisting rule (this is the pre-nice-warm rule):
-	if player is not in mine ooh, unavailable;
-	if sco-nice-warm is true:
-		vcal "You already made the swarm nice and warm!";
-		already-done;
+	if nigh swarm is not touchable, unavailable;
 	ready;
 
 this is the post-nice-warm rule:
 	now sco-nice-warm is true;
-	say "The swarm feels less intimidating now.";
+	say "The nigh swarm grows less volatile and, yes, more nice, warm. It rises in the air, then buzzes off to somewhere to maybe be nice, cool, too. Perhaps there is a nigh school![paragraph break]Behin the nigh swarm is a pro ball.";
+	moot nigh swarm;
+	move pro ball to summer bay;
 
 a wordtwisting rule (this is the pre-be-strong rule):
 	if player is not in mine ooh, unavailable;
@@ -79,7 +78,7 @@ a wordtwisting rule (this is the pre-herb-ranch rule):
 
 this is the post-herb-ranch rule:
 	now sco-herb-ranch is true;
-	say "You find a path to a herb ranch. Of course every stew needs herbs. The farmer there gives you a sample saying 'Some herb, eh?' The phrase sticks with you as conversation continues.[paragraph break]It's a surprisingly enlightening one, opening your consciousness further to the oddness of diagonally directional pathways, and how they might not be strictly necessary most of the time, but in the Ur-Branch, well, they are a bit more appropriate.[paragraph break]On return, you notice new branches: northeast and northwest!";
+	say "You find a path to a herb ranch. Of course every stew needs herbs. The farmer there gives you a sample saying 'Some herb, eh?' The phrase sticks with you as conversation continues.[paragraph break]It's a surprisingly enlightening one. What can you do with it?";
 	now player has some herb eh;
 	reveal bore dread to northeast;
 	reveal sore dark to northwest;

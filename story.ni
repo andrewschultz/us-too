@@ -100,11 +100,15 @@ some herb eh is a thing. description is "It's some herb, eh? [if sco-summer-bay 
 
 book Summer Bay
 
-Summer Bay is a room in universal.
+Summer Bay is a room in universal. "It's nice here. The only way out is back west, since you can't swim the other ways."
 
 chapter nigh swarm
 
-the nigh swarm is a thing in My New Mine Ooh. [nice warm]
+the nigh swarm is a thing in Summer Bay. "A nigh swarm ruins the tranquility of the area. You can't see behind it.". description is "The nigh swarm buzzes aggresively.".
+
+chapter pro ball
+
+the pro ball is a thing. "If you look at it right, you may be able to see a bit more.".
 
 chapter Sir Frighteous
 
@@ -133,10 +137,6 @@ chapter board red
 The board red is a thing. printed name is "board (red)". "It's about six feet long and one foot wide, or it would be when unfolded (it snaps into and out of its full length easily. You checked.) It has THIS SIDE UP and CATCH THE WAVES on it."
 
 volume unsorted
-
-chapter pro ball
-
-the pro ball is a thing. "If you look at it right, you may be able to see a bit more.".
 
 chapter pike
 
