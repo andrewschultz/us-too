@@ -127,6 +127,10 @@ The board red is a thing. printed name is "board (red)". "It's about six feet lo
 
 volume unsorted
 
+chapter pro ball
+
+the pro ball is a thing. "If you look at it right, you may be able to see a bit more.".
+
 chapter pike
 
 the pike is a thing. "Sir Frighteously left his pike behind. [if sco-pie-crust is false]And, oh boy, it has some rust on it.  Pike rust![else]IT is shiny and new now you repurposed its rust.[end if]"

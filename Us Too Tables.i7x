@@ -84,7 +84,16 @@ this is the post-herb-ranch rule:
 	reveal bore dread to northeast;
 	reveal sore dark to northwest;
 
-chapter ur branch scoring
+a wordtwisting rule (this is the pre-probe-all rule):
+	if pro ball is not touchable, unavailable;
+	if sco-probe-all is true:
+		vcal "You already probed the pro ball enough to get a feel for hidden exits your surroundings! More may appear as you need them.";
+		already-done;
+	ready;
+
+this is the post-probe-all rule:
+	now sco-probe-all is true;
+	say "You look at the pro ball from many different angles. Reflected in it, you see ... your mine, you, and some passages you hadn't even considered away from the Ur-Branch. You lose yourself in it for a while, and then, when you look up, you see ";
 
 a wordtwisting rule (this is the pre-summer-bay rule):
 	if player does not have herb, unavailable;
