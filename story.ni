@@ -25,7 +25,7 @@ book you
 
 [ho-pal-hope-al]
 
-Mike West is a sentient. the player is Mike West. description of Mike West is "You are Mike West."
+Mike West is a person. the player is Mike West. description of Mike West is "You are Mike West."
 
 chapter "item using"
 
@@ -108,7 +108,9 @@ the nigh swarm is a thing in My New Mine Ooh. [nice warm]
 
 chapter Sir Frighteous
 
-Sir Frighteous is a sentient.
+Sir Frighteous is a sentient. "Sir Frighteous is here. If you wish, you can refer to him as F or Sir F. Not to him, of course, but to me."
+
+understand "f" and "sir f" as Sir Frighteous when Sir Frighteous is touchable.
 
 chapter pie crust
 
@@ -155,9 +157,9 @@ check dropping: say "You never need to drop anything explicitly in [this-game]. 
 book talk (redefined in Oronym Core)
 
 check ting:
+	if noun is Mike West, say "You say, meek, a 'Me? [']Kay!'" instead;
 	if noun is Sir Frighteous, say "'Ho, pawn! Hope on!'" instead;
 	if noun is not a sentient, say "You should usually talk to living things, or things that can respond as if they were living." instead;
-	if noun is Mike West, say "You say, meek, a 'Me? [']Kay!'" instead;
 	say "An awkward silence ensues, mostly brought about by how ... I forgot to code something. Please let me know or file a bug report!" instead;
 
 
