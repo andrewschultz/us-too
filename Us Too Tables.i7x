@@ -92,7 +92,10 @@ a wordtwisting rule (this is the pre-probe-all rule):
 
 this is the post-probe-all rule:
 	now sco-probe-all is true;
-	say "You look at the pro ball from many different angles. Reflected in it, you see ... your mine, you, and some passages you hadn't even considered away from the Ur-Branch. You lose yourself in it for a while, and then, when you look up, you see ";
+	say "You look at the pro ball from many different angles. Reflected in it, you see ... well, a meh spot [here-in of my new mine ooh] that could use sprucing up. But how?";
+	move meh spot to my new mine ooh;
+	continue the action; [some passages you hadn't even considered away from the Ur-Branch. You lose yourself in it for a while, and then, when you look up, you see ]
+	say "You poke at the pro ball, which opens your consciousness further to the oddness of diagonally directional pathways, and how they might not be strictly necessary most of the time, but in the Ur-Branch, well, they are a bit more appropriate.[paragraph break]On return, you notice new branches: northeast and northwest!";
 
 a wordtwisting rule (this is the pre-summer-bay rule):
 	if player does not have herb, unavailable;

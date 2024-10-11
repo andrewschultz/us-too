@@ -74,6 +74,10 @@ chapter beast wrong
 
 the beast wrong is a sentient. printed name is "beast (wrong)". "A beast (wrong) blocks your way out. You know it shouldn't be there. You know you shouldn't be afraid of it. But you are.". description is "You feel as though you shouldn't be as frightened as you are by it, but you just can't flip that switch."
 
+chapter meh spot
+
+the meh spot is a thing. "The meh spot you saw in the pro ball sits here. It makes your mine feel emptier. Perhaps something belongs there."
+
 book ur branch
 
 [Note how rooms, uh, branch from Ur Branch:
@@ -158,6 +162,7 @@ book talk (redefined in Oronym Core)
 
 check ting:
 	if noun is Mike West, say "You say, meek, a 'Me? [']Kay!'" instead;
+	if noun is meh spot, say "It may make you say 'meh' a lot, but it's not going to say anything back." instead;
 	if noun is Sir Frighteous, say "'Ho, pawn! Hope on!'" instead;
 	if noun is not a sentient, say "You should usually talk to living things, or things that can respond as if they were living." instead;
 	say "An awkward silence ensues, mostly brought about by how ... I forgot to code something. Please let me know or file a bug report!" instead;
