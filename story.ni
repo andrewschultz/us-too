@@ -1,4 +1,4 @@
-"Us Too" by Andrew Schultz
+"Us Too" by Ike Whipp
 
 volume includes
 
@@ -23,7 +23,9 @@ when play begins:
 
 book you
 
-Ho Pal Hope Al is a person. the player is Ho Pal Hope Al. description of Al is "You are 'Ho-Pal-Hope' Al."
+[ho-pal-hope-al]
+
+Mike West is a sentient. the player is Mike West. description of Mike West is "You are Mike West."
 
 chapter "item using"
 
@@ -44,7 +46,7 @@ rule for supplying a missing noun when examining:
 		now the noun is Aight Amusing;
 	else:
 		say "(yourself, but [b]I[r] for inventory will reveal an item that [b]X[r] will map to in the future.)";
-		now noun is Hope Al;
+		now noun is Mike West;
 	continue the action;
 
 report taking inventory when gs-using-known is false:
