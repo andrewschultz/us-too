@@ -146,9 +146,20 @@ the pike rust is a thing. "It's on the pike. Perhaps it is better as something e
 
 volume regular verbs
 
+book drop/take
+
 check taking: say "You never need to take anything explicitly in [this-game]." instead;
 
 check dropping: say "You never need to drop anything explicitly in [this-game]. Often, when you're done with something, it will be consumed. Also, there is no inventory limit." instead;
+
+book talk (redefined in Oronym Core)
+
+check ting:
+	if noun is Sir Frighteous, say "'Ho, pawn! Hope on!'" instead;
+	if noun is not a sentient, say "You should usually talk to living things, or things that can respond as if they were living." instead;
+	if noun is Mike West, say "You say, meek, a 'Me? [']Kay!'" instead;
+	say "An awkward silence ensues, mostly brought about by how ... I forgot to code something. Please let me know or file a bug report!" instead;
+
 
 volume meta-verbs
 
