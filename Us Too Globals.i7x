@@ -20,12 +20,24 @@ gs-using-known is a truth state that varies.
 
 chapter my new mine oo
 
+sco-my-quest is a truth state that varies.
+
+sco-be-strong is a truth state that varies.
+
 sco-a-stew is a truth state that varies.
 
 chapter ur branch
 
 sco-herb-ranch is a truth state that varies.
 sco-summer-bay is a truth state that varies.
+
+section sore dark
+
+sco-sword-ark is a truth state that varies.
+
+section bore dread
+
+sco-board-red is a truth state that varies.
 
 chapter summer bay
 
@@ -35,11 +47,7 @@ chapter unsorted
 
 sco-nice-warm is a truth state that varies.
 
-sco-be-strong is a truth state that varies.
-
-sco-sword-ark is a truth state that varies.
-
-sco-board-red is a truth state that varies.
+sco-probe-all is a truth state that varies.
 
 Us Too Globals ends here.
 

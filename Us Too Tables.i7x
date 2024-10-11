@@ -6,6 +6,7 @@ volume the main table
 
 table of main oronyms
 w1 (text)	w2 (text)	posthom (text)	hom-txt-rule (rule)	think-cue	okflip	core	idid	best-room	check-rule	run-rule	wfull (topic)	think-advice (text)
+"my"	"quest"	--	--	false	true	true	false	mine ooh	pre-my-quest rule	post-my-quest rule	--	--
 "nice"	"warm"	--	--	false	true	true	false	mine ooh	pre-nice-warm rule	post-nice-warm rule	--	--
 "be"	"strong"	--	--	false	true	true	false	mine ooh	pre-be-strong rule	post-be-strong rule	--	--
 "a"	"stew"	--	--	false	true	true	false	mine ooh	pre-a-stew rule	post-a-stew rule	--	"You can make [b]A STEW[r] [once-now of pre-a-stew rule] you have all the ingredients you need."
@@ -14,8 +15,21 @@ w1 (text)	w2 (text)	posthom (text)	hom-txt-rule (rule)	think-cue	okflip	core	idi
 "summer"	"bay"	--	--	false	true	true	false	ur branch	pre-summer-bay rule	post-summer-bay rule	--	--
 "sword"	"ark"	--	--	false	true	true	false	sore dark	pre-sword-ark rule	post-sword-ark rule	--	--
 "board"	"red"	--	--	false	true	true	false	bore dread	pre-board-red rule	post-board-red rule	--	--
+"probe"	"all"	--	--	false	true	true	false	ur branch	pre-probe-all rule	post-probe-all rule	--	--
 
 chapter mine ooh scoring
+
+a wordtwisting rule (this is the pre-my-quest rule):
+	if sco-my-quest is true:
+		vcal "You already have an idea of your quest!";
+		already-done;
+	ready;
+
+this is the post-my-quest rule:
+	now sco-my-quest is true;
+	say "Yes, yes. That's what really matters. Your quest.[paragraph break]You doze off, and when you awake, you find ... well, a beast, wrong, blocking your way.";
+	move beast wrong to mine ooh;
+	now player has aight;
 
 a wordtwisting rule (this is the pre-nice-warm rule):
 	if player is not in mine ooh, unavailable;
