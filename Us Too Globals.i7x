@@ -14,6 +14,10 @@ max-bonus is a number that varies. max-bonus is 1.
 
 volume booleans
 
+chapter printing details
+
+pri-branch-reject is a truth state that varies.
+
 chapter game states
 
 gs-using-known is a truth state that varies.

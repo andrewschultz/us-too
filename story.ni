@@ -92,12 +92,15 @@ NORTHWEST = Sore Dark
 NORTHEAST = Bore Dread
 ]
 
-Ur Branch is a room in universal. It is outside of My New Mine Ooh. printed name is "Ur-Branch". "There are so many branches here! [if sco-herb-ranch is false]You have no idea where to go. You could spend too much time wandering around. You could lose focus[else]You found one path through, and you doubt you need to find another[end if]."
+Ur Branch is a room in universal. It is outside of My New Mine Ooh. printed name is "Ur-Branch". "There are so many branches here! While you can go back [b]IN[r] to your mine, [if sco-summer-bay is false]you have no idea where else to go. You could spend too much time wandering around. You could lose focus[else if sco-probe-all is false]there's only east, but maybe you can find more concrete places to visit[else]the branches make more sense than they did at first[end if]."
 
-after printing the locale description for ur branch:
-	if sco-herb-ranch is true:
-		say "[one of]You are now aware of passages northeast and northwest. As you understand, this sort of thing usually isn't kosher, but you ARE at an ur-branch[or]Passages lead northwest and northeast[stopping].";
-	continue the action;
+rule for printing the locale description of ur branch:
+	now pri-branch-reject is true;
+	if number of branchdone directions > 0:
+		say "[line break]You don't need to go back to [list of branchdone directions].";
+	if number of branchcan directions > 0:
+		say "[line break]You could also go [list of branchcan directions].";
+	now pri-branch-reject is false;
 
 check going northwest in ur branch when sco-sword-ark is true: say "You can't imagine anything is in the dark other than the Terra Blade." instead;
 check going northeast in ur branch when sco-board-red is true: say "You can't imagine anything is in the bore-dread area besides the board (red.)" instead;

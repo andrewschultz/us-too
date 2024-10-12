@@ -13,6 +13,19 @@ to game-specific-cleanup: do nothing;
 
 to decide which region is mrlp: decide on map region of location of player.
 
+volume directions
+
+a direction can be branchdone. a direction is usually not branchdone.
+
+definition: a direction (called di) is branchcan:
+	if di is branchdone, no;
+	if the room di of location of player is nowhere, no;
+	yes;
+
+after printing the name of a direction (called di) while pri-branch-reject is true:
+	say " to [the room di of location of player]";
+	continue the action;
+
 volume score and thinking
 
 the score and thinking changes rule is listed instead of the notify score changes rule in the turn sequence rulebook.
