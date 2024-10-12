@@ -167,6 +167,7 @@ this is the post-sword-ark rule:
 	now sco-sword-ark is true;
 	say "It takes a while of feeling around, but your blah string does the job. You find a sword ark. You worry you may not be worthy of the sword you find. It is found in an earthen recess. Perhaps you are not. But you are not killed when you take it. So that's something![paragraph break]Looking on its hilt, you see you are now in possession of the TERRA BLADE.";
 	now player has Terra Blade;
+	block-and-back;
 
 chapter bore dread scoring
 
@@ -181,6 +182,7 @@ this is the post-board-red rule:
 	now sco-board-red is true;
 	say "You turn up a board (red) ... it's narrow and six feet long, made of styrofoam, with CATCH THE WAVES and STAND ON THIS SIDE written on one side. Since it wasn't hard to find, you don't feel excited you found it, but you carry it anyway.";
 	now player has board red;
+	block-and-back;
 
 volume directions
 

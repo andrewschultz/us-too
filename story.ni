@@ -97,13 +97,16 @@ Ur Branch is a room in universal. It is outside of My New Mine Ooh. printed name
 rule for printing the locale description of ur branch:
 	now pri-branch-reject is true;
 	if number of branchdone directions > 0:
-		say "[line break]You don't need to go back to [list of branchdone directions].";
-	if number of branchcan directions > 0:
-		say "[line break]You could also go [list of branchcan directions].";
+		say "You don't need to go back to [list of branchdone directions].";
 	now pri-branch-reject is false;
 
-check going northwest in ur branch when sco-sword-ark is true: say "You can't imagine anything is in the dark other than the Terra Blade." instead;
-check going northeast in ur branch when sco-board-red is true: say "You can't imagine anything is in the bore-dread area besides the board (red.)" instead;
+rule for printing the locale description of ur branch:
+	now pri-branch-reject is true;
+	if number of branchcan directions > 0:
+		say "You could also go [list of branchcan directions].";
+	now pri-branch-reject is false;
+
+check going in ur branch (this is the branch blocker rule): if noun is branchdone, say "[donetext of noun]." instead;
 
 [cur, car, bar, or, saw branches]
 
@@ -139,7 +142,7 @@ Sore Dark is a room in universal. description is "[if sco-sword-ark is false]You
 
 chapter sword
 
-The Terra Blade is a thing.
+The Terra Blade is a proper-named thing.
 
 book Bore Dread
 

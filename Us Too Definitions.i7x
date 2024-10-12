@@ -26,6 +26,20 @@ after printing the name of a direction (called di) while pri-branch-reject is tr
 	say " to [the room di of location of player]";
 	continue the action;
 
+a direction has text called donetext.
+
+donetext of northwest is "You can't imagine anything is in the dark other than the Terra Blade.".
+donetext of northeast is "You can't imagine anything is in the bore-dread area besides the board (red.)".
+
+chapter directions from/to Ur-Branch
+
+to block-and-back:
+	say "[line break]It seems there's nothing else to do here. You hope there isn't. So you just go back to the Ur-Branch.";
+	let the way be the best route from Ur Branch to location of player;
+	now the way is branchdone;
+	move player to Ur Branch, without printing a room description;
+	print-the-loc;
+
 volume score and thinking
 
 the score and thinking changes rule is listed instead of the notify score changes rule in the turn sequence rulebook.
