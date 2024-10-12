@@ -10,6 +10,7 @@ w1 (text)	w2 (text)	posthom (text)	hom-txt-rule (rule)	think-cue	okflip	core	idi
 "nice"	"warm"	--	--	false	true	true	false	mine ooh	pre-nice-warm rule	post-nice-warm rule	--	--
 "be"	"strong"	--	--	false	true	true	false	mine ooh	pre-be-strong rule	post-be-strong rule	--	--
 "mess"	"pot"	--	--	false	true	true	false	mine ooh	pre-mess-pot rule	post-mess-pot rule	--	--
+"meh"	"skit"	--	--	false	true	false	false	mine ooh	pre-meh-skit rule	post-meh-skit rule	--	--
 "a"	"stew"	--	--	false	true	true	false	mine ooh	pre-a-stew rule	post-a-stew rule	--	"You can make [b]A STEW[r] [once-now of pre-a-stew rule] you have all the ingredients you need."
 "herb"	"ranch"	--	--	false	true	true	false	ur branch	pre-herb-ranch rule	post-herb-ranch rule	--	--
 "pie"	"crust"	--	--	false	true	true	false	summer bay	pre-pie-crust rule	post-pie-crust rule	--	--
@@ -38,7 +39,7 @@ a wordtwisting rule (this is the pre-nice-warm rule):
 
 this is the post-nice-warm rule:
 	now sco-nice-warm is true;
-	say "The nigh swarm grows less volatile and, yes, more nice, warm. It rises in the air, then buzzes off to somewhere to maybe be nice, cool, too. Perhaps there is a nigh school![paragraph break]Behin the nigh swarm is a pro ball.";
+	say "The nigh swarm grows less volatile and, yes, more nice, warm. It rises in the air, then buzzes off to somewhere to maybe be nice, cool, too. Perhaps there is a nigh school![paragraph break]Behind the nigh swarm is a pro ball.";
 	moot nigh swarm;
 	move pro ball to summer bay;
 
@@ -68,6 +69,17 @@ this is the post-mess-pot rule:
 	say "Ah. There it is. You, in fact, find a whole mess kit."; [??mess kit as synonym]
 	move mess pot to mine ooh;
 	moot meh spot;
+
+a wordtwisting rule (this is the pre-meh-skit rule):
+	if mess pot is not touchable, unavailable;
+	if sco-meh-skit is true:
+		vcal "The skit would go from meh to cringe if you did it again.";
+		already-done;
+	ready;
+
+this is the post-meh-skit rule:
+	now sco-meh-skit is true;
+	say "Perhaps it's too obvious, but you decide to have fun, and you do.";
 
 a wordtwisting rule (this is the pre-a-stew rule):
 	if player is not in mine ooh:
