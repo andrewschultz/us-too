@@ -49,6 +49,8 @@ sco-nice-warm is a truth state that varies.
 
 sco-probe-all is a truth state that varies.
 
+sco-mess-pot is a truth state that varies.
+
 Us Too Globals ends here.
 
 ---- DOCUMENTATION ----

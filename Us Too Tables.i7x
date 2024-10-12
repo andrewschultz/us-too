@@ -9,6 +9,7 @@ w1 (text)	w2 (text)	posthom (text)	hom-txt-rule (rule)	think-cue	okflip	core	idi
 "my"	"quest"	--	--	false	true	true	false	mine ooh	pre-my-quest rule	post-my-quest rule	--	--
 "nice"	"warm"	--	--	false	true	true	false	mine ooh	pre-nice-warm rule	post-nice-warm rule	--	--
 "be"	"strong"	--	--	false	true	true	false	mine ooh	pre-be-strong rule	post-be-strong rule	--	--
+"mess"	"pot"	--	--	false	true	true	false	mine ooh	pre-mess-pot rule	post-mess-pot rule	--	--
 "a"	"stew"	--	--	false	true	true	false	mine ooh	pre-a-stew rule	post-a-stew rule	--	"You can make [b]A STEW[r] [once-now of pre-a-stew rule] you have all the ingredients you need."
 "herb"	"ranch"	--	--	false	true	true	false	ur branch	pre-herb-ranch rule	post-herb-ranch rule	--	--
 "pie"	"crust"	--	--	false	true	true	false	summer bay	pre-pie-crust rule	post-pie-crust rule	--	--
@@ -52,6 +53,21 @@ this is the post-be-strong rule:
 	now sco-be-strong is true;
 	say "You manage to stand up to the beast a bit. It could beat you, sure, but you're not worth the effort. It trudges off, no longer blocking you from leaving. It has easier prey.";
 	moot beast wrong;
+
+chapter mine ooh scoring
+
+a wordtwisting rule (this is the pre-mess-pot rule):
+	if meh spot is not touchable and mess pot is not touchable, unavailable;
+	if sco-mess-pot is true:
+		vcal "You already found the mess pot!";
+		already-done;
+	ready;
+
+this is the post-mess-pot rule:
+	now sco-mess-pot is true;
+	say "Ah. There it is. You, in fact, find a whole mess kit."; [??mess kit as synonym]
+	move mess pot to mine ooh;
+	moot meh spot;
 
 a wordtwisting rule (this is the pre-a-stew rule):
 	if player is not in mine ooh:
