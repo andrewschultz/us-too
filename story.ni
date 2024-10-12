@@ -124,7 +124,9 @@ the nigh swarm is a thing in Summer Bay. "A nigh swarm ruins the tranquility of 
 
 chapter pro ball
 
-the pro ball is a thing. "If you look at it right, you may be able to see a bit more.".
+the pro ball is a thing. description is "It's not a pro sports ball. More like an orb. But if it were an orb, well , it wouldn't quite work.[paragraph break][if sco-probe-all is false]If you look at it right, you may be able to see a bit more[else]It's weird. The pro ball doesn't seem to reveal anything new when you look at it for any period of time[end if].".
+
+check taking pro ball when sco-probe-all is false: say "It won't budge. At least, not right now." instead;
 
 chapter Sir Frighteous
 
