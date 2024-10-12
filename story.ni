@@ -25,11 +25,9 @@ book you
 
 [ho-pal-hope-al]
 
-Mike West is a person. the player is Mike West. description of Mike West is "You are Mike West."
-
 chapter "item using"
 
-the player carries Aight Amusing Item Using. description of Aight is "It's a recipe, actually.".
+the player carries Aight Amusing Item Using. description of Aight is "It's a recipe, actually.". printed name of Aight is "[']Aight, Amusing Item Using[r]".
 
 to default-x-to-aight:
 	say "Note that [b]X[r] will default to [using] in the future.";
@@ -55,7 +53,7 @@ report taking inventory when gs-using-known is false:
 
 chapter too rad tour ad
 
-the player carries the too rad tour ad. printed name of tour ad is "too-rad tour ad.".
+the player carries the too rad tour ad. printed name of tour ad is "too-rad tour ad".
 
 description of tour ad is "It describes your new mine in detail. But you need your friends to help explore it.".
 
@@ -63,12 +61,16 @@ volume rooms
 
 book my new mine ooh
 
-My New Mine Ooh is a room in universal. printed name is "My New Mine, Ooh!". description is "You can go outside here. Well, you could, but the way out is blocked.".
+My New Mine Ooh is a room in universal. printed name is "My New Mine, Ooh!". description is "You can go outside here. [if sco-be-strong is true]You've cleared the way[else if sco-my-quest is true]Well, you could, but the way out is blocked[else]But you're still finding your bearings and purpose[end if].".
 
 check going outside in Mine Ooh:
 	if sco-my-quest is false, say "You don't want to go wandering outside after you just got here! You need to catch your bearings. Have something to focus on, instead." instead;
 	if sco-be-strong is false, say "[The beast] blocks your way. How wrong of it! You try physically shifting around, but it's unmoved. Maybe adjusting your mental attitude will do the trick." instead;
 	if ur branch is unvisited, say "So you begin your quest...";
+
+chapter Mike West (you)
+
+Mike West is a person in Mine Ooh. the player is Mike West. description of Mike West is "You are Mike West."
 
 chapter beast wrong
 
@@ -104,7 +106,7 @@ check going northeast in ur branch when sco-board-red is true: say "You can't im
 
 chapter herbs
 
-some herb eh is a thing. description is "It's some herb, eh? [if sco-summer-bay is true]It helped you find a new place to visit, and it's still edible![else]Apparently it can give enlightenment to new life paths, but, uh, not THAT way.[end if]". printed name is "'some herb, eh?'"
+some herb eh is a proper-named thing. description is "It's some herb, eh? [if sco-summer-bay is true]It helped you find a new place to visit, and it's still edible![else]Apparently it can give enlightenment to new life paths, but, uh, not THAT way.[end if]". printed name is "'some herb, eh?'"
 
 book Summer Bay
 
