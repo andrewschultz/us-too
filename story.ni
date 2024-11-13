@@ -186,12 +186,11 @@ volume meta-verbs
 
 book swearing
 
-the block swearing obscenely rule is not listed in any rulebook.
-the block swearing mildly rule is not listed in any rulebook.
-
 check swearing obscenely: say "Cur! Say curse, eh? I scold, ice-cold![one of][line break][i][bracket]There's no optional section for this, as there was in [b]Why Pout[r][i]. Sorry.[close bracket][r][line break][or][stopping]" instead;
 
-check swearing mildly: try swearing obscenely instead;
+book xyzzying
+
+carry out xyzzying: say "A hollow voice booms 'Sequel? Seek well? See? QUELL!'[paragraph break]But don't worry, it's just hollow, period." instead;
 
 volume thinking (can be moved to core?)
 
