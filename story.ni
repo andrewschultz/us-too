@@ -156,6 +156,10 @@ The board red is a thing. printed name is "board (red)". "It's about six feet lo
 
 volume unsorted
 
+chapter scribe red
+
+the scribe red is a sentient. printed name is "scribe (red)".
+
 chapter pike
 
 the pike is a thing. "Sir Frighteously left his pike behind. [if sco-pie-crust is false]And, oh boy, it has some rust on it.  Pike rust![else]IT is shiny and new now you repurposed its rust.[end if]"

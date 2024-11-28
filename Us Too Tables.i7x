@@ -18,6 +18,19 @@ w1 (text)	w2 (text)	posthom (text)	hom-txt-rule (rule)	think-cue	okflip	core	idi
 "sword"	"ark"	--	--	false	true	true	false	sore dark	pre-sword-ark rule	post-sword-ark rule	--	--
 "board"	"red"	--	--	false	true	true	false	bore dread	pre-board-red rule	post-board-red rule	--	--
 "probe"	"all"	--	--	false	true	true	false	ur branch	pre-probe-all rule	post-probe-all rule	--	--
+"scry"	"bread"	--	--	false	true	true	false	scribe red	vc-scry-bread rule	vr-scry-bread rule	--	--
+
+chapter scribe red scoring
+
+a wordtwisting rule (this is the vc-scry-bread rule):
+	if scribe red is not touchable, unavailable;
+	ready;
+
+this is the vr-scry-bread rule:
+	now sco-scry-bread is true;
+	say "Now you have the bread!";
+	now player has bread;
+
 
 chapter mine ooh scoring
 
