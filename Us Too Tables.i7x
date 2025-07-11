@@ -13,7 +13,7 @@ w1 (text)	w2 (text)	first-hom (text)	second-hom	hom-txt-rule (rule)	first-exact	
 "meh"	"skit"	--	--	--	false	false	false	false	"having harmless, useless fun with the mess kit"	false	true	false	false	false	mine ooh	pre-meh-skit rule	post-meh-skit rule	--	--
 "a"	"stew"	--	--	--	false	false	false	false	"achieving the game's objective"	false	true	true	false	false	mine ooh	pre-a-stew rule	post-a-stew rule	--	"You can make [b]A STEW[r] [once-now of pre-a-stew rule] you have all the ingredients you need."
 "herb"	"ranch"	--	--	--	false	false	false	false	"finding the first place to visit from the Ur-Branch"	false	true	true	false	false	ur branch	pre-herb-ranch rule	post-herb-ranch rule	--	--
-"pie"	"crust"	"pi"	--	--	false	false	false	false	"finding what's under the pike rust"	false	true	true	false	false	summer bay	pre-pie-crust rule	post-pie-crust rule	--	--
+"pie"	"crust"	"pi"	--	--	false	false	false	false	"finding what's under the pike rust"	false	true	true	false	false	beach ill	pre-pie-crust rule	post-pie-crust rule	--	--
 "summer"	"bay"	--	--	--	false	false	false	false	"letting the herb reveal a new location"	false	true	true	false	false	ur branch	pre-summer-bay rule	post-summer-bay rule	--	--
 "sword"	"ark"	"soared"	--	--	false	false	false	false	"finding something in the Sore Dark"	false	true	true	false	false	sore dark	pre-sword-ark rule	post-sword-ark rule	--	--
 "board"	"red"	"bored"	--	--	false	false	false	false	"finding something in the Bore Dread"	false	true	true	false	false	bore dread	pre-board-red rule	post-board-red rule	--	--
@@ -55,7 +55,7 @@ this is the post-nice-warm rule:
 	now sco-nice-warm is true;
 	say "The nigh swarm grows less volatile and, yes, more nice, warm. It rises in the air, then buzzes off to somewhere to maybe be nice, cool, too. Perhaps there is a nigh school![paragraph break]Behind the nigh swarm is a pro ball.";
 	moot nigh swarm;
-	move pro ball to summer bay;
+	move pro ball to beach ill;
 
 a wordtwisting rule (this is the pre-be-strong rule):
 	if player is not in mine ooh, unavailable;
@@ -166,12 +166,12 @@ a wordtwisting rule (this is the pre-summer-bay rule):
 this is the post-summer-bay rule:
 	now sco-summer-bay is true;
 	say "The herb gives off a weird ... well, not quite a smell. But it opens your mind to new passages. And you find one east.";
-	reveal summer bay to east;
+	reveal Beach Ill to east;
 
-chapter summer bay scoring
+chapter Beach Ill scoring
 
 a wordtwisting rule (this is the pre-pie-crust rule):
-	if player is not in summer bay, unavailable;
+	if player is not in Beach Ill, unavailable;
 	if pike is not touchable, unavailable;
 	if sco-pie-crust is true:
 		vcal "You already de-rusted the pike!";

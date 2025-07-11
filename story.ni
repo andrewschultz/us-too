@@ -95,7 +95,7 @@ the mess pot is a thing.
 book ur branch
 
 [Note how rooms, uh, branch from Ur Branch:
-EAST = summer bay
+EAST = Beach Ill
 NORTHWEST = Sore Dark
 NORTHEAST = Bore Dread
 ]
@@ -122,13 +122,13 @@ chapter herbs
 
 some herb eh is a proper-named thing. description is "It's some herb, eh? [if sco-summer-bay is true]It helped you find a new place to visit, and it's still edible![else]Apparently it can give enlightenment to new life paths, but, uh, not THAT way.[end if]". printed name is "'some herb, eh?'"
 
-book Summer Bay
+book Beach Ill
 
-Summer Bay is a room in universal. "It's nice here. The only way out is back west, since you can't swim the other ways."
+Beach Ill is a room in universal. "It's nice here. The only way out is back west, since you can't swim the other ways."
 
 chapter nigh swarm
 
-the nigh swarm is a thing in Summer Bay. "A nigh swarm ruins the tranquility of the area. You can't see behind it.". description is "The nigh swarm buzzes aggresively.".
+the nigh swarm is a thing in Beach Ill. "A nigh swarm ruins the tranquility of the area. You can't see behind it.". description is "The nigh swarm buzzes aggresively.".
 
 chapter pro ball
 
@@ -237,4 +237,4 @@ volume misc map
 index map with ur branch mapped northeast of my new mine ooh.
 index map with bore dread mapped northwest of my new mine ooh.
 index map with sore dark mapped west of ur branch	.
-index map with summer bay mapped east of ur branch.
+index map with Beach Ill mapped east of ur branch.
