@@ -172,6 +172,10 @@ chapter scribe red
 
 the scribe red is a sentient. printed name is "scribe (red)".
 
+chapter bread
+
+the bread is a thing.
+
 chapter pike
 
 the pike is a thing. "Sir Frighteously left his pike behind. [if sco-pie-crust is false]And, oh boy, it has some rust on it.  Pike rust![else]IT is shiny and new now you repurposed its rust.[end if]"

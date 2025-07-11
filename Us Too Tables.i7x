@@ -5,20 +5,22 @@ Version 1/241005 of Us Too Tables by Andrew Schultz begins here.
 volume the main table
 
 table of main oronyms
-w1 (text)	w2 (text)	posthom (text)	hom-txt-rule (rule)	think-cue	okflip	core	idid	best-room	check-rule	run-rule	wfull (topic)	think-advice (text)
-"my"	"quest"	--	--	false	true	true	false	mine ooh	pre-my-quest rule	post-my-quest rule	--	--
-"nice"	"warm"	--	--	false	true	true	false	mine ooh	pre-nice-warm rule	post-nice-warm rule	--	--
-"be"	"strong"	--	--	false	true	true	false	mine ooh	pre-be-strong rule	post-be-strong rule	--	--
-"mess"	"pot"	--	--	false	true	true	false	mine ooh	pre-mess-pot rule	post-mess-pot rule	--	--
-"meh"	"skit"	--	--	false	true	false	false	mine ooh	pre-meh-skit rule	post-meh-skit rule	--	--
-"a"	"stew"	--	--	false	true	true	false	mine ooh	pre-a-stew rule	post-a-stew rule	--	"You can make [b]A STEW[r] [once-now of pre-a-stew rule] you have all the ingredients you need."
-"herb"	"ranch"	--	--	false	true	true	false	ur branch	pre-herb-ranch rule	post-herb-ranch rule	--	--
-"pie"	"crust"	--	--	false	true	true	false	summer bay	pre-pie-crust rule	post-pie-crust rule	--	--
-"summer"	"bay"	--	--	false	true	true	false	ur branch	pre-summer-bay rule	post-summer-bay rule	--	--
-"sword"	"ark"	--	--	false	true	true	false	sore dark	pre-sword-ark rule	post-sword-ark rule	--	--
-"board"	"red"	--	--	false	true	true	false	bore dread	pre-board-red rule	post-board-red rule	--	--
-"probe"	"all"	--	--	false	true	true	false	ur branch	pre-probe-all rule	post-probe-all rule	--	--
-"scry"	"bread"	--	--	false	true	true	false	scribe red	vc-scry-bread rule	vr-scry-bread rule	--	--
+w1 (text)	w2 (text)	first-hom (text)	second-hom	hom-txt-rule (rule)	first-exact	first-close	second-exact	second-close	part-explain	think-cue	okflip	core	idid	everfail	best-room	check-rule	run-rule	wfull (topic)	think-advice (text)
+"my"	"quest"	--	--	--	false	false	false	false	"how to get started and what to do"	false	true	true	false	false	mine ooh	pre-my-quest rule	post-my-quest rule	--	--
+"nice"	"warm"	--	--	--	false	false	false	false	"making the swarm less aggressive"	false	true	true	false	false	mine ooh	pre-nice-warm rule	post-nice-warm rule	--	--
+"be"	"strong"	--	--	--	false	false	false	false	"getting rid of the beast"	false	true	true	false	false	mine ooh	pre-be-strong rule	post-be-strong rule	--	--
+"mess"	"pot"	--	--	--	false	false	false	false	"making the spot into something more useful"	false	true	true	false	false	mine ooh	pre-mess-pot rule	post-mess-pot rule	--	--
+"meh"	"skit"	--	--	--	false	false	false	false	"having harmless, useless fun with the mess kit"	false	true	false	false	false	mine ooh	pre-meh-skit rule	post-meh-skit rule	--	--
+"a"	"stew"	--	--	--	false	false	false	false	"achieving the game's objective"	false	true	true	false	false	mine ooh	pre-a-stew rule	post-a-stew rule	--	"You can make [b]A STEW[r] [once-now of pre-a-stew rule] you have all the ingredients you need."
+"herb"	"ranch"	--	--	--	false	false	false	false	"finding the first place to visit from the Ur-Branch"	false	true	true	false	false	ur branch	pre-herb-ranch rule	post-herb-ranch rule	--	--
+"pie"	"crust"	"pi"	--	--	false	false	false	false	"finding what's under the pike rust"	false	true	true	false	false	summer bay	pre-pie-crust rule	post-pie-crust rule	--	--
+"summer"	"bay"	--	--	--	false	false	false	false	"letting the herb reveal a new location"	false	true	true	false	false	ur branch	pre-summer-bay rule	post-summer-bay rule	--	--
+"sword"	"ark"	"soared"	--	--	false	false	false	false	"finding something in the Sore Dark"	false	true	true	false	false	sore dark	pre-sword-ark rule	post-sword-ark rule	--	--
+"board"	"red"	"bored"	--	--	false	false	false	false	"finding something in the Bore Dread"	false	true	true	false	false	bore dread	pre-board-red rule	post-board-red rule	--	--
+"probe"	"all"	--	--	--	false	false	false	false	"finding a purpose for the pro ball"	false	true	true	false	false	ur branch	pre-probe-all rule	post-probe-all rule	--	--
+"scry"	"bread"	--	"bred"	--	false	false	false	false	"getting something from the scribe (red)"	false	true	true	false	false	scribe red	vc-scry-bread rule	vr-scry-bread rule	--	--
+
+["summon"	"cheese"	--	--	--	false	false	false	false	"clue for guessing one word right"	false	true	true	false	false	my new	pre-summon-cheese rule	post-summon-cheese rule	--	--]
 
 chapter scribe red scoring
 
@@ -30,7 +32,6 @@ this is the vr-scry-bread rule:
 	now sco-scry-bread is true;
 	say "Now you have the bread!";
 	now player has bread;
-
 
 chapter mine ooh scoring
 
@@ -68,8 +69,6 @@ this is the post-be-strong rule:
 	say "You manage to stand up to the beast a bit. It could beat you, sure, but you're not worth the effort. It trudges off, no longer blocking you from leaving. It has easier prey.";
 	moot beast wrong;
 
-chapter mine ooh scoring
-
 a wordtwisting rule (this is the pre-mess-pot rule):
 	if meh spot is not touchable and mess pot is not touchable, unavailable;
 	if sco-mess-pot is true:
@@ -99,14 +98,14 @@ a wordtwisting rule (this is the pre-a-stew rule):
 		vcp "You need to be back in your mine for this.";
 		not-yet;
 	if sco-a-stew is false:
-		vcp "You don't have all the ingredients of stew you need!";
+		vcp "You don't have all the stew ingredients you need!";
 		not-yet;
 	ready;
 
 this is the post-a-stew rule:
 	now sco-a-stew is true;
 	say "Well, that does it! You make the stew, and you win. As you make the stew, you reflect it is not MY stew, which would be kind of a me-ill meal, but A stew.[paragraph break]You make other random seeming stews over there years, but none quite has the flavor of this one.";
-	end the story saying "On ice! Aw, nice!";
+	end the story saying "A swell ace! WELL!";
 
 chapter recipe scoring
 
@@ -217,7 +216,7 @@ volume directions
 
 table of noways
 noway-rm	noway-txt
-My New Mine Ooh	"You could explore your mine, but you want your friends near first[if sco-be-strong is false]. Besides, you need to get that beast out of the way, to see your surroundings[end if]."
+My New Mine Ooh	"You could explore your mine, but you [if sco-my-quest is false]have no purpose, or errand, or ... there's another word, here[else if sco-be-strong is false]really should get rid of that beast[else]sense the real adventure lies outside[end if]."
 
 Us Too Tables ends here.
 
