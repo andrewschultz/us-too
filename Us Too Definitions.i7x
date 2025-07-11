@@ -40,6 +40,16 @@ to block-and-back:
 	move player to Ur Branch, without printing a room description;
 	print-the-loc;
 
+volume cheat item stuff
+
+to say eye-with:
+	if current action is eyering:
+		say "with the general area, though specific things may provide a clue";
+	else if noun is a sentient:
+		say "[if noun is hostile]neutralize[else if noun is agreeable]aid[else]improve[end if] [the noun]";
+	else:
+		say "with [the noun]";
+
 volume score and thinking
 
 the score and thinking changes rule is listed instead of the notify score changes rule in the turn sequence rulebook.
