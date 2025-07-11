@@ -4,7 +4,18 @@ Version 1/241009 of Us Too Tests by Andrew Schultz begins here.
 
 volume test commands
 
-test w with "be strong/out/herb ranch/nw/sword ark/se/ne/board red/sw".
+test wm with "test w1/test w2".
+test w with "test w1/test w2/meh skit".
+
+chapter implemented/placed
+
+test w1 with "my quest/be strong/out/herb ranch/summer bay/e/nice warm/probe all".
+
+test w2 with "w/in/mess pot".
+
+chapter unimplemented/unplaced
+
+test wx with "nw/sword ark/se/ne/board red/sw".
 
 Us Too Tests ends here.
 
