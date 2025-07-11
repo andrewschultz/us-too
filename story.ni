@@ -206,7 +206,9 @@ volume meta-verbs
 
 book swearing
 
-check swearing obscenely: say "Cur! Say curse, eh? I scold, ice-cold![one of][line break][i][bracket]There's no optional section for this, as there was in [b]Why Pout[r][i]. Sorry.[close bracket][r][line break][or][stopping]" instead;
+report swearing obscenely for the first time:
+	say "[i][bracket]There's no optional section for this, as there was in [b]Why Pout[r][i]. Sorry.[close bracket][r][line break]";
+	continue the action;
 
 book xyzzying
 
