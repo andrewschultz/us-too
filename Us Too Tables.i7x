@@ -108,6 +108,21 @@ this is the post-a-stew rule:
 	say "Well, that does it! You make the stew, and you win. As you make the stew, you reflect it is not MY stew, which would be kind of a me-ill meal, but A stew.[paragraph break]You make other random seeming stews over there years, but none quite has the flavor of this one.";
 	end the story saying "On ice! Aw, nice!";
 
+chapter recipe scoring
+
+a wordtwisting rule (this is the pre-summon-cheese rule):
+	if aight is not examined, unavailable;
+	if player does not have aight, unavailable;
+	if sco-summon-cheese is true:
+		vcal "You already got some munchies! No need to be greedy";
+		already-done;
+	ready;
+
+this is the post-summon-cheese rule:
+	now sco-summon-cheese is true;
+	say "You're confident you've figured what the nmunchies are. And you know what? You're right! You have all sorts of cheese now.";
+	now player has cheese;
+
 chapter ur branch scoring
 
 a wordtwisting rule (this is the pre-herb-ranch rule):

@@ -57,6 +57,8 @@ sco-nice-warm is a truth state that varies.
 
 sco-scry-bread is a truth state that varies.
 
+sco-summon-cheese is a truth state that varies.
+
 Us Too Globals ends here.
 
 ---- DOCUMENTATION ----
