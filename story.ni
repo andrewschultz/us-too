@@ -106,6 +106,9 @@ Mike West carries Aight Amusing Item Using. description of Aight is "[aight-stuf
 check examining aight for the first time:
 	say "It's a recipe, actually.";
 
+check examining aight when sco-my-quest is false:
+	say "It seems to require you to go look for all manner of weird stuff. You're just not up to fetching stuff at the moment. You don't want to feel like a gofer. You want something more purposeful." instead;
+
 to say aight-stuff:
 	say "--some munchies ([if sco-summon-cheese is false]the kind is not specified. What's up with that?[run paragraph on][else]SUMMONED the CHEESE[run paragraph on][end if])[line break]";
 
@@ -259,10 +262,6 @@ check taking clay mitt: say "You don't feel bold enough to. Just taking isn't en
 
 volume unsorted
 
-book House O How So
-
-House O How So is a room. printed name is "[if true is true]House O['] How So[else]House Well-How-Swell[end if]".
-
 book unclaimed things
 
 chapter scribe red
@@ -297,7 +296,6 @@ check ting:
 	if noun is Sir Frighteous, say "'Ho, pawn! Hope on!'" instead;
 	if noun is not a sentient, say "You should usually talk to living things, or things that can respond as if they were living." instead;
 	say "An awkward silence ensues, mostly brought about by how ... I forgot to code something. Please let me know or file a bug report!" instead;
-
 
 volume meta-verbs
 
