@@ -1,10 +1,20 @@
-"Us Too" by Ace Plitt and Ike Whipp
+"Us Too" by Hugh Morris
+
+[Ace Plitt and Ike Whipp]
 
 volume includes
 
-include Oronym Core by Andrew Schultz.
+section general
+
+include Bold Final Question Rows by Andrew Schultz.
 
 include Standard Helping Metaverbs by Andrew Schultz.
+
+section series specific
+
+include Oronym Core by Andrew Schultz.
+
+section game specific
 
 include Us Too Definitions by Andrew Schultz.
 
