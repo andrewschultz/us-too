@@ -287,8 +287,18 @@ check thinking:
 	if got-think is false:
 		say "Nothing comes to mind."
 
+volume ending tweak
+
+table of final question options (continued)
+final question wording	only if victorious	topic	final response rule	final response activity
+--	true	"ace two"	poker cheat rule	--
+
+this is the poker cheat rule:
+	say "[one of]Well, your friends didn't believe your whole tale of how you got here, and how you provided this nice meal, so they'd never believe you could cheat like this.[paragraph break]Of course, you're not playing for high stakes, but it's the principle of the thing. Next time when you all go out to eat, it's your treat. Your friends applaud your generosity, but you say it wa nothing. It really was, too.[or]You already cheated to win. It would be less fun the second time. And your friends might catch on, too.[stopping]";
+
 volume misc map
 
+index map with mine ooh mapped north of house well how swell.
 index map with ur branch mapped northeast of my new mine ooh.
 index map with bore dread mapped northwest of my new mine ooh.
 index map with sore dark mapped west of ur branch	.
