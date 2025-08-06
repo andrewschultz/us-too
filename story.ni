@@ -82,14 +82,17 @@ after reading a command when player is in House Well How Swell:
 	if the player's command includes "how" or the player's command includes "so":
 		say "The lawyers['] ears seem to perk up for a second.";
 		reject the player's command;
+	if the number of characters in the player's command > 8:
+		say "One of the lawyers casually remarks Aunt Rickie-Ann was never big on long words.";
+		reject the player's command;
 	if number of words in the player's command < 2:
 		say "One of the lawyers tells you to speak up a little, there.";
 		reject the player's command;
 	if the player's command includes "lawyers" or the player's command includes "lawyer":
 		say "The lawyers sit, stone-faced. You will get no clues from them.";
 		continue the action;
-	if the player's command includes "envelope":
-		say "You glance at your envelope, worried you might be cheating. But the lawyers seem uninterested. It says [hohs].";
+	if the player's command includes "envelope" or the player's command includes "think" or the player's command includes "hint" or the player's command includes "help":
+		say "You glance at your envelope, [one of]once again [or][stopping]worried you might be cheating. But you can't imagine what other clue you have.[paragraph break]The lawyers [one of]still [or][stopping]look nonchalant, fortunately. It says [hohs].";
 		reject the player's command;
 
 volume main rooms
