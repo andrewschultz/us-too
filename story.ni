@@ -22,16 +22,71 @@ volume intro
 
 when play begins:
 	now left hand status line is "[location of player]";
+	say "The old mine is yours, now. You were left it in a will by a relative you barely remember. Aunt Rickie-Ann. She gave you  weird little logic puzzle. 'Tricky,' you mused, and she seemed to smile. But you did not solve it, until the family gathering was over. She had already gotten in her car, and you tried to yell as she drove away. Your family told you not to bug her, which was funny, because everyone seemed to be buttering her up about how rich she was.";
+	wfak;
+	say "You explained this to your parents, who got really cheesed off you didn't figure it sooner to impress her. That could've been their ticket! Uh, they meant, yours." ;
+	wfak;
+	say "Aunt Rickie-Ann held on longer than anyone thought. Your parents went up to get a good word with her, not bringing you, of course, after your flub. But she remained secretive about her will.";
+	wfak;
+	say "Soon after she died, her relatives received envelopes in the mail. They were each from the same address, but the actual location was a bit different. Your parents and siblings? [hwhs]. You? [hohs].";
+	wfak;
+	say "You were one of the few to get [hohs]. It seemed like a terrible sign, but as the will was read, the [hwhs] people roared furiously as Aunt Rickie-Ann mentioned them by name, then thought, no, they nagged too much. So that thing they wanted? To charity! Although ... well, they would get $1000 and travel expenses, if they sarcastically said 'Well, how swell.' And promptly left. Most said it, with passion.";
+	wfak;
+	say "You were ready to say so, for your own $1000. And it felt weird, being one of three people left, eventually.";
+	wfak;
+	say "'You impressed her,' one of the lawyers tells you, waiting for the response. 'But you need to impress us, now. No babbling. She was never big on words. Especially big words. Fail, and you only get $10000. You have as long as you need. We have been comped well for our time.'";
+	wfak;
+	say "You fumble nervously with your envelope. What [i]could[r] they be talking about?";
 
 book you
 
 [ho-pal-hope-al]
 
-volume rooms
+volume the player
+
+chapter cheese
+
+the cheese is a thing. description is "All sorts of cheese, really. Everyone is sure to like one of the types. They're probably sure to hate another, what with some types of cheese being really really polarizing, but that just leaves more for everyone else."
+
+book House Well So Swell
+
+House Well How Swell is a room. printed name is "House Well-How-Swell".
+
+after reading a command when player is in House Well How Swell:
+	if the player's command exactly matches the text "how so":
+		say "One lawyer stands up and snaps their fingers. 'There you go! I knew you'd get it.";
+		increment core-score;
+		follow the score and thinking changes rule;
+		wfak;
+		say "'Let's see, you're ... oh, you're the kid who ran after her with the solution to her little puzzle. She really was impressed, but she was just so sick of being fawned over, she didn't want to get out of her car again. She knew from the way some of her worse relatives bad-mouthed you, you were more than all right. She owned this old mine and even had a small trust fund to pay taxes. Though for you, it's sort of a new mine... and just checking, but you know what to say?'";
+		wfak;
+		say "You pause. Then 'MY new mine?! Ooh...'[paragraph break]'Bingo! Again!'";
+		wfak;
+		say "You're a bit worried. You can't just up and leave your job like that. The lawyers assure you the mine is not going anywhere. You build up vacation time from work. You call some trusted friends. 'You're getting shafted,' a few laugh. Enough don't.";
+		wfak;
+		move player to My New Mine Ooh;
+		reject the player's command;
+	if number of words in the player's command > 2:
+		say "The lawyers yawn. You really are talking too much!";
+		reject the player's command;
+	if the player's command includes "how" or the player's command includes "so":
+		say "The lawyers['] ears seem to perk up for a second.";
+		reject the player's command;
+	if number of words in the player's command < 2:
+		say "One of the lawyers tells you to speak up a little, there.";
+		reject the player's command;
+	if the player's command includes "lawyers" or the player's command includes "lawyer":
+		say "The lawyers sit, stone-faced. You will get no clues from them.";
+		continue the action;
+	if the player's command includes "envelope":
+		say "You glance at your envelope, worried you might be cheating. But the lawyers seem uninterested. It says [hohs].";
+		reject the player's command;
+
+volume main rooms
 
 book my new mine ooh
 
-My New Mine Ooh is a room in universal. printed name is "My New Mine, Ooh!". description is "You can go outside here. [if sco-be-strong is true]You've cleared the way[else if sco-my-quest is true]Well, you could, but the way out is blocked[else]But you're still finding your bearings and purpose[end if].".
+My New Mine Ooh is a room in universal. printed name is "My New Mine, Ooh!". description is "You can go outside here. [if sco-be-strong is true]You've cleared the way[else if sco-my-quest is true]Well, you could, but the way out is blocked[else]But you're still finding your bearings and purpose. At least you know who you are. Maybe that'll help[end if].".
 
 check going outside in Mine Ooh:
 	if sco-my-quest is false, say "You don't want to go wandering outside after you just got here! You need to catch your bearings. Have something to focus on, instead." instead;
@@ -40,7 +95,7 @@ check going outside in Mine Ooh:
 
 chapter Mike West (you)
 
-Mike West is a person in Mine Ooh. the player is Mike West. description of Mike West is "You are Mike West."
+Mike West is a person in House Well How Swell. the player is Mike West. description of Mike West is "You are Mike West."
 
 chapter "item using"
 

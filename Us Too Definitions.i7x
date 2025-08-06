@@ -68,6 +68,12 @@ this is the score and thinking changes rule:
 		say "[i][bracket]Your score just went up by [if sco-delt is 1]a point[else][sco-delt in words] points[end if]![close bracket][r][line break]";
 		now last-current-score is current-score;
 
+volume to say
+
+to say hwhs: say "[i]House Well-How-Swell[r]"
+
+to say hohs: say "[i]House O['] --- --[r]"
+
 volume command parsing
 
 the check forks rule is listed first in the for printing a parser error rulebook.
