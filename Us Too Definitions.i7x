@@ -17,13 +17,18 @@ volume directions
 
 a direction can be branchdone. a direction is usually not branchdone.
 
+definition: a direction (called di) is branchcant:
+	if di is branchdone, no;
+	if the room di of location of player is nowhere, yes;
+	no;
+
 definition: a direction (called di) is branchcan:
 	if di is branchdone, no;
 	if the room di of location of player is nowhere, no;
 	yes;
 
 after printing the name of a direction (called di) while pri-branch-reject is true:
-	say " to [the room di of location of player]";
+	if the room di of location of player is visited, say " to [the room di of location of player]";
 	continue the action;
 
 a direction has text called donetext.

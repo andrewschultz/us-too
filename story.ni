@@ -159,17 +159,21 @@ Ur Branch is a room in universal. It is outside of My New Mine Ooh. printed name
 
 rule for printing the locale description of ur branch:
 	now pri-branch-reject is true;
+	if number of branchcan directions > 0, say "You could also go [list of branchcan directions]. ";
 	if number of branchdone directions > 0:
-		say "You don't need to go back to [list of branchdone directions].";
+		say "However, you don't need to go back [list of branchdone directions].";
+	else:
+		say "[line break]";
 	now pri-branch-reject is false;
+	continue the action;
 
-rule for printing the locale description of ur branch:
-	now pri-branch-reject is true;
-	if number of branchcan directions > 0:
-		say "You could also go [list of branchcan directions].";
-	now pri-branch-reject is false;
+check going in ur branch (this is the branch blocker rule): if noun is branchdone, say "[donetext of noun]" instead;
 
-check going in ur branch (this is the branch blocker rule): if noun is branchdone, say "[donetext of noun]." instead;
+after printing the locale description for Ur Branch when sco-mess-pot is true and northwest is branchcant:
+	say "[line break]You hear a rumbling from the pro ball. You see an inverted image of this very Ur-Branch! Not only that, you see passages northwest and northeast, to hidden lairs. You wonder why they only became available now, but then you realize your time cleaning up the meh spot got you in the mood to, well, clean other stuff up. You brush aside the leaves and whatnot to reveal passages to two new areas.";
+	reveal bore dread to northeast;
+	reveal sore dark to northwest;
+	continue the action;
 
 [cur, car, bar, or, saw branches]
 

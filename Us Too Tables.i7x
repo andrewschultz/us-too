@@ -135,9 +135,7 @@ a wordtwisting rule (this is the pre-herb-ranch rule):
 this is the post-herb-ranch rule:
 	now sco-herb-ranch is true;
 	say "You find a path to a herb ranch. Of course every stew needs herbs. The farmer there gives you a sample saying 'Some herb, eh?' The phrase sticks with you as conversation continues.[paragraph break]It's a surprisingly enlightening one. What can you do with it?";
-	now player has some herb eh;
-	reveal bore dread to northeast;
-	reveal sore dark to northwest;
+	now player has herbs;
 
 a wordtwisting rule (this is the pre-probe-all rule):
 	if pro ball is not touchable, unavailable;
