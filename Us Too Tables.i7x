@@ -2,13 +2,18 @@ Version 1/241005 of Us Too Tables by Andrew Schultz begins here.
 
 "This lays out the major tables for Us Too for easy indexing and searching, as well as any rules related to the tables."
 
+[REMINDER: mrc.py to create new point scoring action]
+
 volume the main table
+
+[note: # of rows != total points since we start with HOW SO]
 
 table of main oronyms
 w1 (text)	w2 (text)	first-hom (text)	second-hom	hom-txt-rule (rule)	first-exact	first-close	second-exact	second-close	part-explain	think-cue	okflip	core	idid	everfail	best-room	check-rule	run-rule	wfull (topic)	think-advice (text)
 "my"	"quest"	--	--	--	false	false	false	false	"how to get started and what to do"	false	true	true	false	false	mine ooh	pre-my-quest rule	post-my-quest rule	--	--
-"nice"	"warm"	--	--	--	false	false	false	false	"making the swarm less aggressive"	false	true	true	false	false	mine ooh	pre-nice-warm rule	post-nice-warm rule	--	--
 "be"	"strong"	--	--	--	false	false	false	false	"getting rid of the beast"	false	true	true	false	false	mine ooh	pre-be-strong rule	post-be-strong rule	--	--
+"summon"	"cheese"	--	--	--	false	false	false	false	"figuring what some munchies are"	false	true	true	false	false	--	pre-summon-cheese rule	post-summon-cheese rule	--	--
+"nice"	"warm"	--	--	--	false	false	false	false	"making the swarm less aggressive"	false	true	true	false	false	mine ooh	pre-nice-warm rule	post-nice-warm rule	--	--
 "mess"	"pot"	--	--	--	false	false	false	false	"making the spot into something more useful"	false	true	true	false	false	mine ooh	pre-mess-pot rule	post-mess-pot rule	--	--
 "meh"	"skit"	--	--	--	false	false	false	false	"having harmless, useless fun with the mess kit"	false	true	false	false	false	mine ooh	pre-meh-skit rule	post-meh-skit rule	--	--
 "a"	"stew"	--	--	--	false	false	false	false	"achieving the game's objective"	false	true	true	false	false	mine ooh	pre-a-stew rule	post-a-stew rule	--	"You can make [b]A STEW[r] [once-now of pre-a-stew rule] you have all the ingredients you need."
@@ -20,8 +25,7 @@ w1 (text)	w2 (text)	first-hom (text)	second-hom	hom-txt-rule (rule)	first-exact	
 "board"	"red"	"bored"	--	--	false	false	false	false	"finding something in the Bore Dread"	false	true	true	false	false	bore dread	pre-board-red rule	post-board-red rule	--	--
 "probe"	"all"	--	--	--	false	false	false	false	"finding a purpose for the pro ball"	false	true	true	false	false	ur branch	pre-probe-all rule	post-probe-all rule	--	--
 "scry"	"bread"	--	"bred"	--	false	false	false	false	"getting something from the scribe (red)"	false	true	true	false	false	scribe red	vc-scry-bread rule	vr-scry-bread rule	--	--
-
-["summon"	"cheese"	--	--	--	false	false	false	false	"clue for guessing one word right"	false	true	true	false	false	my new	pre-summon-cheese rule	post-summon-cheese rule	--	--]
+"claim"	"it"	--	--	--	false	false	false	false	"clue for guessing one word right"	false	true	true	false	false	pile up isle	pre-claim-it rule	post-claim-it rule	--	--
 
 chapter scribe red scoring
 
@@ -222,6 +226,22 @@ this is the post-board-red rule:
 	say "You turn up a board (red) ... it's narrow and six feet long, made of styrofoam, with CATCH THE WAVES and STAND ON THIS SIDE written on one side. Since it wasn't hard to find, you don't feel excited you found it, but you carry it anyway.";
 	now player has board red;
 	block-and-back;
+
+chapter pile up isle scoring
+
+a wordtwisting rule (this is the pre-claim-it rule):
+	if player is not in pile up isle, unavailable;
+	if sco-claim-it is false:
+		vcp "You still need to do something!";
+		not-yet;
+	if sco-claim-it is true:
+		vcal "You already did this!";
+		already-done;
+	ready;
+
+this is the post-claim-it rule:
+	now sco-claim-it is true;
+	say "Hooray! You figured what to do! You get a point!";
 
 volume directions
 

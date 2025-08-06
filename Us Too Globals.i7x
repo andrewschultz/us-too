@@ -21,6 +21,11 @@ pri-branch-reject is a truth state that varies.
 chapter game states
 
 gs-using-known is a truth state that varies.
+gs-taken-inventory is a truth state that varies.
+
+chapter on you
+
+sco-summon-cheese is a truth state that varies.
 
 chapter my new mine oo
 
@@ -46,20 +51,24 @@ section bore dread
 
 sco-board-red is a truth state that varies.
 
-chapter summer bay
+chapter Beach Ill
 
-sco-pie-crust is a truth state that varies.
-sco-probe-all is a truth state that varies.
-
-chapter unsorted
+sco-be-chill is a truth state that varies.
 
 sco-nice-warm is a truth state that varies.
 
+sco-pie-crust is a truth state that varies.
+
+sco-probe-all is a truth state that varies.
+
+chapter A Pile-Up Isle
+
+sco-claim-it is a truth state that varies.
+
+chapter unsorted
+
 sco-scry-bread is a truth state that varies.
 
-sco-summon-cheese is a truth state that varies.
-
-sco-be-chill is a truth state that varies.
 
 Us Too Globals ends here.
 

@@ -221,11 +221,23 @@ chapter board red
 
 The board red is a thing. printed name is "board (red)". "It's about six feet long and one foot wide, or it would be when unfolded (it snaps into and out of its full length easily. You checked.) It has THIS SIDE UP and CATCH THE WAVES on it."
 
+book A Pile Up Isle
+
+A Pile Up Isle is a room. printed name is "A Pile-Up Isle".
+
+chapter clay mitt
+
+the clay mitt is a thing in A Pile Up Isle. description is "It should protect your hands against all but the fieriest of oven flames.".
+
+check taking clay mitt: say "You don't feel bold enough to. Just taking isn't enough." instead;
+
 volume unsorted
 
-chapter munchies
+book House O How So
 
-the cheese is a thing.
+House O How So is a room. printed name is "[if true is true]House O['] How So[else]House Well-How-Swell[end if]".
+
+book unclaimed things
 
 chapter scribe red
 
