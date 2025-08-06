@@ -9,7 +9,7 @@ test w with "test w1/test w2/meh skit".
 
 chapter implemented/placed
 
-test w1 with "my quest/be strong/out/herb ranch/summer bay/e/nice warm/probe all".
+test w1 with "my quest/be strong/out/herb ranch/summer bay/e/be chill/nice warm/probe all".
 
 test w2 with "w/in/mess pot".
 

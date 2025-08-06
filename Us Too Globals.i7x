@@ -6,9 +6,9 @@ volume game variables
 
 main-table is table of main oronyms.
 
-core-max is a number that varies. core-max is 11.
+core-max is a number that varies. core-max is 12.
 
-cur-max-bonus is a number that varies. cur-max-bonus is 0.
+cur-max-bonus is a number that varies. cur-max-bonus is 1.
 
 max-bonus is a number that varies. max-bonus is 1.
 
@@ -58,6 +58,8 @@ sco-nice-warm is a truth state that varies.
 sco-scry-bread is a truth state that varies.
 
 sco-summon-cheese is a truth state that varies.
+
+sco-be-chill is a truth state that varies.
 
 Us Too Globals ends here.
 

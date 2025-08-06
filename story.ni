@@ -124,11 +124,11 @@ some herb eh is a proper-named thing. description is "It's some herb, eh? [if sc
 
 book Beach Ill
 
-Beach Ill is a room in universal. "It's nice here. The only way out is back west, since you can't swim the other ways."
+Beach Ill is a room in universal. "[if sco-be-chill is false]You have a general sense of malaise here, which isn't usual for these environs, but it's there, and not being able to get rid of it simply is causing more malaise[else]It's nice here. The only way out is back west, since you can't swim the other ways[end if]."
 
 chapter nigh swarm
 
-the nigh swarm is a thing in Beach Ill. "A nigh swarm ruins the tranquility of the area. You can't see behind it.". description is "The nigh swarm buzzes aggresively.".
+the nigh swarm is a thing. "A nigh swarm ruins the tranquility of the area. You can't see behind it.". description is "The nigh swarm buzzes aggresively.".
 
 chapter pro ball
 
