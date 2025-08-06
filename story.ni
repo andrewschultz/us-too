@@ -95,29 +95,7 @@ after reading a command when player is in House Well How Swell:
 		say "You glance at your envelope, [one of]once again [or][stopping]worried you might be cheating. But you can't imagine what other clue you have.[paragraph break]The lawyers [one of]still [or][stopping]look nonchalant, fortunately. It says [hohs].";
 		reject the player's command;
 
-volume main rooms
-
-book my new mine ooh
-
-My New Mine Ooh is a room in universal. printed name is "My New Mine, Ooh!". description is "You can go outside here. [if sco-be-strong is true]You've cleared the way--you can't be sure of the direction, as the path twists a bit[else if sco-my-quest is true]Well, you could, but the way out is blocked[else]But you're still finding your bearings and purpose. You feel a bit of imposter syndrome, just being given this mine. At least you know who you are, and maybe that'll help reframe things[end if].".
-
-check thinking in Mine Ooh when sco-my-quest is false:
-	say "You're a bit lost, but you track what you know:";
-	say "--you went to [hwhs], called [hohs], and your response 'How so?' impressed the lawyers.";
-	say "--the lawyers reacted positively to 'My new mine, ooh!'";
-	if gs-taken-inventory is true:
-		say "--the [tour ad] and [using] are ... odd, to say the least.";
-	say "--your name is Mike West. Aunt Rickie-Ann said she REALLY liked that name.";
-	if gs-taken-inventory is false:
-		say "[line break]Maybe you should take [b]INVENTORY[r] with [b]I[r]. That might provide another clue.";
-	the rule succeeds;
-
-check going outside in Mine Ooh:
-	if sco-my-quest is false, say "You don't want to go wandering outside after you just got here! You need to catch your bearings. Focus on yourself a bit." instead;
-	if sco-be-strong is false, say "[The beast] blocks your way. How wrong of it! You try physically shifting around, but it's unmoved. Maybe adjusting your mental attitude will do the trick." instead;
-	if ur branch is unvisited, say "So you begin your quest...";
-
-chapter Mike West (you)
+book Mike West (you)
 
 Mike West is a person in House Well How Swell. the player is Mike West. description of Mike West is "You are Mike West[if sco-my-quest is false]. People always said it was a boring name, with nothing exciting about it, but you always hoped they were wrong[end if]."
 
@@ -158,6 +136,28 @@ chapter too rad tour ad
 Mike West carries the too rad tour ad. printed name of tour ad is "too-rad tour ad".
 
 description of tour ad is "It describes your new mine in detail. It's too big to explore on your own. So you need friends to bring together. And you need a way to bring them together."
+
+volume main rooms
+
+book my new mine ooh
+
+My New Mine Ooh is a room in universal. printed name is "My New Mine, Ooh!". description is "You can go outside here. [if sco-be-strong is true]You've cleared the way--you can't be sure of the direction, as the path twists a bit[else if sco-my-quest is true]Well, you could, but the way out is blocked[else]But you're still finding your bearings and purpose. You feel a bit of imposter syndrome, just being given this mine. At least you know who you are, and maybe that'll help reframe things[end if].".
+
+check thinking in Mine Ooh when sco-my-quest is false:
+	say "You're a bit lost, but you track what you know:";
+	say "--you went to [hwhs], called [hohs], and your response 'How so?' impressed the lawyers.";
+	say "--the lawyers reacted positively to 'My new mine, ooh!'";
+	if gs-taken-inventory is true:
+		say "--the [tour ad] and [using] are ... odd, to say the least.";
+	say "--your name is Mike West. Aunt Rickie-Ann said she REALLY liked that name.";
+	if gs-taken-inventory is false:
+		say "[line break]Maybe you should take [b]INVENTORY[r] with [b]I[r]. That might provide another clue.";
+	the rule succeeds;
+
+check going outside in Mine Ooh:
+	if sco-my-quest is false, say "You don't want to go wandering outside after you just got here! You need to catch your bearings. Focus on yourself a bit." instead;
+	if sco-be-strong is false, say "[The beast] blocks your way. How wrong of it! You try physically shifting around, but it's unmoved. Maybe adjusting your mental attitude will do the trick." instead;
+	if ur branch is unvisited, say "So you begin your quest...";
 
 chapter beast wrong
 
