@@ -110,7 +110,8 @@ a wordtwisting rule (this is the pre-a-stew rule):
 this is the post-a-stew rule:
 	now sco-a-stew is true;
 	say "Well, that does it! You make the stew, and you win. As you make the stew, you reflect it is not MY stew, which would be kind of a me-ill meal, but A stew.[paragraph break]You make other random seeming stews over there years, but none quite has the flavor of this one.";
-	end the story saying "A swell ace! WELL!";
+	end the story finally saying "A swell ace! WELL!";
+	follow the shutdown rules;
 
 chapter recipe scoring
 
@@ -124,7 +125,7 @@ a wordtwisting rule (this is the pre-summon-cheese rule):
 
 this is the post-summon-cheese rule:
 	now sco-summon-cheese is true;
-	say "You're confident you've figured what the nmunchies are. And you know what? You're right! You have all sorts of cheese now.";
+	say "You're confident you've figured what the munchies are. And you know what? You're right! You have all sorts of cheese now.";
 	now player has cheese;
 
 chapter ur branch scoring
@@ -144,7 +145,7 @@ this is the post-herb-ranch rule:
 a wordtwisting rule (this is the pre-probe-all rule):
 	if pro ball is not touchable, unavailable;
 	if sco-probe-all is true:
-		vcal "You already probed the pro ball enough to get a feel for hidden exits your surroundings! More may appear as you need them.";
+		vcal "You already probed the pro ball enough to get a feel for hidden exits in your surroundings! More will appear as you need them.";
 		already-done;
 	ready;
 
@@ -157,18 +158,18 @@ this is the post-probe-all rule:
 	say "You poke at the pro ball, which opens your consciousness further to the oddness of diagonally directional pathways, and how they might not be strictly necessary most of the time, but in the Ur-Branch, well, they are a bit more appropriate.[paragraph break]On return, you notice new branches: northeast and northwest!";
 
 a wordtwisting rule (this is the pre-summer-bay rule):
-	if player does not have herb, unavailable;
+	if player does not have herbs, unavailable;
 	if sco-summer-bay is true:
-		vcal "You already used the herb!";
+		vcal "You already used the herb to expand your mind! It is only good for seasoning now";
 		already-done;
 	if player is not in ur branch:
-		vcp "Nothing happens with the herb. Maybe be somewhere else.";
+		vcp "Perhaps you should use the herb in a more wide-open place. Like the Ur-Branch where you got it.";
 		not-yet;
 	ready;
 
 this is the post-summer-bay rule:
 	now sco-summer-bay is true;
-	say "The herb gives off a weird ... well, not quite a smell. But it opens your mind to new passages. And you find one east.";
+	say "The herb gives off a weird ... well, not quite a smell. But it opens your mind to new passages, passages that might actually lead somewhere, without having to light it or do anything adults who drank a lot told you was very, very dangerous.[paragraph break]Your newly opened mind discerns a safe passage east. Hey, that's a start!";
 	reveal Beach Ill to east;
 
 chapter Beach Ill scoring

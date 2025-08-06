@@ -46,11 +46,11 @@ volume the player
 
 chapter cheese
 
-the cheese is a thing. description is "All sorts of cheese, really. Everyone is sure to like one of the types. They're probably sure to hate another, what with some types of cheese being really really polarizing, but that just leaves more for everyone else."
+some cheese is a singular-named thing. description is "All sorts of cheese, really. Everyone is sure to like one of the types. They're probably sure to hate another, what with some types of cheese being really really polarizing, but that just leaves more for everyone else."
 
 book House Well So Swell
 
-House Well How Swell is a room. printed name is "House Well-How-Swell".
+House Well How Swell is a room. printed name is "House Well-How-Swell". "The lawyers look at you expectantly. You fiddle with your envelope. You hope you haven't come all this way for nothing!"
 
 after reading a command when player is in House Well How Swell:
 	if the player's command exactly matches the text "how so":
@@ -86,16 +86,16 @@ volume main rooms
 
 book my new mine ooh
 
-My New Mine Ooh is a room in universal. printed name is "My New Mine, Ooh!". description is "You can go outside here. [if sco-be-strong is true]You've cleared the way[else if sco-my-quest is true]Well, you could, but the way out is blocked[else]But you're still finding your bearings and purpose. At least you know who you are. Maybe that'll help[end if].".
+My New Mine Ooh is a room in universal. printed name is "My New Mine, Ooh!". description is "You can go outside here. [if sco-be-strong is true]You've cleared the way--you can't be sure of the direction, as the path twists a bit[else if sco-my-quest is true]Well, you could, but the way out is blocked[else]But you're still finding your bearings and purpose. You feel a bit of imposter syndrome, just being given this mine. At least you know who you are, and maybe that'll help reframe things[end if].".
 
 check going outside in Mine Ooh:
-	if sco-my-quest is false, say "You don't want to go wandering outside after you just got here! You need to catch your bearings. Have something to focus on, instead." instead;
+	if sco-my-quest is false, say "You don't want to go wandering outside after you just got here! You need to catch your bearings. Focus on yourself a bit." instead;
 	if sco-be-strong is false, say "[The beast] blocks your way. How wrong of it! You try physically shifting around, but it's unmoved. Maybe adjusting your mental attitude will do the trick." instead;
 	if ur branch is unvisited, say "So you begin your quest...";
 
 chapter Mike West (you)
 
-Mike West is a person in House Well How Swell. the player is Mike West. description of Mike West is "You are Mike West."
+Mike West is a person in House Well How Swell. the player is Mike West. description of Mike West is "You are Mike West[if sco-my-quest is false]. People always said it was a boring name, with nothing exciting about it, but you always hoped they were wrong[end if]."
 
 chapter "item using"
 
@@ -105,7 +105,7 @@ check examining aight for the first time:
 	say "It's a recipe, actually.";
 
 to say aight-stuff:
-	say "--some munchies ([if sco-summon-cheese is false]why isn't it specified?[run paragraph on][else]SUMMONED the CHEESE[end if])[line break]";
+	say "--some munchies ([if sco-summon-cheese is false]the kind is not specified. What's up with that?[run paragraph on][else]SUMMONED the CHEESE[run paragraph on][end if])[line break]";
 
 to default-x-to-aight:
 	say "Note that [b]X[r] will default to [using] in the future.";
@@ -133,7 +133,7 @@ chapter too rad tour ad
 
 Mike West carries the too rad tour ad. printed name of tour ad is "too-rad tour ad".
 
-description of tour ad is "It describes your new mine in detail. But you need your friends to help explore it.".
+description of tour ad is "It describes your new mine in detail. It's too big to explore on your own. So you need friends to bring together. And you need a way to bring them together."
 
 chapter beast wrong
 
@@ -179,11 +179,11 @@ after printing the locale description for Ur Branch when sco-mess-pot is true an
 
 chapter herbs
 
-some herb eh is a proper-named thing. description is "It's some herb, eh? [if sco-summer-bay is true]It helped you find a new place to visit, and it's still edible![else]Apparently it can give enlightenment to new life paths, but, uh, not THAT way.[end if]". printed name is "'some herb, eh?'"
+some herbs are a proper-named thing. description is "It's some herb, eh? [if sco-summer-bay is true]It helped you find a new place to visit, and it's still edible![else]Apparently it can give enlightenment to new life paths, but, uh, not THAT way.[end if]". printed name is "[if sco-summer-bay is true]herbs[else]'some herb, eh?'". understand "herbs/herb eh" and "herb" as some herbs.
 
 book Beach Ill
 
-Beach Ill is a room in universal. "[if sco-be-chill is false]You have a general sense of malaise here, which isn't usual for these environs, but it's there, and not being able to get rid of it simply is causing more malaise[else]It's nice here. The only way out is back west, since you can't swim the other ways[end if]."
+Beach Ill is a room in universal. printed name is "[if sco-be-chill is false]Beach, Ill[else if sco-probe-all is false]Bless-and-Bleah Sand[else]Dune Ever-Do-Never[end if]". "[if sco-be-chill is false]You have a general sense of malaise here, which isn't usual for these environs, but it's there, and not being able to get rid of it simply is causing more malaise[else]It's nice here. The only way out on foot is back west, since you can't swim the other ways[end if]."
 
 chapter nigh swarm
 
