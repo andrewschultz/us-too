@@ -102,7 +102,7 @@ a wordtwisting rule (this is the pre-a-stew rule):
 	if player is not in mine ooh:
 		vcp "You need to be back in your mine for this.";
 		not-yet;
-	if sco-a-stew is false:
+	if sco-a-stew is false and debug-win is false:
 		vcp "You don't have all the stew ingredients you need!";
 		not-yet;
 	ready;
