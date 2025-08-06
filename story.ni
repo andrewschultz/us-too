@@ -215,7 +215,9 @@ the nigh swarm is a thing. "A nigh swarm ruins the tranquility of the area. You 
 
 chapter pro ball
 
-the pro ball is a thing. description is "It's not a pro sports ball. More like an orb. But if it were an orb, well , it wouldn't quite work.[paragraph break][if sco-probe-all is false]If you look at it right, you may be able to see a bit more[else]It's weird. The pro ball doesn't seem to reveal anything new when you look at it for any period of time[end if].".
+the pro ball is a thing. description is "[if sco-probe-all is false]If you look at it right, you may be able to see a bit more, but you haven't, yet[else]Hmmph. The pro ball doesn't seem to reveal anything new when you look at it for any period of time[end if].".
+
+check examining pro ball for the first time: say "It's not a pro sports ball. More like an orb. But if it were an orb, well, it wouldn't quite work as-is. I think you understand by now.";
 
 check taking pro ball when sco-probe-all is false: say "It won't budge. At least, not right now." instead;
 
