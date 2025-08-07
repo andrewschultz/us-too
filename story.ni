@@ -298,6 +298,10 @@ book Pea Stalks
 
 Pea Stalks is a room. "Pea stalks grow here. But they're nothing you can eat, or prepare to eat quickly."
 
+chapter pea pod
+
+the pea pod is a thing. "It's an unusual pea pod. It'll go well with the meal."
+
 book A Pile Up Isle
 
 A Pile Up Isle is a room. printed name is "A Pile-Up Isle".

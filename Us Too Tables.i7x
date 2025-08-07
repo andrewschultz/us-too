@@ -30,6 +30,7 @@ w1 (text)	w2 (text)	first-hom (text)	second-hom	hom-txt-rule (rule)	first-exact	
 "peace"	"talks"	--	--	--	false	false	false	false	"clue for guessing one word right"	false	true	true	false	false	pea stalks	pre-peace-talks rule	post-peace-talks rule	--	--
 "can"	"take"	--	--	--	false	false	false	false	"clue for guessing one word right"	false	true	true	false	false	dome aching	pre-can-take rule	post-can-take rule	--	--
 "claim"	"it"	--	--	--	false	false	false	false	"clue for guessing one word right"	false	true	true	false	false	pile up isle	pre-claim-it rule	post-claim-it rule	--	--
+"peep"	"odd"	--	--	--	false	false	false	false	"finding something unusual within the Pea Stalks"	false	true	false	false	false	pea stalks	pre-peep-odd rule	post-peep-odd rule	--	--
 
 chapter scribe red scoring
 
@@ -274,6 +275,18 @@ this is the post-peace-talks rule:
 	now sco-peace-talks is true;
 	say "Getting back to nature and stuff leaves you at peace with yourself. So at peace, you want to spread that peace to others, whether or not they fully deserve it. However, now you're so at peace, you recognize you are disturbing the plants' peace. You retreat to the Ur-Branch.";
 	block-and-back;
+
+a wordtwisting rule (this is the pre-peep-odd rule):
+	if player is not in pea stalks, unavailable;
+	if sco-peep-odd is true:
+		vcal "There are no other odd pea pods.";
+		already-done;
+	ready;
+
+this is the post-peep-odd rule:
+	now sco-peep-odd is true;
+	say "Oh wait! There is something that will add a bit of flavor!";
+	now player has pea pod;
 
 chapter pile up isle scoring
 
