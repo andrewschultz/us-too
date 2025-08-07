@@ -328,6 +328,14 @@ the clay mitt is a thing in A Pile Up Isle. description is "It should protect yo
 
 check taking clay mitt: say "You don't feel bold enough to. Just taking isn't enough." instead;
 
+chapter pike
+
+the pike is a thing in A Pile Up Isle. "A pike lies here as part of the bric-a-brac. [if sco-pie-crust is false]And, oh boy, it has some rust on it.  Pike rust![else]It is shiny and new now you repurposed its rust.[end if]"
+
+section pike rust
+
+the pike rust is a thing. "It's on the pike, sort of a cover on the side. Perhaps it is better as something else."
+
 volume unsorted
 
 book unclaimed things
@@ -339,14 +347,6 @@ the scribe red is a sentient. printed name is "scribe (red)".
 chapter bread
 
 the bread is a thing.
-
-chapter pike
-
-the pike is a thing. "Sir Frighteously left his pike behind. [if sco-pie-crust is false]And, oh boy, it has some rust on it.  Pike rust![else]IT is shiny and new now you repurposed its rust.[end if]"
-
-section pike rust
-
-the pike rust is a thing. "It's on the pike. Perhaps it is better as something else."
 
 volume regular verbs
 
