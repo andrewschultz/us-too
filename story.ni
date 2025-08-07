@@ -224,6 +224,11 @@ rule for printing the locale description of ur branch:
 
 check going in ur branch (this is the branch blocker rule): if noun is branchdone, say "[donetext of noun]" instead;
 
+after printing the locale description for Ur Branch when sco-nah-queue is true and southeast is branchcant:
+	say "You hear a scuffle and see the [Forest] running away. They moan something about a garden tree getting in the way. You didn't see one before, but ... you see one, now, and you see their most recent footprints. It doesn't appear particularly aggressive, but it's in the way.";
+	reveal Pea Stalks to inside;
+	move garden tree to Ur Branch;
+
 after printing the locale description for Ur Branch when sco-mess-pot is true and northwest is branchcant:
 	say "[line break]You hear a rumbling from the pro ball. You see an inverted image of this very Ur-Branch! Not only that, you see passages northwest and northeast, to hidden lairs. You wonder why they only became available now, but then you realize your time cleaning up the meh spot helped you be more organized and see more organization, and perhaps you weren't ready to look at the pro ball right. Among the leaf paths, leaves and whatnot you notice reveal passages to three new areas. Two look relatively safe, but the one north leaves you uneasy.";
 	reveal bore dread to northeast;
@@ -236,6 +241,10 @@ after printing the locale description for Ur Branch when sco-mess-pot is true an
 chapter herbs
 
 some herbs are a proper-named thing. description is "It's some herb, eh? [if sco-summer-bay is true]It helped you find a new place to visit, and it's still edible![else]Apparently it can give enlightenment to new life paths, but, uh, not THAT way.[end if]". printed name is "[if sco-summer-bay is true]herbs[else]'some herb, eh?'". understand "herbs/herb eh" and "herb" as some herbs.
+
+chapter garden tree
+
+the garden tree is a thing. "That garden tree the [forest] were whining about stands here."
 
 book Beach Ill
 
@@ -264,6 +273,7 @@ The pun tweaker is a sentient. "The pun tweaker continues to stay here, looking 
 chapter gauche hip go ship
 
 the gauche hip go ship is scenery. printed name is "Gauche/Hip GO-Ship". "It's really gaudy. You'll probably never get a chance to ride in it. But maybe it contains something you need."
+
 book Sore Dark
 
 Sore Dark is a room in universal. description is "[if sco-sword-ark is false]You can't see much here, but maybe if you fumble around for what you need, you'll find it[else]The thought of having to stay here after finding something cool leaves you, well, sore[end if]. Good thing you have that blah string to lead your way back out southeast!"

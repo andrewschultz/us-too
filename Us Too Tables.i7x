@@ -20,6 +20,7 @@ w1 (text)	w2 (text)	first-hom (text)	second-hom	hom-txt-rule (rule)	first-exact	
 "herb"	"ranch"	--	--	--	false	false	false	false	"finding the first place to visit from the Ur-Branch"	false	true	true	false	false	ur branch	pre-herb-ranch rule	post-herb-ranch rule	--	--
 "summer"	"bay"	--	--	--	false	false	false	false	"letting the herb reveal a new location"	false	true	true	false	false	ur branch	pre-summer-bay rule	post-summer-bay rule	--	--
 "blah"	"copse"	--	--	--	false	false	false	false	"avoiding the black ops"	false	true	true	false	false	ur branch	pre-blah-copse rule	post-blah-copse rule	--	--
+"guard"	"entry"	--	--	--	false	false	false	false	"clue for guessing one word right"	false	true	true	false	false	ur branch	pre-guard-entry rule	post-guard-entry rule	--	--
 "be"	"chill"	--	--	--	false	false	false	false	"dealing with the beach, ill"	false	true	true	false	false	Beach Ill	pre-be-chill rule	post-be-chill rule	--	--
 "pie"	"crust"	"pi"	--	--	false	false	false	false	"finding what's under the pike rust"	false	true	true	false	false	Beach Ill	pre-pie-crust rule	post-pie-crust rule	--	--
 "punt"	"weaker"	--	--	--	false	false	false	false	"trading with the pun tweaker"	false	true	true	false	false	Beach Ill	pre-punt-weaker rule	post-punt-weaker rule	--	--
@@ -179,6 +180,20 @@ this is the post-summer-bay rule:
 	now sco-summer-bay is true;
 	say "The herb gives off a weird ... well, not quite a smell. But it opens your mind to new passages, passages that might actually lead somewhere, without having to light it or do anything adults who drank a lot told you was very, very dangerous.[paragraph break]Your newly opened mind discerns a safe passage east. Hey, that's a start!";
 	reveal Beach Ill to east;
+
+a wordtwisting rule (this is the pre-guard-entry rule):
+	if player is not in ur branch, unavailable;
+	if sco-guard-entry is false:
+		vcp "You still need to do something!";
+		not-yet;
+	if sco-guard-entry is true:
+		vcal "You already did this!";
+		already-done;
+	ready;
+
+this is the post-guard-entry rule:
+	now sco-guard-entry is true;
+	say "Hooray! You figured what to do! You get a point!";
 
 chapter ur branch scoring
 
