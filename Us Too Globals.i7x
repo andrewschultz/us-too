@@ -23,6 +23,7 @@ chapter game states
 gs-using-known is a truth state that varies.
 gs-taken-inventory is a truth state that varies.
 gs-tried-black-ops is a truth state that varies.
+gs-take-hintthing-note is a truth state that varies.
 
 chapter on you
 
