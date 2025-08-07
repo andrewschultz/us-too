@@ -21,6 +21,7 @@ w1 (text)	w2 (text)	first-hom (text)	second-hom	hom-txt-rule (rule)	first-exact	
 "be"	"chill"	--	--	--	false	false	false	false	"dealing with the beach, ill"	false	true	true	false	false	Beach Ill	pre-be-chill rule	post-be-chill rule	--	--
 "pie"	"crust"	"pi"	--	--	false	false	false	false	"finding what's under the pike rust"	false	true	true	false	false	Beach Ill	pre-pie-crust rule	post-pie-crust rule	--	--
 "summer"	"bay"	--	--	--	false	false	false	false	"letting the herb reveal a new location"	false	true	true	false	false	ur branch	pre-summer-bay rule	post-summer-bay rule	--	--
+"blah"	"copse"	--	--	--	false	false	false	false	"clue for guessing one word right"	false	true	true	false	false	ur branch	pre-blah-copse rule	post-blah-copse rule	--	--
 "sword"	"ark"	"soared"	--	--	false	false	false	false	"finding something in the Sore Dark"	false	true	true	false	false	sore dark	pre-sword-ark rule	post-sword-ark rule	--	--
 "board"	"red"	"bored"	--	--	false	false	false	false	"finding something in the Bore Dread"	false	true	true	false	false	bore dread	pre-board-red rule	post-board-red rule	--	--
 "probe"	"all"	--	--	--	false	false	false	false	"finding a purpose for the pro ball"	false	true	true	false	false	ur branch	pre-probe-all rule	post-probe-all rule	--	--
@@ -171,6 +172,21 @@ this is the post-summer-bay rule:
 	now sco-summer-bay is true;
 	say "The herb gives off a weird ... well, not quite a smell. But it opens your mind to new passages, passages that might actually lead somewhere, without having to light it or do anything adults who drank a lot told you was very, very dangerous.[paragraph break]Your newly opened mind discerns a safe passage east. Hey, that's a start!";
 	reveal Beach Ill to east;
+
+chapter ur branch scoring
+
+a wordtwisting rule (this is the pre-blah-copse rule):
+	if player is not in ur branch, unavailable;
+	if north is branchcant, unavailable;
+	if sco-blah-copse is true:
+		vcp "You already figured how to evade the black ops! You can just go north if you need to.";
+		not-yet;
+	ready;
+
+this is the post-blah-copse rule:
+	now sco-blah-copse is true;
+	say "Aha! That was what you were doing wrong. You just needed to tweak a thing or two. This time, you avoid the black-ops site.";
+	move player to Blah Copse;
 
 chapter Beach Ill scoring
 

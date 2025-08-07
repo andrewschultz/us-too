@@ -24,10 +24,12 @@ definition: a direction (called di) is branchcant:
 
 definition: a direction (called di) is branchcan:
 	if di is branchdone, no;
+	if di is down, no;
 	if the room di of location of player is nowhere, no;
 	yes;
 
 after printing the name of a direction (called di) while pri-branch-reject is true:
+	if di is north and sco-blah-copse is false, say " to some black ops";
 	if the room di of location of player is visited, say " to [the room di of location of player]";
 	continue the action;
 

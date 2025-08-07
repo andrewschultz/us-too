@@ -22,6 +22,7 @@ chapter game states
 
 gs-using-known is a truth state that varies.
 gs-taken-inventory is a truth state that varies.
+gs-tried-black-ops is a truth state that varies.
 
 chapter on you
 
@@ -42,6 +43,7 @@ chapter ur branch
 
 sco-herb-ranch is a truth state that varies.
 sco-summer-bay is a truth state that varies.
+sco-blah-copse is a truth state that varies.
 
 section sore dark
 

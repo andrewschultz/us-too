@@ -182,11 +182,12 @@ NORTHWEST = Sore Dark
 NORTHEAST = Bore Dread
 ]
 
-Ur Branch is a room in universal. It is outside of My New Mine Ooh. printed name is "Ur-Branch". "There are so many branches here! While you can go back [b]IN[r] to your mine, [if sco-summer-bay is false]you have no idea where else to go. You could spend too much time wandering around. You could lose focus[else if sco-probe-all is false]there's only east, but maybe you can find more concrete places to visit[else]the branches make more sense than they did at first[end if]."
+Ur Branch is a room in universal. It is above My New Mine Ooh. printed name is "Ur-Branch". "There are so many branches here! While you can go back [b]DOWN[r] to your mine, [if sco-summer-bay is false]you have no idea where else to go. You could spend too much time wandering around. You could lose focus[else if sco-probe-all is false]there's only east, but maybe you can find more concrete places to visit[else]the branches make more sense than they did at first[end if]."
 
 rule for printing the locale description of ur branch:
 	now pri-branch-reject is true;
-	if number of branchcan directions > 0, say "You could also go [list of branchcan directions]. ";
+	let numcan be number of branchcan directions;
+	if numcan > 0, say "The [if numcan > 1]branches you currently see lead[else]only branch you've found so far leads[end if] [list of branchcan directions]. ";
 	if number of branchdone directions > 0:
 		say "However, you don't need to go back [list of branchdone directions].";
 	else:
@@ -197,8 +198,9 @@ rule for printing the locale description of ur branch:
 check going in ur branch (this is the branch blocker rule): if noun is branchdone, say "[donetext of noun]" instead;
 
 after printing the locale description for Ur Branch when sco-mess-pot is true and northwest is branchcant:
-	say "[line break]You hear a rumbling from the pro ball. You see an inverted image of this very Ur-Branch! Not only that, you see passages northwest and northeast, to hidden lairs. You wonder why they only became available now, but then you realize your time cleaning up the meh spot got you in the mood to, well, clean other stuff up. You brush aside the leaves and whatnot to reveal passages to two new areas.";
+	say "[line break]You hear a rumbling from the pro ball. You see an inverted image of this very Ur-Branch! Not only that, you see passages northwest and northeast, to hidden lairs. You wonder why they only became available now, but then you realize your time cleaning up the meh spot helped you be more organized and see more organization, and perhaps you weren't ready to look at the pro ball right. Among the leaf paths, leaves and whatnot you notice reveal passages to three new areas. Two look relatively safe, but the one north leaves you uneasy.";
 	reveal bore dread to northeast;
+	reveal Blah Copse to north;
 	reveal sore dark to northwest;
 	continue the action;
 
@@ -241,6 +243,14 @@ Sore Dark is a room in universal. description is "[if sco-sword-ark is false]You
 chapter sword
 
 The Terra Blade is a proper-named thing.
+
+book Blah Copse
+
+Blah Copse is a room in universal.
+
+check going to Blah Copse when sco-blah-copse is false:
+	now gs-tried-black-ops is true;
+	say "[one of]You walk towards the black ops site, but you're flagged down. What are you doing here? How did you even get close? After some questioning, you're sent back to the Ur-Branch by people who 'suggest' you forget this ever happened. Returning is ... not advised.[or]Oh, no, you're not going back to the black ops site. You're not sure what was going on. You must've made a wrong turn. Maybe you can figure out where you were supposed to REALLY go.[stopping]"  instead;
 
 book Bore Dread
 
