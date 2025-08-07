@@ -18,10 +18,11 @@ w1 (text)	w2 (text)	first-hom (text)	second-hom	hom-txt-rule (rule)	first-exact	
 "meh"	"skit"	--	--	--	false	false	false	false	"having harmless, useless fun with the mess kit"	false	true	false	false	false	mine ooh	pre-meh-skit rule	post-meh-skit rule	--	--
 "a"	"stew"	--	--	--	false	false	false	false	"achieving the game's objective"	false	true	true	false	false	mine ooh	pre-a-stew rule	post-a-stew rule	--	"You can make [b]A STEW[r] [once-now of pre-a-stew rule] you have all the ingredients you need."
 "herb"	"ranch"	--	--	--	false	false	false	false	"finding the first place to visit from the Ur-Branch"	false	true	true	false	false	ur branch	pre-herb-ranch rule	post-herb-ranch rule	--	--
-"be"	"chill"	--	--	--	false	false	false	false	"dealing with the beach, ill"	false	true	true	false	false	Beach Ill	pre-be-chill rule	post-be-chill rule	--	--
-"pie"	"crust"	"pi"	--	--	false	false	false	false	"finding what's under the pike rust"	false	true	true	false	false	Beach Ill	pre-pie-crust rule	post-pie-crust rule	--	--
 "summer"	"bay"	--	--	--	false	false	false	false	"letting the herb reveal a new location"	false	true	true	false	false	ur branch	pre-summer-bay rule	post-summer-bay rule	--	--
 "blah"	"copse"	--	--	--	false	false	false	false	"clue for guessing one word right"	false	true	true	false	false	ur branch	pre-blah-copse rule	post-blah-copse rule	--	--
+"be"	"chill"	--	--	--	false	false	false	false	"dealing with the beach, ill"	false	true	true	false	false	Beach Ill	pre-be-chill rule	post-be-chill rule	--	--
+"pie"	"crust"	"pi"	--	--	false	false	false	false	"finding what's under the pike rust"	false	true	true	false	false	Beach Ill	pre-pie-crust rule	post-pie-crust rule	--	--
+"punt"	"weaker"	--	--	--	false	false	false	false	"trading with the pun tweaker"	false	true	true	false	false	Beach Ill	pre-punt-weaker rule	post-punt-weaker rule	--	--
 "sword"	"ark"	"soared"	--	--	false	false	false	false	"finding something in the Sore Dark"	false	true	true	false	false	sore dark	pre-sword-ark rule	post-sword-ark rule	--	--
 "board"	"red"	"bored"	--	--	false	false	false	false	"finding something in the Bore Dread"	false	true	true	false	false	bore dread	pre-board-red rule	post-board-red rule	--	--
 "probe"	"all"	--	--	--	false	false	false	false	"finding a purpose for the pro ball"	false	true	true	false	false	ur branch	pre-probe-all rule	post-probe-all rule	--	--
@@ -215,6 +216,20 @@ this is the post-pie-crust rule:
 	now sco-pie-crust is true;
 	say "Yup! Pie crust!";
 	now player has pie crust;
+
+a wordtwisting rule (this is the pre-punt-weaker rule):
+	if player is not in beach ill, unavailable;
+	if sco-punt-weaker is false:
+		vcp "You still need to do something!";
+		not-yet;
+	if sco-punt-weaker is true:
+		vcal "You already did this!";
+		already-done;
+	ready;
+
+this is the post-punt-weaker rule:
+	now sco-punt-weaker is true;
+	say "Hooray! You figured what to do! You get a point!";
 
 chapter sore dark scoring
 

@@ -236,6 +236,13 @@ chapter pie crust
 
 the pie crust is a thing. description is "Not very fancy, but it's good enough."
 
+chapter pun tweaker
+
+The pun tweaker is a sentient. "The pun tweaker continues to stay here, looking to swap jokes or whatever."
+
+chapter gauche hip go ship
+
+the gauche hip go ship is scenery. printed name is "Gauche/Hip GO-Ship". "It's really gaudy. You'll probably never get a chance to ride in it. But maybe it contains something you need."
 book Sore Dark
 
 Sore Dark is a room in universal. description is "[if sco-sword-ark is false]You can't see much here, but maybe if you fumble around for what you need, you'll find it[else]The thought of having to stay here after finding something cool leaves you, well, sore[end if]. Good thing you have that blah string to lead your way back out southeast!"

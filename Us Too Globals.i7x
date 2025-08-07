@@ -67,6 +67,7 @@ chapter A Pile-Up Isle
 
 sco-claim-it is a truth state that varies.
 
+sco-punt-weaker is a truth state that varies.
 chapter unsorted
 
 sco-scry-bread is a truth state that varies.
