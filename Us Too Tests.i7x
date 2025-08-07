@@ -21,6 +21,20 @@ test wx with "nw/sword ark/se/ne/board red/sw".
 
 volume diagnostic
 
+chapter qwiing
+
+qwiing is an action out of world.
+
+understand the command "qwi" as something new.
+
+understand "qwi" as qwiing.
+
+carry out qwiing:
+	say "Debug-win is [if debug-win is false]now[else]already[end if] on.";
+	now debug-win is true;
+	the rule succeeds;
+
+
 chapter lfting
 
 lfting is an action out of world.
