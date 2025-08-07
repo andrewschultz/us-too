@@ -226,11 +226,11 @@ check examining pro ball for the first time: say "It's not a pro sports ball. Mo
 
 check taking pro ball when sco-probe-all is false: say "It won't budge. At least, not right now." instead;
 
-chapter Sir Frighteous
+chapter Sir Freddie
 
-Sir Frighteous is a sentient. "Sir Frighteous is here. If you wish, you can refer to him as F or Sir F. Not to him, of course, but to me."
+Sir Freddie is a sentient. "Sir Freddie is here. If you wish, you can refer to him as F or Sir F. Not to him, of course, but to me."
 
-understand "f" and "sir f" as Sir Frighteous when Sir Frighteous is touchable.
+understand "f" and "sir f" as Sir Freddie when Sir Freddie is touchable.
 
 chapter pie crust
 
@@ -303,7 +303,7 @@ book talk (redefined in Oronym Core)
 check ting:
 	if noun is Mike West, say "You say, meek, a 'Me? [']Kay!'" instead;
 	if noun is meh spot, say "It may make you say 'meh' a lot, but it's not going to say anything back." instead;
-	if noun is Sir Frighteous, say "'Ho, pawn! Hope on!'" instead;
+	if noun is Sir Freddie, say "'Ho, pawn! Hope on!'" instead;
 	if noun is not a sentient, say "You should usually talk to living things, or things that can respond as if they were living." instead;
 	say "An awkward silence ensues, mostly brought about by how ... I forgot to code something. Please let me know or file a bug report!" instead;
 
