@@ -71,6 +71,7 @@ chapter unsorted
 
 sco-scry-bread is a truth state that varies.
 
+sco-can-take is a truth state that varies.
 book debugs
 
 debug-win is a truth state that varies.

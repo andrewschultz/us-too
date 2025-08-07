@@ -26,6 +26,7 @@ w1 (text)	w2 (text)	first-hom (text)	second-hom	hom-txt-rule (rule)	first-exact	
 "board"	"red"	"bored"	--	--	false	false	false	false	"finding something in the Bore Dread"	false	true	true	false	false	bore dread	pre-board-red rule	post-board-red rule	--	--
 "probe"	"all"	--	--	--	false	false	false	false	"finding a purpose for the pro ball"	false	true	true	false	false	ur branch	pre-probe-all rule	post-probe-all rule	--	--
 "scry"	"bread"	--	"bred"	--	false	false	false	false	"getting something from the scribe (red)"	false	true	true	false	false	scribe red	vc-scry-bread rule	vr-scry-bread rule	--	--
+"can"	"take"	--	--	--	false	false	false	false	"clue for guessing one word right"	false	true	true	false	false	dome aching	pre-can-take rule	post-can-take rule	--	--
 "claim"	"it"	--	--	--	false	false	false	false	"clue for guessing one word right"	false	true	true	false	false	pile up isle	pre-claim-it rule	post-claim-it rule	--	--
 
 chapter scribe red scoring
@@ -259,6 +260,19 @@ a wordtwisting rule (this is the pre-claim-it rule):
 this is the post-claim-it rule:
 	now sco-claim-it is true;
 	say "Hooray! You figured what to do! You get a point!";
+
+chapter dome aching scoring
+
+a wordtwisting rule (this is the pre-can-take rule):
+	if player is not in dome aching, unavailable;
+	if sco-can-take is true:
+		vcal "You already affirmed you can take it.";
+		already-done;
+	ready;
+
+this is the post-can-take rule:
+	now sco-can-take is true;
+	say "You feel you can take the aching. It takes a bit of time, and you worry a worse aching may replace it ... and, in a way, it does. You wonder what you need to do here now.";
 
 volume directions
 
