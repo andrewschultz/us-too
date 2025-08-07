@@ -253,12 +253,6 @@ check examining pro ball for the first time: say "It's not a pro sports ball. Mo
 
 check taking pro ball when sco-probe-all is false: say "It won't budge. At least, not right now." instead;
 
-chapter Sir Freddie
-
-Sir Freddie is a sentient. "Sir Freddie is here. If you wish, you can refer to him as F or Sir F. Not to him, of course, but to me."
-
-understand "f" and "sir f" as Sir Freddie when Sir Freddie is touchable.
-
 chapter pie crust
 
 the pie crust is a thing. description is "Not very fancy, but it's good enough."
@@ -285,6 +279,16 @@ Blah Copse is a room in universal.
 check going to Blah Copse when sco-blah-copse is false:
 	now gs-tried-black-ops is true;
 	say "[one of]You walk towards the black ops site, but you're flagged down. What are you doing here? How did you even get close? After some questioning, you're sent back to the Ur-Branch by people who 'suggest' you forget this ever happened. Returning is ... not advised.[or]Oh, no, you're not going back to the black ops site. You're not sure what was going on. You must've made a wrong turn. Maybe you can figure out where you were supposed to REALLY go.[stopping]"  instead;
+
+chapter Forest Team
+
+the Forest Team for Esteem is a plural-named sentient in Blah Copse. "[one of]A group of adventurers is waiting for you here. After an over-friendly introduction where the introduce themselves as the Forest Team for Esteem, and where you don't impress them back, they begin to knock you[or]The Forest Team for Esteem continues to knock you. It's irritating, but not fatally so[stopping]."
+
+chapter Sir Freddie
+
+Sir Freddie is a sentient. "Sir Freddie [if player is in blah copse]stands here nervously[else]catches wave after wave, much to the dismay of the pun tweaker[end if].". description is "[if player is in blah copse]He looks uneasy. He clearly doesn't want to be here, but he also seems clueless where to go[end if]".
+
+understand "f/fred/freddy" and "sir f/fred/freddy" as Sir Freddie when Sir Freddie is touchable.
 
 book Bore Dread
 

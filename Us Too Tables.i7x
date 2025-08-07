@@ -25,6 +25,7 @@ w1 (text)	w2 (text)	first-hom (text)	second-hom	hom-txt-rule (rule)	first-exact	
 "punt"	"weaker"	--	--	--	false	false	false	false	"trading with the pun tweaker"	false	true	true	false	false	Beach Ill	pre-punt-weaker rule	post-punt-weaker rule	--	--
 "sword"	"ark"	"soared"	--	--	false	false	false	false	"finding something in the Sore Dark"	false	true	true	false	false	sore dark	pre-sword-ark rule	post-sword-ark rule	--	--
 "board"	"red"	"bored"	--	--	false	false	false	false	"finding something in the Bore Dread"	false	true	true	false	false	bore dread	pre-board-red rule	post-board-red rule	--	--
+"nah"	"queue"	--	--	--	false	false	false	false	"repelling the [team]"	false	true	true	false	false	blah copse	pre-nah-queue rule	post-nah-queue rule	--	--
 "probe"	"all"	--	--	--	false	false	false	false	"finding a purpose for the pro ball"	false	true	true	false	false	ur branch	pre-probe-all rule	post-probe-all rule	--	--
 "scry"	"bread"	--	"bred"	--	false	false	false	false	"getting something from the scribe (red)"	false	true	true	false	false	pile up isle	vc-scry-bread rule	vr-scry-bread rule	--	--
 "peace"	"talks"	--	--	--	false	false	false	false	"clue for guessing one word right"	false	true	true	false	false	pea stalks	pre-peace-talks rule	post-peace-talks rule	--	--
@@ -261,6 +262,22 @@ this is the post-board-red rule:
 	say "You turn up a board (red) ... it's narrow and six feet long, made of styrofoam, with CATCH THE WAVES and STAND ON THIS SIDE written on one side. Since it wasn't hard to find, you don't feel excited you found it, but you carry it anyway.";
 	now player has board red;
 	block-and-back;
+
+chapter blah copse scoring
+
+a wordtwisting rule (this is the pre-nah-queue rule):
+	if forest is not in location of player, unavailable;
+	if sco-nah-queue is true:
+		vcal "You already brushed back [the forest] that way!";
+		already-done;
+	ready;
+
+this is the post-nah-queue rule:
+	now sco-nah-queue is true;
+	say "You reject [the forest]'s jibes consistently and forcefully, not worrying about intellectual rigor. They give up on you. Someone else appears, relieved you got rid of them. He introduces himself as Sir Freddie. He thinks perhaps they are right, and he is not cut out for quests.";
+	say "[line break][i][bracket][b]NOTE[r][i]: if you wish, you can refer to him as F or Sir F.[close bracket]";
+	moot forest;
+	move Sir Freddie to Blah Copse;
 
 chapter pea stalks scoring
 
