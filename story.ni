@@ -63,6 +63,8 @@ book House Well So Swell
 House Well How Swell is a room. printed name is "House Well-How-Swell". "The lawyers look at you expectantly. You fiddle with your envelope. You hope you haven't come all this way for nothing!"
 
 after reading a command when player is in House Well How Swell:
+	if debug-state is true and word number 1 in the player's command is "test":
+		continue the action;
 	if the player's command exactly matches the text "how so":
 		say "One lawyer stands up and snaps their fingers. 'There you go! I knew you'd get it.";
 		increment core-score;
@@ -90,10 +92,15 @@ after reading a command when player is in House Well How Swell:
 		reject the player's command;
 	if the player's command includes "lawyers" or the player's command includes "lawyer":
 		say "The lawyers sit, stone-faced. You will get no clues from them.";
-		continue the action;
+		reject the player's command;
 	if the player's command includes "envelope" or the player's command includes "think" or the player's command includes "hint" or the player's command includes "help":
 		say "You glance at your envelope, [one of]once again [or][stopping]worried you might be cheating. But you can't imagine what other clue you have.[paragraph break]The lawyers [one of]still [or][stopping]look nonchalant, fortunately. It says [hohs].";
 		reject the player's command;
+	if the player's command includes "me" or the player's command includes "myself":
+		try examining the player;
+		reject the player's command;
+	say "The lawyers shake their head slightly, though you sense that's the worst you'll get from them.";
+	reject the player's command;
 
 book Mike West (you)
 
