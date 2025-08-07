@@ -56,9 +56,15 @@ understand the command "lft" as something new.
 understand "lft" as lfting.
 
 carry out lfting:
+	let temp be 0;
+	say "Of [1 + number of rows in table of main oronyms]...";
 	repeat through table of main oronyms:
-		if idid entry is false, next;
-		say "[w1 entry in upper case] [w2 entry in upper case] needs doing: [part-explain entry].";
+		if idid entry is true, next;
+		if w2 entry is "stew", next;
+		say "[b][w1 entry in upper case] [w2 entry in upper case][r] needs doing: [part-explain entry].";
+		increment temp;
+	if temp is 0, say "Somehow, nothing is left!" instead;
+	say "You have [temp] point[if temp > 1]s[end if] to pick off, not including the final one.";
 	the rule succeeds;
 
 
