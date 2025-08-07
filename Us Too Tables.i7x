@@ -249,17 +249,15 @@ chapter pile up isle scoring
 
 a wordtwisting rule (this is the pre-claim-it rule):
 	if player is not in pile up isle, unavailable;
-	if sco-claim-it is false:
-		vcp "You still need to do something!";
-		not-yet;
 	if sco-claim-it is true:
-		vcal "You already did this!";
+		vcal "The clay mitt is already good and claimed.";
 		already-done;
 	ready;
 
 this is the post-claim-it rule:
 	now sco-claim-it is true;
-	say "Hooray! You figured what to do! You get a point!";
+	say "You wonder if someone would really miss this clay mitt. But then you realize there's nothing stopping you, and they probably didn't just stop by here on vacation and lose it.";
+	now player has clay mitt;
 
 chapter dome aching scoring
 
