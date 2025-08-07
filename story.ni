@@ -267,6 +267,10 @@ chapter board red
 
 The board red is a thing. printed name is "board (red)". "It's about six feet long and one foot wide, or it would be when unfolded (it snaps into and out of its full length easily. You checked.) It has THIS SIDE UP and CATCH THE WAVES on it."
 
+book Pea Stalks
+
+Pea Stalks is a room. "Pea stalks grow here. But they're nothing you can eat, or prepare to eat quickly."
+
 book A Pile Up Isle
 
 A Pile Up Isle is a room. printed name is "A Pile-Up Isle".

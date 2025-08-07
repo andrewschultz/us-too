@@ -26,7 +26,8 @@ w1 (text)	w2 (text)	first-hom (text)	second-hom	hom-txt-rule (rule)	first-exact	
 "sword"	"ark"	"soared"	--	--	false	false	false	false	"finding something in the Sore Dark"	false	true	true	false	false	sore dark	pre-sword-ark rule	post-sword-ark rule	--	--
 "board"	"red"	"bored"	--	--	false	false	false	false	"finding something in the Bore Dread"	false	true	true	false	false	bore dread	pre-board-red rule	post-board-red rule	--	--
 "probe"	"all"	--	--	--	false	false	false	false	"finding a purpose for the pro ball"	false	true	true	false	false	ur branch	pre-probe-all rule	post-probe-all rule	--	--
-"scry"	"bread"	--	"bred"	--	false	false	false	false	"getting something from the scribe (red)"	false	true	true	false	false	scribe red	vc-scry-bread rule	vr-scry-bread rule	--	--
+"scry"	"bread"	--	"bred"	--	false	false	false	false	"getting something from the scribe (red)"	false	true	true	false	false	pile up isle	vc-scry-bread rule	vr-scry-bread rule	--	--
+"peace"	"talks"	--	--	--	false	false	false	false	"clue for guessing one word right"	false	true	true	false	false	pea stalks	pre-peace-talks rule	post-peace-talks rule	--	--
 "can"	"take"	--	--	--	false	false	false	false	"clue for guessing one word right"	false	true	true	false	false	dome aching	pre-can-take rule	post-can-take rule	--	--
 "claim"	"it"	--	--	--	false	false	false	false	"clue for guessing one word right"	false	true	true	false	false	pile up isle	pre-claim-it rule	post-claim-it rule	--	--
 
@@ -258,6 +259,20 @@ this is the post-board-red rule:
 	now sco-board-red is true;
 	say "You turn up a board (red) ... it's narrow and six feet long, made of styrofoam, with CATCH THE WAVES and STAND ON THIS SIDE written on one side. Since it wasn't hard to find, you don't feel excited you found it, but you carry it anyway.";
 	now player has board red;
+	block-and-back;
+
+chapter pea stalks scoring
+
+a wordtwisting rule (this is the pre-peace-talks rule):
+	if player is not in pea stalks, unavailable;
+	if sco-peace-talks is true:
+		vcal "You already fathomed peace talks!";
+		already-done;
+	ready;
+
+this is the post-peace-talks rule:
+	now sco-peace-talks is true;
+	say "Getting back to nature and stuff leaves you at peace with yourself. So at peace, you want to spread that peace to others, whether or not they fully deserve it. However, now you're so at peace, you recognize you are disturbing the plants' peace. You retreat to the Ur-Branch.";
 	block-and-back;
 
 chapter pile up isle scoring
