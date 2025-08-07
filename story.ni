@@ -32,15 +32,15 @@ volume intro
 
 when play begins:
 	now left hand status line is "[location of player]";
-	say "The old mine is yours, now. You were left it in a will by a relative you barely remember. Aunt Rickie-Ann. She gave you  weird little logic puzzle. 'Tricky,' you mused, and she seemed to smile. But you did not solve it, until the family gathering was over. She had already gotten in her car, and you tried to yell as she drove away. Your family told you not to bug her, which was funny, because everyone seemed to be buttering her up about how rich she was.";
+	say "The old mine is yours, now. You were left it in a will by a relative you barely remember. [ara]. She gave you  weird little logic puzzle. 'Tricky,' you mused, and she seemed to smile. But you did not solve it, until the family gathering was over. She had already gotten in her car, and you tried to yell as she drove away. Your family told you not to bug her, which was funny, because everyone seemed to be buttering her up about how rich she was.";
 	wfak;
 	say "You explained this to your parents, who got really cheesed off you didn't figure it sooner to impress her. That could've been their ticket! Uh, they meant, yours." ;
 	wfak;
-	say "Aunt Rickie-Ann held on longer than anyone thought. Your parents went up to get a good word with her, not bringing you, of course, after your flub. But she remained secretive about her will.";
+	say "[ara] held on longer than anyone thought. Your parents went up to get a good word with her, not bringing you, of course, after your flub. But she remained secretive about her will.";
 	wfak;
 	say "Soon after she died, her relatives received envelopes in the mail. They were each from the same address, but the actual location was a bit different. Your parents and siblings? [hwhs]. You? [hohs].";
 	wfak;
-	say "You were one of the few to get [hohs]. It seemed like a terrible sign, but as the will was read, the [hwhs] people roared furiously as Aunt Rickie-Ann mentioned them by name, then thought, no, they nagged too much. So that thing they wanted? To charity! Although ... well, they would get $1000 and travel expenses, if they sarcastically said 'Well, how swell.' And promptly left. Most said it, with passion.";
+	say "You were one of the few to get [hohs]. It seemed like a terrible sign, but as the will was read, the [hwhs] people roared furiously as [ara] mentioned them by name, then thought, no, they nagged too much. So that thing they wanted? To charity! Although ... well, they would get $1000 and travel expenses, if they sarcastically said 'Well, how swell.' And promptly left. Most said it, with passion.";
 	wfak;
 	say "You were ready to say so, for your own $1000. And it felt weird, being one of three people left, eventually.";
 	wfak;
@@ -83,7 +83,7 @@ after reading a command when player is in House Well How Swell:
 		say "The lawyers['] ears seem to perk up for a second.";
 		reject the player's command;
 	if the number of characters in the player's command > 8:
-		say "One of the lawyers casually remarks Aunt Rickie-Ann was never big on long words.";
+		say "One of the lawyers casually remarks [ara] was never big on unnecessarily long words.";
 		reject the player's command;
 	if number of words in the player's command < 2:
 		say "One of the lawyers tells you to speak up a little, there.";
@@ -152,7 +152,7 @@ check thinking in Mine Ooh when sco-my-quest is false:
 	say "--the lawyers reacted positively to 'My new mine, ooh!'";
 	if gs-taken-inventory is true:
 		say "--the [tour ad] and [using] are ... odd, to say the least.";
-	say "--your name is Mike West. Aunt Rickie-Ann said she REALLY liked that name.";
+	say "--your name is Mike West. [ara] said she REALLY liked that name.";
 	if gs-taken-inventory is false:
 		say "[line break]Maybe you should take [b]INVENTORY[r] with [b]I[r]. That might provide another clue.";
 	the rule succeeds;
