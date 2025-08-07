@@ -84,6 +84,8 @@ sco-surf-ready is a truth state that varies.
 
 sco-peep-odd is a truth state that varies.
 
+sco-or-clerk is a truth state that varies.
+
 book debugs
 
 debug-win is a truth state that varies.

@@ -27,6 +27,7 @@ w1 (text)	w2 (text)	first-hom (text)	second-hom	hom-txt-rule (rule)	first-exact	
 "board"	"red"	"bored"	--	--	false	false	false	false	"finding something in the Bore Dread"	false	true	true	false	false	bore dread	pre-board-red rule	post-board-red rule	--	--
 "nah"	"queue"	--	--	--	false	false	false	false	"repelling the [team]"	false	true	true	false	false	blah copse	pre-nah-queue rule	post-nah-queue rule	--	--
 "surf"	"ready"	--	--	--	false	false	false	false	"giving Sir Freddie a new direction"	false	true	true	false	false	blah copse	pre-surf-ready rule	post-surf-ready rule	--	--
+"or"	"clerk"	--	--	--	false	false	false	false	"figuring what Sir Freddie was scared of"	false	true	true	false	false	blah copse	pre-or-clerk rule	post-or-clerk rule	--	--
 "probe"	"all"	--	--	--	false	false	false	false	"finding a purpose for the pro ball"	false	true	true	false	false	ur branch	pre-probe-all rule	post-probe-all rule	--	--
 "scry"	"bread"	--	"bred"	--	false	false	false	false	"getting something from the scribe (red)"	false	true	true	false	false	pile up isle	vc-scry-bread rule	vr-scry-bread rule	--	--
 "peace"	"talks"	--	--	--	false	false	false	false	"clue for guessing one word right"	false	true	true	false	false	pea stalks	pre-peace-talks rule	post-peace-talks rule	--	--
@@ -295,6 +296,22 @@ this is the post-surf-ready rule:
 	say "Sir Freddie agrees with you, but he doesn't know how to get started. You have just the thing! Your red board is kind of bulky but not heavy. It'd be nice not to have to carry it around. He waves. 'See you later. Oh, one other thing... I think I heard an orc lurk to the north. Another reason to give up this questing.'";
 	moot board red;
 	move Sir Freddie to Beach Ill;
+
+a wordtwisting rule (this is the pre-or-clerk rule):
+	if player is not in blah copse, unavailable;
+	if sco-or-clerk is false:
+		vcp "You still need to do something!";
+		not-yet;
+	if sco-or-clerk is true:
+		vcal "You already did this!";
+		already-done;
+	ready;
+
+this is the post-or-clerk rule:
+	now sco-or-clerk is true;
+	say "Haha! Sir Freddie seemed nice enough, but you guess he was scared of someone else who was scared and putting up a front. Sure enough, a clerk Sir Freddie could've beaten up with one hand (if Sir Freddie had the courage to fight, of course) comes out of a bunker with their hands up. They begin to apologize, but you say it's all right.[paragraph break]'You ... you aren't part of the forest team?' Certainly not, you assure them.[paragraph break]'That's a relief! I wish I had more to give you than this blah string I found. I have no clue what to do with it. Oh, and I should never have meddled with what's to the north ... but maybe you can ...'[paragraph break]With that, the clerk runs away, turning briefly to wave at you.";
+	now player has blah string;
+	reveal Morph Lairs to north;
 
 chapter pea stalks scoring
 

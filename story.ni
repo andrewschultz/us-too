@@ -274,11 +274,15 @@ The Terra Blade is a proper-named thing.
 
 book Blah Copse
 
-Blah Copse is a room in universal.
+Blah Copse is a room in universal. "[if sco-or-clerk is false]The only really clear safe path is[else]Thanks to Sir Freddie and your own cleverness, you found a way north as well as[end if] back south to [branch]."
 
 check going to Blah Copse when sco-blah-copse is false:
 	now gs-tried-black-ops is true;
 	say "[one of]You walk towards the black ops site, but you're flagged down. What are you doing here? How did you even get close? After some questioning, you're sent back to the Ur-Branch by people who 'suggest' you forget this ever happened. Returning is ... not advised.[or]Oh, no, you're not going back to the black ops site. You're not sure what was going on. You must've made a wrong turn. Maybe you can figure out where you were supposed to REALLY go.[stopping]"  instead;
+
+after printing the locale description for Blah Copse when sco-surf-ready is true and sco-or-clerk is false:
+	say "Sir Freddie also thought he heard an orc lurk to the north. What's up with that?";
+	continue the action;
 
 chapter Forest Team
 
@@ -289,6 +293,14 @@ chapter Sir Freddie
 Sir Freddie is a sentient. "Sir Freddie [if player is in blah copse]stands here nervously[else]catches wave after wave, much to the dismay of the pun tweaker[end if].". description is "[if player is in blah copse]He looks uneasy. He clearly doesn't want to be here, but he also seems clueless where to go[end if]".
 
 understand "f/fred/freddy" and "sir f/fred/freddy" as Sir Freddie when Sir Freddie is touchable.
+
+chapter blah string
+
+the blah string is a thing. description is "Looking at it, it doesn't seem like it could become anything powerful. Could it?"
+
+book Morph Lairs
+
+Morph Lairs is a room in universal. "You're pretty sure you don't want to enter the lairs here. Even the ones that seem safe could turn unsafe quickly. And yet ... they can't just be THERE."
 
 book Bore Dread
 
