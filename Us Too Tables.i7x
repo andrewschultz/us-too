@@ -26,6 +26,7 @@ w1 (text)	w2 (text)	first-hom (text)	second-hom	hom-txt-rule (rule)	first-exact	
 "sword"	"ark"	"soared"	--	--	false	false	false	false	"finding something in the Sore Dark"	false	true	true	false	false	sore dark	pre-sword-ark rule	post-sword-ark rule	--	--
 "board"	"red"	"bored"	--	--	false	false	false	false	"finding something in the Bore Dread"	false	true	true	false	false	bore dread	pre-board-red rule	post-board-red rule	--	--
 "nah"	"queue"	--	--	--	false	false	false	false	"repelling the [team]"	false	true	true	false	false	blah copse	pre-nah-queue rule	post-nah-queue rule	--	--
+"surf"	"ready"	--	--	--	false	false	false	false	"giving Sir Freddie a new direction"	false	true	true	false	false	blah copse	pre-surf-ready rule	post-surf-ready rule	--	--
 "probe"	"all"	--	--	--	false	false	false	false	"finding a purpose for the pro ball"	false	true	true	false	false	ur branch	pre-probe-all rule	post-probe-all rule	--	--
 "scry"	"bread"	--	"bred"	--	false	false	false	false	"getting something from the scribe (red)"	false	true	true	false	false	pile up isle	vc-scry-bread rule	vr-scry-bread rule	--	--
 "peace"	"talks"	--	--	--	false	false	false	false	"clue for guessing one word right"	false	true	true	false	false	pea stalks	pre-peace-talks rule	post-peace-talks rule	--	--
@@ -278,6 +279,22 @@ this is the post-nah-queue rule:
 	say "[line break][i][bracket][b]NOTE[r][i]: if you wish, you can refer to him as F or Sir F.[close bracket]";
 	moot forest;
 	move Sir Freddie to Blah Copse;
+
+a wordtwisting rule (this is the pre-surf-ready rule):
+	if Sir Freddie is not in location of player, unavailable;
+	if sco-board-red is false:
+		vcp "Sir Freddie finds that interesting, but ... he doesn't have any way to get started, and neither do you.";
+		not-yet;
+	if sco-surf-ready is true:
+		vcal "But Sir Freddie has already found a new passion!";
+		already-done;
+	ready;
+
+this is the post-surf-ready rule:
+	now sco-surf-ready is true;
+	say "Sir Freddie agrees with you, but he doesn't know how to get started. You have just the thing! Your red board is kind of bulky but not heavy. It'd be nice not to have to carry it around. He waves. 'See you later. Oh, one other thing... I think I heard an orc lurk to the north. Another reason to give up this questing.'";
+	moot board red;
+	move Sir Freddie to Beach Ill;
 
 chapter pea stalks scoring
 

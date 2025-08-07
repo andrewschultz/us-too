@@ -80,6 +80,8 @@ sco-peace-talks is a truth state that varies.
 
 sco-nah-queue is a truth state that varies.
 
+sco-surf-ready is a truth state that varies.
+
 sco-peep-odd is a truth state that varies.
 
 book debugs
