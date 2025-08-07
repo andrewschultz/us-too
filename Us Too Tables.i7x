@@ -160,11 +160,11 @@ a wordtwisting rule (this is the pre-probe-all rule):
 
 this is the post-probe-all rule:
 	now sco-probe-all is true;
-	say "You reach out to the pro ball. It seems to sense what you want it for. You take it, then look at it from many different angles. Reflected in it, you see ... well, a meh spot [here-in of my new mine ooh] that could use sprucing up. But how?[paragraph break]Yet much of the pro ball remains cloudy. Perhaps it will reveal what you need, as you need it.[paragraph break][i][bracket][b]NOTE[r][i]: you don't need to examine the pro ball from here on out for it to open new passages.[close bracket][i][line break]";
+	say "You reach out to the pro ball. It seems to sense what you want it for. You take it, then look at it from many different angles. Reflected in it, you see ... well, a meh spot [here-in of my new mine ooh] that could use sprucing up. But how?[paragraph break]Yet much of the pro ball remains cloudy. Perhaps it will reveal what you need, as you need it.";
+	say "It also reveals something near here. You notice some sort of ship. You wave, and its captain, so to speak, waves back. They introduce themselves as the Pun Tweaker. Their ship is the Gauche Hip Go Ship. They immediately start in with some crunching puns.[paragraph break][i][bracket][b]NOTE[r][i]: you don't need to examine the pro ball from here on out for it to open new passages.[close bracket][i][line break]";
 	move meh spot to my new mine ooh;
 	now player has pro ball;
 	continue the action; [some passages you hadn't even considered away from the Ur-Branch. You lose yourself in it for a while, and then, when you look up, you see ]
-	say "You poke at the pro ball, which opens your consciousness further to the oddness of diagonally directional pathways, and how they might not be strictly necessary most of the time, but in the Ur-Branch, well, they are a bit more appropriate.[paragraph break]On return, you notice new branches: northeast and northwest!";
 
 a wordtwisting rule (this is the pre-summer-bay rule):
 	if player does not have herbs, unavailable;

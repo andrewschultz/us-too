@@ -175,7 +175,7 @@ the beast wrong is a sentient. printed name is "beast (wrong)". "A beast (wrong)
 
 chapter goal edge go ledge
 
-the goal edge go ledge is a thing. "The [ledge] juts out here. [if ledge is unexamined]Maybe something is on it[else]You see [the list of hintthings on mine ooh] on it[end if]."
+the goal edge go ledge is a thing. printed name is "Goal-Edge-Go Ledge". "The [ledge] juts out here. [if ledge is unexamined]Maybe something is on it[else]You see [the list of hintthings in mine ooh] on it[end if].". description is "You see [the list of hintthings in mine ooh] on it."
 
 check taking goal edge go ledge:
 	if slice eyes are off-stage, say "You can't, but if you [b]EXAMINE[r] the ledge, you may find something on it." instead;
@@ -280,7 +280,7 @@ Sore Dark is a room in universal. description is "[if sco-sword-ark is false]You
 
 chapter sword
 
-The Terra Blade is a proper-named thing.
+The Terra Blade is a thing. indefinite article of terra blade is "the".
 
 book Blah Copse
 
@@ -318,7 +318,7 @@ Bore Dread is a room in universal. description is "[if sco-board-red is false]My
 
 chapter board red
 
-The board red is a thing. printed name is "board (red)". "It's about six feet long and one foot wide, or it would be when unfolded (it snaps into and out of its full length easily. You checked.) It has THIS SIDE UP and CATCH THE WAVES on it."
+The board red is a thing. printed name is "board (red)". "It's about six feet long and one foot wide, or it would be when unfolded (it snaps into and out of its full length easily. You checked.) THIS SIDE UP and CATCH THE WAVES are written on it."
 
 book Pea Stalks
 
