@@ -446,11 +446,11 @@ check taking prime oar when prime oar is in Inner Nest: say "You can't get close
 
 book Fort Earns Four Turns
 
-there is a room called Fort Earns Four Turns. it is in universal. printed name is "Fort Earns-Four-Turns".
+there is a room called Fort Earns Four Turns. it is in universal. printed name is "Fort Earns-Four-Turns". "[if sco-oh-clever is false]An oak lever is here, tempting you to pull it and maybe find another exit besides back northeast[else]The [wick] revealed when you pulled the lever is here. You can also go back northeast[end if].".
 
-chapter oak leverl
+chapter oak lever
 
-the oak lever is a thing in Fort Earns Four Turns. "[if sco-oh-clever is false]An oak lever is here, tempting you to pull it and maybe find another exit besides back northeast[else]The [wick] revealed when you pulled the lever is here. You can also go back northeast[end if].". description is "It looks intricate, not something any yutz can just walk in and pull."
+the oak lever is scenery in Fort Earns Four Turns. "It looks intricate, not something any yutz can just walk in and pull."
 
 check taking oak lever: say "If you snap it off, you'll never find what will happen when you pull it." instead;
 
@@ -477,6 +477,30 @@ after examining quick beak wick:
 		say "[one of]You instantly feel a disorienting surge of speed. What can you do with it?[or]You feel that speed rush again.[stopping]";
 	now extra-turns is 4;
 	continue the action;
+
+chapter felt wrap
+
+the felt wrap is a thing in Fort Earns Four Turns. "Some completely innocuous felt wrap lies here.". description is "Um. Completely innocuous. Right?".
+
+chapter fell trap
+
+the fell trap is a thing. "The fell trap has replaced the felt wrap. [if sco-cellar-bin is true]It looks as though it's been reset since you last visited, if you need to [b]EXAMINE[r] it and get caught again, for whatever reason[else]It looks pretty vicious! It might even catch anyone trying to [b]EXAMINE[r] it[end if]."
+
+check examining fell trap when cell urban is unvisited:
+	if cell urban is unvisited:
+		say "You poke the trap, and the floor below collapses. A very brief fall, and you wind up in...";
+		move player to cell urban;
+		the rule succeeds;
+	say "Thud! But you're a bit more prepared for the drop this time.";
+	move player to Cellar Bin;
+
+book Cell Urban
+
+Cell Urban is a room in universal.
+
+book Cellar Bin
+
+Cellar Bin is a room in universal.
 
 book Bowl Ditch
 

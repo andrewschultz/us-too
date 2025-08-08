@@ -126,6 +126,7 @@ book southwest branch
 chapter Fort Earns-Four-Turns
 
 sco-oh-clever is a truth state that varies.
+sco-fell-trap is a truth state that varies.
 
 book west branch
 

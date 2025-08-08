@@ -48,6 +48,7 @@ w1 (text)	w2 (text)	first-hom (text)	second-hom	hom-txt-rule (rule)	first-exact	
 "claim"	"it"	--	--	--	false	false	false	false	"gathering the clay mitt"	false	true	true	false	false	Bowl Ditch	pre-claim-it rule	post-claim-it rule	--	--
 "saw"	"bakers"	--	--	--	false	false	false	false	"clue for guessing one word right"	false	true	true	false	false	sob acres	pre-saw-bakers rule	post-saw-bakers rule	--	--
 "dell"	"eastern"	--	--	--	false	false	false	false	"making Sob Acres less forbidding"	false	true	true	false	false	deli stern	pre-dell-eastern rule	post-dell-eastern rule	--	--
+"fell"	"trap"	--	--	--	false	false	false	false	"clue for guessing one word right"	false	true	true	false	false	fort earns	pre-fell-trap rule	post-fell-trap rule	--	--
 
 chapter scribe red scoring
 
@@ -547,6 +548,19 @@ this is the post-oh-clever rule:
 	say "You think and think and think. Of course, they wouldn't want any old fool pulling the lever. So there's no obvious way to pull it. You try a hundred different ways, then feel clever on the hundred and first when -- CLICK -- it flips, revealing a compartment behind![paragraph break]The feeling of cleverness lasts only a few seconds, though. You realize how you could've seen it sooner if you'd been paying attention. After fifteen minutes, you feel even less clever for having spent fifteen minutes unconstructively visiting the past.[paragraph break]Then you notice what the lever was hiding: a be-quick beak wick! Nice if you need speed, you're sure.";
 	move beak wick to Fort Earns Four Turns;
 	moot oak lever;
+
+a wordtwisting rule (this is the pre-fell-trap rule):
+	if player is not in fort earns, unavailable;
+	if sco-fell-trap is true:
+		vcal "You can just X TRAP to [if cellar bin is visited]return[else]see what it might do[end if].";
+		already-done;
+	ready;
+
+this is the post-fell-trap rule:
+	now sco-fell-trap is true;
+	say "Oh my! You pull the felt wrap away, and that is one fell looking trap!";
+	moot felt wrap;
+	move fell trap to Fort Earns;
 
 book west branch sorting
 
