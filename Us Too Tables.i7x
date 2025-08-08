@@ -372,9 +372,9 @@ this is the post-peep-odd rule:
 	inside-block-back;
 
 to inside-block-back:
-	if sco-peep-odd and sco-peace-talks:
+	if sco-peep-odd is true and sco-peace-talks is true:
 		say "You feel a moment of zen. You've done what you could here, and you sense you don't fully belong. It's time to move on.";
-		block-back;
+		block-and-back;
 	else if sco-peep-odd is true:
 		say "You're pleased you found something out of the way, but perhaps there's something bigger to figure here.";
 	else:
