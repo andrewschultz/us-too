@@ -307,7 +307,7 @@ understand "f/fred/freddy" and "sir f/fred/freddy" as Sir Freddie when Sir Fredd
 
 chapter blah string
 
-the blah string is a thing. description is "Looking at it, it doesn't seem like it could become anything powerful. Could it?"
+the blah string is a thing. description is "Looking at it, it doesn't seem like it could become anything powerful. Could it?". indefinite article of blah string is "some".
 
 book Morph Lairs
 
@@ -375,7 +375,7 @@ the great inns are scenery.
 
 chapter gray tins
 
-the gray tins are a plural-named thing. "There are two of them. [gray-tin-status]"
+the gray tins are a plural-named thing. "There are two of them. [gray-tin-status]". understand "grey" and "grey tins" as gray tins.
 
 to say gray-tin-status:
 	if gray-tin-score is 0:
