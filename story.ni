@@ -225,10 +225,16 @@ rule for printing the locale description of ur branch:
 
 check going in ur branch (this is the branch blocker rule): if noun is branchdone, say "[donetext of noun]" instead;
 
-after printing the locale description for Ur Branch when sco-nah-queue is true and southeast is branchcant:
+after printing the locale description for Ur Branch when sco-hike-up is true and southwest is branchcant:
+	say "You track down the southwest passage pretty easily, with the help of your pro ball.";
+	reveal Fort Earns Four Turns to southwest;
+	continue the action;
+
+after printing the locale description for Ur Branch when sco-nah-queue is true and inside is branchcant:
 	say "You hear a scuffle and see the [Forest] running away. They moan something about a garden tree getting in the way. You didn't see one before, but ... you see one, now, and you see their most recent footprints. It doesn't appear particularly aggressive, but it's in the way.";
 	reveal Pea Stalks to inside;
 	move garden tree to Ur Branch;
+	continue the action;
 
 after printing the locale description for Ur Branch when sco-mess-pot is true and northwest is branchcant:
 	say "[line break]You hear a rumbling from the pro ball. You see an inverted image of this very Ur-Branch! Not only that, you see passages northwest and northeast, to hidden lairs. You wonder why they only became available now, but then you realize your time cleaning up the meh spot helped you be more organized and see more organization, and perhaps you weren't ready to look at the pro ball right. Among the leaf paths, leaves and whatnot you notice reveal passages to three new areas. Two look relatively safe, but the one north leaves you uneasy.";
@@ -368,6 +374,12 @@ section pike rust
 the pike rust is a thing. "It's on the pike, sort of a cover on the side. Perhaps it is better as something else."
 
 check taking pike rust: say "Oh, it might flake off uselessly if you just took it." instead;
+
+chapter high cup
+
+The high cup is a thing. "A high cup is at the top of the pile."
+
+check taking the high cup when high cup is in Pile Up Isle: say "You take a direct path, but it's too steep." instead;
 
 book Dome Aching
 

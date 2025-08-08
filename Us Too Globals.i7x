@@ -85,6 +85,8 @@ sco-base-pikes is a truth state that varies.
 
 sco-punt-weaker is a truth state that varies.
 
+sco-hike-up is a truth state that varies.
+
 chapter Fort Earns-Four-Turns
 
 sco-oh-clever is a truth state that varies.

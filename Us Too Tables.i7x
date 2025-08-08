@@ -38,6 +38,7 @@ w1 (text)	w2 (text)	first-hom (text)	second-hom	hom-txt-rule (rule)	first-exact	
 "can"	"take"	--	--	--	false	false	false	false	"dispelling the Can't-Ache"	false	true	true	false	false	dome aching	pre-can-take rule	post-can-take rule	--	--
 "dough"	"making"	--	--	--	false	false	false	false	"doing something positive in [dome]"	false	true	true	false	false	dome aching	pre-dough-making rule	post-dough-making rule	--	--
 "gray|grey"	"tin|tins"	--	--	--	false	false	false	false	"discover what the Great Inns hold"	false	true	true	false	false	dome aching	pre-gray-tins rule	post-gray-tins rule	--	--
+"hike"	"up"	--	--	--	false	false	false	false	"clue for guessing one word right"	false	true	true	false	false	a pile up isle	pre-hike-up rule	post-hike-up rule	--	--
 "claim"	"it"	--	--	--	false	false	false	false	"gathering the clay mitt"	false	true	true	false	false	pile up isle	pre-claim-it rule	post-claim-it rule	--	--
 "in"	"earnest"	--	--	--	false	false	false	false	"figure how to visit the inner nest"	false	true	true	false	false	dome aching	pre-in-earnest rule	post-in-earnest rule	--	--
 "pry"	"more"	--	--	--	false	false	false	false	"clue for guessing one word right"	false	true	true	false	false	inner nest	pre-pry-more rule	post-pry-more rule	--	--
@@ -401,7 +402,18 @@ a wordtwisting rule (this is the pre-base-pikes rule):
 
 this is the post-base-pikes rule:
 	now sco-base-pikes is true;
-	say "Well, someone must've been able to get through the bay spikes to dump stuff on the pile, you reason.";
+	say "Well, someone must've been able to get through the bay spikes to dump stuff on the pile, you reason. And you discover something -- base pikes, one you wouldn't want to use on any person, but then again, these spikes could hurt someone, so that seems okay.[paragraph break]Walking through the path you made, you see a high cup near the top of the pile, as well as ";
+
+a wordtwisting rule (this is the pre-hike-up rule):
+	if player is not in a pile up isle, unavailable;
+	if sco-hike-up is true:
+		vcal "There's nothing else to be found from another hike up. You're not getting the high cup, and you don't need it.";
+		already-done;
+	ready;
+
+this is the post-hike-up rule:
+	now sco-hike-up is true;
+	say "You decide the direct way of climbing the pile at a steep angle just won't work. But it's a big pile, and as you walk around, you see a slower way, less steep, but less likely to cause you to slip. You get to the top and have a look around. From your vantage point, you see a new path from the Ur-Branch, to the southwest! You also see places well beyond it, to the west and south. Well, that should cover all the directions.[paragraph break]It makes you almost forget about the high cup. Well, it turns out the high cup is glued to other trash. Dang it! You're not sure if you needed it, anyway. It looks kind of fancy.";
 
 a wordtwisting rule (this is the pre-claim-it rule):
 	if player is not in pile up isle, unavailable;
