@@ -35,6 +35,7 @@ w1 (text)	w2 (text)	first-hom (text)	second-hom	hom-txt-rule (rule)	first-exact	
 "peace"	"talks"	--	--	--	false	false	false	false	"finding something incorporeal within the Pea Stalks"	false	true	true	false	false	pea stalks	pre-peace-talks rule	post-peace-talks rule	--	--
 "peep"	"odd"	--	--	--	false	false	false	false	"finding something unusual within the Pea Stalks"	false	true	false	false	false	pea stalks	pre-peep-odd rule	post-peep-odd rule	--	--
 "can"	"take"	--	--	--	false	false	false	false	"dispelling the Can't-Ache"	false	true	true	false	false	dome aching	pre-can-take rule	post-can-take rule	--	--
+"dough"	"making"	--	--	--	false	false	false	false	"doing something positive in [dome]"	false	true	true	false	false	dome aching	pre-dough-making rule	post-dough-making rule	--	--
 "gray|grey"	"tin|tins"	--	--	--	false	false	false	false	"discover what the Great Inns hold"	false	true	true	false	false	dome aching	pre-gray-tins rule	post-gray-tins rule	--	--
 "claim"	"it"	--	--	--	false	false	false	false	"gathering the clay mitt"	false	true	true	false	false	pile up isle	pre-claim-it rule	post-claim-it rule	--	--
 "in"	"earnest"	--	--	--	false	false	false	false	"figure how to visit the inner nest"	false	true	true	false	false	dome aching	pre-in-earnest rule	post-in-earnest rule	--	--
@@ -423,6 +424,24 @@ this is the post-gray-tins rule:
 	now sco-gray-tins is true;
 	say "Why not? You can always use tins.";
 	now player has tins;
+
+a wordtwisting rule (this is the pre-dough-making rule):
+	if player is not in dome aching, unavailable;
+	if sco-can-take is false:
+		vcp "The can't-ache prevents you from doing anything constructive!";
+		not-yet;
+	if player does not have gray tins:
+		vcp "You have nowhere to put the dough yet.";
+		not-yet;
+	if sco-dough-making is true:
+		vcal "You already made enough dough!";
+		already-done;
+	ready;
+
+this is the post-dough-making rule:
+	now sco-dough-making is true;
+	say "Excellent! With the tin, you have somewhere to put the dough.";
+	now player has dough;
 
 a wordtwisting rule (this is the pre-in-earnest rule):
 	if player is not in dome aching, unavailable;

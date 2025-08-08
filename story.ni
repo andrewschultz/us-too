@@ -365,6 +365,10 @@ chapter inscen
 
 the inscen is privately-named scenery. understand "inner/nest" and "inner nest" as inscen when inscen is in location of player.
 
+chapter dough
+
+the dough is a thing. description is "It's dough, inside one of your tins.".
+
 book Inner Nest
 
 Inner Nest is a room in universal.
