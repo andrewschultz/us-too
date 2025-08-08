@@ -37,6 +37,7 @@ w1 (text)	w2 (text)	first-hom (text)	second-hom	hom-txt-rule (rule)	first-exact	
 "can"	"take"	--	--	--	false	false	false	false	"dispelling the Can't-Ache"	false	true	true	false	false	dome aching	pre-can-take rule	post-can-take rule	--	--
 "claim"	"it"	--	--	--	false	false	false	false	"gathering the clay mitt"	false	true	true	false	false	pile up isle	pre-claim-it rule	post-claim-it rule	--	--
 "in"	"earnest"	--	--	--	false	false	false	false	"figure how to visit the inner nest"	false	true	true	false	false	dome aching	pre-in-earnest rule	post-in-earnest rule	--	--
+"pry"	"more"	--	--	--	false	false	false	false	"clue for guessing one word right"	false	true	true	false	false	inner nest	pre-pry-more rule	post-pry-more rule	--	--
 
 chapter scribe red scoring
 
@@ -422,6 +423,20 @@ this is the post-in-earnest rule:
 	now sco-in-earnest is true;
 	say "The inner nest seems to open up a bit more, comfortable you're not just running through a checklist. Well, perhaps you still are. But worst case, you took the time to pretend and make it believable. You can now go [b]IN[r].";
 	reveal inner nest to inside;
+
+chapter inner nest scoring
+
+a wordtwisting rule (this is the pre-pry-more rule):
+	if player is not in inner nest, unavailable;
+	if sco-pry-more is true:
+		vcal "You already pried and got the prime oar!";
+		already-done;
+	ready;
+
+this is the post-pry-more rule:
+	now sco-pry-more is true;
+	say "Surely there must be some way to get the oar, you think. And you pry constructively. After an hour's work, you have an oar, lightweight and powerful.";
+	now player has prime oar;
 
 volume directions
 

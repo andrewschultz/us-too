@@ -69,6 +69,10 @@ chapter Dome Aching
 sco-can-take is a truth state that varies.
 sco-in-earnest is a truth state that varies.
 
+chapter inner nest
+
+sco-pry-more is a truth state that varies.
+
 chapter A Pile-Up Isle
 
 sco-claim-it is a truth state that varies.
