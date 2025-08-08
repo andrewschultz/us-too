@@ -31,7 +31,7 @@ w1 (text)	w2 (text)	first-hom (text)	second-hom	hom-txt-rule (rule)	first-exact	
 "or"	"clerk"	--	--	--	false	false	false	false	"figuring what Sir Freddie was scared of"	false	true	true	false	false	blah copse	pre-or-clerk rule	post-or-clerk rule	--	--
 "more"	"flares"	--	--	--	false	false	false	false	"clue for guessing one word right"	false	true	true	false	false	morph lairs	pre-more-flares rule	post-more-flares rule	--	--
 "probe"	"all"	--	--	--	false	false	false	false	"finding a purpose for the pro ball"	false	true	true	false	false	ur branch	pre-probe-all rule	post-probe-all rule	--	--
-"scry"	"bread"	--	"bred"	--	false	false	false	false	"getting something from the scribe (red)"	false	true	true	false	false	pile up isle	vc-scry-bread rule	vr-scry-bread rule	--	--
+"scry"	"bread"	--	"bred"	--	false	false	false	false	"getting something from the scribe (red)"	false	true	true	false	false	pile up isle	pre-scry-bread rule	post-scry-bread rule	--	--
 "peace"	"talks"	--	--	--	false	false	false	false	"finding something incorporeal within the Pea Stalks"	false	true	true	false	false	pea stalks	pre-peace-talks rule	post-peace-talks rule	--	--
 "peep"	"odd"	--	--	--	false	false	false	false	"finding something unusual within the Pea Stalks"	false	true	false	false	false	pea stalks	pre-peep-odd rule	post-peep-odd rule	--	--
 "can"	"take"	--	--	--	false	false	false	false	"dispelling the Can't-Ache"	false	true	true	false	false	dome aching	pre-can-take rule	post-can-take rule	--	--
@@ -43,11 +43,11 @@ w1 (text)	w2 (text)	first-hom (text)	second-hom	hom-txt-rule (rule)	first-exact	
 
 chapter scribe red scoring
 
-a wordtwisting rule (this is the vc-scry-bread rule):
+a wordtwisting rule (this is the pre-scry-bread rule):
 	if scribe red is not touchable, unavailable;
 	ready;
 
-this is the vr-scry-bread rule:
+this is the post-scry-bread rule:
 	now sco-scry-bread is true;
 	say "Now you have the bread!";
 	now player has bread;
@@ -200,8 +200,6 @@ this is the post-guard-entry rule:
 	now sco-guard-entry is true;
 	say "Hooray! You figured what to do! You get a point!";
 
-chapter ur branch scoring
-
 a wordtwisting rule (this is the pre-blah-copse rule):
 	if player is not in ur branch, unavailable;
 	if north is branchcant, unavailable;
@@ -319,9 +317,7 @@ this is the post-surf-ready rule:
 
 a wordtwisting rule (this is the pre-or-clerk rule):
 	if player is not in blah copse, unavailable;
-	if sco-or-clerk is false:
-		vcp "You still need to do something!";
-		not-yet;
+	if sco-surf-ready is false, unavailable;
 	if sco-or-clerk is true:
 		vcal "You already did this!";
 		already-done;
