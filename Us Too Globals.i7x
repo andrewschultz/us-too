@@ -6,6 +6,8 @@ volume game variables
 
 main-table is table of main oronyms.
 
+chapter scoring
+
 core-max is a number that varies. core-max is 12.
 
 cur-max-bonus is a number that varies. cur-max-bonus is 1.
@@ -22,12 +24,14 @@ chapter printing details
 
 pri-branch-reject is a truth state that varies.
 
-chapter game states
+book game states
 
 gs-using-known is a truth state that varies.
 gs-taken-inventory is a truth state that varies.
 gs-tried-black-ops is a truth state that varies.
 gs-take-hintthing-note is a truth state that varies.
+
+book intro / any time
 
 chapter on you
 
@@ -44,29 +48,65 @@ sco-meh-skit is a truth state that varies. [bonus point]
 
 sco-a-stew is a truth state that varies.
 
+book hub
+
 chapter ur branch
 
 sco-herb-ranch is a truth state that varies.
 sco-summer-bay is a truth state that varies.
 sco-blah-copse is a truth state that varies.
+sco-guard-entry is a truth state that varies.
 
-section sore dark
+book northwest branch
+
+chapter sore dark
 
 sco-sword-ark is a truth state that varies.
 
-section bore dread
+book northeast branch
+
+chapter bore dread
 
 sco-board-red is a truth state that varies.
+
+book north branch
+
+chapter Blah Copse
+
+sco-nah-queue is a truth state that varies.
+sco-surf-ready is a truth state that varies.
+sco-or-clerk is a truth state that varies.
+
+chapter Morph Lair
+
+sco-more-flares is a truth state that varies.
+
+book east branch
 
 chapter Beach Ill
 
 sco-be-chill is a truth state that varies.
-
 sco-nice-warm is a truth state that varies.
 
 sco-pie-crust is a truth state that varies.
 
 sco-probe-all is a truth state that varies.
+
+book inside
+
+chapter Pea Stalks
+
+sco-peace-talks is a truth state that varies.
+
+sco-peep-odd is a truth state that varies.
+
+chapter A Pile-Up Isle
+
+sco-base-pikes is a truth state that varies.
+sco-punt-weaker is a truth state that varies.
+sco-hike-up is a truth state that varies.
+
+book southeast branch
 
 chapter Dome Aching
 
@@ -79,13 +119,7 @@ chapter inner nest
 
 sco-pry-more is a truth state that varies.
 
-chapter A Pile-Up Isle
-
-sco-base-pikes is a truth state that varies.
-
-sco-punt-weaker is a truth state that varies.
-
-sco-hike-up is a truth state that varies.
+book southwest branch
 
 chapter Fort Earns-Four-Turns
 
@@ -94,21 +128,12 @@ sco-oh-clever is a truth state that varies.
 chapter unsorted
 
 sco-claim-it is a truth state that varies.
+
+
+
+
+
 sco-scry-bread is a truth state that varies.
-
-sco-peace-talks is a truth state that varies.
-
-sco-nah-queue is a truth state that varies.
-
-sco-surf-ready is a truth state that varies.
-
-sco-peep-odd is a truth state that varies.
-
-sco-or-clerk is a truth state that varies.
-
-sco-guard-entry is a truth state that varies.
-
-sco-more-flares is a truth state that varies.
 
 book debugs
 
