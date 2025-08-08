@@ -4,6 +4,8 @@ Version 1/241005 of Us Too Definitions by Andrew Schultz begins here.
 
 volume core code relies on this
 
+intro is a region.
+
 universal is a region.
 
 definition: a rule (called ru) is thinknoteblocking:

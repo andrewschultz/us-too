@@ -60,7 +60,7 @@ some cheese is a singular-named thing. description is "All sorts of cheese, real
 
 book House Well So Swell
 
-House Well How Swell is a room. printed name is "House Well-How-Swell". "The lawyers look at you expectantly. You fiddle with your envelope. You hope you haven't come all this way for nothing!"
+House Well How Swell is a room in intro. printed name is "House Well-How-Swell". "The lawyers look at you expectantly. You fiddle with your envelope. You hope you haven't come all this way for nothing!"
 
 after reading a command when player is in House Well How Swell:
 	if debug-state is true and word number 1 in the player's command is "test":
@@ -151,7 +151,7 @@ volume main rooms
 
 book my new mine ooh
 
-My New Mine Ooh is a room in universal. printed name is "My New Mine, Ooh!". description is "You're down in your new mine, with a passage up back to the great wide world[if sco-be-strong is true]. You've cleared the way--you can't be sure of the direction, as the path twists a bit[else if sco-my-quest is false]. But you're still finding your bearings and purpose. You feel a bit of imposter syndrome, just being given this mine. You don't want to just start wandering. At least you know who you are, and maybe that'll help reframe things[end if].".
+My New Mine Ooh is a room in intro. printed name is "My New Mine, Ooh!". description is "You're down in your new mine, with a passage up back to the great wide world[if sco-be-strong is true]. You've cleared the way--you can't be sure of the direction, as the path twists a bit[else if sco-my-quest is false]. But you're still finding your bearings and purpose. You feel a bit of imposter syndrome, just being given this mine. You don't want to just start wandering. At least you know who you are, and maybe that'll help reframe things[end if].".
 
 check thinking in Mine Ooh when sco-my-quest is false:
 	say "You're a bit lost, but you track what you know:";
@@ -322,7 +322,7 @@ The board red is a thing. printed name is "board (red)". "It's about six feet lo
 
 book Pea Stalks
 
-Pea Stalks is a room. "Pea stalks grow here. But they're nothing you can eat, or prepare to eat quickly."
+Pea Stalks is a room in universal. "Pea stalks grow here. But they're nothing you can eat, or prepare to eat quickly."
 
 chapter pea pod
 
@@ -330,7 +330,7 @@ the pea pod is a thing. "It's an unusual pea pod. It'll go well with the meal."
 
 book A Pile Up Isle
 
-A Pile Up Isle is a room. printed name is "A Pile-Up Isle".
+A Pile Up Isle is a room in universal. printed name is "A Pile-Up Isle".
 
 chapter clay mitt
 
