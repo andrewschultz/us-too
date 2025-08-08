@@ -125,13 +125,18 @@ chapter Fort Earns-Four-Turns
 
 sco-oh-clever is a truth state that varies.
 
-chapter unsorted
+book west branch
 
+chapter Bowl Ditch
+
+sco-bold-itch is a truth state that varies.
 sco-claim-it is a truth state that varies.
 
+book south branch
 
+book unsorted
 
-
+chapter unsorted
 
 sco-scry-bread is a truth state that varies.
 

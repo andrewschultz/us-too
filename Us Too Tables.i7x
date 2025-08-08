@@ -42,7 +42,8 @@ w1 (text)	w2 (text)	first-hom (text)	second-hom	hom-txt-rule (rule)	first-exact	
 "in"	"earnest"	--	--	--	false	false	false	false	"figure how to visit the inner nest"	false	true	true	false	false	dome aching	pre-in-earnest rule	post-in-earnest rule	--	--
 "pry"	"more"	--	--	--	false	false	false	false	"figuring how to take the prime oar"	false	true	true	false	false	inner nest	pre-pry-more rule	post-pry-more rule	--	--
 "oh"	"clever"	--	--	--	false	false	false	false	"operating the oak lever"	false	true	true	false	false	fort earns four turns	pre-oh-clever rule	post-oh-clever rule	--	--
-"claim"	"it"	--	--	--	false	false	false	false	"gathering the clay mitt"	false	true	true	false	false	A Pile Up isle	pre-claim-it rule	post-claim-it rule	--	--
+"bold"	"itch"	--	--	--	false	false	false	false	"clue for guessing one word right"	false	true	true	false	false	bowl ditch	pre-bold-itch rule	post-bold-itch rule	--	--
+"claim"	"it"	--	--	--	false	false	false	false	"gathering the clay mitt"	false	true	true	false	false	Bowl Ditch	pre-claim-it rule	post-claim-it rule	--	--
 
 chapter scribe red scoring
 
@@ -518,10 +519,25 @@ this is the post-oh-clever rule:
 
 book west branch sorting
 
+chapter Bowl Ditch scoring
+
+a wordtwisting rule (this is the pre-bold-itch rule):
+	if player is not in bowl ditch, unavailable;
+	if sco-bold-itch is true:
+		vcal "You already shook off your initial embarrassment and fears. Too much itch, and you'll get rash";
+		already-done;
+	ready;
+
+this is the post-bold-itch rule:
+	now sco-bold-itch is true;
+	say "You have a think. It's not terrible. You've gotten here. You can get back. You really did trample through whatever was to the east. You walk off the ankle sprain you get from falling down. At the edges of the ditch, you notice:  hey, isn't that a clay mitt? And hey, you can see things clearing out to the north!";
+	move clay mitt to Bowl Ditch;
+	reveal Sob Acres to north;
+
 a wordtwisting rule (this is the pre-claim-it rule):
-	if player is not in pile up isle, unavailable;
+	if player is not in bowl ditch and player does not have clay mitt, unavailable;
 	if sco-claim-it is true:
-		vcal "The clay mitt is already good and claimed.";
+		vcal "You reclaim the clay mitt, which makes you feel powerful and proud, I guess.";
 		already-done;
 	ready;
 

@@ -359,12 +359,6 @@ A Pile Up Isle is a room in universal. printed name is "A Pile-Up Isle".
 
 the bay spikes are a thing in A Pile Up Isle. "Bay spikes seem to guard you from entering the large pile. They are too sharp to walk on. What to do?"
 
-chapter clay mitt
-
-the clay mitt is a thing. description is "It should protect your hands against all but the fieriest of oven flames.".
-
-check taking clay mitt: say "You don't feel bold enough to. Just taking isn't enough." instead;
-
 chapter pike
 
 the base pikes are a plural-named thing. "A pike lies here as part of the bric-a-brac. [if sco-pie-crust is false]And, oh boy, it has some rust on it.  Pike rust![else]It is shiny and new now you repurposed its rust. Still potentially kinda base and evil, though. You don't need a weapon like this.[end if]"
@@ -466,7 +460,22 @@ after examining quick beak wick:
 		say "You recharge yourself.";
 	else:
 		say "[one of]You instantly feel a disorienting surge of speed. What can you do with it?[or]You feel that speed rush again.[stopping]";
+	now extra-turns is 4;
 	continue the action;
+
+book Bowl Ditch
+
+Bowl Ditch is a room in universal. "[if sob acres is visited]You wonder why this place ever intimidated you. There's Sob Acres to the north and the Ur-Branch back east[else if sco-bold-itch is true]Now you've got your bearings, you see a passage north as well as back east[else]Ouch. Oww. You're lying on the ground, embarrassed how you tripped and fell, worried and scared there's no way back. Your injury is probably more psychological than physical, but it's there, and you need to overcome it[end if]."
+
+chapter clay mitt
+
+the clay mitt is a thing. description is "[if sco-claim-it is false]It's not yours, so you can't take it. You guess. Well, as things stand[else]It should protect your hands against all but the fieriest of oven flames[end if].".
+
+check taking clay mitt when clay mitt is in Bowl Ditch: say "You don't feel bold enough to. Just taking isn't enough." instead;
+
+book Sob Acres
+
+Sob Acres is a room.
 
 volume unsorted
 
@@ -484,7 +493,7 @@ volume regular verbs
 
 book drop/take
 
-check taking: say "You never need to take anything explicitly in [this-game], though you have the option of taking two hint items." instead;
+check taking: say "You never need to take anything explicitly in [this-game], though you have the option of taking two hint items. However, trying to take an item may give you a hint as to what you really need to do to acquire or use it." instead;
 
 check dropping: say "You never need to drop anything explicitly in [this-game]. Often, when you're done with something, it will be consumed. Also, there is no inventory limit." instead;
 
