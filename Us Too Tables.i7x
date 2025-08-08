@@ -35,6 +35,7 @@ w1 (text)	w2 (text)	first-hom (text)	second-hom	hom-txt-rule (rule)	first-exact	
 "peace"	"talks"	--	--	--	false	false	false	false	"finding something incorporeal within the Pea Stalks"	false	true	true	false	false	pea stalks	pre-peace-talks rule	post-peace-talks rule	--	--
 "peep"	"odd"	--	--	--	false	false	false	false	"finding something unusual within the Pea Stalks"	false	true	false	false	false	pea stalks	pre-peep-odd rule	post-peep-odd rule	--	--
 "can"	"take"	--	--	--	false	false	false	false	"dispelling the Can't-Ache"	false	true	true	false	false	dome aching	pre-can-take rule	post-can-take rule	--	--
+"gray|grey"	"tin|tins"	--	--	--	false	false	false	false	"discover what the Great Inns hold"	false	true	true	false	false	dome aching	pre-gray-tins rule	post-gray-tins rule	--	--
 "claim"	"it"	--	--	--	false	false	false	false	"gathering the clay mitt"	false	true	true	false	false	pile up isle	pre-claim-it rule	post-claim-it rule	--	--
 "in"	"earnest"	--	--	--	false	false	false	false	"figure how to visit the inner nest"	false	true	true	false	false	dome aching	pre-in-earnest rule	post-in-earnest rule	--	--
 "pry"	"more"	--	--	--	false	false	false	false	"clue for guessing one word right"	false	true	true	false	false	inner nest	pre-pry-more rule	post-pry-more rule	--	--
@@ -410,6 +411,18 @@ this is the post-can-take rule:
 	say "You feel you can take the aching. It takes a bit of time, and you worry a worse aching may replace it ... and, in a way, it does. You wonder what you need to do here now. You see great inns and an inner nest. Which is worth visiting?";
 	move great inns to Dome Aching;
 	move inscen to Dome Aching;
+
+a wordtwisting rule (this is the pre-gray-tins rule):
+	if player is not in dome aching, unavailable;
+	if sco-gray-tins is true:
+		vcal "You already got gray tins from the Great Inns!";
+		already-done;
+	ready;
+
+this is the post-gray-tins rule:
+	now sco-gray-tins is true;
+	say "Why not? You can always use tins.";
+	now player has tins;
 
 a wordtwisting rule (this is the pre-in-earnest rule):
 	if player is not in dome aching, unavailable;

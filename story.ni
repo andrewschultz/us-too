@@ -357,6 +357,10 @@ chapter great inns
 
 the great inns are scenery.
 
+chapter gray tins
+
+the gray tins are a plural-named thing. "There are two of them. [gray-tin-status]"
+
 chapter inscen
 
 the inscen is privately-named scenery. understand "inner/nest" and "inner nest" as inscen when inscen is in location of player.
