@@ -29,6 +29,7 @@ w1 (text)	w2 (text)	first-hom (text)	second-hom	hom-txt-rule (rule)	first-exact	
 "nah"	"queue"	--	--	--	false	false	false	false	"repelling the [team]"	false	true	true	false	false	blah copse	pre-nah-queue rule	post-nah-queue rule	--	--
 "surf"	"ready"	--	--	--	false	false	false	false	"giving Sir Freddie a new direction"	false	true	true	false	false	blah copse	pre-surf-ready rule	post-surf-ready rule	--	--
 "or"	"clerk"	--	--	--	false	false	false	false	"figuring what Sir Freddie was scared of"	false	true	true	false	false	blah copse	pre-or-clerk rule	post-or-clerk rule	--	--
+"more"	"flares"	--	--	--	false	false	false	false	"clue for guessing one word right"	false	true	true	false	false	morph lairs	pre-more-flares rule	post-more-flares rule	--	--
 "probe"	"all"	--	--	--	false	false	false	false	"finding a purpose for the pro ball"	false	true	true	false	false	ur branch	pre-probe-all rule	post-probe-all rule	--	--
 "scry"	"bread"	--	"bred"	--	false	false	false	false	"getting something from the scribe (red)"	false	true	true	false	false	pile up isle	vc-scry-bread rule	vr-scry-bread rule	--	--
 "peace"	"talks"	--	--	--	false	false	false	false	"finding something incorporeal within the Pea Stalks"	false	true	true	false	false	pea stalks	pre-peace-talks rule	post-peace-talks rule	--	--
@@ -327,6 +328,21 @@ this is the post-or-clerk rule:
 	say "Haha! Sir Freddie seemed nice enough, but you guess he was scared of someone else who was scared and putting up a front. Sure enough, a clerk Sir Freddie could've beaten up with one hand (if Sir Freddie had the courage to fight, of course) comes out of a bunker with their hands up. They begin to apologize, but you say it's all right.[paragraph break]'You ... you aren't part of the forest team?' Certainly not, you assure them.[paragraph break]'That's a relief! I wish I had more to give you than this blah string I found. I have no clue what to do with it. Oh, and I should never have meddled with what's to the north ... but maybe you can ...'[paragraph break]With that, the clerk runs away, turning briefly to wave at you.";
 	now player has blah string;
 	reveal Morph Lairs to north;
+
+chapter morph lairs scoring
+
+a wordtwisting rule (this is the pre-more-flares rule):
+	if player is not in morph lairs, unavailable;
+	ready;
+
+this is the post-more-flares rule:
+	now sco-more-flares is true;
+	say "You set off the flares, and what do you know? You see another flare coming towards the morph lairs from a distance. Fortunately you already started running to the Ur-Branch. Whereupon you see smoke you follow ... a bit. The path opens up a bit further to the southeast. You have somewhere new to go, though you can't exactly go back north.";
+	now Dome Aching is mapped southeast of Ur Branch;
+	now Ur Branch is mapped northwest of Dome Aching;
+	wfak;
+	now north is branchdone;
+	move player to Ur Branch;
 
 chapter pea stalks scoring
 
