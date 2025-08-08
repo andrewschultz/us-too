@@ -351,6 +351,21 @@ book Dome Aching
 
 Dome Aching is a room in universal. printed name is "Dome, Aching". "[if sco-can-take is false]Ugh. You're not physically uncomfortable, you just feel ... oh, how can I describe it? A can't-ache. It prevents you from seeing anything here[else]You're a bit more aware of your surroundings now[end if]. Of course, you can always go back northwest to the Ur-Branch."
 
+after printing the locale description for dome aching when sco-can-take is true:
+	say "[if sco-gray-tins is true]The Great Inns probably gave everything they had to offer. [else]Great Inns stay off to the side here. What could they hold? ";
+	say "There's that inner nest to go [b]IN[r], too. [if sco-pry-more is true]You looted it, though[else if sco-in-earnest is true]You're pretty sure you found the right way in[else]You're pretty sure it's worth getting into, since you kind of figured it's a good idea to explore everywhere[end if].";
+	continue the action;
+
+to say dome-scen:
+	if dome-in-score is 0:
+		say "What could they hold?";
+	else if dome-in-score is 2:
+		say "You've already seen both of them.";
+	else if sco-gray-tins is true:
+		say "You got the gray tins from the Great Inns";
+	else:
+		say "You showed you were worthy to visit the inner nest";
+
 check going inside in Dome Aching when sco-can-take is true and sco-in-earnest is false:
 	say "The inner nest repels you. Your motives aren't pure. Quester see, quester visit, quester score points. So cold and calculating!" instead;
 
