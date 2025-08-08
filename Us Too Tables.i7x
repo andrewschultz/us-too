@@ -340,7 +340,7 @@ a wordtwisting rule (this is the pre-peace-talks rule):
 this is the post-peace-talks rule:
 	now sco-peace-talks is true;
 	say "Getting back to nature and stuff leaves you at peace with yourself. So at peace, you want to spread that peace to others, whether or not they fully deserve it. However, now you're so at peace, you recognize you are disturbing the plants' peace. You retreat to the Ur-Branch.";
-	block-and-back;
+	inside-block-back;
 
 a wordtwisting rule (this is the pre-peep-odd rule):
 	if player is not in pea stalks, unavailable;
@@ -353,6 +353,16 @@ this is the post-peep-odd rule:
 	now sco-peep-odd is true;
 	say "Oh wait! There is something that will add a bit of flavor!";
 	now player has pea pod;
+	inside-block-back;
+
+to inside-block-back:
+	if sco-peep-odd and sco-peace-talks:
+		say "You feel a moment of zen. You've done what you could here, and you sense you don't fully belong. It's time to move on.";
+		block-back;
+	else if sco-peep-odd is true:
+		say "You're pleased you found something out of the way, but perhaps there's something bigger to figure here.";
+	else:
+		say "In the big picture, it's good to understand peace talks. But maybe there's something fun and obscure to note before moving on.";
 
 chapter pile up isle scoring
 
