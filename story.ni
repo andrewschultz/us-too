@@ -237,6 +237,8 @@ after printing the locale description for Ur Branch when sco-mess-pot is true an
 	reveal sore dark to northwest;
 	continue the action;
 
+check going inside in Ur Branch when sco-guard-entry is false and garden tree is in location of player: say "The garden tree blocks you. It doesn't allow just any old visitors." instead;
+
 [cur, car, bar, or, saw branches]
 
 chapter herbs
