@@ -377,6 +377,14 @@ chapter gray tins
 
 the gray tins are a plural-named thing. "There are two of them. [gray-tin-status]"
 
+to say gray-tin-status:
+	if gray-tin-score is 0:
+		say "Both are empty";
+	else if gray-tin-score is 2:
+		say "Both are full, with pie crust and dough";
+	else:
+		say "Only one is full. It contains [if sco-pie-crust is true]pie crust[else]dough[end if]"
+
 chapter inscen
 
 the inscen is privately-named scenery. understand "inner/nest" and "inner nest" as inscen when inscen is in location of player.

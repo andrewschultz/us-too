@@ -54,6 +54,9 @@ volume composite numbers
 to decide which number is dome-in-score:
 	decide on (boolval of sco-gray-tins) + (boolval of sco-in-earnest);
 
+to decide which number is gray-tin-score:
+	decide on (boolval of sco-dough-making) + (boolval of sco-pie-crust);
+
 volume cheat item stuff
 
 to say eye-with:
