@@ -251,6 +251,18 @@ book Beach Ill
 
 Beach Ill is a room in universal. printed name is "[if sco-be-chill is false]Beach, Ill[else if sco-probe-all is false]Bless-and-Bleah Sand[else]Dune Ever-Do-Never[end if]". "[if sco-be-chill is false]You have a general sense of malaise here, which isn't usual for these environs, but it's there, and not being able to get rid of it simply is causing more malaise[else]It's nice here. The only way out on foot is back west, since you can't swim the other ways[end if]."
 
+after printing the locale description of Beach Ill when sco-peace-talks is true and Sir Freddie is not moot:
+	say "With the lessons learned from the Pea Stalks, you broker a tentative truce between the pun teaker and Sir Freddie. The pun tweaker is quite grateful for this. 'What can I offer you?' 'Oh, nothing much, you say.' The pun tweaker says 'oh of course' a bit too quickly.";
+	moot Sir Freddie;
+	continue the action;
+
+check going east in Beach Ill when sco-probe-all is true:
+	if sco-punt-weaker is false, say "You have no transport. Yet. And the pun tweaker won't take you for free." instead;
+	if sco-pry-more is false, say "You have no way to steer the punt. Yet." instead;
+	say "[one of]Your punt (weaker) is not useless. Maybe the prime oar helps it be more useful.[or]The punt returns to the isle with no incident.[stopping]";
+
+check going west in Pile Up Isle: say "You have no problem steering the punt back. It seems surprisingly sturdy.";
+
 chapter nigh swarm
 
 the nigh swarm is a thing. "A nigh swarm ruins the tranquility of the area. You can't see behind it.". description is "The nigh swarm buzzes aggresively.".
@@ -274,6 +286,10 @@ The pun tweaker is a sentient. "The pun tweaker continues to stay here, looking 
 chapter gauche hip go ship
 
 the gauche hip go ship is scenery. printed name is "Gauche/Hip GO-Ship". "It's really gaudy. You'll probably never get a chance to ride in it. But maybe it contains something you need."
+
+chapter punt weaker
+
+the punt weaker is a thing. "Your punt, weaker, floats here, ready to take you [if isle is visited]back [end if][if player is in isle]west[else]east[end if]."
 
 book Sore Dark
 

@@ -169,6 +169,8 @@ this is the post-probe-all rule:
 	say "It also reveals something near here. You notice some sort of ship. You wave, and its captain, so to speak, waves back. They introduce themselves as the Pun Tweaker. Their ship is the Gauche Hip Go Ship. They immediately start in with some crunching puns.[paragraph break][i][bracket][b]NOTE[r][i]: you don't need to examine the pro ball from here on out for it to open new passages.[close bracket][i][line break]";
 	move meh spot to my new mine ooh;
 	now player has pro ball;
+	move pun tweaker to beach ill;
+	move ship to beach ill;
 	continue the action; [some passages you hadn't even considered away from the Ur-Branch. You lose yourself in it for a while, and then, when you look up, you see ]
 
 a wordtwisting rule (this is the pre-summer-bay rule):
@@ -242,17 +244,24 @@ this is the post-pie-crust rule:
 
 a wordtwisting rule (this is the pre-punt-weaker rule):
 	if player is not in beach ill, unavailable;
-	if sco-punt-weaker is false:
-		vcp "You still need to do something!";
+	if sir freddie is not in beach ill and sir freddie is not moot:
+		vcp "The pun tweaker says 'Yeah, maybe I have one. But what can you do for me?'";
+		not-yet;
+	if sco-peace-talks is false:
+		vcp "Perhaps if you managed to get rid of Sir Freddie...";
 		not-yet;
 	if sco-punt-weaker is true:
-		vcal "You already did this!";
+		vcal "You already got the punt, weaker!";
 		already-done;
 	ready;
 
 this is the post-punt-weaker rule:
 	now sco-punt-weaker is true;
-	say "Hooray! You figured what to do! You get a point!";
+	say "'Ah, yes, that's it. A small gift for a small favor.' The pun tweaker goes to the back of [the ship], and you hear a splash. The pun tweaker reappers, clothes wet, pushing a pretty scrawny punt. 'It won't get very far, but there's something to the east. Oh, and I hope you have a way to steer it, too. Anyway, here you go. My repairs are complete'";
+	move punt weaker to beach ill;
+	moot pun tweaker;
+	moot ship;
+	reveal Pile Up Isle to east;
 
 chapter sore dark scoring
 
