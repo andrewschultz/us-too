@@ -132,6 +132,10 @@ chapter Bowl Ditch
 sco-bold-itch is a truth state that varies.
 sco-claim-it is a truth state that varies.
 
+chapter Sob Acres
+
+sco-saw-bakers is a truth state that varies.
+
 book south branch
 
 book unsorted

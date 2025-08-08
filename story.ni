@@ -477,6 +477,10 @@ book Sob Acres
 
 Sob Acres is a room.
 
+book Deli Stern
+
+Deli Stern is a room. "You can only really go out here."
+
 volume unsorted
 
 book unclaimed things
