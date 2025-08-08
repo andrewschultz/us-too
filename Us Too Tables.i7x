@@ -22,27 +22,27 @@ w1 (text)	w2 (text)	first-hom (text)	second-hom	hom-txt-rule (rule)	first-exact	
 "blah"	"copse"	--	--	--	false	false	false	false	"avoiding the black ops"	false	true	true	false	false	ur branch	pre-blah-copse rule	post-blah-copse rule	--	--
 "guard"	"entry"	--	--	--	false	false	false	false	"finding a way past the garden tree"	false	true	true	false	false	ur branch	pre-guard-entry rule	post-guard-entry rule	--	--
 "be"	"chill"	--	--	--	false	false	false	false	"dealing with the beach, ill"	false	true	true	false	false	Beach Ill	pre-be-chill rule	post-be-chill rule	--	--
-"pie"	"crust"	"pi"	--	--	false	false	false	false	"finding what's under the pike rust"	false	true	true	false	false	Beach Ill	pre-pie-crust rule	post-pie-crust rule	--	--
 "punt"	"weaker"	--	--	--	false	false	false	false	"trading with the pun tweaker"	false	true	true	false	false	Beach Ill	pre-punt-weaker rule	post-punt-weaker rule	--	--
 "base"	"pikes"	--	--	--	false	false	false	false	"figuring a way through the bay spikes"	false	true	true	false	false	a pile up isle	pre-base-pikes rule	post-base-pikes rule	--	--
+"pie"	"crust"	"pi"	--	--	false	false	false	false	"finding what's under the pike rust"	false	true	true	false	false	A Pile Up Isle	pre-pie-crust rule	post-pie-crust rule	--	--
+"hike"	"up"	--	--	--	false	false	false	false	"reaching the high cup"	false	true	true	false	false	a pile up isle	pre-hike-up rule	post-hike-up rule	--	--
 "sword"	"ark"	"soared"	--	--	false	false	false	false	"finding something in the Sore Dark"	false	true	true	false	false	sore dark	pre-sword-ark rule	post-sword-ark rule	--	--
 "board"	"red"	"bored"	--	--	false	false	false	false	"finding something in the Bore Dread"	false	true	true	false	false	bore dread	pre-board-red rule	post-board-red rule	--	--
 "nah"	"queue"	--	--	--	false	false	false	false	"repelling the [team]"	false	true	true	false	false	blah copse	pre-nah-queue rule	post-nah-queue rule	--	--
 "surf"	"ready"	--	--	--	false	false	false	false	"giving Sir Freddie a new direction"	false	true	true	false	false	blah copse	pre-surf-ready rule	post-surf-ready rule	--	--
 "or"	"clerk"	--	--	--	false	false	false	false	"figuring what Sir Freddie was scared of"	false	true	true	false	false	blah copse	pre-or-clerk rule	post-or-clerk rule	--	--
-"more"	"flares"	--	--	--	false	false	false	false	"clue for guessing one word right"	false	true	true	false	false	morph lairs	pre-more-flares rule	post-more-flares rule	--	--
+"more"	"flares"	--	--	--	false	false	false	false	"activating the morph lairs"	false	true	true	false	false	morph lairs	pre-more-flares rule	post-more-flares rule	--	--
 "probe"	"all"	--	--	--	false	false	false	false	"finding a purpose for the pro ball"	false	true	true	false	false	ur branch	pre-probe-all rule	post-probe-all rule	--	--
-"scry"	"bread"	--	"bred"	--	false	false	false	false	"getting something from the scribe (red)"	false	true	true	false	false	pile up isle	pre-scry-bread rule	post-scry-bread rule	--	--
+"scry"	"bread"	--	"bred"	--	false	false	false	false	"getting something from the scribe (red)"	false	true	true	false	false	A Pile Up Isle	pre-scry-bread rule	post-scry-bread rule	--	--
 "peace"	"talks"	--	--	--	false	false	false	false	"finding something incorporeal within the Pea Stalks"	false	true	true	false	false	pea stalks	pre-peace-talks rule	post-peace-talks rule	--	--
 "peep"	"odd"	--	--	--	false	false	false	false	"finding something unusual within the Pea Stalks"	false	true	false	false	false	pea stalks	pre-peep-odd rule	post-peep-odd rule	--	--
 "can"	"take"	--	--	--	false	false	false	false	"dispelling the Can't-Ache"	false	true	true	false	false	dome aching	pre-can-take rule	post-can-take rule	--	--
 "dough"	"making"	--	--	--	false	false	false	false	"doing something positive in [dome]"	false	true	true	false	false	dome aching	pre-dough-making rule	post-dough-making rule	--	--
 "gray|grey"	"tin|tins"	--	--	--	false	false	false	false	"discover what the Great Inns hold"	false	true	true	false	false	dome aching	pre-gray-tins rule	post-gray-tins rule	--	--
-"hike"	"up"	--	--	--	false	false	false	false	"clue for guessing one word right"	false	true	true	false	false	a pile up isle	pre-hike-up rule	post-hike-up rule	--	--
-"claim"	"it"	--	--	--	false	false	false	false	"gathering the clay mitt"	false	true	true	false	false	pile up isle	pre-claim-it rule	post-claim-it rule	--	--
 "in"	"earnest"	--	--	--	false	false	false	false	"figure how to visit the inner nest"	false	true	true	false	false	dome aching	pre-in-earnest rule	post-in-earnest rule	--	--
-"pry"	"more"	--	--	--	false	false	false	false	"clue for guessing one word right"	false	true	true	false	false	inner nest	pre-pry-more rule	post-pry-more rule	--	--
+"pry"	"more"	--	--	--	false	false	false	false	"figuring how to take the prime oar"	false	true	true	false	false	inner nest	pre-pry-more rule	post-pry-more rule	--	--
 "oh"	"clever"	--	--	--	false	false	false	false	"operating the oak lever"	false	true	true	false	false	fort earns four turns	pre-oh-clever rule	post-oh-clever rule	--	--
+"claim"	"it"	--	--	--	false	false	false	false	"gathering the clay mitt"	false	true	true	false	false	A Pile Up isle	pre-claim-it rule	post-claim-it rule	--	--
 
 chapter scribe red scoring
 
@@ -217,6 +217,8 @@ this is the post-blah-copse rule:
 	say "Aha! That was what you were doing wrong. You just needed to tweak a thing or two. This time, you avoid the black-ops site.";
 	move player to Blah Copse;
 
+book east branch scoring
+
 chapter Beach Ill scoring
 
 a wordtwisting rule (this is the pre-be-chill rule):
@@ -265,6 +267,8 @@ this is the post-punt-weaker rule:
 	moot ship;
 	reveal Pile Up Isle to east;
 
+book northwest branch scoring
+
 chapter sore dark scoring
 
 a wordtwisting rule (this is the pre-sword-ark rule):
@@ -278,6 +282,8 @@ this is the post-sword-ark rule:
 	say "It takes a while of feeling around, but your blah string does the job. You find a sword ark. You worry you may not be worthy of the sword you find. It is found in an earthen recess. Perhaps you are not. But you are not killed when you take it. So that's something![paragraph break]Looking on its hilt, you see you are now in possession of the TERRA BLADE.";
 	now player has Terra Blade;
 	block-and-back;
+
+book northeast branch scoring
 
 chapter bore dread scoring
 
@@ -293,6 +299,8 @@ this is the post-board-red rule:
 	say "You turn up a board (red) ... it's narrow and six feet long, made of styrofoam, with CATCH THE WAVES and STAND ON THIS SIDE written on one side. Since it wasn't hard to find, you don't feel excited you found it, but you carry it anyway.";
 	now player has board red;
 	block-and-back;
+
+book north branch scoring
 
 chapter blah copse scoring
 
@@ -355,6 +363,8 @@ this is the post-more-flares rule:
 	now north is branchdone;
 	move player to Ur Branch;
 
+book inside scoring
+
 chapter pea stalks scoring
 
 a wordtwisting rule (this is the pre-peace-talks rule):
@@ -415,17 +425,7 @@ this is the post-hike-up rule:
 	now sco-hike-up is true;
 	say "You decide the direct way of climbing the pile at a steep angle just won't work. But it's a big pile, and as you walk around, you see a slower way, less steep, but less likely to cause you to slip. You get to the top and have a look around. From your vantage point, you see a new path from the Ur-Branch, to the southwest! You also see places well beyond it, to the west and south. Well, that should cover all the directions.[paragraph break]It makes you almost forget about the high cup. Well, it turns out the high cup is glued to other trash. Dang it! You're not sure if you needed it, anyway. It looks kind of fancy.";
 
-a wordtwisting rule (this is the pre-claim-it rule):
-	if player is not in pile up isle, unavailable;
-	if sco-claim-it is true:
-		vcal "The clay mitt is already good and claimed.";
-		already-done;
-	ready;
-
-this is the post-claim-it rule:
-	now sco-claim-it is true;
-	say "You wonder if someone would really miss this clay mitt. But then you realize there's nothing stopping you, and they probably didn't just stop by here on vacation and lose it.";
-	now player has clay mitt;
+book southeast branch sorting
 
 chapter dome aching scoring
 
@@ -499,6 +499,8 @@ this is the post-pry-more rule:
 	say "Surely there must be some way to get the oar, you think. And you pry constructively. After an hour's work, you have an oar, lightweight and powerful.";
 	now player has prime oar;
 
+book southwest branch sorting
+
 chapter fort earns four turns scoring
 
 a wordtwisting rule (this is the pre-oh-clever rule):
@@ -513,6 +515,22 @@ this is the post-oh-clever rule:
 	say "You think and think and think. Of course, they wouldn't want any old fool pulling the lever. So there's no obvious way to pull it. You try a hundred different ways, then feel clever on the hundred and first when -- CLICK -- it flips, revealing a compartment behind![paragraph break]The feeling of cleverness lasts only a few seconds, though. You realize how you could've seen it sooner if you'd been paying attention. After fifteen minutes, you feel even less clever for having spent fifteen minutes unconstructively visiting the past.[paragraph break]Then you notice what the lever was hiding: a be-quick beak wick! Nice if you need speed, you're sure.";
 	move beak wick to Fort Earns Four Turns;
 	moot oak lever;
+
+book west branch sorting
+
+a wordtwisting rule (this is the pre-claim-it rule):
+	if player is not in pile up isle, unavailable;
+	if sco-claim-it is true:
+		vcal "The clay mitt is already good and claimed.";
+		already-done;
+	ready;
+
+this is the post-claim-it rule:
+	now sco-claim-it is true;
+	say "You wonder if someone would really miss this clay mitt. But then you realize there's nothing stopping you, and they probably didn't just stop by here on vacation and lose it.";
+	now player has clay mitt;
+
+book south branch sorting
 
 volume directions
 
