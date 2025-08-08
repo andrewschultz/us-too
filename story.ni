@@ -475,11 +475,11 @@ check taking clay mitt when clay mitt is in Bowl Ditch: say "You don't feel bold
 
 book Sob Acres
 
-Sob Acres is a room.
+Sob Acres is a room in universal. printed name is "[if sco-dell-eastern is false]Sob Acres[else]Dell, Eastern[end if]".
 
 book Deli Stern
 
-Deli Stern is a room. "You can only really go out here."
+Deli Stern is a room in universal. printed name is "Deli, Stern". "You can only really go out[if sco-dell-eastern is true] (well, east, same thing)[end if] here."
 
 volume unsorted
 

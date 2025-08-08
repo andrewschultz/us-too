@@ -136,6 +136,10 @@ chapter Sob Acres
 
 sco-saw-bakers is a truth state that varies.
 
+chapter deli stern
+
+sco-dell-eastern is a truth state that varies.
+
 book south branch
 
 book unsorted

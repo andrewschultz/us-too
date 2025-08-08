@@ -45,6 +45,7 @@ w1 (text)	w2 (text)	first-hom (text)	second-hom	hom-txt-rule (rule)	first-exact	
 "bold"	"itch"	--	--	--	false	false	false	false	"clue for guessing one word right"	false	true	true	false	false	bowl ditch	pre-bold-itch rule	post-bold-itch rule	--	--
 "claim"	"it"	--	--	--	false	false	false	false	"gathering the clay mitt"	false	true	true	false	false	Bowl Ditch	pre-claim-it rule	post-claim-it rule	--	--
 "saw"	"bakers"	--	--	--	false	false	false	false	"clue for guessing one word right"	false	true	true	false	false	sob acres	pre-saw-bakers rule	post-saw-bakers rule	--	--
+"dell"	"eastern"	--	--	--	false	false	false	false	"making Sob Acres less forbidding"	false	true	true	false	false	deli stern	pre-dell-eastern rule	post-dell-eastern rule	--	--
 
 chapter scribe red scoring
 
@@ -560,6 +561,20 @@ this is the post-saw-bakers rule:
 	now sco-saw-bakers is true;
 	say "You keep an eye out for other people. Eventually, you see them: bakers, upset they're getting no business. You can probably go INSIDE to their deli.";
 	reveal Deli Stern to inside;
+
+chapter deli stern scoring
+
+a wordtwisting rule (this is the pre-dell-eastern rule):
+	if player is not in deli stern, unavailable;
+	if sco-dell-eastern is true:
+		vcal "You already made things nicer to the east!";
+		already-done;
+	ready;
+
+this is the post-dell-eastern rule:
+	now sco-dell-eastern is true;
+	say "The surroundings are a bit more welcoming now. Oh, you can go east as well as out, too.";
+	reveal Sob Acres to the east;
 
 book south branch sorting
 
