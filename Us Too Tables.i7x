@@ -24,6 +24,7 @@ w1 (text)	w2 (text)	first-hom (text)	second-hom	hom-txt-rule (rule)	first-exact	
 "be"	"chill"	--	--	--	false	false	false	false	"dealing with the beach, ill"	false	true	true	false	false	Beach Ill	pre-be-chill rule	post-be-chill rule	--	--
 "pie"	"crust"	"pi"	--	--	false	false	false	false	"finding what's under the pike rust"	false	true	true	false	false	Beach Ill	pre-pie-crust rule	post-pie-crust rule	--	--
 "punt"	"weaker"	--	--	--	false	false	false	false	"trading with the pun tweaker"	false	true	true	false	false	Beach Ill	pre-punt-weaker rule	post-punt-weaker rule	--	--
+"base"	"pikes"	--	--	--	false	false	false	false	"figuring a way through the bay spikes"	false	true	true	false	false	a pile up isle	pre-base-pikes rule	post-base-pikes rule	--	--
 "sword"	"ark"	"soared"	--	--	false	false	false	false	"finding something in the Sore Dark"	false	true	true	false	false	sore dark	pre-sword-ark rule	post-sword-ark rule	--	--
 "board"	"red"	"bored"	--	--	false	false	false	false	"finding something in the Bore Dread"	false	true	true	false	false	bore dread	pre-board-red rule	post-board-red rule	--	--
 "nah"	"queue"	--	--	--	false	false	false	false	"repelling the [team]"	false	true	true	false	false	blah copse	pre-nah-queue rule	post-nah-queue rule	--	--
@@ -389,7 +390,18 @@ to inside-block-back:
 	else:
 		say "In the big picture, it's good to understand peace talks. But maybe there's something fun and obscure to note before moving on.";
 
-chapter pile up isle scoring
+chapter A Pile Up Isle scoring
+
+a wordtwisting rule (this is the pre-base-pikes rule):
+	if player is not in a pile up isle, unavailable;
+	if sco-base-pikes is true:
+		vcal "You already cleared a path through the bay spikes!";
+		already-done;
+	ready;
+
+this is the post-base-pikes rule:
+	now sco-base-pikes is true;
+	say "Well, someone must've been able to get through the bay spikes to dump stuff on the pile, you reason.";
 
 a wordtwisting rule (this is the pre-claim-it rule):
 	if player is not in pile up isle, unavailable;

@@ -351,19 +351,23 @@ book A Pile Up Isle
 
 A Pile Up Isle is a room in universal. printed name is "A Pile-Up Isle".
 
+the bay spikes are a thing in A Pile Up Isle. "Bay spikes seem to guard you from entering the large pile. They are too sharp to walk on. What to do?"
+
 chapter clay mitt
 
-the clay mitt is a thing in A Pile Up Isle. description is "It should protect your hands against all but the fieriest of oven flames.".
+the clay mitt is a thing. description is "It should protect your hands against all but the fieriest of oven flames.".
 
 check taking clay mitt: say "You don't feel bold enough to. Just taking isn't enough." instead;
 
 chapter pike
 
-the pike is a thing in A Pile Up Isle. "A pike lies here as part of the bric-a-brac. [if sco-pie-crust is false]And, oh boy, it has some rust on it.  Pike rust![else]It is shiny and new now you repurposed its rust.[end if]"
+the base pikes are a plural-named thing. "A pike lies here as part of the bric-a-brac. [if sco-pie-crust is false]And, oh boy, it has some rust on it.  Pike rust![else]It is shiny and new now you repurposed its rust. Still potentially kinda base and evil, though. You don't need a weapon like this.[end if]"
 
 section pike rust
 
 the pike rust is a thing. "It's on the pike, sort of a cover on the side. Perhaps it is better as something else."
+
+check taking pike rust: say "Oh, it might flake off uselessly if you just took it." instead;
 
 book Dome Aching
 

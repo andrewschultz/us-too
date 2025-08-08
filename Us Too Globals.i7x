@@ -81,7 +81,7 @@ sco-pry-more is a truth state that varies.
 
 chapter A Pile-Up Isle
 
-sco-claim-it is a truth state that varies.
+sco-base-pikes is a truth state that varies.
 
 sco-punt-weaker is a truth state that varies.
 
@@ -91,6 +91,7 @@ sco-oh-clever is a truth state that varies.
 
 chapter unsorted
 
+sco-claim-it is a truth state that varies.
 sco-scry-bread is a truth state that varies.
 
 sco-peace-talks is a truth state that varies.
