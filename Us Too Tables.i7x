@@ -40,6 +40,7 @@ w1 (text)	w2 (text)	first-hom (text)	second-hom	hom-txt-rule (rule)	first-exact	
 "claim"	"it"	--	--	--	false	false	false	false	"gathering the clay mitt"	false	true	true	false	false	pile up isle	pre-claim-it rule	post-claim-it rule	--	--
 "in"	"earnest"	--	--	--	false	false	false	false	"figure how to visit the inner nest"	false	true	true	false	false	dome aching	pre-in-earnest rule	post-in-earnest rule	--	--
 "pry"	"more"	--	--	--	false	false	false	false	"clue for guessing one word right"	false	true	true	false	false	inner nest	pre-pry-more rule	post-pry-more rule	--	--
+"oh"	"clever"	--	--	--	false	false	false	false	"operating the oak lever"	false	true	true	false	false	fort earns four turns	pre-oh-clever rule	post-oh-clever rule	--	--
 
 chapter scribe red scoring
 
@@ -473,6 +474,21 @@ this is the post-pry-more rule:
 	now sco-pry-more is true;
 	say "Surely there must be some way to get the oar, you think. And you pry constructively. After an hour's work, you have an oar, lightweight and powerful.";
 	now player has prime oar;
+
+chapter fort earns four turns scoring
+
+a wordtwisting rule (this is the pre-oh-clever rule):
+	if location of player is not fort earns, unavailable;
+	if sco-oh-clever is true:
+		vcal "You already pulled the oak lever and made it disappear! You just need to do something with [the wick] from here on out.";
+		already-done;
+	ready;
+
+this is the post-oh-clever rule:
+	now sco-oh-clever is true;
+	say "You think and think and think. Of course, they wouldn't want any old fool pulling the lever. So there's no obvious way to pull it. You try a hundred different ways, then feel clever on the hundred and first when -- CLICK -- it flips, revealing a compartment behind![paragraph break]The feeling of cleverness lasts only a few seconds, though. You realize how you could've seen it sooner if you'd been paying attention. After fifteen minutes, you feel even less clever for having spent fifteen minutes unconstructively visiting the past.[paragraph break]Then you notice what the lever was hiding: a be-quick beak wick! Nice if you need speed, you're sure.";
+	move beak wick to Fort Earns Four Turns;
+	moot oak lever;
 
 volume directions
 

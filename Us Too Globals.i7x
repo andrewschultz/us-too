@@ -12,6 +12,10 @@ cur-max-bonus is a number that varies. cur-max-bonus is 1.
 
 max-bonus is a number that varies. max-bonus is 1.
 
+chapter game states
+
+extra-turns is a number that varies. extra-turns is 0.
+
 volume booleans
 
 chapter printing details
@@ -80,6 +84,10 @@ chapter A Pile-Up Isle
 sco-claim-it is a truth state that varies.
 
 sco-punt-weaker is a truth state that varies.
+
+chapter Fort Earns-Four-Turns
+
+sco-oh-clever is a truth state that varies.
 
 chapter unsorted
 

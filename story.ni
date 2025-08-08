@@ -419,6 +419,39 @@ the prime oar is a thing in Inner Nest. "A prime oar stands here, floating in sp
 
 check taking prime oar when prime oar is in Inner Nest: say "You can't get close enough." instead;
 
+book Fort Earns Four Turns
+
+there is a room called Fort Earns Four Turns. it is in universal. printed name is "Fort Earns-Four-Turns".
+
+chapter oak leverl
+
+the oak lever is a thing in Fort Earns Four Turns. "[if sco-oh-clever is false]An oak lever is here, tempting you to pull it and maybe find another exit besides back northeast[else]The [wick] revealed when you pulled the lever is here. You can also go back northeast[end if].". description is "It looks intricate, not something any yutz can just walk in and pull."
+
+check taking oak lever: say "If you snap it off, you'll never find what will happen when you pull it." instead;
+
+check pulling oak lever: say "[oak-how]." instead;
+check pushing oak lever: say "[oak-how]." instead;
+
+to say oak-how: say "It's not immediately obvious how. But there must be a way, levers being levers"
+
+chapter beak wick
+
+the be quick beak wick is scenery. "The be-quick beak wick sits here. [if extra-turns > 0]You can still feel its effect, though it can't hurt to touch it again[else if beak wick is examined]Just do anything with it to get it going again[else]It doesn't seem dangerous. Perhaps you should inspect it a bit[end if].";
+
+report going when extra-turns > 0:
+	decrement extra-turns;
+	if extra-turns is 0, say "You feel back to normal speed.";
+	continue the action;
+
+after examining quick beak wick:
+	if extra-turns is 4:
+		say "You're already at maximum speed.";
+	else if extra-turns > 0:
+		say "You recharge yourself.";
+	else:
+		say "[one of]You instantly feel a disorienting surge of speed. What can you do with it?[or]You feel that speed rush again.[stopping]";
+	continue the action;
+
 volume unsorted
 
 book unclaimed things
