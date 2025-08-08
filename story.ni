@@ -350,6 +350,9 @@ book Dome Aching
 
 Dome Aching is a room in universal. printed name is "Dome, Aching". "[if sco-can-take is false]Ugh. You're not physically uncomfortable, you just feel ... oh, how can I describe it? A can't-ache. It prevents you from seeing anything here[else]You're a bit more aware of your surroundings now[end if]. Of course, you can always go back northwest to the Ur-Branch."
 
+check going inside in Dome Aching when sco-can-take is true and sco-in-earnest is false:
+	say "The inner nest repels you. Your motives aren't pure. Quester see, quester visit, quester score points. So cold and calculating!" instead;
+
 chapter great inns
 
 the great inns are scenery.
@@ -357,6 +360,14 @@ the great inns are scenery.
 chapter inscen
 
 the inscen is privately-named scenery. understand "inner/nest" and "inner nest" as inscen when inscen is in location of player.
+
+book Inner Nest
+
+Inner Nest is a room in universal.
+
+the prime oar is a thing in Inner Nest. "A prime oar stands here, floating in space[one of]. You reach out for it lazily, and it floats away[or]Whenever you get too close, it slides away[stopping]."
+
+check taking prime oar when prime oar is in Inner Nest: say "You can't get close enough." instead;
 
 volume unsorted
 

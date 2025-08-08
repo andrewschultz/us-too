@@ -67,6 +67,7 @@ sco-probe-all is a truth state that varies.
 chapter Dome Aching
 
 sco-can-take is a truth state that varies.
+sco-in-earnest is a truth state that varies.
 
 chapter A Pile-Up Isle
 

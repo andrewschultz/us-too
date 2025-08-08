@@ -36,6 +36,7 @@ w1 (text)	w2 (text)	first-hom (text)	second-hom	hom-txt-rule (rule)	first-exact	
 "peep"	"odd"	--	--	--	false	false	false	false	"finding something unusual within the Pea Stalks"	false	true	false	false	false	pea stalks	pre-peep-odd rule	post-peep-odd rule	--	--
 "can"	"take"	--	--	--	false	false	false	false	"dispelling the Can't-Ache"	false	true	true	false	false	dome aching	pre-can-take rule	post-can-take rule	--	--
 "claim"	"it"	--	--	--	false	false	false	false	"gathering the clay mitt"	false	true	true	false	false	pile up isle	pre-claim-it rule	post-claim-it rule	--	--
+"in"	"earnest"	--	--	--	false	false	false	false	"figure how to visit the inner nest"	false	true	true	false	false	dome aching	pre-in-earnest rule	post-in-earnest rule	--	--
 
 chapter scribe red scoring
 
@@ -408,6 +409,19 @@ this is the post-can-take rule:
 	say "You feel you can take the aching. It takes a bit of time, and you worry a worse aching may replace it ... and, in a way, it does. You wonder what you need to do here now. You see great inns and an inner nest. Which is worth visiting?";
 	move great inns to Dome Aching;
 	move inscen to Dome Aching;
+
+a wordtwisting rule (this is the pre-in-earnest rule):
+	if player is not in dome aching, unavailable;
+	if inscen is not in dome aching, unavailable;
+	if sco-in-earnest is true:
+		vcal "Don't want to get too earnest, here.";
+		already-done;
+	ready;
+
+this is the post-in-earnest rule:
+	now sco-in-earnest is true;
+	say "The inner nest seems to open up a bit more, comfortable you're not just running through a checklist. Well, perhaps you still are. But worst case, you took the time to pretend and make it believable. You can now go [b]IN[r].";
+	reveal inner nest to inside;
 
 volume directions
 
