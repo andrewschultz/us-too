@@ -63,8 +63,9 @@ book House Well So Swell
 House Well How Swell is a room in intro. printed name is "House Well-How-Swell". "The lawyers look at you expectantly. You fiddle with your envelope. You hope you haven't come all this way for nothing!"
 
 after reading a command when player is in House Well How Swell:
-	if debug-state is true and word number 1 in the player's command is "test":
-		continue the action;
+	if debug-state is true:
+		if word number 1 in the player's command is "test" or word number 1 in the player's command is "gonear":
+			continue the action;
 	if the player's command exactly matches the text "how so":
 		say "One lawyer stands up and snaps their fingers. 'There you go! I knew you'd get it.";
 		increment core-score;
