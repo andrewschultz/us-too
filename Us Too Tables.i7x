@@ -389,7 +389,9 @@ a wordtwisting rule (this is the pre-can-take rule):
 
 this is the post-can-take rule:
 	now sco-can-take is true;
-	say "You feel you can take the aching. It takes a bit of time, and you worry a worse aching may replace it ... and, in a way, it does. You wonder what you need to do here now.";
+	say "You feel you can take the aching. It takes a bit of time, and you worry a worse aching may replace it ... and, in a way, it does. You wonder what you need to do here now. You see great inns and an inner nest. Which is worth visiting?";
+	move great inns to Dome Aching;
+	move inscen to Dome Aching;
 
 volume directions
 

@@ -64,6 +64,10 @@ sco-pie-crust is a truth state that varies.
 
 sco-probe-all is a truth state that varies.
 
+chapter Dome Aching
+
+sco-can-take is a truth state that varies.
+
 chapter A Pile-Up Isle
 
 sco-claim-it is a truth state that varies.
@@ -73,8 +77,6 @@ sco-punt-weaker is a truth state that varies.
 chapter unsorted
 
 sco-scry-bread is a truth state that varies.
-
-sco-can-take is a truth state that varies.
 
 sco-peace-talks is a truth state that varies.
 

@@ -346,6 +346,18 @@ section pike rust
 
 the pike rust is a thing. "It's on the pike, sort of a cover on the side. Perhaps it is better as something else."
 
+book Dome Aching
+
+Dome Aching is a room in universal. printed name is "Dome, Aching". "[if sco-can-take is false]Ugh. You're not physically uncomfortable, you just feel ... oh, how can I describe it? A can't-ache. It prevents you from seeing anything here[else]You're a bit more aware of your surroundings now[end if]. Of course, you can always go back northwest to the Ur-Branch."
+
+chapter great inns
+
+the great inns are scenery.
+
+chapter inscen
+
+the inscen is privately-named scenery. understand "inner/nest" and "inner nest" as inscen when inscen is in location of player.
+
 volume unsorted
 
 book unclaimed things
