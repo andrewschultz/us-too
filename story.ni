@@ -243,9 +243,20 @@ after printing the locale description for Ur Branch when sco-mess-pot is true an
 	reveal sore dark to northwest;
 	continue the action;
 
-check going inside in Ur Branch when sco-guard-entry is false and garden tree is in location of player: say "The garden tree blocks you. It doesn't allow just any old visitors." instead;
+check going west in Ur Branch when sco-hike-up is true:
+	if extra-turns is 0:
+		say "Your pro ball pulses bright red. You remember, from your trip to see the high cup, there was something beyond there. But it looks awfully dense and spooky ahead. You trust the pro ball when it indicates you shouldn't trust yourself. Well, without proper preparation." instead;
+	if Bowl Ditch is unvisited:
+		say "It looks scary to the west, but you consult the pro ball, and it's a reassuring shade of green. You feel confident, with your newfound speed, you'll be able to brazen your way through. Of course, there are nasties who nip at you, but you turbo-power your way through long-dead foliage. It's so easy! You're so excited, you forget to slow down when you reach the undergrowth, and you tumble down a slope... you feel a pain in your ankle... and, of course, you no longer feel fast.";
+		reveal Bowl Ditch to west;
+		move player to Bowl Ditch;
+		now extra-turns is 0;
+		the rule succeeds;
+	else:
+		say "The trail you blazed is easy to follow back[if extra-turns > 0], but in following it, you lose your built-up speed[end if].";
+		now extra-turns is 0;
 
-[cur, car, bar, or, saw branches]
+check going inside in Ur Branch when sco-guard-entry is false and garden tree is in location of player: say "The garden tree blocks you. It doesn't allow just any old visitors." instead;
 
 chapter herbs
 
@@ -253,7 +264,7 @@ some herbs are a proper-named thing. description is "It's some herb, eh? [if sco
 
 chapter garden tree
 
-the garden tree is a thing. "That garden tree the [forest] were whining about stands here."
+the garden tree is a thing. "[if sco-guard-entry is true]The garden tree stands here, passively[else]That garden tree the [forest] were whining about stands here[end if]."
 
 book Beach Ill
 
