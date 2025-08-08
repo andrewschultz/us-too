@@ -28,6 +28,7 @@ w1 (text)	w2 (text)	first-hom (text)	second-hom	hom-txt-rule (rule)	first-exact	
 "hike"	"up"	--	--	--	false	false	false	false	"reaching the high cup"	false	true	true	false	false	a pile up isle	pre-hike-up rule	post-hike-up rule	--	--
 "sword"	"ark"	"soared"	--	--	false	false	false	false	"finding something in the Sore Dark"	false	true	true	false	false	sore dark	pre-sword-ark rule	post-sword-ark rule	--	--
 "blast"	"ring"	--	--	--	false	false	false	false	"finding the blah string's true purpose"	false	true	true	false	false	sore dark	pre-blast-ring rule	post-blast-ring rule	--	--
+"terrible"	"aid"	--	--	--	false	false	false	false	"becoming worthy of the Terra Blade"	false	true	true	false	false	sore dark	pre-terrible-aid rule	post-terrible-aid rule	--	--
 "board"	"red"	"bored"	--	--	false	false	false	false	"finding something in the Bore Dread"	false	true	true	false	false	bore dread	pre-board-red rule	post-board-red rule	--	--
 "nah"	"queue"	--	--	--	false	false	false	false	"repelling the [team]"	false	true	true	false	false	blah copse	pre-nah-queue rule	post-nah-queue rule	--	--
 "surf"	"ready"	--	--	--	false	false	false	false	"giving Sir Freddie a new direction"	false	true	true	false	false	blah copse	pre-surf-ready rule	post-surf-ready rule	--	--
@@ -300,6 +301,19 @@ this is the post-blast-ring rule:
 	moot blah string;
 	moot sword ark;
 
+a wordtwisting rule (this is the pre-terrible-aid rule):
+	if player is not in sore dark and player does not have terra blade, unavailable;
+	if sco-terrible-aid is true:
+		vcal "You probably shouldn't actively diss the Terra Blade, now you're carrying it.";
+		already-done;
+	if sco-blast-ring is false:
+		vcp "Hmm, yes, it doesn't matter if it's terrible while it's unattainable.";
+		not-yet;
+	ready;
+
+this is the post-terrible-aid rule:
+	now sco-terrible-aid is true;
+	say "You make the point that the Terra Blade would be a terrible aid for your humble goals, whatever they may be. That proves you are worthy!";
 
 book northeast branch scoring
 

@@ -63,6 +63,7 @@ chapter sore dark
 
 sco-sword-ark is a truth state that varies.
 sco-blast-ring is a truth state that varies.
+sco-terrible-aid is a truth state that varies.
 
 book northeast branch
 
