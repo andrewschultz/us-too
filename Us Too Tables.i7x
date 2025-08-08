@@ -27,6 +27,7 @@ w1 (text)	w2 (text)	first-hom (text)	second-hom	hom-txt-rule (rule)	first-exact	
 "pie"	"crust"	"pi"	--	--	false	false	false	false	"finding what's under the pike rust"	false	true	true	false	false	A Pile Up Isle	pre-pie-crust rule	post-pie-crust rule	--	--
 "hike"	"up"	--	--	--	false	false	false	false	"reaching the high cup"	false	true	true	false	false	a pile up isle	pre-hike-up rule	post-hike-up rule	--	--
 "sword"	"ark"	"soared"	--	--	false	false	false	false	"finding something in the Sore Dark"	false	true	true	false	false	sore dark	pre-sword-ark rule	post-sword-ark rule	--	--
+"blast"	"ring"	--	--	--	false	false	false	false	"finding the blah string's true purpose"	false	true	true	false	false	sore dark	pre-blast-ring rule	post-blast-ring rule	--	--
 "board"	"red"	"bored"	--	--	false	false	false	false	"finding something in the Bore Dread"	false	true	true	false	false	bore dread	pre-board-red rule	post-board-red rule	--	--
 "nah"	"queue"	--	--	--	false	false	false	false	"repelling the [team]"	false	true	true	false	false	blah copse	pre-nah-queue rule	post-nah-queue rule	--	--
 "surf"	"ready"	--	--	--	false	false	false	false	"giving Sir Freddie a new direction"	false	true	true	false	false	blah copse	pre-surf-ready rule	post-surf-ready rule	--	--
@@ -282,9 +283,23 @@ a wordtwisting rule (this is the pre-sword-ark rule):
 
 this is the post-sword-ark rule:
 	now sco-sword-ark is true;
-	say "It takes a while of feeling around, but your blah string does the job. You find a sword ark. You worry you may not be worthy of the sword you find. It is found in an earthen recess. Perhaps you are not. But you are not killed when you take it. So that's something![paragraph break]Looking on its hilt, you see you are now in possession of the TERRA BLADE.";
-	now player has Terra Blade;
-	block-and-back;
+	say "It takes a while of feeling around, but your blah string does the job. You find a sword ark. In that sword ark is contained, shockingly, a sword! And not just any sword, but the TERRA BLADE. However, the blade is still out of reach. It's a pretty tall ark.";
+	move sword ark to sore dark;
+	move terra blade to sore dark;
+
+a wordtwisting rule (this is the pre-blast-ring rule):
+	if player does not have blah string, unavailable;
+	if player is not in sore dark or sword ark is not in sore dark:
+		vcal "You can see nothing to blast!";
+		not-yet;
+	ready;
+
+this is the post-blast-ring rule:
+	now sco-blast-ring is true;
+	say "You aim the blah string at the sword ark. You feel a pull--yes, this must be when to transform the blah string. And boom! The sword ark shatters, and the Terra Blade falls to the ground.";
+	moot blah string;
+	moot sword ark;
+
 
 book northeast branch scoring
 

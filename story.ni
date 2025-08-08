@@ -301,11 +301,15 @@ the punt weaker is a thing. "Your punt, weaker, floats here, ready to take you [
 
 book Sore Dark
 
-Sore Dark is a room in universal. description is "[if sco-sword-ark is false]You can't see much here, but maybe if you fumble around for what you need, you'll find it[else]The thought of having to stay here after finding something cool leaves you, well, sore[end if]. Good thing you have that blah string to lead your way back out southeast!"
+Sore Dark is a room in universal. description is "[if sco-sword-ark is false]You can't see much here, but maybe if you fumble around for what you need, or make an educated guess, you'll find it[else if sco-blast-ring is false]The sword ark hangs above you, the Terra Blade intertwined in it[else]The Terra Blade lies among the erstwhile rubble of the sword ark[end if]."
 
-chapter sword
+chapter sword ark
 
-The Terra Blade is a thing. indefinite article of terra blade is "the".
+the sword ark is scenery. "The Terra Blade is suspended in the sword ark above. How to get it down?"
+
+chapter Terra Blade
+
+The Terra Blade is a scenery. indefinite article of terra blade is "the". "It looks very impressive, almost too impressive for you to use."
 
 book Blah Copse
 
