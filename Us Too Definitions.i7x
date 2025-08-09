@@ -93,7 +93,7 @@ to block-and-back:
 	say "[line break]It seems there's nothing else to do here. You hope there isn't. So you just go back to the Ur-Branch.";
 	let the way be the best route from Ur Branch to location of player;
 	now the way is branchdone;
-	move player to Ur Branch, without printing a room description;
+	drop-player-at Ur Branch;
 	print-the-loc;
 
 volume composite numbers

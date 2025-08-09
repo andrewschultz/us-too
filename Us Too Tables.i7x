@@ -44,9 +44,9 @@ w1 (text)	w2 (text)	first-hom (text)	second-hom	hom-txt-rule (rule)	first-exact	
 "in"	"earnest"	--	--	--	false	false	false	false	"figure how to visit the inner nest"	false	true	true	false	false	dome aching	pre-in-earnest rule	post-in-earnest rule	--	--
 "pry"	"more"	--	--	--	false	false	false	false	"figuring how to take the prime oar"	false	true	true	false	false	inner nest	pre-pry-more rule	post-pry-more rule	--	--
 "oh"	"clever"	--	--	--	false	false	false	false	"operating the oak lever"	false	true	true	false	false	fort earns four turns	pre-oh-clever rule	post-oh-clever rule	--	--
-"bold"	"itch"	--	--	--	false	false	false	false	"clue for guessing one word right"	false	true	true	false	false	bowl ditch	pre-bold-itch rule	post-bold-itch rule	--	--
+"bold"	"itch"	--	--	--	false	false	false	false	"figuring how to get back on your feet in Bowl/Ditch"	false	true	true	false	false	bowl ditch	pre-bold-itch rule	post-bold-itch rule	--	--
 "claim"	"it"	--	--	--	false	false	false	false	"gathering the clay mitt"	false	true	true	false	false	Bowl Ditch	pre-claim-it rule	post-claim-it rule	--	--
-"saw"	"bakers"	--	--	--	false	false	false	false	"clue for guessing one word right"	false	true	true	false	false	sob acres	pre-saw-bakers rule	post-saw-bakers rule	--	--
+"saw"	"bakers"	--	--	--	false	false	false	false	"finding signs of life in Sob Acres"	false	true	true	false	false	sob acres	pre-saw-bakers rule	post-saw-bakers rule	--	--
 "dell"	"eastern"	--	--	--	false	false	false	false	"making Sob Acres less forbidding"	false	true	true	false	false	deli stern	pre-dell-eastern rule	post-dell-eastern rule	--	--
 "fell"	"trap"	--	--	--	false	false	false	false	"clue for guessing one word right"	false	true	true	false	false	fort earns	pre-fell-trap rule	post-fell-trap rule	--	--
 "cellar"	"bin"	--	--	--	false	false	false	false	"escaping the Cell, Urban"	false	true	true	false	false	cell urban	pre-cellar-bin rule	post-cellar-bin rule	--	--

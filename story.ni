@@ -383,7 +383,7 @@ book A Pile Up Isle
 
 A Pile Up Isle is a room in universal. printed name is "A Pile-Up Isle".
 
-the bay spikes are a thing in A Pile Up Isle. "Bay spikes seem to guard you from entering the large pile. They are too sharp to walk on. What to do?"
+the bay spikes are a plural-named thing in A Pile Up Isle. "Bay spikes seem to guard you from entering the large pile. They are too sharp to walk on. What to do?"
 
 chapter pike
 
@@ -425,7 +425,7 @@ check going inside in Dome Aching when sco-can-take is true and sco-in-earnest i
 
 chapter great inns
 
-the great inns are scenery.
+the great inns are plural-named scenery.
 
 chapter gray tins
 
