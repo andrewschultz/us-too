@@ -530,6 +530,18 @@ book Deli Stern
 
 Deli Stern is a room in universal. printed name is "Deli, Stern". "You can only really go out[if sco-dell-eastern is true] (well, east, same thing)[end if] here."
 
+book Too Dark Tude Ark
+
+Too Dark Tude Ark is an ordroom in universal.
+
+book Ordroom2
+
+Ordroom2 is an ordroom in universal.
+
+book Ordroom3
+
+Ordroom3 is an ordroom in universal.
+
 volume unsorted
 
 book unclaimed things

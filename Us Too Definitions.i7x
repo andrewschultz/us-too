@@ -19,6 +19,49 @@ volume types
 
 an ingredient is a kind of thing. an ingredient has text called invtext. an ingredient can be eatworthy. an ingredient is usually not eatworthy.
 
+volume ordroom
+
+an ordroom is a kind of room. an ordroom has a number called rmord. rmord of an ordroom is usually 0.
+
+southfind is a list of ordrooms variable. southfind is { Too Dark Tude Ark, ordroom2, ordroom3 }.
+
+definition: a number (called q) is claimable:
+	if q < 1 or q > number of ordrooms, no;
+	repeat with R running through ordrooms:
+		if rmord of R is q, no;
+	yes;
+
+to assign-rmord:
+	let rm be entry 1 in southfind;
+	remove rm from southfind;
+	now rmord of rm is extra-turns;
+	if debug-state is true, say "(DEBUG) [rm] has been assigned rmord [extra-turns].";
+	move player to rm;
+	if number of entries in southfind is 0:
+		say "Whew! You've discovered three new entries to the south. But you shouldn't have to run back and forth. From now on, if you need to go back:[paragraph break]";
+		list-which-room;
+
+to list-which-room:
+	repeat with ORM running through ordrooms:
+		say "[ORM]: [which-south of ORM][line break]";
+
+to say which-south of (orm - an ordroom):
+	repeat with X running from 1 to rmord of orm:
+		say "S";
+
+check going north in an ordroom: move player to ur branch instead;
+
+check going south in ur branch when extra-turns > 0:
+	repeat with o running through ordrooms:
+		if rmord of o is extra-turns:
+			move player to o;
+			if debug-state is true, say "Already been to [o] ([extra-turns] turns).";
+			the rule succeeds;
+	assign-rmord;
+	now extra-turns is 0;
+	say "You feel properly run-down, now that you've gone somewhere.";
+	the rule succeeds;
+
 volume directions
 
 a direction can be branchdone. a direction is usually not branchdone.
