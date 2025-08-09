@@ -28,13 +28,20 @@ pri-branch-reject is a truth state that varies.
 
 book game states
 
+chapter prologue
+
 gs-envelope is a truth state that varies.
 gs-explained-house is a truth state that varies.
 
+chapter after prologue, optional but very likely
+
 gs-using-known is a truth state that varies.
 gs-taken-inventory is a truth state that varies.
-gs-tried-black-ops is a truth state that varies.
 gs-take-hintthing-note is a truth state that varies.
+
+chapter game-critical
+
+gs-tried-black-ops is a truth state that varies.
 gs-up-cellar-bin is a truth state that varies.
 
 book intro / any time
