@@ -241,8 +241,7 @@ this is the post-be-chill rule:
 	say "Your general sense of malaise disperses, which makes you more observant. Observant enough to notice a nigh swarm which ... keeps things from being perfect.";
 
 a wordtwisting rule (this is the pre-pie-crust rule):
-	if player is not in Beach Ill, unavailable;
-	if pike is not touchable, unavailable;
+	if player is not in Beach Ill and pike rust is not in location of player, unavailable;
 	if sco-pie-crust is true:
 		vcal "You already de-rusted the pike!";
 		already-done;
@@ -268,11 +267,18 @@ a wordtwisting rule (this is the pre-punt-weaker rule):
 
 this is the post-punt-weaker rule:
 	now sco-punt-weaker is true;
-	say "'Ah, yes, that's it. A small gift for a small favor.' The pun tweaker goes to the back of [the ship], and you hear a splash. The pun tweaker reappers, clothes wet, pushing a pretty scrawny punt. 'It won't get very far, but there's something to the east. Oh, and I hope you have a way to steer it, too. Anyway, here you go. My repairs are complete'";
+	say "'Ah, yes, that's it. A small gift for a small favor.' The pun tweaker goes to the back of [the ship], and you hear a splash. The pun tweaker reappers, clothes wet, pushing a pretty scrawny punt. 'It won't get very far, but there's something to the east. Oh, and I hope you have a way to steer it, too. Anyway, here you go. My repairs are complete!'";
 	move punt weaker to beach ill;
 	moot pun tweaker;
 	moot ship;
+	check-oar-punt;
 	reveal Pile Up Isle to east;
+
+to check-oar-punt:
+	if player has prime oar and sco-punt-weaker is true:
+		now prime oar is scenery;
+		now prime oar is in location of player;
+		say "You hook the prime oar up to the punt.";
 
 book northwest branch scoring
 
@@ -446,7 +452,10 @@ a wordtwisting rule (this is the pre-base-pikes rule):
 
 this is the post-base-pikes rule:
 	now sco-base-pikes is true;
-	say "Well, someone must've been able to get through the bay spikes to dump stuff on the pile, you reason. And you discover something -- base pikes, one you wouldn't want to use on any person, but then again, these spikes could hurt someone, so that seems okay.[paragraph break]Walking through the path you made, you see a high cup near the top of the pile, as well as ";
+	say "Well, someone must've been able to get through the bay spikes to dump stuff on the pile, you reason. And you discover something -- base pikes, one you wouldn't want to use on any person, but then again, these spikes could hurt someone, so that seems okay.[paragraph break]Walking through the path you made, you see a high cup near the top of the pile.";
+	move pike rust to Pile Up Isle;
+	move base pikes to Pile Up Isle;
+	moot bay spikes;
 
 a wordtwisting rule (this is the pre-hike-up rule):
 	if player is not in a pile up isle, unavailable;
