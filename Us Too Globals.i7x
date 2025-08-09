@@ -28,6 +28,9 @@ pri-branch-reject is a truth state that varies.
 
 book game states
 
+gs-envelope is a truth state that varies.
+gs-explained-house is a truth state that varies.
+
 gs-using-known is a truth state that varies.
 gs-taken-inventory is a truth state that varies.
 gs-tried-black-ops is a truth state that varies.

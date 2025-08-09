@@ -71,37 +71,42 @@ after reading a command when player is in House Well How Swell:
 		increment core-score;
 		follow the score and thinking changes rule;
 		wfak;
-		say "'Let's see, you're ... oh, you're the kid who ran after her with the solution to her little puzzle. She really was impressed, but she was just so sick of being fawned over, she didn't want to get out of her car again. She knew from the way some of her worse relatives bad-mouthed you, you were more than all right. She owned this old mine and even had a small trust fund to pay taxes. Though for you, it's sort of a new mine... and just checking, but you know what to say?'";
+		say "'Let's see, you're ... oh, you're the kid who ran after her with the solution to her little puzzle. Uh, were. She really was impressed, but she was just so sick of being fawned over, she didn't want to get out of her car again. She knew from the way some of her worse relatives bad-mouthed you, you were more than all right. She owned this old mine and even had a small trust fund to pay taxes. Though for you, it's sort of a new mine... and just checking, but you know what to say?'";
 		wfak;
 		say "You pause. Then 'MY new mine?! Ooh...'[paragraph break]'Bingo! Again!'";
 		wfak;
-		say "You're a bit worried. You can't just up and leave your job like that. The lawyers assure you the mine is not going anywhere. You build up vacation time from work. You call some trusted friends. 'You're getting shafted,' a few laugh. Enough don't.";
+		say "You're a bit worried. You can't just up and leave your job like that. What if it's a scam? The lawyers assure you the mine is not going anywhere. You build up vacation time from work. You call some trusted friends. 'You're getting shafted,' a few laugh. Enough don't.";
 		wfak;
 		move player to My New Mine Ooh;
 		reject the player's command;
 	if number of words in the player's command > 2:
 		say "The lawyers yawn. You really are talking too much!";
-		reject the player's command;
-	if the player's command includes "how" or the player's command includes "so":
+	else if the player's command includes "how" or the player's command includes "so":
 		say "The lawyers['] ears seem to perk up for a second.";
-		reject the player's command;
-	if the number of characters in the player's command > 8:
+	else if the number of characters in the player's command > 8:
 		say "One of the lawyers casually remarks [ara] was never big on unnecessarily long words.";
-		reject the player's command;
-	if number of words in the player's command < 2:
-		say "One of the lawyers tells you to speak up a little, there.";
-		reject the player's command;
-	if the player's command includes "lawyers" or the player's command includes "lawyer":
+	else if number of words in the player's command < 2:
+		say "One of the lawyers tells you to speak up a little, there, and don't cut yourself off so soon.";
+	else if the player's command includes "lawyers" or the player's command includes "lawyer":
 		say "The lawyers sit, stone-faced. You will get no clues from them.";
-		reject the player's command;
-	if the player's command includes "envelope" or the player's command includes "think" or the player's command includes "hint" or the player's command includes "help":
+	else if the player's command includes "envelope" or the player's command includes "think" or the player's command includes "hint" or the player's command includes "help":
 		say "You glance at your envelope, [one of]once again [or][stopping]worried you might be cheating. But you can't imagine what other clue you have.[paragraph break]The lawyers [one of]still [or][stopping]look nonchalant, fortunately. It says [hohs].";
-		reject the player's command;
-	if the player's command includes "me" or the player's command includes "myself":
+		now gs-envelope is true;
+	else if the player's command includes "me" or the player's command includes "myself":
 		try examining the player;
-		reject the player's command;
-	say "The lawyers shake their head slightly, though you sense that's the worst you'll get from them.";
+	else:
+		say "The lawyers shake their head slightly, though you sense that's the worst you'll get from them.";
+	explain-the-house;
 	reject the player's command;
+
+to explain-the-house:
+	if gs-explained-house is false:
+		say "[line break][i][bracket][b]NOTE[r][i]: standard commands aren't necessary or useful here. You have to figure what to say.[close bracket][line break]";
+		now gs-explained-house is true;
+
+rule for printing a parser error when the latest parser error is the I Beg Your Pardon error and player is in House Well:
+	say "You fumble nervously with your envelope reflect on what the lawyers might want to hear. Dare you sneak [if gs-envelope is true]another[else]a[end if] peak at it?";
+	the rule succeeds;
 
 book Mike West (you)
 
