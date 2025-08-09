@@ -284,8 +284,14 @@ check going east in Beach Ill when sco-probe-all is true:
 	if sco-punt-weaker is false, say "You have no transport. Yet. And the pun tweaker won't take you for free." instead;
 	if sco-pry-more is false, say "You have no way to steer the punt. Yet." instead;
 	say "[one of]Your punt (weaker) is not useless. Maybe the prime oar helps it be more useful.[or]The punt returns to the isle with no incident.[stopping]";
+	move punt to isle;
+	move oar to isle;
 
-check going west in Pile Up Isle: say "You have no problem steering the punt back. It seems surprisingly sturdy.";
+check going west in Pile Up Isle:
+	say "You have no problem steering the punt back. It seems surprisingly sturdy.";
+	move punt to beach;
+	move oar to beach;
+
 
 chapter nigh swarm
 
