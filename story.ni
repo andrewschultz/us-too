@@ -144,6 +144,8 @@ report taking inventory when gs-using-known is false:
 
 chapter too rad tour ad
 
+the too rad tour ad is a hintthing.
+
 Mike West carries the too rad tour ad. printed name of tour ad is "too-rad tour ad".
 
 description of tour ad is "It describes your new mine in detail. It's too big to explore on your own. So you need friends to bring together. And you need a way to bring them together."
@@ -212,12 +214,6 @@ chapter mess pot
 the mess pot is a thing.
 
 book ur branch
-
-[Note how rooms, uh, branch from Ur Branch:
-EAST = Beach Ill
-NORTHWEST = Sore Dark
-NORTHEAST = Bore Dread
-]
 
 Ur Branch is a room in universal. It is above My New Mine Ooh. printed name is "Ur-Branch". "There are so many branches here! While you can go back [b]DOWN[r] to your mine, [if sco-summer-bay is false]you have no idea where else to go. You could spend too much time wandering around. You could lose focus[else if sco-probe-all is false]there's only east, but maybe you can find more concrete places to visit[else]the branches make more sense than they did at first[end if]."
 
