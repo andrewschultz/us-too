@@ -156,8 +156,16 @@ book my new mine ooh
 
 My New Mine Ooh is a room in intro. printed name is "My New Mine, Ooh!". description is "You're down in your new mine, with a passage up back to the great wide world[if sco-be-strong is true]. You've cleared the way--you can't be sure of the direction, as the path twists a bit[else if sco-my-quest is false]. But you're still finding your bearings and purpose. You feel a bit of imposter syndrome, just being given this mine. You don't want to just start wandering. At least you know who you are, and maybe that'll help reframe things[end if].".
 
+to note-mine (th - a thing):
+	if th is in location of player, say "A [th] juts out here. [if ledge is unexamined]Maybe something is on it[else]You see [the list of hintthings in mine ooh] on it[end if].";
+
 after printing the locale description for My New Mine Ooh:
-	if ledge is in Mine Ooh, say "A [ledge] juts out here. [if ledge is unexamined]Maybe something is on it[else]You see [the list of hintthings in mine ooh] on it[end if].";
+	note-mine lucent row;
+	note-mine ledge;
+	continue the action;
+
+after examining lucent row:
+	now ledge is examined;
 	continue the action;
 
 check thinking in Mine Ooh when sco-my-quest is false:
@@ -180,20 +188,38 @@ chapter beast wrong
 
 the beast wrong is a sentient. printed name is "beast (wrong)". "A beast (wrong) blocks your way out. You know it shouldn't be there. You know you shouldn't be afraid of it. But you are.". description is "You feel as though you shouldn't be as frightened as you are by it, but you just can't flip that switch."
 
-chapter goal edge go ledge
+chapter hintthings
 
-the goal edge go ledge is scenery in My New Mine Ooh. printed name is "Goal-Edge-Go Ledge". "You see [the list of hintthings in mine ooh] on it."
+to say intro-hintthings: say "You see [the list of hintthings in mine ooh] on it."
 
-check taking goal edge go ledge:
-	if slice eyes are off-stage, say "You can't, but if you [b]EXAMINE[r] the ledge, you may find something on it." instead;
-	if number of hintthings in Mine Ooh is 0, say "You already took what was on the ledge." instead;
+section lucent row
+
+a lucent row is a startprop in My New Mine Ooh. "[intro-hintthings]"
+
+check examining lucent row when number of hintthings in My New Mine Ooh is 0: say "There's nothing on the lucent row, but maybe if you looked at it right, it might show something. Some sort of message, beneath the glare, which seems kind of unaesthetic." instead;
+
+report examining lucent row:
+	say "Oh. The glare and brightness seem a bit unaesthetic, but it can't be a huge deal.";
+	continue the action;
+
+section goal edge go ledge
+
+the goal edge go ledge is a startprop. printed name is "Goal-Edge-Go Ledge". "[intro-hintthings]"
+
+check taking a startprop:
+	if slice eyes are off-stage, say "You can't, but if you [b]EXAMINE[r] [the noun], you may find something on it." instead;
+	if number of hintthings in Mine Ooh is 0, say "You already took what was on [the noun]." instead;
 	say "You can just take [the list of hintthings in Mine Ooh] if you want." instead;
 
-check examining go ledge when go ledge is unexamined:
-	say "Carved on the ledge is a message from [ara]. 'These may help. Maybe too much.'[paragraph break]They look weird at first, but after having a thought, you see they are [eyes] and [a war pawn]. You're free to [b]TAKE[r] them, if you want.";
+check examining startprop when the noun is unexamined:
+	say "Carved on [the noun] is a message from [ara]. 'These may help. Maybe too much.'[paragraph break]They look weird at first, but after having a thought, you see they are [eyes] and [a war pawn]. You're free to [b]TAKE[r] them, if you want.";
 	move slice eyes to mine ooh;
 	move war pawn to mine ooh;
-	now go ledge is examined;
+	now the noun is examined;
+	now ledge is examined;
+	the rule succeeds;
+
+chapter taking hintthings
 
 report taking a hintthing when gs-take-hintthing-note is false:
 	say "Done. (By the way, you don't need to explicitly [b]TAKE[r] any game-critical items.)";
@@ -204,6 +230,23 @@ report taking a hintthing when gs-take-hintthing-note is true:
 	say "On taking [the noun], you see [the ledge] recede, as it has nothing more to offer.";
 	now gs-take-hintthing-note is true;
 	the rule succeeds;
+
+chapter loose intro
+
+the loose intro is a hintthing. description is "[intro-table]".
+
+check examining loose intro when loose intro is unexamined:
+	say "It's an introduction to your world, not from [ara], but from one Hugh Morris AKA Mick Stupp. At the top is a warning about mild spoilers that get less mild as you read on.";
+	now loose intro is examined;
+	the rule succeeds;
+
+to say intro-table:
+	choose row intro-row in table of intro jabber;
+	say "[my-jabber entry] ([intro-row]/[number of rows in table of intro jabber][line break]";
+	increment intro-row;
+	if intro-row > number of rows in table of intro jabber:
+		say "[one of]Well, that's it.[or]Was it really worth reading twice? Thank you![stopping]";
+		now intro-row is 1;
 
 chapter meh spot
 

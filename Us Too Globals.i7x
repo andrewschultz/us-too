@@ -18,6 +18,8 @@ chapter game states
 
 extra-turns is a number that varies. extra-turns is 0.
 
+intro-row is a number that varies. intro-row is 1.
+
 volume booleans
 
 chapter printing details
@@ -155,6 +157,8 @@ book unsorted
 chapter unsorted
 
 sco-scry-bread is a truth state that varies.
+
+sco-loose-intro is a truth state that varies.
 
 book debugs
 

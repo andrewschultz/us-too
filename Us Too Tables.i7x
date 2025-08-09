@@ -10,6 +10,7 @@ volume the main table
 
 table of main oronyms
 w1 (text)	w2 (text)	first-hom (text)	second-hom	hom-txt-rule (rule)	first-exact	first-close	second-exact	second-close	part-explain	think-cue	okflip	core	idid	everfail	best-room	check-rule	run-rule	wfull (topic)	think-advice (text)
+"loose"	"intro"	--	--	--	false	false	false	false	"finding something hidden in the lucent row"	false	true	false	false	false	my new mine ooh	pre-loose-intro rule	post-loose-intro rule	--	--
 "my"	"quest"	--	--	--	false	false	false	false	"how to get started and what to do"	false	true	true	false	false	mine ooh	pre-my-quest rule	post-my-quest rule	--	--
 "be"	"strong"	--	--	--	false	false	false	false	"getting rid of the beast"	false	true	true	false	false	mine ooh	pre-be-strong rule	post-be-strong rule	--	--
 "summon"	"cheese"	--	--	--	false	false	false	false	"figuring what some munchies are"	false	true	true	false	false	--	pre-summon-cheese rule	post-summon-cheese rule	--	--
@@ -136,6 +137,18 @@ this is the post-a-stew rule:
 	say "Well, that does it! You make the stew, and you win. As you make the stew, you reflect it is not MY stew, which would be kind of a me-ill meal, but A stew.[paragraph break]You make other random seeming stews over there years, but none quite has the flavor of this one.";
 	end the story finally saying "A swell ace! WELL!";
 	follow the shutdown rules;
+
+a wordtwisting rule (this is the pre-loose-intro rule):
+	if player is not in my new mine ooh, unavailable;
+	if lucent row is not in my new mine ooh, unavailable;
+	ready;
+
+this is the post-loose-intro rule:
+	now sco-loose-intro is true;
+	say "A loose intro flutters down from the lucent row. You pick it up. As you do, the lucent row stops glowing and becomes a ledge. A Goal-Edge-Go Ledge, to be precise.";
+	now player has loose intro;
+	moot lucent row;
+	move ledge to My New Mine Ooh;
 
 chapter recipe scoring
 
@@ -644,6 +657,12 @@ this is the post-dell-eastern rule:
 	reveal Sob Acres to the east;
 
 book south branch sorting
+
+volume loose intro
+
+table of intro jabber
+my-jabber
+"There's a brief explanation about how [this-game] reuses a lot of the code from [wp], though hopefully the different stories and puzzles give enough variety to keep you interested."
 
 volume directions
 

@@ -19,6 +19,8 @@ volume types
 
 an ingredient is a kind of thing. an ingredient has text called invtext. an ingredient can be eatworthy. an ingredient is usually not eatworthy.
 
+a startprop is a kind of thing. a startprop is usually scenery.
+
 volume ordroom
 
 an ordroom is a kind of room. an ordroom has a number called rmord. rmord of an ordroom is usually 0.
@@ -133,6 +135,8 @@ this is the score and thinking changes rule:
 		now last-current-score is current-score;
 
 volume to say stubs
+
+to say wp: say "[i]Why Pout[r]"
 
 to say ara: say "Aunt Rickie-Anne"
 
