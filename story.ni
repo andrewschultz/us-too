@@ -595,8 +595,32 @@ this is the poker cheat rule:
 
 volume misc map
 
-index map with mine ooh mapped north of house well how swell.
-index map with ur branch mapped northeast of my new mine ooh.
-index map with bore dread mapped northwest of my new mine ooh.
-index map with sore dark mapped west of ur branch	.
+index map with mine ooh mapped west of house well how swell.
+index map with bore dread mapped south of mine ooh.
+index map with ur branch mapped southwest of bore dread.
+
+index map with Blah Copse mapped north of ur branch.
+index map with Morph Lairs mapped north of Blah Copse.
+
+index map with sore dark mapped northwest of ur branch.
+
 index map with Beach Ill mapped east of ur branch.
+index map with Pile Up Isle mapped east of Beach Ill.
+
+index map with Pea Stalks mapped south of Pile Up Isle.
+
+index map with Dome Aching mapped southeast of ur branch.
+index map with inner nest mapped southeast of Dome Aching.
+
+index map with Fort Earns Four Turns mapped southwest of Ur Branch.
+index map with Cell Urban mapped southwest of Fort Earns Four Turns.
+index map with Cellar Bin mapped west of Fort Earns Four Turns.
+
+index map with Bowl Ditch mapped north of Cellar Bin.
+index map with Sob Acres mapped north of Bowl Ditch.
+index map with Deli Stern mapped west of Sob Acres.
+
+index map with Too Dark Tude Ark mapped south of Fort Earns.
+index map with Ordroom2 mapped east of Tude Ark.
+index map with Ordroom3 mapped east of Ordroom2.
+index map with Too Dark Tude Ark mapped south of Fort Earns.
