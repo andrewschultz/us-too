@@ -15,6 +15,10 @@ to game-specific-cleanup: do nothing;
 
 to decide which region is mrlp: decide on map region of location of player.
 
+volume types
+
+an ingredient is a kind of thing. an ingredient has text called invtext. an ingredient can be eatworthy. an ingredient is usually not eatworthy.
+
 volume directions
 
 a direction can be branchdone. a direction is usually not branchdone.

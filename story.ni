@@ -540,6 +540,16 @@ check taking: if noun is not a hintthing, say "You never need to take anything e
 
 check drop2ing: say "You never need to drop anything explicitly in [this-game]. Often, when you're done with something, it will be consumed. Also, there is no inventory limit." instead;
 
+book eating
+
+check noteating:
+	if noun is Terra Blade, say "You're doing great! No reason to commit Seppuku." instead;
+	if noun is sly size slice eyes, say "[this-game] is an IFComp entry, not an EctoComp entry." instead;
+	if noun is a sentient, say "Canny? Can nibble? Canny? Bull..." instead;
+	if noun is blah string or noun is felt, say "Well, full of fiber, I guess..." instead;
+	if noun is an eatworthy ingredient, say "Some host you are. Wait until the meal is started." instead;
+	if noun is not eatworthy ingredient, say "Ugh ... needs preparation." instead;
+	say "That's probably not edible." instead;
 
 book talk (redefined in Oronym Core)
 
