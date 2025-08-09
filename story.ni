@@ -154,6 +154,10 @@ book my new mine ooh
 
 My New Mine Ooh is a room in intro. printed name is "My New Mine, Ooh!". description is "You're down in your new mine, with a passage up back to the great wide world[if sco-be-strong is true]. You've cleared the way--you can't be sure of the direction, as the path twists a bit[else if sco-my-quest is false]. But you're still finding your bearings and purpose. You feel a bit of imposter syndrome, just being given this mine. You don't want to just start wandering. At least you know who you are, and maybe that'll help reframe things[end if].".
 
+after printing the locale description for My New Mine Ooh:
+	if ledge is in Mine Ooh, say "A [ledge] juts out here. [if ledge is unexamined]Maybe something is on it[else]You see [the list of hintthings in mine ooh] on it[end if].";
+	continue the action;
+
 check thinking in Mine Ooh when sco-my-quest is false:
 	say "You're a bit lost, but you track what you know:";
 	say "--you went to [hwhs], called [hohs], and your response 'How so?' impressed the lawyers.";
@@ -176,7 +180,7 @@ the beast wrong is a sentient. printed name is "beast (wrong)". "A beast (wrong)
 
 chapter goal edge go ledge
 
-the goal edge go ledge is a thing. printed name is "Goal-Edge-Go Ledge". "The [ledge] juts out here. [if ledge is unexamined]Maybe something is on it[else]You see [the list of hintthings in mine ooh] on it[end if].". description is "You see [the list of hintthings in mine ooh] on it."
+the goal edge go ledge is scenery in My New Mine Ooh. printed name is "Goal-Edge-Go Ledge". "You see [the list of hintthings in mine ooh] on it."
 
 check taking goal edge go ledge:
 	if slice eyes are off-stage, say "You can't, but if you [b]EXAMINE[r] the ledge, you may find something on it." instead;
@@ -192,7 +196,12 @@ check examining go ledge when go ledge is unexamined:
 report taking a hintthing when gs-take-hintthing-note is false:
 	say "Done. (By the way, you don't need to explicitly [b]TAKE[r] any game-critical items.)";
 	now gs-take-hintthing-note is true;
-	continue the action;
+	the rule succeeds;
+
+report taking a hintthing when gs-take-hintthing-note is true:
+	say "On taking [the noun], you see [the ledge] recede, as it has nothing more to offer.";
+	now gs-take-hintthing-note is true;
+	the rule succeeds;
 
 chapter meh spot
 
