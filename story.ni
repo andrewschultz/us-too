@@ -463,6 +463,8 @@ chapter beak wick
 
 the be quick beak wick is scenery. "The be-quick beak wick sits here. [if extra-turns > 0]You can still feel its effect, though it can't hurt to touch it again[else if beak wick is examined]Just do anything with it to get it going again[else]It doesn't seem dangerous. Perhaps you should inspect it a bit[end if].";
 
+check waiting when extra-turns > 0: say "You're too antsy to sit and wait. For better or worse, the be-quick beak-wick doesn't just give you the opportunity to be faster. It COMPELS you." instead;
+
 report going when extra-turns > 0:
 	decrement extra-turns;
 	if extra-turns is 0, say "You feel back to normal speed.";
@@ -486,21 +488,29 @@ chapter fell trap
 
 the fell trap is a thing. "The fell trap has replaced the felt wrap. [if sco-cellar-bin is true]It looks as though it's been reset since you last visited, if you need to [b]EXAMINE[r] it and get caught again, for whatever reason[else]It looks pretty vicious! It might even catch anyone trying to [b]EXAMINE[r] it[end if]."
 
-check examining fell trap when cell urban is unvisited:
+check examining fell trap:
 	if cell urban is unvisited:
 		say "You poke the trap, and the floor below collapses. A very brief fall, and you wind up in...";
+		change up exit of Cellar Bin to Fort Earns;
 		move player to cell urban;
 		the rule succeeds;
-	say "Thud! But you're a bit more prepared for the drop this time.";
+	say "Thud! But you're a bit more prepared for the drop this time[if extra-turns > 0], and best of all, you don't waste any speed pacing around nervously[end if].";
 	move player to Cellar Bin;
 
 book Cell Urban
 
-Cell Urban is a room in universal.
+Cell Urban is a room in universal. printed name is "Cell, Urban". "[one of]THUD! [if extra-turns is 0]You're so anxious about being trapped here, you keep pacing until your speed wears off. [end if]Ugh. You see no way out to start. Perhaps you can complain to the manager, somehow[or]Still stuck. No fair! There must be a way out![stopping][line break]You're getting sick of the noises of the city all around you. You have no clue where they came from.".
 
 book Cellar Bin
 
-Cellar Bin is a room in universal.
+Cellar Bin is a room in universal. "The only way out is back up[if gs-up-cellar-bin is true]. You know it's one-way, of course[end if]."
+
+check going up in Cellar Bin:
+	if gs-up-cellar-bin is false:
+		say "As you crawl up a small shaft, you find the outline of a trap door. You flip it up, and -- whew! You're back in [fort earns]. But once you're on your feet, you can't see the trap door any more.";
+	else:
+		say "You walk up through the vanishing trap door again.";
+	now gs-up-cellar-bin is true;
 
 book Bowl Ditch
 

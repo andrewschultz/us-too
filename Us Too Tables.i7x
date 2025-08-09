@@ -49,6 +49,7 @@ w1 (text)	w2 (text)	first-hom (text)	second-hom	hom-txt-rule (rule)	first-exact	
 "saw"	"bakers"	--	--	--	false	false	false	false	"clue for guessing one word right"	false	true	true	false	false	sob acres	pre-saw-bakers rule	post-saw-bakers rule	--	--
 "dell"	"eastern"	--	--	--	false	false	false	false	"making Sob Acres less forbidding"	false	true	true	false	false	deli stern	pre-dell-eastern rule	post-dell-eastern rule	--	--
 "fell"	"trap"	--	--	--	false	false	false	false	"clue for guessing one word right"	false	true	true	false	false	fort earns	pre-fell-trap rule	post-fell-trap rule	--	--
+"cellar"	"bin"	--	--	--	false	false	false	false	"escaping the Cell, Urban"	false	true	true	false	false	cell urban	pre-cellar-bin rule	post-cellar-bin rule	--	--
 
 chapter scribe red scoring
 
@@ -561,6 +562,20 @@ this is the post-fell-trap rule:
 	say "Oh my! You pull the felt wrap away, and that is one fell looking trap!";
 	moot felt wrap;
 	move fell trap to Fort Earns;
+
+chapter cell urban scoring
+
+a wordtwisting rule (this is the pre-cellar-bin rule):
+	if sco-cellar-bin is true and (player is in fort earns or player is in cellar bin):
+		vcal "Whenever you want to revisit the cellar bin, you can just [b]X TRAP[r].";
+		already-done;
+	if player is not in cell urban, unavailable;
+	ready;
+
+this is the post-cellar-bin rule:
+	now sco-cellar-bin is true;
+	say "You bang on the cell door, claiming you've been sent to the wrong place. To your surprise, two maintenance workers come by and agree. One pushes a button. You are spun around! You fall to the floor, dizzy.[paragraph break]'Okay. Next time, if you fall in the trap, you'll fall somewhere else.' You thank them, you guess, not entirely sure what good it will do.";
+	move player to Cellar Bin;
 
 book west branch sorting
 

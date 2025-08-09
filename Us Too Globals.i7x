@@ -30,6 +30,7 @@ gs-using-known is a truth state that varies.
 gs-taken-inventory is a truth state that varies.
 gs-tried-black-ops is a truth state that varies.
 gs-take-hintthing-note is a truth state that varies.
+gs-up-cellar-bin is a truth state that varies.
 
 book intro / any time
 
@@ -127,6 +128,10 @@ chapter Fort Earns-Four-Turns
 
 sco-oh-clever is a truth state that varies.
 sco-fell-trap is a truth state that varies.
+
+chapter cell urban
+
+sco-cellar-bin is a truth state that varies.
 
 book west branch
 
