@@ -170,6 +170,8 @@ sco-scry-bread is a truth state that varies.
 
 sco-loose-intro is a truth state that varies.
 
+sco-say-jokes is a truth state that varies.
+
 book debugs
 
 debug-win is a truth state that varies.

@@ -25,7 +25,9 @@ volume ordroom
 
 an ordroom is a kind of room. an ordroom has a number called rmord. rmord of an ordroom is usually 0.
 
-southfind is a list of ordrooms variable. southfind is { Too Dark Tude Ark, ordroom2, ordroom3 }.
+south-to-find is a list of ordrooms variable. south-to-find is { Too Dark Tude Ark, Sage Oaks, ordroom3 }.
+
+south-found is a list of ordrooms variable. south-found is { Too Dark Tude Ark, Too Dark Tude Ark, Too Dark Tude Ark }.
 
 definition: a number (called q) is claimable:
 	if q < 1 or q > number of ordrooms, no;
@@ -34,17 +36,20 @@ definition: a number (called q) is claimable:
 	yes;
 
 to assign-rmord:
-	let rm be entry 1 in southfind;
-	remove rm from southfind;
+	let rm be entry 1 in south-to-find;
+	remove rm from south-to-find;
 	now rmord of rm is extra-turns;
+	now entry extra-turns of south-found is rm;
 	if debug-state is true, say "(DEBUG) [rm] has been assigned rmord [extra-turns].";
 	move player to rm;
-	if number of entries in southfind is 0:
-		say "Whew! You've discovered three new entries to the south. But you shouldn't have to run back and forth. From now on, if you need to go back:[paragraph break]";
-		list-which-room;
+	if number of entries in south-to-find is 0:
+		say "Whew! You've discovered three new entries to the south of the Ur-Branch. You're kind of worried it will be tricky to remember.";
+		say "[line break][i][bracket][b]NOTE[r][i]: don't worry. There will be. And you won't have to run back and forth, now you've discovered all of them.[close bracket]";
+		move sign ought sigh not to ur branch;
+		change south exit of ur branch to entry 1 in south-found;
 
 to list-which-room:
-	repeat with ORM running through ordrooms:
+	repeat with ORM running through south-found:
 		say "[ORM]: [which-south of ORM][line break]";
 
 to say which-south of (orm - an ordroom):

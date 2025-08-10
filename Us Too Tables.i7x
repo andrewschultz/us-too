@@ -51,6 +51,7 @@ w1 (text)	w2 (text)	first-hom (text)	second-hom	hom-txt-rule (rule)	first-exact	
 "dell"	"eastern"	--	--	--	false	false	false	false	"making Sob Acres less forbidding"	false	true	true	false	false	deli stern	pre-dell-eastern rule	post-dell-eastern rule	--	--
 "fell"	"trap"	--	--	--	false	false	false	false	"clue for guessing one word right"	false	true	true	false	false	fort earns	pre-fell-trap rule	post-fell-trap rule	--	--
 "cellar"	"bin"	--	--	--	false	false	false	false	"escaping the Cell, Urban"	false	true	true	false	false	cell urban	pre-cellar-bin rule	post-cellar-bin rule	--	--
+"say"	"jokes"	--	--	--	false	false	false	false	"get by the Sage Oaks"	false	true	true	false	false	sage oaks	pre-say-jokes rule	post-say-jokes rule	--	--
 
 chapter scribe red scoring
 
@@ -657,6 +658,19 @@ this is the post-dell-eastern rule:
 	reveal Sob Acres to the east;
 
 book south branch sorting
+
+chapter sage oaks scoring
+
+a wordtwisting rule (this is the pre-say-jokes rule):
+	if player is not in sage oaks, unavailable;
+	if sco-say-jokes is true:
+		vcal "Don't push it. The sage oaks might find such foolish risks stupid and change their views of you.";
+		already-done;
+	ready;
+
+this is the post-say-jokes rule:
+	now sco-say-jokes is true;
+	say "Hooray! You figured what to do! You get a point!";
 
 volume loose intro
 

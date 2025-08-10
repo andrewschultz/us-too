@@ -319,6 +319,38 @@ chapter garden tree
 
 the garden tree is a thing. "[if sco-guard-entry is true]The garden tree stands here, passively[else]That garden tree the [forest] were whining about stands here[end if]."
 
+chapter sign and verbs
+
+the sign ought sigh not is a thing. printed name is "Sign Ought-Sigh-Not". "[one of]A new sign titled SIGN OUGHT-SIGH-NOT stands here. What a relief! It explains how to get back south without, well, wearing yourself out with busy work.[or]The SIGN OUGHT-SIGH-NOT stands here for reference.[stopping]". description of sign ought sigh not is "WAYS SOUTH:".
+
+report examining sign ought sigh not:
+	list-which-room;
+	continue the action;
+
+chapter ssing
+
+ssing is an action out of world.
+
+understand the command "ss" as something new.
+
+understand "ss" as ssing when player is in ur branch and sign ought is in ur branch.
+
+carry out ssing:
+	move player to entry 2 of south-found;
+	the rule succeeds;
+
+chapter sssing
+
+sssing is an action out of world.
+
+understand the command "sss" as something new.
+
+understand "sss" as sssing when player is in ur branch and sign ought is in ur branch.
+
+carry out sssing:
+	move player to entry 3 of south-found;
+	the rule succeeds;
+
 book Beach Ill
 
 Beach Ill is a room in universal. printed name is "[if sco-be-chill is false]Beach, Ill[else if sco-probe-all is false]Bless-and-Bleah Sand[else]Dune Ever-Do-Never[end if]". "[if sco-be-chill is false]You have a general sense of malaise here, which isn't usual for these environs, but it's there, and not being able to get rid of it simply is causing more malaise[else]It's nice here. The only way out on foot is back west, since you can't swim the other ways[end if]."
@@ -593,9 +625,11 @@ book Too Dark Tude Ark
 
 Too Dark Tude Ark is an ordroom in universal.
 
-book Ordroom2
+book Sage Oaks
 
-Ordroom2 is an ordroom in universal.
+Sage Oaks is an ordroom in universal.
+
+sageoakscen is a sentient in Sage Oaks. "Sage oaks stand here, [if sco-say-jokes is false]glaring at your unworthy self[else]almost nodding with respect for you[end if]."
 
 book Ordroom3
 
@@ -713,6 +747,6 @@ index map with Sob Acres mapped north of Bowl Ditch.
 index map with Deli Stern mapped west of Sob Acres.
 
 index map with Too Dark Tude Ark mapped south of Fort Earns.
-index map with Ordroom2 mapped east of Tude Ark.
-index map with Ordroom3 mapped east of Ordroom2.
+index map with Sage Oaks mapped east of Tude Ark.
+index map with Ordroom3 mapped east of Sage Oaks.
 index map with Too Dark Tude Ark mapped south of Fort Earns.
