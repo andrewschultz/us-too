@@ -16,11 +16,13 @@ include Oronym Core by Andrew Schultz.
 
 section game specific
 
+include Us Too Globals by Andrew Schultz.
+
 include Us Too Definitions by Andrew Schultz.
 
 include Us Too Tables by Andrew Schultz.
 
-include Us Too Globals by Andrew Schultz.
+include Us Too Mistakes by Andrew Schultz.
 
 [ section beta heading (later) ]
 
