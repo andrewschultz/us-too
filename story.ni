@@ -701,6 +701,42 @@ check ting:
 
 volume meta-verbs
 
+book about
+
+carry out abouting:
+	say "[this-game] was released for IFComp 2025. It reuses a lot of code from [wp], my IFComp 2024 entry. It uses the same sort of progress mechanic, but the two are different in nature.";
+	say "[line break]As in 2024, I had bigger projects that didn't make it, but fortunately (well, for me,) I found the title early on and built from there.";
+	say "[line break]Like most of my games, [this-game] rates merciful on the Zarfian cruelty scale. However, in this case, I want the puzzles to be more merciful in terms of general difficulty on the player's psyche than usual."
+
+report abouting:
+	if player is in house well:
+		say "Once you figure what to say to the lawyers (which is a short phrase with short words,) you will have the opportunity to find a small document with silly and fun observations. (This line will change once you get there, too.)";
+	else if loose intro is moot:
+		say "You already read the loose intro that goes into detail about things.";
+	else if player has loose intro:
+		say "You can [if loose intro is examined]re-[end if]read the loose intro to get more creative details on [this-game].";
+	else:
+		say "The lucent row [here-in of Mine Ooh] contains, if you look at it right, something with more subjective details and opinions. It's a bonus point, but it might help prepare you for the rest of the game.";
+	continue the action;
+
+book credits
+
+carry out creditsing:
+	say "Thanks to my testers.";
+	say "[line break]The cover art is my fault, and my fault alone.";
+	say "[line break][b]GENERAL THANKS[r]:[paragraph break]";
+	say "Thanks to everyone past and future involved in the administration of IFComp.";
+	say "Thanks to the I7 board on Intfiction.org for their help, as well as the people in the general topics and the spoilers topic as we discussed our plans.";
+
+book verbs
+
+check verbsing when player is in house:
+	say "Most point-scoring commands, including the one to get you out of this house, are two words long. They are clued by something in the environment. The two you must find now are relatively simple and short.";
+	say "[line break]Past the house, [this-game] has a limited parser, mostly allowing the various directions, INVENTORY, THINK, and SCORE.";
+	the rule succeeds;
+
+carry out verbsing:
+	say "[this-game] uses a reduced parser.";
 book versions
 
 carry out versioning:
