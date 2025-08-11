@@ -687,6 +687,36 @@ the bread is a thing.
 
 volume regular verbs
 
+book inventory
+
+the UT specific inventory rule is listed instead of the print standard inventory rule in the carry out taking inventory rulebook.
+
+carry out taking inventory (this is the UT specific inventory rule):
+	now all things carried by player are marked for listing;
+	now all startthings are not marked for listing;
+	if number of marked for listing things is 0:
+		say "You're empty-handed, except for what you started with.[paragraph break]";
+	else:
+		say "'Good! Some goods, umm...'[line break]";
+	if player has tins:
+		now pie crust is not marked for listing;
+		now dough is not marked for listing;
+	list the contents of the player, with newlines, indented, including contents, listing marked items only, giving inventory information, with extra indentation;
+	say "You're still carrying [the list of startthings carried by player][tour-ad-blather].";
+	the rule succeeds;
+
+after printing the name of gray tins when taking inventory:
+	if gray-tin-score is 0:
+		say " (both empty)";
+	else if gray-tin-score is 2:
+		say " (one full of dough, one with pie crust)";
+	else:
+		say " (one has [if sco-dough-making is true]dough[else]pie crust[end if])";
+
+to say tour-ad-blather:
+	if player does not have tour ad, continue the action;
+	say ". The [tour ad][if tour ad is examined] didn't seem too important, though, so you can drop it[else] seems relatively lightweight. You can probably examine and then drop it[end if]";
+
 book drop/take
 
 check taking: if noun is not a hintthing, say "You never need to take anything explicitly in [this-game], though you have the option of taking two hint items. However, trying to take an item may give you a hint as to what you really need to do to acquire or use it." instead;
