@@ -10,6 +10,8 @@ include Bold Final Question Rows by Andrew Schultz.
 
 include Standard Helping Metaverbs by Andrew Schultz.
 
+include Versioning and Extensions Tweak by Andrew Schultz.
+
 section series specific
 
 include Oronym Core by Andrew Schultz.
@@ -690,6 +692,11 @@ check ting:
 	say "An awkward silence ensues, mostly brought about by how ... I forgot to code something. Please let me know or file a bug report!" instead;
 
 volume meta-verbs
+
+book versions
+
+carry out versioning:
+	say "Release 1 is targeted for August 28, 2025, for IFComp.";
 
 book swearing
 
