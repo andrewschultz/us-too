@@ -683,6 +683,27 @@ volume directions
 table of noways
 noway-rm	noway-txt
 My New Mine Ooh	"You could explore your mine, but you [if sco-my-quest is false]have no purpose, or errand, or ... there's another word, here[else if sco-be-strong is false]really should get rid of that beast[else]sense the real adventure lies outside[end if]."
+Ur Branch	"You can't go [noun][if noun is eventual] yet[end if][if south is branchcan and west is branchcan]. There are no new ways to go[end if]."
+Beach Ill	"You can only walk back west[if sco-punt-weaker is true] or take the punt east[end if]."
+Pile Up Isle	"You can't see land anywhere except to the west."
+Sore Dark	"The only exit from this cavern is southeast."
+Bore Dread	"The only exit from this enclosure is southwest."
+Blah Copse	"You can only leave the copse to the north[if sco-or-clerk is true] or south[end if]."
+Morph Lairs	"Since you can't dare the morph lairs, the only way to leave is back south."
+Pea Stalks	"Compass directions befuddle you at the moment. You can only go back out."
+Dome Aching	"The only compass direction you can go is back northwest. However, you may also [if sco-in-earnest is true]go[else]find a way[end if] in to the inner nest."
+Inner Nest	"No secret passages here. You just need to go back out."
+Fort Earns	"You can leave the fort to the northeast [if cellar bin is visited]or X TRAP to fall to the cellar bin[end if]."
+Cell Urban	"You'll have to use your wits to leave."
+Cellar Bin	"Just go up to leave."
+Bowl Ditch	"You can only go [if sco-bold-itch is true]north or [end if]back east."
+Sob Acres	"While it's pretty open here, [if sco-saw-bakers is true]the only safe ways are south or [acres-to-deli][else]you see safety only to the south, for now[end if]."
+Deli Stern	"Not that way. Out[if sco-dell-eastern is true] or east[end if]."
+Tube Rod	"Only back north. Well, for now."
+Sage Oaks	"Only back north. Well, for now."
+Too Dark Tude Ark	"Only back north. Well, for now."
+
+to say acres-to-deli: say "[if sco-dell-eastern is true]west/[end if]in"
 
 Us Too Tables ends here.
 

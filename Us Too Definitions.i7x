@@ -75,6 +75,11 @@ volume directions
 
 a direction can be branchdone. a direction is usually not branchdone.
 
+definition: a direction (called di) is eventual:
+	if di is up or di is outside, no;
+	if di is branchcant, yes;
+	no;
+
 definition: a direction (called di) is branchcant:
 	if di is branchdone, no;
 	if the room di of location of player is nowhere, yes;
