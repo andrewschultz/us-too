@@ -20,6 +20,8 @@ extra-turns is a number that varies. extra-turns is 0.
 
 intro-row is a number that varies. intro-row is 1.
 
+starter-counter is a number that varies.
+
 volume booleans
 
 chapter printing details

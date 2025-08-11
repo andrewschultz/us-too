@@ -103,13 +103,19 @@ after reading a command when player is in House Well How Swell:
 		try examining the player;
 	else:
 		say "The lawyers shake their head slightly, though you sense that's the worst you'll get from them.";
-	explain-the-house;
+	increment starter-counter;
+	if starter-counter is 5, follow the explain the house rule;
 	reject the player's command;
 
-to explain-the-house:
-	if gs-explained-house is false:
-		say "[line break][i][bracket][b]NOTE[r][i]: standard commands aren't necessary or useful here. You have to figure what to say.[close bracket][line break]";
-		now gs-explained-house is true;
+after printing the locale description for house when house is unvisited:
+	follow the explain the house rule;
+	continue the action;
+
+this is the explain the house rule:
+	say "[i][bracket][b][one of]NOTE[or]REMINDER[stopping][r][i]: standard commands aren't necessary or useful here. You have to figure what to say. But it's not very long. You can also try [b]ABOUT[r][i] or [b]VERBS[r][i].[close bracket][line break]";
+	now starter-counter is 0;
+	now gs-explained-house is true;
+	continue the action;
 
 rule for printing a parser error when the latest parser error is the I Beg Your Pardon error and player is in House Well:
 	say "You fumble nervously with your envelope reflect on what the lawyers might want to hear. Dare you sneak [if gs-envelope is true]another[else]a[end if] peak at it?";
