@@ -21,6 +21,8 @@ an ingredient is a kind of thing. an ingredient has text called invtext. an ingr
 
 a startprop is a kind of thing. a startprop is usually scenery.
 
+a startthing is a kind of thing.
+
 volume ordroom
 
 an ordroom is a kind of room. an ordroom has a number called rmord. rmord of an ordroom is usually 0.

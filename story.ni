@@ -114,7 +114,9 @@ Mike West is a person in House Well How Swell. the player is Mike West. descript
 
 chapter "item using"
 
-Mike West carries Aight Amusing Item Using. description of Aight is "[aight-stuff]". printed name of Aight is "[']Aight, Amusing Item Using[r]".
+Aight Amusing Item Using is a startthing. description of Aight is "[aight-stuff]". printed name of Aight is "[']Aight, Amusing Item Using[r]".
+
+Mike West carries Aight Amusing Item Using.
 
 check examining aight for the first time:
 	say "It's a recipe, actually.";
@@ -149,7 +151,9 @@ report taking inventory when gs-using-known is false:
 
 chapter too rad tour ad
 
-the too rad tour ad is a hintthing.
+the too rad tour ad is a startthing.
+
+check drop2ing tour ad when tour ad is unexamined: say "You can drop it, but read it, first, to make sure it isn't really useful." instead;
 
 Mike West carries the too rad tour ad. printed name of tour ad is "too-rad tour ad".
 
