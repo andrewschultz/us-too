@@ -677,10 +677,6 @@ volume unsorted
 
 book unclaimed things
 
-chapter scribe red
-
-the scribe red is a sentient. printed name is "scribe (red)".
-
 chapter bread
 
 the bread is a thing.

@@ -182,8 +182,6 @@ book unsorted
 
 chapter unsorted
 
-sco-scry-bread is a truth state that varies.
-
 book debugs
 
 debug-win is a truth state that varies.

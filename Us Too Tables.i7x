@@ -36,7 +36,6 @@ w1 (text)	w2 (text)	first-hom (text)	second-hom	hom-txt-rule (rule)	first-exact	
 "or"	"clerk"	--	--	--	false	false	false	false	"figuring what Sir Freddie was scared of"	false	true	true	false	false	blah copse	pre-or-clerk rule	post-or-clerk rule	--	--
 "more"	"flares"	--	--	--	false	false	false	false	"activating the morph lairs"	false	true	true	false	false	morph lairs	pre-more-flares rule	post-more-flares rule	--	--
 "probe"	"all"	--	--	--	false	false	false	false	"finding a purpose for the pro ball"	false	true	true	false	false	ur branch	pre-probe-all rule	post-probe-all rule	--	--
-"scry"	"bread"	--	"bred"	--	false	false	false	false	"getting something from the scribe (red)"	false	true	true	false	false	A Pile Up Isle	pre-scry-bread rule	post-scry-bread rule	--	--
 "peace"	"talks"	--	--	--	false	false	false	false	"finding something incorporeal within the Pea Stalks"	false	true	true	false	false	pea stalks	pre-peace-talks rule	post-peace-talks rule	--	--
 "peep"	"odd"	--	--	--	false	false	false	false	"finding something unusual within the Pea Stalks"	false	true	false	false	false	pea stalks	pre-peep-odd rule	post-peep-odd rule	--	--
 "can"	"take"	--	--	--	false	false	false	false	"dispelling the Can't-Ache"	false	true	true	false	false	dome aching	pre-can-take rule	post-can-take rule	--	--
@@ -54,17 +53,6 @@ w1 (text)	w2 (text)	first-hom (text)	second-hom	hom-txt-rule (rule)	first-exact	
 "too"	"broad"	--	--	--	false	false	false	false	"how to fracture the tube/rod"	false	true	true	false	false	tube rod	pre-too-broad rule	post-too-broad rule	--	--
 "ho"	"langour"	--	--	--	false	false	false	false	"dealing with the paralyzing whole anger"	false	true	true	false	false	tude ark	pre-ho-langour rule	post-ho-langour rule	--	--
 "say"	"jokes"	--	--	--	false	false	false	false	"get by the Sage Oaks"	false	true	true	false	false	sage oaks	pre-say-jokes rule	post-say-jokes rule	--	--
-
-chapter scribe red scoring
-
-a wordtwisting rule (this is the pre-scry-bread rule):
-	if scribe red is not touchable, unavailable;
-	ready;
-
-this is the post-scry-bread rule:
-	now sco-scry-bread is true;
-	say "Now you have the bread!";
-	now player has bread;
 
 chapter mine ooh scoring
 
