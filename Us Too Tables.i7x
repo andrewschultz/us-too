@@ -49,7 +49,7 @@ w1 (text)	w2 (text)	first-hom (text)	second-hom	hom-txt-rule (rule)	first-exact	
 "claim"	"it"	--	--	--	false	false	false	false	"gathering the clay mitt"	false	true	true	false	false	Bowl Ditch	pre-claim-it rule	post-claim-it rule	--	--
 "saw"	"bakers"	--	--	--	false	false	false	false	"finding signs of life in Sob Acres"	false	true	true	false	false	sob acres	pre-saw-bakers rule	post-saw-bakers rule	--	--
 "dell"	"eastern"	--	--	--	false	false	false	false	"making Sob Acres less forbidding"	false	true	true	false	false	deli stern	pre-dell-eastern rule	post-dell-eastern rule	--	--
-"fell"	"trap"	--	--	--	false	false	false	false	"clue for guessing one word right"	false	true	true	false	false	fort earns	pre-fell-trap rule	post-fell-trap rule	--	--
+"fell"	"trap"	--	--	--	false	false	false	false	"revealing what's behind the felt wrap"	false	true	true	false	false	fort earns	pre-fell-trap rule	post-fell-trap rule	--	--
 "cellar"	"bin"	--	--	--	false	false	false	false	"escaping the Cell, Urban"	false	true	true	false	false	cell urban	pre-cellar-bin rule	post-cellar-bin rule	--	--
 "too"	"broad"	--	--	--	false	false	false	false	"how to fracture the tube/rod"	false	true	true	false	false	tube rod	pre-too-broad rule	post-too-broad rule	--	--
 "ho"	"langour"	--	--	--	false	false	false	false	"dealing with the paralyzing whole anger"	false	true	true	false	false	tude ark	pre-ho-langour rule	post-ho-langour rule	--	--
@@ -394,7 +394,7 @@ a wordtwisting rule (this is the pre-or-clerk rule):
 	if player is not in blah copse, unavailable;
 	if sco-surf-ready is false, unavailable;
 	if sco-or-clerk is true:
-		vcal "You already did this!";
+		vcal "You already figured nothing awful was lurking to the north";
 		already-done;
 	ready;
 
@@ -704,7 +704,7 @@ a wordtwisting rule (this is the pre-say-jokes rule):
 
 this is the post-say-jokes rule:
 	now sco-say-jokes is true;
-	say "Hooray! You figured what to do! You get a point!";
+	say "'Eh jokes age oaks,' they mutter at first. But they get into it more. They warn you of the trouble you'll get in if you keep telling corny jokes. It doesn't show you're smart. But then you explain you carefully crafted said jokes to peeve them. You've had experience all game with wordplay, too.[paragraph break]They're pretty impressed with your presentation. You feel a magic surge--you can pass to the south now.";
 
 volume loose intro
 

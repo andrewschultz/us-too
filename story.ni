@@ -401,7 +401,6 @@ check going west in Pile Up Isle:
 	move punt to beach;
 	move oar to beach;
 
-
 chapter nigh swarm
 
 the nigh swarm is a thing. "A nigh swarm ruins the tranquility of the area. You can't see behind it.". description is "The nigh swarm buzzes aggresively.".
@@ -554,7 +553,7 @@ the inscen is privately-named scenery. understand "inner/nest" and "inner nest" 
 
 chapter dough
 
-the dough is a thing. description is "It's dough, inside one of your tins.".
+the dough is a thing. description is "It's dough, inside one of your tins.". indefinite article of dough is "some".
 
 book Inner Nest
 
@@ -715,6 +714,7 @@ check ting:
 		if noun is pun tweaker or noun is Sir Freddie:
 			say "You don't have the skills to talk out a detente." instead;
 	if noun is pun tweaker, say "The pun tweaker throws a ton of puns you've heard before at you and feels very clever for this." instead;
+	if noun is sageoakscen, say "[if sco-say-jokes is false]The oaks just don't seem to be bothered with regular talk[else]You wonder if you should say 'Forge, oaks, for jokes,' or ask for kludge-oaks that might clue jokes. But the oaks don't seem interested in talking[end if]." instead;
 	if noun is Sir Freddie, say "'Ho, pawn! Hope on!'" instead;
 	if noun is not a sentient, say "No response. You should usually talk to living things, or things that can respond as if they were living." instead;
 	say "An awkward silence ensues, mostly brought about by how ... I forgot to code something. Please let me know or file a bug report!" instead;
@@ -757,6 +757,7 @@ check verbsing when player is in house:
 
 carry out verbsing:
 	say "[this-game] uses a reduced parser.";
+
 book versions
 
 carry out versioning:
