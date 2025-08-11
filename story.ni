@@ -206,9 +206,17 @@ check thinking in Mine Ooh when sco-my-quest is false:
 	the rule succeeds;
 
 check going outside in Mine Ooh:
-	if sco-my-quest is false, say "You don't want to go wandering outside after you just got here! You need to catch your bearings. Focus on yourself a bit." instead;
+	if sco-my-quest is false, say "You don't want to go wandering outside after you just got here! You need to catch your bearings. Focus on yourself a bit. Maybe even a lot." instead;
 	if sco-be-strong is false, say "[The beast] blocks your way. How wrong of it! You try physically shifting around, but it's unmoved. Maybe adjusting your mental attitude will do the trick." instead;
+	if aight is not examined:
+		say "You're eager to rush out there, but perhaps you should peruse the ... documentation you were given, first. You haven't really looked at [item using] from your inventory, yet. Sure, you could go out there and find stuff scattershot, but why not have some direction?" instead;
 	if ur branch is unvisited, say "So you begin your quest...";
+	if test-mine-only is true:
+		say "Or you would, if this wasn't a test version. Thanks for getting through.";
+		follow the shutdown rules;
+		the rule succeeds;
+
+[when play begins: now test-mine-only is true;]
 
 chapter beast wrong
 
