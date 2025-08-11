@@ -70,6 +70,10 @@ after reading a command when player is in House Well How Swell:
 	if debug-state is true:
 		if word number 1 in the player's command is "test" or word number 1 in the player's command is "gonear":
 			continue the action;
+	if word number 1 in the player's command is "about" or word number 1 in the player's command is "credits" or word number 1 in the player's command is "versions" or word number 1 in the player's command is "ext" or word number 1 in the player's command is "exts":
+		continue the action;
+	if the player's command exactly matches the text "look" or the player's command exactly matches the text "l" or the player's command exactly matches the text "quit" or the player's command exactly matches the text "restore":
+		continue the action;
 	if the player's command exactly matches the text "how so":
 		say "One lawyer stands up and snaps their fingers. 'There you go! I knew you'd get it.";
 		increment core-score;
@@ -84,7 +88,7 @@ after reading a command when player is in House Well How Swell:
 		move player to My New Mine Ooh;
 		reject the player's command;
 	if number of words in the player's command > 2:
-		say "The lawyers yawn. You really are talking too much[if first-command-points > 0], though there MAY have been something in what you said...[else]![end if]";
+		say "The lawyers yawn. All those words! You really are talking too much[if first-command-points > 0], though there MAY have been something in what you said...[else]![end if]";
 	else if first-command-points > 0:
 		if first-command-points is 2:
 			say "The lawyers make little flip-it-around motions with their hands.";
@@ -96,8 +100,8 @@ after reading a command when player is in House Well How Swell:
 		say "One of the lawyers tells you to speak up a little, there, and don't cut yourself off so soon.";
 	else if the player's command includes "lawyers" or the player's command includes "lawyer":
 		say "The lawyers sit, stone-faced. You will get no clues from them.";
-	else if the player's command includes "envelope" or the player's command includes "think" or the player's command includes "hint" or the player's command includes "help":
-		say "You glance at your envelope, [one of]once again [or][stopping]worried you might be cheating. But you can't imagine what other clue you have.[paragraph break]The lawyers [one of]still [or][stopping]look nonchalant, fortunately. It says [hohs].";
+	else if the player's command includes "envelope" or the player's command includes "think" or the player's command includes "hint" or the player's command includes "help" or word number 1 in the player's command is "i" or word number 1 in the player's command is "inventory":
+		say "You glance at your envelope, pretty much all you have on you, [one of]once again [or][stopping]worried you might be cheating. But you can't imagine what other clue you have.[paragraph break]The lawyers [one of]still [or][stopping]look nonchalant, fortunately. It says [hohs].";
 		now gs-envelope is true;
 	else if the player's command includes "me" or the player's command includes "myself":
 		try examining the player;
