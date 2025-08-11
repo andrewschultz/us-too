@@ -53,6 +53,7 @@ w1 (text)	w2 (text)	first-hom (text)	second-hom	hom-txt-rule (rule)	first-exact	
 "too"	"broad"	--	--	--	false	false	false	false	"how to fracture the tube/rod"	false	true	true	false	false	tube rod	pre-too-broad rule	post-too-broad rule	--	--
 "ho"	"langour"	--	--	--	false	false	false	false	"dealing with the paralyzing whole anger"	false	true	true	false	false	tude ark	pre-ho-langour rule	post-ho-langour rule	--	--
 "say"	"jokes"	--	--	--	false	false	false	false	"get by the Sage Oaks"	false	true	true	false	false	sage oaks	pre-say-jokes rule	post-say-jokes rule	--	--
+"gas"	"pouch"	--	--	--	false	false	false	false	"see how to stop gasping OUCH"	false	true	true	false	false	sage oaks	pre-gas-pouch rule	post-gas-pouch rule	--	--
 
 chapter mine ooh scoring
 
@@ -693,6 +694,18 @@ a wordtwisting rule (this is the pre-say-jokes rule):
 this is the post-say-jokes rule:
 	now sco-say-jokes is true;
 	say "'Eh jokes age oaks,' they mutter at first. But they get into it more. They warn you of the trouble you'll get in if you keep telling corny jokes. It doesn't show you're smart. But then you explain you carefully crafted said jokes to peeve them. You've had experience all game with wordplay, too.[paragraph break]They're pretty impressed with your presentation. You feel a magic surge--you can pass to the south now.";
+	reveal dust which does twitch to south;
+
+a wordtwisting rule (this is the pre-gas-pouch rule):
+	if player is not in sage oaks and player does not have gas pouch, unavailable;
+	if sco-gas-pouch is true:
+		vcal "You don't need two gas pouches.";
+		already-done;
+	ready;
+
+this is the post-gas-pouch rule:
+	now sco-gas-pouch is true;
+	say "The sage oaks chuckle. And you chuckle a bit, too. Turnabout is fair play! They release the gas from the pouch all at once -- of course, not in your direction. 'It can hold liquid, too,' they say.[paragraph break]You step to the south.[paragraph break]'You are free to go that way,' they intone. But they offer no other clues.";
 
 volume loose intro
 

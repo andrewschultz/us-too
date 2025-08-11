@@ -665,6 +665,13 @@ Sage Oaks is an ordroom in universal.
 
 sageoakscen is a sentient in Sage Oaks. "Sage oaks stand here, [if sco-say-jokes is false]glaring at your unworthy self[else]almost nodding with respect for you[end if]."
 
+check going south in Sage Oaks when sco-gas-pouch is false:
+	say "[one of]As you go south, you hear a tingling that makes you gasp 'ouch.' It grows as you continue, and you have to turn back. What's up with that? They said they'd make a passage south.[paragraph break]The sage oaks laugh a bit. 'Just a bit of revenge for those painful joke,' they say, 'nothing permanent. We never said we'd give painless passage south unless ... well, what you need to do, it will be for your own good in the long run.'[paragraph break]Now what did they mean by that?[or]Again, you try to go south, and again you gasp 'ouch,' and the sage oaks chuckle. This is getting a bit tiresome. What to do?[stopping]" instead;
+
+chapter gas pouch
+
+the gas pouch is a thing. "It's a pouch that once held gas, currently full/empty."
+
 book Dam Pink
 
 Dam Pink is a room in universal. "You can only go back north."
@@ -672,6 +679,10 @@ Dam Pink is a room in universal. "You can only go back north."
 book Scribe Room
 
 Scribe Room is a room in universal. "You can only go back north."
+
+book Dust Which Does Twitch
+
+Dust Which Does Twitch is a room in universal. "You can only go back north."
 
 volume unsorted
 
