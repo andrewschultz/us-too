@@ -230,10 +230,10 @@ section lucent row
 
 a lucent row is a startprop in My New Mine Ooh. "[intro-hintthings]"
 
-check examining lucent row when number of hintthings in My New Mine Ooh is 0: say "There's nothing on the lucent row, but maybe if you looked at it right, it might show something. Some sort of message, beneath the glare, which seems kind of unaesthetic." instead;
+check examining lucent row when lucent row is examined and number of hintthings in My New Mine Ooh is 0: say "There's nothing on the lucent row, but maybe if you looked at it right, it might show something. Some sort of message, beneath the glare, which seems kind of unaesthetic." instead;
 
 report examining lucent row:
-	say "Oh. The glare and brightness seem a bit unaesthetic, but it can't be a huge deal.";
+	say "Oh. The glare and brightness seem a bit unaesthetic, like it could even be hiding something, but it can't be a huge deal.";
 	continue the action;
 
 section goal edge go ledge
@@ -276,10 +276,10 @@ check examining loose intro when loose intro is unexamined:
 
 to say intro-table:
 	choose row intro-row in table of intro jabber;
-	say "[my-jabber entry] ([intro-row]/[number of rows in table of intro jabber][line break]";
+	say "[my-jabber entry] ([intro-row]/[number of rows in table of intro jabber])[line break]";
 	increment intro-row;
 	if intro-row > number of rows in table of intro jabber:
-		say "[one of]Well, that's it.[or]Was it really worth reading twice? Thank you![stopping]";
+		say "[line break][one of]Well, that's it.[or]Was it really worth reading twice? Thank you![stopping][run paragraph on]";
 		now intro-row is 1;
 
 chapter meh spot
