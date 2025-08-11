@@ -27,9 +27,9 @@ volume ordroom
 
 an ordroom is a kind of room. an ordroom has a number called rmord. rmord of an ordroom is usually 0.
 
-south-to-find is a list of ordrooms variable. south-to-find is { Too Dark Tude Ark, Sage Oaks, ordroom3 }.
+south-to-find is a list of ordrooms variable. south-to-find is { Tube Rod, Too Dark Tude Ark, Sage Oaks }.
 
-south-found is a list of ordrooms variable. south-found is { Too Dark Tude Ark, Too Dark Tude Ark, Too Dark Tude Ark }.
+south-found is a list of ordrooms variable. south-found is { Tube Rod, Tube Rod, Tube Rod }.
 
 definition: a number (called q) is claimable:
 	if q < 1 or q > number of ordrooms, no;

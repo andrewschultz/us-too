@@ -632,19 +632,21 @@ book Deli Stern
 
 Deli Stern is a room in universal. printed name is "Deli, Stern". "You can only really go out[if sco-dell-eastern is true] (well, east, same thing)[end if] here."
 
+book Tube Rod
+
+Tube Rod is an ordroom in universal.
+
 book Too Dark Tude Ark
 
 Too Dark Tude Ark is an ordroom in universal.
+
+the whole anger is a thing in Tude Ark. "Whole anger swirls around here.". description is "How can one describe anger? It's there, and it's tough to shake."
 
 book Sage Oaks
 
 Sage Oaks is an ordroom in universal.
 
 sageoakscen is a sentient in Sage Oaks. "Sage oaks stand here, [if sco-say-jokes is false]glaring at your unworthy self[else]almost nodding with respect for you[end if]."
-
-book Ordroom3
-
-Ordroom3 is an ordroom in universal.
 
 volume unsorted
 
@@ -762,7 +764,6 @@ index map with Bowl Ditch mapped north of Cellar Bin.
 index map with Sob Acres mapped north of Bowl Ditch.
 index map with Deli Stern mapped west of Sob Acres.
 
-index map with Too Dark Tude Ark mapped south of Fort Earns.
-index map with Sage Oaks mapped east of Tude Ark.
-index map with Ordroom3 mapped east of Sage Oaks.
-index map with Too Dark Tude Ark mapped south of Fort Earns.
+index map with Sage Oaks mapped south of Fort Earns.
+index map with Too Dark Tude Ark mapped east of Sage Oaks.
+index map with Tube Rod mapped east of Too Dark Tude Ark.
