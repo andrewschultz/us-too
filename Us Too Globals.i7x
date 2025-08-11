@@ -164,19 +164,26 @@ sco-dell-eastern is a truth state that varies.
 
 book south branch
 
+chapter Tube Rod
+
+sco-too-broad is a truth state that varies.
+
+
+sco-loose-intro is a truth state that varies.
+
+sco-say-jokes is a truth state that varies.
+
 book unsorted
 
 chapter unsorted
 
 sco-scry-bread is a truth state that varies.
 
-sco-loose-intro is a truth state that varies.
-
-sco-say-jokes is a truth state that varies.
-
 book debugs
 
 debug-win is a truth state that varies.
+
+test-mine-only is a truth state that varies.
 
 Us Too Globals ends here.
 

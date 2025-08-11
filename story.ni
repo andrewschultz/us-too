@@ -658,6 +658,10 @@ Sage Oaks is an ordroom in universal.
 
 sageoakscen is a sentient in Sage Oaks. "Sage oaks stand here, [if sco-say-jokes is false]glaring at your unworthy self[else]almost nodding with respect for you[end if]."
 
+book Dam Pink
+
+Dam Pink is a room in universal. "You can only go back north."
+
 volume unsorted
 
 book unclaimed things
