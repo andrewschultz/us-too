@@ -80,9 +80,12 @@ after reading a command when player is in House Well How Swell:
 		move player to My New Mine Ooh;
 		reject the player's command;
 	if number of words in the player's command > 2:
-		say "The lawyers yawn. You really are talking too much!";
-	else if the player's command includes "how" or the player's command includes "so":
-		say "The lawyers['] ears seem to perk up for a second.";
+		say "The lawyers yawn. You really are talking too much[if first-command-points > 0], though there MAY have been something in what you said...[else]![end if]";
+	else if first-command-points > 0:
+		if first-command-points is 2:
+			say "The lawyers make little flip-it-around motions with their hands.";
+		else:
+			say "The lawyers['] ears seem to perk up for a second.";
 	else if the number of characters in the player's command > 8:
 		say "One of the lawyers casually remarks [ara] was never big on unnecessarily long words.";
 	else if number of words in the player's command < 2:

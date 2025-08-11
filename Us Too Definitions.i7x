@@ -107,6 +107,9 @@ to block-and-back:
 
 volume composite numbers
 
+to decide which number is first-command-points:
+	decide on (boolval of whether the player's command includes "how") + (boolval of whether the player's command includes "so");
+
 to decide which number is dome-in-score:
 	decide on (boolval of sco-gray-tins) + (boolval of sco-in-earnest);
 
