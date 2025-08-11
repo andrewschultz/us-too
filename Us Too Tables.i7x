@@ -52,6 +52,7 @@ w1 (text)	w2 (text)	first-hom (text)	second-hom	hom-txt-rule (rule)	first-exact	
 "fell"	"trap"	--	--	--	false	false	false	false	"clue for guessing one word right"	false	true	true	false	false	fort earns	pre-fell-trap rule	post-fell-trap rule	--	--
 "cellar"	"bin"	--	--	--	false	false	false	false	"escaping the Cell, Urban"	false	true	true	false	false	cell urban	pre-cellar-bin rule	post-cellar-bin rule	--	--
 "too"	"broad"	--	--	--	false	false	false	false	"how to fracture the tube/rod"	false	true	true	false	false	tube rod	pre-too-broad rule	post-too-broad rule	--	--
+"ho"	"langour"	--	--	--	false	false	false	false	"dealing with the paralyzing whole anger"	false	true	true	false	false	tude ark	pre-ho-langour rule	post-ho-langour rule	--	--
 "say"	"jokes"	--	--	--	false	false	false	false	"get by the Sage Oaks"	false	true	true	false	false	sage oaks	pre-say-jokes rule	post-say-jokes rule	--	--
 
 chapter scribe red scoring
@@ -672,6 +673,25 @@ a wordtwisting rule (this is the pre-too-broad rule):
 this is the post-too-broad rule:
 	now sco-too-broad is true;
 	say "Hooray! You figured what to do! You get a point!";
+
+chapter too dark tude ark
+
+chapter tude ark scoring
+
+a wordtwisting rule (this is the pre-ho-langour rule):
+	if player is not in tude ark, unavailable;
+	if sco-too-broad is false:
+		vcp "But it doesn't quite work yet, calling for languor ... you haven't done anything down this way.";
+		not-yet;
+	if sco-ho-langour is true:
+		vcal "You already dealt with your anger! If you want more anger to have to deal with, why, you might get your wish, if you're not careful.";
+		already-done;
+	ready;
+
+this is the post-ho-langour rule:
+	now sco-ho-langour is true;
+	say "Passive resistance is the way to go! You worry you are just doing nothing by default, and it doesn't really count, but then you remember how you busted up the tube/rod. You feel your blood pressure falling. Things aren't so bad, now.";
+	reveal Scribe Room to south;
 
 chapter sage oaks scoring
 

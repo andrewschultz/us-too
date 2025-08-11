@@ -59,9 +59,11 @@ sco-my-quest is a truth state that varies.
 sco-be-strong is a truth state that varies.
 
 sco-mess-pot is a truth state that varies.
-sco-meh-skit is a truth state that varies. [bonus point]
 
 sco-a-stew is a truth state that varies.
+
+sco-loose-intro is a truth state that varies. [bonus point 1]
+sco-meh-skit is a truth state that varies. [bonus point 2]
 
 book hub
 
@@ -168,8 +170,11 @@ chapter Tube Rod
 
 sco-too-broad is a truth state that varies.
 
+chapter Too Dark Tude Ark
 
-sco-loose-intro is a truth state that varies.
+sco-ho-langour is a truth state that varies.
+
+chapter Sage Oaks
 
 sco-say-jokes is a truth state that varies.
 

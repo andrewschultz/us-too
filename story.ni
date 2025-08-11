@@ -670,6 +670,10 @@ book Dam Pink
 
 Dam Pink is a room in universal. "You can only go back north."
 
+book Scribe Room
+
+Scribe Room is a room in universal. "You can only go back north."
+
 volume unsorted
 
 book unclaimed things
@@ -825,3 +829,6 @@ index map with Deli Stern mapped west of Sob Acres.
 index map with Sage Oaks mapped south of Fort Earns.
 index map with Too Dark Tude Ark mapped east of Sage Oaks.
 index map with Tube Rod mapped east of Too Dark Tude Ark.
+
+index map with Dam Pink mapped south of Tube Rod.
+index map with Scribe Room mapped south of Too Dark Tude Ark.
