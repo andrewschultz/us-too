@@ -230,6 +230,7 @@ a wordtwisting rule (this is the pre-blah-copse rule):
 this is the post-blah-copse rule:
 	now sco-blah-copse is true;
 	say "Aha! That was what you were doing wrong. You just needed to tweak a thing or two as you walked north. This time, you avoid the black-ops site. Once you see the path, well, it's hard to un-see.";
+	moot black ops;
 	move player to Blah Copse;
 
 book east branch scoring

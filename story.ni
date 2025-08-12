@@ -344,6 +344,10 @@ chapter herbs
 
 some herbs are a proper-named thing. description is "It's some herb, eh? [if sco-summer-bay is true]It helped you find a new place to visit, and it's still edible![else]Apparently it can give enlightenment to new life paths, but, uh, not THAT way.[end if]". printed name is "[if sco-summer-bay is true]herbs[else]'some herb, eh?'". understand "herbs/herb eh" and "herb" as some herbs.
 
+chapter black ops
+
+the black ops are a thing. "You know black ops are lurking to the north.". description is "If I could describe them, they wouldn't be very good black ops.". eyes-number of black ops is 45. eyes-rule of black ops is pre-blah-copse rule.
+
 chapter garden tree
 
 the garden tree is a thing. "[if sco-guard-entry is true]The garden tree stands here, passively[else]That garden tree the [forest] were whining about stands here[end if]."
@@ -447,6 +451,7 @@ Blah Copse is a room in universal. "[if sco-or-clerk is false]The only really cl
 
 check going to Blah Copse when sco-blah-copse is false:
 	now gs-tried-black-ops is true;
+	move black ops to Ur Branch;
 	say "[one of]You walk towards the black ops site, but you're flagged down. What are you doing here? How did you even get close? After some questioning, you're sent back to the Ur-Branch by people who 'suggest' you forget this ever happened. Returning is ... not advised.[or]Oh, no, you're not going back to the black ops site. You're not sure what was going on. You must've made a wrong turn. Maybe you can figure out where you were supposed to REALLY go.[stopping]"  instead;
 
 after printing the locale description for Blah Copse when sco-surf-ready is true and sco-or-clerk is false:
