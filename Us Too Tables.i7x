@@ -46,6 +46,7 @@ w1 (text)	w2 (text)	first-hom (text)	second-hom	hom-txt-rule (rule)	first-exact	
 "oh"	"clever"	--	--	--	false	false	false	false	"operating the oak lever"	false	true	true	false	false	fort earns four turns	pre-oh-clever rule	post-oh-clever rule	--	--
 "bold"	"itch"	--	--	--	false	false	false	false	"figuring how to get back on your feet in Bowl/Ditch"	false	true	true	false	false	bowl ditch	pre-bold-itch rule	post-bold-itch rule	--	--
 "claim"	"it"	--	--	--	false	false	false	false	"gathering the clay mitt"	false	true	true	false	false	Bowl Ditch	pre-claim-it rule	post-claim-it rule	--	--
+"tour"	"boaters"	--	--	--	false	false	false	false	"bringing more business to Turbo Tours"	false	true	false	false	false	turbo tours	pre-tour-boaters rule	post-tour-boaters rule	--	--
 "saw"	"bakers"	--	--	--	false	false	false	false	"finding signs of life in Sob Acres"	false	true	true	false	false	sob acres	pre-saw-bakers rule	post-saw-bakers rule	--	--
 "dell"	"eastern"	--	--	--	false	false	false	false	"making Sob Acres less forbidding"	false	true	true	false	false	deli stern	pre-dell-eastern rule	post-dell-eastern rule	--	--
 "fell"	"trap"	--	--	--	false	false	false	false	"revealing what's behind the felt wrap"	false	true	true	false	false	fort earns	pre-fell-trap rule	post-fell-trap rule	--	--
@@ -624,6 +625,7 @@ this is the post-bold-itch rule:
 	say "You have a think. It's not terrible. You've gotten here. You can get back. You really did trample through whatever was to the east. You walk off the ankle sprain you get from falling down. At the edges of the ditch, you notice:  hey, isn't that a clay mitt? And hey, you can see things clearing out to the north!";
 	move clay mitt to Bowl Ditch;
 	reveal Sob Acres to north;
+	reveal Turbo Tours to west;
 	declue-here;
 
 a wordtwisting rule (this is the pre-claim-it rule):
@@ -668,6 +670,19 @@ this is the post-dell-eastern rule:
 	say "The surroundings are a bit more welcoming now. Oh, you can go east as well as out, too.";
 	reveal Sob Acres to the east;
 	declue-here;
+
+chapter turbo tours scoring
+
+a wordtwisting rule (this is the pre-tour-boaters rule):
+	if player is not in turbo tours, unavailable;
+	if sco-tour-boaters is true:
+		vcal "You already brought in additional business to Turbo Tours!";
+		already-done;
+	ready;
+
+this is the post-tour-boaters rule:
+	now sco-tour-boaters is true;
+	say "You have a business idea! You explain it to the folks at Turbo Tours. They play it down, but of course, after a bit they implement it and it works well and they take credit for it.[paragraph break]That's sort of a bummer, but you find it nice to be around people who are having their own adventures.";
 
 book south branch sorting
 
