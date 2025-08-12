@@ -36,7 +36,7 @@ volume intro
 
 when play begins:
 	now left hand status line is "[location of player]";
-	say "The old mine is yours, now. You were left it in a will by a relative you barely remember. [ara]. She gave you  weird little logic puzzle. 'Tricky,' you mused, and she seemed to smile. But you did not solve it, until the family gathering was over. She had already gotten in her car, and you tried to yell as she drove away. Your family told you not to bug her, which was funny, because everyone seemed to be buttering her up about how rich she was.";
+	say "The old mine is yours, now. You were left it in a will by a relative you barely remember. [ara]. She gave you a weird little logic puzzle. 'Tricky,' you mused, and she seemed to smile. But you did not solve it, until the family gathering was over. She had already gotten in her car, and you tried to yell as she drove away. Your family told you not to bug her, which was funny, because everyone seemed to be buttering her up about how rich she was.";
 	wfak;
 	say "You explained this to your parents, who got really cheesed off you didn't figure it sooner to impress her. That could've been their ticket! Uh, they meant, yours." ;
 	wfak;
@@ -196,11 +196,11 @@ after examining lucent row:
 
 check thinking in Mine Ooh when sco-my-quest is false:
 	say "You're a bit lost, but you track what you know:";
-	say "--you went to [hwhs], called [hohs], and your response 'How so?' impressed the lawyers.";
-	say "--the lawyers reacted positively to 'My new mine, ooh!'";
+	say "[line break]--you went to [hwhs], called [hohs], and your response 'How so?' impressed the lawyers.";
+	say "[line break]--the lawyers reacted positively to 'My new mine, ooh!'";
 	if gs-taken-inventory is true:
-		say "--the [tour ad] and [using] are ... odd, to say the least.";
-	say "--your name is Mike West. [ara] said she REALLY liked that name.";
+		say "[line break]--the [tour ad] and [using] are ... odd, to say the least.";
+	say "[line break]--your name is Mike West. [ara] said she REALLY liked that name.";
 	if gs-taken-inventory is false:
 		say "[line break]Maybe you should take [b]INVENTORY[r] with [b]I[r]. That might provide another clue.";
 	the rule succeeds;

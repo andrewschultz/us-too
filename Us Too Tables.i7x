@@ -51,7 +51,7 @@ w1 (text)	w2 (text)	first-hom (text)	second-hom	hom-txt-rule (rule)	first-exact	
 "fell"	"trap"	--	--	--	false	false	false	false	"revealing what's behind the felt wrap"	false	true	true	false	false	fort earns	pre-fell-trap rule	post-fell-trap rule	--	--
 "cellar"	"bin"	--	--	--	false	false	false	false	"escaping the Cell, Urban"	false	true	true	false	false	cell urban	pre-cellar-bin rule	post-cellar-bin rule	--	--
 "too"	"broad"	--	--	--	false	false	false	false	"how to fracture the tube/rod"	false	true	true	false	false	tube rod	pre-too-broad rule	post-too-broad rule	--	--
-"ho"	"langour"	--	--	--	false	false	false	false	"dealing with the paralyzing whole anger"	false	true	true	false	false	tude ark	pre-ho-langour rule	post-ho-langour rule	--	--
+"ho"	"languor|langour"	--	--	--	false	false	false	false	"dealing with the paralyzing whole anger"	false	true	true	false	false	tude ark	pre-ho-langour rule	post-ho-langour rule	--	--
 "say"	"jokes"	--	--	--	false	false	false	false	"get by the Sage Oaks"	false	true	true	false	false	sage oaks	pre-say-jokes rule	post-say-jokes rule	--	--
 "gas"	"pouch"	--	--	--	false	false	false	false	"see how to stop gasping OUCH"	false	true	true	false	false	sage oaks	pre-gas-pouch rule	post-gas-pouch rule	--	--
 "damp"	"ink"	--	--	--	false	false	false	false	"clue for guessing one word right"	false	true	true	false	false	dam pink	pre-damp-ink rule	post-damp-ink rule	--	--
@@ -91,7 +91,7 @@ a wordtwisting rule (this is the pre-be-strong rule):
 
 this is the post-be-strong rule:
 	now sco-be-strong is true;
-	say "You manage to stand up to the beast a bit. It could beat you, sure, but you're not worth the effort. It trudges off, no longer blocking you from leaving. It has easier prey.";
+	say "You manage to stand up to the beast a bit. It could beat you, sure, but you're not worth the effort. It trudges off, no longer blocking you from leaving. It has easier prey. 'Be stranger, beast-ranger,' you call out, gaining confidence.";
 	moot beast wrong;
 
 a wordtwisting rule (this is the pre-mess-pot rule):
@@ -229,7 +229,7 @@ a wordtwisting rule (this is the pre-blah-copse rule):
 
 this is the post-blah-copse rule:
 	now sco-blah-copse is true;
-	say "Aha! That was what you were doing wrong. You just needed to tweak a thing or two. This time, you avoid the black-ops site.";
+	say "Aha! That was what you were doing wrong. You just needed to tweak a thing or two as you walked north. This time, you avoid the black-ops site. Once you see the path, well, it's hard to un-see.";
 	move player to Blah Copse;
 
 book east branch scoring
@@ -329,7 +329,7 @@ a wordtwisting rule (this is the pre-terrible-aid rule):
 
 this is the post-terrible-aid rule:
 	now sco-terrible-aid is true;
-	say "You make the point that the Terra Blade would be a terrible aid for your humble goals, whatever they may be. That proves you are worthy!";
+	say "You make the point that the Terra Blade would be a terrible aid for your humble goals, whatever they may be. That proves you are worthy![paragraph break]You hear rumbling. You can't imagine there are any bigger secret here, so it seems like it's time to leave.";
 
 book northeast branch scoring
 
@@ -664,7 +664,7 @@ a wordtwisting rule (this is the pre-too-broad rule):
 
 this is the post-too-broad rule:
 	now sco-too-broad is true;
-	say "The tube/rod slowly cracks, then bursts. A passage now leads south.";
+	say "The tube/rod slowly cracks, then bursts. A passage now leads south. You pause a bit and hope it's not a tube leading to bleeding...";
 	reveal Dam Pink to south;
 	declue-here;
 
