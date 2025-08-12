@@ -55,6 +55,7 @@ w1 (text)	w2 (text)	first-hom (text)	second-hom	hom-txt-rule (rule)	first-exact	
 "say"	"jokes"	--	--	--	false	false	false	false	"get by the Sage Oaks"	false	true	true	false	false	sage oaks	pre-say-jokes rule	post-say-jokes rule	--	--
 "gas"	"pouch"	--	--	--	false	false	false	false	"see how to stop gasping OUCH"	false	true	true	false	false	sage oaks	pre-gas-pouch rule	post-gas-pouch rule	--	--
 "damp"	"ink"	--	--	--	false	false	false	false	"clue for guessing one word right"	false	true	true	false	false	dam pink	pre-damp-ink rule	post-damp-ink rule	--	--
+"scry"	"broom"	--	--	--	false	false	false	false	"clue for guessing one word right"	false	true	true	false	false	scribe room	pre-scry-broom rule	post-scry-broom rule	--	--
 
 chapter mine ooh scoring
 
@@ -698,6 +699,25 @@ this is the post-ho-langour rule:
 	now sco-ho-langour is true;
 	say "Passive resistance is the way to go! You worry you are just doing nothing by default, and it doesn't really count, but then you remember how you busted up the tube/rod. You feel your blood pressure falling. Things aren't so bad, now.";
 	reveal Scribe Room to south;
+	declue-here;
+
+chapter scribe room scoring
+
+a wordtwisting rule (this is the pre-scry-broom rule):
+	if player is not in scribe room, unavailable;
+	if sco-damp-ink is false:
+		vcp "The scribes won't trade a broom for NOTHING...";
+		not-yet;
+	if sco-scry-broom is true:
+		vcal "You neither want nor need two brooms.";
+		already-done;
+	ready;
+
+this is the post-scry-broom rule:
+	now sco-scry-broom is true;
+	say "You realize a broom must be here. You trade the damp ink in the gas pouch for it.";
+	moot gas pouch;
+	declue-here;
 
 chapter sage oaks scoring
 

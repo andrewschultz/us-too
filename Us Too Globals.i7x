@@ -184,6 +184,10 @@ chapter Dam Pink
 
 sco-damp-ink is a truth state that varies.
 
+chapter Scribe Room
+
+sco-scry-broom is a truth state that varies.
+
 book unsorted
 
 chapter unsorted
