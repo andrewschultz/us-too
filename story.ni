@@ -659,6 +659,18 @@ book Turbo Tours
 
 Turbo Tours is a room in universal. printed name is "Turbo Tours[if sco-tour-boaters is true] (now with tour boaters)[end if]". "You can go back west, but there are also tours that cross water to the south--or go far beyond.". eyes-number of Turbo Tours is -47. eyes-rule of Turbo Tours is pre-tour-boaters rule.
 
+chapter star craft
+
+the star craft is a thing in Turbo Tours. "A huge star craft rests here. No way you'll be able to afford it -- something more modest, perhaps.". description is "Impressive but way out of your price range.". eyes-number of star craft is 54. eyes-rule of star craft is pre-stark-raft rule.
+
+chapter stark raft
+
+the stark raft is a thing. "The stark raft has replaced the star craft.". description is "It's plain, but sturdy enough, you think, and your prime oar will help steer it[if far miles farm isles is visited] back south[end if].". eyes-number of stark raft is -1.
+
+book Far Miles Farm Isles
+
+Far Miles Farm Isles is a room.
+
 book south area
 
 book Tube Rod
