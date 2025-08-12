@@ -54,6 +54,7 @@ w1 (text)	w2 (text)	first-hom (text)	second-hom	hom-txt-rule (rule)	first-exact	
 "ho"	"langour"	--	--	--	false	false	false	false	"dealing with the paralyzing whole anger"	false	true	true	false	false	tude ark	pre-ho-langour rule	post-ho-langour rule	--	--
 "say"	"jokes"	--	--	--	false	false	false	false	"get by the Sage Oaks"	false	true	true	false	false	sage oaks	pre-say-jokes rule	post-say-jokes rule	--	--
 "gas"	"pouch"	--	--	--	false	false	false	false	"see how to stop gasping OUCH"	false	true	true	false	false	sage oaks	pre-gas-pouch rule	post-gas-pouch rule	--	--
+"damp"	"ink"	--	--	--	false	false	false	false	"clue for guessing one word right"	false	true	true	false	false	dam pink	pre-damp-ink rule	post-damp-ink rule	--	--
 
 chapter mine ooh scoring
 
@@ -661,11 +662,27 @@ a wordtwisting rule (this is the pre-too-broad rule):
 
 this is the post-too-broad rule:
 	now sco-too-broad is true;
+	say "The tube/rod slowly cracks, then bursts. A passage now leads south.";
+	reveal Dam Pink to south;
+	declue-here;
+
+chapter dam pink scoring
+
+a wordtwisting rule (this is the pre-damp-ink rule):
+	if player is not in dam pink, unavailable;
+	if sco-gas-pouch is false:
+		vcp "But you have nothing that can hold the ink without leaking!";
+		not-yet;
+	if sco-damp-ink is true:
+		vcal "You got enough ink.";
+		already-done;
+	ready;
+
+this is the post-damp-ink rule:
+	now sco-damp-ink is true;
 	say "Hooray! You figured what to do! You get a point!";
 
-chapter too dark tude ark
-
-chapter tude ark scoring
+chapter too dark tude ark scoring
 
 a wordtwisting rule (this is the pre-ho-langour rule):
 	if player is not in tude ark, unavailable;

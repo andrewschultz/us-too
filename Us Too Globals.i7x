@@ -180,6 +180,10 @@ sco-say-jokes is a truth state that varies.
 
 sco-gas-pouch is a truth state that varies.
 
+chapter Dam Pink
+
+sco-damp-ink is a truth state that varies.
+
 book unsorted
 
 chapter unsorted
