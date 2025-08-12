@@ -847,7 +847,17 @@ check thinking:
 	if got-think is false:
 		say "Nothing comes to mind."
 
-volume ending tweak
+volume ending tweak(s)
+
+table of final question options (continued)
+final question wording	only if victorious	topic	final response rule	final response activity
+"see points [b]MISSED[r]" 	true	"missed"	track missed points rule	--
+
+this is the track missed points rule:
+	if sco-loose-intro is false, say "You could've made a [b]LOOSE INTRO[r] fall from the lucent row in [mine].";
+	if sco-meh-skit is false, say "You could've performed a [b]MEH SKIT[r] once you uncovered the mess pot/kit.";
+	if sco-pea-pod is false, say "You could've tried to [b]PEEP ODD[r] in Pea Stalks for a bit more food.";
+	do nothing;
 
 table of final question options (continued)
 final question wording	only if victorious	topic	final response rule	final response activity
