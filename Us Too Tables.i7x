@@ -71,6 +71,7 @@ this is the post-my-quest rule:
 	say "Yes, yes. That's what really matters. Your quest.[paragraph break]You doze off, and when you awake, you find ... well, a beast, wrong, blocking your way.";
 	move beast wrong to mine ooh;
 	now player has aight;
+	declue the player;
 
 a wordtwisting rule (this is the pre-nice-warm rule):
 	if nigh swarm is not touchable, unavailable;
@@ -117,6 +118,7 @@ a wordtwisting rule (this is the pre-meh-skit rule):
 this is the post-meh-skit rule:
 	now sco-meh-skit is true;
 	say "Perhaps it's too obvious, but you decide to have fun, and you do.";
+	declue mess pot;
 
 a wordtwisting rule (this is the pre-a-stew rule):
 	if player is not in mine ooh:
@@ -173,6 +175,7 @@ this is the post-herb-ranch rule:
 	now sco-herb-ranch is true;
 	say "You find a path to a herb ranch. Of course every stew needs herbs. The farmer there gives you a sample saying 'Some herb, eh?' The phrase sticks with you as conversation continues.[paragraph break]It's a surprisingly enlightening one. What can you do with it?";
 	now player has herbs;
+	declue-here;
 
 a wordtwisting rule (this is the pre-probe-all rule):
 	if pro ball is not touchable, unavailable;
@@ -189,7 +192,8 @@ this is the post-probe-all rule:
 	now player has pro ball;
 	move pun tweaker to beach ill;
 	move ship to beach ill;
-	continue the action; [some passages you hadn't even considered away from the Ur-Branch. You lose yourself in it for a while, and then, when you look up, you see ]
+	declue pro ball;
+	[some passages you hadn't even considered away from the Ur-Branch. You lose yourself in it for a while, and then, when you look up, you see ]
 
 a wordtwisting rule (this is the pre-summer-bay rule):
 	if player does not have herbs, unavailable;
@@ -205,6 +209,7 @@ this is the post-summer-bay rule:
 	now sco-summer-bay is true;
 	say "The herb gives off a weird ... well, not quite a smell. But it opens your mind to new passages, passages that might actually lead somewhere, without having to light it or do anything adults who drank a lot told you was very, very dangerous.[paragraph break]Your newly opened mind discerns a safe passage east. Hey, that's a start!";
 	reveal Beach Ill to east;
+	declue herbs;
 
 a wordtwisting rule (this is the pre-guard-entry rule):
 	if player is not in ur branch, unavailable;
@@ -248,6 +253,7 @@ this is the post-be-chill rule:
 	now sco-be-chill is true;
 	move nigh swarm to Beach Ill;
 	say "Your general sense of malaise disperses, which makes you more observant. Observant enough to notice a nigh swarm which ... keeps things from being perfect.";
+	declue-here;
 
 a wordtwisting rule (this is the pre-pie-crust rule):
 	if player is not in Beach Ill and pike rust is not in location of player, unavailable;
@@ -331,6 +337,8 @@ a wordtwisting rule (this is the pre-terrible-aid rule):
 this is the post-terrible-aid rule:
 	now sco-terrible-aid is true;
 	say "You make the point that the Terra Blade would be a terrible aid for your humble goals, whatever they may be. That proves you are worthy![paragraph break]You hear rumbling. You can't imagine there are any bigger secret here, so it seems like it's time to leave.";
+	declue terra blade;
+	block-and-back;
 
 book northeast branch scoring
 
@@ -505,6 +513,7 @@ this is the post-gray-tins rule:
 	now sco-gray-tins is true;
 	say "Why not? You can always use tins.";
 	now player has tins;
+	declue great inns;
 
 a wordtwisting rule (this is the pre-dough-making rule):
 	if player is not in dome aching, unavailable;
@@ -523,6 +532,7 @@ this is the post-dough-making rule:
 	now sco-dough-making is true;
 	say "Excellent! With the tin, you have somewhere to put the dough.";
 	now player has dough;
+	declue-here;
 
 a wordtwisting rule (this is the pre-in-earnest rule):
 	if player is not in dome aching, unavailable;
@@ -536,6 +546,7 @@ this is the post-in-earnest rule:
 	now sco-in-earnest is true;
 	say "The inner nest seems to open up a bit more, comfortable you're not just running through a checklist. Well, perhaps you still are. But worst case, you took the time to pretend and make it believable. You can now go [b]IN[r].";
 	reveal inner nest to inside;
+	declue inscen;
 
 chapter inner nest scoring
 
@@ -550,6 +561,7 @@ this is the post-pry-more rule:
 	now sco-pry-more is true;
 	say "Surely there must be some way to get the oar, you think. And you pry constructively. After an hour's work, you have an oar, lightweight and powerful.";
 	now player has prime oar;
+	declue prime oar;
 
 book southwest branch sorting
 
@@ -611,6 +623,7 @@ this is the post-bold-itch rule:
 	say "You have a think. It's not terrible. You've gotten here. You can get back. You really did trample through whatever was to the east. You walk off the ankle sprain you get from falling down. At the edges of the ditch, you notice:  hey, isn't that a clay mitt? And hey, you can see things clearing out to the north!";
 	move clay mitt to Bowl Ditch;
 	reveal Sob Acres to north;
+	declue-here;
 
 a wordtwisting rule (this is the pre-claim-it rule):
 	if player is not in bowl ditch and player does not have clay mitt, unavailable;
@@ -623,6 +636,7 @@ this is the post-claim-it rule:
 	now sco-claim-it is true;
 	say "You wonder if someone would really miss this clay mitt. But then you realize there's nothing stopping you, and they probably didn't just stop by here on vacation and lose it.";
 	now player has clay mitt;
+	declue clay mitt;
 
 chapter sob acres scoring
 
@@ -637,6 +651,7 @@ this is the post-saw-bakers rule:
 	now sco-saw-bakers is true;
 	say "You keep an eye out for other people. Eventually, you see them: bakers, upset they're getting no business. You can probably go INSIDE to their deli.";
 	reveal Deli Stern to inside;
+	declue-here;
 
 chapter deli stern scoring
 
@@ -651,6 +666,7 @@ this is the post-dell-eastern rule:
 	now sco-dell-eastern is true;
 	say "The surroundings are a bit more welcoming now. Oh, you can go east as well as out, too.";
 	reveal Sob Acres to the east;
+	declue-here;
 
 book south branch sorting
 
@@ -684,6 +700,7 @@ a wordtwisting rule (this is the pre-damp-ink rule):
 this is the post-damp-ink rule:
 	now sco-damp-ink is true;
 	say "Hooray! You figured what to do! You get a point!";
+	declue-here;
 
 chapter too dark tude ark scoring
 
@@ -701,7 +718,7 @@ this is the post-ho-langour rule:
 	now sco-ho-langour is true;
 	say "Passive resistance is the way to go! You worry you are just doing nothing by default, and it doesn't really count, but then you remember how you busted up the tube/rod. You feel your blood pressure falling. Things aren't so bad, now.";
 	reveal Scribe Room to south;
-	declue-here;
+	declue whole anger;
 
 chapter scribe room scoring
 
@@ -734,6 +751,8 @@ this is the post-say-jokes rule:
 	now sco-say-jokes is true;
 	say "'Eh jokes age oaks,' they mutter at first. But they get into it more. They warn you of the trouble you'll get in if you keep telling corny jokes. It doesn't show you're smart. But then you explain you carefully crafted said jokes to peeve them. You've had experience all game with wordplay, too.[paragraph break]They're pretty impressed with your presentation. You feel a magic surge--you can pass to the south now.";
 	reveal dust which does twitch to south;
+	declue-here;
+	declue sageoakscen;
 
 a wordtwisting rule (this is the pre-gas-pouch rule):
 	if player is not in sage oaks and player does not have gas pouch, unavailable;
@@ -761,6 +780,7 @@ a wordtwisting rule (this is the pre-pro-sweeping rule):
 this is the post-pro-sweeping rule:
 	now sco-pro-sweeping is true;
 	say "The dust gets clearer. You see you are in a library.";
+	moot prose weeping;
 
 volume loose intro
 
