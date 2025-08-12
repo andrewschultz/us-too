@@ -11,7 +11,7 @@ volume the main table
 table of main oronyms
 w1 (text)	w2 (text)	first-hom (text)	second-hom	hom-txt-rule (rule)	first-exact	first-close	second-exact	second-close	part-explain	think-cue	okflip	core	idid	everfail	best-room	check-rule	run-rule	wfull (topic)	think-advice (text)
 "loose"	"intro"	--	--	--	false	false	false	false	"finding something hidden in the lucent row"	false	true	false	false	false	my new mine ooh	pre-loose-intro rule	post-loose-intro rule	--	--
-"my"	"quest"	--	--	--	false	false	false	false	"how to get started and what to do"	false	true	true	false	false	mine ooh	pre-my-quest rule	post-my-quest rule	--	--
+"try"	"quest"	--	--	--	false	false	false	false	"how to get started and what to do"	false	true	true	false	false	mine ooh	pre-try-quest rule	post-try-quest rule	--	--
 "be"	"strong"	--	--	--	false	false	false	false	"getting rid of the beast"	false	true	true	false	false	mine ooh	pre-be-strong rule	post-be-strong rule	--	--
 "summon"	"cheese"	--	--	--	false	false	false	false	"figuring what some munchies are"	false	true	true	false	false	--	pre-summon-cheese rule	post-summon-cheese rule	--	--
 "nice"	"warm"	--	--	--	false	false	false	false	"making the swarm less aggressive"	false	true	true	false	false	mine ooh	pre-nice-warm rule	post-nice-warm rule	--	--
@@ -60,14 +60,14 @@ w1 (text)	w2 (text)	first-hom (text)	second-hom	hom-txt-rule (rule)	first-exact	
 
 chapter mine ooh scoring
 
-a wordtwisting rule (this is the pre-my-quest rule):
-	if sco-my-quest is true:
+a wordtwisting rule (this is the pre-try-quest rule):
+	if sco-try-quest is true:
 		vcal "You already have an idea of your quest!";
 		already-done;
 	ready;
 
-this is the post-my-quest rule:
-	now sco-my-quest is true;
+this is the post-try-quest rule:
+	now sco-try-quest is true;
 	say "Yes, yes. That's what really matters. Your quest.[paragraph break]You doze off, and when you awake, you find ... well, a beast, wrong, blocking your way.";
 	move beast wrong to mine ooh;
 	now player has aight;
@@ -792,7 +792,7 @@ volume directions
 
 table of noways
 noway-rm	noway-txt
-My New Mine Ooh	"You could explore your mine, but you [if sco-my-quest is false]have no purpose, or errand, or ... there's another word, here[else if sco-be-strong is false]really should get rid of that beast[else]sense the real adventure lies outside[end if]."
+My New Mine Ooh	"You could explore your mine, but you [if sco-try-quest is false]have no purpose, or errand, or ... there's another word, here[else if sco-be-strong is false]really should get rid of that beast[else]sense the real adventure lies outside[end if]."
 Ur Branch	"You can't go [noun][if noun is eventual] yet[end if][if south is branchcan and west is branchcan]. There are no new ways to go[end if]."
 Beach Ill	"You can only walk back west[if sco-punt-weaker is true] or take the punt east[end if]."
 Pile Up Isle	"You can't see land anywhere except to the west."

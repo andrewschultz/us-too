@@ -126,20 +126,20 @@ rule for printing a parser error when the latest parser error is the I Beg Your 
 	say "You fumble nervously with your envelope reflect on what the lawyers might want to hear. Dare you sneak [if gs-envelope is true]another[else]a[end if] peak at it?";
 	the rule succeeds;
 
-book Mike West (you)
+book Trike West (you)
 
-Mike West is a person in House Well How Swell. the player is Mike West. description of Mike West is "You are Mike West[if sco-my-quest is false]. People (well, except [ara],) always said it was a boring name, with nothing exciting about it, but you always hoped they were wrong[end if].". eyes-number of Mike West is 25. eyes-rule of Mike West is pre-my-quest rule.
+Trike West is a person in House Well How Swell. the player is Trike West. description of Trike West is "You are 'Trike' West. People (well, except [ara], even when provoked) always said it was a weird nickname, but it was one you embraced, after being about the only kid in your neighborhood without a Big Wheel and then almost riding it into the school on the first day of first grade, then holding out on riding a real bicycle. It persisted even after you rode your bike as other kids got their drivers' licenses.[paragraph break]'What the heck would you want to be named like that for? It stands out, yeah, but not in a good way.'[paragraph break][if sco-try-quest is true]You've sort of proven them wrong[else]Maybe you can snap out of your funk and prove them wrong[end if].". eyes-number of Trike West is 25. eyes-rule of Trike West is pre-try-quest rule.
 
 chapter "item using"
 
 Aight Amusing Item Using is a startthing. description of Aight is "[aight-stuff]". printed name of Aight is "[i][']Aight, Amusing Item Using[r]". eyes-number of Aight Amusing Item Using is 1.
 
-Mike West carries Aight Amusing Item Using.
+Trike West carries Aight Amusing Item Using.
 
 check examining aight for the first time:
 	say "It's a recipe, actually.";
 
-check examining aight when sco-my-quest is false:
+check examining aight when sco-try-quest is false:
 	say "It seems to require you to go look for all manner of weird stuff. You're just not up to fetching stuff at the moment. You don't want to feel like a gofer. You want something more purposeful." instead;
 
 to say aight-stuff:
@@ -160,7 +160,7 @@ rule for supplying a missing noun when examining:
 		now the noun is Aight Amusing;
 	else:
 		say "(yourself, but [b]I[r] for inventory will reveal an item that [b]X[r] will map to in the future.)";
-		now noun is Mike West;
+		now noun is Trike West;
 	continue the action;
 
 report taking inventory when gs-using-known is false:
@@ -173,7 +173,7 @@ the too rad tour ad is a startthing. eyes-number of too rad tour ad is 1.
 
 check drop2ing tour ad when tour ad is unexamined: say "You can drop it, but read it, first, to make sure it isn't really useful." instead;
 
-Mike West carries the too rad tour ad. printed name of tour ad is "too-rad tour ad".
+Trike West carries the too rad tour ad. printed name of tour ad is "too-rad tour ad".
 
 description of tour ad is "It describes your new mine in detail. It's too big to explore on your own. So you need friends to bring together. And you need a way to bring them together."
 
@@ -181,7 +181,7 @@ volume main rooms
 
 book my new mine ooh
 
-My New Mine Ooh is a room in intro. printed name is "My New Mine, Ooh!". description is "You're down in your new mine, with a passage up back to the great wide world[if sco-be-strong is true]. You've cleared the way--you can't be sure of the direction, as the path twists a bit[else if sco-my-quest is false]. But you're still finding your bearings and purpose. You feel a bit of imposter syndrome, just being given this mine. You don't want to just start wandering. At least you know who you are, and maybe that'll help reframe things[end if].". eyes-number of Mine Ooh is 1.
+My New Mine Ooh is a room in intro. printed name is "My New Mine, Ooh!". description is "You're down in your new mine, with a passage up back to the great wide world[if sco-be-strong is true]. You've cleared the way--you can't be sure of the direction, as the path twists a bit[else if sco-try-quest is false]. But you're still finding your bearings and purpose. You feel a bit of imposter syndrome, just being given this mine. You don't want to just start wandering. At least you know who you are, and maybe that'll help reframe things[end if].". eyes-number of Mine Ooh is 1.
 
 to note-mine (th - a thing):
 	if th is in location of player, say "A [th] juts out here. [if ledge is unexamined]Maybe something is on it[else]You see [the list of hintthings in mine ooh] on it[end if].";
@@ -195,19 +195,19 @@ after examining lucent row:
 	now ledge is examined;
 	continue the action;
 
-check thinking in Mine Ooh when sco-my-quest is false:
+check thinking in Mine Ooh when sco-try-quest is false:
 	say "You're a bit lost, but you track what you know:";
 	say "[line break]--you went to [hwhs], called [hohs], and your response 'How so?' impressed the lawyers.";
 	say "[line break]--the lawyers reacted positively to 'My new mine, ooh!'";
 	if gs-taken-inventory is true:
 		say "[line break]--the [tour ad] and [using] are ... odd, to say the least.";
-	say "[line break]--your name is Mike West. [ara] said she REALLY liked that name.";
+	say "[line break]--your name is Trike West. [ara] said she REALLY liked that name.";
 	if gs-taken-inventory is false:
 		say "[line break]Maybe you should take [b]INVENTORY[r] with [b]I[r]. That might provide another clue.";
 	the rule succeeds;
 
 check going up in Mine Ooh:
-	if sco-my-quest is false, say "You don't want to go wandering outside after you just got here! You need to catch your bearings. Focus on yourself a bit. Maybe even a lot." instead;
+	if sco-try-quest is false, say "You don't want to go wandering outside after you just got here! You need to catch your bearings. Focus on yourself a bit. Maybe even a lot." instead;
 	if sco-be-strong is false, say "[The beast] blocks your way. How wrong of it! You try physically shifting around, but it's unmoved. Maybe adjusting your mental attitude will do the trick." instead;
 	if aight is not examined:
 		say "You're eager to rush out there, but perhaps you should peruse the ... documentation you were given, first. You haven't really looked at [item using] from your inventory, yet. Sure, you could go out there and find stuff scattershot, but why not have some direction?" instead;
@@ -775,7 +775,7 @@ check noteating:
 book talk (redefined in Oronym Core)
 
 check ting:
-	if noun is Mike West, say "You say, meek, a 'Me? [']Kay!'" instead;
+	if noun is Trike West, say "You say, meek, a 'Me? [']Kay!'" instead;
 	if noun is meh spot, say "It may make you say 'meh' a lot, but it's not going to say anything back." instead;
 	if noun is forest team, say "They generally talk you down and continue to find ways to knock you." instead;
 	if player is in beach and freddie is in beach:

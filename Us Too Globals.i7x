@@ -58,7 +58,7 @@ sco-summon-cheese is a truth state that varies.
 
 chapter my new mine oo
 
-sco-my-quest is a truth state that varies.
+sco-try-quest is a truth state that varies.
 
 sco-be-strong is a truth state that varies.
 
