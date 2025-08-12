@@ -56,6 +56,7 @@ w1 (text)	w2 (text)	first-hom (text)	second-hom	hom-txt-rule (rule)	first-exact	
 "gas"	"pouch"	--	--	--	false	false	false	false	"see how to stop gasping OUCH"	false	true	true	false	false	sage oaks	pre-gas-pouch rule	post-gas-pouch rule	--	--
 "damp"	"ink"	--	--	--	false	false	false	false	"clue for guessing one word right"	false	true	true	false	false	dam pink	pre-damp-ink rule	post-damp-ink rule	--	--
 "scry"	"broom"	--	--	--	false	false	false	false	"clue for guessing one word right"	false	true	true	false	false	scribe room	pre-scry-broom rule	post-scry-broom rule	--	--
+"pro"	"sweeping"	--	--	--	false	false	false	false	"clue for guessing one word right"	false	true	true	false	false	dust which	pre-pro-sweeping rule	post-pro-sweeping rule	--	--
 
 chapter mine ooh scoring
 
@@ -743,6 +744,22 @@ a wordtwisting rule (this is the pre-gas-pouch rule):
 this is the post-gas-pouch rule:
 	now sco-gas-pouch is true;
 	say "The sage oaks chuckle. And you chuckle a bit, too. Turnabout is fair play! They release the gas from the pouch all at once -- of course, not in your direction. 'It can hold liquid, too,' they say.[paragraph break]You step to the south.[paragraph break]'You are free to go that way,' they intone. But they offer no other clues.";
+
+chapter dust which does twitch scoring
+
+a wordtwisting rule (this is the pre-pro-sweeping rule):
+	if player is not in dust which, unavailable;
+	if sco-scry-broom is false:
+		vcp "You have nothing that could sweep!";
+		not-yet;
+	if sco-pro-sweeping is true:
+		vcal "It's clean enough here.";
+		already-done;
+	ready;
+
+this is the post-pro-sweeping rule:
+	now sco-pro-sweeping is true;
+	say "The dust gets clearer. You see you are in a library.";
 
 volume loose intro
 

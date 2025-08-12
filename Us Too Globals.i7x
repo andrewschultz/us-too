@@ -188,6 +188,10 @@ chapter Scribe Room
 
 sco-scry-broom is a truth state that varies.
 
+chapter Dust Which Does Twitch
+
+sco-pro-sweeping is a truth state that varies.
+
 book unsorted
 
 chapter unsorted
