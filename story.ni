@@ -205,7 +205,7 @@ check thinking in Mine Ooh when sco-my-quest is false:
 		say "[line break]Maybe you should take [b]INVENTORY[r] with [b]I[r]. That might provide another clue.";
 	the rule succeeds;
 
-check going outside in Mine Ooh:
+check going up in Mine Ooh:
 	if sco-my-quest is false, say "You don't want to go wandering outside after you just got here! You need to catch your bearings. Focus on yourself a bit. Maybe even a lot." instead;
 	if sco-be-strong is false, say "[The beast] blocks your way. How wrong of it! You try physically shifting around, but it's unmoved. Maybe adjusting your mental attitude will do the trick." instead;
 	if aight is not examined:
@@ -691,6 +691,25 @@ book unclaimed things
 chapter bread
 
 the bread is a thing.
+
+volume going out
+
+the can't exit when not inside anything rule is not listed in any rulebook.
+
+definition: a direction (called v) is viable:
+	if the room v of location of player is nowhere, no;
+	yes;
+
+check exiting: try going outside instead;
+
+check going outside:
+	unless the room gone to is nowhere, continue the action;
+	let v be number of viable directions;
+	if v > 1, say "Ambiguous. Two ways to go out." instead;
+	let j be a random viable direction;
+	if j is not outside:
+		say "Mapping outside to [j].";
+		try going j instead;
 
 volume regular verbs
 
