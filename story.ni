@@ -60,11 +60,12 @@ volume the player
 
 chapter cheese
 
-some cheese is a singular-named thing. description is "All sorts of cheese, really. Everyone is sure to like one of the types. They're probably sure to hate another, what with some types of cheese being really really polarizing, but that just leaves more for everyone else."
+the cheese is a singular-named thing. description is "All sorts of cheese, really. Everyone is sure to like one of the types. They're probably sure to hate another, what with some types of cheese being really really polarizing, but that just leaves more for everyone else.". eyes-number of cheese is 1. indefinite article of cheese is "some".
 
 book House Well So Swell
 
-House Well How Swell is a room in intro. printed name is "House Well-How-Swell". "The lawyers look at you expectantly. You fiddle with your envelope. You hope you haven't come all this way for nothing!"
+House Well How Swell is a room in intro. printed name is "House Well-How-Swell". "The lawyers look at you expectantly. You fiddle with your envelope. You hope you haven't come all this way for nothing!". eyes-number of House Well How Swell is 1.
+
 
 after reading a command when player is in House Well How Swell:
 	if debug-state is true:
@@ -127,11 +128,11 @@ rule for printing a parser error when the latest parser error is the I Beg Your 
 
 book Mike West (you)
 
-Mike West is a person in House Well How Swell. the player is Mike West. description of Mike West is "You are Mike West[if sco-my-quest is false]. People always said it was a boring name, with nothing exciting about it, but you always hoped they were wrong[end if]."
+Mike West is a person in House Well How Swell. the player is Mike West. description of Mike West is "You are Mike West[if sco-my-quest is false]. People (well, except [ara],) always said it was a boring name, with nothing exciting about it, but you always hoped they were wrong[end if].". eyes-number of Mike West is 25. eyes-rule of Mike West is pre-my-quest rule.
 
 chapter "item using"
 
-Aight Amusing Item Using is a startthing. description of Aight is "[aight-stuff]". printed name of Aight is "[']Aight, Amusing Item Using[r]".
+Aight Amusing Item Using is a startthing. description of Aight is "[aight-stuff]". printed name of Aight is "[i][']Aight, Amusing Item Using[r]". eyes-number of Aight Amusing Item Using is 1.
 
 Mike West carries Aight Amusing Item Using.
 
@@ -168,7 +169,7 @@ report taking inventory when gs-using-known is false:
 
 chapter too rad tour ad
 
-the too rad tour ad is a startthing.
+the too rad tour ad is a startthing. eyes-number of too rad tour ad is 1.
 
 check drop2ing tour ad when tour ad is unexamined: say "You can drop it, but read it, first, to make sure it isn't really useful." instead;
 
@@ -180,7 +181,7 @@ volume main rooms
 
 book my new mine ooh
 
-My New Mine Ooh is a room in intro. printed name is "My New Mine, Ooh!". description is "You're down in your new mine, with a passage up back to the great wide world[if sco-be-strong is true]. You've cleared the way--you can't be sure of the direction, as the path twists a bit[else if sco-my-quest is false]. But you're still finding your bearings and purpose. You feel a bit of imposter syndrome, just being given this mine. You don't want to just start wandering. At least you know who you are, and maybe that'll help reframe things[end if].".
+My New Mine Ooh is a room in intro. printed name is "My New Mine, Ooh!". description is "You're down in your new mine, with a passage up back to the great wide world[if sco-be-strong is true]. You've cleared the way--you can't be sure of the direction, as the path twists a bit[else if sco-my-quest is false]. But you're still finding your bearings and purpose. You feel a bit of imposter syndrome, just being given this mine. You don't want to just start wandering. At least you know who you are, and maybe that'll help reframe things[end if].". eyes-number of Mine Ooh is 1.
 
 to note-mine (th - a thing):
 	if th is in location of player, say "A [th] juts out here. [if ledge is unexamined]Maybe something is on it[else]You see [the list of hintthings in mine ooh] on it[end if].";
@@ -220,7 +221,7 @@ check going up in Mine Ooh:
 
 chapter beast wrong
 
-the beast wrong is a sentient. printed name is "beast (wrong)". "A beast (wrong) blocks your way out. You know it shouldn't be there. You know you shouldn't be afraid of it. But you are.". description is "You feel as though you shouldn't be as frightened as you are by it, but you just can't flip that switch."
+the beast wrong is a sentient. printed name is "beast (wrong)". "A beast (wrong) blocks your way out. You know it shouldn't be there. You know you shouldn't be afraid of it. But you are.". description is "You feel as though you shouldn't be as frightened as you are by it, but you just can't flip that switch.". eyes-number of beast wrong is 26. eyes-rule of beast wrong is pre-be-strong rule.
 
 chapter hintthings
 
@@ -228,7 +229,7 @@ to say intro-hintthings: say "You see [the list of hintthings in mine ooh] on it
 
 section lucent row
 
-a lucent row is a startprop in My New Mine Ooh. "[intro-hintthings]"
+a lucent row is a startprop in My New Mine Ooh. "[intro-hintthings]". eyes-number of lucent row is -55. eyes-rule of lucent row is pre-loose-intro rule.
 
 check examining lucent row when lucent row is examined and number of hintthings in My New Mine Ooh is 0: say "There's nothing on the lucent row, but maybe if you looked at it right, it might show something. Some sort of message, beneath the glare, which seems kind of unaesthetic." instead;
 
@@ -238,7 +239,7 @@ report examining lucent row:
 
 section goal edge go ledge
 
-the goal edge go ledge is a startprop. printed name is "Goal-Edge-Go Ledge". "[intro-hintthings]"
+the goal edge go ledge is a startprop. printed name is "Goal-Edge-Go Ledge". "[intro-hintthings]". eyes-number of Goal Edge Go Ledge is 1.
 
 check taking a startprop:
 	if slice eyes are off-stage, say "You can't, but if you [b]EXAMINE[r] [the noun], you may find something on it." instead;
@@ -267,7 +268,7 @@ report taking a hintthing when gs-take-hintthing-note is true:
 
 chapter loose intro
 
-the loose intro is a hintthing. description is "[intro-table]".
+the loose intro is a hintthing. description is "[intro-table]". eyes-number of loose intro is -1.
 
 check examining loose intro when loose intro is unexamined:
 	say "It's an introduction to your world, not from [ara], but from one Hugh Morris AKA Mick Stupp. At the top is a warning about mild spoilers that get less mild as you read on.";
@@ -284,15 +285,15 @@ to say intro-table:
 
 chapter meh spot
 
-the meh spot is a thing. "The meh spot you saw in the pro ball sits here. It makes your mine feel emptier. Perhaps something belongs there."
+the meh spot is a thing. "The meh spot you saw in the pro ball sits here. It makes your mine feel emptier. Perhaps something belongs there.". eyes-number of meh spot is 43. eyes-rule of meh spot is pre-mess-pot rule.
 
 chapter mess pot
 
-the mess pot is a thing.
+the mess pot is a thing. eyes-number of mess pot is -34. eyes-rule of mess pot is pre-meh-skit rule.
 
 book ur branch
 
-Ur Branch is a room in universal. It is above My New Mine Ooh. printed name is "Ur-Branch". "There are so many branches here! While you can go back [b]DOWN[r] to your mine, [if sco-summer-bay is false]you have no idea where else to go. You could spend too much time wandering around. You could lose focus[else if sco-probe-all is false]there's only east, but maybe you can find more concrete places to visit[else]the branches make more sense than they did at first[end if]."
+Ur Branch is a room in universal. It is above My New Mine Ooh. printed name is "Ur-Branch". "There are so many branches here! While you can go back [b]DOWN[r] to your mine, [if sco-summer-bay is false]you have no idea where else to go. You could spend too much time wandering around. You could lose focus[else if sco-probe-all is false]there's only east, but maybe you can find more concrete places to visit[else]the branches make more sense than they did at first[end if].". eyes-number of Ur Branch is 45. eyes-rule of Ur Branch is pre-herb-ranch rule.
 
 rule for printing the locale description of ur branch:
 	now pri-branch-reject is true;
@@ -319,7 +320,7 @@ after printing the locale description for Ur Branch when sco-nah-queue is true a
 	continue the action;
 
 after printing the locale description for Ur Branch when sco-mess-pot is true and northwest is branchcant:
-	say "[line break]You hear a rumbling from the pro ball. You see an inverted image of this very Ur-Branch! Not only that, you see passages northwest and northeast, to hidden lairs. You wonder why they only became available now, but then you realize your time cleaning up the meh spot helped you be more organized and see more organization, and perhaps you weren't ready to look at the pro ball right. Among the leaf paths, leaves and whatnot you notice reveal passages to three new areas. Two look relatively safe, but the one north leaves you uneasy.";
+	say "[line break]You hear a rumbling from the pro ball. You see an inverted image of this very Ur-Branch! Not only that, you see passages northwest and northeast, to hidden lairs. You wonder why they only became available now, but then you realize your time cleaning up the meh spot helped you be more organized and see more organization, and perhaps you weren't ready to look at the pro ball right. You take another look, and there seems to be a leaf path north. But it leaves you (heh) a bit uneasy.";
 	reveal bore dread to northeast;
 	reveal Blah Copse to north;
 	reveal sore dark to northwest;
@@ -342,7 +343,7 @@ check going inside in Ur Branch when sco-guard-entry is false and garden tree is
 
 chapter herbs
 
-some herbs are a proper-named thing. description is "It's some herb, eh? [if sco-summer-bay is true]It helped you find a new place to visit, and it's still edible![else]Apparently it can give enlightenment to new life paths, but, uh, not THAT way.[end if]". printed name is "[if sco-summer-bay is true]herbs[else]'some herb, eh?'". understand "herbs/herb eh" and "herb" as some herbs.
+some herbs are a proper-named thing. description is "It's some herb, eh? [if sco-summer-bay is true]It helped you find a new place to visit, and it's still edible![else]Apparently it can give enlightenment to new life paths, but, uh, not THAT way.[end if]". printed name is "[if sco-summer-bay is true]the herbs[else]'some herb, eh?'". understand "herbs/herb eh" and "herb" as some herbs. eyes-number of some herbs is 63. eyes-rule of herbs is pre-summer-bay rule.
 
 chapter black ops
 
@@ -350,11 +351,11 @@ the black ops are a thing. "You know black ops are lurking to the north.". descr
 
 chapter garden tree
 
-the garden tree is a thing. "[if sco-guard-entry is true]The garden tree stands here, passively[else]That garden tree the [forest] were whining about stands here[end if]."
+the garden tree is a thing. "[if sco-guard-entry is true]The garden tree stands here, passively[else]That garden tree the [forest] were whining about stands here[end if].". eyes-number of garden tree is 55. eyes-rule of garden tree is pre-guard-entry rule.
 
 chapter sign and verbs
 
-the sign ought sigh not is a thing. printed name is "Sign Ought-Sigh-Not". "[one of]A new sign titled SIGN OUGHT-SIGH-NOT stands here. What a relief! It explains how to get back south without, well, wearing yourself out with busy work.[or]The SIGN OUGHT-SIGH-NOT stands here for reference.[stopping]". description of sign ought sigh not is "WAYS SOUTH:".
+the sign ought sigh not is a thing. printed name is "Sign Ought-Sigh-Not". "[one of]A new sign titled SIGN OUGHT-SIGH-NOT stands here. What a relief! It explains how to get back south without, well, wearing yourself out with busy work.[or]The SIGN OUGHT-SIGH-NOT stands here for reference.[stopping]". description of sign ought sigh not is "WAYS SOUTH:". eyes-number of Sign Ought Sigh Not is -1.
 
 report examining sign ought sigh not:
 	list-which-room;
@@ -386,7 +387,7 @@ carry out sssing:
 
 book Beach Ill
 
-Beach Ill is a room in universal. printed name is "[if sco-be-chill is false]Beach, Ill[else if sco-probe-all is false]Bless-and-Bleah Sand[else]Dune Ever-Do-Never[end if]". "[if sco-be-chill is false]You have a general sense of malaise here, which isn't usual for these environs, but it's there, and not being able to get rid of it simply is causing more malaise[else]It's nice here. The only way out on foot is back west, since you can't swim the other ways[end if]."
+Beach Ill is a room in universal. printed name is "[if sco-be-chill is false]Beach, Ill[else if sco-probe-all is false]Bless-and-Bleah Sand[else]Dune Ever-Do-Never[end if]". "[if sco-be-chill is false]You have a general sense of malaise here, which isn't usual for these environs, but it's there, and not being able to get rid of it simply is causing more malaise[else]It's nice here. The only way out on foot is back west, since you can't swim the other ways[end if].". eyes-number of Beach Ill is 25. eyes-rule of Beach Ill is pre-be-chill rule.
 
 after printing the locale description of Beach Ill when sco-peace-talks is true and Sir Freddie is not moot:
 	say "With the lessons learned from the Pea Stalks, you broker a tentative truce between the pun teaker and Sir Freddie. The pun tweaker is quite grateful for this. 'What can I offer you?' 'Oh, nothing much, you say.' The pun tweaker says 'oh of course' a bit too quickly.";
@@ -407,11 +408,11 @@ check going west in Pile Up Isle:
 
 chapter nigh swarm
 
-the nigh swarm is a thing. "A nigh swarm ruins the tranquility of the area. You can't see behind it.". description is "The nigh swarm buzzes aggresively.".
+the nigh swarm is a thing. "A nigh swarm ruins the tranquility of the area. You can't see behind it.". description is "The nigh swarm buzzes aggresively.". eyes-number of nigh swarm is 44. eyes-rule of nigh swarm is pre-nice-warm rule.
 
 chapter pro ball
 
-the pro ball is a thing. description is "[if sco-probe-all is false]If you look at it right, you may be able to see a bit more, but you haven't, yet[else]Hmmph. The pro ball doesn't seem to reveal anything new when you look at it for any period of time[end if].".
+the pro ball is a thing. description is "[if sco-probe-all is false]If you look at it right, you may be able to see a bit more, but you haven't, yet[else]Hmmph. The pro ball doesn't seem to reveal anything new when you look at it for any period of time[end if].". eyes-number of pro ball is 53. eyes-rule of pro ball is pre-probe-all rule.
 
 check examining pro ball for the first time: say "It's not a pro sports ball. More like an orb. But if it were an orb, well, it wouldn't quite work as-is. I think you understand by now.";
 
@@ -419,35 +420,35 @@ check taking pro ball when sco-probe-all is false: say "It won't budge. At least
 
 chapter pie crust
 
-the pie crust is a thing. description is "Not very fancy, but it's good enough."
+the pie crust is a thing. description is "Not very fancy, but it's good enough.". eyes-number of pie crust is -1.
 
 chapter pun tweaker
 
-The pun tweaker is a sentient. "The pun tweaker continues to stay here, looking to swap jokes or whatever."
+The pun tweaker is a sentient. "The pun tweaker continues to stay here, looking to swap jokes or whatever.". eyes-number of pun tweaker is 46. eyes-rule of pun tweaker is pre-punt-weaker rule.
 
 chapter gauche hip go ship
 
-the gauche hip go ship is scenery. printed name is "Gauche/Hip GO-Ship". "It's really gaudy. You'll probably never get a chance to ride in it. But maybe it contains something you need."
+the gauche hip go ship is scenery. printed name is "Gauche/Hip GO-Ship". "It's really gaudy. You'll probably never get a chance to ride in it. But maybe it contains something you need.". eyes-number of Gauche Hip GO Ship is 1.
 
 chapter punt weaker
 
-the punt weaker is a thing. "Your punt, weaker, floats here, ready to take you [if isle is visited]back [end if][if player is in isle]west[else]east[end if]."
+the punt weaker is a thing. "Your punt, weaker, floats here, ready to take you [if isle is visited]back [end if][if player is in isle]west[else]east[end if].". eyes-number of punt weaker is -1.
 
 book Sore Dark
 
-Sore Dark is a room in universal. description is "[if sco-sword-ark is false]You can't see much here, but maybe if you fumble around for what you need, or make an educated guess, you'll find it[else if sco-blast-ring is false]The sword ark hangs above you, the Terra Blade intertwined in it[else]The Terra Blade lies among the erstwhile rubble of the sword ark[end if]."
+Sore Dark is a room in universal. description is "[if sco-sword-ark is false]You can't see much here, but maybe if you fumble around for what you need, or make an educated guess, you'll find it[else if sco-blast-ring is false]The sword ark hangs above you, the Terra Blade intertwined in it[else]The Terra Blade lies among the erstwhile rubble of the sword ark[end if].". eyes-number of Sore Dark is 53. eyes-rule of Sore Dark is pre-sword-ark rule.
 
 chapter sword ark
 
-the sword ark is scenery. "The Terra Blade is suspended in the sword ark above. How to get it down?"
+the sword ark is scenery. "The Terra Blade is suspended in the sword ark above. How to get it down?". eyes-number of sword ark is -1.
 
 chapter Terra Blade
 
-The Terra Blade is a scenery. indefinite article of terra blade is "the". "It looks very impressive, almost too impressive for you to use."
+The Terra Blade is a scenery. indefinite article of terra blade is "the". "It looks very impressive, almost too impressive for you to use.". eyes-number of Terra Blade is 83. eyes-rule of Terra Blade is pre-terrible-aid rule.
 
 book Blah Copse
 
-Blah Copse is a room in universal. "[if sco-or-clerk is false]The only really clear safe path is[else]Thanks to Sir Freddie and your own cleverness, you found a way north as well as[end if] back south to [branch]."
+Blah Copse is a room in universal. "[if sco-or-clerk is false]The only really clear safe path is[else]Thanks to Sir Freddie and your own cleverness, you found a way north as well as[end if] back south to [branch].". eyes-number of Blah Copse is -1.
 
 check going to Blah Copse when sco-blah-copse is false:
 	now gs-tried-black-ops is true;
@@ -460,63 +461,63 @@ after printing the locale description for Blah Copse when sco-surf-ready is true
 
 chapter Forest Team
 
-the Forest Team for Esteem is a plural-named sentient in Blah Copse. "[one of]A group of adventurers is waiting for you here. After an over-friendly introduction where the introduce themselves as the Forest Team for Esteem, and where you don't impress them back, they begin to knock you[or]The Forest Team for Esteem continues to knock you. It's irritating, but not fatally so[stopping]."
+the Forest Team for Esteem is a plural-named hostile sentient in Blah Copse. "[one of]A group of adventurers is waiting for you here. After an over-friendly introduction where the introduce themselves as the Forest Team for Esteem, and where you don't impress them back, they begin to knock you, well, verbally[or]The Forest Team for Esteem continues to knock you verbally. Which isn't fatal, but it's getting in the way of you deciding what to do next[stopping].". eyes-number of Forest Team is 35. eyes-rule of Forest Team is pre-nah-queue rule.
 
 chapter Sir Freddie
 
-Sir Freddie is a sentient. "Sir Freddie [if player is in blah copse]stands here nervously[else]catches wave after wave, much to the dismay of the pun tweaker[end if].". description is "[if player is in blah copse]He looks uneasy. He clearly doesn't want to be here, but he also seems clueless where to go[end if]".
+Sir Freddie is a sentient. "Sir Freddie [if player is in blah copse]stands here nervously[else]catches wave after wave, much to the dismay of the pun tweaker[end if].". description is "[if player is in blah copse]He looks uneasy. He clearly doesn't want to be here, but he also seems clueless where to go[end if]". eyes-number of Sir Freddie is 45. eyes-rule of Sir Freddie is pre-surf-ready rule.
 
 understand "f/fred/freddy" and "sir f/fred/freddy" as Sir Freddie when Sir Freddie is touchable.
 
 chapter blah string
 
-the blah string is a thing. description is "Looking at it, it doesn't seem like it could become anything powerful. Could it?". indefinite article of blah string is "some".
+the blah string is a thing. description is "Looking at it, it doesn't seem like it could become anything powerful. Could it?". indefinite article of blah string is "some". eyes-number of blah string is 54. eyes-rule of blah string is pre-blast-ring rule.
 
 book Morph Lairs
 
-Morph Lairs is a room in universal. "You're pretty sure you don't want to enter the lairs here. Even the ones that seem safe could turn unsafe quickly. And yet ... they can't just be THERE."
+Morph Lairs is a room in universal. "You're pretty sure you don't want to enter the lairs here. Even the ones that seem safe could turn unsafe quickly. And yet ... they can't just be THERE.". eyes-number of morph lairs is 46. eyes-rule of Morph Lairs is pre-more-flares rule.
 
 book Bore Dread
 
-Bore Dread is a room in universal. description is "[if sco-board-red is false]My goodness, there seems to be nothing to do here except go back southwest. Or maybe search for some random item[else]Finding the board (red) was almost exciting. But you can't hope for anything else interesting here. Maybe just go back southwest[end if]."
+Bore Dread is a room in universal. description is "[if sco-board-red is false]My goodness, there seems to be nothing to do here except go back southwest. Or maybe search for some random item[else]Finding the board (red) was almost exciting. But you can't hope for anything else interesting here. Maybe just go back southwest[end if].". eyes-number of Bore Dread is 53. eyes-rule of Bore Dread is pre-board-red rule.
 
 chapter board red
 
-The board red is a thing. printed name is "board (red)". "It's about six feet long and one foot wide, or it would be when unfolded (it snaps into and out of its full length easily. You checked.) THIS SIDE UP and CATCH THE WAVES are written on it."
+The board red is a thing. printed name is "board (red)". "It's about six feet long and one foot wide, or it would be when unfolded (it snaps into and out of its full length easily. You checked.) THIS SIDE UP and CATCH THE WAVES are written on it.". eyes-number of board red is -1.
 
 book Pea Stalks
 
-Pea Stalks is a room in universal. "Pea stalks grow here. But they're nothing you can eat, or prepare to eat quickly."
+Pea Stalks is a room in universal. "Pea stalks grow here. But they're nothing you can eat, or prepare to eat quickly.". eyes-number of Pea Stalks is 55. eyes-rule of Pea Stalks is pre-peace-talks rule.
 
 chapter pea pod
 
-the pea pod is a thing. "It's an unusual pea pod. It'll go well with the meal."
+the pea pod is a thing. "It's an unusual pea pod. It'll go well with the meal.". eyes-number of pea pod is -1.
 
 book A Pile Up Isle
 
-A Pile Up Isle is a room in universal. printed name is "A Pile-Up Isle".
+A Pile Up Isle is a room in universal. printed name is "A Pile-Up Isle". eyes-number of A Pile Up Isle is 1.
 
-the bay spikes are a plural-named thing in A Pile Up Isle. "Bay spikes seem to guard you from entering the large pile. They are too sharp to walk on. What to do?"
+the bay spikes are a plural-named thing in A Pile Up Isle. "Bay spikes seem to guard you from entering the large pile. They are too sharp to walk on. What to do?". eyes-number of bay spikes is 45. eyes-rule of bay spikes is pre-base-pikes rule.
 
 chapter pike
 
-the base pikes are a plural-named thing. "A pike lies here as part of the bric-a-brac. [if sco-pie-crust is false]And, oh boy, it has some rust on it.  Pike rust![else]It is shiny and new now you repurposed its rust. Still potentially kinda base and evil, though. You don't need a weapon like this.[end if]"
+the base pikes are a plural-named thing. "A pike lies here as part of the bric-a-brac. [if sco-pie-crust is false]And, oh boy, it has some rust on it.  Pike rust![else]It is shiny and new now you repurposed its rust. Still potentially kinda base and evil, though. You don't need a weapon like this.[end if]". eyes-number of base pikes is -1.
 
 section pike rust
 
-the pike rust is a thing. "It's on the pike, sort of a cover on the side. Perhaps it is better as something else."
+the pike rust is a thing. "It's on the pike, sort of a cover on the side. Perhaps it is better as something else.". eyes-number of pike rust is 35. eyes-rule of pike rust is pre-pie-crust rule.
 
 check taking pike rust: say "Oh, it might flake off uselessly if you just took it." instead;
 
 chapter high cup
 
-The high cup is a thing. "A high cup is at the top of the pile."
+The high cup is a thing. "A high cup is at the top of the pile.". eyes-number of high cup is 42. eyes-rule of high cup is pre-hike-up rule.
 
 check taking the high cup when high cup is in Pile Up Isle: say "You take a direct path, but it's too steep." instead;
 
 book Dome Aching
 
-Dome Aching is a room in universal. printed name is "Dome, Aching". "[if sco-can-take is false]Ugh. You're not physically uncomfortable, you just feel ... oh, how can I describe it? A can't-ache. It prevents you from seeing anything here[else]You're a bit more aware of your surroundings now[end if]. Of course, you can always go back northwest to the Ur-Branch."
+Dome Aching is a room in universal. printed name is "Dome, Aching". "[if sco-can-take is false]Ugh. You're not physically uncomfortable, you just feel ... oh, how can I describe it? A can't-ache. It prevents you from seeing anything here[else]You're a bit more aware of your surroundings now[end if]. Of course, you can always go back northwest to the Ur-Branch.". eyes-number of Dome Aching is 56. eyes-rule of Dome Aching is pre-dough-making rule.
 
 after printing the locale description for dome aching when sco-can-take is true:
 	say "[if sco-gray-tins is true]The Great Inns probably gave everything they had to offer. [else]Great Inns stay off to the side here. What could they hold? ";
@@ -538,11 +539,11 @@ check going inside in Dome Aching when sco-can-take is true and sco-in-earnest i
 
 chapter great inns
 
-the great inns are plural-named scenery.
+the great inns are plural-named scenery. eyes-number of great inns is 44. eyes-rule of great inns is pre-gray-tins rule.
 
 chapter gray tins
 
-the gray tins are a plural-named thing. "There are two of them. [gray-tin-status]". understand "grey" and "grey tins" as gray tins.
+the gray tins are a plural-named thing. "There are two of them. [gray-tin-status]". understand "grey" and "grey tins" as gray tins. eyes-number of gray tins is -1.
 
 to say gray-tin-status:
 	if gray-tin-score is 0:
@@ -554,27 +555,27 @@ to say gray-tin-status:
 
 chapter inscen
 
-the inscen is privately-named scenery. understand "inner/nest" and "inner nest" as inscen when inscen is in location of player.
+the inscen is privately-named scenery. understand "inner/nest" and "inner nest" as inscen when inscen is in location of player. eyes-number of inscen is 27. eyes-rule of inscen is pre-in-earnest rule.
 
 chapter dough
 
-the dough is a thing. description is "It's dough, inside one of your tins.". indefinite article of dough is "some".
+the dough is a thing. description is "It's dough, inside one of your tins.". indefinite article of dough is "some". eyes-number of dough is -1.
 
 book Inner Nest
 
-Inner Nest is a room in universal.
+Inner Nest is a room in universal. eyes-number of Inner Nest is -1.
 
-the prime oar is a thing in Inner Nest. "A prime oar stands here, floating in space[one of]. You reach out for it lazily, and it floats away[or]Whenever you get too close, it slides away[stopping]."
+the prime oar is a thing in Inner Nest. "A prime oar stands here, floating in space[one of]. You reach out for it lazily, and it floats away[or]Whenever you get too close, it slides away[stopping].". eyes-number of prime oar is 34. eyes-rule of prime oar is pre-pry-more rule.
 
 check taking prime oar when prime oar is in Inner Nest: say "You can't get close enough." instead;
 
 book Fort Earns Four Turns
 
-there is a room called Fort Earns Four Turns. it is in universal. printed name is "Fort Earns-Four-Turns". "[if sco-oh-clever is false]An oak lever is here, tempting you to pull it and maybe find another exit besides back northeast[else]The [wick] revealed when you pulled the lever is here. You can also go back northeast[end if].".
+there is a room called Fort Earns Four Turns. it is in universal. printed name is "Fort Earns-Four-Turns". "[if sco-oh-clever is false]An oak lever is here, tempting you to pull it and maybe find another exit besides back northeast[else]The [wick] revealed when you pulled the lever is here. You can also go back northeast[end if].". eyes-number of fort earns is 1.
 
 chapter oak lever
 
-the oak lever is scenery in Fort Earns Four Turns. "It looks intricate, not something any yutz can just walk in and pull."
+the oak lever is scenery in Fort Earns Four Turns. "It looks intricate, not something any yutz can just walk in and pull.". eyes-number of oak lever is 26. eyes-rule of oak lever is pre-oh-clever rule.
 
 check taking oak lever: say "If you snap it off, you'll never find what will happen when you pull it." instead;
 
@@ -585,7 +586,7 @@ to say oak-how: say "It's not immediately obvious how. But there must be a way, 
 
 chapter beak wick
 
-the be quick beak wick is scenery. "The be-quick beak wick sits here. [if extra-turns > 0]You can still feel its effect, though it can't hurt to touch it again[else if beak wick is examined]Just do anything with it to get it going again[else]It doesn't seem dangerous. Perhaps you should inspect it a bit[end if].";
+the be quick beak wick is scenery. "The be-quick beak wick sits here. [if extra-turns > 0]You can still feel its effect, though it can't hurt to touch it again[else if beak wick is examined]Just do anything with it to get it going again[else]It doesn't seem dangerous. Perhaps you should inspect it a bit[end if].". eyes-number of be quick beak wick is -1.
 
 check waiting when extra-turns > 0: say "You're too antsy to sit and wait. For better or worse, the be-quick beak-wick doesn't just give you the opportunity to be faster. It COMPELS you." instead;
 
@@ -606,11 +607,11 @@ after examining quick beak wick:
 
 chapter felt wrap
 
-the felt wrap is a thing in Fort Earns Four Turns. "Some completely innocuous felt wrap lies here.". description is "Um. Completely innocuous. Right?".
+the felt wrap is a thing in Fort Earns Four Turns. "Some completely innocuous felt wrap lies here.". description is "Um. Completely innocuous. Right?". eyes-number of felt wrap is 44. eyes-rule of felt wrap is pre-fell-trap rule.
 
 chapter fell trap
 
-the fell trap is a thing. "The fell trap has replaced the felt wrap. [if sco-cellar-bin is true]It looks as though it's been reset since you last visited, if you need to [b]EXAMINE[r] it and get caught again, for whatever reason[else]It looks pretty vicious! It might even catch anyone trying to [b]EXAMINE[r] it[end if]."
+the fell trap is a thing. "The fell trap has replaced the felt wrap. [if sco-cellar-bin is true]It looks as though it's been reset since you last visited, if you need to [b]EXAMINE[r] it and get caught again, for whatever reason[else]It looks pretty vicious! It might even catch anyone trying to [b]EXAMINE[r] it[end if].". eyes-number of fell trap is -1.
 
 check examining fell trap:
 	if cell urban is unvisited:
@@ -623,11 +624,11 @@ check examining fell trap:
 
 book Cell Urban
 
-Cell Urban is a room in universal. printed name is "Cell, Urban". "[one of]THUD! [if extra-turns is 0]You're so anxious about being trapped here, you keep pacing until your speed wears off. [end if]Ugh. You see no way out to start. Perhaps you can complain to the manager, somehow[or]Still stuck. No fair! There must be a way out![stopping][line break]You're getting sick of the noises of the city all around you. You have no clue where they came from.".
+Cell Urban is a room in universal. printed name is "Cell, Urban". "[one of]THUD! [if extra-turns is 0]You're so anxious about being trapped here, you keep pacing until your speed wears off. [end if]Ugh. You see no way out to start. Perhaps you can complain to the manager, somehow[or]Still stuck. No fair! There must be a way out![stopping][line break]You're getting sick of the noises of the city all around you. You have no clue where they came from.". eyes-number of Cell Urban is 63. eyes-rule of Cell Urban is pre-cellar-bin rule.
 
 book Cellar Bin
 
-Cellar Bin is a room in universal. "The only way out is back up[if gs-up-cellar-bin is true]. You know it's one-way, of course[end if]."
+Cellar Bin is a room in universal. "The only way out is back up[if gs-up-cellar-bin is true]. You know it's one-way, of course[end if].". eyes-number of Cellar Bin is -1.
 
 check going up in Cellar Bin:
 	if gs-up-cellar-bin is false:
@@ -638,56 +639,62 @@ check going up in Cellar Bin:
 
 book Bowl Ditch
 
-Bowl Ditch is a room in universal. "[if sob acres is visited]You wonder why this place ever intimidated you. There's Sob Acres to the north and the Ur-Branch back east[else if sco-bold-itch is true]Now you've got your bearings, you see a passage north as well as back east[else]Ouch. Oww. You're lying on the ground, embarrassed how you tripped and fell, worried and scared there's no way back. Your injury is probably more psychological than physical, but it's there, and you need to overcome it[end if]."
+Bowl Ditch is a room in universal. "[if sob acres is visited]You wonder why this place ever intimidated you. There's Sob Acres to the north and the Ur-Branch back east[else if sco-bold-itch is true]Now you've got your bearings, you see a passage north as well as back east[else]Ouch. Oww. You're lying on the ground, embarrassed how you tripped and fell, worried and scared there's no way back. Your injury is probably more psychological than physical, but it's there, and you need to overcome it[end if].". eyes-number of Bowl Ditch is 44. eyes-rule of Bowl Ditch is pre-bold-itch rule.
 
 chapter clay mitt
 
-the clay mitt is a thing. description is "[if sco-claim-it is false]It's not yours, so you can't take it. You guess. Well, as things stand[else]It should protect your hands against all but the fieriest of oven flames[end if].".
+the clay mitt is a thing. description is "[if sco-claim-it is false]It's not yours, so you can't take it. You guess. Well, as things stand[else]It should protect your hands against all but the fieriest of oven flames[end if].". eyes-number of clay mitt is 52. eyes-rule of clay mitt is pre-claim-it rule.
 
 check taking clay mitt when clay mitt is in Bowl Ditch: say "You don't feel bold enough to. Just taking isn't enough." instead;
 
 book Sob Acres
 
-Sob Acres is a room in universal. printed name is "[if sco-dell-eastern is false]Sob Acres[else]Dell, Eastern[end if]".
+Sob Acres is a room in universal. printed name is "[if sco-dell-eastern is false]Sob Acres[else]Dell, Eastern[end if]". eyes-number of Sob Acres is 36. eyes-rule of Sob Acres is pre-saw-bakers rule.
 
 book Deli Stern
 
-Deli Stern is a room in universal. printed name is "Deli, Stern". "You can only really go out[if sco-dell-eastern is true] (well, east, same thing)[end if] here."
+Deli Stern is a room in universal. printed name is "Deli, Stern". "You can only really go out[if sco-dell-eastern is true] (well, east, same thing)[end if] here.". eyes-number of Deli Stern is 47. eyes-rule of Deli Stern is pre-dell-eastern rule.
 
 book Tube Rod
 
-Tube Rod is an ordroom in universal.
+Tube Rod is an ordroom in universal. eyes-number of Tube Rod is 35. eyes-rule of Tube Rod is pre-too-broad rule.
 
 book Too Dark Tude Ark
 
-Too Dark Tude Ark is an ordroom in universal.
+Too Dark Tude Ark is an ordroom in universal. eyes-number of Too Dark Tude Ark is 1.
 
-the whole anger is a thing in Tude Ark. "Whole anger swirls around here.". description is "How can one describe anger? It's there, and it's tough to shake."
+the whole anger is a thing in Tude Ark. "Whole anger swirls around here.". description is "How can one describe anger? It's there, and it's tough to shake.". eyes-number of whole anger is 7. eyes-rule of whole anger is pre-ho-langour rule.
 
 book Sage Oaks
 
-Sage Oaks is an ordroom in universal.
+Sage Oaks is an ordroom in universal. eyes-number of Sage Oaks is 35. eyes-rule of Sage Oaks is pre-say-jokes rule.
 
-sageoakscen is a sentient in Sage Oaks. "Sage oaks stand here, [if sco-say-jokes is false]glaring at your unworthy self[else]almost nodding with respect for you[end if]."
+sageoakscen is a sentient in Sage Oaks. "Sage oaks stand here, [if sco-say-jokes is false]glaring at your unworthy self[else]almost nodding with respect for you[end if].". eyes-number of sageoakscen is 35. eyes-rule of sageoakscen is pre-say-jokes rule.
+
+understand "sage/oaks" and "sage oaks" as sageoakscen.
 
 check going south in Sage Oaks when sco-gas-pouch is false:
 	say "[one of]As you go south, you hear a tingling that makes you gasp 'ouch.' It grows as you continue, and you have to turn back. What's up with that? They said they'd make a passage south.[paragraph break]The sage oaks laugh a bit. 'Just a bit of revenge for those painful joke,' they say, 'nothing permanent. We never said we'd give painless passage south unless ... well, what you need to do, it will be for your own good in the long run.'[paragraph break]Now what did they mean by that?[or]Again, you try to go south, and again you gasp 'ouch,' and the sage oaks chuckle. This is getting a bit tiresome. What to do?[stopping]" instead;
 
 chapter gas pouch
 
-the gas pouch is a thing. "It's a pouch that once held gas, currently full/empty."
+the gas pouch is a thing. "It's a pouch that once held gas, currently full/empty.". eyes-number of gas pouch is -1.
 
 book Dam Pink
 
-Dam Pink is a room in universal. "You can only go back north."
+Dam Pink is a room in universal. "You can only go back north.". eyes-number of Dam Pink is 43. eyes-rule of Dam Pink is pre-damp-ink rule.
 
 book Scribe Room
 
-Scribe Room is a room in universal. "You can only go back north."
+Scribe Room is a room in universal. "You can only go back north.". eyes-number of Scribe Room is 45. eyes-rule of Scribe Room is pre-scry-broom rule.
 
 book Dust Which Does Twitch
 
-Dust Which Does Twitch is a room in universal. "You can only go back north."
+Dust Which Does Twitch is a room in universal. "You can only go back north.". eyes-number of Dust Which is 1.
+
+chapter prose weeping
+
+the prose weeping is a thing in Dust Which Does Twitch. "Prose, weeping, rises from all the dustiness.". eyes-number of prose weeping is 38. eyes-rule of prose weeping is pre-pro-sweeping rule.
 
 volume unsorted
 
