@@ -868,7 +868,7 @@ final question wording	only if victorious	topic	final response rule	final respon
 this is the track missed points rule:
 	if sco-loose-intro is false, say "You could've made a [b]LOOSE INTRO[r] fall from the lucent row in [mine].";
 	if sco-meh-skit is false, say "You could've performed a [b]MEH SKIT[r] once you uncovered the mess pot/kit.";
-	if sco-pea-pod is false, say "You could've tried to [b]PEEP ODD[r] in Pea Stalks for a bit more food.";
+	if sco-pea-pod is false, say "You could've discovered a [b]PEA POD[r] in Pea Stalks when you wondered if you could peep odd things, for a bit more food.";
 	do nothing;
 
 chapter final real ending

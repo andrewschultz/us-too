@@ -121,7 +121,7 @@ chapter Pea Stalks
 
 sco-peace-talks is a truth state that varies.
 
-sco-peep-odd is a truth state that varies.
+sco-pea-pod is a truth state that varies.
 
 chapter A Pile-Up Isle
 

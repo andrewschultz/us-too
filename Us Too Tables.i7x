@@ -37,7 +37,7 @@ w1 (text)	w2 (text)	first-hom (text)	second-hom	hom-txt-rule (rule)	first-exact	
 "more"	"flares"	--	--	--	false	false	false	false	"activating the morph lairs"	false	true	true	false	false	morph lairs	pre-more-flares rule	post-more-flares rule	--	--
 "probe"	"all"	--	--	--	false	false	false	false	"finding a purpose for the pro ball"	false	true	true	false	false	ur branch	pre-probe-all rule	post-probe-all rule	--	--
 "peace"	"talks"	--	--	--	false	false	false	false	"finding something incorporeal within the Pea Stalks"	false	true	true	false	false	pea stalks	pre-peace-talks rule	post-peace-talks rule	--	--
-"peep"	"odd"	--	--	--	false	false	false	false	"finding something unusual within the Pea Stalks"	false	true	false	false	false	pea stalks	pre-peep-odd rule	post-peep-odd rule	--	--
+"pea"	"pod"	--	--	--	false	false	false	false	"finding something unusual within the Pea Stalks"	false	true	false	false	false	pea stalks	pre-pea-pod rule	post-pea-pod rule	--	--
 "can"	"take"	--	--	--	false	false	false	false	"dispelling the Can't-Ache"	false	true	true	false	false	dome aching	pre-can-take rule	post-can-take rule	--	--
 "dough"	"making"	--	--	--	false	false	false	false	"doing something positive in [dome]"	false	true	true	false	false	dome aching	pre-dough-making rule	post-dough-making rule	--	--
 "gray|grey"	"tin|tins"	--	--	--	false	false	false	false	"discover what the Great Inns hold"	false	true	true	false	false	dome aching	pre-gray-tins rule	post-gray-tins rule	--	--
@@ -434,26 +434,27 @@ a wordtwisting rule (this is the pre-peace-talks rule):
 this is the post-peace-talks rule:
 	now sco-peace-talks is true;
 	say "Getting back to nature and stuff leaves you at peace with yourself. So at peace, you want to spread that peace to others, whether or not they fully deserve it. However, now you're so at peace, you recognize you are disturbing the plants' peace. You retreat to the Ur-Branch.";
+	if sco-pea-pod is false, now eyes-number of pea stalks is -43;
 	inside-block-back;
 
-a wordtwisting rule (this is the pre-peep-odd rule):
+a wordtwisting rule (this is the pre-pea-pod rule):
 	if player is not in pea stalks, unavailable;
-	if sco-peep-odd is true:
+	if sco-pea-pod is true:
 		vcal "There are no other odd pea pods.";
 		already-done;
 	ready;
 
-this is the post-peep-odd rule:
-	now sco-peep-odd is true;
-	say "Oh wait! There is something that will add a bit of flavor!";
+this is the post-pea-pod rule:
+	now sco-pea-pod is true;
+	say "Oh wait! There is something that will add a bit of flavor! Actually, it's a weird giant pea pod!";
 	now player has pea pod;
 	inside-block-back;
 
 to inside-block-back:
-	if sco-peep-odd is true and sco-peace-talks is true:
+	if sco-pea-pod is true and sco-peace-talks is true:
 		say "You feel a moment of zen. You've done what you could here, and you sense you don't fully belong. It's time to move on.";
 		block-and-back;
-	else if sco-peep-odd is true:
+	else if sco-pea-pod is true:
 		say "You're pleased you found something out of the way, but perhaps there's something bigger to figure here.";
 	else:
 		say "In the big picture, it's good to understand peace talks. But maybe there's something fun and obscure to note before moving on.";
