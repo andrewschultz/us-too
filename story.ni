@@ -859,12 +859,28 @@ this is the track missed points rule:
 	if sco-pea-pod is false, say "You could've tried to [b]PEEP ODD[r] in Pea Stalks for a bit more food.";
 	do nothing;
 
+chapter final real ending
+
 table of final question options (continued)
 final question wording	only if victorious	topic	final response rule	final response activity
 --	true	"ace two"	poker cheat rule	--
 
 this is the poker cheat rule:
-	say "[one of]Well, your friends didn't believe your whole tale of how you got here, and how you provided this nice meal, so they'd never believe you could cheat like this.[paragraph break]Of course, you're not playing for high stakes, but it's the principle of the thing. Next time when you all go out to eat, it's your treat. Your friends applaud your generosity, but you say it wa nothing. It really was, too.[or]You already cheated to win. It would be less fun the second time. And your friends might catch on, too.[stopping]";
+	if gs-found-real-win is false:
+		say "Well, your friends didn't believe your whole tale of how you got here, and how you provided this nice meal, so they'd never believe you could cheat like this.[paragraph break]Of course, you're not playing for high stakes, but it's the principle of the thing. Next time when you all go out to eat, it's your treat. Your friends applaud your generosity, but you say it wa nothing. It really was, too.";
+	else:
+		say "You already cheated to win, but you did so because it was the right thing to do. You have everything you want. Don't get greedy. What would [ara] say?";
+	now gs-found-real-win is true;
+
+The hack to say one word right rule is listed before the standard respond to final question rule in for handling the final question.
+
+This is the hack to say one word right rule:
+	if the player's command includes "ace" or the player's command includes "two":
+		if gs-found-real-win is true:
+			say "An interesting idea.";
+		else:
+			say "There is/was no other way to cheat.";
+		the rule succeeds;
 
 volume misc map
 

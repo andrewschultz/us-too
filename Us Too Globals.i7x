@@ -46,6 +46,10 @@ chapter game-critical
 gs-tried-black-ops is a truth state that varies.
 gs-up-cellar-bin is a truth state that varies.
 
+chapter bonus stuff
+
+gs-found-real-win is a truth state that varies.
+
 book intro / any time
 
 chapter on you
