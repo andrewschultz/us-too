@@ -123,6 +123,10 @@ to decide which number is dome-in-score:
 to decide which number is gray-tin-score:
 	decide on (boolval of sco-dough-making) + (boolval of sco-pie-crust);
 
+to decide whether pile-done:
+	if sco-base-pikes is true and sco-hike-up is true and sco-pie-crust is true, yes;
+	no;
+
 volume cheat item stuff
 
 to say eye-with:

@@ -398,7 +398,8 @@ after printing the locale description of Beach Ill when sco-peace-talks is true 
 check going east in Beach Ill when sco-probe-all is true:
 	if sco-punt-weaker is false, say "You have no transport. Yet. And the pun tweaker won't take you for free." instead;
 	if sco-pry-more is false, say "You have no way to steer the punt. Yet." instead;
-	say "[one of]Your punt (weaker) is not useless. Maybe the prime oar helps it be more useful.[or]The punt returns to the isle with no incident.[stopping]";
+	if pile-done, say "You're pretty sure you found everything there." instead; [1st condition may not be necessary, but make sure of things]
+	say "[one of]Your punt (weaker) is not useless. Maybe the prime oar will help it be more useful.[or]The punt returns to the isle with no incident.[stopping]";
 	move punt to isle;
 	move oar to isle;
 
@@ -433,7 +434,13 @@ the gauche hip go ship is scenery. printed name is "Gauche/Hip GO-Ship". "It's r
 
 chapter punt weaker
 
-the punt weaker is a thing. "Your punt, weaker, floats here, ready to take you [if isle is visited]back [end if][if player is in isle]west[else]east[end if].". eyes-number of punt weaker is -1.
+the punt weaker is a thing. "Your punt, weaker, floats here, [punt-status].". eyes-number of punt weaker is -1.
+
+to say punt-status:
+	if pile-done:
+		say ". It served you well, but you can't think of a reason to go back to the isle";
+	else:
+		say "ready to take you [if isle is visited]back [end if][if player is in isle]west[else]east[end if]"
 
 book Sore Dark
 
