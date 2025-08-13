@@ -178,6 +178,10 @@ chapter Farm Isles
 sco-find-rinks is a truth state that varies.
 sco-barn-open is a truth state that varies.
 
+chapter Berries Pond
+
+sco-bear-respond is a truth state that varies.
+
 book south branch
 
 chapter Tube Rod

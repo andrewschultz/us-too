@@ -49,6 +49,7 @@ w1 (text)	w2 (text)	first-hom (text)	second-hom	hom-txt-rule (rule)	first-exact	
 "tour"	"boaters"	--	--	--	false	false	false	false	"bringing more business to Turbo Tours"	false	true	false	false	false	turbo tours	pre-tour-boaters rule	post-tour-boaters rule	--	--
 "find"	"rinks"	--	--	--	false	false	false	false	"seeing another place on the Farm Isles"	false	true	true	false	false	far miles farm isles	pre-find-rinks rule	post-find-rinks rule	--	--
 "barn"	"open"	--	--	--	false	false	false	false	"overcoming rejection from the bar"	false	true	true	false	false	far miles farm isles	pre-barn-open rule	post-barn-open rule	--	--
+"bear"	"respond"	--	--	--	false	false	false	false	"clue for guessing one word right"	false	true	true	false	false	berries pond	pre-bear-respond rule	post-bear-respond rule	--	--
 "saw"	"bakers"	--	--	--	false	false	false	false	"finding signs of life in Sob Acres"	false	true	true	false	false	sob acres	pre-saw-bakers rule	post-saw-bakers rule	--	--
 "dell"	"eastern"	--	--	--	false	false	false	false	"making Sob Acres less forbidding"	false	true	true	false	false	deli stern	pre-dell-eastern rule	post-dell-eastern rule	--	--
 "fell"	"trap"	--	--	--	false	false	false	false	"revealing what's behind the felt wrap"	false	true	true	false	false	fort earns	pre-fell-trap rule	post-fell-trap rule	--	--
@@ -738,6 +739,19 @@ this is the post-barn-open rule:
 	now sco-barn-open is true;
 	say "Hooray! You figured what to do! You get a point!";
 	declue bar nopin;
+
+chapter berries pond scoring
+
+a wordtwisting rule (this is the pre-bear-respond rule):
+	if player is not in berries pond, unavailable;
+	ready;
+
+this is the post-bear-respond rule:
+	now sco-bear-respond is true;
+	say "You have no idea whether to call a bear or even if it's a good idea. But you find a honeycomb high up in a tree. It's too high up for you, even when you return with the prime oar, which will maybe be useful if things get violent.";
+	say "[line break]You wave the oar at the tree, then wave it, hoping to catch a bear's attention. The bear nods at you as if to say 'Huh, Neatest Honey Test!' You hand it the prime oar, and it swats down the honeycomb, which it takes. But it provides you with a variety of berries in payment. Then it lifts up a paw. You are on its territory. It would not do to stay. You have gotten what you want, and it is time to go. So you do.";
+	declue-here;
+	drop-player-at farm isles;
 
 book south branch sorting
 
