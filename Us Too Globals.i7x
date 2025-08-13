@@ -168,6 +168,14 @@ chapter deli stern
 
 sco-dell-eastern is a truth state that varies.
 
+chapter Turbo Tours
+
+sco-stark-raft is a truth state that varies.
+sco-tour-boaters is a truth state that varies.
+
+chapter Farm Isles
+
+sco-find-rinks is a truth state that varies.
 book south branch
 
 chapter Tube Rod

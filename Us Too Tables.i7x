@@ -47,6 +47,7 @@ w1 (text)	w2 (text)	first-hom (text)	second-hom	hom-txt-rule (rule)	first-exact	
 "claim"	"it"	--	--	--	false	false	false	false	"gathering the clay mitt"	false	true	true	false	false	Bowl Ditch	pre-claim-it rule	post-claim-it rule	--	--
 "stark"	"raft"	--	--	--	false	false	false	false	"finding more appropriate transport than the star craft"	false	true	true	false	false	turbo tours	pre-stark-raft rule	post-stark-raft rule	--	--
 "tour"	"boaters"	--	--	--	false	false	false	false	"bringing more business to Turbo Tours"	false	true	false	false	false	turbo tours	pre-tour-boaters rule	post-tour-boaters rule	--	--
+"find"	"rinks"	--	--	--	false	false	false	false	"seeing another place on the Farm Isles"	false	true	true	false	false	far miles farm isles	pre-find-rinks rule	post-find-rinks rule	--	--
 "saw"	"bakers"	--	--	--	false	false	false	false	"finding signs of life in Sob Acres"	false	true	true	false	false	sob acres	pre-saw-bakers rule	post-saw-bakers rule	--	--
 "dell"	"eastern"	--	--	--	false	false	false	false	"making Sob Acres less forbidding"	false	true	true	false	false	deli stern	pre-dell-eastern rule	post-dell-eastern rule	--	--
 "fell"	"trap"	--	--	--	false	false	false	false	"revealing what's behind the felt wrap"	false	true	true	false	false	fort earns	pre-fell-trap rule	post-fell-trap rule	--	--
@@ -708,6 +709,22 @@ a wordtwisting rule (this is the pre-tour-boaters rule):
 this is the post-tour-boaters rule:
 	now sco-tour-boaters is true;
 	say "You have a business idea! You explain it to the folks at Turbo Tours. They play it down, but of course, after a bit they implement it and it works well and they take credit for it.[paragraph break]That's sort of a bummer, but you find it nice to be around people who are having their own adventures.";
+
+chapter far miles farm isles scoring
+
+a wordtwisting rule (this is the pre-find-rinks rule):
+	if player is not in far miles farm isles, unavailable;
+	if sco-find-rinks is true:
+		vcal "You already found them! [if sco-bear-respond is false]You don't need to go back[else]You just need to figure what to do to the south[end if].";
+		already-done;
+	ready;
+
+this is the post-find-rinks rule:
+	now sco-find-rinks is true;
+	say "It's too warm out for ice rinks, but then, you didn't expect any clues to be obvious. Perhaps you just need to look for reasonably-sized ponds that could freeze pretty quickly in the winter. A bit of wandering, and you find them...";
+	reveal Berries Pond to south;
+	declue fine drinks;
+	move player to Berries Pond;
 
 book south branch sorting
 

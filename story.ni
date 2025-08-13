@@ -669,7 +669,15 @@ the stark raft is a thing. "The stark raft has replaced the star craft.". descri
 
 book Far Miles Farm Isles
 
-Far Miles Farm Isles is a room.
+Far Miles Farm Isles is a room in universal. eyes-number of Farm Isles is 1.
+
+the fine drinks ad is a thing in Far Miles. eyes-number of fine drinks ad is 45. eyes-rule of fine drinks is pre-find-rinks rule.
+
+book Berrie Pond
+
+Berries Pond is a room in universal. eyes-number of Berries Pond is 47. eyes-rule of Berries Pond is pre-bear-respond rule.
+
+check going to berries pond when sco-bear-respond is true: say "That would be greedy." instead;
 
 book south area
 
@@ -679,7 +687,7 @@ Tube Rod is an ordroom in universal. eyes-number of Tube Rod is 35. eyes-rule of
 
 book Too Dark Tude Ark
 
-Too Dark Tude Ark is an ordroom in universal. eyes-number of Too Dark Tude Ark is 1.
+Too Dark Tude Ark is an ordroom in universal. printed name is "[if sco-ho-langour is true]'Ugh?! Lo, a Glow'[else]Too-Dark Tude Ark[end if]". eyes-number of Too Dark Tude Ark is 1.
 
 the whole anger is a thing in Tude Ark. "Whole anger swirls around here.". description is "How can one describe anger? It's there, and it's tough to shake.". eyes-number of whole anger is 7. eyes-rule of whole anger is pre-ho-langour rule.
 
