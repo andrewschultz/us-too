@@ -110,9 +110,16 @@ when play begins:
 		if X is Reap Rest, next;
 		say "[X] [map region of X] needs a region.";
 
+when play begins:
+	repeat with X running through rooms:
+		if X is a noway-rm listed in table of noways, next;
+		if X is Reap Rest or X is House Well, next;
+		say "[x] could use an entry in table of noways.";
+
 chapter in-game
 
 every turn when extra-turns > 0: say "(DEBUG GAUGE) [extra-turns] extra turns."
+
 volume test commands
 
 test wm with "test w1/test w2/test w3".
