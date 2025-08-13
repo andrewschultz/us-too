@@ -671,6 +671,8 @@ book Far Miles Farm Isles
 
 Far Miles Farm Isles is a room in universal. eyes-number of Farm Isles is 1.
 
+the Bar Nopin is a thing in Far Miles. printed name of Bar Nopin is "Bar, Nopin[']". eyes-number of bar nopin is 44. eyes-rule of bar nopin is pre-barn-open rule.
+
 the fine drinks ad is a thing in Far Miles. eyes-number of fine drinks ad is 45. eyes-rule of fine drinks is pre-find-rinks rule.
 
 book Berrie Pond

@@ -48,6 +48,7 @@ w1 (text)	w2 (text)	first-hom (text)	second-hom	hom-txt-rule (rule)	first-exact	
 "stark"	"raft"	--	--	--	false	false	false	false	"finding more appropriate transport than the star craft"	false	true	true	false	false	turbo tours	pre-stark-raft rule	post-stark-raft rule	--	--
 "tour"	"boaters"	--	--	--	false	false	false	false	"bringing more business to Turbo Tours"	false	true	false	false	false	turbo tours	pre-tour-boaters rule	post-tour-boaters rule	--	--
 "find"	"rinks"	--	--	--	false	false	false	false	"seeing another place on the Farm Isles"	false	true	true	false	false	far miles farm isles	pre-find-rinks rule	post-find-rinks rule	--	--
+"barn"	"open"	--	--	--	false	false	false	false	"overcoming rejection from the bar"	false	true	true	false	false	far miles farm isles	pre-barn-open rule	post-barn-open rule	--	--
 "saw"	"bakers"	--	--	--	false	false	false	false	"finding signs of life in Sob Acres"	false	true	true	false	false	sob acres	pre-saw-bakers rule	post-saw-bakers rule	--	--
 "dell"	"eastern"	--	--	--	false	false	false	false	"making Sob Acres less forbidding"	false	true	true	false	false	deli stern	pre-dell-eastern rule	post-dell-eastern rule	--	--
 "fell"	"trap"	--	--	--	false	false	false	false	"revealing what's behind the felt wrap"	false	true	true	false	false	fort earns	pre-fell-trap rule	post-fell-trap rule	--	--
@@ -725,6 +726,18 @@ this is the post-find-rinks rule:
 	reveal Berries Pond to south;
 	declue fine drinks;
 	move player to Berries Pond;
+
+a wordtwisting rule (this is the pre-barn-open rule):
+	if player is not in far miles farm isles, unavailable;
+	if sco-barn-open is true:
+		vcal "You already got an egg from the barn!";
+		already-done;
+	ready;
+
+this is the post-barn-open rule:
+	now sco-barn-open is true;
+	say "Hooray! You figured what to do! You get a point!";
+	declue bar nopin;
 
 book south branch sorting
 

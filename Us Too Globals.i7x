@@ -176,6 +176,8 @@ sco-tour-boaters is a truth state that varies.
 chapter Farm Isles
 
 sco-find-rinks is a truth state that varies.
+sco-barn-open is a truth state that varies.
+
 book south branch
 
 chapter Tube Rod
@@ -203,10 +205,6 @@ sco-scry-broom is a truth state that varies.
 chapter Dust Which Does Twitch
 
 sco-pro-sweeping is a truth state that varies.
-
-sco-stark-raft is a truth state that varies.
-
-sco-tour-boaters is a truth state that varies.
 
 book unsorted
 
