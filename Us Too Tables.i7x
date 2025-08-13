@@ -52,6 +52,7 @@ w1 (text)	w2 (text)	first-hom (text)	second-hom	hom-txt-rule (rule)	first-exact	
 "bear"	"respond"	--	--	--	false	false	false	false	"clue for guessing one word right"	false	true	true	false	false	berries pond	pre-bear-respond rule	post-bear-respond rule	--	--
 "saw"	"bakers"	--	--	--	false	false	false	false	"finding signs of life in Sob Acres"	false	true	true	false	false	sob acres	pre-saw-bakers rule	post-saw-bakers rule	--	--
 "dell"	"eastern"	--	--	--	false	false	false	false	"making Sob Acres less forbidding"	false	true	true	false	false	deli stern	pre-dell-eastern rule	post-dell-eastern rule	--	--
+"dope"	"ale"	--	--	--	false	false	false	false	"finding something to trade your dough pail for"	false	true	true	false	false	deli stern	pre-dope-ale rule	post-dope-ale rule	--	--
 "before"	"during"	--	--	--	false	false	false	false	"figuring what the [toon] really means"	false	true	true	false	false	deli stern	pre-beef-ordering rule	post-beef-ordering rule	--	--
 "fell"	"trap"	--	--	--	false	false	false	false	"revealing what's behind the felt wrap"	false	true	true	false	false	fort earns	pre-fell-trap rule	post-fell-trap rule	--	--
 "cellar"	"bin"	--	--	--	false	false	false	false	"escaping the Cell, Urban"	false	true	true	false	false	cell urban	pre-cellar-bin rule	post-cellar-bin rule	--	--
@@ -558,8 +559,8 @@ a wordtwisting rule (this is the pre-dough-making rule):
 
 this is the post-dough-making rule:
 	now sco-dough-making is true;
-	say "Excellent! With the tin, you have somewhere to put the dough.";
-	now player has dough;
+	say "Excellent! Not only do you make the dough, but the great inns offer you somewhere to keep it. You wind up with a dough pail.";
+	now player has dough pail;
 	declue-here;
 
 a wordtwisting rule (this is the pre-in-earnest rule):
@@ -697,6 +698,18 @@ this is the post-dell-eastern rule:
 	say "The surroundings are a bit more welcoming now. Oh, you can go east as well as out, too.";
 	reveal Sob Acres to the east;
 	declue-here;
+
+a wordtwisting rule (this is the pre-dope-ale rule):
+	if player does not have dough pail, unavailable;
+	if player is not in deli stern:
+		vcp "Hmm, you could exchange the dough pail for dope ale, but ... nobody here wants dough, and nobody here might have dope ale.";
+		not-yet;
+	ready;
+
+this is the post-dope-ale rule:
+	now sco-dope-ale is true;
+	now player has dope ale;
+	say "You make the trade: dough pail for dope ale! The [owners] note they're actually getting business. They bet if you come back a bit later, there'll be even more.";
 
 a wordtwisting rule (this is the pre-beef-ordering rule):
 	if player is not in deli stern, unavailable;

@@ -560,7 +560,9 @@ the inscen is privately-named scenery. understand "inner/nest" and "inner nest" 
 
 chapter dough
 
-the dough is a thing. description is "It's dough, inside one of your tins.". indefinite article of dough is "some". eyes-number of dough is -1.
+the dough pail is a thing. description is "It's a pail full of dough.". eyes-number of dough pail is 43. eyes-rule of dough pail is pre-dope-ale rule.
+
+the dope ale is a thing. description is "Well, its label is pretty dope, you guess.". eyes-number of dope ale is -1.
 
 book Inner Nest
 
