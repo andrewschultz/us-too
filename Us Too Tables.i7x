@@ -529,22 +529,22 @@ a wordtwisting rule (this is the pre-can-take rule):
 
 this is the post-can-take rule:
 	now sco-can-take is true;
-	say "You feel you can take the aching. It takes a bit of time, and you worry a worse aching may replace it ... and, in a way, it does. You wonder what you need to do here now. You see great inns and an inner nest. Which is worth visiting?";
-	move great inns to Dome Aching;
+	say "You feel you can take the aching. It takes a bit of time, and you worry a worse aching may replace it ... and, in a way, it does. You wonder what you need to do here now. You see a great inn and an inner nest. Which is worth visiting?";
+	move great inn to Dome Aching;
 	move inscen to Dome Aching;
 
 a wordtwisting rule (this is the pre-gray-tin rule):
 	if player is not in dome aching, unavailable;
 	if sco-gray-tin is true:
-		vcal "You already got a gray tin from the Great Inns!";
+		vcal "You already got a gray tin from the Great Inn!";
 		already-done;
 	ready;
 
 this is the post-gray-tin rule:
 	now sco-gray-tin is true;
-	say "Why not? A tin could hold something handy";
+	say "Why not? A tin could hold something handy. The great inn seems to be able to spare a lot, though they mention they can't let you hog too many.";
 	now player has tin;
-	declue great inns;
+	declue great inn;
 
 a wordtwisting rule (this is the pre-dough-making rule):
 	if player is not in dome aching, unavailable;
@@ -558,7 +558,7 @@ a wordtwisting rule (this is the pre-dough-making rule):
 
 this is the post-dough-making rule:
 	now sco-dough-making is true;
-	say "Excellent! Not only do you make the dough, but the great inns offer you somewhere to keep it. You wind up with a dough pail.";
+	say "Excellent! Not only do you make the dough, but the great inn offer you somewhere to keep it. You wind up with a dough pail.";
 	now player has dough pail;
 	declue-here;
 

@@ -560,9 +560,9 @@ to say dome-scen:
 check going inside in Dome Aching when sco-can-take is true and sco-in-earnest is false:
 	say "The inner nest repels you. Your motives aren't pure. Quester see, quester visit, quester score points. So cold and calculating!" instead;
 
-chapter great inns
+chapter great inn
 
-the great inns are plural-named scenery. eyes-number of great inns is 44. eyes-rule of great inns is pre-gray-tin rule.
+the great inn is scenery. eyes-number of great inn is 43. eyes-rule of great inn is pre-gray-tin rule.
 
 chapter gray tin
 
