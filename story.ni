@@ -682,6 +682,10 @@ the Toon Eat Too Neat is a thing. printed name is "Toon Eat-Too-Neat". "A [toon]
 
 the beef is a thing. description is "Beef. Lots and lots.". eyes-number of beef is -1.
 
+chapter pliers
+
+The mope liars mo pliers are a plural-named thing. description is "On the one hand, they're pliers, so they can't be too hard to use. But on the other hand, they were supposed to be kind of special, so you're worried you've overlooked an obvious feature. Gues you can only hope to use them right when the time comes.". printed name is "'Mope, Liars, Mo[']' Pliers".
+
 chapter WHEE TRY
 
 the WHEE TRY sign is a thing. "A WHEE TRY sign is here--free samples!". description is "The [owners] see you looking at the sign, which is covered with different types of bread. 'You won't just get a small free sample. You'll get a lot more... of what? Well, you have to guess.". eyes-number of WHEE TRY is 53. eyes-rule of WHEE TRY is pre-wheat-rye rule.

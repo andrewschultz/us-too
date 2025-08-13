@@ -55,6 +55,7 @@ w1 (text)	w2 (text)	first-hom (text)	second-hom	hom-txt-rule (rule)	first-exact	
 "dope"	"ale"	--	--	--	false	false	false	false	"finding something to trade your dough pail for"	false	true	true	false	false	deli stern	pre-dope-ale rule	post-dope-ale rule	--	--
 "before"	"during"	--	--	--	false	false	false	false	"figuring what the [toon] really means"	false	true	true	false	false	deli stern	pre-beef-ordering rule	post-beef-ordering rule	--	--
 "grow"	"nodes"	--	--	--	false	false	false	false	"seeing what's behind the groan odes"	false	true	true	false	false	groan odes	pre-grow-nodes rule	post-grow-nodes rule	--	--
+"no"	"date"	--	--	--	false	false	false	false	"figuring how to destroy the nodes, or the most important one"	false	true	true	false	false	groan odes	pre-no-date rule	post-no-date rule	--	--
 "wheat"	"rye"	--	--	--	false	false	false	false	"guesesing what free samples are on offer"	false	true	true	false	false	deli stern	pre-wheat-rye rule	post-wheat-rye rule	--	--
 "fell"	"trap"	--	--	--	false	false	false	false	"revealing what's behind the felt wrap"	false	true	true	false	false	fort earns	pre-fell-trap rule	post-fell-trap rule	--	--
 "cellar"	"bin"	--	--	--	false	false	false	false	"escaping the Cell, Urban"	false	true	true	false	false	cell urban	pre-cellar-bin rule	post-cellar-bin rule	--	--
@@ -823,6 +824,24 @@ this is the post-grow-nodes rule:
 	now sco-grow-nodes is true;
 	say "The groan odes retract, and nodes grow out, creating a more menacing noise.";
 	move nodes to odes;
+
+a wordtwisting rule (this is the pre-no-date rule):
+	if player is not in groan odes, unavailable;
+	if player does not have pliers:
+		vcp "Yes ... that feels right, but you have no tool with which to tear apart node eight.";
+		not-yet;
+	ready;
+
+this is the post-no-date rule:
+	now sco-no-date is true;
+	say "You realize which node to hack up. You realise what to say. The [pliers] do their work on node eight. 'Imminent destruction?' you scoff. 'NO DATE!'[paragraph break]You hear a FIZZ, then a BOOM ... the explosion knocks you back.";
+	wfak;
+	say "Then, people come pouring in. They lift you up in the air, which is fun for the first fifteen seconds, but you know they mean well. They prove they mean well by handing you a valuable item.";
+	wfak;
+	say "'THE HELP-IN-HELL PIN,' one of them booms. You note you haven't come across anything close to hell, so maybe ... well ...";
+	say "[line break]You are cut off again. It will help you in anywhere unusually uncomfortable. Well, it sure can't hurt.";
+	say "[line break]There's not much else to say. You feel a bit awkward. All you can do is tell them to visit the nice cheery new deli nearby. And they promise to. Hooray, bringing people together!";
+	now player has pliers;
 
 book south branch sorting
 
