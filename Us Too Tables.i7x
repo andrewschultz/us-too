@@ -239,6 +239,7 @@ this is the post-guard-entry rule:
 	now sco-guard-entry is true;
 	say "You look for a way past the tree, and suddenly you have an idea, and once you know what to look for, it's easy. You're less threatening than [the forest team], so it's no problem. The protective magic or whatever is fooled, or maybe it thinks that if you're willing to risk the guard entry, you're not visiting for greedy purposes. Whichever it is, you make it...";
 	move player to Pea Stalks;
+	declue garden tree;
 
 a wordtwisting rule (this is the pre-blah-copse rule):
 	if player is not in ur branch, unavailable;
@@ -282,6 +283,7 @@ this is the post-pie-crust rule:
 	now sco-pie-crust is true;
 	say "Yup! Pie crust!";
 	now player has pie crust;
+	moot pike rust;
 
 a wordtwisting rule (this is the pre-punt-weaker rule):
 	if player is not in beach ill, unavailable;
@@ -326,6 +328,7 @@ this is the post-sword-ark rule:
 	say "It takes a while of feeling around, but your blah string does the job. You find a sword ark. In that sword ark is contained, shockingly, a sword! And not just any sword, but the TERRA BLADE. However, the blade is still out of reach. It's a pretty tall ark.";
 	move sword ark to sore dark;
 	move terra blade to sore dark;
+	declue-here;
 
 a wordtwisting rule (this is the pre-blast-ring rule):
 	if player does not have blah string, unavailable;
@@ -371,6 +374,7 @@ this is the post-board-red rule:
 	now sco-board-red is true;
 	say "You turn up a board (red) ... it's narrow and six feet long, made of styrofoam, with CATCH THE WAVES and STAND ON THIS SIDE written on one side. Since it wasn't hard to find, you don't feel excited you found it, but you carry it anyway.";
 	now player has board red;
+	declue-here;
 	block-and-back;
 
 book north branch scoring
@@ -433,6 +437,7 @@ this is the post-more-flares rule:
 	now Dome Aching is mapped southeast of Ur Branch;
 	now Ur Branch is mapped northwest of Dome Aching;
 	wfak;
+	declue-here;
 	now north is branchdone;
 	move player to Ur Branch;
 
@@ -450,7 +455,10 @@ a wordtwisting rule (this is the pre-peace-talks rule):
 this is the post-peace-talks rule:
 	now sco-peace-talks is true;
 	say "Getting back to nature and stuff leaves you at peace with yourself. So at peace, you want to spread that peace to others, whether or not they fully deserve it. However, now you're so at peace, you recognize you are disturbing the plants' peace. You retreat to the Ur-Branch.";
-	if sco-pea-pod is false, now eyes-number of pea stalks is -43;
+	if sco-pea-pod is false:
+		now eyes-number of pea stalks is -43;
+	else:
+		declue-here;
 	inside-block-back;
 
 a wordtwisting rule (this is the pre-pea-pod rule):
@@ -501,6 +509,7 @@ a wordtwisting rule (this is the pre-hike-up rule):
 this is the post-hike-up rule:
 	now sco-hike-up is true;
 	say "You decide the direct way of climbing the pile at a steep angle just won't work. But it's a big pile, and as you walk around, you see a slower way, less steep, but less likely to cause you to slip. You get to the top and have a look around. From your vantage point, you see a new path from the Ur-Branch, to the southwest! You also see places well beyond it, to the west and south. Well, that should cover all the directions.[paragraph break]It makes you almost forget about the high cup. Well, it turns out the high cup is glued to other trash. Dang it! You're not sure if you needed it, anyway. It looks kind of fancy.";
+	declue high cup;
 
 book southeast branch sorting
 
@@ -622,6 +631,7 @@ a wordtwisting rule (this is the pre-cellar-bin rule):
 this is the post-cellar-bin rule:
 	now sco-cellar-bin is true;
 	say "You bang on the cell door, claiming you've been sent to the wrong place. To your surprise, two maintenance workers come by and agree. One pushes a button. You are spun around! You fall to the floor, dizzy.[paragraph break]'Okay. Next time, if you fall in the trap, you'll fall somewhere else.' You thank them, you guess, not entirely sure what good it will do.";
+	declue-here;
 	move player to Cellar Bin;
 
 book west branch sorting
@@ -700,6 +710,7 @@ this is the post-stark-raft rule:
 	say "You let slip that perhaps a stark raft is more in your price range. A voice from behind the star craft agrees. They, in fact, have a particularly plain one which has been not at all good for business. They're willing to give it to you, if you promise not to loiter too much. Thus, they redirect you away to a new area of Turbo Tours, one without the star craft. You feel belittled, but hey, a free raft is a free raft. Your prime oar should work just fine on it.";
 	move stark raft to Turbo Tours;
 	moot star craft;
+	reveal Far Miles Farm Isles to south;
 
 a wordtwisting rule (this is the pre-tour-boaters rule):
 	if player is not in turbo tours, unavailable;
@@ -711,6 +722,7 @@ a wordtwisting rule (this is the pre-tour-boaters rule):
 this is the post-tour-boaters rule:
 	now sco-tour-boaters is true;
 	say "You have a business idea! You explain it to the folks at Turbo Tours. They play it down, but of course, after a bit they implement it and it works well and they take credit for it.[paragraph break]That's sort of a bummer, but you find it nice to be around people who are having their own adventures.";
+	declue-here;
 
 chapter far miles farm isles scoring
 
