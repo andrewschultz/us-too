@@ -298,7 +298,8 @@ Ur Branch is a room in universal. It is above My New Mine Ooh. printed name is "
 rule for printing the locale description of ur branch:
 	now pri-branch-reject is true;
 	let numcan be number of branchcan directions;
-	if numcan > 0, say "The [if numcan > 1]branches you currently see lead[else]only branch you've found so far leads[end if] [list of branchcan directions]. ";
+	if numcan is 0, say "Looks like you'll need to find something to do here to get started.";
+	if numcan > 0, say "The [if numcan > 1]branches you currently feel sure of lead[else]only branch you've found so far leads[end if] [list of branchcan directions]. ";
 	if number of branchdone directions > 0:
 		say "However, you don't need to go back [list of branchdone directions].";
 	else:

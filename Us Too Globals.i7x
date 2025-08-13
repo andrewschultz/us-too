@@ -214,11 +214,15 @@ book unsorted
 
 chapter unsorted
 
+sco-den-specs is a truth state that varies.
+
 book debugs
 
 debug-win is a truth state that varies.
 
 test-mine-only is a truth state that varies.
+
+eyeall-test is a truth state that varies.
 
 Us Too Globals ends here.
 
