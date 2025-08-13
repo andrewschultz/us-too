@@ -13,7 +13,6 @@ w1 (text)	w2 (text)	first-hom (text)	second-hom	hom-txt-rule (rule)	first-exact	
 "loose"	"intro"	--	--	--	false	false	false	false	"finding something hidden in the lucent row"	false	true	false	false	false	my new mine ooh	pre-loose-intro rule	post-loose-intro rule	--	--
 "try"	"quest"	--	--	--	false	false	false	false	"how to get started and what to do"	false	true	true	false	false	mine ooh	pre-try-quest rule	post-try-quest rule	--	--
 "be"	"strong"	--	--	--	false	false	false	false	"getting rid of the beast"	false	true	true	false	false	mine ooh	pre-be-strong rule	post-be-strong rule	--	--
-"summon"	"cheese"	--	--	--	false	false	false	false	"figuring what some munchies are"	false	true	true	false	false	--	pre-summon-cheese rule	post-summon-cheese rule	--	--
 "nice"	"warm"	--	--	--	false	false	false	false	"making the swarm less aggressive"	false	true	true	false	false	mine ooh	pre-nice-warm rule	post-nice-warm rule	--	--
 "mess"	"pot"	--	--	--	false	false	false	false	"making the spot into something more useful"	false	true	true	false	false	mine ooh	pre-mess-pot rule	post-mess-pot rule	--	--
 "meh"	"skit"	--	--	--	false	false	false	false	"having harmless, useless fun with the mess kit"	false	true	false	false	false	mine ooh	pre-meh-skit rule	post-meh-skit rule	--	--
@@ -59,6 +58,8 @@ w1 (text)	w2 (text)	first-hom (text)	second-hom	hom-txt-rule (rule)	first-exact	
 "damp"	"ink"	--	--	--	false	false	false	false	"clue for guessing one word right"	false	true	true	false	false	dam pink	pre-damp-ink rule	post-damp-ink rule	--	--
 "scry"	"broom"	--	--	--	false	false	false	false	"clue for guessing one word right"	false	true	true	false	false	scribe room	pre-scry-broom rule	post-scry-broom rule	--	--
 "pro"	"sweeping"	--	--	--	false	false	false	false	"clue for guessing one word right"	false	true	true	false	false	dust which	pre-pro-sweeping rule	post-pro-sweeping rule	--	--
+"summon"	"cheese"	--	--	--	false	false	false	false	"figuring what some munchies are"	false	true	true	false	false	--	pre-summon-cheese rule	post-summon-cheese rule	--	--
+"den"	"specs"	--	--	--	false	false	false	false	"finding something more useful than dense pecs"	false	true	true	false	false	--	pre-den-specs rule	post-den-specs rule	--	--
 
 chapter mine ooh scoring
 
@@ -149,7 +150,17 @@ this is the post-loose-intro rule:
 	moot lucent row;
 	move ledge to My New Mine Ooh;
 
-chapter recipe scoring
+book room-variant scoring
+
+a wordtwisting rule (this is the pre-den-specs rule):
+	if player does not have dense pecs, unavailable;
+	ready;
+
+this is the post-den-specs rule:
+	now sco-den-specs is true;
+	say "You lose strength, strength you didn't really need, and wind up with a pair of glasses that may help you find a secret passage somewhere. You hope.";
+	now player has den specs;
+	moot dense pecs;
 
 a wordtwisting rule (this is the pre-summon-cheese rule):
 	if aight is not examined, unavailable;

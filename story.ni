@@ -718,6 +718,12 @@ volume unsorted
 
 book unclaimed things
 
+chapter dense pecs / den specs
+
+the dense pecs are a thing. description is "You don't think you really deserve them. Something else would probably be more useful in your quest.". eyes-number of dense pecs is 35. eyes-rule of dense pecs is pre-den-specs rule.
+
+the den specs are a thing. eyes-number of den specs is -1.
+
 chapter bread
 
 the bread is a thing.
