@@ -122,6 +122,9 @@ to decide which number is first-command-points: [ boolval doesn't quite work her
 to decide which number is dome-in-score:
 	decide on (boolval of sco-gray-tin) + (boolval of sco-in-earnest);
 
+to decide which number is booze-score:
+	decide on (boolval of sco-cold-rum) + (boolval of sco-dope-ale);
+
 book composite booleans
 
 to decide whether pile-done:

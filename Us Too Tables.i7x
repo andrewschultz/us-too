@@ -30,6 +30,7 @@ w1 (text)	w2 (text)	first-hom (text)	second-hom	hom-txt-rule (rule)	first-exact	
 "blast"	"ring"	--	--	--	false	false	false	false	"finding the blah string's true purpose"	false	true	true	false	false	sore dark	pre-blast-ring rule	post-blast-ring rule	--	--
 "terrible"	"aid"	--	--	--	false	false	false	false	"becoming worthy of the Terra Blade"	false	true	true	false	false	sore dark	pre-terrible-aid rule	post-terrible-aid rule	--	--
 "board"	"red"	"bored"	--	--	false	false	false	false	"finding something in the Bore Dread"	false	true	true	false	false	bore dread	pre-board-red rule	post-board-red rule	--	--
+"malt"	"hour"	--	--	--	false	false	false	false	"clue for guessing one word right"	false	true	true	false	false	bore dread	pre-malt-hour rule	post-malt-hour rule	--	--
 "nah"	"queue"	--	--	--	false	false	false	false	"repelling the [team]"	false	true	true	false	false	blah copse	pre-nah-queue rule	post-nah-queue rule	--	--
 "surf"	"ready"	--	--	--	false	false	false	false	"giving Sir Freddie a new direction"	false	true	true	false	false	blah copse	pre-surf-ready rule	post-surf-ready rule	--	--
 "or"	"clerk"	--	--	--	false	false	false	false	"figuring what Sir Freddie was scared of"	false	true	true	false	false	blah copse	pre-or-clerk rule	post-or-clerk rule	--	--
@@ -382,6 +383,24 @@ this is the post-board-red rule:
 	now player has board red;
 	declue-here;
 	block-and-back;
+
+a wordtwisting rule (this is the pre-malt-hour rule):
+	if player is not in bore dread, unavailable;
+	if booze-score is 0:
+		vcp "You would like to call out that there are alcoholic refreshments, but you don't have any.";
+		not-yet;
+	if booze-score is 1:
+		vcp "The [if player has cold rum]cold rum[else]dope ale[end if] isn't quite enough. A rumbling from the maul tower suggests they want variety, if they can't specifically get malt. They have a point, you guess. There are probably quite a few of them there.";
+		not-yet;
+	if sco-malt-hour is true:
+		vcal "You already called out to share refreshments. You need to save some for the final meet-up.";
+		already-done;
+	ready;
+
+this is the post-malt-hour rule:
+	now sco-malt-hour is true;
+	say "You call out for malt hour, which maybe isn't quite as good as happy hour. Heck, it might even be a chocolate malt and not malt liquor. But you promise liquid refreshment, which you have in spades, and the guardians come down to share it with you. You have a good old talk about ... well, everything. You explain your quest, which they actually find kind of cool. They let you through to the east.";
+	reveal Joy Nadir to east;
 
 book north branch scoring
 

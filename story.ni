@@ -498,9 +498,19 @@ part Bore Dread
 
 Bore Dread is a room in universal. description is "[if sco-board-red is false]My goodness, there seems to be nothing to do here except go back southwest. Or maybe search for some random item[else]Finding the board (red) was almost exciting. But you can't hope for anything else interesting here. Maybe just go back southwest[end if].". eyes-number of Bore Dread is 53. eyes-rule of Bore Dread is pre-board-red rule.
 
+check going east in Bore Dread when sco-malt-hour is false: say "Not without destroying the maul tower or mollifying its inhabitants. In fact, you take a few steps east, only to hear that keeping people out is thirsty work." instead;
+
+chapter maul tower
+
+the maul tower is a thing in Bore Dread. "A maul tower rises up menacingly to the east.". eyes-number of maul tower is 44. eyes-rule of maul tower is pre-malt-hour rule.
+
 chapter board red
 
 The board red is a thing. printed name is "board (red)". "It's about six feet long and one foot wide, or it would be when unfolded (it snaps into and out of its full length easily. You checked.) THIS SIDE UP and CATCH THE WAVES are written on it.". eyes-number of board red is -1.
+
+part Joy Nadir
+
+Joy Nadir is a room in universal. it is east of Bore Dread.
 
 book inside
 
