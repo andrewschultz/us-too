@@ -36,6 +36,44 @@ carry out cluing:
 		say "ROOM [X] has eyes number [eyes-number of X] which probably should be fixed.";
 	the rule succeeds;
 
+chapter eye all
+
+test e with "how so/ea".
+
+eaing is an action out of world.
+
+understand the command "ea" as something new.
+
+understand "ea" as eaing.
+
+to game-specific-cleanup:
+	if eyeall-test is true:
+		follow the eyeall rule;
+
+carry out eaing:
+	if eyeall-test is false, follow the eyeall rule;
+	now eyeall-test is true;
+
+this is the eyeall rule:
+	if player does not have eyes, now player has eyes;
+	say "ROOM:[line break]";
+	try eyering;
+	say "[line break]THINGS:[line break]";
+	repeat with X running through eyeable things:
+		say "[X]...";
+		try eyeing X;
+	the rule succeeds;
+
+definition: a thing (called th) is eyeable:
+	if th is not touchable, no;
+	if ur branch is visited:
+		if th is Trike west, no;
+		if th is amusing or th is tour ad, no;
+		if th is war pawn, no;
+		if th is eyes, no;
+		if th is cheese or th is loose intro, no;
+	yes;
+
 volume test commands
 
 test wm with "test w1/test w2/test w3".
