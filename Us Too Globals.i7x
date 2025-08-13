@@ -171,6 +171,8 @@ sco-beef-ordering is a truth state that varies.
 
 sco-dope-ale is a truth state that varies.
 
+sco-wheat-rye is a truth state that varies.
+
 chapter Turbo Tours
 
 sco-stark-raft is a truth state that varies.

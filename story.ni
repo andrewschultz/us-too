@@ -752,7 +752,7 @@ the den specs are a thing. eyes-number of den specs is -1.
 
 chapter bread
 
-the bread is a thing.
+there is a thing called wheat and rye bread.
 
 volume going out
 

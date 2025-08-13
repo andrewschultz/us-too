@@ -54,6 +54,7 @@ w1 (text)	w2 (text)	first-hom (text)	second-hom	hom-txt-rule (rule)	first-exact	
 "dell"	"eastern"	--	--	--	false	false	false	false	"making Sob Acres less forbidding"	false	true	true	false	false	deli stern	pre-dell-eastern rule	post-dell-eastern rule	--	--
 "dope"	"ale"	--	--	--	false	false	false	false	"finding something to trade your dough pail for"	false	true	true	false	false	deli stern	pre-dope-ale rule	post-dope-ale rule	--	--
 "before"	"during"	--	--	--	false	false	false	false	"figuring what the [toon] really means"	false	true	true	false	false	deli stern	pre-beef-ordering rule	post-beef-ordering rule	--	--
+"wheat"	"rye"	--	--	--	false	false	false	false	"guesesing what free samples are on offer"	false	true	true	false	false	deli stern	pre-wheat-rye rule	post-wheat-rye rule	--	--
 "fell"	"trap"	--	--	--	false	false	false	false	"revealing what's behind the felt wrap"	false	true	true	false	false	fort earns	pre-fell-trap rule	post-fell-trap rule	--	--
 "cellar"	"bin"	--	--	--	false	false	false	false	"escaping the Cell, Urban"	false	true	true	false	false	cell urban	pre-cellar-bin rule	post-cellar-bin rule	--	--
 "too"	"broad"	--	--	--	false	false	false	false	"how to fracture the tube/rod"	false	true	true	false	false	tube rod	pre-too-broad rule	post-too-broad rule	--	--
@@ -717,7 +718,22 @@ a wordtwisting rule (this is the pre-beef-ordering rule):
 
 this is the post-beef-ordering rule:
 	now sco-beef-ordering is true;
-	say "Yes, that's what to do. You get ordering.";
+	say "Yes, that's what to do. You consider ordering, but what can you pay with? You have nothing too valuable, or so it seems.[paragraph break]But wait! The [owners] spy the Terra Blade on you. You start mumbling surely it can't be used for something so pedestrian ... but perhaps it, or the spirit in it, is sick of saving the world and stuff.";
+	moot terra blade;
+	now player has beef;
+
+a wordtwisting rule (this is the pre-wheat-rye rule):
+	if player is not in deli stern, unavailable;
+	if whee try sign is not in Deli Stern, unavailable;
+	if sco-wheat-rye is true:
+		vcal "You already got enough free bread!";
+		already-done;
+	ready;
+
+this is the post-wheat-rye rule:
+	now sco-wheat-rye is true;
+	say "The [owners] applaud you. 'Yes ... that's just the thing ...' they chop up the wheat and rye with the erstwhile Terra Blade.";
+	now player has rye bread;
 
 chapter turbo tours scoring
 
