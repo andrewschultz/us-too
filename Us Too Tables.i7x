@@ -54,6 +54,7 @@ w1 (text)	w2 (text)	first-hom (text)	second-hom	hom-txt-rule (rule)	first-exact	
 "dell"	"eastern"	--	--	--	false	false	false	false	"making Sob Acres less forbidding"	false	true	true	false	false	deli stern	pre-dell-eastern rule	post-dell-eastern rule	--	--
 "dope"	"ale"	--	--	--	false	false	false	false	"finding something to trade your dough pail for"	false	true	true	false	false	deli stern	pre-dope-ale rule	post-dope-ale rule	--	--
 "before"	"during"	--	--	--	false	false	false	false	"figuring what the [toon] really means"	false	true	true	false	false	deli stern	pre-beef-ordering rule	post-beef-ordering rule	--	--
+"grow"	"nodes"	--	--	--	false	false	false	false	"seeing what's behind the groan odes"	false	true	true	false	false	groan odes	pre-grow-nodes rule	post-grow-nodes rule	--	--
 "wheat"	"rye"	--	--	--	false	false	false	false	"guesesing what free samples are on offer"	false	true	true	false	false	deli stern	pre-wheat-rye rule	post-wheat-rye rule	--	--
 "fell"	"trap"	--	--	--	false	false	false	false	"revealing what's behind the felt wrap"	false	true	true	false	false	fort earns	pre-fell-trap rule	post-fell-trap rule	--	--
 "cellar"	"bin"	--	--	--	false	false	false	false	"escaping the Cell, Urban"	false	true	true	false	false	cell urban	pre-cellar-bin rule	post-cellar-bin rule	--	--
@@ -808,6 +809,20 @@ this is the post-bear-respond rule:
 	declue-here;
 	raft-tours;
 	drop-player-at farm isles;
+
+chapter groan odes scoring
+
+a wordtwisting rule (this is the pre-grow-nodes rule):
+	if player is not in groan odes, unavailable;
+	if sco-grow-nodes is true:
+		vcal "You already did this!";
+		already-done;
+	ready;
+
+this is the post-grow-nodes rule:
+	now sco-grow-nodes is true;
+	say "The groan odes retract, and nodes grow out, creating a more menacing noise.";
+	move nodes to odes;
 
 book south branch sorting
 

@@ -686,6 +686,14 @@ chapter WHEE TRY
 
 the WHEE TRY sign is a thing. "A WHEE TRY sign is here--free samples!". description is "The [owners] see you looking at the sign, which is covered with different types of bread. 'You won't just get a small free sample. You'll get a lot more... of what? Well, you have to guess.". eyes-number of WHEE TRY is 53. eyes-rule of WHEE TRY is pre-wheat-rye rule.
 
+part groan odes
+
+Groan Odes is a room in universal. "[if sco-grow-nodes is false]Groan odes ring out everywhere. What would this place be like without them? Are they repressing happy people? Covering something more sinister?[else]The groan odes have ceased, replaced by numbered nodes, from which emanate eerie silence interrupted by occasional menacing beeping and mechanical voice mentioning destruction is IMMINENT and all that sort of thing.[end if]". eyes-number of Groan Odes is 45. eyes-rule of groan odes is pre-grow-nodes rule.
+
+chapter numbered nodes
+
+the numbered nodes are plural-named scenery. "It's a long string of numbered nodes: node one, node two, and so forth. You feel helpless at the thought of disabling it all. Thus, a numb bursting number string.". eyes-number of nodes is 24. eyes-rule of nodes is pre-no-date rule.
+
 part Turbo Tours
 
 Turbo Tours is a room in universal. printed name is "Turbo Tours[if sco-tour-boaters is true] (now with tour boaters)[end if]". "You can go back west, but there are also tours that cross water to the south--or go far beyond.". eyes-number of Turbo Tours is -47. eyes-rule of Turbo Tours is pre-tour-boaters rule.

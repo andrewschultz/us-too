@@ -187,6 +187,9 @@ chapter Berries Pond
 
 sco-bear-respond is a truth state that varies.
 
+chapter Groan Odes
+
+sco-grow-nodes is a truth state that varies.
 book south branch
 
 chapter Tube Rod
