@@ -71,7 +71,7 @@ after reading a command when player is in House Well How Swell:
 	if debug-state is true:
 		if word number 1 in the player's command is "test" or word number 1 in the player's command is "gonear":
 			continue the action;
-	if word number 1 in the player's command is "about" or word number 1 in the player's command is "credits" or word number 1 in the player's command is "versions" or word number 1 in the player's command is "ext" or word number 1 in the player's command is "exts":
+	if word number 1 in the player's command is "about" or word number 1 in the player's command is "credits" or word number 1 in the player's command is "versions" or word number 1 in the player's command is "ext" or word number 1 in the player's command is "exts" or word number 1 in the player's command is "transcript":
 		continue the action;
 	if the player's command exactly matches the text "look" or the player's command exactly matches the text "l" or the player's command exactly matches the text "quit" or the player's command exactly matches the text "restore":
 		continue the action;
@@ -104,7 +104,7 @@ after reading a command when player is in House Well How Swell:
 	else if the player's command includes "envelope" or the player's command includes "think" or the player's command includes "hint" or the player's command includes "help" or word number 1 in the player's command is "i" or word number 1 in the player's command is "inventory":
 		say "You glance at your envelope, pretty much all you have on you, [one of]once again [or][stopping]worried you might be cheating. But you can't imagine what other clue you have.[paragraph break]The lawyers [one of]still [or][stopping]look nonchalant, fortunately. It says [hohs].";
 		now gs-envelope is true;
-	else if the player's command includes "me" or the player's command includes "myself":
+	else if the player's command includes "me" or the player's command includes "myself" or the player's command includes "trike" or the player's command includes "west":
 		try examining the player;
 	else:
 		say "The lawyers shake their head slightly, though you sense that's the worst you'll get from them.";
@@ -128,7 +128,7 @@ rule for printing a parser error when the latest parser error is the I Beg Your 
 
 book Trike West (you)
 
-Trike West is a person in House Well How Swell. the player is Trike West. description of Trike West is "You are 'Trike' West. People (well, except [ara], even when provoked) always said it was a weird nickname, but it was one you embraced, after being about the only kid in your neighborhood without a Big Wheel and then almost riding it into the school on the first day of first grade, then holding out on riding a real bicycle. It persisted even after you rode your bike as other kids got their drivers' licenses.[paragraph break]'What the heck would you want to be named like that for? It stands out, yeah, but not in a good way.'[paragraph break][if sco-try-quest is true]You've sort of proven them wrong[else]Maybe you can snap out of your funk and prove them wrong[end if].". eyes-number of Trike West is 25. eyes-rule of Trike West is pre-try-quest rule.
+Trike West is a person in House Well How Swell. the player is Trike West. description of Trike West is "You are 'Trike' West. People (well, except [ara], even when provoked) always said it was a weird nickname, but it was one you embraced, after being about the only kid in your neighborhood without a Big Wheel and then almost riding it into the school on the first day of first grade, then holding out on riding a real bicycle. It persisted even after you rode your bike as other kids got their drivers' licenses.[paragraph break]'What the heck would you want to be named like that for? It stands out, yeah, but not in a good way.'[paragraph break][if sco-try-quest is true]You've sort of proven them wrong[else]Maybe you can snap out of your funk and prove them wrong[end if].". eyes-number of Trike West is 35. eyes-rule of Trike West is pre-try-quest rule.
 
 chapter "item using"
 
