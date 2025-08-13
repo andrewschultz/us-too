@@ -654,7 +654,13 @@ Sob Acres is a room in universal. printed name is "[if sco-dell-eastern is false
 
 book Deli Stern
 
-Deli Stern is a room in universal. printed name is "Deli, Stern". "You can only really go out[if sco-dell-eastern is true] (well, east, same thing)[end if] here.". eyes-number of Deli Stern is 47. eyes-rule of Deli Stern is pre-dell-eastern rule.
+Deli Stern is a room in universal. printed name is "[if sco-dell-eastern is true]'Die, Nerviness' Diner Venus[else]Deli, Stern[end if]". "You can only really go out[if sco-dell-eastern is true] (well, east, same thing)[end if] here.". eyes-number of Deli Stern is 47. eyes-rule of Deli Stern is pre-dell-eastern rule.
+
+chapter Toon Eat Too Neat
+
+the Toon Eat Too Neat is a thing. printed name is "Toon Eat-Too-Neat". "A [toon] is scribbled on the wall here.". description is "[if sco-beef-ordering is true]You figured what it meant. Yay, you[else]The [toon]has three captions, two blurred, one saying (redacted). But the images are clear: a skinny frowning man, the same man ravenously eating, and the same man, belly distended, sitting happily in a recliner. What does it mean? What should it mean? What can it mean?[end if]". eyes-number of Toon is 48. eyes-rule of Toon is pre-beef-ordering rule.
+
+the beef is a thing. description is "Beef. Lots and lots.". eyes-number of beef is -1.
 
 book Turbo Tours
 

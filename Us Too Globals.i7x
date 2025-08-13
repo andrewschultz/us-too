@@ -167,6 +167,7 @@ sco-saw-bakers is a truth state that varies.
 chapter deli stern
 
 sco-dell-eastern is a truth state that varies.
+sco-beef-ordering is a truth state that varies.
 
 chapter Turbo Tours
 

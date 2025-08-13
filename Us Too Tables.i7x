@@ -52,6 +52,7 @@ w1 (text)	w2 (text)	first-hom (text)	second-hom	hom-txt-rule (rule)	first-exact	
 "bear"	"respond"	--	--	--	false	false	false	false	"clue for guessing one word right"	false	true	true	false	false	berries pond	pre-bear-respond rule	post-bear-respond rule	--	--
 "saw"	"bakers"	--	--	--	false	false	false	false	"finding signs of life in Sob Acres"	false	true	true	false	false	sob acres	pre-saw-bakers rule	post-saw-bakers rule	--	--
 "dell"	"eastern"	--	--	--	false	false	false	false	"making Sob Acres less forbidding"	false	true	true	false	false	deli stern	pre-dell-eastern rule	post-dell-eastern rule	--	--
+"before"	"during"	--	--	--	false	false	false	false	"figuring what the [toon] really means"	false	true	true	false	false	deli stern	pre-beef-ordering rule	post-beef-ordering rule	--	--
 "fell"	"trap"	--	--	--	false	false	false	false	"revealing what's behind the felt wrap"	false	true	true	false	false	fort earns	pre-fell-trap rule	post-fell-trap rule	--	--
 "cellar"	"bin"	--	--	--	false	false	false	false	"escaping the Cell, Urban"	false	true	true	false	false	cell urban	pre-cellar-bin rule	post-cellar-bin rule	--	--
 "too"	"broad"	--	--	--	false	false	false	false	"how to fracture the tube/rod"	false	true	true	false	false	tube rod	pre-too-broad rule	post-too-broad rule	--	--
@@ -695,6 +696,17 @@ this is the post-dell-eastern rule:
 	say "The surroundings are a bit more welcoming now. Oh, you can go east as well as out, too.";
 	reveal Sob Acres to the east;
 	declue-here;
+
+a wordtwisting rule (this is the pre-beef-ordering rule):
+	if player is not in deli stern, unavailable;
+	if sco-beef-ordering is true:
+		vcal "You already decoded the [toon]!";
+		already-done;
+	ready;
+
+this is the post-beef-ordering rule:
+	now sco-beef-ordering is true;
+	say "Yes, that's what to do. You get ordering.";
 
 chapter turbo tours scoring
 
