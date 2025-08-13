@@ -14,6 +14,28 @@ when play begins:
 			increment cur-max-bonus;
 	now max-bonus is cur-max-bonus;
 
+volume diagnostic
+
+chapter cluing
+
+cluing is an action out of world.
+
+understand the command "clu" as something new.
+
+understand "clu" as cluing.
+
+carry out cluing:
+	repeat with X running through things:
+		if eyes-number of X is 1 or eyes-number of X is -1, next;
+		if X is moot, next;
+		if X is war pawn, next;
+		say "THING [X] has eyes number [eyes-number of X] which probably should be fixed.";
+	repeat with X running through rooms:
+		if eyes-number of X is 1 or eyes-number of X is -1, next;
+		if X is Reap Rest, next;
+		say "ROOM [X] has eyes number [eyes-number of X] which probably should be fixed.";
+	the rule succeeds;
+
 volume test commands
 
 test wm with "test w1/test w2/test w3".
