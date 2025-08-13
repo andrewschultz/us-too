@@ -74,6 +74,45 @@ definition: a thing (called th) is eyeable:
 		if th is cheese or th is loose intro, no;
 	yes;
 
+chapter checking defaults
+
+when play begins:
+	let need-things be 0;
+	let need-rooms be 0;
+	repeat with X running through things:
+		if eyes-number of X is not 1 and eyes-number of X is not -1:
+			if eyes-rule of X is autoreject rule, say "eyes-rule of [x] is pre-[x] rule.";
+	repeat with X running through rooms:
+		if x is reap rest, next;
+		if eyes-number of X is not 1 and eyes-number of X is not -1:
+			if eyes-rule of X is autoreject rule, say "eyes-rule of [x] is pre-[x] rule.";
+	repeat with X running through things:
+		if eyes-number of X is 0:
+			say ". eyes-number of [x] is -1.";
+			increment need-things;
+	if need-things is 0:
+		say "ALL THINGS WORK!";
+	else:
+		say "Fix [need-things] thing[if need-things > 1]s[end if].";
+	repeat with X running through rooms:
+		if X is reap rest, next;
+		if eyes-number of X is 0:
+			say ". eyes-number of [x] is -1.";
+			increment need-rooms;
+	if need-rooms is 0:
+		say "ALL ROOMS WORK!";
+	else:
+		say "Fix [need-rooms] room[if need-rooms > 1]s[end if].";
+
+when play begins:
+	repeat with X running through rooms:
+		if map region of X is not nothing, next;
+		if X is Reap Rest, next;
+		say "[X] [map region of X] needs a region.";
+
+chapter in-game
+
+every turn when extra-turns > 0: say "(DEBUG GAUGE) [extra-turns] extra turns."
 volume test commands
 
 test wm with "test w1/test w2/test w3".
