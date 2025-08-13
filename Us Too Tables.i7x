@@ -61,7 +61,8 @@ w1 (text)	w2 (text)	first-hom (text)	second-hom	hom-txt-rule (rule)	first-exact	
 "gas"	"pouch"	--	--	--	false	false	false	false	"see how to stop gasping OUCH"	false	true	true	false	false	sage oaks	pre-gas-pouch rule	post-gas-pouch rule	--	--
 "damp"	"ink"	--	--	--	false	false	false	false	"clue for guessing one word right"	false	true	true	false	false	dam pink	pre-damp-ink rule	post-damp-ink rule	--	--
 "scry"	"broom"	--	--	--	false	false	false	false	"clue for guessing one word right"	false	true	true	false	false	scribe room	pre-scry-broom rule	post-scry-broom rule	--	--
-"pro"	"sweeping"	--	--	--	false	false	false	false	"clue for guessing one word right"	false	true	true	false	false	dust which	pre-pro-sweeping rule	post-pro-sweeping rule	--	--
+"pro"	"sweeping"	--	--	--	false	false	false	false	"figuring how to clear some dust a bit"	false	true	true	false	false	dust which	pre-pro-sweeping rule	post-pro-sweeping rule	--	--
+"cold"	"rum"	--	--	--	false	false	false	false	"knowing what to look for in the coal drum"	false	true	true	false	false	dust which	pre-cold-rum rule	post-cold-rum rule	--	--
 "summon"	"cheese"	--	--	--	false	false	false	false	"figuring what some munchies are"	false	true	true	false	false	--	pre-summon-cheese rule	post-summon-cheese rule	--	--
 "den"	"specs"	--	--	--	false	false	false	false	"finding something more useful than dense pecs"	false	true	true	false	false	--	pre-den-specs rule	post-den-specs rule	--	--
 
@@ -888,8 +889,25 @@ a wordtwisting rule (this is the pre-pro-sweeping rule):
 
 this is the post-pro-sweeping rule:
 	now sco-pro-sweeping is true;
-	say "The dust gets clearer. You see you are in a library.";
+	say "The dust gets clearer. You see you are in a library. You also notice a coal drum off to the side. Maybe it was the source of some of the dust.";
 	moot prose weeping;
+	move coal drum to dust which;
+
+chapter dust which scoring
+
+a wordtwisting rule (this is the pre-cold-rum rule):
+	if player is not in dust which, unavailable;
+	if coal drum is not in dust which, unavailable;
+	if sco-cold-rum is true:
+		vcal "You already did this!";
+		already-done;
+	ready;
+
+this is the post-cold-rum rule:
+	now sco-cold-rum is true;
+	say "It's a pretty big coal drum. You rummage around, and sure enough ... you find some cold rum. Way too much to drink on your own.";
+	now player has cold rum;
+	moot coal drum;
 
 volume loose intro
 

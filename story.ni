@@ -731,6 +731,14 @@ chapter prose weeping
 
 the prose weeping is a thing in Dust Which Does Twitch. "Prose, weeping, rises from all the dustiness.". eyes-number of prose weeping is 38. eyes-rule of prose weeping is pre-pro-sweeping rule.
 
+chapter coal drum
+
+the coal drum is a thing. description is "Plenty dirty. Perhaps there is something beneath the coal, but you might have to figure what, before digging.". eyes-number of coal drum is 43. eyes-rule of coal drum is pre-cold-rum rule.
+
+chapter cold rum
+
+the cold rum is a thing. description is "It seems pretty classy. Or it seems like people who drink it can fool themselves it's classy. Good enough.". eyes-number of cold rum is 1.
+
 volume unsorted
 
 book unclaimed things

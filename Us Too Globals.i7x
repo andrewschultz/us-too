@@ -217,6 +217,8 @@ chapter unsorted
 
 sco-den-specs is a truth state that varies.
 
+sco-cold-rum is a truth state that varies.
+
 book debugs
 
 debug-win is a truth state that varies.
