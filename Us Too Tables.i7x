@@ -746,11 +746,14 @@ a wordtwisting rule (this is the pre-stark-raft rule):
 
 this is the post-stark-raft rule:
 	now sco-stark-raft is true;
-	say "You let slip that perhaps a stark raft is more in your price range. A voice from behind the star craft agrees. They, in fact, have a particularly plain one which has been not at all good for business. They're willing to give it to you, if you promise not to loiter too much. Thus, they redirect you away to a new area of Turbo Tours, one without the star craft. You feel belittled, but hey, a free raft is a free raft. Your prime oar should work just fine on it.";
-	move stark raft to Turbo Tours;
+	say "You let slip that perhaps a stark raft is more in your price range. A voice from behind the star craft agrees. They, in fact, have a particularly plain one which has been not at all good for business. They're willing to give it to you, if you promise not to loiter too much. Thus, they redirect you away to a new area of Turbo Tours, one without the star craft. You feel belittled, but hey, a free raft is a free raft. Your prime oar should work just fine on it. It's worth going back to the beach to get it.";
+	raft-tours;
 	moot star craft;
 	reveal Far Miles Farm Isles to south;
 
+to raft-tours:
+	move stark raft to Turbo Tours;
+	move prime oar to Turbo Tours;
 a wordtwisting rule (this is the pre-tour-boaters rule):
 	if player is not in turbo tours, unavailable;
 	if sco-tour-boaters is true:
@@ -802,6 +805,7 @@ this is the post-bear-respond rule:
 	say "You have no idea whether to call a bear or even if it's a good idea. But you find a honeycomb high up in a tree. It's too high up for you, even when you return with the prime oar, which will maybe be useful if things get violent.";
 	say "[line break]You wave the oar at the tree, then wave it, hoping to catch a bear's attention. The bear nods at you as if to say 'Huh, Neatest Honey Test!' You hand it the prime oar, and it swats down the honeycomb, which it takes. But it provides you with a variety of berries in payment. Then it lifts up a paw. You are on its territory. It would not do to stay. You have gotten what you want, and it is time to go. So you do.";
 	declue-here;
+	raft-tours;
 	drop-player-at farm isles;
 
 book south branch sorting

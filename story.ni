@@ -663,17 +663,25 @@ the Toon Eat Too Neat is a thing. printed name is "Toon Eat-Too-Neat". "A [toon]
 
 the beef is a thing. description is "Beef. Lots and lots.". eyes-number of beef is -1.
 
-book Turbo Tours
+chapter WHEE TRY
+
+the WHEE TRY sign is a thing. "A WHEE TRY sign is here--free samples!". description is "The [owners] see you looking at the sign, which is covered with different types of bread. 'You won't just get a small free sample. You'll get a lot more... of what? Well, you have to guess.". eyes-number of WHEE TRY is 53. eyes-rule of WHEE TRY is pre-wheat-rye rule.
+
+part Turbo Tours
 
 Turbo Tours is a room in universal. printed name is "Turbo Tours[if sco-tour-boaters is true] (now with tour boaters)[end if]". "You can go back west, but there are also tours that cross water to the south--or go far beyond.". eyes-number of Turbo Tours is -47. eyes-rule of Turbo Tours is pre-tour-boaters rule.
 
+check going south to Farm Isles:
+	say "[one of]Your prime oar really is prime! You effortlessly navigate your way south[or]Your prime oar holds up nicely as you steer the stark raft back south[stopping].";
+	move stark raft to Farm Isles;
+	move prime oar to Farm Isles;
 chapter star craft
 
 the star craft is a thing in Turbo Tours. "A huge star craft rests here. No way you'll be able to afford it -- something more modest, perhaps.". description is "Impressive but way out of your price range.". eyes-number of star craft is 54. eyes-rule of star craft is pre-stark-raft rule.
 
 chapter stark raft
 
-the stark raft is a thing. "The stark raft has replaced the star craft.". description is "It's plain, but sturdy enough, you think, and your prime oar will help steer it[if far miles farm isles is visited] back south[end if].". eyes-number of stark raft is -1.
+the stark raft is a thing. "The stark raft [if farm isles is unvisited]waits here, for you to see what's south[else if player is in farm isles]can take you back north to [tours][else if sco-barn-open is true]sits here. It serve you well, but you don't need to go back across the water[else]can lead you back to the Farm Isles[end if].". description is "It's plain, but sturdy enough, you think, and your prime oar will help steer it[if far miles farm isles is visited] back south[end if].". eyes-number of stark raft is -1.
 
 book Far Miles Farm Isles
 
@@ -683,7 +691,9 @@ the Bar Nopin is a thing in Far Miles. printed name of Bar Nopin is "Bar, Nopin[
 
 the fine drinks ad is a thing in Far Miles. eyes-number of fine drinks ad is 45. eyes-rule of fine drinks is pre-find-rinks rule.
 
-book Berrie Pond
+check going north in farm isles: raft-tours;
+
+part Berries Pond
 
 Berries Pond is a room in universal. eyes-number of Berries Pond is 47. eyes-rule of Berries Pond is pre-bear-respond rule.
 
