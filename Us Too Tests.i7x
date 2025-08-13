@@ -155,15 +155,23 @@ understand the command "lft" as something new.
 understand "lft" as lfting.
 
 carry out lfting:
-	let temp be 0;
+	let core-left be 0;
 	say "Of [1 + number of rows in table of main oronyms]...";
 	repeat through table of main oronyms:
-		if idid entry is true, next;
+		if idid entry is true or core entry is false, next;
 		if w2 entry is "stew", next;
 		say "[b][w1 entry in upper case] [w2 entry in upper case][r] needs doing: [part-explain entry].";
-		increment temp;
-	if temp is 0, say "Somehow, nothing is left!" instead;
-	say "You have [temp] point[if temp > 1]s[end if] to pick off, not including the final one.";
+		increment core-left;
+	let bonus-left be 0;
+	repeat through table of main oronyms:
+		if idid entry is true or core entry is true, next;
+		if bonus-left is 0:
+			say "BONUS STUFF BELOW[line break]";
+		say "    [b][w1 entry in upper case] [w2 entry in upper case][r] needs doing: [part-explain entry].";
+		increment bonus-left;
+	if core-left is 0, say "Somehow, nothing is left!" instead;
+	say "You have [core-left] core point[if core-left > 1]s[end if] to pick off, not including the final one.";
+	if bonus-left > 0, say "You also have [bonus-left] bonus point[if bonus-left > 1]s[end if] to pick off, though I haven't checked what is still achievable.";
 	the rule succeeds;
 
 
