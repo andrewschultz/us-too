@@ -39,7 +39,7 @@ w1 (text)	w2 (text)	first-hom (text)	second-hom	hom-txt-rule (rule)	first-exact	
 "pea"	"pod"	--	--	--	false	false	false	false	"finding something unusual within the Pea Stalks"	false	true	false	false	false	pea stalks	pre-pea-pod rule	post-pea-pod rule	--	--
 "can"	"take"	--	--	--	false	false	false	false	"dispelling the Can't-Ache"	false	true	true	false	false	dome aching	pre-can-take rule	post-can-take rule	--	--
 "dough"	"making"	--	--	--	false	false	false	false	"doing something positive in [dome]"	false	true	true	false	false	dome aching	pre-dough-making rule	post-dough-making rule	--	--
-"gray|grey"	"tin|tins"	--	--	--	false	false	false	false	"discover what the Great Inns hold"	false	true	true	false	false	dome aching	pre-gray-tins rule	post-gray-tins rule	--	--
+"gray|grey"	"tin"	--	--	--	false	false	false	false	"discover what the Great Inn holds"	false	true	true	false	false	dome aching	pre-gray-tin rule	post-gray-tin rule	--	--
 "in"	"earnest"	--	--	--	false	false	false	false	"figure how to visit the inner nest"	false	true	true	false	false	dome aching	pre-in-earnest rule	post-in-earnest rule	--	--
 "pry"	"more"	--	--	--	false	false	false	false	"figuring how to take the prime oar"	false	true	true	false	false	inner nest	pre-pry-more rule	post-pry-more rule	--	--
 "oh"	"clever"	--	--	--	false	false	false	false	"operating the oak lever"	false	true	true	false	false	fort earns four turns	pre-oh-clever rule	post-oh-clever rule	--	--
@@ -531,26 +531,23 @@ this is the post-can-take rule:
 	move great inns to Dome Aching;
 	move inscen to Dome Aching;
 
-a wordtwisting rule (this is the pre-gray-tins rule):
+a wordtwisting rule (this is the pre-gray-tin rule):
 	if player is not in dome aching, unavailable;
-	if sco-gray-tins is true:
-		vcal "You already got gray tins from the Great Inns!";
+	if sco-gray-tin is true:
+		vcal "You already got a gray tin from the Great Inns!";
 		already-done;
 	ready;
 
-this is the post-gray-tins rule:
-	now sco-gray-tins is true;
-	say "Why not? You can always use tins.";
-	now player has tins;
+this is the post-gray-tin rule:
+	now sco-gray-tin is true;
+	say "Why not? A tin could hold something handy";
+	now player has tin;
 	declue great inns;
 
 a wordtwisting rule (this is the pre-dough-making rule):
 	if player is not in dome aching, unavailable;
 	if sco-can-take is false:
 		vcp "The can't-ache prevents you from doing anything constructive!";
-		not-yet;
-	if player does not have gray tins:
-		vcp "You have nowhere to put the dough yet.";
 		not-yet;
 	if sco-dough-making is true:
 		vcal "You already made enough dough!";

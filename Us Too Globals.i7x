@@ -135,7 +135,7 @@ chapter Dome Aching
 
 sco-can-take is a truth state that varies.
 sco-dough-making is a truth state that varies.
-sco-gray-tins is a truth state that varies.
+sco-gray-tin is a truth state that varies.
 sco-in-earnest is a truth state that varies.
 
 chapter inner nest
@@ -213,13 +213,14 @@ chapter Dust Which Does Twitch
 
 sco-pro-sweeping is a truth state that varies.
 
+sco-cold-rum is a truth state that varies.
+
 book unsorted
 
 chapter unsorted
 
 sco-den-specs is a truth state that varies.
 
-sco-cold-rum is a truth state that varies.
 
 book debugs
 

@@ -528,8 +528,8 @@ book Dome Aching
 Dome Aching is a room in universal. printed name is "Dome, Aching". "[if sco-can-take is false]Ugh. You're not physically uncomfortable, you just feel ... oh, how can I describe it? A can't-ache. It prevents you from seeing anything here[else]You're a bit more aware of your surroundings now[end if]. Of course, you can always go back northwest to the Ur-Branch.". eyes-number of Dome Aching is 56. eyes-rule of Dome Aching is pre-dough-making rule.
 
 after printing the locale description for dome aching when sco-can-take is true:
-	say "[if sco-gray-tins is true]The Great Inns probably gave everything they had to offer. [else]Great Inns stay off to the side here. What could they hold? ";
-	say "There's that inner nest to go [b]IN[r], too. [if sco-pry-more is true]You looted it, though[else if sco-in-earnest is true]You're pretty sure you found the right way in[else]You're pretty sure it's worth getting into, since you kind of figured it's a good idea to explore everywhere[end if].";
+	say "[if sco-gray-tin is true]The Great Inn probably gave everything it had to offer. [else]A Great Inn is located off to the side here. What could they hold? ";
+	say "[line break]There's that inner nest to go [b]IN[r], too. [if sco-pry-more is true]You looted it, though[else if sco-in-earnest is true]You're pretty sure you found the right way in[else]You're pretty sure it's worth getting into, since you kind of figured it's a good idea to explore everywhere[end if].";
 	continue the action;
 
 to say dome-scen:
@@ -537,8 +537,8 @@ to say dome-scen:
 		say "What could they hold?";
 	else if dome-in-score is 2:
 		say "You've already seen both of them.";
-	else if sco-gray-tins is true:
-		say "You got the gray tins from the Great Inns";
+	else if sco-gray-tin is true:
+		say "You got the gray tin from the Great Inn";
 	else:
 		say "You showed you were worthy to visit the inner nest";
 
@@ -547,19 +547,11 @@ check going inside in Dome Aching when sco-can-take is true and sco-in-earnest i
 
 chapter great inns
 
-the great inns are plural-named scenery. eyes-number of great inns is 44. eyes-rule of great inns is pre-gray-tins rule.
+the great inns are plural-named scenery. eyes-number of great inns is 44. eyes-rule of great inns is pre-gray-tin rule.
 
-chapter gray tins
+chapter gray tin
 
-the gray tins are a plural-named thing. "There are two of them. [gray-tin-status]". understand "grey" and "grey tins" as gray tins. eyes-number of gray tins is -1.
-
-to say gray-tin-status:
-	if gray-tin-score is 0:
-		say "Both are empty";
-	else if gray-tin-score is 2:
-		say "Both are full, with pie crust and dough";
-	else:
-		say "Only one is full. It contains [if sco-pie-crust is true]pie crust[else]dough[end if]"
+the gray tin is a plural-named thing. "The gray tin is curently [if sco-pie-crust is false]empty[else]full of pie crust.". understand "grey" and "grey tins" as gray tin. eyes-number of gray tin is -1.
 
 chapter inscen
 
@@ -794,20 +786,16 @@ carry out taking inventory (this is the UT specific inventory rule):
 		say "You're empty-handed, except for what you started with.[paragraph break]";
 	else:
 		say "'Good! Some goods, umm...'[line break]";
-	if player has tins:
-		now pie crust is not marked for listing;
-		now dough is not marked for listing;
+	if player has tin, now pie crust is not marked for listing;
 	list the contents of the player, with newlines, indented, including contents, listing marked items only, giving inventory information, with extra indentation;
 	say "You're still carrying [the list of startthings carried by player][tour-ad-blather].";
 	the rule succeeds;
 
-after printing the name of gray tins when taking inventory:
-	if gray-tin-score is 0:
-		say " (both empty)";
-	else if gray-tin-score is 2:
-		say " (one full of dough, one with pie crust)";
+after printing the name of gray tin when taking inventory:
+	if sco-pie-crust is false:
+		say " (empty)";
 	else:
-		say " (one has [if sco-dough-making is true]dough[else]pie crust[end if])";
+		say " (full of pie crust)";
 
 to say tour-ad-blather:
 	if player does not have tour ad, continue the action;

@@ -109,19 +109,20 @@ to block-and-back:
 	now the way is branchdone;
 	drop-player-at Ur Branch;
 
-volume composite numbers
+volume composite numbers or booleans
 
-to decide which number is first-command-points:
+book numbers
+
+to decide which number is first-command-points: [ boolval doesn't quite work here ... it gives 200 or more]
 	let temp be 0;
 	if the player's command includes "how", increment temp;
 	if the player's command includes "so", increment temp;
 	decide on temp;
 
 to decide which number is dome-in-score:
-	decide on (boolval of sco-gray-tins) + (boolval of sco-in-earnest);
+	decide on (boolval of sco-gray-tin) + (boolval of sco-in-earnest);
 
-to decide which number is gray-tin-score:
-	decide on (boolval of sco-dough-making) + (boolval of sco-pie-crust);
+book composite booleans
 
 to decide whether pile-done:
 	if sco-base-pikes is true and sco-hike-up is true and sco-pie-crust is true, yes;
