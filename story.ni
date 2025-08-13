@@ -56,16 +56,11 @@ book you
 
 [ho-pal-hope-al]
 
-volume the player
+volume introductory
 
-chapter cheese
-
-the cheese is a singular-named thing. description is "All sorts of cheese, really. Everyone is sure to like one of the types. They're probably sure to hate another, what with some types of cheese being really really polarizing, but that just leaves more for everyone else.". eyes-number of cheese is 1. indefinite article of cheese is "some".
-
-book House Well So Swell
+part House Well So Swell
 
 House Well How Swell is a room in intro. printed name is "House Well-How-Swell". "The lawyers look at you expectantly. You fiddle with your envelope. You hope you haven't come all this way for nothing!". eyes-number of House Well How Swell is 1.
-
 
 after reading a command when player is in House Well How Swell:
 	if debug-state is true:
@@ -126,11 +121,11 @@ rule for printing a parser error when the latest parser error is the I Beg Your 
 	say "You fumble nervously with your envelope reflect on what the lawyers might want to hear. Dare you sneak [if gs-envelope is true]another[else]a[end if] peak at it?";
 	the rule succeeds;
 
-book Trike West (you)
+part Trike West (you)
 
 Trike West is a person in House Well How Swell. the player is Trike West. description of Trike West is "You are 'Trike' West. People (well, except [ara], even when provoked) always said it was a weird nickname, but it was one you embraced, after being about the only kid in your neighborhood without a Big Wheel and then almost riding it into the school on the first day of first grade, then holding out on riding a real bicycle. It persisted even after you rode your bike as other kids got their drivers' licenses.[paragraph break]'What the heck would you want to be named like that for? It stands out, yeah, but not in a good way.'[paragraph break][if sco-try-quest is true]You've sort of proven them wrong[else]Maybe you can snap out of your funk and prove them wrong[end if].". eyes-number of Trike West is 35. eyes-rule of Trike West is pre-try-quest rule.
 
-chapter "item using"
+part "item using"
 
 Aight Amusing Item Using is a startthing. description of Aight is "[aight-stuff]". printed name of Aight is "[i][']Aight, Amusing Item Using[r]". eyes-number of Aight Amusing Item Using is 1.
 
@@ -167,7 +162,11 @@ report taking inventory when gs-using-known is false:
 	default-x-to-aight;
 	continue the action;
 
-chapter too rad tour ad
+chapter cheese
+
+the cheese is a singular-named thing. description is "All sorts of cheese, really. Everyone is sure to like one of the types. They're probably sure to hate another, what with some types of cheese being really really polarizing, but that just leaves more for everyone else.". eyes-number of cheese is 1. indefinite article of cheese is "some".
+
+part too rad tour ad
 
 the too rad tour ad is a startthing. eyes-number of too rad tour ad is 1.
 
@@ -179,7 +178,9 @@ description of tour ad is "It describes your new mine in detail. It's too big to
 
 volume main rooms
 
-book my new mine ooh
+book introduction
+
+part my new mine ooh
 
 My New Mine Ooh is a room in intro. printed name is "My New Mine, Ooh!". description is "You're down in your new mine, with a passage up back to the great wide world[if sco-be-strong is true]. You've cleared the way--you can't be sure of the direction, as the path twists a bit[else if sco-try-quest is false]. But you're still finding your bearings and purpose. You feel a bit of imposter syndrome, just being given this mine. You don't want to just start wandering. At least you know who you are, and maybe that'll help reframe things[end if].". eyes-number of Mine Ooh is 1.
 
@@ -223,7 +224,7 @@ chapter beast wrong
 
 the beast wrong is a sentient. printed name is "beast (wrong)". "A beast (wrong) blocks your way out. You know it shouldn't be there. You know you shouldn't be afraid of it. But you are.". description is "You feel as though you shouldn't be as frightened as you are by it, but you just can't flip that switch.". eyes-number of beast wrong is 26. eyes-rule of beast wrong is pre-be-strong rule.
 
-chapter hintthings
+chapter hintthings in mine
 
 to say intro-hintthings: say "You see [the list of hintthings in mine ooh] on it."
 
@@ -291,7 +292,7 @@ chapter mess pot
 
 the mess pot is a thing. eyes-number of mess pot is -34. eyes-rule of mess pot is pre-meh-skit rule.
 
-book ur branch
+part ur branch
 
 Ur Branch is a room in universal. It is above My New Mine Ooh. printed name is "Ur-Branch". "There are so many branches here! While you can go back [b]DOWN[r] to your mine, [if sco-summer-bay is false]you have no idea where else to go. You could spend too much time wandering around. You could lose focus[else if sco-probe-all is false]there's only east, but maybe you can find more concrete places to visit[else]the branches make more sense than they did at first[end if].". eyes-number of Ur Branch is 45. eyes-rule of Ur Branch is pre-herb-ranch rule.
 
@@ -386,7 +387,9 @@ carry out sssing:
 	move player to entry 3 of south-found;
 	the rule succeeds;
 
-book Beach Ill
+book east branch
+
+part Beach Ill
 
 Beach Ill is a room in universal. printed name is "[if sco-be-chill is false]Beach, Ill[else if sco-probe-all is false]Bless-and-Bleah Sand[else]Dune Ever-Do-Never[end if]". "[if sco-be-chill is false]You have a general sense of malaise here, which isn't usual for these environs, but it's there, and not being able to get rid of it simply is causing more malaise[else]It's nice here. The only way out on foot is back west, since you can't swim the other ways[end if].". eyes-number of Beach Ill is 25. eyes-rule of Beach Ill is pre-be-chill rule.
 
@@ -442,7 +445,9 @@ to say punt-status:
 	else:
 		say "ready to take you [if isle is visited]back [end if][if player is in isle]west[else]east[end if]"
 
-book Sore Dark
+book northwest branch
+
+part Sore Dark
 
 Sore Dark is a room in universal. description is "[if sco-sword-ark is false]You can't see much here, but maybe if you fumble around for what you need, or make an educated guess, you'll find it[else if sco-blast-ring is false]The sword ark hangs above you, the Terra Blade intertwined in it[else]The Terra Blade lies among the erstwhile rubble of the sword ark[end if].". eyes-number of Sore Dark is 53. eyes-rule of Sore Dark is pre-sword-ark rule.
 
@@ -454,7 +459,9 @@ chapter Terra Blade
 
 The Terra Blade is a scenery. indefinite article of terra blade is "the". "It looks very impressive, almost too impressive for you to use.". eyes-number of Terra Blade is 83. eyes-rule of Terra Blade is pre-terrible-aid rule.
 
-book Blah Copse
+book north branch
+
+part Blah Copse
 
 Blah Copse is a room in universal. "[if sco-or-clerk is false]The only really clear safe path is[else]Thanks to Sir Freddie and your own cleverness, you found a way north as well as[end if] back south to [branch].". eyes-number of Blah Copse is -1.
 
@@ -481,11 +488,13 @@ chapter blah string
 
 the blah string is a thing. description is "Looking at it, it doesn't seem like it could become anything powerful. Could it?". indefinite article of blah string is "some". eyes-number of blah string is 54. eyes-rule of blah string is pre-blast-ring rule.
 
-book Morph Lairs
+part Morph Lairs
 
 Morph Lairs is a room in universal. "You're pretty sure you don't want to enter the lairs here. Even the ones that seem safe could turn unsafe quickly. And yet ... they can't just be THERE.". eyes-number of morph lairs is 46. eyes-rule of Morph Lairs is pre-more-flares rule.
 
-book Bore Dread
+book northeast branch
+
+part Bore Dread
 
 Bore Dread is a room in universal. description is "[if sco-board-red is false]My goodness, there seems to be nothing to do here except go back southwest. Or maybe search for some random item[else]Finding the board (red) was almost exciting. But you can't hope for anything else interesting here. Maybe just go back southwest[end if].". eyes-number of Bore Dread is 53. eyes-rule of Bore Dread is pre-board-red rule.
 
@@ -493,7 +502,9 @@ chapter board red
 
 The board red is a thing. printed name is "board (red)". "It's about six feet long and one foot wide, or it would be when unfolded (it snaps into and out of its full length easily. You checked.) THIS SIDE UP and CATCH THE WAVES are written on it.". eyes-number of board red is -1.
 
-book Pea Stalks
+book inside
+
+part Pea Stalks
 
 Pea Stalks is a room in universal. "Pea stalks grow here. But they're nothing you can eat, or prepare to eat quickly.". eyes-number of Pea Stalks is 55. eyes-rule of Pea Stalks is pre-peace-talks rule.
 
@@ -501,7 +512,9 @@ chapter pea pod
 
 the pea pod is a thing. "It's an unusual pea pod. It'll go well with the meal.". eyes-number of pea pod is -1.
 
-book A Pile Up Isle
+book east branch
+
+part A Pile Up Isle
 
 A Pile Up Isle is a room in universal. printed name is "A Pile-Up Isle". eyes-number of A Pile Up Isle is 1.
 
@@ -523,7 +536,9 @@ The high cup is a thing. "A high cup is at the top of the pile.". eyes-number of
 
 check taking the high cup when high cup is in Pile Up Isle: say "You take a direct path, but it's too steep." instead;
 
-book Dome Aching
+book southeast branch
+
+part Dome Aching
 
 Dome Aching is a room in universal. printed name is "Dome, Aching". "[if sco-can-take is false]Ugh. You're not physically uncomfortable, you just feel ... oh, how can I describe it? A can't-ache. It prevents you from seeing anything here[else]You're a bit more aware of your surroundings now[end if]. Of course, you can always go back northwest to the Ur-Branch.". eyes-number of Dome Aching is 56. eyes-rule of Dome Aching is pre-dough-making rule.
 
@@ -563,7 +578,7 @@ the dough pail is a thing. description is "It's a pail full of dough.". eyes-num
 
 the dope ale is a thing. description is "Well, its label is pretty dope, you guess.". eyes-number of dope ale is -1.
 
-book Inner Nest
+part Inner Nest
 
 Inner Nest is a room in universal. eyes-number of Inner Nest is -1.
 
@@ -571,7 +586,9 @@ the prime oar is a thing in Inner Nest. "A prime oar stands here, floating in sp
 
 check taking prime oar when prime oar is in Inner Nest: say "You can't get close enough." instead;
 
-book Fort Earns Four Turns
+book southwest branch
+
+part Fort Earns Four Turns
 
 there is a room called Fort Earns Four Turns. it is in universal. printed name is "Fort Earns-Four-Turns". "[if sco-oh-clever is false]An oak lever is here, tempting you to pull it and maybe find another exit besides back northeast[else]The [wick] revealed when you pulled the lever is here. You can also go back northeast[end if].". eyes-number of fort earns is 1.
 
@@ -624,11 +641,11 @@ check examining fell trap:
 	say "Thud! But you're a bit more prepared for the drop this time[if extra-turns > 0], and best of all, you don't waste any speed pacing around nervously[end if].";
 	move player to Cellar Bin;
 
-book Cell Urban
+part Cell Urban
 
 Cell Urban is a room in universal. printed name is "Cell, Urban". "[one of]THUD! [if extra-turns is 0]You're so anxious about being trapped here, you keep pacing until your speed wears off. [end if]Ugh. You see no way out to start. Perhaps you can complain to the manager, somehow[or]Still stuck. No fair! There must be a way out![stopping][line break]You're getting sick of the noises of the city all around you. You have no clue where they came from.". eyes-number of Cell Urban is 63. eyes-rule of Cell Urban is pre-cellar-bin rule.
 
-book Cellar Bin
+part Cellar Bin
 
 Cellar Bin is a room in universal. "The only way out is back up[if gs-up-cellar-bin is true]. You know it's one-way, of course[end if].". eyes-number of Cellar Bin is -1.
 
@@ -639,7 +656,9 @@ check going up in Cellar Bin:
 		say "You walk up through the vanishing trap door again.";
 	now gs-up-cellar-bin is true;
 
-book Bowl Ditch
+book west branch
+
+part Bowl Ditch
 
 Bowl Ditch is a room in universal. "[if sob acres is visited]You wonder why this place ever intimidated you. There's Sob Acres to the north and the Ur-Branch back east[else if sco-bold-itch is true]Now you've got your bearings, you see a passage north as well as back east[else]Ouch. Oww. You're lying on the ground, embarrassed how you tripped and fell, worried and scared there's no way back. Your injury is probably more psychological than physical, but it's there, and you need to overcome it[end if].". eyes-number of Bowl Ditch is 44. eyes-rule of Bowl Ditch is pre-bold-itch rule.
 
@@ -649,11 +668,11 @@ the clay mitt is a thing. description is "[if sco-claim-it is false]It's not you
 
 check taking clay mitt when clay mitt is in Bowl Ditch: say "You don't feel bold enough to. Just taking isn't enough." instead;
 
-book Sob Acres
+part Sob Acres
 
 Sob Acres is a room in universal. printed name is "[if sco-dell-eastern is false]Sob Acres[else]Dell, Eastern[end if]". eyes-number of Sob Acres is 36. eyes-rule of Sob Acres is pre-saw-bakers rule.
 
-book Deli Stern
+part Deli Stern
 
 Deli Stern is a room in universal. printed name is "[if sco-dell-eastern is true]'Die, Nerviness' Diner Venus[else]Deli, Stern[end if]". "You can only really go out[if sco-dell-eastern is true] (well, east, same thing)[end if] here.". eyes-number of Deli Stern is 47. eyes-rule of Deli Stern is pre-dell-eastern rule.
 
@@ -683,7 +702,7 @@ chapter stark raft
 
 the stark raft is a thing. "The stark raft [if farm isles is unvisited]waits here, for you to see what's south[else if player is in farm isles]can take you back north to [tours][else if sco-barn-open is true]sits here. It serve you well, but you don't need to go back across the water[else]can lead you back to the Farm Isles[end if].". description is "It's plain, but sturdy enough, you think, and your prime oar will help steer it[if far miles farm isles is visited] back south[end if].". eyes-number of stark raft is -1.
 
-book Far Miles Farm Isles
+part Far Miles Farm Isles
 
 Far Miles Farm Isles is a room in universal. eyes-number of Farm Isles is 1.
 
@@ -701,17 +720,17 @@ check going to berries pond when sco-bear-respond is true: say "That would be gr
 
 book south area
 
-book Tube Rod
+part Tube Rod
 
 Tube Rod is an ordroom in universal. eyes-number of Tube Rod is 35. eyes-rule of Tube Rod is pre-too-broad rule.
 
-book Too Dark Tude Ark
+part Too Dark Tude Ark
 
 Too Dark Tude Ark is an ordroom in universal. printed name is "[if sco-ho-langour is true]'Ugh?! Lo, a Glow'[else]Too-Dark Tude Ark[end if]". eyes-number of Too Dark Tude Ark is 1.
 
 the whole anger is a thing in Tude Ark. "Whole anger swirls around here.". description is "How can one describe anger? It's there, and it's tough to shake.". eyes-number of whole anger is 7. eyes-rule of whole anger is pre-ho-langour rule.
 
-book Sage Oaks
+part Sage Oaks
 
 Sage Oaks is an ordroom in universal. eyes-number of Sage Oaks is 35. eyes-rule of Sage Oaks is pre-say-jokes rule.
 
@@ -726,15 +745,15 @@ chapter gas pouch
 
 the gas pouch is a thing. "It's a pouch that once held gas, currently full/empty.". eyes-number of gas pouch is -1.
 
-book Dam Pink
+part Dam Pink
 
-Dam Pink is a room in universal. "You can only go back north.". eyes-number of Dam Pink is 43. eyes-rule of Dam Pink is pre-damp-ink rule.
+Dam Pink is a room in universal. printed name is "Dam, Pink". "You can only go back north.". eyes-number of Dam Pink is 43. eyes-rule of Dam Pink is pre-damp-ink rule.
 
-book Scribe Room
+part Scribe Room
 
 Scribe Room is a room in universal. "You can only go back north.". eyes-number of Scribe Room is 45. eyes-rule of Scribe Room is pre-scry-broom rule.
 
-book Dust Which Does Twitch
+part Dust Which Does Twitch
 
 Dust Which Does Twitch is a room in universal. "You can only go back north.". eyes-number of Dust Which is 1.
 

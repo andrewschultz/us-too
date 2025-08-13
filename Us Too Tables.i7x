@@ -754,6 +754,7 @@ this is the post-stark-raft rule:
 to raft-tours:
 	move stark raft to Turbo Tours;
 	move prime oar to Turbo Tours;
+
 a wordtwisting rule (this is the pre-tour-boaters rule):
 	if player is not in turbo tours, unavailable;
 	if sco-tour-boaters is true:
