@@ -96,6 +96,8 @@ sco-malt-hour is a truth state that varies.
 chapter joy nadir
 
 sco-join-aider is a truth state that varies.
+sco-dupe-it is a truth state that varies.
+
 book north branch
 
 chapter Blah Copse

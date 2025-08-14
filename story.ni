@@ -514,8 +514,15 @@ Joy Nadir is a room in universal. it is east of Bore Dread. printed name is "[if
 
 chapter dew pit
 
-a dew pit is scenery. "It seems hungry but not greedy.".
+a dew pit is scenery. "It seems hungry but not greedy.". eyes-number of dew pit is 24. eyes-rule of dew pit is pre-dupe-it rule.
 
+chapter orb and or band
+
+there is a thing called the orb and or band. printed name is "orb and/or band". description is "Being made from the belt (rusted) and the pro ball, it's clearly a powerful artifact. Just holding it, you feel occasional surges of power. But where to unleash this power?". eyes-number of orb is -1.
+
+chapter ten dregs tender eggs
+
+there is a proper-named thing called Ten Dregs Tender Eggs. printed name is "Ten Dregs['] Tender Eggs". "It's a carton of ten eggs, each slightly smaller than the original Egg of a Guv, but still plenty big and, you hope, tasty. It should be enough to whip out whatever you need to, when the time comes.[paragraph break]You have to admit the brand name worried you until you read this elsewhere on the carton: 'We strenuously fallow all tend-regs.'". eyes-number of tender eggs is -1.
 
 book inside
 
@@ -737,6 +744,9 @@ the Bar Nopin is a thing in Far Miles. printed name of Bar Nopin is "Bar, Nopin[
 
 the fine drinks ad is a thing in Far Miles. eyes-number of fine drinks ad is 45. eyes-rule of fine drinks is pre-find-rinks rule.
 
+chapter egg of a guv
+
+the egg of a guv is a thing. description is "It's only one egg, but boy is it impressive! The barn (open) really did you a favor, but all the same, you'll need more than one for your little shopping list.". eyes-number of egg of a guv is 1.
 check going north in farm isles: raft-tours;
 
 part Berries Pond

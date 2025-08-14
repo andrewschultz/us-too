@@ -32,6 +32,7 @@ w1 (text)	w2 (text)	first-hom (text)	second-hom	hom-txt-rule (rule)	first-exact	
 "board"	"red"	"bored"	--	--	false	false	false	false	"finding something in the Bore Dread"	false	true	true	false	false	bore dread	pre-board-red rule	post-board-red rule	--	--
 "malt"	"hour"	--	--	--	false	false	false	false	"clue for guessing one word right"	false	true	true	false	false	bore dread	pre-malt-hour rule	post-malt-hour rule	--	--
 "join"	"aider"	--	--	--	false	false	false	false	"clue for guessing one word right"	false	true	true	false	false	joy nadir	pre-join-aider rule	post-join-aider rule	--	--
+"dupe"	"it"	--	--	--	false	false	false	false	"making the dew pit useful"	false	true	true	false	false	joy nadir	pre-dupe-it rule	post-dupe-it rule	--	--
 "nah"	"queue"	--	--	--	false	false	false	false	"repelling the [team]"	false	true	true	false	false	blah copse	pre-nah-queue rule	post-nah-queue rule	--	--
 "surf"	"ready"	--	--	--	false	false	false	false	"giving Sir Freddie a new direction"	false	true	true	false	false	blah copse	pre-surf-ready rule	post-surf-ready rule	--	--
 "or"	"clerk"	--	--	--	false	false	false	false	"figuring what Sir Freddie was scared of"	false	true	true	false	false	blah copse	pre-or-clerk rule	post-or-clerk rule	--	--
@@ -423,6 +424,22 @@ this is the post-join-aider rule:
 	moot pro ball;
 	now player has orb;
 	move dew pit to joy nadir;
+
+a wordtwisting rule (this is the pre-dupe-it rule):
+	if player is not in joy nadir, unavailable;
+	if player does not have egg of a guv:
+		vcp "You have nothing that needs duplicating.";
+		not-yet;
+	if sco-dupe-it is true:
+		vcal "You already duplicated the egg of a guv! The dew pit is inactive now.";
+		already-done;
+	ready;
+
+this is the post-dupe-it rule:
+	now sco-dupe-it is true;
+	say "You rest the egg of a guv in the dew pit. Nothing happens, then a rumbling. The egg grows and splits into ten identical, larger eggs ... and not only that, a small cardboard container arises from the dew pit. It's labeled TEN DREGS['] TENDER EGGS. You take it. The dew pit grows dull. It's probably served its purpose.";
+	now player has tender eggs;
+	moot egg of a guv;
 
 book north branch scoring
 
@@ -828,6 +845,9 @@ this is the post-find-rinks rule:
 
 a wordtwisting rule (this is the pre-barn-open rule):
 	if player is not in far miles farm isles, unavailable;
+	if sco-bear-respond is false:
+		vcp "[farm-sense]You find a barn, open, hidden behind the bar. There are some truly glorious eggs in there, but you have nothing to trade for them yet.";
+		not-yet;
 	if sco-barn-open is true:
 		vcal "You already got an egg from the barn!";
 		already-done;
@@ -835,8 +855,11 @@ a wordtwisting rule (this is the pre-barn-open rule):
 
 this is the post-barn-open rule:
 	now sco-barn-open is true;
-	say "Hooray! You figured what to do! You get a point!";
+	say "[farm-sense]You visit the barn. Inside it are some truly glorious eggs! Of course, they are not for free, but you have plenty of extra berries. The farmer thanks you--picking berries to the south is so treacherous--and hands you the very best egg. It's an egg of a GUV[']!";
 	declue bar nopin;
+	now player has egg of a guv;
+
+to say farm-sense: say "[one of]Of course it makes sense there'd be a barn on farm isles. [or][stopping]"
 
 chapter berries pond scoring
 
