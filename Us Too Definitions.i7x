@@ -11,7 +11,15 @@ universal is a region.
 definition: a rule (called ru) is thinknoteblocking:
 	no;
 
-to game-specific-cleanup: do nothing;
+to game-specific-cleanup:
+	say "[core-score] [location of dense pecs].";
+	if core-score > 40 and den specs are off-stage:
+		say "Boy! All this carrying and dropping items and using your oar to get through the water has been good for your physical conditioning. You've grown some dense pecs.";
+		now player has dense pecs;
+	if gs-den-seen is false and player is in sob acres and player has dense pecs:
+		reveal-den;
+	if eyeall-test is true:
+		follow the eyeall rule;
 
 to decide which region is mrlp: decide on map region of location of player.
 

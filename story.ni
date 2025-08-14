@@ -750,6 +750,13 @@ part Sob Acres
 
 Sob Acres is a room in universal. printed name is "[if sco-dell-eastern is false]Sob Acres[else]Dell, Eastern[end if]". eyes-number of Sob Acres is 36. eyes-rule of Sob Acres is pre-saw-bakers rule.
 
+after printing the locale description for Sob Acres when sco-den-specs is true and gs-den-seen is false:
+	reveal-den;
+
+to reveal-den:
+	say "Your den specs reveal something you missed before, here. A passage leading down to what must be a den.";
+	reveal Groan Odes to down;
+
 part Deli Stern
 
 Deli Stern is a room in universal. printed name is "[if sco-dell-eastern is true]'Die, Nerviness' Diner Venus[else]Deli, Stern[end if]". "You can only really go out[if sco-dell-eastern is true] (well, east, same thing)[end if] here.". eyes-number of Deli Stern is 47. eyes-rule of Deli Stern is pre-dell-eastern rule.

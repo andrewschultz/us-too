@@ -170,13 +170,15 @@ book room-variant scoring
 
 a wordtwisting rule (this is the pre-den-specs rule):
 	if player does not have dense pecs, unavailable;
+	if sco-den-specs is true:
+		vcal "You don't need two pairs.";
+		already-done;
 	ready;
 
 this is the post-den-specs rule:
 	now sco-den-specs is true;
-	say "You lose strength, strength you didn't really need, and wind up with a pair of glasses that may help you find a secret passage somewhere. You hope.";
+	say "You lose a bit of strength, strength you didn't really need, and wind up with a pair of glasses that may help you find a secret passage somewhere. You hope.";
 	now player has den specs;
-	moot dense pecs;
 
 a wordtwisting rule (this is the pre-summon-cheese rule):
 	if aight is not examined, unavailable;
