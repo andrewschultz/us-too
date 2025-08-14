@@ -74,6 +74,7 @@ w1 (text)	w2 (text)	first-hom (text)	second-hom	hom-txt-rule (rule)	first-exact	
 "cold"	"rum"	--	--	--	false	false	false	false	"knowing what to look for in the coal drum"	false	true	true	false	false	dust which	pre-cold-rum rule	post-cold-rum rule	--	--
 "summon"	"cheese"	--	--	--	false	false	false	false	"figuring what some munchies are"	false	true	true	false	false	--	pre-summon-cheese rule	post-summon-cheese rule	--	--
 "den"	"specs"	--	--	--	false	false	false	false	"finding something more useful than dense pecs"	false	true	true	false	false	--	pre-den-specs rule	post-den-specs rule	--	--
+"use"	"it"	--	--	--	false	false	false	false	"disobeying the throne's orders"	false	true	true	false	false	throne	pre-use-it rule	post-use-it rule	--	--
 
 chapter mine ooh scoring
 
@@ -1068,6 +1069,28 @@ this is the post-cold-rum rule:
 	say "It's a pretty big coal drum. You rummage around, and sure enough ... you find some cold rum. Way too much to drink on your own.";
 	now player has cold rum;
 	moot coal drum;
+
+book up branch scoring
+
+chapter Throne Ow Throw Now scoring
+
+a wordtwisting rule (this is the pre-use-it rule):
+	if player is not in throne, unavailable;
+	if sco-dupe-it is false:
+		vcp "It would be useful to have an item of power, but alas, you do not, at the moment.";
+		not-yet;
+	if sco-use-it is true:
+		vcal "The [orb] crumbled away when you used it.";
+		already-done;
+	ready;
+
+this is the post-use-it rule:
+	now sco-use-it is true;
+	say "Defying the throne, you hold the [ORB] high in the air. It crackles. Energy shoots to the throne, from which emits a loud 'NO TERROR?! NOTE: ERROR!!!!!' The orb flies from your hand and towards the throne and explodes.";
+	wfak;
+	say "Where the throne once sat, there's now something glistening. 'You have freed the life roots,' booms a voice.";
+	move life roots to Throne;
+	moot orb;
 
 volume loose intro
 

@@ -166,6 +166,12 @@ chapter cheese
 
 the cheese is a singular-named thing. description is "All sorts of cheese, really. Everyone is sure to like one of the types. They're probably sure to hate another, what with some types of cheese being really really polarizing, but that just leaves more for everyone else.". eyes-number of cheese is 1. indefinite article of cheese is "some".
 
+chapter dense pecs / den specs
+
+the dense pecs are a plural-named thing. description is "You admire your well-earned, newfound physical fitness[if sco-den-specs is true], though perhaps you can swap it for something more useful, since this quest has been relatively nonviolent[else], as well as your prowess converting it into something more useful[end if].". eyes-number of dense pecs is 35. eyes-rule of dense pecs is pre-den-specs rule.
+
+the den specs are a plural-named thing. eyes-number of den specs is -1.
+
 part too rad tour ad
 
 the too rad tour ad is a startthing. eyes-number of too rad tour ad is 1.
@@ -884,15 +890,24 @@ chapter cold rum
 
 the cold rum is a thing. description is "It seems pretty classy. Or it seems like people who drink it can fool themselves it's classy. Good enough.". eyes-number of cold rum is 1.
 
+book up area
+
+part Throne Ow Throw Now
+
+Throne Ow Throw Now is a room in universal. printed name is "[if sco-use-it is true]Final (?) and Fine Land[else]Throne Ow-Throw-Now[end if]". eyes-number of Throne Ow Throw Now is 1.
+
+chapter thronescen
+
+thronescen is a privately-named thing in Throne Ow Throw Now. printed name is "the throne". understand "throne" as thronescen. eyes-number of thronescen is 32. eyes-rule of thronescen is pre-use-it rule.
+
+chapter Life Roots
+
+the Life Roots are a thing. "Life Roots have been revealed from where the throne was. And yet, they seem a bit artificial. They aren't that impressive, and maybe they're hiding something that proves them less than they claim to be.". eyes-number of Life Roots is 36. eyes-rule of Life Roots is pre-lie-fruits rule.
+
+
 volume unsorted
 
 book unclaimed things
-
-chapter dense pecs / den specs
-
-the dense pecs are a thing. description is "You don't think you really deserve them. Something else would probably be more useful in your quest.". eyes-number of dense pecs is 35. eyes-rule of dense pecs is pre-den-specs rule.
-
-the den specs are a thing. eyes-number of den specs is -1.
 
 chapter bread
 
