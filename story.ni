@@ -984,8 +984,12 @@ carry out taking inventory (this is the UT specific inventory rule):
 	else:
 		say "'Good! Some goods, umm...'[line break]";
 	if player has tin, now pie crust is not marked for listing;
+	now dense pecs are unmarked for listing;
+	now rope ladder is unmarked for listing;
 	list the contents of the player, with newlines, indented, including contents, listing marked items only, giving inventory information, with extra indentation;
-	say "You're still carrying [the list of startthings carried by player][tour-ad-blather].";
+	if player has dense pecs, say "[line break]You've got those dense pecs[if sco-den-specs is true], but you probably got what you needed[else], which may be useful in some other weird way[end if].";
+	if player has rope ladder, say "[line break]You've got that rope ladder, too. ";
+	say "[line break]You're still carrying [the list of startthings carried by player][tour-ad-blather].";
 	the rule succeeds;
 
 after printing the name of gray tin when taking inventory:
