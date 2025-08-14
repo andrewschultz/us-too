@@ -87,18 +87,18 @@ when play begins:
 			say ". eyes-number of [x] is -1.";
 			increment need-things;
 	if need-things is 0:
-		say "ALL THINGS WORK!";
+		say "ALL EYES-NUMBER/RULE SETTINGS ARE SET!";
 	else:
-		say "Fix [need-things] thing[if need-things > 1]s[end if].";
+		say "Fix [need-things] eyes-rule/eyes-number thing setting[if need-things > 1]s[end if].";
 	repeat with X running through rooms:
 		if X is reap rest, next;
 		if eyes-number of X is 0:
 			say ". eyes-number of [x] is -1.";
 			increment need-rooms;
 	if need-rooms is 0:
-		say "ALL ROOMS WORK!";
+		say "ALL ROOMS HAVE EYES-NUMBER/EYES-RULE SET!";
 	else:
-		say "Fix [need-rooms] room[if need-rooms > 1]s[end if].";
+		say "Fix [need-rooms] eyes-rule/eyes-number room setting[if need-rooms > 1]s[end if].";
 
 when play begins:
 	repeat with X running through rooms:
