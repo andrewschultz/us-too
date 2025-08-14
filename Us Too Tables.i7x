@@ -30,8 +30,8 @@ w1 (text)	w2 (text)	first-hom (text)	second-hom	hom-txt-rule (rule)	first-exact	
 "blast"	"ring"	--	--	--	false	false	false	false	"finding the blah string's true purpose"	false	true	true	false	false	sore dark	pre-blast-ring rule	post-blast-ring rule	--	--
 "terrible"	"aid"	--	--	--	false	false	false	false	"becoming worthy of the Terra Blade"	false	true	true	false	false	sore dark	pre-terrible-aid rule	post-terrible-aid rule	--	--
 "board"	"red"	"bored"	--	--	false	false	false	false	"finding something in the Bore Dread"	false	true	true	false	false	bore dread	pre-board-red rule	post-board-red rule	--	--
-"malt"	"hour"	--	--	--	false	false	false	false	"clue for guessing one word right"	false	true	true	false	false	bore dread	pre-malt-hour rule	post-malt-hour rule	--	--
-"join"	"aider"	--	--	--	false	false	false	false	"clue for guessing one word right"	false	true	true	false	false	joy nadir	pre-join-aider rule	post-join-aider rule	--	--
+"malt"	"hour"	--	--	--	false	false	false	false	"befriending the guardians in the maul tower"	false	true	true	false	false	bore dread	pre-malt-hour rule	post-malt-hour rule	--	--
+"join"	"aider"	--	--	--	false	false	false	false	"doing something worthwhile in the joy nadir"	false	true	true	false	false	joy nadir	pre-join-aider rule	post-join-aider rule	--	--
 "dupe"	"it"	--	--	--	false	false	false	false	"making the dew pit useful"	false	true	true	false	false	joy nadir	pre-dupe-it rule	post-dupe-it rule	--	--
 "nah"	"queue"	--	--	--	false	false	false	false	"repelling the [team]"	false	true	true	false	false	blah copse	pre-nah-queue rule	post-nah-queue rule	--	--
 "surf"	"ready"	--	--	--	false	false	false	false	"giving Sir Freddie a new direction"	false	true	true	false	false	blah copse	pre-surf-ready rule	post-surf-ready rule	--	--
@@ -53,29 +53,29 @@ w1 (text)	w2 (text)	first-hom (text)	second-hom	hom-txt-rule (rule)	first-exact	
 "tour"	"boaters"	--	--	--	false	false	false	false	"bringing more business to Turbo Tours"	false	true	false	false	false	turbo tours	pre-tour-boaters rule	post-tour-boaters rule	--	--
 "find"	"rinks"	--	--	--	false	false	false	false	"seeing another place on the Farm Isles"	false	true	true	false	false	far miles farm isles	pre-find-rinks rule	post-find-rinks rule	--	--
 "barn"	"open"	--	--	--	false	false	false	false	"overcoming rejection from the bar"	false	true	true	false	false	far miles farm isles	pre-barn-open rule	post-barn-open rule	--	--
-"bear"	"respond"	--	--	--	false	false	false	false	"clue for guessing one word right"	false	true	true	false	false	berries pond	pre-bear-respond rule	post-bear-respond rule	--	--
+"bear"	"respond"	--	--	--	false	false	false	false	"getting the berries in Berries Pond"	false	true	true	false	false	berries pond	pre-bear-respond rule	post-bear-respond rule	--	--
 "saw"	"bakers"	--	--	--	false	false	false	false	"finding signs of life in Sob Acres"	false	true	true	false	false	sob acres	pre-saw-bakers rule	post-saw-bakers rule	--	--
 "dell"	"eastern"	--	--	--	false	false	false	false	"making Sob Acres less forbidding"	false	true	true	false	false	deli stern	pre-dell-eastern rule	post-dell-eastern rule	--	--
 "dope"	"ale"	--	--	--	false	false	false	false	"finding something to trade your dough pail for"	false	true	true	false	false	deli stern	pre-dope-ale rule	post-dope-ale rule	--	--
-"before"	"during"	--	--	--	false	false	false	false	"figuring what the [toon] really means"	false	true	true	false	false	deli stern	pre-beef-ordering rule	post-beef-ordering rule	--	--
+"beef"	"ordering"	--	--	--	false	false	false	false	"figuring what the [toon] really means"	false	true	true	false	false	deli stern	pre-beef-ordering rule	post-beef-ordering rule	--	--
 "grow"	"nodes"	--	--	--	false	false	false	false	"seeing what's behind the groan odes"	false	true	true	false	false	groan odes	pre-grow-nodes rule	post-grow-nodes rule	--	--
 "no"	"date"	--	--	--	false	false	false	false	"figuring how to destroy the nodes, or the most important one"	false	true	true	false	false	groan odes	pre-no-date rule	post-no-date rule	--	--
-"wheat"	"rye"	--	--	--	false	false	false	false	"guesesing what free samples are on offer"	false	true	true	false	false	deli stern	pre-wheat-rye rule	post-wheat-rye rule	--	--
+"wheat"	"rye"	--	--	--	false	false	false	false	"guessing what free samples are on offer"	false	true	true	false	false	deli stern	pre-wheat-rye rule	post-wheat-rye rule	--	--
 "fell"	"trap"	--	--	--	false	false	false	false	"revealing what's behind the felt wrap"	false	true	true	false	false	fort earns	pre-fell-trap rule	post-fell-trap rule	--	--
 "cellar"	"bin"	--	--	--	false	false	false	false	"escaping the Cell, Urban"	false	true	true	false	false	cell urban	pre-cellar-bin rule	post-cellar-bin rule	--	--
 "too"	"broad"	--	--	--	false	false	false	false	"how to fracture the tube/rod"	false	true	true	false	false	tube rod	pre-too-broad rule	post-too-broad rule	--	--
 "ho"	"languor|langour"	--	--	--	false	false	false	false	"dealing with the paralyzing whole anger"	false	true	true	false	false	tude ark	pre-ho-langour rule	post-ho-langour rule	--	--
 "say"	"jokes"	--	--	--	false	false	false	false	"get by the Sage Oaks"	false	true	true	false	false	sage oaks	pre-say-jokes rule	post-say-jokes rule	--	--
 "gas"	"pouch"	--	--	--	false	false	false	false	"see how to stop gasping OUCH"	false	true	true	false	false	sage oaks	pre-gas-pouch rule	post-gas-pouch rule	--	--
-"damp"	"ink"	--	--	--	false	false	false	false	"clue for guessing one word right"	false	true	true	false	false	dam pink	pre-damp-ink rule	post-damp-ink rule	--	--
-"scry"	"broom"	--	--	--	false	false	false	false	"clue for guessing one word right"	false	true	true	false	false	scribe room	pre-scry-broom rule	post-scry-broom rule	--	--
+"damp"	"ink"	--	--	--	false	false	false	false	"getting something from the dam"	false	true	true	false	false	dam pink	pre-damp-ink rule	post-damp-ink rule	--	--
+"scry"	"broom"	--	--	--	false	false	false	false	"getting something from the Scribe Room"	false	true	true	false	false	scribe room	pre-scry-broom rule	post-scry-broom rule	--	--
 "belt"	"rusted"	--	--	--	false	false	false	false	"figuring how to 'clean' the bell (trusted)"	false	true	true	false	false	scribe room	pre-belt-rusted rule	post-belt-rusted rule	--	--
 "pro"	"sweeping"	--	--	--	false	false	false	false	"figuring how to clear some dust a bit"	false	true	true	false	false	dust which	pre-pro-sweeping rule	post-pro-sweeping rule	--	--
 "cold"	"rum"	--	--	--	false	false	false	false	"knowing what to look for in the coal drum"	false	true	true	false	false	dust which	pre-cold-rum rule	post-cold-rum rule	--	--
 "summon"	"cheese"	--	--	--	false	false	false	false	"figuring what some munchies are"	false	true	true	false	false	--	pre-summon-cheese rule	post-summon-cheese rule	--	--
 "den"	"specs"	--	--	--	false	false	false	false	"finding something more useful than dense pecs"	false	true	true	false	false	--	pre-den-specs rule	post-den-specs rule	--	--
 "use"	"it"	--	--	--	false	false	false	false	"disobeying the throne's orders"	false	true	true	false	false	throne	pre-use-it rule	post-use-it rule	--	--
-"lie"	"fruits"	--	--	--	false	false	false	false	"clue for guessing one word right"	false	true	true	false	false	throne	pre-lie-fruits rule	post-lie-fruits rule	--	--
+"lie"	"fruits"	--	--	--	false	false	false	false	"getting something useful from the life roots"	false	true	true	false	false	throne	pre-lie-fruits rule	post-lie-fruits rule	--	--
 
 chapter mine ooh scoring
 
