@@ -969,7 +969,7 @@ a wordtwisting rule (this is the pre-damp-ink rule):
 
 this is the post-damp-ink rule:
 	now sco-damp-ink is true;
-	say "Hooray! You figured what to do! You get a point!";
+	say "You use the gas pouch to drain out a good dose of damp ink that's dripping from the dam.";
 	declue-here;
 
 chapter too dark tude ark scoring
@@ -1004,10 +1004,10 @@ a wordtwisting rule (this is the pre-scry-broom rule):
 
 this is the post-scry-broom rule:
 	now sco-scry-broom is true;
-	say "You realize a broom must be here. You trade the damp ink in the gas pouch for it. The scribes are impressed with the ink ... so much, they show you an artifact few get to see. 'It is our BELL, TRUSTED. Yet it has some hidden purpose we could not find. Perhaps it will help you.";
+	say "You realize a broom must be here. You trade the damp ink in the gas pouch for it. The scribes are impressed with the ink ... so much, they show you an artifact few get to see. 'It is our BELL, TRUSTED. Yet it has some hidden purpose we could not find. Perhaps it will help you. And -- oh, yes -- do return it when you're done.";
+	now player has broom;
 	moot gas pouch;
 	declue-here;
-	move belt rusted to scribe room;
 
 a wordtwisting rule (this is the pre-belt-rusted rule):
 	if player is not in scribe room, unavailable;
@@ -1072,7 +1072,7 @@ a wordtwisting rule (this is the pre-cold-rum rule):
 	if player is not in dust which, unavailable;
 	if coal drum is not in dust which, unavailable;
 	if sco-cold-rum is true:
-		vcal "You already did this!";
+		vcal "You already found what you could in the coal drum!";
 		already-done;
 	ready;
 
