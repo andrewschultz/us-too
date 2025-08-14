@@ -490,7 +490,25 @@ the blah string is a thing. description is "Looking at it, it doesn't seem like 
 
 part Morph Lairs
 
-Morph Lairs is a room in universal. "You're pretty sure you don't want to enter the lairs here. Even the ones that seem safe could turn unsafe quickly. And yet ... they can't just be THERE.". eyes-number of morph lairs is 46. eyes-rule of Morph Lairs is pre-more-flares rule.
+Morph Lairs is a room in universal. "[if sco-more-flares is false]You're pretty sure you don't want to enter the lairs here. Even the ones that seem safe could turn unsafe quickly. And yet ... they can't just be THERE[else if gs-row-plaider is false]Returning here, you wonder what you will find[else]The row (plaider) of houses that were once morph lairs stands here[end if].". eyes-number of morph lairs is 46. eyes-rule of Morph Lairs is pre-more-flares rule.
+
+after printing the locale description for Morph Lairs when sco-more-flares is true and gs-row-plaider is false:
+	now gs-row-plaider is true;
+	move row plaider to Morph Lairs;
+	say "The morph lairs have certainly morphed. There is now a whole row of houses. They seem lifeless, but they're all -- well, plaid. More plaid than anything you've seen. Why, you could call them a row, plaider.";
+	continue the action;
+
+chapter row plaider
+
+the row plaider is scenery in Morph Lairs. "Boy, it's plaider than anything you've ever seen[if sco-rope-ladder is false]. All that plaid does a number on your eyes. Maybe it's hiding something in plain sight[else]. You're not all that interested in it, now that you've gotten the rope ladder[end if].". eyes-number of row plaider is 46. eyes-rule of row plaider is pre-rope-ladder rule.
+
+chapter rope ladder
+
+the rope ladder is a thing. "It seems sturdy enough, for places slightly out of reach.". eyes-number of rope ladder is -1.
+
+report examining rope ladder:
+	if up is not branchcant, say "But you remember how it uncoiled to reveal a passage up from [here-in of ur branch].";
+	continue the action;
 
 book northeast branch
 

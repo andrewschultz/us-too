@@ -36,7 +36,8 @@ w1 (text)	w2 (text)	first-hom (text)	second-hom	hom-txt-rule (rule)	first-exact	
 "nah"	"queue"	--	--	--	false	false	false	false	"repelling the [team]"	false	true	true	false	false	blah copse	pre-nah-queue rule	post-nah-queue rule	--	--
 "surf"	"ready"	--	--	--	false	false	false	false	"giving Sir Freddie a new direction"	false	true	true	false	false	blah copse	pre-surf-ready rule	post-surf-ready rule	--	--
 "or"	"clerk"	--	--	--	false	false	false	false	"figuring what Sir Freddie was scared of"	false	true	true	false	false	blah copse	pre-or-clerk rule	post-or-clerk rule	--	--
-"more"	"flares"	--	--	--	false	false	false	false	"activating the morph lairs"	false	true	true	false	false	morph lairs	pre-more-flares rule	post-more-flares rule	--	--
+"more"	"flares|flare"	--	"flayers|flayer|flair|flairs"	hom-flairs-flayers rule	false	false	false	false	"activating the morph lairs"	false	true	true	false	false	morph lairs	pre-more-flares rule	post-more-flares rule	--	--
+"rope"	"ladder"	--	--	--	false	false	false	false	"discovering what the row (plaider) holds"	false	true	true	false	false	morph lairs	pre-rope-ladder rule	post-rope-ladder rule	--	--
 "probe"	"all"	--	--	--	false	false	false	false	"finding a purpose for the pro ball"	false	true	true	false	false	ur branch	pre-probe-all rule	post-probe-all rule	--	--
 "peace"	"talks"	--	--	--	false	false	false	false	"finding something incorporeal within the Pea Stalks"	false	true	true	false	false	pea stalks	pre-peace-talks rule	post-peace-talks rule	--	--
 "pea"	"pod"	--	--	--	false	false	false	false	"finding something unusual within the Pea Stalks"	false	true	false	false	false	pea stalks	pre-pea-pod rule	post-pea-pod rule	--	--
@@ -491,19 +492,36 @@ this is the post-or-clerk rule:
 
 chapter morph lairs scoring
 
+this is the hom-flairs-flayers rule:
+	if the player's command includes "flayers" or the player's command includes "flayer":
+		say "You probably don't need flayers as allies, and you really don't need them as enemies.";
+	if the player's command includes "flairs" or the player's command includes "flair":
+		say "Your clothes fail to become less jazzy. Fortunately, since you're on a quest, there's no restaurant manager around requiring this.";
+
 a wordtwisting rule (this is the pre-more-flares rule):
 	if player is not in morph lairs, unavailable;
 	ready;
 
 this is the post-more-flares rule:
 	now sco-more-flares is true;
-	say "You set off the flares, and what do you know? You see another flare coming towards the morph lairs from a distance. Fortunately you already started running to the Ur-Branch. Whereupon you see smoke you follow ... a bit. The path opens up a bit further to the southeast. You have somewhere new to go, though you can't exactly go back north.";
+	say "You set off the flares, and what do you know? You see another flare coming towards the morph lairs from a distance. Fortunately you already started running to the Ur-Branch. Whereupon you see smoke you follow ... a bit. The path opens up a bit further to the southeast. You have somewhere new to go, yet you're still wondering what became of the morph lairs.";
 	now Dome Aching is mapped southeast of Ur Branch;
 	now Ur Branch is mapped northwest of Dome Aching;
 	wfak;
 	declue-here;
-	now north is branchdone;
 	move player to Ur Branch;
+
+chapter morph lairs scoring
+
+a wordtwisting rule (this is the pre-rope-ladder rule):
+	if player is not in morph lairs, unavailable;
+	ready;
+
+this is the post-rope-ladder rule:
+	now sco-rope-ladder is true;
+	say "Your eyes finally adjust to all the egregious plaid, and you discover a plain but sturdy rope ladder. You wonder if there is anything else to do here, but shortly you hear an electronic 'HOW?! SCAM!!!!!!' You look up and see a house cam! You run, just in case there's more security ... surely you must be done here, though ...";
+	now player has rope ladder;
+	block-and-back;
 
 book inside scoring
 

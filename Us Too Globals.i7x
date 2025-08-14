@@ -109,6 +109,7 @@ sco-or-clerk is a truth state that varies.
 chapter Morph Lair
 
 sco-more-flares is a truth state that varies.
+sco-rope-ladder is a truth state that varies.
 
 book east branch
 
