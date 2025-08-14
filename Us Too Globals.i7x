@@ -48,6 +48,7 @@ gs-up-cellar-bin is a truth state that varies.
 gs-row-plaider is a truth state that varies.
 
 gs-nn-noted is a truth state that varies. [helpful note]
+
 chapter bonus stuff
 
 gs-found-real-win is a truth state that varies.
@@ -182,6 +183,17 @@ sco-beef-ordering is a truth state that varies.
 sco-dope-ale is a truth state that varies.
 
 sco-wheat-rye is a truth state that varies.
+
+gs-deli-dell-left is a truth state that varies.
+gs-deli-dell-return is a truth state that varies.
+gs-deli-ale-left is a truth state that varies.
+gs-deli-ale-return is a truth state that varies.
+gs-deli-beef-left is a truth state that varies.
+gs-deli-beef-return is a truth state that varies.
+
+gs-den-seen is a truth state that varies.
+
+gs-deli-party is a truth state that varies.
 
 chapter Turbo Tours
 

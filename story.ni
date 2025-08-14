@@ -654,7 +654,7 @@ chapter dough
 
 the dough pail is a thing. description is "It's a pail full of dough.". eyes-number of dough pail is 43. eyes-rule of dough pail is pre-dope-ale rule.
 
-the dope ale is a thing. description is "Well, its label is pretty dope, you guess.". eyes-number of dope ale is -1.
+the dope ale is a thing. indefinite article of dope ale is "some". description is "Well, its label is pretty dope, you guess.". eyes-number of dope ale is -1.
 
 part Inner Nest
 
@@ -759,21 +759,46 @@ to reveal-den:
 
 part Deli Stern
 
-Deli Stern is a room in universal. printed name is "[if sco-dell-eastern is true]'Die, Nerviness' Diner Venus[else]Deli, Stern[end if]". "You can only really go out[if sco-dell-eastern is true] (well, east, same thing)[end if] here.". eyes-number of Deli Stern is 47. eyes-rule of Deli Stern is pre-dell-eastern rule.
+Deli Stern is a room in universal. printed name is "[if gs-deli-ale-left is true]'Die, Nerviness' Diner Venus[else]Deli, Stern[end if]". "You can only really go out[if sco-dell-eastern is true] (well, east, same thing)[end if] here.". eyes-number of Deli Stern is 47. eyes-rule of Deli Stern is pre-dell-eastern rule.
+
+chapter Fey Loners Fail Owners
+
+the Fey Loners Fail Owners are a plural-named sentient in Deli Stern. Printed name is "fey loners/fail-owners". eyes-number of owners is 1. description is "They look pretty unsocial, which is pretty bad for business owners. Maybe you can TALK to them for what they need.". "Some [owners] [if gs-deli-dell-left is false]trudge around miserably here[else if gs-deli-ale-left is false][one of]look less miserable now[or]stand around, muttering about finding decent bread[stopping][else]beam with pride at their burgeoning business[end if]."
+
+check going in Deli Stern when room gone to is not nowhere:
+	if sco-dell-eastern is true, now gs-deli-dell-left is true;
+	if sco-dope-ale is true, now gs-deli-ale-left is true;
+	if sco-beef-ordering is true, now gs-deli-beef-left is true;
+
+after printing the locale description for deli stern:
+	if gs-deli-dell-left is true and gs-deli-dell-return is false:
+		now gs-deli-dell-return is true;
+		say "The [owners] perk up on seeing you. 'We had a few customers. We might even have prospective repeat customers! But we're running short of bread. We had some of the cheap white generic stuff.'";
+	if gs-deli-ale-left is true and gs-deli-ale-return is false:
+		now gs-deli-ale-return is true;
+		say "The [owners] look a bit happier than before. 'We've had a few more customers. We even rebranded our business! And created some ambience! It advertises some new meals! If you could be our first customer and try it out... we think it's sort of cute...' They point to something they drew on the wall. 'A [toon]! Pretty spiffy, eh?'";
+		move toon to Deli Stern;
+	if gs-deli-beef-left is true and gs-deli-beef-return is false:
+		now gs-deli-beef-return is true;
+		say "The [owners] cheer your return. 'Wow! You've really helped up! Your dough was great, but ... with the profits from our latest customers, we bought some entirely new stuff!' They point to yet another sign up on the wall. 'Free samples for everyone! Well, you more than most, for all your help.'";
+		move WHEE TRY to Deli Stern;
+	continue the action;
 
 chapter Toon Eat Too Neat
 
-the Toon Eat Too Neat is a thing. printed name is "Toon Eat-Too-Neat". "A [toon] is scribbled on the wall here.". description is "[if sco-beef-ordering is true]You figured what it meant. Yay, you[else]The [toon]has three captions, two blurred, one saying (redacted). But the images are clear: a skinny frowning man, the same man ravenously eating, and the same man, belly distended, sitting happily in a recliner. What does it mean? What should it mean? What can it mean?[end if]". eyes-number of Toon is 48. eyes-rule of Toon is pre-beef-ordering rule.
+the Toon Eat Too Neat is a thing. printed name is "Toon Eat-Too-Neat". "The [toon] [the owners] scribbled is up on the wall here.". description is "[if sco-beef-ordering is true]You figured what it meant. Yay, you[else]The [toon]has three captions, two blurred, one saying (redacted). But the images are clear: a skinny frowning man, the same man ravenously eating, and the same man, belly distended, sitting happily in a recliner. What does it mean? What should it mean? What can it mean?[end if]". eyes-number of Toon is 48. eyes-rule of Toon is pre-beef-ordering rule.
 
-the beef is a thing. description is "Beef. Lots and lots.". eyes-number of beef is -1.
+chapter meat
+
+the Me Track Meat Rack is a thing. description is "It's a sample of all different sorts of meats, prepared different ways, all organized for tracking like a good rack should be.". printed name is "me-track-meat rack". eyes-number of meat rack is -1.
 
 chapter pliers
 
-The mope liars mo pliers are a plural-named thing. description is "On the one hand, they're pliers, so they can't be too hard to use. But on the other hand, they were supposed to be kind of special, so you're worried you've overlooked an obvious feature. Gues you can only hope to use them right when the time comes.". printed name is "'Mope, Liars, Mo[']' Pliers".
+The mope liars mo pliers are a plural-named thing. description is "On the one hand, they're pliers, so they can't be too hard to use. But on the other hand, they were supposed to be kind of special, so you're worried you've overlooked an obvious feature. Gues you can only hope to use them right when the time comes.". printed name is "'Mope, Liars, Mo[']' Pliers". eyes-number of pliers is 1.
 
 chapter WHEE TRY
 
-the WHEE TRY sign is a thing. "A WHEE TRY sign is here--free samples!". description is "The [owners] see you looking at the sign, which is covered with different types of bread. 'You won't just get a small free sample. You'll get a lot more... of what? Well, you have to guess.". eyes-number of WHEE TRY is 53. eyes-rule of WHEE TRY is pre-wheat-rye rule.
+the WHEE TRY sign is a thing. "A WHEE TRY sign is here--free samples!". description is "[if sco-wheat-rye is false]The [owners] see you looking at the sign, which is covered with different types of bread. 'You won't just get a small free sample. You'll get a lot more... of what? Well, you have to guess[else]You look at the sign again. Man, those were some good free samples[end if].". eyes-number of WHEE TRY is 53. eyes-rule of WHEE TRY is pre-wheat-rye rule.
 
 part groan odes
 

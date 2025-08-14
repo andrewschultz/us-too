@@ -784,25 +784,33 @@ a wordtwisting rule (this is the pre-dope-ale rule):
 	if player is not in deli stern:
 		vcp "Hmm, you could exchange the dough pail for dope ale, but ... nobody here wants dough, and nobody here might have dope ale.";
 		not-yet;
+	if sco-dell-eastern is false:
+		vcp "The [owners] whine that the location here is terrible. It's so dreary outside. So what if they can actually make bread?";
+		not-yet;
+	if gs-deli-dell-left is false:
+		vcp "The [owners] almost look bright for a minute. 'Hey, we could pull off that trade, if ... if ... we got some customers. Come back in a bit, eh?";
+		not-yet;
 	ready;
 
 this is the post-dope-ale rule:
 	now sco-dope-ale is true;
 	now player has dope ale;
+	moot dough pail;
 	say "You make the trade: dough pail for dope ale! The [owners] note they're actually getting business. They bet if you come back a bit later, there'll be even more.";
 
 a wordtwisting rule (this is the pre-beef-ordering rule):
 	if player is not in deli stern, unavailable;
+	if toon is not in deli stern, unavailable;
 	if sco-beef-ordering is true:
-		vcal "You already decoded the [toon]!";
+		vcal "You already decoded the [toon] and made a good swap for the beef!";
 		already-done;
 	ready;
 
 this is the post-beef-ordering rule:
 	now sco-beef-ordering is true;
-	say "Yes, that's what to do. You consider ordering, but what can you pay with? You have nothing too valuable, or so it seems.[paragraph break]But wait! The [owners] spy the Terra Blade on you. You start mumbling surely it can't be used for something so pedestrian ... but perhaps it, or the spirit in it, is sick of saving the world and stuff.";
+	say "Yes, that's what to do. You consider ordering, but what can you pay with? You have nothing too valuable, or so it seems.[paragraph break]But wait! The [owners] spy the Terra Blade on you. You start mumbling surely it can't be used for something so pedestrian ... but perhaps it, or the spirit in it, is sick of saving the world and stuff. 'Beef rended: befriended!' the [owners] exclaim, as they hand you a full variety platter: a [rack]!";
 	moot terra blade;
-	now player has beef;
+	now player has meat rack;
 
 a wordtwisting rule (this is the pre-wheat-rye rule):
 	if player is not in deli stern, unavailable;
@@ -814,8 +822,9 @@ a wordtwisting rule (this is the pre-wheat-rye rule):
 
 this is the post-wheat-rye rule:
 	now sco-wheat-rye is true;
-	say "The [owners] applaud you. 'Yes ... that's just the thing ...' they chop up the wheat and rye with the erstwhile Terra Blade.";
+	say "The [owners] applaud you. 'Yes ... that's just the thing ...' they chop up the wheat and rye with the erstwhile Terra Blade. 'Oh! There's one other thing ... business is booming so much, maybe this will come in handy for you. We don't have any repairs.' They hand you some [pliers].";
 	now player has rye bread;
+	now player has pliers;
 
 chapter turbo tours scoring
 
