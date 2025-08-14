@@ -1161,9 +1161,12 @@ Too Dark Tude Ark	"[if sco-ho-langour is false]It feels hopeless to go any way b
 Dam Pink	"You can't see any way but back north."
 Scribe Room	"You can't see any way but back north."
 Dust Which Does Twitch	"You can't see any way but back north."
-Turbo Tours	"You can only go back east to the Bowl/Ditch[if sco-stark-raft is true]or south via the raft[end if]."
-Farm Isles	"You can only go back north to Turbo Tours[if sco-find-rinks is true and sco-bear-respond is false] or south[end if]."
+Turbo Tours	"You can only go back east to the Bowl/Ditch[if sco-stark-raft is true and sco-bear-respond is false]or south via the raft[end if]."
+Farm Isles	"You can only go back north to [Turbo Tours][if sco-find-rinks is true and sco-bear-respond is false] or south[end if]."
 Berries Pond	"You can't see any way but back north."
+Joy Nadir	"The only way out is back west."
+Groan Odes	"The only safe way is back outside."
+Throne Ow Throw Now	"You can only go back down here."
 
 to say acres-to-deli: say "[if sco-dell-eastern is true]west/[end if]in"
 
