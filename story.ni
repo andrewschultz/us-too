@@ -328,6 +328,14 @@ after printing the locale description for Ur Branch when sco-mess-pot is true an
 	reveal sore dark to northwest;
 	continue the action;
 
+after printing the locale description for Ur Branch when player has rope ladder and up is branchcant:
+	say "You feel [the ladder] tug you off in an odd direction. There you find a steep cliff face. The rope ladder seems to uncoil and go upwards. Hmm, you'd have missed that, but you know it now.";
+	reveal Throne Ow Throw Now to up;
+	continue the action;
+
+check going up in Ur Branch when up is not branchcant and sco-no-date is false:
+	say "You feel a sense of dread as you climb up the rope ladder. Whatever's up there, you're not ready." instead;
+
 check going west in Ur Branch when sco-hike-up is true:
 	if extra-turns is 0:
 		say "Your pro ball pulses bright red. You remember, from your trip to see the high cup, there was something beyond there. But it looks awfully dense and spooky ahead. You trust the pro ball when it indicates you shouldn't trust yourself. Well, without proper preparation." instead;
