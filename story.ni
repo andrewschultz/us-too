@@ -1147,12 +1147,13 @@ volume misc map
 
 index map with mine ooh mapped west of house well how swell.
 index map with bore dread mapped south of mine ooh.
+index map with Joy Nadir mapped east of Bore Dread.
 index map with ur branch mapped southwest of bore dread.
 
 index map with Blah Copse mapped north of ur branch.
 index map with Morph Lairs mapped north of Blah Copse.
 
-index map with sore dark mapped northwest of ur branch.
+index map with sore dark mapped west of Morph Lairs.
 
 index map with Beach Ill mapped east of ur branch.
 index map with Pile Up Isle mapped east of Beach Ill.
@@ -1163,16 +1164,24 @@ index map with Dome Aching mapped southeast of ur branch.
 index map with inner nest mapped southeast of Dome Aching.
 
 index map with Fort Earns Four Turns mapped southwest of Ur Branch.
-index map with Cell Urban mapped southwest of Fort Earns Four Turns.
-index map with Cellar Bin mapped west of Fort Earns Four Turns.
+index map with Cellar Bin mapped south of Berries Pond.
+index map with Cell Urban mapped west of Cellar Bin.
 
-index map with Bowl Ditch mapped north of Cellar Bin.
+index map with Bowl Ditch mapped west of Ur Branch.
 index map with Sob Acres mapped north of Bowl Ditch.
 index map with Deli Stern mapped west of Sob Acres.
+index map with Groan Odes mapped north of Deli Stern.
 
-index map with Sage Oaks mapped south of Fort Earns.
-index map with Too Dark Tude Ark mapped east of Sage Oaks.
-index map with Tube Rod mapped east of Too Dark Tude Ark.
+index map with Sage Oaks mapped south of Dome Aching.
+index map with Too Dark Tude Ark mapped west of Sage Oaks.
+index map with Tube Rod mapped west of Too Dark Tude Ark.
 
 index map with Dam Pink mapped south of Tube Rod.
 index map with Scribe Room mapped south of Too Dark Tude Ark.
+index map with Dust Which mapped south of Sage Oaks.
+
+index map with Turbo Tours mapped west of Bowl Ditch.
+index map with Farm Isles mapped south of Turbo Tours.
+index map with Berries Pond mapped south of Farm Isles.
+
+index map with Throne Ow mapped south of Inner Nest.
