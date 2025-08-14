@@ -780,6 +780,29 @@ part Scribe Room
 
 Scribe Room is a room in universal. "You can only go back north.". eyes-number of Scribe Room is 45. eyes-rule of Scribe Room is pre-scry-broom rule.
 
+after printing the locale description for scribe room when player has broom and sco-pro-sweeping is true:
+	say "You hand the broom back to the scribes. They're very impressed you can do ... that sort of work. They pull out something else: a bell (trusted). It's big and impressive, but it's a bit tarnished, which each of them mentions in an offhand way, just in case you know anyone who might be able to help. Or you're good at other things besides sweeping. You seem multi-talented, they say.";
+	moot broom;
+	move bell trusted to Scribe Room.
+
+chapter scribes
+
+the scribes are sentients in Scribe Room. "[one of]Unsurprisingly,[or]Those[stopping] scribes continue to do their scribing thing and occasionally bustle about to assist others' scribing.". eyes-number of scribes is 1.
+
+chapter broom
+
+the broom is a thing. description is "It's not a magical sort of broom, which may be all for the best. But it's not broken or run-down, either. The scribes weren't big on extreme cleanliness.[paragraph break][if sco-pro-sweeping is false]The scribes asked you to return it once you were done with it[else]Maybe you should return it to the scribes, as they asked, now you're done with it[end if].". eyes-number of broom is 1.
+
+check eyeing broom: say "The eyes show nothing. Perhaps it will help you clean something else up, though." instead;
+
+chapter bell trusted
+
+the bell trusted is a thing. "The bell (trusted) the scribes showed you now sits off to the side.". description is "It looks like it's seen a bit of use and is not as bright as it could be. The scribes may have trusted you to see it, but they may also have hoped you were the sort to make things look nicer, since you traded for the broom.". eyes-number of bell trusted is 46. eyes-rule of bell trusted is pre-belt-rusted rule.
+
+chapter belt rusted
+
+the belt rusted is a thing. description is "It might look quite nice if it were spruced up a bit.". eyes-number of belt rusted is -1.
+
 part Dust Which Does Twitch
 
 Dust Which Does Twitch is a room in universal. "You can only go back north.". eyes-number of Dust Which is 1.

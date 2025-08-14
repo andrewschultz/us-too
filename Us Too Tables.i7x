@@ -67,6 +67,7 @@ w1 (text)	w2 (text)	first-hom (text)	second-hom	hom-txt-rule (rule)	first-exact	
 "gas"	"pouch"	--	--	--	false	false	false	false	"see how to stop gasping OUCH"	false	true	true	false	false	sage oaks	pre-gas-pouch rule	post-gas-pouch rule	--	--
 "damp"	"ink"	--	--	--	false	false	false	false	"clue for guessing one word right"	false	true	true	false	false	dam pink	pre-damp-ink rule	post-damp-ink rule	--	--
 "scry"	"broom"	--	--	--	false	false	false	false	"clue for guessing one word right"	false	true	true	false	false	scribe room	pre-scry-broom rule	post-scry-broom rule	--	--
+"belt"	"rusted"	--	--	--	false	false	false	false	"figuring how to 'clean' the bell (trusted)"	false	true	true	false	false	scribe room	pre-belt-rusted rule	post-belt-rusted rule	--	--
 "pro"	"sweeping"	--	--	--	false	false	false	false	"figuring how to clear some dust a bit"	false	true	true	false	false	dust which	pre-pro-sweeping rule	post-pro-sweeping rule	--	--
 "cold"	"rum"	--	--	--	false	false	false	false	"knowing what to look for in the coal drum"	false	true	true	false	false	dust which	pre-cold-rum rule	post-cold-rum rule	--	--
 "summon"	"cheese"	--	--	--	false	false	false	false	"figuring what some munchies are"	false	true	true	false	false	--	pre-summon-cheese rule	post-summon-cheese rule	--	--
@@ -949,9 +950,22 @@ a wordtwisting rule (this is the pre-scry-broom rule):
 
 this is the post-scry-broom rule:
 	now sco-scry-broom is true;
-	say "You realize a broom must be here. You trade the damp ink in the gas pouch for it.";
+	say "You realize a broom must be here. You trade the damp ink in the gas pouch for it. The scribes are impressed with the ink ... so much, they show you an artifact few get to see. 'It is our BELL, TRUSTED. Yet it has some hidden purpose we could not find. Perhaps it will help you.";
 	moot gas pouch;
 	declue-here;
+	move belt rusted to scribe room;
+
+a wordtwisting rule (this is the pre-belt-rusted rule):
+	if player is not in scribe room, unavailable;
+	if bell trusted is not in scribe room, unavailable;
+	if sco-belt-rusted is true:
+		say "You already made the bell (trusted) look better.";
+	ready;
+
+this is the post-belt-rusted rule:
+	now sco-belt-rusted is true;
+	say "The scribes get together and nod their heads. They agree this must be it. Your request is a wise choice, one not motivated by greed. The rust from the bell flakes off to form a belt. It becomes much shinier. And perhaps ... well, this belt, rusted, was something much more once. Perhaps you are the one to return it to its former glory.";
+	now player has belt rusted;
 
 chapter sage oaks scoring
 

@@ -219,6 +219,7 @@ sco-damp-ink is a truth state that varies.
 chapter Scribe Room
 
 sco-scry-broom is a truth state that varies.
+sco-belt-rusted is a truth state that varies.
 
 chapter Dust Which Does Twitch
 
