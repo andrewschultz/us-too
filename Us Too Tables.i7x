@@ -75,6 +75,7 @@ w1 (text)	w2 (text)	first-hom (text)	second-hom	hom-txt-rule (rule)	first-exact	
 "summon"	"cheese"	--	--	--	false	false	false	false	"figuring what some munchies are"	false	true	true	false	false	--	pre-summon-cheese rule	post-summon-cheese rule	--	--
 "den"	"specs"	--	--	--	false	false	false	false	"finding something more useful than dense pecs"	false	true	true	false	false	--	pre-den-specs rule	post-den-specs rule	--	--
 "use"	"it"	--	--	--	false	false	false	false	"disobeying the throne's orders"	false	true	true	false	false	throne	pre-use-it rule	post-use-it rule	--	--
+"lie"	"fruits"	--	--	--	false	false	false	false	"clue for guessing one word right"	false	true	true	false	false	throne	pre-lie-fruits rule	post-lie-fruits rule	--	--
 
 chapter mine ooh scoring
 
@@ -1091,6 +1092,25 @@ this is the post-use-it rule:
 	say "Where the throne once sat, there's now something glistening. 'You have freed the life roots,' booms a voice.";
 	move life roots to Throne;
 	moot orb;
+
+a wordtwisting rule (this is the pre-lie-fruits rule):
+	if player is not in throne, unavailable;
+	if life roots are not in throne, unavailable;
+	ready;
+
+this is the post-lie-fruits rule:
+	now sco-lie-fruits is true;
+	say "You call out the life roots: 'come on, we can't do a heck of a lot with that. Do you really need to be all basso profundo?'[paragraph break]To your surprise, they shrivel up. A voice intones: 'Congratulations. You have seen through us. So many adventurers would start looking for eternal life, or profiting from this.'";
+	wfak;
+	say "'Actually,' you say, 'I just have this list of stuff I needed for a big meal. I've looked everywhere, but I'm still out a ton of vegetables and fruits. I was kinda hoping there'd be at least some fruits here...'";
+	wfak;
+	say "'Are you saying the life roots are incapable of creating vegetables, too?'[paragraph break]'Um, no, not at all, just didn't want to ask anyone to do too much, here. I mean it might like harm the soil and render it untillable for generations of farmers to come. Or something. Heck. Now I'm sounding basso profundo.'";
+	wfak;
+	say "'Your self-awareness is admirable. Yes, we have spare vegetables. They are kind of funny-shaped. Is that a problem? No? Good.'[paragraph break]Your [ugh] feels like it may burst from the additional weight! Good thing you kept those dense pecs when you made the den specs.";
+	wfak;
+	say "But now, this space needs to heal, free of human interference. Even worthy humans.' You nod and leave. There can't be much left to do, now.";
+	now player has assortment;
+	block-and-back;
 
 volume loose intro
 

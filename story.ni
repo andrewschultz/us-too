@@ -904,6 +904,9 @@ chapter Life Roots
 
 the Life Roots are a thing. "Life Roots have been revealed from where the throne was. And yet, they seem a bit artificial. They aren't that impressive, and maybe they're hiding something that proves them less than they claim to be.". eyes-number of Life Roots is 36. eyes-rule of Life Roots is pre-lie-fruits rule.
 
+chapter assortment
+
+there is a thing called the fruit and veggie assortment. description is "Just about everything you could want.".
 
 volume unsorted
 
