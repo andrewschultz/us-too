@@ -46,10 +46,6 @@ understand the command "ea" as something new.
 
 understand "ea" as eaing.
 
-to game-specific-cleanup:
-	if eyeall-test is true:
-		follow the eyeall rule;
-
 carry out eaing:
 	if eyeall-test is false, follow the eyeall rule;
 	now eyeall-test is true;

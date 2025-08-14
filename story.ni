@@ -828,14 +828,19 @@ part Far Miles Farm Isles
 
 Far Miles Farm Isles is a room in universal. eyes-number of Farm Isles is 1.
 
+check going north in farm isles: raft-tours;
+
+chapter bar nopin
+
 the Bar Nopin is a thing in Far Miles. printed name of Bar Nopin is "Bar, Nopin[']". eyes-number of bar nopin is 44. eyes-rule of bar nopin is pre-barn-open rule.
+
+chapter fine drinks
 
 the fine drinks ad is a thing in Far Miles. eyes-number of fine drinks ad is 45. eyes-rule of fine drinks is pre-find-rinks rule.
 
 chapter egg of a guv
 
 the egg of a guv is a thing. description is "It's only one egg, but boy is it impressive! The barn (open) really did you a favor, but all the same, you'll need more than one for your little shopping list.". eyes-number of egg of a guv is 1.
-check going north in farm isles: raft-tours;
 
 part Berries Pond
 
@@ -895,8 +900,6 @@ the scribes are sentients in Scribe Room. "[one of]Unsurprisingly,[or]Those[stop
 chapter broom
 
 the broom is a thing. description is "It's not a magical sort of broom, which may be all for the best. But it's not broken or run-down, either. The scribes weren't big on extreme cleanliness.[paragraph break][if sco-pro-sweeping is false]The scribes asked you to return it once you were done with it[else]Maybe you should return it to the scribes, as they asked, now you're done with it[end if].". eyes-number of broom is 1.
-
-check eyeing broom: say "The eyes show nothing. Perhaps it will help you clean something else up, though." instead;
 
 chapter bell trusted
 
@@ -1000,6 +1003,12 @@ book drop/take
 check taking: if noun is not a hintthing, say "You never need to take anything explicitly in [this-game], though you have the option of taking two hint items. However, trying to take an item may give you a hint as to what you really need to do to acquire or use it." instead;
 
 check drop2ing: say "You never need to drop anything explicitly in [this-game]. Often, when you're done with something, it will be consumed. Also, there is no inventory limit." instead;
+
+volume semi-regular/often used verbs
+
+book eyeing
+
+check eyeing broom: say "The eyes show nothing. Perhaps it's better the broom isn't magical. You saw [i]Fantasia[r]. It could probably help you clean up somewhere, though." instead;
 
 book eating
 
