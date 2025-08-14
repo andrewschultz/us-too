@@ -510,7 +510,12 @@ The board red is a thing. printed name is "board (red)". "It's about six feet lo
 
 part Joy Nadir
 
-Joy Nadir is a room in universal. it is east of Bore Dread.
+Joy Nadir is a room in universal. it is east of Bore Dread. printed name is "[if sco-join-aider is true]Dew Pit[else]Joy Nadir[end if]". "[if sco-join-aider is false]Maybe the maul tower was guarding you for your own good. It seems that way on first impression[else]It's less cheerless now. But you still hope you can do something here[end if].". eyes-number of joy nadir is 45. eyes-rule of joy nadir is pre-join-aider rule.
+
+chapter dew pit
+
+a dew pit is scenery. "It seems hungry but not greedy.".
+
 
 book inside
 

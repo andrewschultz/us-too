@@ -31,6 +31,7 @@ w1 (text)	w2 (text)	first-hom (text)	second-hom	hom-txt-rule (rule)	first-exact	
 "terrible"	"aid"	--	--	--	false	false	false	false	"becoming worthy of the Terra Blade"	false	true	true	false	false	sore dark	pre-terrible-aid rule	post-terrible-aid rule	--	--
 "board"	"red"	"bored"	--	--	false	false	false	false	"finding something in the Bore Dread"	false	true	true	false	false	bore dread	pre-board-red rule	post-board-red rule	--	--
 "malt"	"hour"	--	--	--	false	false	false	false	"clue for guessing one word right"	false	true	true	false	false	bore dread	pre-malt-hour rule	post-malt-hour rule	--	--
+"join"	"aider"	--	--	--	false	false	false	false	"clue for guessing one word right"	false	true	true	false	false	joy nadir	pre-join-aider rule	post-join-aider rule	--	--
 "nah"	"queue"	--	--	--	false	false	false	false	"repelling the [team]"	false	true	true	false	false	blah copse	pre-nah-queue rule	post-nah-queue rule	--	--
 "surf"	"ready"	--	--	--	false	false	false	false	"giving Sir Freddie a new direction"	false	true	true	false	false	blah copse	pre-surf-ready rule	post-surf-ready rule	--	--
 "or"	"clerk"	--	--	--	false	false	false	false	"figuring what Sir Freddie was scared of"	false	true	true	false	false	blah copse	pre-or-clerk rule	post-or-clerk rule	--	--
@@ -401,6 +402,26 @@ this is the post-malt-hour rule:
 	now sco-malt-hour is true;
 	say "You call out for malt hour, which maybe isn't quite as good as happy hour. Heck, it might even be a chocolate malt and not malt liquor. But you promise liquid refreshment, which you have in spades, and the guardians come down to share it with you. You have a good old talk about ... well, everything. You explain your quest, which they actually find kind of cool. They let you through to the east.";
 	reveal Joy Nadir to east;
+
+chapter joy nadir scoring
+
+a wordtwisting rule (this is the pre-join-aider rule):
+	if player is not in joy nadir, unavailable;
+	if player does not have belt rusted:
+		vcp "The belt (rusted) crackles, but nothing else happens.";
+		not-yet;
+	if sco-join-aider is true:
+		vcal "You already formed the [orb]!";
+		already-done;
+	ready;
+
+this is the post-join-aider rule:
+	now sco-join-aider is true;
+	say "With a rumble, the belt and the pro ball come together to form ... an ORB AND/OR BAND! You feel its power. It is not to be used lightly. Also, the gloom in the general area lifts. It feels less dry, and a dew pit appears.";
+	moot belt rusted;
+	moot pro ball;
+	now player has orb;
+	move dew pit to joy nadir;
 
 book north branch scoring
 

@@ -93,6 +93,9 @@ chapter bore dread
 sco-board-red is a truth state that varies.
 sco-malt-hour is a truth state that varies.
 
+chapter joy nadir
+
+sco-join-aider is a truth state that varies.
 book north branch
 
 chapter Blah Copse
