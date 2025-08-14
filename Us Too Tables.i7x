@@ -387,10 +387,9 @@ a wordtwisting rule (this is the pre-board-red rule):
 
 this is the post-board-red rule:
 	now sco-board-red is true;
-	say "You turn up a board (red) ... it's narrow and six feet long, made of styrofoam, with CATCH THE WAVES and STAND ON THIS SIDE written on one side. Since it wasn't hard to find, you don't feel excited you found it, but you carry it anyway.";
+	say "You turn up a board (red) ... it's narrow and six feet long, made of styrofoam, with CATCH THE WAVES and STAND ON THIS SIDE written on one side. Since it wasn't hard to find, you don't feel excited you found it, but you carry it anyway. Thankfully, nobody in the maul tower gaffles or arrests you for stealing.";
 	now player has board red;
 	declue-here;
-	block-and-back;
 
 a wordtwisting rule (this is the pre-malt-hour rule):
 	if player is not in bore dread, unavailable;
@@ -407,7 +406,7 @@ a wordtwisting rule (this is the pre-malt-hour rule):
 
 this is the post-malt-hour rule:
 	now sco-malt-hour is true;
-	say "You call out for malt hour, which maybe isn't quite as good as happy hour. Heck, it might even be a chocolate malt and not malt liquor. But you promise liquid refreshment, which you have in spades, and the guardians come down to share it with you. You have a good old talk about ... well, everything. You explain your quest, which they actually find kind of cool. They let you through to the east.";
+	say "You call out for malt hour, which maybe isn't quite as good as happy hour. Heck, it might even be a chocolate malt and not malt liquor. But you promise liquid refreshment, which you have in spades, and the guardians come down to share it with you. There are fewer guardians than you thought, so you can save some alcohol for later.[paragraph break]You have a good old talk about ... well, everything. You explain your quest, which they actually find kind of cool. They mention they need to sleep off the booze and are glad to let you through to the east.";
 	reveal Joy Nadir to east;
 
 chapter joy nadir scoring
@@ -442,9 +441,10 @@ a wordtwisting rule (this is the pre-dupe-it rule):
 
 this is the post-dupe-it rule:
 	now sco-dupe-it is true;
-	say "You rest the egg of a guv in the dew pit. Nothing happens, then a rumbling. The egg grows and splits into ten identical, larger eggs ... and not only that, a small cardboard container arises from the dew pit. It's labeled TEN DREGS['] TENDER EGGS. You take it. The dew pit grows dull. It's probably served its purpose.";
+	say "You rest the egg of a guv in the dew pit. Nothing happens, then a rumbling. The egg grows and splits into ten identical, larger eggs ... and not only that, a small cardboard container arises from the dew pit. It's labeled TEN DREGS['] TENDER EGGS. You take it. The dew pit grows dull. It's probably served its purpose. In fact, you can't think of anything else to do here. So you return to...";
 	now player has tender eggs;
 	moot egg of a guv;
+	block-and-back;
 
 book north branch scoring
 
