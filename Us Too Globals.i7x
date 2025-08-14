@@ -41,12 +41,13 @@ gs-using-known is a truth state that varies.
 gs-taken-inventory is a truth state that varies.
 gs-take-hintthing-note is a truth state that varies.
 
-chapter game-critical
+chapter game-critical, or definitely seen in the course of the game
 
 gs-tried-black-ops is a truth state that varies.
 gs-up-cellar-bin is a truth state that varies.
 gs-row-plaider is a truth state that varies.
 
+gs-nn-noted is a truth state that varies. [helpful note]
 chapter bonus stuff
 
 gs-found-real-win is a truth state that varies.

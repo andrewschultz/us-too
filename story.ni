@@ -376,8 +376,12 @@ chapter ssing
 ssing is an action out of world.
 
 understand the command "ss" as something new.
+understand the command "s2" as something new.
+understand the command "2s" as something new.
 
 understand "ss" as ssing when player is in ur branch and sign ought is in ur branch.
+understand "s2" as ssing when player is in ur branch and sign ought is in ur branch.
+understand "2s" as ssing when player is in ur branch and sign ought is in ur branch.
 
 carry out ssing:
 	move player to entry 2 of south-found;
@@ -388,11 +392,31 @@ chapter sssing
 sssing is an action out of world.
 
 understand the command "sss" as something new.
+understand the command "s3" as something new.
+understand the command "3s" as something new.
 
 understand "sss" as sssing when player is in ur branch and sign ought is in ur branch.
+understand "3s" as sssing when player is in ur branch and sign ought is in ur branch.
+understand "s3" as sssing when player is in ur branch and sign ought is in ur branch.
 
 carry out sssing:
 	move player to entry 3 of south-found;
+	the rule succeeds;
+
+chapter nning
+
+nning is an action out of world.
+
+understand the command "nn" as something new.
+understand the command "n2" as something new.
+understand the command "2n" as something new.
+
+understand "nn" as nning when player is in Dust Which or player is in Scribe Room or player is in Dam Pink.
+understand "n2" as nning when player is in Dust Which or player is in Scribe Room or player is in Dam Pink.
+understand "2n" as nning when player is in Dust Which or player is in Scribe Room or player is in Dam Pink.
+
+carry out nning:
+	move player to Ur Branch;
 	the rule succeeds;
 
 book east branch
@@ -782,6 +806,11 @@ Berries Pond is a room in universal. eyes-number of Berries Pond is 47. eyes-rul
 check going to berries pond when sco-bear-respond is true: say "That would be greedy." instead;
 
 book south area
+
+after printing the locale description when (player is in scribe room or player is in dam pink or player is in dust which) and gs-nn-noted is false:
+	now gs-nn-noted is true;
+	say "[i][bracket][b]NOTE[r][i]: you can use NN to go back to the ur-branch from here or (spoiler alert) any other room like this.[close bracket][i][line break]";
+	continue the action;
 
 part Tube Rod
 
