@@ -911,17 +911,18 @@ chapter groan odes scoring
 a wordtwisting rule (this is the pre-grow-nodes rule):
 	if player is not in groan odes, unavailable;
 	if sco-grow-nodes is true:
-		vcal "You already did this!";
+		vcal "The nodes have already grown and been revealed. How to destroy them?!";
 		already-done;
 	ready;
 
 this is the post-grow-nodes rule:
 	now sco-grow-nodes is true;
-	say "The groan odes retract, and nodes grow out, creating a more menacing noise.";
+	say "The groan odes retract, as nodes grow out, creating a more menacing noise. Ah, so that's what you're up against!";
 	move nodes to odes;
 
 a wordtwisting rule (this is the pre-no-date rule):
 	if player is not in groan odes, unavailable;
+	if nodes are not in groan odes, unavailable;
 	if player does not have pliers:
 		vcp "Yes ... that feels right, but you have no tool with which to tear apart node eight.";
 		not-yet;
@@ -929,14 +930,18 @@ a wordtwisting rule (this is the pre-no-date rule):
 
 this is the post-no-date rule:
 	now sco-no-date is true;
-	say "You realize which node to hack up. You realise what to say. The [pliers] do their work on node eight. 'Imminent destruction?' you scoff. 'NO DATE!'[paragraph break]You hear a FIZZ, then a BOOM ... the explosion knocks you back.";
+	say "You realize which node to hack up. You realise what to say. The [pliers] do their work on node eight. 'Imminent destruction?' you scoff. 'NO DATE!'[paragraph break]You hear a FIZZ, then a BOOM ... the explosion knocks you back. Boy! It's a good thing you were still wearing those den specs! Thr pliers fly from your hand and into the specs, which they twist and shatter and blow off your face into a corner. A corner which disappears as the roof starts to collapse. You figure it's a good time to go back to the dell.";
 	wfak;
-	say "Then, people come pouring in. They lift you up in the air, which is fun for the first fifteen seconds, but you know they mean well. They prove they mean well by handing you a valuable item.";
+	say "There, people start streaming towards you. They lift you up in the air, which is fun for the first fifteen seconds, but you know they mean well. They prove they mean well by handing you a valuable item.";
 	wfak;
 	say "'THE HELP-IN-HELL PIN,' one of them booms. You note you haven't come across anything close to hell, so maybe ... well ...";
 	say "[line break]You are cut off again. It will help you in anywhere unusually uncomfortable. Well, it sure can't hurt.";
-	say "[line break]There's not much else to say. You feel a bit awkward. All you can do is tell them to visit the nice cheery new deli nearby. And they promise to. Hooray, bringing people together!";
-	now player has pliers;
+	say "[line break]There's not much else to say. You feel a bit awkward. All you can do is tell them to visit the nice cheery new deli just off to the west! That, they do. Hooray, bringing people together!";
+	moot den specs;
+	moot pliers;
+	now player has hell pin;
+	drop-player-at sob acres;
+	change down exit of sob acres to nowhere;
 
 book south branch sorting
 
