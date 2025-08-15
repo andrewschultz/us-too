@@ -748,7 +748,13 @@ check taking clay mitt when clay mitt is in Bowl Ditch: say "You don't feel bold
 
 part Sob Acres
 
-Sob Acres is a room in universal. printed name is "[if sco-dell-eastern is false]Sob Acres[else]Dell, Eastern[end if]". eyes-number of Sob Acres is 36. eyes-rule of Sob Acres is pre-saw-bakers rule.
+Sob Acres is a room in universal. printed name is "[if sco-dell-eastern is false]Sob Acres[else]Dell, Eastern[end if]". "[if sco-saw-bakers is false]You feel very sad and lonely here. You're looking for someone, anyone...[else if sco-dell-eastern is false]You see a deli, stern, which you can go inside[else if sco-den-specs is false]This dell still has an air of mystery about it, but there's the deli inside to the west[else if sco-no-date is false]There's the deli to the west, or you can go DOWN into a den[else][deli-post-nodes][end if]. You can always just go back south, of course.". eyes-number of Sob Acres is 36. eyes-rule of Sob Acres is pre-saw-bakers rule.
+
+to say deli-post-nodes:
+	if gs-deli-party is false:
+		say "With the den taken care of, the deli to the west is doing great business";
+	else:
+		say "You've had your fun in the deli to the west, so you don't see much to do here";
 
 after printing the locale description for Sob Acres when sco-den-specs is true and gs-den-seen is false:
 	reveal-den;
@@ -756,6 +762,16 @@ after printing the locale description for Sob Acres when sco-den-specs is true a
 to reveal-den:
 	say "Your den specs reveal something you missed before, here. A passage leading down to what must be a den.";
 	reveal Groan Odes to down;
+
+check going to deli stern when sco-no-date is true and gs-deli-party is false:
+	if gs-deli-party is false:
+		say "You stop by and recognize a few of the people who cheered you setting them free from the groan odes and number-sting. It's a great few hours, but you need to get on with your quest. They thank you, and the [owners] thank you for your business.";
+		now gs-deli-party is true;
+	else:
+		say "Everything is great in the deli. You don't need a detour from your adventure.";
+	the rule fails;
+
+check going down in Sob Acres when sco-no-date is true: say "Everything's okay there. Time to move on." instead;
 
 part Deli Stern
 
