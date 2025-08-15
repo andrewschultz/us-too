@@ -359,7 +359,7 @@ check going inside in Ur Branch when sco-guard-entry is false and garden tree is
 
 chapter herbs
 
-some herbs are a proper-named thing. description is "It's some herb, eh? [if sco-summer-bay is true]It helped you find a new place to visit, and it's still edible![else]Apparently it can give enlightenment to new life paths, but, uh, not THAT way.[end if]". printed name is "[if sco-summer-bay is true]the herbs[else]'some herb, eh?'". understand "herbs/herb eh" and "herb" as some herbs. eyes-number of some herbs is 63. eyes-rule of herbs is pre-summer-bay rule.
+some herbs are a proper-named thing. description is "It's some herb, eh? [if sco-summer-bay is true]It helped you find a new place to visit, and it's still edible![else]Apparently it can give enlightenment to new life paths, but, uh, not THAT way.[end if]". printed name is "[if sco-summer-bay is true]those herbs[else]'some herb, eh?'". understand "herbs/herb eh" and "herb" as some herbs. eyes-number of some herbs is 63. eyes-rule of herbs is pre-summer-bay rule.
 
 chapter black ops
 
@@ -644,7 +644,7 @@ the great inn is scenery. eyes-number of great inn is 43. eyes-rule of great inn
 
 chapter gray tin
 
-the gray tin is a plural-named thing. "The gray tin is curently [if sco-pie-crust is false]empty[else]full of pie crust.". understand "grey" and "grey tins" as gray tin. eyes-number of gray tin is -1.
+the gray tin is a thing. "The gray tin is curently [if sco-pie-crust is false]empty[else]full of pie crust.". understand "grey" and "grey tins" as gray tin. eyes-number of gray tin is -1.
 
 chapter inscen
 
@@ -802,7 +802,7 @@ the WHEE TRY sign is a thing. "A WHEE TRY sign is here--free samples!". descript
 
 part groan odes
 
-Groan Odes is a room in universal. "[if sco-grow-nodes is false]Groan odes ring out everywhere. What would this place be like without them? Are they repressing happy people? Covering something more sinister?[else]The groan odes have ceased, replaced by numbered nodes, from which emanate eerie silence interrupted by occasional menacing beeping and mechanical voice mentioning destruction is IMMINENT and all that sort of thing.[end if]". eyes-number of Groan Odes is 45. eyes-rule of groan odes is pre-grow-nodes rule.
+Groan Odes is a room in universal. printed name is "[if sco-grow-nodes is false]Groan Odes[else]Numb Bursting Number String[end if]". "[if sco-grow-nodes is false]Groan odes ring out everywhere. What would this place be like without them? Are they repressing happy people? Covering something more sinister?[else]The groan odes have ceased, replaced by numbered nodes, from which emanate eerie silence interrupted by occasional menacing beeping and mechanical voice mentioning destruction is IMMINENT and all that sort of thing.[end if]". eyes-number of Groan Odes is 45. eyes-rule of groan odes is pre-grow-nodes rule.
 
 chapter numbered nodes
 
@@ -911,11 +911,11 @@ the belt rusted is a thing. description is "It might look quite nice if it were 
 
 part Dust Which Does Twitch
 
-Dust Which Does Twitch is a room in universal. "You can only go back north.". eyes-number of Dust Which is 1.
+Dust Which Does Twitch is a room in universal. printed name is "[if sco-pro-sweeping is false]Dust Which Does Twitch[else]Teal Eaves[end if]". "[if sco-pro-sweeping is false]You can only go (and see) back north[else]You can see where you are now. Apparently a place called Teal Eaves. It's teal on the outside and inside[end if].". eyes-number of Dust Which is 1.
 
 chapter prose weeping
 
-the prose weeping is a thing in Dust Which Does Twitch. "Prose, weeping, rises from all the dustiness.". eyes-number of prose weeping is 38. eyes-rule of prose weeping is pre-pro-sweeping rule.
+the prose weeping is a thing in Dust Which Does Twitch. "The sound of prose, weeping, rises from all the dustiness.". eyes-number of prose weeping is 38. eyes-rule of prose weeping is pre-pro-sweeping rule.
 
 chapter coal drum
 
@@ -923,7 +923,7 @@ the coal drum is a thing. description is "Plenty dirty. Perhaps there is somethi
 
 chapter cold rum
 
-the cold rum is a thing. description is "It seems pretty classy. Or it seems like people who drink it can fool themselves it's classy. Good enough.". eyes-number of cold rum is 1.
+the cold rum is a thing. indefinite article of cold rum is "some". description is "It seems pretty classy. Or it seems like people who drink it can fool themselves it's classy. Good enough.". eyes-number of cold rum is 1.
 
 chapter tea leaves
 
@@ -945,7 +945,7 @@ the Life Roots are a thing. "Life Roots have been revealed from where the throne
 
 chapter assortment
 
-there is a thing called the fruit and veggie assortment. description is "Just about everything you could want.".
+there is a thing called the fruit and veggie assortment. description is "Just about everything you could want.". eyes-number of assortment is -1.
 
 volume unsorted
 
@@ -953,7 +953,7 @@ book unclaimed things
 
 chapter bread
 
-there is a thing called wheat and rye bread.
+there is a thing called wheat and rye bread. eyes-number of bread is -1.
 
 volume going out
 
