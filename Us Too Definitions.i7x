@@ -12,7 +12,6 @@ definition: a rule (called ru) is thinknoteblocking:
 	no;
 
 to game-specific-cleanup:
-	say "[core-score] [location of dense pecs].";
 	if core-score > 40 and den specs are off-stage:
 		say "Boy! All this carrying and dropping items and using your oar to get through the water has been good for your physical conditioning. You've grown some dense pecs.";
 		now player has dense pecs;

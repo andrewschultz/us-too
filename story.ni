@@ -574,7 +574,7 @@ Joy Nadir is a room in universal. it is east of Bore Dread. printed name is "[if
 
 chapter dew pit
 
-a dew pit is scenery. "It seems hungry but not greedy.". eyes-number of dew pit is 24. eyes-rule of dew pit is pre-dupe-it rule.
+a dew pit is scenery. "It seems hungry but not greedy.". eyes-number of dew pit is 42. eyes-rule of dew pit is pre-dupe-it rule.
 
 chapter orb and or band
 
@@ -888,7 +888,7 @@ part Too Dark Tude Ark
 
 Too Dark Tude Ark is an ordroom in universal. printed name is "[if sco-ho-langour is true]'Ugh?! Lo, a Glow'[else]Too-Dark Tude Ark[end if]". eyes-number of Too Dark Tude Ark is 1.
 
-the whole anger is a thing in Tude Ark. "Whole anger swirls around here.". description is "How can one describe anger? It's there, and it's tough to shake.". eyes-number of whole anger is 7. eyes-rule of whole anger is pre-ho-langour rule.
+the whole anger is a thing in Tude Ark. "Whole anger swirls around here.". description is "How can one describe anger? It's there, and it's tough to shake.". eyes-number of whole anger is 27. eyes-rule of whole anger is pre-ho-langour rule.
 
 part Sage Oaks
 
@@ -1136,6 +1136,7 @@ this is the track missed points rule:
 	if sco-loose-intro is false, say "You could've made a [b]LOOSE INTRO[r] fall from the lucent row in [mine].";
 	if sco-meh-skit is false, say "You could've performed a [b]MEH SKIT[r] once you uncovered the mess pot/kit.";
 	if sco-pea-pod is false, say "You could've discovered a [b]PEA POD[r] in Pea Stalks when you wondered if you could peep odd things, for a bit more food.";
+	if sco-tour-boaters is false, say "You could've made Turbo Tours more relaxed by renaming it [b]TOUR BOATERS[r].";
 	do nothing;
 
 chapter final real ending
