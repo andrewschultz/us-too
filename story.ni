@@ -162,6 +162,10 @@ report taking inventory when gs-using-known is false:
 	default-x-to-aight;
 	continue the action;
 
+chapter Aw Lug All Ugh
+
+the Aw Lug All Ugh is a thing. printed name is "Aw-Lug-All-Ugh". description is "Looks really sturdy--[if core-score < 20]it can hold a lot, you bet[else if core-score < 40]it's held up well for the adventure[else if assortment is off-stage]you're slightly worried it will burst[else]it's pretty much full. Unless you have missed a detail, you might want to finish things up[here-in of mine][end if].". Trike West carries the Ugh. eyes-number of Ugh is -1.
+
 chapter cheese
 
 the cheese is a singular-named thing. description is "All sorts of cheese, really. Everyone is sure to like one of the types. They're probably sure to hate another, what with some types of cheese being really really polarizing, but that just leaves more for everyone else.". eyes-number of cheese is 1. indefinite article of cheese is "some".
@@ -823,6 +827,10 @@ Groan Odes is a room in universal. printed name is "[if sco-grow-nodes is false]
 chapter numbered nodes
 
 the numbered nodes are plural-named scenery. "It's a long string of numbered nodes: node one, node two, and so forth. You feel helpless at the thought of disabling it all. Thus, a numb bursting number string.". eyes-number of nodes is 24. eyes-rule of nodes is pre-no-date rule.
+
+chapter hell pin
+
+the help in hell pin is a thing. printed name is "help-in-hell pin". description is "It's a bit corny, with two angels imposed on a smiley face. But it was given in good spirit, and [if throne is visited]it helped you get to [here-in of throne][else]might help somewhere[end if].". eyes-number of hell pin is 1.
 
 part Turbo Tours
 
