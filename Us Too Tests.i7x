@@ -4,7 +4,6 @@ Version 1/241009 of Us Too Tests by Andrew Schultz begins here.
 
 volume may be sent to main
 
-
 when play begins:
 	now core-max is 1;
 	now cur-max-bonus is 0;
@@ -14,6 +13,22 @@ when play begins:
 		else:
 			increment cur-max-bonus;
 	now max-bonus is cur-max-bonus;
+
+chapter sening
+
+sening is an action applying to nothing.
+
+understand the command "sen" as something new.
+
+understand "sen" as sening.
+
+carry out sening:
+	repeat with X running through sentients:
+		move X to location of player;
+		say "[X]...";
+		try ting X;
+	say "You may want to UNDO this action now."
+	the rule succeeds;
 
 volume diagnostic
 
@@ -182,7 +197,6 @@ carry out qwiing:
 	say "Debug-win is [if debug-win is false]now[else]already[end if] on.";
 	now debug-win is true;
 	the rule succeeds;
-
 
 chapter lfting
 
