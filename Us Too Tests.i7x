@@ -4,6 +4,7 @@ Version 1/241009 of Us Too Tests by Andrew Schultz begins here.
 
 volume may be sent to main
 
+
 when play begins:
 	now core-max is 1;
 	now cur-max-bonus is 0;
@@ -118,16 +119,50 @@ every turn when extra-turns > 0: say "(DEBUG GAUGE) [extra-turns] extra turns."
 
 volume test commands
 
-test wm with "test w1/test w2/test w3".
-test w with "test w1/test w2/test w3".
+test wa with "test w1/test w2/meh skit/loose intro/test w3/pea pod/test w4/test w5/test w61/test w7/test w8/tour boaters/test w9/test w10/test w11".
+test w with "test w1/test w2/test w3/test w4/test w5/test w61/test w7/test w8/test w9/test w10/test w11".
+test deli with "test w1/test w2/test w3/test w4/test w5/test w61/test w7/test w8/test w9".
+
+chapter eyes
+
+test ey with "how so/x row/get all/eye me/eye/try quest/eye beast/eye"
 
 chapter implemented/placed
 
-test w1 with "how so/my quest/be strong/out/herb ranch/summer bay/e/be chill/nice warm/probe all".
+test w1 with "how so/try quest/be strong/i/x/summon cheese/u/herb ranch/summer bay/e".
 
-test w2 with "w/in/mess pot/out".
+test w2 with "be chill/nice warm/probe all/w/d/mess pot".
 
-test w3 with "ne/board red/e/punt weaker".
+test w3 with "u/ne/board red/sw/blah copse/n/nah queue/surf ready/or clerk/n/more flares/n/n/rope ladder/guard entry/in/peace talks".
+
+test w4 with "out/se/can take/grey tin/dough making/in earnest/in/pry more/out/nw/e/punt weaker/e/base pikes/pie crust/hike up/w/w".
+
+test w5 with "nw/sword ark/blast ring/terrible aid/sw/oh clever".
+
+test w6 with "test w6a/test w6b/test w6c".
+
+test w6a with "x beak/ne/s/too broad/n/sw".
+test w6b with "x beak/ne/sw/ne/s/ho langour/n/sw".
+test w6c with "fell trap/x trap/cellar bin/u/x beak/x trap/u/ne/s/say jokes/gas pouch/n".
+
+test w6u with "gonear isle/base pikes/high cup/gonear branch/l/sw".
+
+test w61 with "test w6u/test w6a/test w6b/test w6c".
+test w62 with "test w6u/test w6a/test w6c/test w6b".
+test w63 with "test w6u/test w6b/test w6a/test w6c".
+test w64 with "test w6u/test w6b/test w6c/test w6a".
+test w65 with "test w6u/test w6c/test w6a/test w6b".
+test w66 with "test w6u/test w6c/test w6b/test w6a".
+
+test w7 with "sss/s/damp ink/n/n/s/s/scry broom/n/n/ss/s/pro sweeping/cold rum/tea leaves/n/n/s/s/belt rusted/n/n".
+
+test w8 with "sw/x beak/ne/w/bold itch/claim it/w/stark raft/s/find rinks/bear respond/barn open/n"
+
+test w9 with "e/n/saw bakers/in/dell eastern/e/w/dope ale/e/w/beef ordering/e/w/wheat rye/e/den specs/d/grow nodes/no date".
+
+test w10 with "e/s/e/ne/malt hour/e/join aider/dupe it".
+
+test w11 with "u/use it/lie fruits/d/a stew".
 
 chapter unimplemented/unplaced
 
