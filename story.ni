@@ -925,6 +925,10 @@ chapter cold rum
 
 the cold rum is a thing. description is "It seems pretty classy. Or it seems like people who drink it can fool themselves it's classy. Good enough.". eyes-number of cold rum is 1.
 
+chapter tea leaves
+
+some tea leaves are a thing.  description is "All sorts. They smell different and, you imagine, will taste different.". eyes-number of tea leaves is -1.
+
 book up area
 
 part Throne Ow Throw Now

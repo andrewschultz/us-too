@@ -72,6 +72,7 @@ w1 (text)	w2 (text)	first-hom (text)	second-hom	hom-txt-rule (rule)	first-exact	
 "belt"	"rusted"	--	--	--	false	false	false	false	"figuring how to 'clean' the bell (trusted)"	false	true	true	false	false	scribe room	pre-belt-rusted rule	post-belt-rusted rule	--	--
 "pro"	"sweeping"	--	--	--	false	false	false	false	"figuring how to clear some dust a bit"	false	true	true	false	false	dust which	pre-pro-sweeping rule	post-pro-sweeping rule	--	--
 "cold"	"rum"	--	--	--	false	false	false	false	"knowing what to look for in the coal drum"	false	true	true	false	false	dust which	pre-cold-rum rule	post-cold-rum rule	--	--
+"tea"	"leaves"	--	--	--	false	false	false	false	"divining what's beneath Teal Eaves"	false	true	true	false	false	dust which	pre-tea-leaves rule	post-tea-leaves rule	--	--
 "summon"	"cheese"	--	--	--	false	false	false	false	"figuring what some munchies are"	false	true	true	false	false	--	pre-summon-cheese rule	post-summon-cheese rule	--	--
 "den"	"specs"	--	--	--	false	false	false	false	"finding something more useful than dense pecs"	false	true	true	false	false	--	pre-den-specs rule	post-den-specs rule	--	--
 "use"	"it"	--	--	--	false	false	false	false	"disobeying the throne's orders"	false	true	true	false	false	throne	pre-use-it rule	post-use-it rule	--	--
@@ -1071,8 +1072,6 @@ this is the post-pro-sweeping rule:
 	moot prose weeping;
 	move coal drum to dust which;
 
-chapter dust which scoring
-
 a wordtwisting rule (this is the pre-cold-rum rule):
 	if player is not in dust which, unavailable;
 	if coal drum is not in dust which, unavailable;
@@ -1086,6 +1085,24 @@ this is the post-cold-rum rule:
 	say "It's a pretty big coal drum. You rummage around, and sure enough ... you find some cold rum. Way too much to drink on your own.";
 	now player has cold rum;
 	moot coal drum;
+	now eyes-number of dust which is 36;
+	now eyes-rule of dust which is pre-tea-leaves rule;
+
+a wordtwisting rule (this is the pre-tea-leaves rule):
+	if player is not in dust which, unavailable;
+	if sco-rope-ladder is false:
+		vcp "You suspect you might find tea leaves on, or in, the teal eaves above, but you have no way to climb up.";
+		not-yet;
+	if sco-tea-leaves is true:
+		vcal "You already got tea leaves.";
+		already-done;
+	ready;
+
+this is the post-tea-leaves rule:
+	now sco-tea-leaves is true;
+	say "Using your rope ladder, you climb on the roof and down into a spare attic compartment. People watch in disbelief as you pull out many different tea leaves.";
+	now player has tea leaves;
+	declue-here;
 
 book up branch scoring
 
