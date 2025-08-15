@@ -783,7 +783,7 @@ Deli Stern is a room in universal. printed name is "[if gs-deli-ale-left is true
 
 chapter Fey Loners Fail Owners
 
-the Fey Loners Fail Owners are a plural-named sentient in Deli Stern. Printed name is "fey loners/fail-owners". eyes-number of owners is 1. description is "They look pretty unsocial, which is pretty bad for business owners. Maybe you can TALK to them for what they need.". "Some [owners] [if gs-deli-dell-left is false]trudge around miserably here[else if gs-deli-ale-left is false][one of]look less miserable now[or]stand around, muttering about finding decent bread[stopping][else]beam with pride at their burgeoning business[end if]."
+the Fey Loners Fail Owners are a plural-named sentient in Deli Stern. Printed name is "fey loners/fail-owners". eyes-number of owners is 1. description is "They look pretty unsocial, which is pretty bad for business owners. Maybe you can TALK to them for what they need.". "Some [owners] [if gs-deli-dell-left is false]trudge around miserably here[else if gs-deli-ale-left is false][one of]look less miserable now[or]stand around, muttering about finding decent bread[stopping][else if sco-beef-ordering is false]point to the [toon][else if whee try is in deli and sco-wheat-rye is false]point at the WHEE TRY sign[else]beam with pride at their burgeoning business[end if]."
 
 check going in Deli Stern when room gone to is not nowhere:
 	if sco-dell-eastern is true, now gs-deli-dell-left is true;
@@ -1059,12 +1059,15 @@ book talk (redefined in Oronym Core)
 check ting:
 	if noun is Trike West, say "You say, meek, a 'Me? [']Kay!'" instead;
 	if noun is meh spot, say "It may make you say 'meh' a lot, but it's not going to say anything back." instead;
+	if noun is beast wrong, say "It can't and doesn't want to make chit chat. You wouldn't enjoy it anyway." instead;
 	if noun is forest team, say "They generally talk you down and continue to find ways to knock you." instead;
 	if player is in beach and freddie is in beach:
 		if noun is pun tweaker or noun is Sir Freddie:
 			say "You don't have the skills to talk out a detente." instead;
 	if noun is pun tweaker, say "The pun tweaker throws a ton of puns you've heard before at you and feels very clever for this." instead;
 	if noun is sageoakscen, say "[if sco-say-jokes is false]The oaks just don't seem to be bothered with regular talk[else]You wonder if you should say 'Forge, oaks, for jokes,' or ask for kludge-oaks that might clue jokes. But the oaks don't seem interested in talking[end if]." instead;
+	if noun is fey loners, say "They [if gs-deli-dell-left is false]grouse about how terrible business is[else if gs-deli-ale-left is false]moan about business picked up slightly, but still not enough[else if gs-deli-beef-left is false and toon is in deli]point to the new toon they made[else if sco-wheat-rye is false and whee try is in deli]point to the WHEE TRY sign, eager to give some handouts[else]talk about how good business has gotten[end if]." instead;
+	if noun is scribes, say "The scribes more or less ignore you while continuing their scribing. [if sco-scry-broom is false]You've offered them nothing, yet.[else if sco-pro-sweeping is false]You haven't figured what to do with their broom.[else]Why, they gave you that belt (rusted) and broom, and that should really be enough![end if]" instead;
 	if noun is Sir Freddie, say "'Ho, pawn! Hope on!'" instead;
 	if noun is not a sentient, say "No response. You should usually talk to living things, or things that can respond as if they were living." instead;
 	say "An awkward silence ensues, mostly brought about by how ... I forgot to code something. Please let me know or file a bug report!" instead;
