@@ -42,8 +42,8 @@ w1 (text)	w2 (text)	first-hom (text)	second-hom	hom-txt-rule (rule)	first-exact	
 "peace"	"talks"	--	--	--	false	false	false	false	"finding something incorporeal within the Pea Stalks"	false	true	true	false	false	pea stalks	pre-peace-talks rule	post-peace-talks rule	--	--
 "pea"	"pod"	--	--	--	false	false	false	false	"finding something unusual within the Pea Stalks"	false	true	false	false	false	pea stalks	pre-pea-pod rule	post-pea-pod rule	--	--
 "can"	"take"	--	--	--	false	false	false	false	"dispelling the Can't-Ache"	false	true	true	false	false	dome aching	pre-can-take rule	post-can-take rule	--	--
-"dough"	"making"	--	--	--	false	false	false	false	"doing something positive in [dome]"	false	true	true	false	false	dome aching	pre-dough-making rule	post-dough-making rule	--	--
 "gray|grey"	"tin"	--	--	--	false	false	false	false	"discover what the Great Inn holds"	false	true	true	false	false	dome aching	pre-gray-tin rule	post-gray-tin rule	--	--
+"dough"	"making"	--	--	--	false	false	false	false	"doing something positive in [dome]"	false	true	true	false	false	dome aching	pre-dough-making rule	post-dough-making rule	--	--
 "in"	"earnest"	--	--	--	false	false	false	false	"figure how to visit the inner nest"	false	true	true	false	false	dome aching	pre-in-earnest rule	post-in-earnest rule	--	--
 "pry"	"more"	--	--	--	false	false	false	false	"figuring how to take the prime oar"	false	true	true	false	false	inner nest	pre-pry-more rule	post-pry-more rule	--	--
 "oh"	"clever"	--	--	--	false	false	false	false	"operating the oak lever"	false	true	true	false	false	fort earns four turns	pre-oh-clever rule	post-oh-clever rule	--	--
@@ -58,9 +58,9 @@ w1 (text)	w2 (text)	first-hom (text)	second-hom	hom-txt-rule (rule)	first-exact	
 "dell"	"eastern"	--	--	--	false	false	false	false	"making Sob Acres less forbidding"	false	true	true	false	false	deli stern	pre-dell-eastern rule	post-dell-eastern rule	--	--
 "dope"	"ale"	--	--	--	false	false	false	false	"finding something to trade your dough pail for"	false	true	true	false	false	deli stern	pre-dope-ale rule	post-dope-ale rule	--	--
 "beef"	"ordering"	--	--	--	false	false	false	false	"figuring what the [toon] really means"	false	true	true	false	false	deli stern	pre-beef-ordering rule	post-beef-ordering rule	--	--
+"wheat"	"rye"	--	--	--	false	false	false	false	"guessing what free samples are on offer"	false	true	true	false	false	deli stern	pre-wheat-rye rule	post-wheat-rye rule	--	--
 "grow"	"nodes"	--	--	--	false	false	false	false	"seeing what's behind the groan odes"	false	true	true	false	false	groan odes	pre-grow-nodes rule	post-grow-nodes rule	--	--
 "no"	"date"	--	--	--	false	false	false	false	"figuring how to destroy the nodes, or the most important one"	false	true	true	false	false	groan odes	pre-no-date rule	post-no-date rule	--	--
-"wheat"	"rye"	--	--	--	false	false	false	false	"guessing what free samples are on offer"	false	true	true	false	false	deli stern	pre-wheat-rye rule	post-wheat-rye rule	--	--
 "fell"	"trap"	--	--	--	false	false	false	false	"revealing what's behind the felt wrap"	false	true	true	false	false	fort earns	pre-fell-trap rule	post-fell-trap rule	--	--
 "cellar"	"bin"	--	--	--	false	false	false	false	"escaping the Cell, Urban"	false	true	true	false	false	cell urban	pre-cellar-bin rule	post-cellar-bin rule	--	--
 "too"	"broad"	--	--	--	false	false	false	false	"how to fracture the tube/rod"	false	true	true	false	false	tube rod	pre-too-broad rule	post-too-broad rule	--	--
@@ -226,7 +226,7 @@ a wordtwisting rule (this is the pre-probe-all rule):
 this is the post-probe-all rule:
 	now sco-probe-all is true;
 	say "You reach out to the pro ball. It seems to sense what you want it for. You take it, then look at it from many different angles. Reflected in it, you see ... well, a meh spot [here-in of my new mine ooh] that could use sprucing up. But how?[paragraph break]Yet much of the pro ball remains cloudy. Perhaps it will reveal what you need, as you need it.";
-	say "It also reveals something near here. You notice some sort of ship. You wave, and its captain, so to speak, waves back. They introduce themselves as the Pun Tweaker. Their ship is the Gauche Hip Go Ship. They immediately start in with some crunching puns.[paragraph break][i][bracket][b]NOTE[r][i]: you don't need to examine the pro ball from here on out for it to open new passages.[close bracket][i][line break]";
+	say "[line break]It also reveals something near here. You notice some sort of ship. You wave, and its captain, so to speak, waves back. They introduce themselves as the Pun Tweaker. Their ship is the Gauche Hip Go Ship. They immediately start in with some crunching puns.[paragraph break][i][bracket][b]NOTE[r][i]: you don't need to examine the pro ball from here on out for it to open new passages.[close bracket][i][line break]";
 	move meh spot to my new mine ooh;
 	now player has pro ball;
 	move pun tweaker to beach ill;
@@ -296,7 +296,10 @@ this is the post-be-chill rule:
 	declue-here;
 
 a wordtwisting rule (this is the pre-pie-crust rule):
-	if player is not in Beach Ill and pike rust is not in location of player, unavailable;
+	if player is not in Pile Up Isle or pike rust is not in location of player, unavailable;
+	if sco-gray-tin is false:
+		vcp "You unfortunately have nothing that can contain pie crust, yet.";
+		not-yet;
 	if sco-pie-crust is true:
 		vcal "You already de-rusted the pike!";
 		already-done;
@@ -304,7 +307,7 @@ a wordtwisting rule (this is the pre-pie-crust rule):
 
 this is the post-pie-crust rule:
 	now sco-pie-crust is true;
-	say "Yup! Pie crust!";
+	say "Yup! Pie crust! It fits in your tin nicely.";
 	now player has pie crust;
 	moot pike rust;
 
@@ -341,6 +344,7 @@ book northwest branch scoring
 chapter sore dark scoring
 
 a wordtwisting rule (this is the pre-sword-ark rule):
+	if player is not in sore dark, unavailable;
 	if sco-sword-ark is true:
 		vcal "You don't need another sword! You just want to get out of here.";
 		already-done;
@@ -348,7 +352,7 @@ a wordtwisting rule (this is the pre-sword-ark rule):
 
 this is the post-sword-ark rule:
 	now sco-sword-ark is true;
-	say "It takes a while of feeling around, but your blah string does the job. You find a sword ark. In that sword ark is contained, shockingly, a sword! And not just any sword, but the TERRA BLADE. However, the blade is still out of reach. It's a pretty tall ark.";
+	say "It takes a while of stumbling around, but you have confidence the sword ark is there. In said sword ark is contained, shockingly, a sword! And not just any sword, but the TERRA BLADE. However, the blade is still out of reach. It's a pretty tall ark.";
 	move sword ark to sore dark;
 	move terra blade to sore dark;
 	declue-here;
@@ -422,7 +426,7 @@ chapter joy nadir scoring
 a wordtwisting rule (this is the pre-join-aider rule):
 	if player is not in joy nadir, unavailable;
 	if player does not have belt rusted:
-		vcp "The belt (rusted) crackles, but nothing else happens.";
+		vcp "The pro ball crackles, but nothing else happens.";
 		not-yet;
 	if sco-join-aider is true:
 		vcal "You already formed the [orb]!";
@@ -475,7 +479,7 @@ this is the post-nah-queue rule:
 a wordtwisting rule (this is the pre-surf-ready rule):
 	if Sir Freddie is not in location of player, unavailable;
 	if sco-board-red is false:
-		vcp "Sir Freddie finds that interesting, but ... he doesn't have any way to get started, and neither do you.";
+		vcp "Sir Freddie finds that interesting, but ... he doesn't have the right gear to get started on him, and neither do you, for the moment.";
 		not-yet;
 	if sco-surf-ready is true:
 		vcal "But Sir Freddie has already found a new passion!";
@@ -591,6 +595,7 @@ this is the post-base-pikes rule:
 	say "Well, someone must've been able to get through the bay spikes to dump stuff on the pile, you reason. And you discover something -- base pikes, one you wouldn't want to use on any person, but then again, these spikes could hurt someone, so that seems okay.[paragraph break]Walking through the path you made, you see a high cup near the top of the pile.";
 	move pike rust to Pile Up Isle;
 	move base pikes to Pile Up Isle;
+	move high cup to Pile Up Isle;
 	moot bay spikes;
 
 a wordtwisting rule (this is the pre-hike-up rule):
@@ -602,7 +607,7 @@ a wordtwisting rule (this is the pre-hike-up rule):
 
 this is the post-hike-up rule:
 	now sco-hike-up is true;
-	say "You decide the direct way of climbing the pile at a steep angle just won't work. But it's a big pile, and as you walk around, you see a slower way, less steep, but less likely to cause you to slip. You get to the top and have a look around. From your vantage point, you see a new path from the Ur-Branch, to the southwest! You also see places well beyond it, to the west and south. Well, that should cover all the directions.[paragraph break]It makes you almost forget about the high cup. Well, it turns out the high cup is glued to other trash. Dang it! You're not sure if you needed it, anyway. It looks kind of fancy.";
+	say "You decide the direct way of climbing the pile at a steep angle just won't work. But it's a big pile, and as you walk around, you see a slower way, less steep, but less likely to cause you to slip. You get to the top and have a look around. From your vantage point, you see a new path from the Ur-Branch, to the southwest! You also see places well beyond it, to the west and south. Well, that should cover all the directions.[paragraph break]It makes you almost forget about the high cup. Well, it turns out the high cup is glued to other trash. Dang it! You're not sure if you needed it, anyway. It looks a bit too fancy for whatever you want to prepare.";
 	declue high cup;
 
 book southeast branch sorting
@@ -1017,7 +1022,7 @@ a wordtwisting rule (this is the pre-scry-broom rule):
 
 this is the post-scry-broom rule:
 	now sco-scry-broom is true;
-	say "You realize a broom must be here. You trade the damp ink in the gas pouch for it. The scribes are impressed with the ink ... so much, they show you an artifact few get to see. 'It is our BELL, TRUSTED. Yet it has some hidden purpose we could not find. Perhaps it will help you. And -- oh, yes -- do return it when you're done.";
+	say "You realize a broom must be here. You trade the damp ink in the gas pouch for it. The scribes are impressed with the ink ... so much, they show you an artifact few get to see. 'It is our BELL, TRUSTED. Yet it has some hidden purpose we could not find. Perhaps it will help you. And -- oh, yes -- that broom? Do return it when you're done.'";
 	now player has broom;
 	moot gas pouch;
 	declue-here;
@@ -1031,7 +1036,7 @@ a wordtwisting rule (this is the pre-belt-rusted rule):
 
 this is the post-belt-rusted rule:
 	now sco-belt-rusted is true;
-	say "The scribes get together and nod their heads. They agree this must be it. Your request is a wise choice, one not motivated by greed. The rust from the bell flakes off to form a belt. It becomes much shinier. And perhaps ... well, this belt, rusted, was something much more once. Perhaps you are the one to return it to its former glory.";
+	say "The scribes get together and nod their heads. They agree this must be it. Your request is a wise choice, one not motivated by greed. The rust from the bell flakes off to form a belt. It becomes much shinier. And perhaps ... well, this belt, rusted, was something much more once. Perhaps you are the one to return it to its former questing glory. Such things do not interest scribes.";
 	now player has belt rusted;
 
 chapter sage oaks scoring
@@ -1127,11 +1132,12 @@ a wordtwisting rule (this is the pre-use-it rule):
 
 this is the post-use-it rule:
 	now sco-use-it is true;
-	say "Defying the throne, you hold the [ORB] high in the air. It crackles. Energy shoots to the throne, from which emits a loud 'NO TERROR?! NOTE: ERROR!!!!!' The orb flies from your hand and towards the throne and explodes.";
+	say "Defying the throne, you hold the [ORB] high in the air. It crackles. Energy shoots to the throne, from which emits a loud 'NO TERROR?! NOTE: ERROR!!!!!' The orb flies from your hand and towards the throne and explodes. You also feel the [pin] ripped from you ... it clunks off somewhere forgotten, maybe to help someone who gets in a more serious pickle than you do.";
 	wfak;
-	say "Where the throne once sat, there's now something glistening. 'You have freed the life roots,' booms a voice.";
+	say "Where the throne once sat, there's now something glistening. 'You have freed the life roots,' booms a melodramatic voice.";
 	move life roots to Throne;
 	moot orb;
+	moot hell pin;
 
 a wordtwisting rule (this is the pre-lie-fruits rule):
 	if player is not in throne, unavailable;
@@ -1168,7 +1174,7 @@ Beach Ill	"You can only walk back west[if sco-punt-weaker is true] or take the p
 Pile Up Isle	"You can't see land anywhere except to the west."
 Sore Dark	"The only exit from this cavern is southeast."
 Bore Dread	"The only exit from this enclosure is southwest."
-Blah Copse	"You can only leave the copse to the north[if sco-or-clerk is true] or south[end if]."
+Blah Copse	"You can only leave the copse to the south[if sco-or-clerk is true] or north[end if]."
 Morph Lairs	"Since you can't dare the morph lairs, the only way to leave is back south."
 Pea Stalks	"Compass directions befuddle you at the moment. You can only go back out."
 Dome Aching	"The only compass direction you can go is back northwest. However, you may also [if sco-in-earnest is true]go[else]find a way[end if] in to the inner nest."
