@@ -728,6 +728,8 @@ chapter great inn
 
 the great inn is scenery. eyes-number of great inn is 43. eyes-rule of great inn is pre-gray-tin rule.
 
+check entering great inn: say "You don't need a break, and you couldn't afford the rates." instead;
+
 chapter gray tin
 
 the gray tin is an uneatable stewitem. "The gray tin is curently [if sco-pie-crust is false]empty[else]full of pie crust.". understand "grey" and "grey tins" as gray tin. eyes-number of gray tin is -1.
@@ -809,6 +811,7 @@ check examining fell trap:
 		the rule succeeds;
 	say "Thud! But you're a bit more prepared for the drop this time[if extra-turns > 0], and best of all, you don't waste any speed pacing around nervously[end if].";
 	move player to Cellar Bin;
+	the rule succeeds;
 
 part Cell Urban
 
@@ -957,6 +960,8 @@ chapter bar nopin
 
 the Bar Nopin is a thing in Far Miles. printed name of Bar Nopin is "Bar, Nopin[']". eyes-number of bar nopin is 44. eyes-rule of bar nopin is pre-barn-open rule.
 
+check entering bar: say "If you tried to get loaded, you'd soon feel low, dead." instead;
+
 chapter fine drinks
 
 the fine drinks ad is a thing in Far Miles. eyes-number of fine drinks ad is 45. eyes-rule of fine drinks is pre-find-rinks rule.
@@ -992,7 +997,7 @@ part Sage Oaks
 
 Sage Oaks is an ordroom in universal. eyes-number of Sage Oaks is 35. eyes-rule of Sage Oaks is pre-say-jokes rule.
 
-sageoakscen is a sentient in Sage Oaks. "Sage oaks stand here, [if sco-say-jokes is false]glaring at your unworthy self[else]almost nodding with respect for you. There seems to be passage south, too[end if]. You can always just go back north.". eyes-number of sageoakscen is 35. eyes-rule of sageoakscen is pre-say-jokes rule.
+sageoakscen is a plural-named sentient in Sage Oaks. they are scenery. description of sageoakscen is "The sage oaks offer [if sco-say-jokes is false]no great hint as to how to impress them or weaken their will to block you[else if sco-gas-pouch is false]no indication they do, or don't, actually want you to go south[else]something almost nearing respect for you[end if].". eyes-number of sageoakscen is 35. eyes-rule of sageoakscen is pre-say-jokes rule.
 
 understand "sage/oaks" and "sage oaks" as sageoakscen.
 
