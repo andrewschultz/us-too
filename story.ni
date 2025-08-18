@@ -657,7 +657,7 @@ book inside
 
 part Pea Stalks
 
-Pea Stalks is a room in universal. "Pea stalks grow here. But they're nothing you can eat, or prepare to eat quickly.". eyes-number of Pea Stalks is 55. eyes-rule of Pea Stalks is pre-peace-talks rule.
+Pea Stalks is a room in universal. "Pea stalks grow here. But they're nothing you can eat, or prepare to eat quickly[if sco-pea-pod is false]. Maybe you can peep odd things here, if you are careful[end if]. You can only go back [b]OUT[r].". eyes-number of Pea Stalks is 55. eyes-rule of Pea Stalks is pre-peace-talks rule.
 
 chapter pea pod
 
@@ -697,7 +697,7 @@ part Dome Aching
 Dome Aching is a room in universal. printed name is "Dome, Aching". "[if sco-can-take is false]Ugh. You're not physically uncomfortable, you just feel ... oh, how can I describe it? A can't-ache. It prevents you from seeing anything here[else]You're a bit more aware of your surroundings now[end if]. Of course, you can always go back northwest to the Ur-Branch.". eyes-number of Dome Aching is 56. eyes-rule of Dome Aching is pre-dough-making rule.
 
 after printing the locale description for dome aching when sco-can-take is true:
-	say "[if sco-gray-tin is true]The Great Inn probably gave everything it had to offer. [else]A Great Inn is located off to the side here. What could they hold? ";
+	say "[if sco-gray-tin is true]The Great Inn probably gave everything it had to offer.[else]A Great Inn is located off to the side here. What could they hold?[end if]";
 	say "[line break]There's that inner nest to go [b]IN[r], too. [if sco-pry-more is true]You looted it, though[else if sco-in-earnest is true]You're pretty sure you found the right way in[else]You're pretty sure it's worth getting into, since you kind of figured it's a good idea to explore everywhere[end if].";
 	continue the action;
 
@@ -816,7 +816,7 @@ book west branch
 
 part Bowl Ditch
 
-Bowl Ditch is a room in universal. "[if sob acres is visited]You wonder why this place ever intimidated you. There's Sob Acres to the north and the Ur-Branch back east[else if sco-bold-itch is true]Now you've got your bearings, you see a passage north as well as back east[else]Ouch. Oww. You're lying on the ground, embarrassed how you tripped and fell, worried and scared there's no way back. Your injury is probably more psychological than physical, but it's there, and you need to overcome it[end if].". eyes-number of Bowl Ditch is 44. eyes-rule of Bowl Ditch is pre-bold-itch rule.
+Bowl Ditch is a room in universal. "[if sob acres is visited]You wonder why this place ever intimidated you. There's Sob Acres to the north and the Ur-Branch back east[else if sco-bold-itch is true]Now you've got your bearings, you see passages north and west, as well as back east[else]Ouch. Oww. You're lying on the ground, embarrassed how you tripped and fell, worried and scared there's no way back. Your injury is probably more psychological than physical, but it's there, and you need to overcome it[end if].". eyes-number of Bowl Ditch is 44. eyes-rule of Bowl Ditch is pre-bold-itch rule.
 
 chapter clay mitt
 
@@ -919,7 +919,7 @@ the help in hell pin is a thing. printed name is "help-in-hell pin". description
 
 part Turbo Tours
 
-Turbo Tours is a room in universal. printed name is "Turbo Tours[if sco-tour-boaters is true] (now with tour boaters)[end if]". "You can go back west, but there are also tours that cross water to the south--or go far beyond.". eyes-number of Turbo Tours is -47. eyes-rule of Turbo Tours is pre-tour-boaters rule.
+Turbo Tours is a room in universal. printed name is "Turbo Tours[if sco-tour-boaters is true] (now with tour boaters)[end if]". "You can go back east, but there are also tours that cross water to the south--or go far beyond.". eyes-number of Turbo Tours is -47. eyes-rule of Turbo Tours is pre-tour-boaters rule.
 
 check going south to Farm Isles:
 	say "[one of]Your prime oar really is prime! You effortlessly navigate your way south[or]Your prime oar holds up nicely as you steer the stark raft back south[stopping].";
@@ -932,7 +932,7 @@ the star craft is a thing in Turbo Tours. "A huge star craft rests here. No way 
 
 chapter stark raft
 
-the stark raft is a thing. "The stark raft [if farm isles is unvisited]waits here, for you to see what's south[else if player is in farm isles]can take you back north to [tours][else if sco-barn-open is true]sits here. It serve you well, but you don't need to go back across the water[else]can lead you back to the Farm Isles[end if].". description is "It's plain, but sturdy enough, you think, and your prime oar will help steer it[if far miles farm isles is visited] back south[end if].". eyes-number of stark raft is -1.
+the stark raft is a thing. "The stark raft [if farm isles is unvisited]waits here for you to take it and see what's south[else if player is in farm isles]can take you back north to [tours][else if sco-barn-open is true]sits here. It served you well, but you don't need to go back across the water[else]can lead you back south to the Farm Isles[end if].". description is "It's plain, but sturdy enough, you think, and your prime oar will help steer it[if far miles farm isles is visited] back south[end if].". eyes-number of stark raft is -1.
 
 part Far Miles Farm Isles
 
@@ -979,7 +979,7 @@ part Sage Oaks
 
 Sage Oaks is an ordroom in universal. eyes-number of Sage Oaks is 35. eyes-rule of Sage Oaks is pre-say-jokes rule.
 
-sageoakscen is a sentient in Sage Oaks. "Sage oaks stand here, [if sco-say-jokes is false]glaring at your unworthy self[else]almost nodding with respect for you[end if].". eyes-number of sageoakscen is 35. eyes-rule of sageoakscen is pre-say-jokes rule.
+sageoakscen is a sentient in Sage Oaks. "Sage oaks stand here, [if sco-say-jokes is false]glaring at your unworthy self[else]almost nodding with respect for you. There seems to be passage south, too[end if]. You can always just go back north.". eyes-number of sageoakscen is 35. eyes-rule of sageoakscen is pre-say-jokes rule.
 
 understand "sage/oaks" and "sage oaks" as sageoakscen.
 
