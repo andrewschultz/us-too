@@ -67,10 +67,11 @@ part House Well So Swell
 House Well How Swell is a room in intro. printed name is "House Well-How-Swell". "The lawyers look at you expectantly. You fiddle with your envelope. You hope you haven't come all this way for nothing!". eyes-number of House Well How Swell is 1.
 
 after reading a command when player is in House Well How Swell:
+	let w1 be word number 1 in the player's command;
 	if debug-state is true:
-		if word number 1 in the player's command is "test" or word number 1 in the player's command is "gonear":
+		if w1 is "test" or w1 is "gonear":
 			continue the action;
-	if word number 1 in the player's command is "about" or word number 1 in the player's command is "credits" or word number 1 in the player's command is "verbs" or word number 1 in the player's command is "versions" or word number 1 in the player's command is "ext" or word number 1 in the player's command is "exts" or word number 1 in the player's command is "transcript":
+	if w1 is "about" or w1 is "credits" or w1 is "verbs" or w1 is "versions" or w1 is "ext" or w1 is "exts" or w1 is "transcript":
 		continue the action;
 	if the player's command exactly matches the text "look" or the player's command exactly matches the text "l" or the player's command exactly matches the text "quit" or the player's command exactly matches the text "restore":
 		continue the action;
@@ -92,7 +93,7 @@ after reading a command when player is in House Well How Swell:
 		say "'Us too!' the lawyers yell together, in unison.";
 		move player to My New Mine Ooh;
 		reject the player's command;
-	if the player's command includes "envelope" or the player's command includes "think" or the player's command includes "hint" or the player's command includes "help" or word number 1 in the player's command is "i" or word number 1 in the player's command is "inventory":
+	if the player's command includes "envelope" or the player's command includes "think" or the player's command includes "hint" or the player's command includes "help" or w1 is "i" or w1 is "inventory":
 		say "You glance at your envelope, pretty much all you have on you, [one of]once again [or][stopping]worried you might be cheating. But you can't imagine what other clue you have.[paragraph break]The lawyers [one of]still [or][stopping]look nonchalant, fortunately. It says [hohs], contrasting [hwhs] on most of other guests['] invites.";
 		now gs-envelope is true;
 		now starter-counter is 1;
