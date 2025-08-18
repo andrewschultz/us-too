@@ -1273,6 +1273,18 @@ report eyering when player is in throne and thronescen is in throne:
 	say "[throne-eyes].";
 	continue the action;
 
+book listening
+
+check listening (this is the game specific ambient sound rule):
+	if forest team is touchable, say "Annoying banter from [the team].";
+	if player is in isle and freddie is in isle and tweaker is in isle, say "Occasional squabbling between Sir Freddie and the pun tweaker.";
+	if player is in deli stern, say "The [owners] talk between themselves how to drum up more business." instead;
+	if player is in scribe room, say "The occasional scratching of quills, or philosophical discussion." instead;
+	if player is in groan odes, say "[if sco-grow-nodes is false]The groan odes continue.[else]From the numbered nodes, threats of imminent destruction. But when?[end if]" instead;
+	if player is in bore dread and sco-malt-hour is false, say "Occasional threatening mumbles from the maul tower." instead;
+	if player is in throne ow, say "[if thronescen is in throne ow]'YOU! SIT! YOU! SIT!'[else]Quiet now.[end if]" instead;
+	if location of player is pea stalks, say "Quiet and serene." instead;
+
 book eating
 
 check noteating:
