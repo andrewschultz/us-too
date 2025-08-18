@@ -496,6 +496,9 @@ part Beach Ill
 
 Beach Ill is a room in universal. printed name is "[if sco-be-chill is false]Beach, Ill[else if sco-probe-all is false]Bless-and-Bleah Sand[else]Dune Ever-Do-Never[end if]". "[if sco-be-chill is false]You have a general sense of malaise here, which isn't usual for these environs, but it's there, and not being able to get rid of it simply is causing more malaise[else]It's nice here. The only way out on foot is back west, since you can't swim the other ways[end if].". eyes-number of Beach Ill is 25. eyes-rule of Beach Ill is pre-be-chill rule.
 
+After choosing notable locale objects when player is in Beach Ill:
+	if Freddie is in beach, set the locale priority of Freddie to 9;
+
 after printing the locale description of Beach Ill when sco-peace-talks is true and Sir Freddie is not moot:
 	say "With the lessons learned from the Pea Stalks, you broker a tentative truce between the pun teaker and Sir Freddie. The pun tweaker is quite grateful for this. 'What can I offer you?' 'Oh, nothing much, you say.' The pun tweaker says 'oh of course' a bit too quickly.";
 	moot Sir Freddie;
@@ -509,10 +512,8 @@ check going east in Beach Ill when sco-probe-all is true:
 	move punt to isle;
 	move oar to isle;
 
-check going west in Pile Up Isle:
-	say "You have no problem steering the punt back. It seems surprisingly sturdy.";
-	move punt to beach;
-	move oar to beach;
+check going west in beach ill:
+	if pile-done, now west is branchdone;
 
 chapter nigh swarm
 
@@ -540,13 +541,18 @@ the gauche hip go ship is scenery. printed name is "Gauche/Hip GO-Ship". "It's r
 
 chapter punt weaker
 
-the punt weaker is a thing. "Your punt, weaker, floats here, [punt-status].". eyes-number of punt weaker is -1.
+the punt weaker is a thing. "Your punt, weaker, floats here[punt-status].". eyes-number of punt weaker is -1.
 
 to say punt-status:
 	if pile-done:
-		say ". It served you well, but you can't think of a reason to go back to the isle";
+		say ". It served you well, [if player is in isle]and you think you've seen what you needed here[else]but you can't think of a reason to go back to the isle[end if]";
 	else:
-		say "ready to take you [if isle is visited]back [end if][if player is in isle]west[else]east[end if]"
+		say ", ready to take you [if isle is visited]back [end if][if player is in isle]west[else]east[end if]"
+
+check going west in Pile Up Isle:
+	say "You have no problem steering the punt back now you've got the hang of things. It seems surprisingly sturdy.";
+	move punt to beach;
+	move oar to beach;
 
 book northwest branch
 
@@ -583,7 +589,7 @@ the Forest Team for Esteem is a plural-named hostile sentient in Blah Copse. "[o
 
 chapter Sir Freddie
 
-Sir Freddie is a sentient. "Sir Freddie [if player is in blah copse]stands here nervously[else]catches wave after wave, much to the dismay of the pun tweaker[end if].". description is "[if player is in blah copse]He looks uneasy. He clearly doesn't want to be here, but he also seems clueless where to go[end if]". eyes-number of Sir Freddie is 45. eyes-rule of Sir Freddie is pre-surf-ready rule.
+Sir Freddie is a sentient. "Sir Freddie [if player is in blah copse]stands here nervously[else]catches wave after wave, much to the dismay of the pun tweaker[end if].". description is "[if player is in blah copse]He looks uneasy. He clearly doesn't want to be here, but he also seems clueless where to go[else]Much more confident now he's surfing, but it'd be nice to broker peace, here[end if].". eyes-number of Sir Freddie is 45. eyes-rule of Sir Freddie is pre-surf-ready rule.
 
 understand "f/fred/freddy" and "sir f/fred/freddy" as Sir Freddie when Sir Freddie is touchable.
 
@@ -665,13 +671,16 @@ A Pile Up Isle is a room in universal. printed name is "A Pile-Up Isle". eyes-nu
 
 the bay spikes are a plural-named thing in A Pile Up Isle. "Bay spikes seem to guard you from entering the large pile. They are too sharp to walk on. What to do?". eyes-number of bay spikes is 45. eyes-rule of bay spikes is pre-base-pikes rule.
 
+After choosing notable locale objects when player is in Pile Up Isle:
+	if pike rust is in beach, set the locale priority of pike rust to 0;
+
 chapter pike
 
-the base pikes are a plural-named thing. "A pike lies here as part of the bric-a-brac. [if sco-pie-crust is false]And, oh boy, it has some rust on it.  Pike rust![else]It is shiny and new now you repurposed its rust. Still potentially kinda base and evil, though. You don't need a weapon like this.[end if]". eyes-number of base pikes is -1.
+the base pikes are a plural-named thing. "Base pikes lie here as part of the bric-a-brac. [if sco-pie-crust is false]And, oh boy, do they have some rust on them.  Pike rust![else]The pikes are shiny and new now you repurposed their rust. Still potentially kinda base and evil, though. You don't need a weapon like these.[end if]". eyes-number of base pikes is -1.
 
 section pike rust
 
-the pike rust is a thing. "It's on the pike, sort of a cover on the side. Perhaps it is better as something else.". eyes-number of pike rust is 35. eyes-rule of pike rust is pre-pie-crust rule.
+the pike rust is a thing. description is "It's on the pike, sort of a cover on the side. Perhaps it is better as something else.". eyes-number of pike rust is 35. eyes-rule of pike rust is pre-pie-crust rule.
 
 check taking pike rust: say "Oh, it might flake off uselessly if you just took it." instead;
 
