@@ -173,6 +173,8 @@ this is the post-loose-intro rule:
 	now player has loose intro;
 	moot lucent row;
 	move ledge to My New Mine Ooh;
+	if lucent row is examined and eyes are not in mine and pawn is not in mine:
+		say "[line break]But then [the ledge], containing nothing, retracts after a bit. Well, you got everything you could want from it.";
 
 book room-variant scoring
 
@@ -1168,7 +1170,7 @@ volume directions
 
 table of noways
 noway-rm	noway-txt
-My New Mine Ooh	"You could explore your mine, but you [if sco-try-quest is false]have no purpose, or errand, or ... there's another word, here[else if sco-be-strong is false]really should get rid of that beast[else]sense the real adventure lies outside[end if]."
+My New Mine Ooh	"You could explore your mine, but you [if sco-try-quest is false]have no purpose, or errand, or ... there's another word, here[else if sco-be-strong is false]really should get rid of that beast[else]sense the real adventure lies back above in the outdoors[end if]."
 Ur Branch	"You can't go [noun][if noun is eventual] yet[end if][if south is branchcan and west is branchcan]. There are no new ways to go[end if]."
 Beach Ill	"You can only walk back west[if sco-punt-weaker is true] or take the punt east[end if]."
 Pile Up Isle	"You can't see land anywhere except to the west."

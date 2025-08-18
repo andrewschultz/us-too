@@ -123,13 +123,13 @@ after printing the locale description for house when house is unvisited:
 	continue the action;
 
 this is the explain the house rule:
-	say "[i][bracket][b][one of]NOTE[or]REMINDER[stopping][r][i]: standard commands aren't necessary or useful here. You have to figure what to say. But it's not very long. You can also try [b]ABOUT[r][i] or [b]VERBS[r][i].[close bracket][line break]";
+	say "[i][bracket][b][one of]NOTE[or]REMINDER[stopping][r][i]: standard commands aren't necessary or useful here. You have to figure what to say. But it's not very long. Remember, you have that envelope on you, which has a clue. You can also try [b]ABOUT[r][i] or [b]VERBS[r][i] for an introduction, though they won't help with the puzzle.[close bracket][line break]";
 	now starter-counter is 0;
 	now gs-explained-house is true;
 	continue the action;
 
 rule for printing a parser error when the latest parser error is the I Beg Your Pardon error and player is in House Well:
-	say "You fumble nervously with your envelope reflect on what the lawyers might want to hear. Dare you sneak [if gs-envelope is true]another[else]a[end if] peak at it?";
+	say "You fumble nervously with your envelope and reflect on what the lawyers might want to hear. Dare you sneak [if gs-envelope is true]another[else]a[end if] peak at it?";
 	the rule succeeds;
 
 part Trike West (you)
@@ -239,7 +239,7 @@ check drop2ing tour ad when tour ad is unexamined: say "You can drop it, but rea
 
 Trike West carries the too rad tour ad. printed name of tour ad is "too-rad tour ad".
 
-description of tour ad is "It describes your new mine in detail. It's too big to explore on your own. So you need friends to bring together. And you need a way to bring them together."
+description of tour ad is "It describes the joys of owning a mine, particularly this one, in detail. The mine is apparently too big to live in for the rest of your days, so you need friends to bring together. And you need a way to bring them together."
 
 volume main rooms
 
@@ -327,7 +327,7 @@ check examining startprop when the noun is unexamined:
 chapter taking hintthings
 
 report taking a hintthing when gs-take-hintthing-note is false:
-	say "Done. (By the way, you don't need to explicitly [b]TAKE[r] any game-critical items.)";
+	say "Done. (By the way, [b]TAKE[r] is only used for these helper items. For game-critical items, you [b]TAKE[r] automatically.)";
 	now gs-take-hintthing-note is true;
 	the rule succeeds;
 
