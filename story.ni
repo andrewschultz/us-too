@@ -4,6 +4,10 @@
 
 volume includes
 
+section outside stuff
+
+include Conditional Undo by Jesse McGrew.
+
 section general
 
 include Bold Final Question Rows by Andrew Schultz.
@@ -1036,6 +1040,65 @@ book drop/take
 check taking: if noun is not a hintthing, say "You never need to take anything explicitly in [this-game], though you have the option of taking two hint items. However, trying to take an item may give you a hint as to what you really need to do to acquire or use it." instead;
 
 check drop2ing: say "You never need to drop anything explicitly in [this-game]. Often, when you're done with something, it will be consumed. Also, there is no inventory limit." instead;
+
+volume cheating
+
+chapter warponing
+
+warponing is an action out of world.
+
+understand the command "warp on" as something new.
+
+understand "warp on" as warponing.
+
+carry out warponing:
+	let flag-almost-cheat be false;
+	let flag-this-room be false;
+	now gs-war-pawn-try is true;
+	now verb-dont-print is true;
+	repeat through table of main oronyms:
+		unless there is a core entry, next;
+		if core entry is false, next;
+		if idid entry is true, next;
+		process the check-rule entry;
+		let vr be the outcome of the rulebook;
+		if vr is the ready outcome:
+			if think-cue entry is true:
+				say "[one of]The war pawn glows hot in your hand. You drop it and pick it up. Why didn't it give a hint?[paragraph break]As you [b]THINK[r] a bit, you wonder if some things you tried, things that seemed like they should work, might work now.[or]The war pawn glows hot in your hand again. You must've made more progress than you assumed--good time to [b]THINK[r], again.[stopping]";
+				the rule succeeds;
+			say "After some thought, the war pawn vibrates and explodes! You suddenly have insight into a good way forward: ";
+			say "[b][first-of-ors of w1 entry]";
+			if there is a w2 entry, say " [first-of-ors of w2 entry]";
+			say "[r]...";
+			if idid entry is false, up-reg;
+			now idid entry is true;
+			now think-cue entry is false;
+			process the run-rule entry;
+			now gs-war-pawn-used is true;
+			if debug-state is true:
+				say "[line break]Keeping war pawn.";
+			else:
+				moot war pawn;
+			follow the score and thinking changes rule;
+			game-specific-cleanup;
+			if undo-okayed is false, prevent undo;
+			the rule succeeds;
+		else if there is a best-room entry and best-room entry is location of player:
+			if vr is the not-yet outcome:
+				now flag-almost-cheat is true;
+			else:
+				now flag-this-room is true;
+	if flag-almost-cheat is true:
+		say "The war pawn rattles briefly in your hand, like it means to do something, but it's not ready. Or maybe you aren't. Yet.";
+	else if flag-this-room is true:
+		say "The war pawn seems to warm up very briefly. Perhaps there's a bit left to do here, but that may be a way down the road.";
+	else:
+		say "The war pawn stays still and even feels a bit cold. Perhaps there's nothing that specifically needs doing here.";
+	now verb-dont-print is false;
+	the rule succeeds;
+
+rule for deciding whether to allow undo:
+	if undo is prevented, say "Allowing you to undo using the war pawn is a bit too much of a loophole. There's a walkthrough. Or you can save and restore a lot before warping."
 
 volume semi-regular/often used verbs
 

@@ -24,6 +24,9 @@ starter-counter is a number that varies.
 
 volume booleans
 
+gs-war-pawn-used is a truth state that varies.
+undo-okayed is a truth state that varies.
+
 chapter printing details
 
 pri-branch-reject is a truth state that varies.
