@@ -34,7 +34,7 @@ to decide which region is mrlp: decide on map region of location of player.
 
 volume types
 
-an ingredient is a kind of thing. an ingredient has text called invtext. an ingredient can be eatworthy. an ingredient is usually not eatworthy.
+a stewitem is a kind of thing. a stewitem has text called invtext. a stewitem can be alcoholic, eatworthy, ingredient or uneatable. a stewitem is usually eatworthy.
 
 a startprop is a kind of thing. a startprop is usually scenery.
 

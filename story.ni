@@ -144,7 +144,40 @@ does the player mean examining Trike when player has meat rack: it is likely.
 
 part "item using"
 
-Aight Amusing Item Using is a startthing. description of Aight is "[aight-stuff]". printed name of Aight is "[i][']Aight, Amusing Item Using[r]". eyes-number of Aight Amusing Item Using is 1.
+Aight Amusing Item Using is a startthing. description of Aight is "It's a list of all the things [ara] said you need to provide a feast.". printed name of Aight is "[i][']Aight, Amusing Item Using[r]". eyes-number of Aight Amusing Item Using is 1.
+
+report examining Aight Amusing:
+	let gotany be whether or not number of carried stewitems > 0;
+	let missedany be whether or not number of carried stewitems < number of stewitems;
+	if gotany is false:
+		say "You haven't found any yet, so I didn't sort them into have and don't have.[line break]";
+	else if missedany is false:
+		say "You have everything you need, but why not list it for fun?[line break]";
+	else:
+		say "[one of]While things won't magically switch order in the list, I've organized them into what you have at the top and what you don't at the bottom.[or]Sorted into have/have not:[line break][stopping]";
+	say "[line break]";
+	let mentioned-alcohol be false;
+	repeat with SI running through carried stewitems:
+		if SI is pie crust, next;
+		if SI is alcoholic:
+			if mentioned-alcohol is false:
+				say "-- [if sco-malt-hour is true]enough alcohol left over ([the list of alcoholic stewitems])[else if number of carried alcoholic stewitems is 2]almost a bit too much alcohol ([the list of alcoholic stewitems])[else]some alcohol, but not enough variety: [the list of carried alcoholic stewitems][end if][line break]";
+			now mentioned-alcohol is true;
+			next;
+		say "-- [invtext of SI][line break]";
+	now mentioned-alcohol is false;
+	if gotany is true and missedany is true, say "[line break]";
+	repeat with SI running through not carried stewitems:
+		if SI is pie crust, next;
+		if SI is alcoholic:
+			if mentioned-alcohol is false:
+				say  "--a variety of alcoholic drinks[line break]";
+			now mentioned-alcohol is true;
+			next;
+		say "-- [invtext of SI][line break]";
+	tip-herb-use;
+	say "[line break]At the bottom, the lawyers have written 'There's one thing that's sort of missing from this list and sort of isn't. Don't forget to invite us too once you're ready to make it!'";
+	continue the action;
 
 Trike West carries Aight Amusing Item Using.
 
@@ -153,9 +186,6 @@ check examining aight for the first time:
 
 check examining aight when sco-try-quest is false:
 	say "It seems to require you to go look for all manner of weird stuff. You're just not up to fetching stuff at the moment. You don't want to feel like a gofer. You want something more purposeful." instead;
-
-to say aight-stuff:
-	say "--some munchies ([if sco-summon-cheese is false]the kind is not specified. What's up with that?[run paragraph on][else]SUMMONED the CHEESE[run paragraph on][end if])[line break]";
 
 to default-x-to-aight:
 	say "Note that [b]X[r] will default to [using] in the future.";
@@ -179,13 +209,18 @@ report taking inventory when gs-using-known is false:
 	default-x-to-aight;
 	continue the action;
 
+to tip-herb-use:
+	if player has herbs and sco-summer-bay is false, say "[line break]The herbs still seem like they could open passage somewhere, if you're careful.";
+
 chapter Aw Lug All Ugh
 
 the Aw Lug All Ugh is a thing. printed name is "Aw-Lug-All-Ugh". description is "Looks really sturdy--[if core-score < 20]it can hold a lot, you bet[else if core-score < 40]it's held up well for the adventure[else if assortment is off-stage]you're slightly worried it will burst[else]it's pretty much full. Unless you have missed a detail, you might want to finish things up[here-in of mine][end if].". Trike West carries the Ugh. eyes-number of Ugh is -1.
 
 chapter cheese
 
-the cheese is a singular-named thing. description is "All sorts of cheese, really. Everyone is sure to like one of the types. They're probably sure to hate another, what with some types of cheese being really really polarizing, but that just leaves more for everyone else.". eyes-number of cheese is 1. indefinite article of cheese is "some".
+the cheese is an eatworthy stewitem. description is "All sorts of cheese, really. Everyone is sure to like one of the types. They're probably sure to hate another, what with some types of cheese being really really polarizing, but that just leaves more for everyone else.". eyes-number of cheese is 1. indefinite article of cheese is "some".
+
+invtext of cheese is "some munchies ([if sco-summon-cheese is false]the kind is not specified. What's up with that?[run paragraph on][else]SUMMONED the CHEESE[end if])".
 
 chapter dense pecs / den specs
 
@@ -380,7 +415,9 @@ check going inside in Ur Branch when sco-guard-entry is false and garden tree is
 
 chapter herbs
 
-some herbs are a proper-named thing. description is "It's some herb, eh? [if sco-summer-bay is true]It helped you find a new place to visit, and it's still edible![else]Apparently it can give enlightenment to new life paths, but, uh, not THAT way.[end if]". printed name is "[if sco-summer-bay is true]those herbs[else]'some herb, eh?'". understand "herbs/herb eh" and "herb" as some herbs. eyes-number of some herbs is 63. eyes-rule of herbs is pre-summer-bay rule.
+some herbs are a proper-named eatworthy stewitems. description is "It's some herb, eh? [if sco-summer-bay is true]It helped you find a new place to visit, and it's still edible![else]Apparently it can give enlightenment to new life paths, but, uh, not THAT way.[end if]". printed name is "[if sco-summer-bay is true]those herbs[else]'some herb, eh?'". understand "herbs/herb eh" and "herb" as some herbs. eyes-number of some herbs is 63. eyes-rule of herbs is pre-summer-bay rule.
+
+invtext of herbs is "[if player does not have herbs]seasoning[else]you've got lots of herbs, now[end if]".
 
 chapter black ops
 
@@ -484,7 +521,7 @@ check taking pro ball when sco-probe-all is false: say "It won't budge. At least
 
 chapter pie crust
 
-the pie crust is a thing. description is "Not very fancy, but it's good enough.". eyes-number of pie crust is -1.
+the pie crust is an eatworthy stewitem. description is "Not very fancy, but it's good enough.". eyes-number of pie crust is -1.
 
 chapter pun tweaker
 
@@ -599,7 +636,9 @@ there is a thing called the orb and or band. printed name is "orb and/or band". 
 
 chapter ten dregs tender eggs
 
-there is a proper-named thing called Ten Dregs Tender Eggs. printed name is "Ten Dregs['] Tender Eggs". "It's a carton of ten eggs, each slightly smaller than the original Egg of a Guv, but still plenty big and, you hope, tasty. It should be enough to whip out whatever you need to, when the time comes.[paragraph break]You have to admit the brand name worried you until you read this elsewhere on the carton: 'We strenuously fallow all tend-regs.'". eyes-number of tender eggs is -1.
+there is a proper-named stewitem called Ten Dregs Tender Eggs. printed name is "Ten Dregs['] Tender Eggs". "It's a carton of ten eggs, each slightly smaller than the original Egg of a Guv, but still plenty big and, you hope, tasty. It should be enough to whip out whatever you need to, when the time comes.[paragraph break]You have to admit the brand name worried you until you read this elsewhere on the carton: 'We strenuously fallow all tend-regs.'". eyes-number of tender eggs is -1.
+
+invtext of Tender Eggs is "[if sco-dupe-it is false]eggs[else]the [Eggs][end if]".
 
 book inside
 
@@ -665,7 +704,9 @@ the great inn is scenery. eyes-number of great inn is 43. eyes-rule of great inn
 
 chapter gray tin
 
-the gray tin is a thing. "The gray tin is curently [if sco-pie-crust is false]empty[else]full of pie crust.". understand "grey" and "grey tins" as gray tin. eyes-number of gray tin is -1.
+the gray tin is an uneatable stewitem. "The gray tin is curently [if sco-pie-crust is false]empty[else]full of pie crust.". understand "grey" and "grey tins" as gray tin. eyes-number of gray tin is -1.
+
+invtext of gray tin is "[if sco-gray-tin is false]crust[else if sco-pie-crust is false]some crust to put in the gray tin[else]pie crust in your gray tin[end if]"
 
 chapter inscen
 
@@ -675,7 +716,7 @@ chapter dough
 
 the dough pail is a thing. description is "It's a pail full of dough.". eyes-number of dough pail is 43. eyes-rule of dough pail is pre-dope-ale rule.
 
-the dope ale is a thing. indefinite article of dope ale is "some". description is "Well, its label is pretty dope, you guess.". eyes-number of dope ale is -1.
+the dope ale is an alcoholic stewitem. indefinite article of dope ale is "some". description is "Well, its label is pretty dope, you guess.". eyes-number of dope ale is -1.
 
 part Inner Nest
 
@@ -763,7 +804,9 @@ Bowl Ditch is a room in universal. "[if sob acres is visited]You wonder why this
 
 chapter clay mitt
 
-the clay mitt is a thing. description is "[if sco-claim-it is false]It's not yours, so you can't take it. You guess. Well, as things stand[else]It should protect your hands against all but the fieriest of oven flames[end if].". eyes-number of clay mitt is 52. eyes-rule of clay mitt is pre-claim-it rule.
+the clay mitt is an uneatable stewitem. description is "[if sco-claim-it is false]It's not yours, so you can't take it. You guess. Well, as things stand[else]It should protect your hands against all but the fieriest of oven flames[end if].". eyes-number of clay mitt is 52. eyes-rule of clay mitt is pre-claim-it rule.
+
+invtext of clay mitt is "[if sco-claim-it is false]hand protection from the heat[else]you got the clay mitt for hand protection[end if]".
 
 check taking clay mitt when clay mitt is in Bowl Ditch: say "You don't feel bold enough to. Just taking isn't enough." instead;
 
@@ -827,7 +870,9 @@ the Toon Eat Too Neat is a thing. printed name is "Toon Eat-Too-Neat". "The [too
 
 chapter meat
 
-the Me Track Meat Rack is a thing. description is "It's a sample of all different sorts of meats, prepared different ways, all organized for tracking like a good rack should be.". printed name is "me-track-meat rack". eyes-number of meat rack is -1.
+the Me Track Meat Rack is an edible stewitem. description is "It's a sample of all different sorts of meats, prepared different ways, all organized for tracking like a good rack should be.". printed name is "me-track-meat rack". eyes-number of meat rack is -1.
+
+invtext of Me Track Meat Rack is "[if sco-beef-ordering is false]a variety of meats[else]that [rack] from [deli][end if]".
 
 chapter pliers
 
@@ -836,6 +881,12 @@ The mope liars mo pliers are a plural-named thing. description is "On the one ha
 chapter WHEE TRY
 
 the WHEE TRY sign is a thing. "A WHEE TRY sign is here--free samples!". description is "[if sco-wheat-rye is false]The [owners] see you looking at the sign, which is covered with different types of bread. 'You won't just get a small free sample. You'll get a lot more... of what? Well, you have to guess[else]You look at the sign again. Man, those were some good free samples[end if].". eyes-number of WHEE TRY is 53. eyes-rule of WHEE TRY is pre-wheat-rye rule.
+
+chapter wheat rye
+
+there is a eatworthy stewitem called wheat and rye bread. eyes-number of bread is -1.
+
+invtext of rye bread is "[if sco-wheat-rye is false]more than one type of bread[else]the wheat and rye from [deli][end if]".
 
 part groan odes
 
@@ -965,11 +1016,13 @@ the coal drum is a thing. description is "Plenty dirty. Perhaps there is somethi
 
 chapter cold rum
 
-the cold rum is a thing. indefinite article of cold rum is "some". description is "It seems pretty classy. Or it seems like people who drink it can fool themselves it's classy. Good enough.". eyes-number of cold rum is 1.
+the cold rum is an alcoholic stewitem. indefinite article of cold rum is "some". description is "It seems pretty classy. Or it seems like people who drink it can fool themselves it's classy. Good enough.". eyes-number of cold rum is 1.
 
 chapter tea leaves
 
-some tea leaves are a thing.  description is "All sorts. They smell different and, you imagine, will taste different.". eyes-number of tea leaves is -1.
+some tea leaves are an ingredient stewitem.  description is "All sorts. They smell different and, you imagine, will taste different.". eyes-number of tea leaves is -1.
+
+invtext of tea leaves is "[if sco-tea-leaves is false]nonalcoholic refreshment[else]the tea leaves will provide all sorts of flavors of tea[end if]".
 
 book up area
 
@@ -987,15 +1040,13 @@ the Life Roots are a thing. "Life Roots have been revealed from where the throne
 
 chapter assortment
 
-there is a thing called the fruit and veggie assortment. description is "Just about everything you could want.". eyes-number of assortment is -1.
+there is a stewitem called the fruit and veggie assortment. description is "Just about everything you could want.". eyes-number of assortment is -1.
+
+invtext of assortment is "[if sco-lie-fruits is false]well, just all sorts of fruits and vegetables[else]the assortment from [here-in of Throne Ow][end if]".
 
 volume unsorted
 
-book unclaimed things
-
-chapter bread
-
-there is a thing called wheat and rye bread. eyes-number of bread is -1.
+[intentionally left blank just in case]
 
 volume going out
 
@@ -1022,20 +1073,34 @@ book inventory
 
 the UT specific inventory rule is listed instead of the print standard inventory rule in the carry out taking inventory rulebook.
 
+definition: a thing (called th) is ughlistable:
+	unless th is carried, no;
+	if th is ugh, no;
+	if th is aight, no;
+	if th is tour ad, no;
+	if th is dense pecs, no;
+	yes;
+
 carry out taking inventory (this is the UT specific inventory rule):
 	now all things carried by player are marked for listing;
 	now all startthings are not marked for listing;
-	if number of marked for listing things is 0:
-		say "You're empty-handed, except for what you started with.[paragraph break]";
+	now Aw Lug All Ugh is not marked for listing;
+	if number of ughlistable things is 0:
+		say "Your Aw-Lug-All-Ugh has nothing special in it[if number of carried stewitems > 0], except the items in [aight][end if].";
 	else:
-		say "'Good! Some goods, umm...'[line break]";
-	if player has tin, now pie crust is not marked for listing;
+		say "First, helpful stuff [ara] didn't explicitly ask for, in your [ugh]:[line break]";
+	now all stewitems are not marked for listing;
 	now dense pecs are unmarked for listing;
-	now rope ladder is unmarked for listing;
 	list the contents of the player, with newlines, indented, including contents, listing marked items only, giving inventory information, with extra indentation;
+	let cas be number of carried alcoholic stewitems;
+	if all stewitems are carried:
+		say "[line break]You've got all the items in [aight]! Surely you must be almost done now.";
+	else if number of carried stewitems > 0:
+		say "[line break]You have [number of carried stewitems in words] of [number of stewitems in words] items from [amusing].";
+	tip-herb-use;
+	if cas > 0 and sco-malt-hour is false, say "[line break]You've got more than enough alcohol in the form of [the list of carried alcoholic stewitems], so maybe you can use [if cas is 1]it[else]them[end if] to bribe someone or a group of people.";
 	if player has dense pecs, say "[line break]You've got those dense pecs[if sco-den-specs is true], but you probably got what you needed[else], which may be useful in some other weird way[end if].";
-	if player has rope ladder, say "[line break]You've got that rope ladder, too. ";
-	say "[line break]You're still carrying [the list of startthings carried by player][tour-ad-blather].";
+	if player has too rad, say "[line break]You [if core-score > 10]still [end if]have that too-rad tour ad flopping about, too. It [if tour ad is examined]didn't seem too important, though, so you can drop it[else]seems non-critical. You can probably examine and then drop it[end if].";
 	the rule succeeds;
 
 after printing the name of gray tin when taking inventory:
@@ -1043,10 +1108,6 @@ after printing the name of gray tin when taking inventory:
 		say " (empty)";
 	else:
 		say " (full of pie crust)";
-
-to say tour-ad-blather:
-	if player does not have tour ad, continue the action;
-	say ". The [tour ad][if tour ad is examined] didn't seem too important, though, so you can drop it[else] seems relatively lightweight. You can probably examine and then drop it[end if]";
 
 book drop/take
 
