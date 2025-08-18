@@ -70,7 +70,7 @@ after reading a command when player is in House Well How Swell:
 	if debug-state is true:
 		if word number 1 in the player's command is "test" or word number 1 in the player's command is "gonear":
 			continue the action;
-	if word number 1 in the player's command is "about" or word number 1 in the player's command is "credits" or word number 1 in the player's command is "versions" or word number 1 in the player's command is "ext" or word number 1 in the player's command is "exts" or word number 1 in the player's command is "transcript":
+	if word number 1 in the player's command is "about" or word number 1 in the player's command is "credits" or word number 1 in the player's command is "verbs" or word number 1 in the player's command is "versions" or word number 1 in the player's command is "ext" or word number 1 in the player's command is "exts" or word number 1 in the player's command is "transcript":
 		continue the action;
 	if the player's command exactly matches the text "look" or the player's command exactly matches the text "l" or the player's command exactly matches the text "quit" or the player's command exactly matches the text "restore":
 		continue the action;
@@ -1283,7 +1283,7 @@ check noteating:
 	if noun is uneatable stewitem, say "Can't eat that, but it'll help prepare food.." instead;
 	say "That's probably not edible." instead;
 
-book talk (redefined in Oronym Core)
+book talk (redefined from standard Inform usage in Oronym Core)
 
 check ting:
 	if noun is Trike West, say "You say, meek, a 'Me? [']Kay!'" instead;
@@ -1306,7 +1306,7 @@ volume meta-verbs
 book about
 
 carry out abouting:
-	say "[this-game] was released for IFComp 2025. It reuses a lot of code from [wp], my IFComp 2024 entry. It uses the same sort of progress mechanic, but the two are different in nature.";
+	say "[this-game] was released for IFComp 2025. It reuses a lot of code from [wp], my IFComp 2024 entry. It uses the same sort of progress mechanic, but the two are different in nature and story.";
 	say "[line break]As in 2024, I had bigger projects that didn't make it, but fortunately (well, for me,) I found the title early on and built from there.";
 	say "[line break]Like most of my games, [this-game] rates merciful on the Zarfian cruelty scale. However, in this case, I want the puzzles to be more merciful in terms of general difficulty on the player's psyche than usual."
 
@@ -1324,7 +1324,7 @@ report abouting:
 book credits
 
 carry out creditsing:
-	say "Thanks to my testers.";
+	say "Thanks to my testers, <FILL IN LATER>.";
 	say "[line break]The cover art is my fault, and my fault alone.";
 	say "[line break][b]GENERAL THANKS[r]:[paragraph break]";
 	say "Thanks to everyone past and future involved in the administration of IFComp.";
@@ -1334,11 +1334,16 @@ book verbs
 
 check verbsing when player is in house:
 	say "Most point-scoring commands, including the one to get you out of this house, are two words long. They are clued by something in the environment. The two you must find now are relatively simple and short.";
-	say "[line break]Past the house, [this-game] has a limited parser, mostly allowing the various directions, INVENTORY, THINK, and SCORE.";
+	say "[line break]There will be more detail once you're past the house. For now, I'll just note [this-game] has a limited parser, mostly allowing the various directions, [b]INVENTORY[r] ([b]I[r] for short,) [b]THINK[r], and verbs that help you use hint items.";
 	the rule succeeds;
 
 carry out verbsing:
-	say "[this-game] uses a reduced parser.";
+	say "[this-game] uses a reduced parser. You mostly just need to move around and guess special two-word commands indicated by your surroundings.";
+	say "[line break]Even commands like [b]TAKE[r] aren't necessary. Items are implicitly taken as you need them and used up, though you may [b]TAKE[r] and (to avoid temptation) [b]DROP[r] hinting items.";
+	say "[line break]Diagnostic commands include [b]I[r], and [b]X[r] alone will refer to [if gs-using-known is true][aight][else]a list of items needed to win[end if].";
+	say "[line break][b]THINK[r] is also useful to recall point-scoring commands that worked, or if you got one of two words right.";
+	if player has eyes, say "[line break][b]EYE[r] can be used on any item or person. Without an argument, it looks at the whole surrounding area.";
+	if player has war pawn, say "[line break]A special command is required to use the war pawn. [if core-score > 4]Now[else]Once[end if]you've got a few points, you shouldn't have much trouble figuring it[if core-score < 10], though you may wish to save it for later[end if].";
 
 book versions
 
