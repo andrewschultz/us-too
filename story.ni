@@ -828,7 +828,7 @@ check taking clay mitt when clay mitt is in Bowl Ditch: say "You don't feel bold
 
 part Sob Acres
 
-Sob Acres is a room in universal. printed name is "[if sco-dell-eastern is false]Sob Acres[else]Dell, Eastern[end if]". "[if sco-saw-bakers is false]You feel very sad and lonely here. You're looking for someone, anyone...[else if sco-dell-eastern is false]You see a deli, stern, which you can go inside[else if sco-den-specs is false]This dell still has an air of mystery about it, but there's the deli inside to the west[else if sco-no-date is false]There's the deli to the west, or you can go DOWN into a den[else][deli-post-nodes][end if]. You can always just go back south, of course.". eyes-number of Sob Acres is 36. eyes-rule of Sob Acres is pre-saw-bakers rule.
+Sob Acres is a room in universal. printed name is "[if sco-dell-eastern is false]Sob Acres[else]Dell, Eastern[end if]". "[if sco-saw-bakers is false]You feel very sad and lonely here. You're looking for someone, anyone...[else if sco-dell-eastern is false]Hey, there's a deli you can go inside! It doesn't look very cheery, but it's something[else if sco-den-specs is false]This dell still has an air of mystery about it, but there's the deli inside to the west[else if sco-no-date is false]There's the deli to the west, or you can go DOWN into a den[else][deli-post-nodes][end if]. You can always just go back south, of course.". eyes-number of Sob Acres is 36. eyes-rule of Sob Acres is pre-saw-bakers rule.
 
 to say deli-post-nodes:
 	if gs-deli-party is false:
@@ -841,9 +841,10 @@ after printing the locale description for Sob Acres when sco-den-specs is true a
 
 to reveal-den:
 	say "Your den specs reveal something you missed before, here. A passage leading down to what must be a den.";
+	now gs-den-seen is true;
 	reveal Groan Odes to down;
 
-check going to deli stern when sco-no-date is true and gs-deli-party is false:
+check going to deli stern when sco-no-date is true:
 	if gs-deli-party is false:
 		say "You stop by and recognize a few of the people who cheered you setting them free from the groan odes and number-sting. It's a great few hours, but you need to get on with your quest. They thank you, and the [owners] thank you for your business.";
 		now gs-deli-party is true;
@@ -882,7 +883,7 @@ after printing the locale description for deli stern:
 
 chapter Toon Eat Too Neat
 
-the Toon Eat Too Neat is a thing. printed name is "Toon Eat-Too-Neat". "The [toon] [the owners] scribbled is up on the wall here.". description is "[if sco-beef-ordering is true]You figured what it meant. Yay, you[else]The [toon]has three captions, two blurred, one saying (redacted). But the images are clear: a skinny frowning man, the same man ravenously eating, and the same man, belly distended, sitting happily in a recliner. What does it mean? What should it mean? What can it mean?[end if]". eyes-number of Toon is 48. eyes-rule of Toon is pre-beef-ordering rule.
+the Toon Eat Too Neat is a thing. printed name is "Toon Eat-Too-Neat". "The [toon] [the owners] scribbled is up on the wall here.". description is "[if sco-beef-ordering is true]You appreciate [the toon] a bit more, now you figured what it meant. Yay, you![else]The [toon] has three captions, two blurred, one saying AFTER. But the images are clear: a skinny frowning man, the same man ravenously eating, and the same man, belly distended, sitting happily in a recliner. What does it mean? What should it mean? What can it mean?[end if]". eyes-number of Toon is 48. eyes-rule of Toon is pre-beef-ordering rule.
 
 chapter meat
 
