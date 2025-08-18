@@ -8,11 +8,11 @@ main-table is table of main oronyms.
 
 chapter scoring
 
-core-max is a number that varies. core-max is 12.
+core-max is a number that varies. core-max is 64.
 
-cur-max-bonus is a number that varies. cur-max-bonus is 1.
+cur-max-bonus is a number that varies. cur-max-bonus is 4.
 
-max-bonus is a number that varies. max-bonus is 1.
+max-bonus is a number that varies. max-bonus is 4.
 
 chapter game states
 
