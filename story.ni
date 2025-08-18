@@ -254,7 +254,7 @@ after printing the locale description for Mine Ooh when core-score is core-max -
 My New Mine Ooh is a room in intro. printed name is "My New Mine, Ooh!". description is "You're down in your new mine, with a passage up back to the great wide world[if sco-be-strong is true]. You've cleared the way--you can't be sure of the direction, as the path twists a bit[else if sco-try-quest is false]. Fortunately it's more 'Ooh' than 'Eew.' It could go either way, you realize. But you're still finding your bearings and purpose. You feel a bit blown away being given such a big mine, and you'd feel silly wandering purposelessly. At least you know who you are, and maybe that'll help reframe things[end if].". eyes-number of Mine Ooh is 1.
 
 to note-mine (th - a thing):
-	if th is in location of player, say "A [th] juts out here. [if ledge is unexamined]Maybe something is on it[else]You see [the list of hintthings in mine ooh] on it[end if].";
+	if th is in location of player, say "A [th] juts out here. [if ledge is unexamined]Maybe something is on it.[else]You see [the list of hintthings in mine ooh] on it, and you can [b]EXAMINE[r] [ara]'s message on it again, too.";
 
 after printing the locale description for My New Mine Ooh:
 	note-mine lucent row;
@@ -295,21 +295,22 @@ the beast wrong is a sentient. printed name is "beast (wrong)". "A beast (wrong)
 
 chapter hintthings in mine
 
-to say intro-hintthings: say "You see [the list of hintthings in mine ooh] on it."
+to say intro-hintthings: say "You see [the list of hintthings in mine ooh] on it"
 
 section lucent row
 
-a lucent row is a startprop in My New Mine Ooh. "[intro-hintthings]". eyes-number of lucent row is -55. eyes-rule of lucent row is pre-loose-intro rule.
+a lucent row is a startprop in My New Mine Ooh. "[intro-hintthings].". eyes-number of lucent row is -55. eyes-rule of lucent row is pre-loose-intro rule.
 
-check examining lucent row when lucent row is examined and number of hintthings in My New Mine Ooh is 0: say "There's nothing on the lucent row, but maybe if you looked at it right, it might show something. Some sort of message, beneath the glare, which seems kind of unaesthetic." instead;
+check examining lucent row when lucent row is examined and number of hintthings in My New Mine Ooh is 0:
+	say "There's nothing on the lucent row now that you took the eyes and pawn, but maybe if you looked at it right, it might show something beyond its message[if message is not examined], which you haven't [b]examined[r] yet.[paragraph break]What could that practice be? Lucent is a weird word -- but [ara] wouldn't have had you do something weird early[end if]." instead;
 
 report examining lucent row:
-	say "Oh. The glare and brightness seem a bit unaesthetic, like it could even be hiding something, but it can't be a huge deal.";
+	say "Oh. The glare and brightness seem a bit unaesthetic, like [the noun] could even be hiding something, but it can't be a huge deal.";
 	continue the action;
 
 section goal edge go ledge
 
-the goal edge go ledge is a startprop. printed name is "Goal-Edge-Go Ledge". "[intro-hintthings]". eyes-number of Goal Edge Go Ledge is 1.
+the goal edge go ledge is a startprop. printed name is "Goal-Edge-Go Ledge". "[intro-hintthings].". eyes-number of Goal Edge Go Ledge is 1.
 
 check taking a startprop:
 	if slice eyes are off-stage, say "You can't, but if you [b]EXAMINE[r] [the noun], you may find something on it." instead;
@@ -317,12 +318,15 @@ check taking a startprop:
 	say "You can just take [the list of hintthings in Mine Ooh] if you want." instead;
 
 check examining startprop when the noun is unexamined:
-	say "Carved on [the noun] is a message from [ara]. 'These may help. Maybe too much.'[paragraph break]They look weird at first, but after having a thought, you see they are [eyes] and [a war pawn]. You're free to [b]TAKE[r] them, if you want.";
+	say "The items on [the noun] look weird at first, but after having a thought, you see they are [eyes] and [a war pawn]. You're free to [b]TAKE[r] them, if you want.[paragraph break]Also, there's a message kind of carved in it, in a facsimile of [ara]'s handwriting.";
 	move slice eyes to mine ooh;
 	move war pawn to mine ooh;
+	move message to mine ooh;
 	now the noun is examined;
 	now ledge is examined;
 	the rule succeeds;
+
+the message is scenery. "On [the random startprop in mine ooh], in a facsimile of [ara]'s handwriting: 'Row is for practice if you want. Items on it may help when needed. No shame using everywhere or ignoring.'". eyes-number of message is 1.
 
 chapter taking hintthings
 
@@ -331,8 +335,14 @@ report taking a hintthing when gs-take-hintthing-note is false:
 	now gs-take-hintthing-note is true;
 	the rule succeeds;
 
+to say this-intro-supporter: say "[the random startprop in mine ooh]";
+
 report taking a hintthing when gs-take-hintthing-note is true:
-	say "On taking [the noun], you see [the ledge] recede, as it has nothing more to offer.";
+	if sco-loose-intro is true:
+		say "On taking [the noun], you see the ledge recede, as it has nothing more to offer.";
+		moot ledge;
+	else:
+		say "The lucent row starts to recede, then stops. [if lucent row is not examined]Hmm, maybe it has something else to offer[else if message is examined]Perhaps the message on it might clarify things[else][ara] said it might be useful for practice, but it wasn't critical[end if].";
 	now gs-take-hintthing-note is true;
 	the rule succeeds;
 
@@ -782,6 +792,7 @@ after examining quick beak wick:
 
 check examining beak wick when bowl ditch is visited and oaks are visited and tude ark is visited and tube rod is visited:
 	say "You feel slightly dizzy just looking at the beak wick. Extra speed isn't all it's cracked up to be. You've discovered everywhere it can take you, and your pro ball seems to agree, lighting up red." instead;
+
 chapter felt wrap
 
 the felt wrap is a thing in Fort Earns Four Turns. "Some completely innocuous felt wrap lies here.". description is "Um. Completely innocuous. Right?". eyes-number of felt wrap is 44. eyes-rule of felt wrap is pre-fell-trap rule.
@@ -1318,6 +1329,9 @@ This is the hack to say one word right rule:
 		else:
 			say "There is/was no other way to cheat.";
 		the rule succeeds;
+
+rule for deciding whether all includes slice eyes when player is in mine ooh: it does;
+rule for deciding whether all includes war pawn when player is in mine ooh: it does;
 
 volume misc map
 
