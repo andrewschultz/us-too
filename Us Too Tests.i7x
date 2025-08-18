@@ -2,6 +2,8 @@ Version 1/241009 of Us Too Tests by Andrew Schultz begins here.
 
 "This lays out basic IDE tests for Us Too, along with general commands that help to gauge game states. The biggest example across games is MISSED, to see how a post-game what-the-player-missed would look."
 
+understand "wp" as warponing.
+
 volume may be sent to main
 
 when play begins:
@@ -27,7 +29,7 @@ carry out sening:
 		move X to location of player;
 		say "[X]...";
 		try ting X;
-	say "You may want to UNDO this action now."
+	say "You may want to UNDO this action now.";
 	the rule succeeds;
 
 volume diagnostic
@@ -50,30 +52,6 @@ carry out cluing:
 		if eyes-number of X is 1 or eyes-number of X is -1, next;
 		if X is Reap Rest, next;
 		say "ROOM [X] has eyes number [eyes-number of X] which probably should be fixed.";
-	the rule succeeds;
-
-chapter eye all
-
-test e with "how so/ea".
-
-eaing is an action out of world.
-
-understand the command "ea" as something new.
-
-understand "ea" as eaing.
-
-carry out eaing:
-	if eyeall-test is false, follow the eyeall rule;
-	now eyeall-test is true;
-
-this is the eyeall rule:
-	if player does not have eyes, now player has eyes;
-	say "ROOM:[line break]";
-	try eyering;
-	say "[line break]THINGS:[line break]";
-	repeat with X running through eyeable things:
-		say "[X]...";
-		try eyeing X;
 	the rule succeeds;
 
 definition: a thing (called th) is eyeable:
@@ -226,6 +204,11 @@ carry out lfting:
 	if bonus-left > 0, say "You also have [bonus-left] bonus point[if bonus-left > 1]s[end if] to pick off, though I haven't checked what is still achievable.";
 	the rule succeeds;
 
+chapter invtext
+
+when play begins:
+	repeat with X running through stewitems:
+		if invtext of X is empty and X is not alcoholic, say "Give [x] invtext.";
 
 Us Too Tests ends here.
 
