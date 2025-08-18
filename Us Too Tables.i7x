@@ -1163,9 +1163,18 @@ this is the post-lie-fruits rule:
 
 volume loose intro
 
+to say ur-branch-desc: say "the [if branch is visited]Ur-Branch[else]hub room just after the mine[end if]"
+
 table of intro jabber
 my-jabber
-"There's a brief explanation about how [this-game] reuses a lot of the code from [wp], though hopefully the different stories and puzzles give enough variety to keep you interested."
+"There's a brief explanation about how [this-game] reuses a lot of the code from [wp], though hopefully the different stories and puzzles give enough variety to keep you interested. Both are polite on the Zarfian cruelty scale, so there's no way to die."
+"[this-game] has 29 rooms which can be placed in a 5x6 map--well, one pair of rooms in the code actually functions as 'two rooms below a certain room.' and I don't count the initial room in the map. A map comes with the game, but location names may spoil puzzles. (On the other hand, they may help you look ahead if you want.) It has a basic hub location where you slowly discover other passages. There are thirteen total, not including back down.[paragraph break]For reference, the House would be the northeast corner, with the Mine to the left, and [ur-branch-desc] two southwest of the House."
+"For those who played [wp], you won't have companions, but you will have NPCs to deal with, hostile and friendly."
+"[this-game] has more points than [wp], but I hope the points are more intuitive than [wp]. You should get a few in bunches, which may seem too easy, but there are fewer you have to wait to get."
+"[this-game] also has a few puzzles where you have to go beyond the physical description. There'll be a clue that it implies something else, e.g. 'What do these words mean?' But I hope it adds variety once you've offered the main mechanic."
+"[this-game] also has a puzzle where one direction leads to different rooms."
+"[this-game] felt a bit more rushed than [wp] -- I had just written my first Adventuron game, which took more out of me than was expected, but it was worth it. So I'm not as happy with the story, and I'm worried about specific game polish, but on the other hand, I was able to spruce up some features from [wp] and include some I didn't have the time for, which will work both here and in [wp]."
+"[this-game] has more four-word things you don't need to do anything with but hopefully just laugh at. I piled up a bunch of good examples, and as I let them sit, some started to stand out as 'Hey, this is worth putting in.'"
 
 volume directions
 
