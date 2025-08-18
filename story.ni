@@ -1211,9 +1211,15 @@ rule for deciding whether to allow undo:
 
 volume semi-regular/often used verbs
 
-book eyeing
+book eye stuff
+
+chapter eyeing
+
+check eyeing tuberodscen: say "You get no readout until the eyes focus on the tube/rod.";
 
 check eyeing broom: say "The eyes show nothing. Perhaps it's better the broom isn't magical. You saw [i]Fantasia[r]. It could probably help you clean up somewhere, though." instead;
+
+chapter eyering
 
 book eating
 
