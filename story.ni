@@ -780,6 +780,8 @@ after examining quick beak wick:
 	now extra-turns is 4;
 	continue the action;
 
+check examining beak wick when bowl ditch is visited and oaks are visited and tude ark is visited and tube rod is visited:
+	say "You feel slightly dizzy just looking at the beak wick. Extra speed isn't all it's cracked up to be. You've discovered everywhere it can take you, and your pro ball seems to agree, lighting up red." instead;
 chapter felt wrap
 
 the felt wrap is a thing in Fort Earns Four Turns. "Some completely innocuous felt wrap lies here.". description is "Um. Completely innocuous. Right?". eyes-number of felt wrap is 44. eyes-rule of felt wrap is pre-fell-trap rule.
