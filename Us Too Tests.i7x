@@ -16,6 +16,8 @@ when play begins:
 			increment cur-max-bonus;
 	now max-bonus is cur-max-bonus;
 
+volume trying stuff
+
 chapter sening
 
 sening is an action applying to nothing.
@@ -33,6 +35,10 @@ carry out sening:
 	the rule succeeds;
 
 volume diagnostic
+
+chapter temporary implementation checks
+
+[include property checking by emily short.]
 
 chapter cluing
 

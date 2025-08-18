@@ -973,6 +973,7 @@ this is the post-too-broad rule:
 	now sco-too-broad is true;
 	say "The tube/rod slowly cracks, then bursts. A passage now leads south. You pause a bit and hope it's not a tube leading to bleeding...";
 	reveal Dam Pink to south;
+	moot tuberodscen;
 	declue-here;
 
 chapter dam pink scoring
