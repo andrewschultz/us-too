@@ -224,6 +224,10 @@ rule for printing a parser error (this is the check forks rule):
 		the rule succeeds;
 	continue the action;
 
+rule for printing a parser error when the latest parser error is the not a verb I recognise error or the latest parser error is the didn't understand error (this is the catch bad verbs rule):
+	say "[generic-parser-error].";
+	the rule succeeds;
+
 Us Too Definitions ends here.
 
 ---- DOCUMENTATION ----
