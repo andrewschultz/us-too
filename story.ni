@@ -40,7 +40,7 @@ volume intro
 
 when play begins:
 	now left hand status line is "[location of player]";
-	say "The old mine is yours, now. You were left it in a will by a relative you barely remember. [ara]. She gave you a weird little logic puzzle. 'Tricky,' you mused, and she seemed to smile. But you did not solve it, until the family gathering was over. She had already gotten in her car, and you tried to yell as she drove away. Your family told you not to bug her, which was funny, because everyone seemed to be buttering her up about how rich she was.";
+	say "The old mine is yours, now. You were left it in a will by a relative you barely remember. [ara]. She gave you a weird little logic puzzle. 'Tricky,' you mused, and she seemed to smile. But you did not solve it until the family gathering was over. She had already gotten in her car, and you tried to yell as she drove away. Your family told you not to bug her, which was funny, because everyone seemed to be buttering her up about how rich she was.";
 	wfak;
 	say "You explained this to your parents, who got really cheesed off you didn't figure it sooner to impress her. That could've been their ticket! Uh, they meant, yours." ;
 	wfak;
@@ -48,7 +48,7 @@ when play begins:
 	wfak;
 	say "Soon after she died, her relatives received envelopes in the mail. They were each from the same address, but the actual location was a bit different. Your parents and siblings? [hwhs]. You? [hohs].";
 	wfak;
-	say "You were one of the few to get [hohs]. It seemed like a terrible sign, but as the will was read, the [hwhs] people roared furiously as [ara] mentioned them by name, then thought, no, they nagged too much. So that thing they wanted? To charity! Although ... well, they would get $1000 and travel expenses, if they sarcastically said 'Well, how swell.' And promptly left. Most said it, with passion.";
+	say "You were one of the few to get [hohs]. It seemed like a terrible sign, but as the will was read, the [hwhs] people roared furiously as [ara]'s will labeled them 'too naggy' or 'too flattering.' She kept special track of charities people enjoyed, or said they enjoyed, and donates a lot to the charities. But nobody left empty-handed. All the living relatives there had already had travel expenses paid and would get $1000 more if they sarcastically said 'Well, how swell.' And promptly left. Most said it, with passion.";
 	wfak;
 	say "You were ready to say so, for your own $1000. And it felt weird, being one of three people left, eventually.";
 	wfak;
@@ -81,11 +81,21 @@ after reading a command when player is in House Well How Swell:
 		wfak;
 		say "'Let's see, you're ... oh, you're the kid who ran after her with the solution to her little puzzle. Uh, were. She really was impressed, but she was just so sick of being fawned over, she didn't want to get out of her car again. She knew from the way some of her worse relatives bad-mouthed you, you were more than all right. She owned this old mine and even had a small trust fund to pay taxes. Though for you, it's sort of a new mine... and just checking, but you know what to say?'";
 		wfak;
-		say "You pause. Then 'MY new mine?! Ooh...'[paragraph break]'Bingo! Again!'";
+		say "You pause. Then 'MY new mine?! Ooh...'[paragraph break]'Bingo! Again! But she just wants to make sure you're worthy, so you'll have to visit there.'";
 		wfak;
-		say "You're a bit worried. You can't just up and leave your job like that. What if it's a scam? The lawyers assure you the mine is not going anywhere. You build up vacation time from work. You call some trusted friends. 'You're getting shafted,' a few laugh. Enough don't.";
+		say "You're a bit worried. You can't just up and leave your job like that. What if it's a scam? The lawyers assure you the mine is not going anywhere. You've built up vacation time from work. You call some trusted friends. 'You're getting shafted,' a few laugh. Enough don't.";
 		wfak;
+		say "You meet up with the lawyers again. They inform you you may need to carry a lot of stuff around. They offer you an odd-looking item. '[ara] figured you would need this. It's an [ugh].' The lawyers then squabble over whether the 'A' is a short or long a. They argue over how important the pronunciation is. 'It can go either way,' one says, trying to be a peacemaker. 'At least, for other phrases.'";
+		wfak;
+		say "The squabbling dies down, after some debate over whether or not you can just pronounce a word slightly differently to suit your needs. They all have to admit they've done it to prove a point.[paragraph break]'Oh ... one other thing? Invite your friends when you have everything on [ara]'s list. And, of course, invite ...'";
+		wfak;
+		say "'Us too!' the lawyers yell together, in unison.";
 		move player to My New Mine Ooh;
+		reject the player's command;
+	if the player's command includes "envelope" or the player's command includes "think" or the player's command includes "hint" or the player's command includes "help" or word number 1 in the player's command is "i" or word number 1 in the player's command is "inventory":
+		say "You glance at your envelope, pretty much all you have on you, [one of]once again [or][stopping]worried you might be cheating. But you can't imagine what other clue you have.[paragraph break]The lawyers [one of]still [or][stopping]look nonchalant, fortunately. It says [hohs], contrasting [hwhs] on most of other guests['] invites.";
+		now gs-envelope is true;
+		now starter-counter is 1;
 		reject the player's command;
 	if number of words in the player's command > 2:
 		say "The lawyers yawn. All those words! You really are talking too much[if first-command-points > 0], though there MAY have been something in what you said...[else]![end if]";
@@ -100,9 +110,6 @@ after reading a command when player is in House Well How Swell:
 		say "One of the lawyers tells you to speak up a little, there, and don't cut yourself off so soon.";
 	else if the player's command includes "lawyers" or the player's command includes "lawyer":
 		say "The lawyers sit, stone-faced. You will get no clues from them.";
-	else if the player's command includes "envelope" or the player's command includes "think" or the player's command includes "hint" or the player's command includes "help" or word number 1 in the player's command is "i" or word number 1 in the player's command is "inventory":
-		say "You glance at your envelope, pretty much all you have on you, [one of]once again [or][stopping]worried you might be cheating. But you can't imagine what other clue you have.[paragraph break]The lawyers [one of]still [or][stopping]look nonchalant, fortunately. It says [hohs].";
-		now gs-envelope is true;
 	else if the player's command includes "me" or the player's command includes "myself" or the player's command includes "trike" or the player's command includes "west":
 		try examining the player;
 	else:
