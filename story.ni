@@ -1217,9 +1217,43 @@ chapter eyeing
 
 check eyeing tuberodscen: say "You get no readout until the eyes focus on the tube/rod.";
 
+report eyeing aight when sco-summon-cheese is false:
+	say "Hmm, can't be the whole document. Must be one thing in particular you can pick off at any time.";
+	continue the action;
+
+report eyeing team:
+	say "Hmm, that seems a bit short. Can't be them. Maybe what they're saying.";
+	continue the action;
+
+report eyeing toon:
+	say "Hmm. Seems a bit long. Whatever's on the doon, you'll need to decipher it.";
+	continue the action;
+
 check eyeing broom: say "The eyes show nothing. Perhaps it's better the broom isn't magical. You saw [i]Fantasia[r]. It could probably help you clean up somewhere, though." instead;
 
+report eyeing numbered nodes:
+	say "Perhaps one node is particularly weak, and that's the one to work on.";
+	continue the action;
+
+report eyeing thronescen:
+	say "[throne-eyes].";
+	continue the action;
+
+to say throne-eyes: say "Wow! That's a short reading. Maybe it's not the throne but what it's saying"
+
 chapter eyering
+
+report eyering in ur branch when sco-herb-ranch is false:
+	say "Your head is assaulted by the sound of a silent letter or two as you eye the general area.";
+	continue the action;
+
+report eyering when player is in pea stalks and sco-peace-talks is true:
+	say "Hmm. Something about this place, not this place, looks like.";
+	continue the action;
+
+report eyering when player is in throne and thronescen is in throne:
+	say "[throne-eyes].";
+	continue the action;
 
 book eating
 
