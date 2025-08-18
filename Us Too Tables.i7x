@@ -144,15 +144,22 @@ a wordtwisting rule (this is the pre-a-stew rule):
 	if player is not in mine ooh:
 		vcp "You need to be back in your mine for this.";
 		not-yet;
-	if sco-a-stew is false and debug-win is false:
-		vcp "You don't have all the stew ingredients you need!";
+	if aight is unexamined:
+		vcp "You think far ahead to what you might need. You'd need to read an ingredient list for that. Maybe you have one on you to start.";
+		not-yet;
+	if number of not carried stewitems > 0 and debug-win is false:
+		vcp "You don't have all the stew ingredients you need! Currently, you have [number of carried stewitems in words] out of [number of stewitems in words].";
 		not-yet;
 	ready;
 
 this is the post-a-stew rule:
 	now sco-a-stew is true;
-	say "Well, that does it! You make the stew, and you win. As you make the stew, you reflect it is not MY stew, which would be kind of a me-ill meal, but A stew.[paragraph break]You make other random seeming stews over there years, but none quite has the flavor of this one.";
-	end the story finally saying "A swell ace! WELL!";
+	say "You look at [aight]. You have everything you need, but you don't have, well, a cohesive dish. You remember the lawyers needling you with 'us too.' Yes, that's what it has to be. You call them and your friends. They're prepared -- the mine is omly an hour's drive from the city.";
+	wfak;
+	say "So you make the stew to pass the time until then. You try to avoid thinking of it as [i]my stew[r], because eww, that'd be a me-ill meal. [i]Our stew[r] might be, too.[paragraph break]You're no natural cook, but you do your best. (You make other random seeming stews over there years, and people always seem to appreciate them, but none quite has the flavor of this one.) After the meal, the announcement -- the mine is yours, and you can sell it now. You wonder if there's anything else, but you don't want to be greedy.";
+	wfak;
+	say "Everyone winds down by playing poker. The lawyers are, unsurprisingly, all quite good at it. Well, you're not playing with real money, so you don't mind losing. You got enough today, right? Someone asks you offhand what you call the stew. [ara] surprisingly didn't specify it. You give your answer, and you wonder if maybe there is one more subtle odd test. The lawyers seem to have an inside joke going as they finish the remains of yout...";
+	end the story finally saying "Place-to-Play Stew";
 	follow the shutdown rules;
 
 a wordtwisting rule (this is the pre-loose-intro rule):
