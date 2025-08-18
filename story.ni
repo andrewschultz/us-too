@@ -1301,6 +1301,16 @@ check ting:
 	if noun is not a sentient, say "No response. You should usually talk to living things, or things that can respond as if they were living." instead;
 	say "An awkward silence ensues, mostly brought about by how ... I forgot to code something. Please let me know or file a bug report!" instead;
 
+rule for supplying a missing noun when ting:
+	let NS be number of sentients in location of player;
+	if NS is 0:
+		say "Nobody else to talk to.";
+		the rule fails;
+	if NS > 1:
+		say "That's ambiguous, between [the list of sentients in location of player], so you'll need to specify a subject.";
+		the rule fails;
+	now noun is random sentient in location of player;
+	continue the action;
 volume meta-verbs
 
 book about
@@ -1340,6 +1350,7 @@ check verbsing when player is in house:
 carry out verbsing:
 	say "[this-game] uses a reduced parser. You mostly just need to move around and guess special two-word commands indicated by your surroundings.";
 	say "[line break]Even commands like [b]TAKE[r] aren't necessary. Items are implicitly taken as you need them and used up, though you may [b]TAKE[r] and (to avoid temptation) [b]DROP[r] hinting items.";
+	say "[b]T[r]/[b]TALK[r] (subject not necessary--there is at most one NPC per room) or [b]LISTEN[r] may provide additional cues.";
 	say "[line break]Diagnostic commands include [b]I[r], and [b]X[r] alone will refer to [if gs-using-known is true][aight][else]a list of items needed to win[end if].";
 	say "[line break][b]THINK[r] is also useful to recall point-scoring commands that worked, or if you got one of two words right.";
 	if player has eyes, say "[line break][b]EYE[r] can be used on any item or person. Without an argument, it looks at the whole surrounding area.";
