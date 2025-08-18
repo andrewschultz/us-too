@@ -1204,8 +1204,9 @@ check noteating:
 	if noun is sly size slice eyes, say "[this-game] is an IFComp entry, not an EctoComp entry." instead;
 	if noun is a sentient, say "Canny? Can nibble? Canny? Bull..." instead;
 	if noun is blah string or noun is felt, say "Well, full of fiber, I guess..." instead;
-	if noun is an eatworthy ingredient, say "Some host you are. Wait until the meal is started." instead;
-	if noun is not eatworthy ingredient, say "Ugh ... needs preparation." instead;
+	if noun is an eatworthy stewitem, say "Some host you are. Wait until the meal is started." instead;
+	if noun is ingredient stewitem, say "Ugh ... needs preparation." instead;
+	if noun is uneatable stewitem, say "Can't eat that, but it'll help prepare food.." instead;
 	say "That's probably not edible." instead;
 
 book talk (redefined in Oronym Core)
