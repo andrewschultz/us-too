@@ -54,16 +54,6 @@ carry out cluing:
 		say "ROOM [X] has eyes number [eyes-number of X] which probably should be fixed.";
 	the rule succeeds;
 
-definition: a thing (called th) is eyeable:
-	if th is not touchable, no;
-	if ur branch is visited:
-		if th is Trike west, no;
-		if th is amusing or th is tour ad, no;
-		if th is war pawn, no;
-		if th is eyes, no;
-		if th is cheese or th is loose intro, no;
-	yes;
-
 chapter checking defaults
 
 when play begins:
