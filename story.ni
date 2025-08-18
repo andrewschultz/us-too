@@ -214,7 +214,10 @@ to tip-herb-use:
 
 chapter Aw Lug All Ugh
 
-the Aw Lug All Ugh is a thing. printed name is "Aw-Lug-All-Ugh". description is "Looks really sturdy--[if core-score < 20]it can hold a lot, you bet[else if core-score < 40]it's held up well for the adventure[else if assortment is off-stage]you're slightly worried it will burst[else]it's pretty much full. Unless you have missed a detail, you might want to finish things up[here-in of mine][end if].". Trike West carries the Ugh. eyes-number of Ugh is -1.
+the Aw Lug All Ugh is a thing. printed name is "Aw-Lug-All-Ugh". description is "It's a thing your aunt gave you--well, willed you--which you don't know where it's from[one of]. It reminds you of that 'Hey, we're going to eat pizza' song[or][stopping].".
+
+report examining Ugh:
+	say "It looks really sturdy--[if core-score < 20]it can hold a lot, you bet[else if core-score < 40]it's held up well for the adventure[else if assortment is off-stage]you're slightly worried it will burst[else]it's pretty much full. Unless you have missed a detail, you might want to finish things up[here-in of mine][end if].". Trike West carries the Ugh. eyes-number of Ugh is -1.
 
 chapter cheese
 
