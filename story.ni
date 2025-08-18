@@ -229,7 +229,7 @@ chapter dense pecs / den specs
 
 the dense pecs are a plural-named thing. description is "You admire your well-earned, newfound physical fitness[if sco-den-specs is true], though perhaps you can swap it for something more useful, since this quest has been relatively nonviolent[else], as well as your prowess converting it into something more useful[end if].". eyes-number of dense pecs is 35. eyes-rule of dense pecs is pre-den-specs rule.
 
-the den specs are a plural-named thing. eyes-number of den specs is -1.
+the den specs are a plural-named thing. description is "You have no idea how cool or uncool they make you look. Probably not as cool as your dense pecs. But it sure was cool to find a den below [sob acres].". eyes-number of den specs is -1.
 
 part too rad tour ad
 
@@ -365,11 +365,11 @@ to say intro-table:
 
 chapter meh spot
 
-the meh spot is a thing. "The meh spot you saw in the pro ball sits here. It makes your mine feel emptier. Perhaps something belongs there.". eyes-number of meh spot is 43. eyes-rule of meh spot is pre-mess-pot rule.
+the meh spot is a thing. "The meh spot you saw in the pro ball sits here. It makes your mine feel emptier. Perhaps something belongs there.". description is "Not much to say about it, now. Maybe something else is supposed to be there?". eyes-number of meh spot is 43. eyes-rule of meh spot is pre-mess-pot rule.
 
 chapter mess pot
 
-the mess pot is a thing. eyes-number of mess pot is -34. eyes-rule of mess pot is pre-meh-skit rule.
+the mess pot is a thing. description is "It's a standard mess pot, not very flashy, but clean.". eyes-number of mess pot is -34. eyes-rule of mess pot is pre-meh-skit rule.
 
 part ur branch
 
@@ -442,7 +442,7 @@ the black ops are a thing. "You know black ops are lurking to the north.". descr
 
 chapter garden tree
 
-the garden tree is a thing. "[if sco-guard-entry is true]The garden tree stands here, passively[else]That garden tree the [forest] were whining about stands here[end if].". eyes-number of garden tree is 55. eyes-rule of garden tree is pre-guard-entry rule.
+the garden tree is a thing. "[if sco-guard-entry is true]The garden tree stands here, passively[else]That garden tree the [forest] were whining about stands here[end if].". description of garden tree is "[if sco-guard-entry is false]It doesn't seem violent, but its branches are long enough it could pull you back if it doesn't trust you[else]It seems quiet enough to let you pass[end if].". eyes-number of garden tree is 55. eyes-rule of garden tree is pre-guard-entry rule.
 
 chapter sign and verbs
 
@@ -543,7 +543,13 @@ the pie crust is an eatworthy stewitem. description is "Not very fancy, but it's
 
 chapter pun tweaker
 
-The pun tweaker is a sentient. "The pun tweaker continues to stay here, looking to swap jokes or whatever.". eyes-number of pun tweaker is 46. eyes-rule of pun tweaker is pre-punt-weaker rule.
+The pun tweaker is a sentient. "The pun tweaker continues to stay here, [if sir freddie is in beach ill]annoyed with their 'new' 'friend.'[else]looking to swap jokes or whatever.[end if]". description is "[pun-tweaker-desc].". eyes-number of pun tweaker is 46. eyes-rule of pun tweaker is pre-punt-weaker rule.
+
+to say pun-tweaker-desc:
+	if sir freddie is in beach ill:
+		say "The pun tweaker glances with annoyance at Sir Freddie's surfing antics";
+	else:
+		say "Relatively jokey and carefree";
 
 chapter gauche hip go ship
 
@@ -551,7 +557,7 @@ the gauche hip go ship is scenery. printed name is "Gauche/Hip GO-Ship". "It's r
 
 chapter punt weaker
 
-the punt weaker is a thing. "Your punt, weaker, floats here[punt-status].". eyes-number of punt weaker is -1.
+the punt weaker is a thing. "Your punt, weaker, floats here[punt-status].". description is "It seems pretty sturdy, actually. Perhaps its speed is weaker than something gas-powered or whtever.". eyes-number of punt weaker is -1.
 
 to say punt-status:
 	if pile-done:
@@ -595,7 +601,7 @@ after printing the locale description for Blah Copse when sco-surf-ready is true
 
 chapter Forest Team
 
-the Forest Team for Esteem is a plural-named hostile sentient in Blah Copse. "[one of]A group of adventurers is waiting for you here. After an over-friendly introduction where the introduce themselves as the Forest Team for Esteem, and where you don't impress them back, they begin to knock you, well, verbally[or]The Forest Team for Esteem continues to knock you verbally. Which isn't fatal, but it's getting in the way of you deciding what to do next[stopping].". eyes-number of Forest Team is 35. eyes-rule of Forest Team is pre-nah-queue rule.
+the Forest Team for Esteem is a plural-named hostile sentient in Blah Copse. "[one of]A group of adventurers is waiting for you here. After an over-friendly introduction where the introduce themselves as the Forest Team for Esteem, and where you don't impress them back, they begin to knock you, well, verbally[or]The Forest Team for Esteem continues to knock you verbally. Which isn't fatal, but it's getting in the way of you deciding what to do next[stopping].". description is "A bunch of boors with little better to do than knock you.". eyes-number of Forest Team is 35. eyes-rule of Forest Team is pre-nah-queue rule.
 
 chapter Sir Freddie
 
@@ -623,7 +629,7 @@ the row plaider is scenery in Morph Lairs. "Boy, it's plaider than anything you'
 
 chapter rope ladder
 
-the rope ladder is a thing. "It seems sturdy enough, for places slightly out of reach.". eyes-number of rope ladder is -1.
+the rope ladder is a thing. description is "It seems sturdy enough, for places slightly out of reach. Even crumpled, it's big enough you're glad you have [ara]'s [lug].". eyes-number of rope ladder is -1.
 
 report examining rope ladder:
 	if up is not branchcant, say "But you remember how it uncoiled to reveal a passage up from [here-in of ur branch].";
@@ -639,11 +645,11 @@ check going east in Bore Dread when sco-malt-hour is false: say "Not without des
 
 chapter maul tower
 
-the maul tower is a thing in Bore Dread. "A maul tower rises up menacingly to the east.". eyes-number of maul tower is 44. eyes-rule of maul tower is pre-malt-hour rule.
+the maul tower is a thing in Bore Dread. "A maul tower rises up menacingly to the east.". description is "[if sco-malt-hour is true]It seems much cozier not you met and bri--, uh, made friends with the inhabitants[else]You're not sure how to get past it, especially since you won't be able to maul back[end if].". eyes-number of maul tower is 44. eyes-rule of maul tower is pre-malt-hour rule.
 
 chapter board red
 
-The board red is a thing. printed name is "board (red)". "It's about six feet long and one foot wide, or it would be when unfolded (it snaps into and out of its full length easily. You checked.) THIS SIDE UP and CATCH THE WAVES are written on it.". eyes-number of board red is -1.
+The board red is a thing. printed name is "board (red)". description is "It's about six feet long and one foot wide, or it would be when unfolded (it snaps into and out of its full length easily. You checked.) THIS SIDE UP and CATCH THE WAVES are written on it.". eyes-number of board red is -1.
 
 part Joy Nadir
 
@@ -659,7 +665,7 @@ there is a thing called the orb and or band. printed name is "orb and/or band". 
 
 chapter ten dregs tender eggs
 
-there is a proper-named stewitem called Ten Dregs Tender Eggs. printed name is "Ten Dregs['] Tender Eggs". "It's a carton of ten eggs, each slightly smaller than the original Egg of a Guv, but still plenty big and, you hope, tasty. It should be enough to whip out whatever you need to, when the time comes.[paragraph break]You have to admit the brand name worried you until you read this elsewhere on the carton: 'We strenuously fallow all tend-regs.'". eyes-number of tender eggs is -1.
+there is a proper-named stewitem called Ten Dregs Tender Eggs. printed name is "Ten Dregs['] Tender Eggs". description is "It's a carton of ten eggs, each slightly smaller than the original Egg of a Guv, but still plenty big and, you hope, tasty. It should be enough to whip out whatever you need to, when the time comes.[paragraph break]You have to admit the brand name worried you until you read this elsewhere on the carton: 'We strenuously fallow all tend-regs.'". eyes-number of tender eggs is -1.
 
 invtext of Tender Eggs is "[if sco-dupe-it is false]eggs[else]the [Eggs][end if]".
 
@@ -671,22 +677,22 @@ Pea Stalks is a room in universal. "Pea stalks grow here. But they're nothing yo
 
 chapter pea pod
 
-the pea pod is a thing. "It's an unusual pea pod. It'll go well with the meal.". eyes-number of pea pod is -1.
+the pea pod is a thing. description is "It's an unusual pea pod. It'll go well with the meal.". eyes-number of pea pod is -1.
 
 book east branch
 
 part A Pile Up Isle
 
-A Pile Up Isle is a room in universal. printed name is "A Pile-Up Isle". eyes-number of A Pile Up Isle is 1.
+A Pile Up Isle is a room in universal. printed name is "A Pile-Up Isle". eyes-number of A Pile Up Isle is 1. "You've found the isle west of the erstwile Beach, Ill. It's ... not been tended to for a while."
 
-the bay spikes are a plural-named thing in A Pile Up Isle. "Bay spikes seem to guard you from entering the large pile. They are too sharp to walk on. What to do?". eyes-number of bay spikes is 45. eyes-rule of bay spikes is pre-base-pikes rule.
+the bay spikes are a plural-named thing in A Pile Up Isle. "Bay spikes seem to guard you from entering the large pile. They are too sharp to walk on. What to do?". description is "Too sharp to walk on.". eyes-number of bay spikes is 45. eyes-rule of bay spikes is pre-base-pikes rule.
 
 After choosing notable locale objects when player is in Pile Up Isle:
 	if pike rust is in beach, set the locale priority of pike rust to 0;
 
 chapter pike
 
-the base pikes are a plural-named thing. "Base pikes lie here as part of the bric-a-brac. [if sco-pie-crust is false]And, oh boy, do they have some rust on them.  Pike rust![else]The pikes are shiny and new now you repurposed their rust. Still potentially kinda base and evil, though. You don't need a weapon like these.[end if]". eyes-number of base pikes is -1.
+the base pikes are a plural-named thing. "Base pikes lie here as part of the bric-a-brac.". description is "[if sco-pie-crust is false]And, oh boy, do they have some rust on them.  Pike rust![else]The pikes are shiny and new now you repurposed their rust. Still potentially kinda base and evil, though. You don't need weapons like these. In fact, you doubt you need any.[end if]". eyes-number of base pikes is -1.
 
 section pike rust
 
@@ -696,7 +702,7 @@ check taking pike rust: say "Oh, it might flake off uselessly if you just took i
 
 chapter high cup
 
-The high cup is a thing. "A high cup is at the top of the pile.". eyes-number of high cup is 42. eyes-rule of high cup is pre-hike-up rule.
+The high cup is a thing. "A high cup is at the top of the pile.". description is "[if sco-hike-up is true]It wasn't such a big deal once you saw it[else]It looks quite impressive--from a distance. But you haven't figured how to reach it.". eyes-number of high cup is 42. eyes-rule of high cup is pre-hike-up rule.
 
 check taking the high cup when high cup is in Pile Up Isle: say "You take a direct path, but it's too steep." instead;
 
@@ -726,19 +732,25 @@ check going inside in Dome Aching when sco-can-take is true and sco-in-earnest i
 
 chapter great inn
 
-the great inn is scenery. eyes-number of great inn is 43. eyes-rule of great inn is pre-gray-tin rule.
+the great inn is scenery. "It's very impressive. [if sco-gray-tin is false]Maybe it has some cast-off items for you[else]But you doubt it holds and more freebies[end if].". eyes-number of great inn is 43. eyes-rule of great inn is pre-gray-tin rule.
 
 check entering great inn: say "You don't need a break, and you couldn't afford the rates." instead;
 
 chapter gray tin
 
-the gray tin is an uneatable stewitem. "The gray tin is curently [if sco-pie-crust is false]empty[else]full of pie crust.". understand "grey" and "grey tins" as gray tin. eyes-number of gray tin is -1.
+the gray tin is an uneatable stewitem. description is "The gray tin is curently [if sco-pie-crust is false]empty[else]full of pie crust.". understand "grey" and "grey tins" as gray tin. eyes-number of gray tin is -1.
 
 invtext of gray tin is "[if sco-gray-tin is false]crust[else if sco-pie-crust is false]some crust to put in the gray tin[else]pie crust in your gray tin[end if]"
 
 chapter inscen
 
-the inscen is privately-named scenery. understand "inner/nest" and "inner nest" as inscen when inscen is in location of player. eyes-number of inscen is 27. eyes-rule of inscen is pre-in-earnest rule.
+the inscen is privately-named scenery. description is "[inscen-desc].". understand "inner/nest" and "inner nest" as inscen when inscen is in location of player. eyes-number of inscen is 27. eyes-rule of inscen is pre-in-earnest rule.
+
+to say inscen-desc:
+	if inner nest is visited:
+		say "You've been to the inner nest and [if sco-pry-more is true]got[else]saw, but didn't get,[end if] the prime oar";
+	else:
+		say "What could lie there? [if sco-in-earnest is true]Just go [b]IN[r] to find out[else]It seems resistant to casual tourism, people who just want to see everything[end if]";
 
 chapter dough
 
@@ -748,9 +760,9 @@ the dope ale is an alcoholic stewitem. indefinite article of dope ale is "some".
 
 part Inner Nest
 
-Inner Nest is a room in universal. eyes-number of Inner Nest is -1.
+Inner Nest is a room in universal. eyes-number of Inner Nest is -1. description is "Well, you made it. It's not very big, but then again, it is both inner and a nest. You can go back [b]OUT[r] from here.".
 
-the prime oar is a thing in Inner Nest. "A prime oar stands here, floating in space[one of]. You reach out for it lazily, and it floats away[or]Whenever you get too close, it slides away[stopping].". eyes-number of prime oar is 34. eyes-rule of prime oar is pre-pry-more rule.
+the prime oar is a thing in Inner Nest. "A prime oar stands here, floating in space[one of]. You reach out for it lazily, and it floats away[or]Whenever you get too close, it slides away[stopping].". description is "Man! It looks really aerodynamic, and stuff. And it's lightweight, too.". eyes-number of prime oar is 34. eyes-rule of prime oar is pre-pry-more rule.
 
 check taking prime oar when prime oar is in Inner Nest: say "You can't get close enough." instead;
 
@@ -801,7 +813,7 @@ the felt wrap is a thing in Fort Earns Four Turns. "Some completely innocuous fe
 
 chapter fell trap
 
-the fell trap is a thing. "The fell trap has replaced the felt wrap. [if sco-cellar-bin is true]It looks as though it's been reset since you last visited, if you need to [b]EXAMINE[r] it and get caught again, for whatever reason[else]It looks pretty vicious! It might even catch anyone trying to [b]EXAMINE[r] it[end if].". eyes-number of fell trap is -1.
+the fell trap is a thing. "The fell trap has replaced the felt wrap. [if sco-cellar-bin is true]It looks as though it's been reset since you last visited, if you need to [b]EXAMINE[r] it and get caught again, for whatever reason[else]It looks pretty vicious! It might even catch anyone trying to [b]EXAMINE[r] it[end if]. But it might send you somewhere new you can't walk to.". description is "Filler text you shouldn't see. The check examining rule should send you to a new room.". eyes-number of fell trap is -1.
 
 check examining fell trap:
 	if cell urban is unvisited:
@@ -917,7 +929,7 @@ the WHEE TRY sign is a thing. "A WHEE TRY sign is here--free samples!". descript
 
 chapter wheat rye
 
-there is a eatworthy stewitem called wheat and rye bread. eyes-number of bread is -1.
+there is a eatworthy stewitem called wheat and rye bread. description is "Looks tastier and healthier than bleached old white bread.". eyes-number of bread is -1.
 
 invtext of rye bread is "[if sco-wheat-rye is false]more than one type of bread[else]the wheat and rye from [deli][end if]".
 
@@ -952,19 +964,19 @@ the stark raft is a thing. "The stark raft [if farm isles is unvisited]waits her
 
 part Far Miles Farm Isles
 
-Far Miles Farm Isles is a room in universal. eyes-number of Farm Isles is 1.
+Far Miles Farm Isles is a room in universal. eyes-number of Farm Isles is 1. "Well, maybe not that far. Perhaps it's just named that way to seem more exotic."
 
 check going north in farm isles: raft-tours;
 
 chapter bar nopin
 
-the Bar Nopin is a thing in Far Miles. printed name of Bar Nopin is "Bar, Nopin[']". eyes-number of bar nopin is 44. eyes-rule of bar nopin is pre-barn-open rule.
+the Bar Nopin is a thing in Far Miles. "A Bar, Nopin['], sits here trying to look elite. Perhaps you don't need to get there but somewhere else. It has a fine drinks add attached to it.". description is "Unfortunately, with the fine drinks sign on it, it's probably out of your price range, so it won't help with the alcohol requirements in your list. [if booze-score is 2]No big deal. You found enough[else if booze-score is 1]But you've found some already, which is nice[else]Perhaps there is easier booze to find elsewhere[end if].". printed name of Bar Nopin is "Bar, Nopin[']". eyes-number of bar nopin is 44. eyes-rule of bar nopin is pre-barn-open rule.
 
 check entering bar: say "If you tried to get loaded, you'd soon feel low, dead." instead;
 
 chapter fine drinks
 
-the fine drinks ad is a thing in Far Miles. eyes-number of fine drinks ad is 45. eyes-rule of fine drinks is pre-find-rinks rule.
+the fine drinks ad is scenery in Far Miles. "It simply says FINE DRINKS as an advertisement for the bar. Which would contradict the nopin['], but I guess it is trying to be elite.". eyes-number of fine drinks ad is 45. eyes-rule of fine drinks is pre-find-rinks rule.
 
 chapter egg of a guv
 
@@ -972,7 +984,7 @@ the egg of a guv is a thing. description is "It's only one egg, but boy is it im
 
 part Berries Pond
 
-Berries Pond is a room in universal. eyes-number of Berries Pond is 47. eyes-rule of Berries Pond is pre-bear-respond rule.
+Berries Pond is a room in universal. eyes-number of Berries Pond is 47. eyes-rule of Berries Pond is pre-bear-respond rule. "All sorts of vegetation is here. Alas, the bushes seem to have been picked clean. Maybe someone or something who knows more about the area could help you."
 
 check going to berries pond when sco-bear-respond is true: say "That would be greedy." instead;
 
@@ -985,17 +997,21 @@ after printing the locale description when (player is in scribe room or player i
 
 part Tube Rod
 
-Tube Rod is an ordroom in universal. eyes-number of Tube Rod is 35. eyes-rule of Tube Rod is pre-too-broad rule.
+Tube Rod is an ordroom in universal. eyes-number of Tube Rod is 35. eyes-rule of Tube Rod is pre-too-broad rule. "[if sco-too-broad is false]Well, you're blocked south by a huge a huge nondescript wall with a single tube/rod sticking out of it[else]With the tube/rod burst, you can now go south as well as back north[end if]."
+
+the tuberodscen is privately-named scenery in Tube Rod. eyes-number of tuberodscen is 1. "Well, you can't do much with the wall, which is pretty boring and large. The tube/rod, on the other hand ...". printed name is "tube/rod".
+
+understand "wall" and "tube/rod" and "tube rod" as tuberodscen when tuberodscen is touchable.
 
 part Too Dark Tude Ark
 
-Too Dark Tude Ark is an ordroom in universal. printed name is "[if sco-ho-langour is true]'Ugh?! Lo, a Glow'[else]Too-Dark Tude Ark[end if]". eyes-number of Too Dark Tude Ark is 1.
+Too Dark Tude Ark is an ordroom in universal. printed name of tude ark is "[if sco-ho-langour is true]'Ugh?! Lo, a Glow'[else]Too-Dark Tude Ark[end if]". "[if sco-ho-langour is false]Your attitude can't help grow dark as you wonder if it was really worth running all the way here or even going back north, and if there is anywhere beyond that will require even more running, which it doesn't look like, becaue it's hard to see[else]It's no longer too dark here. There's not much here, but at least it's not too dark. Oh, there's a passage south as well as one back north[end if].". eyes-number of Too Dark Tude Ark is 1.
 
-the whole anger is a thing in Tude Ark. "Whole anger swirls around here.". description is "How can one describe anger? It's there, and it's tough to shake.". eyes-number of whole anger is 27. eyes-rule of whole anger is pre-ho-langour rule.
+the whole anger is a thing in Tude Ark. "Whole anger swirls around here, consuming your every thought.". description is "How can one describe anger? It's there, and it's tough to shake.". eyes-number of whole anger is 27. eyes-rule of whole anger is pre-ho-langour rule.
 
 part Sage Oaks
 
-Sage Oaks is an ordroom in universal. eyes-number of Sage Oaks is 35. eyes-rule of Sage Oaks is pre-say-jokes rule.
+Sage Oaks is an ordroom in universal. "Sage oaks stand here, [if sco-say-jokes is false]glaring at your unworthy self[else]almost nodding with respect for you. There seems to be passage south, too[end if]. You can always just go back north.". eyes-number of Sage Oaks is 35. eyes-rule of Sage Oaks is pre-say-jokes rule.
 
 sageoakscen is a plural-named sentient in Sage Oaks. they are scenery. description of sageoakscen is "The sage oaks offer [if sco-say-jokes is false]no great hint as to how to impress them or weaken their will to block you[else if sco-gas-pouch is false]no indication they do, or don't, actually want you to go south[else]something almost nearing respect for you[end if].". eyes-number of sageoakscen is 35. eyes-rule of sageoakscen is pre-say-jokes rule.
 
@@ -1006,7 +1022,7 @@ check going south in Sage Oaks when sco-gas-pouch is false:
 
 chapter gas pouch
 
-the gas pouch is a thing. "It's a pouch that once held gas, currently full/empty.". eyes-number of gas pouch is -1.
+the gas pouch is a thing. description is "It's a pouch that once held gas, currently full/empty.". eyes-number of gas pouch is -1.
 
 part Dam Pink
 
@@ -1023,7 +1039,7 @@ after printing the locale description for scribe room when player has broom and 
 
 chapter scribes
 
-the scribes are sentients in Scribe Room. "[one of]Unsurprisingly,[or]Those[stopping] scribes continue to do their scribing thing and occasionally bustle about to assist others' scribing.". eyes-number of scribes is 1.
+the scribes are sentients in Scribe Room. "[one of]Unsurprisingly,[or]Those[stopping] scribes continue to do their scribing thing and occasionally bustle about to assist others' scribing.". description is "They look very impressive and uninterested in you [if sco-belt-rusted is true]now you've transacted[else if sco-scry-broom is true]unless you can help with the bell[else]unless you have something for them[end if].". eyes-number of scribes is 1.
 
 chapter broom
 
@@ -1043,7 +1059,7 @@ Dust Which Does Twitch is a room in universal. printed name is "[if sco-pro-swee
 
 chapter prose weeping
 
-the prose weeping is a thing in Dust Which Does Twitch. "The sound of prose, weeping, rises from all the dustiness.". eyes-number of prose weeping is 38. eyes-rule of prose weeping is pre-pro-sweeping rule.
+the prose weeping is a thing in Dust Which Does Twitch. "The sound of prose, weeping, rises from all the dustiness.". description is "You really don't want to examine or analyze it. It would be nice to get rid of.". eyes-number of prose weeping is 38. eyes-rule of prose weeping is pre-pro-sweeping rule.
 
 chapter coal drum
 
@@ -1051,7 +1067,7 @@ the coal drum is a thing. description is "Plenty dirty. Perhaps there is somethi
 
 chapter cold rum
 
-the cold rum is an alcoholic stewitem. indefinite article of cold rum is "some". description is "It seems pretty classy. Or it seems like people who drink it can fool themselves it's classy. Good enough.". eyes-number of cold rum is 1.
+the cold rum is an alcoholic stewitem. indefinite article of cold rum is "some". description is "It seems pretty classy. Or it seems like people who drink it can fool themselves it's classy. Good enough.". eyes-number of cold rum is -1.
 
 chapter tea leaves
 
@@ -1063,15 +1079,15 @@ book up area
 
 part Throne Ow Throw Now
 
-Throne Ow Throw Now is a room in universal. printed name is "[if sco-use-it is true]Final (?) and Fine Land[else]Throne Ow-Throw-Now[end if]". eyes-number of Throne Ow Throw Now is 1.
+Throne Ow Throw Now is a room in universal. printed name is "[if sco-use-it is true]Final (?) and Fine Land[else]Throne Ow-Throw-Now[end if]". description is "[if sco-lie-fruits is true]You've gotten what you need from here[else if sco-use-it is true]With the throne gone, the oppression has lifted[else]Weird, you thought hell was usually down, but your hell pin is protecting you here, you think[end if]. You can only go back down to the Ur-Branch.". eyes-number of Throne Ow Throw Now is 1.
 
 chapter thronescen
 
-thronescen is a privately-named thing in Throne Ow Throw Now. printed name is "the throne". understand "throne" as thronescen. eyes-number of thronescen is 32. eyes-rule of thronescen is pre-use-it rule.
+thronescen is a privately-named thing in Throne Ow Throw Now. printed name is "the throne". understand "throne" and "throne ow" as thronescen. eyes-number of thronescen is 32. eyes-rule of thronescen is pre-use-it rule. "Horrid orders come from the throne, pulling you to it ... 'YOU! SIT! YOU! SIT!'". description is "The way it crackles, you're pretty sure you don't want to sit in it, as it would hurt whether or not it would throw you."
 
 chapter Life Roots
 
-the Life Roots are a thing. "Life Roots have been revealed from where the throne was. And yet, they seem a bit artificial. They aren't that impressive, and maybe they're hiding something that proves them less than they claim to be.". eyes-number of Life Roots is 36. eyes-rule of Life Roots is pre-lie-fruits rule.
+the Life Roots are a thing. "Life Roots have been revealed from where the throne was. And yet, they seem a bit artificial. They aren't that impressive, and maybe they're hiding something that proves them less than they claim to be.". description is "they glow a bit too much, as if they are trying hard to seem like the source of ALL life.". eyes-number of Life Roots is 36. eyes-rule of Life Roots is pre-lie-fruits rule.
 
 chapter assortment
 
