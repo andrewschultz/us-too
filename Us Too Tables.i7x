@@ -14,7 +14,7 @@ w1 (text)	w2 (text)	first-hom (text)	second-hom	hom-txt-rule (rule)	first-exact	
 "try"	"quest"	--	--	--	false	false	false	false	"how to get started and what to do"	false	true	true	false	false	mine ooh	pre-try-quest rule	post-try-quest rule	--	--
 "be"	"strong"	--	--	--	false	false	false	false	"getting rid of the beast"	false	true	true	false	false	mine ooh	pre-be-strong rule	post-be-strong rule	--	--
 "nice"	"warm"	--	--	--	false	false	false	false	"making the swarm less aggressive"	false	true	true	false	false	mine ooh	pre-nice-warm rule	post-nice-warm rule	--	--
-"mess"	"pot"	--	--	--	false	false	false	false	"making the spot into something more useful"	false	true	true	false	false	mine ooh	pre-mess-pot rule	post-mess-pot rule	--	--
+"mess"	"pot"	--	--	--	false	false	false	false	"making the meh spot into something more useful"	false	true	true	false	false	mine ooh	pre-mess-pot rule	post-mess-pot rule	--	--
 "meh"	"skit"	--	--	--	false	false	false	false	"having harmless, useless fun with the mess kit"	false	true	false	false	false	mine ooh	pre-meh-skit rule	post-meh-skit rule	--	--
 "a"	"stew"	--	--	--	false	false	false	false	"achieving the game's objective"	false	true	true	false	false	mine ooh	pre-a-stew rule	post-a-stew rule	--	"You can make [b]A STEW[r] [once-now of pre-a-stew rule] you have all the ingredients you need. [b]X[r] should list them."
 "herb"	"ranch"	--	--	--	false	false	false	false	"finding the first place to visit from the Ur-Branch"	false	true	true	false	false	ur branch	pre-herb-ranch rule	post-herb-ranch rule	--	"You can discover an herb ranch [once-now of pre-herb-ranch rule] you are back in the Ur-Branch."
@@ -116,20 +116,20 @@ this is the post-be-strong rule:
 	moot beast wrong;
 
 a wordtwisting rule (this is the pre-mess-pot rule):
-	if meh spot is not touchable and mess pot is not touchable, unavailable;
+	if meh spot is not touchable and mess kit is not touchable, unavailable;
 	if sco-mess-pot is true:
-		vcal "You already found the mess pot!";
+		vcal "You already found the mess pot/kit!";
 		already-done;
 	ready;
 
 this is the post-mess-pot rule:
 	now sco-mess-pot is true;
 	say "Ah. There it is. You, in fact, find a whole mess kit."; [??mess kit as synonym]
-	move mess pot to mine ooh;
+	move mess kit to mine ooh;
 	moot meh spot;
 
 a wordtwisting rule (this is the pre-meh-skit rule):
-	if mess pot is not touchable, unavailable;
+	if mess kit is not touchable, unavailable;
 	if sco-meh-skit is true:
 		vcal "The skit would go from meh to cringe if you did it again.";
 		already-done;
@@ -138,7 +138,7 @@ a wordtwisting rule (this is the pre-meh-skit rule):
 this is the post-meh-skit rule:
 	now sco-meh-skit is true;
 	say "Perhaps it's too obvious, but you decide to have fun, and you do.";
-	declue mess pot;
+	declue mess kit;
 
 a wordtwisting rule (this is the pre-a-stew rule):
 	if player is not in mine ooh:

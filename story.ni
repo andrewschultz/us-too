@@ -368,9 +368,9 @@ chapter meh spot
 
 the meh spot is a thing. "The meh spot you saw in the pro ball sits here. It makes your mine feel emptier. Perhaps something belongs there.". description is "Not much to say about it, now. Maybe something else is supposed to be there?". eyes-number of meh spot is 43. eyes-rule of meh spot is pre-mess-pot rule.
 
-chapter mess pot
+chapter mess kit
 
-the mess pot is a thing. description is "It's a standard mess pot, not very flashy, but clean.". eyes-number of mess pot is -34. eyes-rule of mess pot is pre-meh-skit rule.
+the mess kit is a stewitem. description is "It's a standard mess kit, not very flashy, but clean.". eyes-number of mess kit is -34. eyes-rule of mess kit is pre-meh-skit rule. invtext of mess kit is "cookware[if sco-mess-pot is true] (the mess kit)[end if]".
 
 part ur branch
 
@@ -540,7 +540,7 @@ check taking pro ball when sco-probe-all is false: say "It won't budge. At least
 
 chapter pie crust
 
-the pie crust is an eatworthy stewitem. description is "Not very fancy, but it's good enough.". eyes-number of pie crust is -1.
+the pie crust is an eatworthy stewitem. description is "Not very fancy, but it's good enough.". eyes-number of pie crust is -1. invtext of pie crust is "(should be taken care of by another item)".
 
 chapter pun tweaker
 
@@ -1131,6 +1131,7 @@ definition: a thing (called th) is ughlistable:
 	if th is aight, no;
 	if th is tour ad, no;
 	if th is dense pecs, no;
+	if th is a stewitem, no;
 	yes;
 
 carry out taking inventory (this is the UT specific inventory rule):
@@ -1138,7 +1139,7 @@ carry out taking inventory (this is the UT specific inventory rule):
 	now all startthings are not marked for listing;
 	now Aw Lug All Ugh is not marked for listing;
 	if number of ughlistable things is 0:
-		say "Your Aw-Lug-All-Ugh has nothing special in it[if number of carried stewitems > 0], except the items in [aight][end if].";
+		say "Your Aw-Lug-All-Ugh has nothing special in it[if number of carried stewitems > 0], except what you've found for [aight][end if].";
 	else:
 		say "First, helpful stuff [ara] didn't explicitly ask for, in your [ugh]:[line break]";
 	now all stewitems are not marked for listing;

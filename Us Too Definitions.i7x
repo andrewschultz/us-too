@@ -36,6 +36,12 @@ volume types
 
 a stewitem is a kind of thing. a stewitem has text called invtext. a stewitem can be alcoholic, eatworthy, ingredient or uneatable. a stewitem is usually eatworthy.
 
+definition: a stewitem (called st) is discovered:
+	if st is mess kit:
+		if sco-mess-pot is true, yes;
+	if st is carried, yes;
+	no;
+
 a startprop is a kind of thing. a startprop is usually scenery.
 
 a startthing is a kind of thing.
