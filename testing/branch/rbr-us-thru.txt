@@ -28,9 +28,10 @@ file=reg-us-thru-verbs.txt,abbr=v/verb/verbs,desc=special verb testing inventory
 }$REJHOM=Hmm. That really, really SOUNDED like it should work, but it didn't.
 }$XTRA=The first word was a valid command that could stand on its own. The second may be unnecessary, or a typo.
 }$EYEITMNO=The eyes show nothing. Probably don't need to do anything with
-}$EYEITMDONE=The eyes show nothing. You've done everything you need to with
+}$EYEITMDONE=The eyes show nothing. You've done everything you need with
 }$EYERMNO=The eyes show nothing. Probably don't need to do anything with the general area, though specific things may provide a clue.
-}$EYERMDONE=The eyes show nothing. You've done everything you need to with the general area, though specific things may provide a clue.
+}$EYERMDONE=The eyes show nothing. You've done everything you need with the general area, though specific things may provide a clue.
+}$NOTHERE=You can't see any such thing.
 
 }}MAX=68
 }}CURMAX=68
@@ -59,6 +60,12 @@ by a point
 @all
 #testcase-room-names-my-new-mine-ooh
 `My New Mine, Ooh!
+
+>i
+Your Aw-Lug-All-Ugh has nothing special in it.
+You have that too-rad tour ad flopping about, too. It seems non-critical. You can probably examine and then drop it.
+#OK-APOSTROPHE
+Note that X will default to A'ight, Amusing Item Using in the future.
 
 @hint
 >x row
@@ -443,13 +450,7 @@ by a point
 @hint
 #testcase-values-eyes-number-of-beast-wrong-is-26
 >eye beast wrong
-WRONG
-
->i
-Your Aw-Lug-All-Ugh has nothing special in it.
-You have that too-rad tour ad flopping about, too. It seems non-critical. You can probably examine and then drop it.
-#OK-APOSTROPHE
-Note that X will default to 'Aight, Amusing Item Using in the future.
+You can't see any such thing.
 
 >x
 
@@ -472,14 +473,14 @@ You haven't found any yet, so I didn't sort them into have and don't have.
 @hint
 #testcase-values-eyes-number-of-war-pawn-is--42
 >eye war pawn
-The eyes glow dimly and show four dots, then two dots.
+The eyes glow dimly green and show four dots, then two dots.
 \\
 #testcase-values-eyes-number-of-message-is-1
 >eye message
 {$EYEITMNO}
 \\
 #testcase-values-eyes-number-of-mine-ooh-is-1
->eye mine ooh
+>eye
 {$EYERMNO}
 \\
 #testcase-values-eyes-number-of-too-rad-tour-ad-is-1
@@ -488,19 +489,53 @@ The eyes glow dimly and show four dots, then two dots.
 
 @hint+
 >eye eyes
-WRONG
+The eyes will light up two sets of dots if there is something you still need to do in the area. (1/6)
+\\
+>eye eyes
+The numbers of dots correspond to the number of letters in the first and second words to type, respectively. (2/6)
+\\
+>eye eyes
+The dots also have two different types of appearances that clue you to the puzzle nature: green or yellow, and dimly glowing or glowing. (3/6)
+\\
+>eye eyes
+Green dots mean the suggested action can score a point right now. (4/6)
+\\
+>eye eyes
+Yellow dots mean you have something to guess, but you won't get a point, as you haven't found the right items or assistance from other puzzles to make things work. It will be kept in THINK. (5/6)
+\\
+>eye eyes
+Finally, a dimly glowing reading indicates something you can change for a bonus point. It's not critical to complete Us Too. (End of hints. Next EYE EYES starts the hint cycle again) (6/6)
+\\
+>eye eyes
+The eyes will light up two sets of dots if there is something you still need to do in the area. (1/6)
+\\
+>eye eyes
+The numbers of dots correspond to the number of letters in the first and second words to type, respectively. (2/6)
+\\
+>eye eyes
+The dots also have two different types of appearances that clue you to the puzzle nature: green or yellow, and dimly glowing or glowing. (3/6)
+\\
+>eye eyes
+Green dots mean the suggested action can score a point right now. (4/6)
+\\
+>eye eyes
+Yellow dots mean you have something to guess, but you won't get a point, as you haven't found the right items or assistance from other puzzles to make things work. It will be kept in THINK. (5/6)
+\\
+>eye eyes
+Finally, a dimly glowing reading indicates something you can change for a bonus point. It's not critical to complete Us Too. (6/6)
+!End of hints
 
 @hint+
 ##balance undos
 >gonear sage oaks
 \\
 #testcase-values-eyes-number-of-sage-oaks-is-35
->eye sage oaks
-The eyes light up yellow and show X dots, then X dots.
+>eye
+The eyes light up yellow and show three dots, then five dots.
 \\
 #testcase-values-eyes-number-of-sageoakscen-is-35
 >eye sage oaks
-The eyes light up yellow and show X dots, then X dots.
+The eyes light up yellow and show three dots, then five dots.
 \\
 >undo
 >undo
@@ -510,16 +545,7 @@ The eyes light up yellow and show X dots, then X dots.
 \\
 #testcase-values-eyes-number-of-prose-weeping-is-38
 >eye prose weeping
-The eyes light up yellow and show X dots, then X dots.
-\\
->undo
->undo
-\\
->gonear scribe room
-\\
-#testcase-values-eyes-number-of-bell-trusted-is-46
->eye bell trusted
-The eyes light up yellow and show X dots, then X dots.
+The eyes light up yellow and show three dots, then eight dots.
 \\
 >undo
 >undo
@@ -528,7 +554,7 @@ The eyes light up yellow and show X dots, then X dots.
 \\
 #testcase-values-eyes-number-of-dam-pink-is-43
 >eye
-The eyes light up yellow and show X dots, then X dots.
+The eyes light up yellow and show four dots, then three dots.
 \\
 >undo
 >undo
@@ -599,6 +625,7 @@ You must have one word right for figuring what some munchies are.
 #testcase-values-eyes-number-of-aight-amusing-item-using-is-66
 >eye aight amusing item using
 The eyes light up green and show six dots, then six dots.
+Hmm, can't be the whole document. Must be one thing in particular you can pick off at any time.
 
 >summon cheese
 by a point
@@ -606,11 +633,12 @@ by a point
 @hint
 #testcase-values-eyes-number-of-aight-amusing-item-using-is-66
 >eye aight amusing item using
-{$EYEITMDONE}
+{$EYEITMDONE} A'ight
+!can't be the whole document
 \\
 #testcase-values-eyes-number-of-cheese-is-1
 >eye cheese
-{$EYEITMDONE}
+{$EYEITMNO} the cheese.
 
 >u
 
@@ -652,7 +680,7 @@ You must have one word right for finding the first place to visit from the Ur-Br
 
 @hint
 #testcase-values-eyes-number-of-ur-branch-is-45
->eye ur branch
+>eye
 The eyes light up green and show four dots, then five dots.
 
 >herb ranch
@@ -660,7 +688,7 @@ by a point
 
 @hint
 #testcase-values-eyes-number-of-ur-branch-is-45
->eye ur branch
+>eye
 {$EYERMDONE}
 
 @part
@@ -772,7 +800,7 @@ by a point
 @hint
 #testcase-values-eyes-number-of-nigh-swarm-is-44
 >eye nigh swarm
-WRONG
+{$NOTHERE}
 
 @all
 #+testcase-room-names-beach-ill
@@ -852,8 +880,8 @@ by a point
 
 @hint
 #+testcase-values-eyes-number-of-meh-spot-is-43
->eye meh spot
-WRONG
+>eye spot
+{$NOTHERE}
 
 @part
 ##balance undos
@@ -947,10 +975,13 @@ The eyes light up yellow and show four dots, then four dots.
 ##balance undos
 >nw
 \\
-#testcase-values-eyes-number-of-sore-dark-is-53
->eye
-The eyes light up yellow and show five dots, then three dots.
+>sword ark
 \\
+#testcase-values-eyes-number-of-terra-blade-is-83
+>eye blade
+The eyes light up yellow and show eight dots, then three dots.
+\\
+>undo
 >undo
 >undo
 
@@ -958,13 +989,15 @@ The eyes light up yellow and show five dots, then three dots.
 >blah copse
 !by one point
 
+>n
+
+@all
+You walk north, but somehow, you stumble by a black ops site, and you're flagged down. What are you doing here? How did you even get close? After some questioning, you're sent back to the Ur-Branch by people who "suggest" you forget this ever happened. Returning is ... not advised.
+
 @hint
 #testcase-values-eyes-number-of-black-ops-is-45
 >eye black ops
 The eyes light up green and show four dots, then five dots.
-
->n
-You walk towards the black ops site, but you're flagged down. What are you doing here? How did you even get close? After some questioning, you're sent back to the Ur-Branch by people who "suggest" you forget this ever happened. Returning is ... not advised.
 
 @part
 ##balance undos
@@ -1065,11 +1098,7 @@ by a point
 @hint
 #testcase-values-eyes-number-of-sir-freddie-is-45
 >eye sir freddie
-WRONG
-\\
-#testcase-values-eyes-number-of-blah-string-is-54
->eye blah string
-The eyes light up yellow and show five dots, then four dots.
+{$NOTHERE}
 
 @part
 ##balance undos
@@ -1095,6 +1124,11 @@ You must have one word right for figuring what Sir Freddie was scared of.
 
 >or clerk
 by a point
+
+@hint
+#testcase-values-eyes-number-of-blah-string-is-54
+>eye blah string
+The eyes light up yellow and show five dots, then four dots.
 
 >n
 @all
@@ -1147,7 +1181,7 @@ by a point
 \\
 #+testcase-values-eyes-number-of-sir-freddie-is-45
 >eye sir freddie
-{$EYEITMDONE}
+The eyes show nothing. You've done everything you need to get something from Sir Freddie directly.
 \\
 >undo
 >undo
@@ -1158,7 +1192,7 @@ by a point
 
 @hint
 #testcase-values-eyes-number-of-morph-lairs-is-46
->eye morph lairs
+>eye
 {$EYERMDONE}
 
 @part
@@ -1194,7 +1228,7 @@ by a point
 @hint
 #testcase-values-eyes-number-of-row-plaider-is-46
 >eye row plaider
-WRONG
+{$NOTHERE}
 \\
 #testcase-values-eyes-number-of-rope-ladder-is--1
 >eye rope ladder
@@ -1291,7 +1325,8 @@ You must have one word right for finding something unusual within the Pea Stalks
 
 @hint
 >eye
-The eyes show 3, then 3.
+The eyes glow dimly green and show three dots, then three dots.
+Hmm. Looks like some detail about this place to explore, if you're curious.
 
 @!min
 >pea pod
@@ -1317,8 +1352,12 @@ by a bonus point
 
 @hint
 #testcase-values-eyes-number-of-dome-aching-is-56
->eye dome aching
+>eye
 The eyes light up yellow and show five dots, then six dots.
+\\
+#testcase-values-eyes-number-of-cant-ache-is-34
+>eye cant ache
+The eyes light up green and show three dots, then four dots.
 
 @part
 ##balance undos
@@ -1347,8 +1386,12 @@ by a point
 
 @hint
 #testcase-values-eyes-number-of-dome-aching-is-56
->eye dome aching
+>eye
 The eyes light up green and show five dots, then six dots.
+\\
+#testcase-values-eyes-number-of-cant-ache-is-34
+>eye cant ache
+You can't see any such thing.
 
 @part
 ##balance undos
@@ -1463,7 +1506,7 @@ by a point
 
 @hint
 #testcase-values-eyes-number-of-inner-nest-is--1
->eye inner nest
+>eye
 {$EYERMDONE}
 
 @part
@@ -1583,8 +1626,8 @@ by a point
 
 @hint
 #testcase-values-eyes-number-of-bay-spikes-is-45
->eye bay spikes
-WRONG
+>eye spikes
+{$NOTHERE}
 \\
 #testcase-values-eyes-number-of-base-pikes-is--1
 >eye base pikes
@@ -1623,7 +1666,7 @@ by a point
 @hint
 #testcase-values-eyes-number-of-pike-rust-is-35
 >eye pike rust
-WRONG
+{$NOTHERE}
 \\
 #testcase-values-eyes-number-of-pie-crust-is--1
 >eye pie crust
@@ -1744,7 +1787,7 @@ by a point
 @hint
 #+testcase-values-eyes-number-of-blah-string-is-54
 >eye blah string
-WRONG
+{$NOTHERE}
 
 @part
 ##balance undos
@@ -1828,7 +1871,7 @@ by a point
 @hint
 #+testcase-values-eyes-number-of-oak-lever-is-26
 >eye oak lever
-WRONG
+{$NOTHERE}
 
 >x beak
 
@@ -1899,7 +1942,7 @@ by a point
 
 @hint
 #testcase-values-eyes-number-of-too-dark-tude-ark-is-1
->eye too dark tude ark
+>eye
 {$EYERMNO}
 \\
 #testcase-values-eyes-number-of-whole-anger-is-27
@@ -2042,11 +2085,11 @@ by a point
 
 @hint
 #testcase-values-eyes-number-of-sage-oaks-is-35
->eye sage oaks
+>eye
 The eyes light up green and show three dots, then five dots.
 \\
 #testcase-values-eyes-number-of-sageoakscen-is-35
->eye sageoakscen
+>eye sage oaks
 The eyes light up green and show three dots, then five dots.
 
 @part
@@ -2076,12 +2119,12 @@ by a point
 
 @hint
 #+testcase-values-eyes-number-of-sage-oaks-is-35
->eye sage oaks
-{$EYEITMDONE}
+>eye
+{$EYERMDONE}
 \\
 #+testcase-values-eyes-number-of-sageoakscen-is-35
->eye sageoakscen
-{$EYERMDONE}
+>eye sage oaks
+The eyes show nothing. You've done everything you need to impress the sage oaks directly.
 
 @part
 ##balance undos
@@ -2105,20 +2148,20 @@ You must have one word right for see how to stop gasping OUCH.
 >undo
 >undo
 
+>gas pouch
+by a point
+
 @hint
 #testcase-values-eyes-number-of-gas-pouch-is--1
 >eye gas pouch
 {$EYEITMDONE}
 
->gas pouch
-by a point
-
 >n
 
 @hint
 #testcase-values-eyes-number-of-sign-ought-sigh-not-is--1
->eye sign ought sigh not
-{$EYEITMNO}
+>eye sign
+{$EYEITMNO} the Sign Ought-Sigh-Not.
 
 >sss
 >s
@@ -2233,12 +2276,12 @@ You must have one word right for getting something from the Scribe Room.
 
 @hint
 #testcase-values-eyes-number-of-scribe-room-is-45
->eye scribe room
+>eye
 The eyes light up green and show four dots, then five dots.
 \\
 #testcase-values-eyes-number-of-scribes-is-1
 >eye scribes
-{$EYEITMNO}
+The eyes show nothing. Probably don't need to do anything to get something from the scribes directly.
 
 >scry broom
 by a point
@@ -2246,10 +2289,11 @@ by a point
 @hint
 #testcase-values-eyes-number-of-broom-is-1
 >eye broom
-{$EYEITMNO}
+The eyes show nothing. Perhaps it's better the broom isn't magical. You saw Fantasia. It could probably help you clean up somewhere, though.
+!Probably don't
 \\
 #testcase-values-eyes-number-of-scribe-room-is-45
->eye scribe room
+>eye
 {$EYERMDONE}
 
 >n
@@ -2263,7 +2307,7 @@ by a point
 
 @hint
 #testcase-values-eyes-number-of-dust-which-is-1
->eye dust which
+>eye
 {$EYERMNO}
 
 @part
@@ -2301,9 +2345,9 @@ by a point
 `Teal Eaves
 
 @hint
-#testcase-to-do
+#testcase-values-eyes-number-of-dust-which-is-1
 >eye
-The eyes show 3, then 6.
+The eyes light up green and show three dots, then six dots.
 
 @part
 ##balance undos
@@ -2338,11 +2382,11 @@ by a point
 @hint
 #testcase-values-eyes-number-of-coal-drum-is-43
 >eye coal drum
-WRONG
+{$NOTHERE}
 \\
 #testcase-values-eyes-number-of-cold-rum-is--1
 >eye cold rum
-The eyes light up green and show X dots, then X dots.
+{$EYEITMDONE}
 
 @part
 ##balance undos
@@ -2403,7 +2447,7 @@ You must have one word right for figuring how to "clean" the bell (trusted).
 
 @hint
 #testcase-values-eyes-number-of-bell-trusted-is-46
->eye bell trusted
+>eye bell
 The eyes light up green and show four dots, then six dots.
 
 >belt rusted
@@ -2411,12 +2455,12 @@ by a point
 
 @hint
 #testcase-values-eyes-number-of-bell-trusted-is-46
->eye bell trusted
-{$EYEITMDONE}
+>eye bell
+You can't see any such thing.
 \\
 #testcase-values-eyes-number-of-belt-rusted-is--1
 >eye belt rusted
-The eyes light up green and show X dots, then X dots.
+{$EYEITMDONE}
 
 >n
 >n
@@ -2495,7 +2539,7 @@ You must have one word right for bringing more business to Turbo Tours.
 @hint
 #testcase-values-eyes-number-of-turbo-tours-is--47
 >eye
-The eyes glow dimly and show four dots, then seven dots.
+The eyes glow dimly green and show four dots, then seven dots.
 
 @!min
 >tour boaters
@@ -2694,7 +2738,7 @@ You must have one word right for finding signs of life in Sob Acres.
 
 @hint
 #testcase-values-eyes-number-of-sob-acres-is-36
->eye sob acres
+>eye
 The eyes light up green and show three dots, then six dots.
 
 >saw bakers
@@ -2702,7 +2746,7 @@ by a point
 
 @hint
 #testcase-values-eyes-number-of-sob-acres-is-36
->eye sob acres
+>eye
 {$EYERMDONE}
 
 >in
@@ -2714,8 +2758,8 @@ by a point
 @hint
 #testcase-values-eyes-number-of-owners-is-1
 >eye owners
-{$EYEITMNO}
-Perhaps you can change things around the owners.
+The eyes show nothing. Probably don't need to do anything to get something from the fey loners/fail-owners directly.
+Perhaps you need to change things around the fey loners/fail-owners, though.
 
 @part
 ##balance undos
@@ -2760,6 +2804,12 @@ by a point
 
 >w
 
+@hint
+#+testcase-values-eyes-number-of-owners-is-1
+>eye owners
+The eyes show nothing. Probably don't need to do anything to get something from the fey loners/fail-owners directly.
+Perhaps you need to change more things around the fey loners/fail-owners, though.
+
 @part
 ##balance undos
 #testcase-one-right-table-of-main-oronyms-dope-ale-1-dope
@@ -2793,7 +2843,7 @@ by a point
 @hint
 #+testcase-values-eyes-number-of-dough-pail-is-43
 >eye dough pail
-WRONG
+{$NOTHERE}
 \\
 #testcase-values-eyes-number-of-dope-ale-is--1
 >eye dope ale
@@ -2839,7 +2889,7 @@ by a point
 @hint
 #testcase-values-eyes-number-of-meat-rack-is--1
 >eye meat rack
-{$EYEITMDONE} the meat rack.
+{$EYEITMDONE} the me-track-meat rack.
 
 >e
 >w
@@ -2868,7 +2918,7 @@ You must have one word right for guessing what free samples are on offer.
 
 @hint
 #testcase-values-eyes-number-of-whee-try-is-53
->eye whee try
+>eye sign
 The eyes light up green and show five dots, then three dots.
 
 >wheat rye
@@ -2876,12 +2926,12 @@ by a point
 
 @hint
 #+testcase-values-eyes-number-of-whee-try-is-53
->eye whee try
+>eye sign
 {$EYEITMDONE}
 \\
 #testcase-values-eyes-number-of-owners-is-1
 >eye owners
-{$EYEITMNO}
+You've done everything you can here for the fey loners/fail-owners.
 !Perhaps
 \\
 #testcase-values-eyes-number-of-pliers-is-1
@@ -2891,11 +2941,6 @@ by a point
 #testcase-values-eyes-number-of-bread-is-1
 >eye bread
 {$EYEITMNO}
-
-@hint+
-#testcase-values-eyes-number-of-dense-pecs-is-35
->eye dense pecs
-The eyes light up yellow and show three dots, then five dots.
 
 >e
 
@@ -3012,7 +3057,7 @@ by a point
 @hint
 #testcase-values-eyes-number-of-nodes-is-24
 >eye nodes
-WRONG
+{$NOTHERE}
 \\
 #testcase-values-eyes-number-of-hell-pin-is-1
 >eye hell pin

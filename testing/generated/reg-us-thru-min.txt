@@ -11,6 +11,11 @@
 >how so
 by a point
 
+>i
+Your Aw-Lug-All-Ugh has nothing special in it.
+You have that too-rad tour ad flopping about, too. It seems non-critical. You can probably examine and then drop it.
+Note that X will default to A'ight, Amusing Item Using in the future.
+
 >z
 
 >try quest
@@ -18,11 +23,6 @@ by a point
 
 >be strong
 by a point
-
->i
-Your Aw-Lug-All-Ugh has nothing special in it.
-You have that too-rad tour ad flopping about, too. It seems non-critical. You can probably examine and then drop it.
-Note that X will default to 'Aight, Amusing Item Using in the future.
 
 >x
 
@@ -63,7 +63,6 @@ by a point
 >sw
 
 >n
-You walk towards the black ops site, but you're flagged down. What are you doing here? How did you even get close? After some questioning, you're sent back to the Ur-Branch by people who "suggest" you forget this ever happened. Returning is ... not advised.
 
 >blah copse
 by a point
