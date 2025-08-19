@@ -1,0 +1,892 @@
+## reg-us-thru-reject.txt
+## GENERATOR FILE: rbr-us-thru.txt
+
+## walkthrough with all rejections and THINK
+
+** game: /home/andrew/prt/debug-us-too.z8
+** interpreter: /home/andrew/prt/dfrotz -m -w5000 -h25
+
+* main-thru
+
+>how so
+by a point
+
+>z
+
+#testcase-reject-start-table-of-main-oronyms-pre-barn-open-rule
+>barn open
+That thought/action/observation/request brings up nothing. Us Too has a limited set of verbs, and the main thing is to guess a two-word phrase. To see what verbs are used, try VERBS.
+
+#testcase-reject-start-table-of-main-oronyms-pre-base-pikes-rule
+>base pikes
+That thought/action/observation/request brings up nothing. Us Too has a limited set of verbs, and the main thing is to guess a two-word phrase. To see what verbs are used, try VERBS.
+
+#testcase-reject-start-table-of-main-oronyms-pre-be-chill-rule
+>be chill
+That thought/action/observation/request brings up nothing. Us Too has a limited set of verbs, and the main thing is to guess a two-word phrase. To see what verbs are used, try VERBS.
+
+#testcase-reject-start-table-of-main-oronyms-pre-be-strong-rule
+>be strong
+That thought/action/observation/request brings up nothing. Us Too has a limited set of verbs, and the main thing is to guess a two-word phrase. To see what verbs are used, try VERBS.
+
+#testcase-reject-start-table-of-main-oronyms-pre-bear-respond-rule
+>bear respond
+That thought/action/observation/request brings up nothing. Us Too has a limited set of verbs, and the main thing is to guess a two-word phrase. To see what verbs are used, try VERBS.
+
+#testcase-reject-start-table-of-main-oronyms-pre-beef-ordering-rule
+>beef ordering
+That thought/action/observation/request brings up nothing. Us Too has a limited set of verbs, and the main thing is to guess a two-word phrase. To see what verbs are used, try VERBS.
+
+#testcase-reject-start-table-of-main-oronyms-pre-belt-rusted-rule
+>belt rusted
+That thought/action/observation/request brings up nothing. Us Too has a limited set of verbs, and the main thing is to guess a two-word phrase. To see what verbs are used, try VERBS.
+
+#testcase-reject-start-table-of-main-oronyms-pre-blah-copse-rule
+>blah copse
+That thought/action/observation/request brings up nothing. Us Too has a limited set of verbs, and the main thing is to guess a two-word phrase. To see what verbs are used, try VERBS.
+
+#testcase-reject-start-table-of-main-oronyms-pre-blast-ring-rule
+>blast ring
+That thought/action/observation/request brings up nothing. Us Too has a limited set of verbs, and the main thing is to guess a two-word phrase. To see what verbs are used, try VERBS.
+
+#testcase-reject-start-table-of-main-oronyms-pre-board-red-rule
+>board red
+That thought/action/observation/request brings up nothing. Us Too has a limited set of verbs, and the main thing is to guess a two-word phrase. To see what verbs are used, try VERBS.
+
+#testcase-reject-start-table-of-main-oronyms-pre-bold-itch-rule
+>bold itch
+That thought/action/observation/request brings up nothing. Us Too has a limited set of verbs, and the main thing is to guess a two-word phrase. To see what verbs are used, try VERBS.
+
+#testcase-reject-start-table-of-main-oronyms-pre-can-take-rule
+>can take
+That thought/action/observation/request brings up nothing. Us Too has a limited set of verbs, and the main thing is to guess a two-word phrase. To see what verbs are used, try VERBS.
+
+#testcase-reject-start-table-of-main-oronyms-pre-cellar-bin-rule
+>cellar bin
+That thought/action/observation/request brings up nothing. Us Too has a limited set of verbs, and the main thing is to guess a two-word phrase. To see what verbs are used, try VERBS.
+
+#testcase-reject-start-table-of-main-oronyms-pre-claim-it-rule
+>claim it
+That thought/action/observation/request brings up nothing. Us Too has a limited set of verbs, and the main thing is to guess a two-word phrase. To see what verbs are used, try VERBS.
+
+#testcase-reject-start-table-of-main-oronyms-pre-cold-rum-rule
+>cold rum
+That thought/action/observation/request brings up nothing. Us Too has a limited set of verbs, and the main thing is to guess a two-word phrase. To see what verbs are used, try VERBS.
+
+#testcase-reject-start-table-of-main-oronyms-pre-damp-ink-rule
+>damp ink
+That thought/action/observation/request brings up nothing. Us Too has a limited set of verbs, and the main thing is to guess a two-word phrase. To see what verbs are used, try VERBS.
+
+#testcase-reject-start-table-of-main-oronyms-pre-dell-eastern-rule
+>dell eastern
+That thought/action/observation/request brings up nothing. Us Too has a limited set of verbs, and the main thing is to guess a two-word phrase. To see what verbs are used, try VERBS.
+
+#testcase-reject-start-table-of-main-oronyms-pre-den-specs-rule
+>den specs
+That thought/action/observation/request brings up nothing. Us Too has a limited set of verbs, and the main thing is to guess a two-word phrase. To see what verbs are used, try VERBS.
+
+#testcase-reject-start-table-of-main-oronyms-pre-dope-ale-rule
+>dope ale
+That thought/action/observation/request brings up nothing. Us Too has a limited set of verbs, and the main thing is to guess a two-word phrase. To see what verbs are used, try VERBS.
+
+#testcase-reject-start-table-of-main-oronyms-pre-dough-making-rule
+>dough making
+That thought/action/observation/request brings up nothing. Us Too has a limited set of verbs, and the main thing is to guess a two-word phrase. To see what verbs are used, try VERBS.
+
+#testcase-reject-start-table-of-main-oronyms-pre-dupe-it-rule
+>dupe it
+That thought/action/observation/request brings up nothing. Us Too has a limited set of verbs, and the main thing is to guess a two-word phrase. To see what verbs are used, try VERBS.
+
+#testcase-reject-start-table-of-main-oronyms-pre-fell-trap-rule
+>fell trap
+That thought/action/observation/request brings up nothing. Us Too has a limited set of verbs, and the main thing is to guess a two-word phrase. To see what verbs are used, try VERBS.
+
+#testcase-reject-start-table-of-main-oronyms-pre-find-rinks-rule
+>find rinks
+That thought/action/observation/request brings up nothing. Us Too has a limited set of verbs, and the main thing is to guess a two-word phrase. To see what verbs are used, try VERBS.
+
+#testcase-reject-start-table-of-main-oronyms-pre-gas-pouch-rule
+>gas pouch
+That thought/action/observation/request brings up nothing. Us Too has a limited set of verbs, and the main thing is to guess a two-word phrase. To see what verbs are used, try VERBS.
+
+#testcase-reject-start-table-of-main-oronyms-pre-gray-tin-rule
+>gray tin
+That thought/action/observation/request brings up nothing. Us Too has a limited set of verbs, and the main thing is to guess a two-word phrase. To see what verbs are used, try VERBS.
+
+#testcase-reject-start-table-of-main-oronyms-pre-grow-nodes-rule
+>grow nodes
+That thought/action/observation/request brings up nothing. Us Too has a limited set of verbs, and the main thing is to guess a two-word phrase. To see what verbs are used, try VERBS.
+
+#testcase-reject-start-table-of-main-oronyms-pre-guard-entry-rule
+>guard entry
+That thought/action/observation/request brings up nothing. Us Too has a limited set of verbs, and the main thing is to guess a two-word phrase. To see what verbs are used, try VERBS.
+
+#testcase-reject-start-table-of-main-oronyms-pre-herb-ranch-rule
+>herb ranch
+That thought/action/observation/request brings up nothing. Us Too has a limited set of verbs, and the main thing is to guess a two-word phrase. To see what verbs are used, try VERBS.
+
+#testcase-reject-start-table-of-main-oronyms-pre-hike-up-rule
+>hike up
+That thought/action/observation/request brings up nothing. Us Too has a limited set of verbs, and the main thing is to guess a two-word phrase. To see what verbs are used, try VERBS.
+
+#testcase-reject-start-table-of-main-oronyms-pre-ho-langour-rule
+>ho languor
+That thought/action/observation/request brings up nothing. Us Too has a limited set of verbs, and the main thing is to guess a two-word phrase. To see what verbs are used, try VERBS.
+
+#testcase-reject-start-table-of-main-oronyms-pre-in-earnest-rule
+>in earnest
+The first word was a valid command that could stand on its own. The second may be unnecessary, or a typo.
+
+#testcase-reject-start-table-of-main-oronyms-pre-join-aider-rule
+>join aider
+That thought/action/observation/request brings up nothing. Us Too has a limited set of verbs, and the main thing is to guess a two-word phrase. To see what verbs are used, try VERBS.
+
+#testcase-reject-start-table-of-main-oronyms-pre-lie-fruits-rule
+>lie fruits
+That thought/action/observation/request brings up nothing. Us Too has a limited set of verbs, and the main thing is to guess a two-word phrase. To see what verbs are used, try VERBS.
+
+#testcase-reject-start-table-of-main-oronyms-pre-malt-hour-rule
+>malt hour
+That thought/action/observation/request brings up nothing. Us Too has a limited set of verbs, and the main thing is to guess a two-word phrase. To see what verbs are used, try VERBS.
+
+#testcase-reject-start-table-of-main-oronyms-pre-meh-skit-rule
+>meh skit
+That thought/action/observation/request brings up nothing. Us Too has a limited set of verbs, and the main thing is to guess a two-word phrase. To see what verbs are used, try VERBS.
+
+#testcase-reject-start-table-of-main-oronyms-pre-mess-pot-rule
+>mess pot
+That thought/action/observation/request brings up nothing. Us Too has a limited set of verbs, and the main thing is to guess a two-word phrase. To see what verbs are used, try VERBS.
+
+#testcase-reject-start-table-of-main-oronyms-pre-more-flares-rule
+>more flares
+That thought/action/observation/request brings up nothing. Us Too has a limited set of verbs, and the main thing is to guess a two-word phrase. To see what verbs are used, try VERBS.
+
+#testcase-reject-start-table-of-main-oronyms-pre-nah-queue-rule
+>nah queue
+That thought/action/observation/request brings up nothing. Us Too has a limited set of verbs, and the main thing is to guess a two-word phrase. To see what verbs are used, try VERBS.
+
+#testcase-reject-start-table-of-main-oronyms-pre-nice-warm-rule
+>nice warm
+That thought/action/observation/request brings up nothing. Us Too has a limited set of verbs, and the main thing is to guess a two-word phrase. To see what verbs are used, try VERBS.
+
+#testcase-reject-start-table-of-main-oronyms-pre-no-date-rule
+>no date
+The first word was a valid command that could stand on its own. The second may be unnecessary, or a typo.
+
+#testcase-reject-start-table-of-main-oronyms-pre-oh-clever-rule
+>oh clever
+That thought/action/observation/request brings up nothing. Us Too has a limited set of verbs, and the main thing is to guess a two-word phrase. To see what verbs are used, try VERBS.
+
+#testcase-reject-start-table-of-main-oronyms-pre-or-clerk-rule
+>or clerk
+That thought/action/observation/request brings up nothing. Us Too has a limited set of verbs, and the main thing is to guess a two-word phrase. To see what verbs are used, try VERBS.
+
+#testcase-reject-start-table-of-main-oronyms-pre-pea-pod-rule
+>pea pod
+That thought/action/observation/request brings up nothing. Us Too has a limited set of verbs, and the main thing is to guess a two-word phrase. To see what verbs are used, try VERBS.
+
+#testcase-reject-start-table-of-main-oronyms-pre-peace-talks-rule
+>peace talks
+That thought/action/observation/request brings up nothing. Us Too has a limited set of verbs, and the main thing is to guess a two-word phrase. To see what verbs are used, try VERBS.
+
+#testcase-reject-start-table-of-main-oronyms-pre-pie-crust-rule
+>pie crust
+That thought/action/observation/request brings up nothing. Us Too has a limited set of verbs, and the main thing is to guess a two-word phrase. To see what verbs are used, try VERBS.
+
+#testcase-reject-start-table-of-main-oronyms-pre-pro-sweeping-rule
+>pro sweeping
+That thought/action/observation/request brings up nothing. Us Too has a limited set of verbs, and the main thing is to guess a two-word phrase. To see what verbs are used, try VERBS.
+
+#testcase-reject-start-table-of-main-oronyms-pre-probe-all-rule
+>probe all
+That thought/action/observation/request brings up nothing. Us Too has a limited set of verbs, and the main thing is to guess a two-word phrase. To see what verbs are used, try VERBS.
+
+#testcase-reject-start-table-of-main-oronyms-pre-pry-more-rule
+>pry more
+That thought/action/observation/request brings up nothing. Us Too has a limited set of verbs, and the main thing is to guess a two-word phrase. To see what verbs are used, try VERBS.
+
+#testcase-reject-start-table-of-main-oronyms-pre-punt-weaker-rule
+>punt weaker
+That thought/action/observation/request brings up nothing. Us Too has a limited set of verbs, and the main thing is to guess a two-word phrase. To see what verbs are used, try VERBS.
+
+#testcase-reject-start-table-of-main-oronyms-pre-rope-ladder-rule
+>rope ladder
+That thought/action/observation/request brings up nothing. Us Too has a limited set of verbs, and the main thing is to guess a two-word phrase. To see what verbs are used, try VERBS.
+
+#testcase-reject-start-table-of-main-oronyms-pre-saw-bakers-rule
+>saw bakers
+That thought/action/observation/request brings up nothing. Us Too has a limited set of verbs, and the main thing is to guess a two-word phrase. To see what verbs are used, try VERBS.
+
+#testcase-reject-start-table-of-main-oronyms-pre-say-jokes-rule
+>say jokes
+You don't need to prefix any important two-word command with SAY. Just say the two words.
+
+#testcase-reject-start-table-of-main-oronyms-pre-scry-broom-rule
+>scry broom
+That thought/action/observation/request brings up nothing. Us Too has a limited set of verbs, and the main thing is to guess a two-word phrase. To see what verbs are used, try VERBS.
+
+#testcase-reject-start-table-of-main-oronyms-pre-stark-raft-rule
+>stark raft
+That thought/action/observation/request brings up nothing. Us Too has a limited set of verbs, and the main thing is to guess a two-word phrase. To see what verbs are used, try VERBS.
+
+#testcase-reject-start-table-of-main-oronyms-pre-summer-bay-rule
+>summer bay
+That thought/action/observation/request brings up nothing. Us Too has a limited set of verbs, and the main thing is to guess a two-word phrase. To see what verbs are used, try VERBS.
+
+#testcase-reject-start-table-of-main-oronyms-pre-summon-cheese-rule
+>summon cheese
+That thought/action/observation/request brings up nothing. Us Too has a limited set of verbs, and the main thing is to guess a two-word phrase. To see what verbs are used, try VERBS.
+
+#testcase-reject-start-table-of-main-oronyms-pre-surf-ready-rule
+>surf ready
+That thought/action/observation/request brings up nothing. Us Too has a limited set of verbs, and the main thing is to guess a two-word phrase. To see what verbs are used, try VERBS.
+
+#testcase-reject-start-table-of-main-oronyms-pre-sword-ark-rule
+>sword ark
+That thought/action/observation/request brings up nothing. Us Too has a limited set of verbs, and the main thing is to guess a two-word phrase. To see what verbs are used, try VERBS.
+
+#testcase-reject-start-table-of-main-oronyms-pre-tea-leaves-rule
+>tea leaves
+That thought/action/observation/request brings up nothing. Us Too has a limited set of verbs, and the main thing is to guess a two-word phrase. To see what verbs are used, try VERBS.
+
+#testcase-reject-start-table-of-main-oronyms-pre-terrible-aid-rule
+>terrible aid
+That thought/action/observation/request brings up nothing. Us Too has a limited set of verbs, and the main thing is to guess a two-word phrase. To see what verbs are used, try VERBS.
+
+#testcase-reject-start-table-of-main-oronyms-pre-too-broad-rule
+>too broad
+That thought/action/observation/request brings up nothing. Us Too has a limited set of verbs, and the main thing is to guess a two-word phrase. To see what verbs are used, try VERBS.
+
+#testcase-reject-start-table-of-main-oronyms-pre-tour-boaters-rule
+>tour boaters
+That thought/action/observation/request brings up nothing. Us Too has a limited set of verbs, and the main thing is to guess a two-word phrase. To see what verbs are used, try VERBS.
+
+#testcase-reject-start-table-of-main-oronyms-pre-use-it-rule
+>use it
+That thought/action/observation/request brings up nothing. Us Too has a limited set of verbs, and the main thing is to guess a two-word phrase. To see what verbs are used, try VERBS.
+
+#testcase-reject-start-table-of-main-oronyms-pre-wheat-rye-rule
+>wheat rye
+That thought/action/observation/request brings up nothing. Us Too has a limited set of verbs, and the main thing is to guess a two-word phrase. To see what verbs are used, try VERBS.
+
+>try quest
+by a point
+
+#testcase-check-pre-board-red-rule-if-player-is-not-in-bore-dread
+>bore dread
+That thought/action/observation/request brings up nothing. Us Too has a limited set of verbs, and the main thing is to guess a two-word phrase. To see what verbs are used, try VERBS.
+
+#testcase-check-pre-try-quest-rule-if-sco-try-quest-is-true
+>try quest
+You already have an idea of your quest!
+
+#testcase-check-pre-a-stew-rule-if-sco-a-stew-is-false
+>a stew
+You think far ahead to what you might need. You'd need to read an ingredient list for that. Maybe you have one on you to start.
+
+>be strong
+by a point
+
+>i
+Your Aw-Lug-All-Ugh has nothing special in it.
+You have that too-rad tour ad flopping about, too. It seems non-critical. You can probably examine and then drop it.
+Note that X will default to 'Aight, Amusing Item Using in the future.
+
+>x
+
+>loose intro
+by a bonus point
+
+>summon cheese
+by a point
+
+>u
+
+#testcase-reject-start-table-of-main-oronyms-pre-loose-intro-rule
+>loose intro
+That thought/action/observation/request brings up nothing. Us Too has a limited set of verbs, and the main thing is to guess a two-word phrase. To see what verbs are used, try VERBS.
+
+#testcase-check-pre-a-stew-rule-if-player-is-not-in-mine-ooh
+>a stew
+You need to be back in your mine for this.
+
+>herb ranch
+by a point
+
+>summer bay
+by a point
+
+>e
+
+>be chill
+by a point
+
+>nice warm
+by a point
+
+>probe all
+by a point
+
+>w
+>d
+
+>mess pot
+by a point
+
+>meh skit
+by a bonus point
+
+>u
+>ne
+
+>board red
+by a point
+
+>sw
+
+>n
+You walk towards the black ops site, but you're flagged down. What are you doing here? How did you even get close? After some questioning, you're sent back to the Ur-Branch by people who "suggest" you forget this ever happened. Returning is ... not advised.
+
+>blah copse
+by a point
+
+>nah queue
+by a point
+
+>surf ready
+by a point
+
+>or clerk
+by a point
+
+>n
+
+>more flares
+by a point
+
+>n
+
+>n
+
+>rope ladder
+by a point
+
+>guard entry
+by a point
+
+>peace talks
+by a point
+
+>pea pod
+by a bonus point
+
+>out
+
+>se
+
+>can take
+by a point
+
+#testcase-alt-words-table-of-main-oronyms-33-gray-grey-tin
+>grey tin
+by a point
+
+>undo
+
+>gray tin
+by a point
+
+>dough making
+by a point
+
+>in earnest
+by a point
+
+>in
+
+>pry more
+by a point
+
+>out
+>nw
+
+>e
+
+>punt weaker
+by a point
+
+>e
+
+>base pikes
+by a point
+
+>pie crust
+by a point
+
+>hike up
+by a point
+
+>w
+>w
+
+>nw
+
+>sword ark
+by a point
+
+>blast ring
+by a point
+
+>terrible aid
+by a point
+
+>sw
+
+>oh clever
+by a point
+
+>x beak
+
+>ne
+
+>s
+
+>too broad
+by a point
+
+>n
+
+>sw
+
+>x beak
+
+>ne
+
+>sw
+
+>ne
+
+>s
+
+>ho langour
+by a point
+
+>n
+
+>sw
+
+>fell trap
+by a point
+
+>x trap
+
+>cellar bin
+by a point
+
+>u
+
+>x beak
+
+>x trap
+
+>u
+>ne
+>s
+
+>say jokes
+by a point
+
+>gas pouch
+by a point
+
+>n
+
+>sss
+>s
+
+>claim it
+by a point
+
+>damp ink
+by a point
+
+>n
+>n
+>s
+>s
+
+>scry broom
+by a point
+
+>n
+>n
+>ss
+>s
+
+>pro sweeping
+by a point
+
+>cold rum
+by a point
+
+>tea leaves
+by a point
+
+>n
+>n
+>s
+>s
+
+>belt rusted
+by a point
+
+>n
+>n
+
+>sw
+>x beak
+>ne
+>w
+
+>bold itch
+by a point
+
+>w
+
+>tour boaters
+by a bonus point
+
+>stark raft
+by a point
+
+>s
+
+>find rinks
+by a point
+
+>bear respond
+by a point
+
+>barn open
+by a point
+
+>n
+>e
+>n
+
+>saw bakers
+by a point
+
+>in
+
+>dell eastern
+by a point
+
+>e
+
+>w
+
+>dope ale
+by a point
+
+>e
+>w
+
+>beef ordering
+by a point
+
+>e
+>w
+
+>wheat rye
+by a point
+
+>e
+
+>den specs
+by a point
+
+>d
+
+>grow nodes
+by a point
+
+>no date
+by a point
+
+>e
+>s
+>e
+>ne
+
+>malt hour
+by a point
+
+>e
+
+>join aider
+by a point
+
+>dupe it
+by a point
+
+>u
+
+>use it
+by a point
+
+>lie fruits
+by a point
+
+#testcase-reject-end-table-of-main-oronyms-pre-meh-skit-rule
+>meh skit
+That thought/action/observation/request brings up nothing. Us Too has a limited set of verbs, and the main thing is to guess a two-word phrase. To see what verbs are used, try VERBS.
+
+#testcase-reject-end-table-of-main-oronyms-pre-mess-pot-rule
+>mess pot
+That thought/action/observation/request brings up nothing. Us Too has a limited set of verbs, and the main thing is to guess a two-word phrase. To see what verbs are used, try VERBS.
+
+>d
+
+#testcase-reject-end-table-of-main-oronyms-pre-barn-open-rule
+>barn open
+That thought/action/observation/request brings up nothing. Us Too has a limited set of verbs, and the main thing is to guess a two-word phrase. To see what verbs are used, try VERBS.
+
+#testcase-reject-end-table-of-main-oronyms-pre-base-pikes-rule
+>base pikes
+That thought/action/observation/request brings up nothing. Us Too has a limited set of verbs, and the main thing is to guess a two-word phrase. To see what verbs are used, try VERBS.
+
+#testcase-reject-end-table-of-main-oronyms-pre-be-chill-rule
+>be chill
+That thought/action/observation/request brings up nothing. Us Too has a limited set of verbs, and the main thing is to guess a two-word phrase. To see what verbs are used, try VERBS.
+
+#testcase-reject-end-table-of-main-oronyms-pre-be-strong-rule
+>be strong
+That thought/action/observation/request brings up nothing. Us Too has a limited set of verbs, and the main thing is to guess a two-word phrase. To see what verbs are used, try VERBS.
+
+#testcase-reject-end-table-of-main-oronyms-pre-bear-respond-rule
+>bear respond
+That thought/action/observation/request brings up nothing. Us Too has a limited set of verbs, and the main thing is to guess a two-word phrase. To see what verbs are used, try VERBS.
+
+#testcase-reject-end-table-of-main-oronyms-pre-beef-ordering-rule
+>beef ordering
+That thought/action/observation/request brings up nothing. Us Too has a limited set of verbs, and the main thing is to guess a two-word phrase. To see what verbs are used, try VERBS.
+
+#testcase-reject-end-table-of-main-oronyms-pre-belt-rusted-rule
+>belt rusted
+That thought/action/observation/request brings up nothing. Us Too has a limited set of verbs, and the main thing is to guess a two-word phrase. To see what verbs are used, try VERBS.
+
+#testcase-reject-end-table-of-main-oronyms-pre-blah-copse-rule
+>blah copse
+That thought/action/observation/request brings up nothing. Us Too has a limited set of verbs, and the main thing is to guess a two-word phrase. To see what verbs are used, try VERBS.
+
+#testcase-reject-end-table-of-main-oronyms-pre-blast-ring-rule
+>blast ring
+That thought/action/observation/request brings up nothing. Us Too has a limited set of verbs, and the main thing is to guess a two-word phrase. To see what verbs are used, try VERBS.
+
+#testcase-reject-end-table-of-main-oronyms-pre-board-red-rule
+>board red
+That thought/action/observation/request brings up nothing. Us Too has a limited set of verbs, and the main thing is to guess a two-word phrase. To see what verbs are used, try VERBS.
+
+#testcase-reject-end-table-of-main-oronyms-pre-bold-itch-rule
+>bold itch
+That thought/action/observation/request brings up nothing. Us Too has a limited set of verbs, and the main thing is to guess a two-word phrase. To see what verbs are used, try VERBS.
+
+#testcase-reject-end-table-of-main-oronyms-pre-can-take-rule
+>can take
+That thought/action/observation/request brings up nothing. Us Too has a limited set of verbs, and the main thing is to guess a two-word phrase. To see what verbs are used, try VERBS.
+
+#testcase-reject-end-table-of-main-oronyms-pre-cellar-bin-rule
+>cellar bin
+That thought/action/observation/request brings up nothing. Us Too has a limited set of verbs, and the main thing is to guess a two-word phrase. To see what verbs are used, try VERBS.
+
+#testcase-reject-end-table-of-main-oronyms-pre-cold-rum-rule
+>cold rum
+That thought/action/observation/request brings up nothing. Us Too has a limited set of verbs, and the main thing is to guess a two-word phrase. To see what verbs are used, try VERBS.
+
+#testcase-reject-end-table-of-main-oronyms-pre-damp-ink-rule
+>damp ink
+That thought/action/observation/request brings up nothing. Us Too has a limited set of verbs, and the main thing is to guess a two-word phrase. To see what verbs are used, try VERBS.
+
+#testcase-reject-end-table-of-main-oronyms-pre-dell-eastern-rule
+>dell eastern
+That thought/action/observation/request brings up nothing. Us Too has a limited set of verbs, and the main thing is to guess a two-word phrase. To see what verbs are used, try VERBS.
+
+#testcase-reject-end-table-of-main-oronyms-pre-dope-ale-rule
+>dope ale
+That thought/action/observation/request brings up nothing. Us Too has a limited set of verbs, and the main thing is to guess a two-word phrase. To see what verbs are used, try VERBS.
+
+#testcase-reject-end-table-of-main-oronyms-pre-dough-making-rule
+>dough making
+That thought/action/observation/request brings up nothing. Us Too has a limited set of verbs, and the main thing is to guess a two-word phrase. To see what verbs are used, try VERBS.
+
+#testcase-reject-end-table-of-main-oronyms-pre-dupe-it-rule
+>dupe it
+That thought/action/observation/request brings up nothing. Us Too has a limited set of verbs, and the main thing is to guess a two-word phrase. To see what verbs are used, try VERBS.
+
+#testcase-reject-end-table-of-main-oronyms-pre-fell-trap-rule
+>fell trap
+That thought/action/observation/request brings up nothing. Us Too has a limited set of verbs, and the main thing is to guess a two-word phrase. To see what verbs are used, try VERBS.
+
+#testcase-reject-end-table-of-main-oronyms-pre-find-rinks-rule
+>find rinks
+That thought/action/observation/request brings up nothing. Us Too has a limited set of verbs, and the main thing is to guess a two-word phrase. To see what verbs are used, try VERBS.
+
+#testcase-reject-end-table-of-main-oronyms-pre-gas-pouch-rule
+>gas pouch
+That thought/action/observation/request brings up nothing. Us Too has a limited set of verbs, and the main thing is to guess a two-word phrase. To see what verbs are used, try VERBS.
+
+#testcase-reject-end-table-of-main-oronyms-pre-gray-tin-rule
+>gray tin
+That thought/action/observation/request brings up nothing. Us Too has a limited set of verbs, and the main thing is to guess a two-word phrase. To see what verbs are used, try VERBS.
+
+#testcase-reject-end-table-of-main-oronyms-pre-grow-nodes-rule
+>grow nodes
+That thought/action/observation/request brings up nothing. Us Too has a limited set of verbs, and the main thing is to guess a two-word phrase. To see what verbs are used, try VERBS.
+
+#testcase-reject-end-table-of-main-oronyms-pre-guard-entry-rule
+>guard entry
+That thought/action/observation/request brings up nothing. Us Too has a limited set of verbs, and the main thing is to guess a two-word phrase. To see what verbs are used, try VERBS.
+
+#testcase-reject-end-table-of-main-oronyms-pre-herb-ranch-rule
+>herb ranch
+That thought/action/observation/request brings up nothing. Us Too has a limited set of verbs, and the main thing is to guess a two-word phrase. To see what verbs are used, try VERBS.
+
+#testcase-reject-end-table-of-main-oronyms-pre-hike-up-rule
+>hike up
+That thought/action/observation/request brings up nothing. Us Too has a limited set of verbs, and the main thing is to guess a two-word phrase. To see what verbs are used, try VERBS.
+
+#testcase-reject-end-table-of-main-oronyms-pre-ho-langour-rule
+>ho languor
+That thought/action/observation/request brings up nothing. Us Too has a limited set of verbs, and the main thing is to guess a two-word phrase. To see what verbs are used, try VERBS.
+
+#testcase-reject-end-table-of-main-oronyms-pre-in-earnest-rule
+>in earnest
+The first word was a valid command that could stand on its own. The second may be unnecessary, or a typo.
+
+#testcase-reject-end-table-of-main-oronyms-pre-join-aider-rule
+>join aider
+That thought/action/observation/request brings up nothing. Us Too has a limited set of verbs, and the main thing is to guess a two-word phrase. To see what verbs are used, try VERBS.
+
+#testcase-reject-end-table-of-main-oronyms-pre-lie-fruits-rule
+>lie fruits
+That thought/action/observation/request brings up nothing. Us Too has a limited set of verbs, and the main thing is to guess a two-word phrase. To see what verbs are used, try VERBS.
+
+#testcase-reject-end-table-of-main-oronyms-pre-loose-intro-rule
+>loose intro
+That thought/action/observation/request brings up nothing. Us Too has a limited set of verbs, and the main thing is to guess a two-word phrase. To see what verbs are used, try VERBS.
+
+#testcase-reject-end-table-of-main-oronyms-pre-malt-hour-rule
+>malt hour
+That thought/action/observation/request brings up nothing. Us Too has a limited set of verbs, and the main thing is to guess a two-word phrase. To see what verbs are used, try VERBS.
+
+#testcase-reject-end-table-of-main-oronyms-pre-more-flares-rule
+>more flares
+That thought/action/observation/request brings up nothing. Us Too has a limited set of verbs, and the main thing is to guess a two-word phrase. To see what verbs are used, try VERBS.
+
+#testcase-reject-end-table-of-main-oronyms-pre-nah-queue-rule
+>nah queue
+That thought/action/observation/request brings up nothing. Us Too has a limited set of verbs, and the main thing is to guess a two-word phrase. To see what verbs are used, try VERBS.
+
+#testcase-reject-end-table-of-main-oronyms-pre-nice-warm-rule
+>nice warm
+That thought/action/observation/request brings up nothing. Us Too has a limited set of verbs, and the main thing is to guess a two-word phrase. To see what verbs are used, try VERBS.
+
+#testcase-reject-end-table-of-main-oronyms-pre-no-date-rule
+>no date
+The first word was a valid command that could stand on its own. The second may be unnecessary, or a typo.
+
+#testcase-reject-end-table-of-main-oronyms-pre-oh-clever-rule
+>oh clever
+That thought/action/observation/request brings up nothing. Us Too has a limited set of verbs, and the main thing is to guess a two-word phrase. To see what verbs are used, try VERBS.
+
+#testcase-reject-end-table-of-main-oronyms-pre-or-clerk-rule
+>or clerk
+That thought/action/observation/request brings up nothing. Us Too has a limited set of verbs, and the main thing is to guess a two-word phrase. To see what verbs are used, try VERBS.
+
+#testcase-reject-end-table-of-main-oronyms-pre-pea-pod-rule
+>pea pod
+That thought/action/observation/request brings up nothing. Us Too has a limited set of verbs, and the main thing is to guess a two-word phrase. To see what verbs are used, try VERBS.
+
+#testcase-reject-end-table-of-main-oronyms-pre-peace-talks-rule
+>peace talks
+That thought/action/observation/request brings up nothing. Us Too has a limited set of verbs, and the main thing is to guess a two-word phrase. To see what verbs are used, try VERBS.
+
+#testcase-reject-end-table-of-main-oronyms-pre-pie-crust-rule
+>pie crust
+That thought/action/observation/request brings up nothing. Us Too has a limited set of verbs, and the main thing is to guess a two-word phrase. To see what verbs are used, try VERBS.
+
+#testcase-reject-end-table-of-main-oronyms-pre-pro-sweeping-rule
+>pro sweeping
+That thought/action/observation/request brings up nothing. Us Too has a limited set of verbs, and the main thing is to guess a two-word phrase. To see what verbs are used, try VERBS.
+
+#testcase-reject-end-table-of-main-oronyms-pre-probe-all-rule
+>probe all
+That thought/action/observation/request brings up nothing. Us Too has a limited set of verbs, and the main thing is to guess a two-word phrase. To see what verbs are used, try VERBS.
+
+#testcase-reject-end-table-of-main-oronyms-pre-pry-more-rule
+>pry more
+That thought/action/observation/request brings up nothing. Us Too has a limited set of verbs, and the main thing is to guess a two-word phrase. To see what verbs are used, try VERBS.
+
+#testcase-reject-end-table-of-main-oronyms-pre-punt-weaker-rule
+>punt weaker
+That thought/action/observation/request brings up nothing. Us Too has a limited set of verbs, and the main thing is to guess a two-word phrase. To see what verbs are used, try VERBS.
+
+#testcase-reject-end-table-of-main-oronyms-pre-rope-ladder-rule
+>rope ladder
+That thought/action/observation/request brings up nothing. Us Too has a limited set of verbs, and the main thing is to guess a two-word phrase. To see what verbs are used, try VERBS.
+
+#testcase-reject-end-table-of-main-oronyms-pre-saw-bakers-rule
+>saw bakers
+That thought/action/observation/request brings up nothing. Us Too has a limited set of verbs, and the main thing is to guess a two-word phrase. To see what verbs are used, try VERBS.
+
+#testcase-reject-end-table-of-main-oronyms-pre-say-jokes-rule
+>say jokes
+You found the only important command to start with SAY.
+
+#testcase-reject-end-table-of-main-oronyms-pre-scry-broom-rule
+>scry broom
+That thought/action/observation/request brings up nothing. Us Too has a limited set of verbs, and the main thing is to guess a two-word phrase. To see what verbs are used, try VERBS.
+
+#testcase-reject-end-table-of-main-oronyms-pre-stark-raft-rule
+>stark raft
+That thought/action/observation/request brings up nothing. Us Too has a limited set of verbs, and the main thing is to guess a two-word phrase. To see what verbs are used, try VERBS.
+
+#testcase-reject-end-table-of-main-oronyms-pre-summer-bay-rule
+>summer bay
+You already used the herb to expand your mind! It is only good for seasoning now.
+
+#testcase-reject-end-table-of-main-oronyms-pre-surf-ready-rule
+>surf ready
+That thought/action/observation/request brings up nothing. Us Too has a limited set of verbs, and the main thing is to guess a two-word phrase. To see what verbs are used, try VERBS.
+
+#testcase-reject-end-table-of-main-oronyms-pre-sword-ark-rule
+>sword ark
+That thought/action/observation/request brings up nothing. Us Too has a limited set of verbs, and the main thing is to guess a two-word phrase. To see what verbs are used, try VERBS.
+
+#testcase-reject-end-table-of-main-oronyms-pre-tea-leaves-rule
+>tea leaves
+That thought/action/observation/request brings up nothing. Us Too has a limited set of verbs, and the main thing is to guess a two-word phrase. To see what verbs are used, try VERBS.
+
+#testcase-reject-end-table-of-main-oronyms-pre-terrible-aid-rule
+>terrible aid
+That thought/action/observation/request brings up nothing. Us Too has a limited set of verbs, and the main thing is to guess a two-word phrase. To see what verbs are used, try VERBS.
+
+#testcase-reject-end-table-of-main-oronyms-pre-too-broad-rule
+>too broad
+That thought/action/observation/request brings up nothing. Us Too has a limited set of verbs, and the main thing is to guess a two-word phrase. To see what verbs are used, try VERBS.
+
+#testcase-reject-end-table-of-main-oronyms-pre-tour-boaters-rule
+>tour boaters
+That thought/action/observation/request brings up nothing. Us Too has a limited set of verbs, and the main thing is to guess a two-word phrase. To see what verbs are used, try VERBS.
+
+#testcase-reject-end-table-of-main-oronyms-pre-use-it-rule
+>use it
+That thought/action/observation/request brings up nothing. Us Too has a limited set of verbs, and the main thing is to guess a two-word phrase. To see what verbs are used, try VERBS.
+
+#testcase-reject-end-table-of-main-oronyms-pre-wheat-rye-rule
+>wheat rye
+That thought/action/observation/request brings up nothing. Us Too has a limited set of verbs, and the main thing is to guess a two-word phrase. To see what verbs are used, try VERBS.
+
+>a stew
+by a point

@@ -1,0 +1,368 @@
+## reg-us-thru-verbs.txt
+## GENERATOR FILE: rbr-us-thru.txt
+
+## special verb testing inventory and room description changes
+
+** game: /home/andrew/prt/debug-us-too.z8
+** interpreter: /home/andrew/prt/dfrotz -m -w5000 -h25
+
+* main-thru
+
+>how so
+by a point
+
+>z
+
+>try quest
+by a point
+
+>be strong
+by a point
+
+>i
+Your Aw-Lug-All-Ugh has nothing special in it.
+You have that too-rad tour ad flopping about, too. It seems non-critical. You can probably examine and then drop it.
+Note that X will default to 'Aight, Amusing Item Using in the future.
+
+>x
+
+>loose intro
+by a bonus point
+
+>summon cheese
+by a point
+
+>u
+
+>herb ranch
+by a point
+
+>summer bay
+by a point
+
+>e
+
+>be chill
+by a point
+
+>nice warm
+by a point
+
+>probe all
+by a point
+
+>w
+>d
+
+>mess pot
+by a point
+
+>meh skit
+by a bonus point
+
+>u
+>ne
+
+>board red
+by a point
+
+>sw
+
+>n
+You walk towards the black ops site, but you're flagged down. What are you doing here? How did you even get close? After some questioning, you're sent back to the Ur-Branch by people who "suggest" you forget this ever happened. Returning is ... not advised.
+
+>blah copse
+by a point
+
+>nah queue
+by a point
+
+>surf ready
+by a point
+
+>or clerk
+by a point
+
+>n
+
+>more flares
+by a point
+
+>n
+
+>n
+
+>rope ladder
+by a point
+
+>guard entry
+by a point
+
+>peace talks
+by a point
+
+>pea pod
+by a bonus point
+
+>out
+
+>se
+
+>can take
+by a point
+
+#testcase-alt-words-table-of-main-oronyms-33-gray-grey-tin
+>grey tin
+by a point
+
+>undo
+
+>gray tin
+by a point
+
+>dough making
+by a point
+
+>in earnest
+by a point
+
+>in
+
+>pry more
+by a point
+
+>out
+>nw
+
+>e
+
+>punt weaker
+by a point
+
+>e
+
+>base pikes
+by a point
+
+>pie crust
+by a point
+
+>hike up
+by a point
+
+>w
+>w
+
+>nw
+
+>sword ark
+by a point
+
+>blast ring
+by a point
+
+>terrible aid
+by a point
+
+>sw
+
+>oh clever
+by a point
+
+>x beak
+
+>ne
+
+>s
+
+>too broad
+by a point
+
+>n
+
+>sw
+
+>x beak
+
+>ne
+
+>sw
+
+>ne
+
+>s
+
+>ho langour
+by a point
+
+>n
+
+>sw
+
+>fell trap
+by a point
+
+>x trap
+
+>cellar bin
+by a point
+
+>u
+
+>x beak
+
+>x trap
+
+>u
+>ne
+>s
+
+>say jokes
+by a point
+
+>gas pouch
+by a point
+
+>n
+
+>sss
+>s
+
+>claim it
+by a point
+
+>damp ink
+by a point
+
+>n
+>n
+>s
+>s
+
+>scry broom
+by a point
+
+>n
+>n
+>ss
+>s
+
+>pro sweeping
+by a point
+
+>cold rum
+by a point
+
+>tea leaves
+by a point
+
+>n
+>n
+>s
+>s
+
+>belt rusted
+by a point
+
+>n
+>n
+
+>sw
+>x beak
+>ne
+>w
+
+>bold itch
+by a point
+
+>w
+
+>tour boaters
+by a bonus point
+
+>stark raft
+by a point
+
+>s
+
+>find rinks
+by a point
+
+>bear respond
+by a point
+
+>barn open
+by a point
+
+>n
+>e
+>n
+
+>saw bakers
+by a point
+
+>in
+
+>dell eastern
+by a point
+
+>e
+
+>w
+
+>dope ale
+by a point
+
+>e
+>w
+
+>beef ordering
+by a point
+
+>e
+>w
+
+>wheat rye
+by a point
+
+>e
+
+>den specs
+by a point
+
+>d
+
+>grow nodes
+by a point
+
+>no date
+by a point
+
+>e
+>s
+>e
+>ne
+
+>malt hour
+by a point
+
+>e
+
+>join aider
+by a point
+
+>dupe it
+by a point
+
+>u
+
+>use it
+by a point
+
+>lie fruits
+by a point
+
+>d
+
+>a stew
+by a point

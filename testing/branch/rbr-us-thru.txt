@@ -1,0 +1,2646 @@
+#-- rbr-us-thru.txt
+#-- main branch file for Us Too walkthroughs
+#
+#-- TTC.PY generates test cases not found here
+#--
+
+#NOTE: PRC.PY has a bug where it double-prints the text at the end if the final command fails
+
+file=reg-us-thru-min.txt,abbr=min,desc=minimum walkthrough,flags=stable
+file=reg-us-thru-all.txt,abbr=all,desc=walkthrough with all points and potential neutral retries
+file=reg-us-thru-reject.txt,abbr=rej,desc=walkthrough with all rejections and THINK
+file=reg-us-thru-partright.txt,abbr=part,desc=walkthrough with partial solutions
+file=reg-us-thru-alt-verbs.txt,abbr=alt,desc=walkthrough with altverb tests
+file=reg-us-thru-mistakes.txt,abbr=mis,desc=walkthrough testing all mistakes
+file=reg-us-thru-homonyms.txt,abbr=hom,desc=walkthrough testing homonyms
+file=reg-us-thru-goto.txt,abbr=goto/gt/go,desc=walkthrough testing GOTO
+file=reg-us-thru-lookinv.txt,abbr=li/look/inv,desc=walkthrough testing inventory and room description changes
+file=reg-us-thru-verbs.txt,abbr=v/verb/verbs,desc=special verb testing inventory and room description changes
+
+##--stable-file: this eventually says that the project is stable, and I shouldn't change the main/minimal file unless I really need to.
+##--strict-file: this says that the project requires strict section marking e.g. @all instead of ==t1.
+
+#copied from WP. Change later.
+}$ONEWORD=A voice in your head encourages you: "Seem, or see, more!" You've got SOMETHING right, here.
+}$REJECT1=You're stuck with what to do right now. Perhaps you can use your senses for clues, or THINK, or look inward, to give you an idea of how to get started. Not just a what, but a how or a why. You can't exactly look outward.
+}$REJECT2=That thought/action/observation/request brings up nothing. Us Too has a limited set of verbs, and the main thing is to guess a two-word phrase. To see what verbs are used, try VERBS.
+}$REJHOM=Hmm. That really, really SOUNDED like it should work, but it didn't.
+}$XTRA=The first word was a valid command that could stand on its own. The second may be unnecessary, or a typo.
+
+}}MAX=68
+}}CURMAX=68
+}}SCORE=0
+}}CURMIN=10
+}}CURMINBONUS=1
+}}CURMAXBONUS=1
+}}MAXBONUS=1
+
+## *FILE
+## *FORK
+
+## *DESCRIPTION
+
+** game: /home/andrew/prt/debug-us-too.z8
+** interpreter: /home/andrew/prt/dfrotz -m -w5000 -h25
+
+* main-thru
+
+@all
+House Well-How-Swell
+
+>how so
+by a point
+
+@all
+#testcase-room-names-my-new-mine-ooh
+`My New Mine, Ooh!
+
+>z
+
+@rej
+#testcase-reject-start-table-of-main-oronyms-pre-barn-open-rule
+>barn open
+{$REJECT2}
+\\
+#testcase-reject-start-table-of-main-oronyms-pre-base-pikes-rule
+>base pikes
+{$REJECT2}
+\\
+#testcase-reject-start-table-of-main-oronyms-pre-be-chill-rule
+>be chill
+{$REJECT2}
+\\
+#testcase-reject-start-table-of-main-oronyms-pre-be-strong-rule
+>be strong
+{$REJECT2}
+\\
+#testcase-reject-start-table-of-main-oronyms-pre-bear-respond-rule
+>bear respond
+{$REJECT2}
+\\
+#testcase-reject-start-table-of-main-oronyms-pre-beef-ordering-rule
+>beef ordering
+{$REJECT2}
+\\
+#testcase-reject-start-table-of-main-oronyms-pre-belt-rusted-rule
+>belt rusted
+{$REJECT2}
+\\
+#testcase-reject-start-table-of-main-oronyms-pre-blah-copse-rule
+>blah copse
+{$REJECT2}
+\\
+#testcase-reject-start-table-of-main-oronyms-pre-blast-ring-rule
+>blast ring
+{$REJECT2}
+\\
+#testcase-reject-start-table-of-main-oronyms-pre-board-red-rule
+>board red
+{$REJECT2}
+\\
+#testcase-reject-start-table-of-main-oronyms-pre-bold-itch-rule
+>bold itch
+{$REJECT2}
+\\
+#testcase-reject-start-table-of-main-oronyms-pre-can-take-rule
+>can take
+{$REJECT2}
+\\
+#testcase-reject-start-table-of-main-oronyms-pre-cellar-bin-rule
+>cellar bin
+{$REJECT2}
+\\
+#testcase-reject-start-table-of-main-oronyms-pre-claim-it-rule
+>claim it
+{$REJECT2}
+\\
+#testcase-reject-start-table-of-main-oronyms-pre-cold-rum-rule
+>cold rum
+{$REJECT2}
+\\
+#testcase-reject-start-table-of-main-oronyms-pre-damp-ink-rule
+>damp ink
+{$REJECT2}
+\\
+#testcase-reject-start-table-of-main-oronyms-pre-dell-eastern-rule
+>dell eastern
+{$REJECT2}
+\\
+#testcase-reject-start-table-of-main-oronyms-pre-den-specs-rule
+>den specs
+{$REJECT2}
+\\
+#testcase-reject-start-table-of-main-oronyms-pre-dope-ale-rule
+>dope ale
+{$REJECT2}
+\\
+#testcase-reject-start-table-of-main-oronyms-pre-dough-making-rule
+>dough making
+{$REJECT2}
+\\
+#testcase-reject-start-table-of-main-oronyms-pre-dupe-it-rule
+>dupe it
+{$REJECT2}
+\\
+#testcase-reject-start-table-of-main-oronyms-pre-fell-trap-rule
+>fell trap
+{$REJECT2}
+\\
+#testcase-reject-start-table-of-main-oronyms-pre-find-rinks-rule
+>find rinks
+{$REJECT2}
+\\
+#testcase-reject-start-table-of-main-oronyms-pre-gas-pouch-rule
+>gas pouch
+{$REJECT2}
+\\
+#testcase-reject-start-table-of-main-oronyms-pre-gray-tin-rule
+>gray tin
+{$REJECT2}
+\\
+#testcase-reject-start-table-of-main-oronyms-pre-grow-nodes-rule
+>grow nodes
+{$REJECT2}
+\\
+#testcase-reject-start-table-of-main-oronyms-pre-guard-entry-rule
+>guard entry
+{$REJECT2}
+\\
+#testcase-reject-start-table-of-main-oronyms-pre-herb-ranch-rule
+>herb ranch
+{$REJECT2}
+\\
+#testcase-reject-start-table-of-main-oronyms-pre-hike-up-rule
+>hike up
+{$REJECT2}
+\\
+#testcase-reject-start-table-of-main-oronyms-pre-ho-langour-rule
+>ho languor
+{$REJECT2}
+\\
+#testcase-reject-start-table-of-main-oronyms-pre-in-earnest-rule
+>in earnest
+{$XTRA}
+\\
+#testcase-reject-start-table-of-main-oronyms-pre-join-aider-rule
+>join aider
+{$REJECT2}
+\\
+#testcase-reject-start-table-of-main-oronyms-pre-lie-fruits-rule
+>lie fruits
+{$REJECT2}
+\\
+#testcase-reject-start-table-of-main-oronyms-pre-malt-hour-rule
+>malt hour
+{$REJECT2}
+\\
+#testcase-reject-start-table-of-main-oronyms-pre-meh-skit-rule
+>meh skit
+{$REJECT2}
+\\
+#testcase-reject-start-table-of-main-oronyms-pre-mess-pot-rule
+>mess pot
+{$REJECT2}
+\\
+#testcase-reject-start-table-of-main-oronyms-pre-more-flares-rule
+>more flares
+{$REJECT2}
+\\
+#testcase-reject-start-table-of-main-oronyms-pre-nah-queue-rule
+>nah queue
+{$REJECT2}
+\\
+#testcase-reject-start-table-of-main-oronyms-pre-nice-warm-rule
+>nice warm
+{$REJECT2}
+\\
+#testcase-reject-start-table-of-main-oronyms-pre-no-date-rule
+>no date
+{$XTRA}
+\\
+#testcase-reject-start-table-of-main-oronyms-pre-oh-clever-rule
+>oh clever
+{$REJECT2}
+\\
+#testcase-reject-start-table-of-main-oronyms-pre-or-clerk-rule
+>or clerk
+{$REJECT2}
+\\
+#testcase-reject-start-table-of-main-oronyms-pre-pea-pod-rule
+>pea pod
+{$REJECT2}
+\\
+#testcase-reject-start-table-of-main-oronyms-pre-peace-talks-rule
+>peace talks
+{$REJECT2}
+\\
+#testcase-reject-start-table-of-main-oronyms-pre-pie-crust-rule
+>pie crust
+{$REJECT2}
+\\
+#testcase-reject-start-table-of-main-oronyms-pre-pro-sweeping-rule
+>pro sweeping
+{$REJECT2}
+\\
+#testcase-reject-start-table-of-main-oronyms-pre-probe-all-rule
+>probe all
+{$REJECT2}
+\\
+#testcase-reject-start-table-of-main-oronyms-pre-pry-more-rule
+>pry more
+{$REJECT2}
+\\
+#testcase-reject-start-table-of-main-oronyms-pre-punt-weaker-rule
+>punt weaker
+{$REJECT2}
+\\
+#testcase-reject-start-table-of-main-oronyms-pre-rope-ladder-rule
+>rope ladder
+{$REJECT2}
+\\
+#testcase-reject-start-table-of-main-oronyms-pre-saw-bakers-rule
+>saw bakers
+{$REJECT2}
+\\
+#testcase-reject-start-table-of-main-oronyms-pre-say-jokes-rule
+>say jokes
+You don't need to prefix any important two-word command with SAY. Just say the two words.
+\\
+#testcase-reject-start-table-of-main-oronyms-pre-scry-broom-rule
+>scry broom
+{$REJECT2}
+\\
+#testcase-reject-start-table-of-main-oronyms-pre-stark-raft-rule
+>stark raft
+{$REJECT2}
+\\
+#testcase-reject-start-table-of-main-oronyms-pre-summer-bay-rule
+>summer bay
+{$REJECT2}
+\\
+#testcase-reject-start-table-of-main-oronyms-pre-summon-cheese-rule
+>summon cheese
+{$REJECT2}
+\\
+#testcase-reject-start-table-of-main-oronyms-pre-surf-ready-rule
+>surf ready
+{$REJECT2}
+\\
+#testcase-reject-start-table-of-main-oronyms-pre-sword-ark-rule
+>sword ark
+{$REJECT2}
+\\
+#testcase-reject-start-table-of-main-oronyms-pre-tea-leaves-rule
+>tea leaves
+{$REJECT2}
+\\
+#testcase-reject-start-table-of-main-oronyms-pre-terrible-aid-rule
+>terrible aid
+{$REJECT2}
+\\
+#testcase-reject-start-table-of-main-oronyms-pre-too-broad-rule
+>too broad
+{$REJECT2}
+\\
+#testcase-reject-start-table-of-main-oronyms-pre-tour-boaters-rule
+>tour boaters
+{$REJECT2}
+\\
+#testcase-reject-start-table-of-main-oronyms-pre-use-it-rule
+>use it
+{$REJECT2}
+\\
+#testcase-reject-start-table-of-main-oronyms-pre-wheat-rye-rule
+>wheat rye
+{$REJECT2}
+
+@mis
+#testcase-mistake-us-too-say-text-say
+>say text
+You don't need to prefix any important two-word command with SAY. Just say the two words.
+\\
+>say
+You don't need to prefix any important two-word command with SAY. Just say the two words.
+
+@gt
+>out
+You don't want to go wandering outside after you just got here! You need to catch your bearings. Focus on yourself a bit. Maybe even a lot.
+
+@part
+#testcase-one-right-table-of-main-oronyms-try-quest-1-try
+>try xxx
+{$ONEWORD}
+\\
+>think
+You must have one word right for how to get started and what to do.
+\\
+>undo
+>undo
+\\
+#testcase-one-right-table-of-main-oronyms-try-quest-2-quest
+>xxx quest
+{$ONEWORD}
+\\
+>think
+You must have one word right for how to get started and what to do.
+\\
+>undo
+>undo
+
+>try quest
+by a point
+
+@part
+#testcase-one-right-table-of-main-oronyms-a-stew-1-a
+>a xxx
+Not much happens, but you feel like that might help, at least halfway, some time later. Much later, or just a little, you can't tell.
+\\
+>think
+You must have one word right for achieving the game's objective.
+\\
+>undo
+>undo
+\\
+#testcase-one-right-table-of-main-oronyms-a-stew-2-stew
+>xxx stew
+Not much happens, but you feel like that might help, at least halfway, some time later. Much later, or just a little, you can't tell.
+\\
+>think
+You must have one word right for achieving the game's objective.
+\\
+>undo
+>undo
+
+@rej
+#testcase-check-pre-board-red-rule-if-player-is-not-in-bore-dread
+>bore dread
+{$REJECT2}
+
+@rej+
+#testcase-check-pre-try-quest-rule-if-sco-try-quest-is-true
+>try quest
+You already have an idea of your quest!
+
+@gt
+>u
+The beast (wrong) blocks your way. How wrong of it! You try physically shifting around, but it's unmoved. Maybe adjusting your mental attitude will do the trick.
+
+@rej
+#testcase-check-pre-a-stew-rule-if-sco-a-stew-is-false
+>a stew
+You think far ahead to what you might need. You'd need to read an ingredient list for that. Maybe you have one on you to start.
+
+@part
+##balance undos
+#testcase-one-right-table-of-main-oronyms-be-strong-1-be
+>be xxx
+{$ONEWORD}
+\\
+>think
+You must have one word right for getting rid of the beast.
+\\
+>undo
+>undo
+\\
+#testcase-one-right-table-of-main-oronyms-be-strong-2-strong
+>xxx strong
+{$ONEWORD}
+\\
+>think
+You must have one word right for getting rid of the beast.
+\\
+>undo
+>undo
+
+>be strong
+by a point
+
+>i
+Your Aw-Lug-All-Ugh has nothing special in it.
+You have that too-rad tour ad flopping about, too. It seems non-critical. You can probably examine and then drop it.
+#OK-APOSTROPHE
+Note that X will default to 'Aight, Amusing Item Using in the future.
+
+>x
+
+@all
+It's a recipe, actually.
+It's a list of all the things Aunt Rickie-Anne said you need to provide a feast.
+You haven't found any yet, so I didn't sort them into have and don't have.
+-- some munchies (the kind is not specified. What's up with that?)
+-- cookware
+-- seasoning
+-- eggs
+-- crust
+-- a variety of alcoholic drinks
+-- a variety of meats
+-- more than one type of bread
+-- hand protection from the heat
+-- nonalcoholic refreshment
+-- well, just all sorts of fruits and vegetables
+
+@part
+##balance undos
+#testcase-one-right-table-of-main-oronyms-loose-intro-1-loose
+>loose xxx
+{$ONEWORD}
+\\
+>think
+You must have one word right for finding something hidden in the lucent row.
+\\
+>undo
+>undo
+\\
+#testcase-one-right-table-of-main-oronyms-loose-intro-2-intro
+>xxx intro
+{$ONEWORD}
+\\
+>think
+You must have one word right for finding something hidden in the lucent row.
+\\
+>undo
+>undo
+
+@!min
+>loose intro
+by a bonus point
+
+@part
+##balance undos
+#testcase-one-right-table-of-main-oronyms-summon-cheese-1-summon
+>summon xxx
+{$ONEWORD}
+\\
+>think
+You must have one word right for figuring what some munchies are.
+\\
+>undo
+>undo
+\\
+#testcase-one-right-table-of-main-oronyms-summon-cheese-2-cheese
+>xxx cheese
+{$ONEWORD}
+\\
+>think
+You must have one word right for figuring what some munchies are.
+\\
+>undo
+>undo
+
+>summon cheese
+by a point
+
+>u
+
+@all
+#testcase-room-names-ur-branch
+`Ur-Branch
+
+@rej
+#testcase-reject-start-table-of-main-oronyms-pre-loose-intro-rule
+>loose intro
+{$REJECT2}
+
+@rej+
+#testcase-check-pre-a-stew-rule-if-player-is-not-in-mine-ooh
+>a stew
+You need to be back in your mine for this.
+
+@part
+##balance undos
+#testcase-one-right-table-of-main-oronyms-herb-ranch-1-herb
+>herb xxx
+{$ONEWORD}
+\\
+>think
+You must have one word right for finding the first place to visit from the Ur-Branch.
+\\
+>undo
+>undo
+\\
+#testcase-one-right-table-of-main-oronyms-herb-ranch-2-ranch
+>xxx ranch
+{$ONEWORD}
+\\
+>think
+You must have one word right for finding the first place to visit from the Ur-Branch.
+\\
+>undo
+>undo
+
+>herb ranch
+by a point
+
+@part
+##balance undos
+#testcase-one-right-table-of-main-oronyms-summer-bay-1-summer
+>summer xxx
+{$ONEWORD}
+\\
+>think
+You must have one word right for letting the herb reveal a new location.
+\\
+>undo
+>undo
+\\
+#testcase-one-right-table-of-main-oronyms-summer-bay-2-bay
+>xxx bay
+{$ONEWORD}
+\\
+>think
+You must have one word right for letting the herb reveal a new location.
+\\
+>undo
+>undo
+
+>summer bay
+by a point
+
+>e
+
+@all
+#testcase-room-names-beach-ill
+`Beach, Ill
+
+@part
+##balance undos
+#testcase-one-right-table-of-main-oronyms-be-chill-1-be
+>be xxx
+{$ONEWORD}
+\\
+>think
+You must have one word right for dealing with the beach, ill.
+\\
+>undo
+>undo
+\\
+#testcase-one-right-table-of-main-oronyms-be-chill-2-chill
+>xxx chill
+{$ONEWORD}
+\\
+>think
+You must have one word right for dealing with the beach, ill.
+\\
+>undo
+>undo
+
+>be chill
+by a point
+
+@part
+##balance undos
+#testcase-one-right-table-of-main-oronyms-nice-warm-1-nice
+>nice xxx
+{$ONEWORD}
+\\
+>think
+You must have one word right for making the swarm less aggressive.
+\\
+>undo
+>undo
+\\
+#testcase-one-right-table-of-main-oronyms-nice-warm-2-warm
+>xxx warm
+{$ONEWORD}
+\\
+>think
+You must have one word right for making the swarm less aggressive.
+\\
+>undo
+>undo
+
+>nice warm
+by a point
+
+@all
+#+testcase-room-names-beach-ill
+`Bless-and-Bleah Sand
+
+@part
+##balance undos
+#testcase-one-right-table-of-main-oronyms-probe-all-1-probe
+>probe xxx
+{$ONEWORD}
+\\
+>think
+You must have one word right for finding a purpose for the pro ball.
+\\
+>undo
+>undo
+\\
+#testcase-one-right-table-of-main-oronyms-probe-all-2-all
+>xxx all
+{$ONEWORD}
+\\
+>think
+You must have one word right for finding a purpose for the pro ball.
+\\
+>undo
+>undo
+
+>probe all
+by a point
+
+>w
+>d
+
+@part
+##balance undos
+#testcase-one-right-table-of-main-oronyms-mess-pot-1-mess
+>mess xxx
+{$ONEWORD}
+\\
+>think
+You must have one word right for making the meh spot into something more useful.
+\\
+>undo
+>undo
+\\
+#testcase-one-right-table-of-main-oronyms-mess-pot-2-pot
+>xxx pot
+{$ONEWORD}
+\\
+>think
+You must have one word right for making the meh spot into something more useful.
+\\
+>undo
+>undo
+
+>mess pot
+by a point
+
+@part
+##balance undos
+#testcase-one-right-table-of-main-oronyms-meh-skit-1-meh
+>meh xxx
+{$ONEWORD}
+\\
+>think
+You must have one word right for having harmless, useless fun with the mess kit.
+\\
+>undo
+>undo
+\\
+#testcase-one-right-table-of-main-oronyms-meh-skit-2-skit
+>xxx skit
+{$ONEWORD}
+\\
+>think
+You must have one word right for having harmless, useless fun with the mess kit.
+\\
+>undo
+>undo
+
+@!min
+>meh skit
+by a bonus point
+
+>u
+>ne
+
+@all
+#testcase-room-names-bore-dread
+`Bore Dread
+
+@part
+##balance undos
+#testcase-one-right-table-of-main-oronyms-board-red-1-board
+>board xxx
+{$ONEWORD}
+\\
+>think
+You must have one word right for finding something in the Bore Dread.
+\\
+>undo
+>undo
+\\
+#testcase-one-right-table-of-main-oronyms-board-red-2-red
+>xxx red
+{$ONEWORD}
+\\
+>think
+You must have one word right for finding something in the Bore Dread.
+\\
+>undo
+>undo
+
+>board red
+by a point
+
+>sw
+
+@all
+>blah copse
+!by one point
+
+>n
+You walk towards the black ops site, but you're flagged down. What are you doing here? How did you even get close? After some questioning, you're sent back to the Ur-Branch by people who "suggest" you forget this ever happened. Returning is ... not advised.
+
+@part
+##balance undos
+#testcase-one-right-table-of-main-oronyms-blah-copse-1-blah
+>blah xxx
+{$ONEWORD}
+\\
+>think
+You must have one word right for avoiding the black ops.
+\\
+>undo
+>undo
+\\
+#testcase-one-right-table-of-main-oronyms-blah-copse-2-copse
+>xxx copse
+{$ONEWORD}
+\\
+>think
+You must have one word right for avoiding the black ops.
+\\
+>undo
+>undo
+
+>blah copse
+by a point
+
+@all
+Aha! That was what you were doing wrong. You just needed to tweak a thing or two as you walked north. This time, you avoid the black-ops site. Once you see the path, well, it's hard to un-see.
+\\
+#testcase-room-names-blah-copse
+`Blah Copse
+
+@part
+##balance undos
+#testcase-one-right-table-of-main-oronyms-nah-queue-1-nah
+>nah xxx
+{$ONEWORD}
+\\
+>think
+You must have one word right for repelling the Forest Team for Esteem.
+\\
+>undo
+>undo
+\\
+#testcase-one-right-table-of-main-oronyms-nah-queue-2-queue
+>xxx queue
+{$ONEWORD}
+\\
+>think
+You must have one word right for repelling the Forest Team for Esteem.
+\\
+>undo
+>undo
+
+>nah queue
+by a point
+
+@part
+##balance undos
+#testcase-one-right-table-of-main-oronyms-surf-ready-1-surf
+>surf xxx
+{$ONEWORD}
+\\
+>think
+You must have one word right for giving Sir Freddie a new direction.
+\\
+>undo
+>undo
+\\
+#testcase-one-right-table-of-main-oronyms-surf-ready-2-ready
+>xxx ready
+{$ONEWORD}
+\\
+>think
+You must have one word right for giving Sir Freddie a new direction.
+\\
+>undo
+>undo
+
+>surf ready
+by a point
+
+@part
+##balance undos
+#testcase-one-right-table-of-main-oronyms-or-clerk-1-or
+>or xxx
+{$ONEWORD}
+\\
+>think
+You must have one word right for figuring what Sir Freddie was scared of.
+\\
+>undo
+>undo
+\\
+#testcase-one-right-table-of-main-oronyms-or-clerk-2-clerk
+>xxx clerk
+{$ONEWORD}
+\\
+>think
+You must have one word right for figuring what Sir Freddie was scared of.
+\\
+>undo
+>undo
+
+>or clerk
+by a point
+
+>n
+@all
+#testcase-room-names-morph-lairs
+`Morph Lairs
+
+@part
+##balance undos
+#testcase-one-right-table-of-main-oronyms-more-flares-flare-1-more
+>more xxx
+{$ONEWORD}
+\\
+>think
+You must have one word right for activating the morph lairs.
+\\
+>undo
+>undo
+\\
+#testcase-one-right-table-of-main-oronyms-more-flares-flare-2-flares-flare
+>xxx flares
+{$ONEWORD}
+\\
+>think
+You must have one word right for activating the morph lairs.
+\\
+>undo
+>undo
+
+@alt
+#testcase-alt-words-table-of-main-oronyms-27-more-flares-flare
+>more flare
+by a point
+\\
+>undo
+
+>more flares
+by a point
+
+@all
+`Ur-Branch
+
+>n
+
+>n
+
+@part
+##balance undos
+#testcase-one-right-table-of-main-oronyms-rope-ladder-1-rope
+>rope xxx
+{$ONEWORD}
+\\
+>think
+You must have one word right for discovering what the row (plaider) holds.
+\\
+>undo
+>undo
+\\
+#testcase-one-right-table-of-main-oronyms-rope-ladder-2-ladder
+>xxx ladder
+{$ONEWORD}
+\\
+>think
+You must have one word right for discovering what the row (plaider) holds.
+\\
+>undo
+>undo
+
+>rope ladder
+by a point
+
+@all
+`Ur-Branch
+
+@part
+##balance undos
+#testcase-one-right-table-of-main-oronyms-guard-entry-1-guard
+>guard xxx
+{$ONEWORD}
+\\
+>think
+You must have one word right for finding a way past the garden tree.
+\\
+>undo
+>undo
+\\
+#testcase-one-right-table-of-main-oronyms-guard-entry-2-entry
+>xxx entry
+{$ONEWORD}
+\\
+>think
+You must have one word right for finding a way past the garden tree.
+\\
+>undo
+>undo
+
+>guard entry
+by a point
+
+@all
+#testcase-room-names-pea-stalks
+`Pea Stalks
+
+@part
+##balance undos
+#testcase-one-right-table-of-main-oronyms-peace-talks-1-peace
+>peace xxx
+{$ONEWORD}
+\\
+>think
+You must have one word right for finding something incorporeal within the Pea Stalks.
+\\
+>undo
+>undo
+\\
+#testcase-one-right-table-of-main-oronyms-peace-talks-2-talks
+>xxx talks
+{$ONEWORD}
+\\
+>think
+You must have one word right for finding something incorporeal within the Pea Stalks.
+\\
+>undo
+>undo
+
+>peace talks
+by a point
+
+@part
+##balance undos
+#testcase-one-right-table-of-main-oronyms-pea-pod-1-pea
+>pea xxx
+{$ONEWORD}
+\\
+>think
+You must have one word right for finding something unusual within the Pea Stalks.
+\\
+>undo
+>undo
+\\
+#testcase-one-right-table-of-main-oronyms-pea-pod-2-pod
+>xxx pod
+{$ONEWORD}
+\\
+>think
+You must have one word right for finding something unusual within the Pea Stalks.
+\\
+>undo
+>undo
+
+@!min
+>pea pod
+by a bonus point
+
+>out
+
+>se
+
+@all
+#testcase-room-names-dome-aching
+`Dome, Aching
+
+@part
+##balance undos
+#testcase-one-right-table-of-main-oronyms-can-take-1-can
+>can xxx
+{$ONEWORD}
+\\
+>think
+You must have one word right for dispelling the Can't-Ache.
+\\
+>undo
+>undo
+\\
+#testcase-one-right-table-of-main-oronyms-can-take-2-take
+>xxx take
+{$ONEWORD}
+\\
+>think
+You must have one word right for dispelling the Can't-Ache.
+\\
+>undo
+>undo
+
+>can take
+by a point
+
+@part
+##balance undos
+#testcase-one-right-table-of-main-oronyms-gray-grey-tin-1-gray-grey
+>gray xxx
+{$ONEWORD}
+\\
+>think
+You must have one word right for discover what the Great Inn holds.
+\\
+>undo
+>undo
+\\
+#testcase-one-right-table-of-main-oronyms-gray-grey-tin-2-tin
+>xxx tin
+{$ONEWORD}
+\\
+>think
+You must have one word right for discover what the Great Inn holds.
+\\
+>undo
+>undo
+
+#testcase-alt-words-table-of-main-oronyms-33-gray-grey-tin
+>grey tin
+by a point
+\\
+>undo
+
+>gray tin
+by a point
+
+@part
+##balance undos
+#testcase-one-right-table-of-main-oronyms-dough-making-1-dough
+>dough xxx
+{$ONEWORD}
+\\
+>think
+You must have one word right for doing something positive in Dome, Aching.
+\\
+>undo
+>undo
+\\
+#testcase-one-right-table-of-main-oronyms-dough-making-2-making
+>xxx making
+{$ONEWORD}
+\\
+>think
+You must have one word right for doing something positive in Dome, Aching.
+\\
+>undo
+>undo
+
+>dough making
+by a point
+
+@part
+##balance undos
+#testcase-one-right-table-of-main-oronyms-in-earnest-1-in
+>in xxx
+{$ONEWORD}
+\\
+>think
+You must have one word right for figure how to visit the inner nest.
+\\
+>undo
+>undo
+\\
+#testcase-one-right-table-of-main-oronyms-in-earnest-2-earnest
+>xxx earnest
+{$ONEWORD}
+\\
+>think
+You must have one word right for figure how to visit the inner nest.
+\\
+>undo
+>undo
+
+>in earnest
+by a point
+
+>in
+
+@all
+#testcase-room-names-inner-nest
+`Inner Nest
+
+@part
+##balance undos
+#testcase-one-right-table-of-main-oronyms-pry-more-1-pry
+>pry xxx
+{$ONEWORD}
+\\
+>think
+You must have one word right for figuring how to take the prime oar.
+\\
+>undo
+>undo
+\\
+#testcase-one-right-table-of-main-oronyms-pry-more-2-more
+>xxx more
+{$ONEWORD}
+\\
+>think
+You must have one word right for figuring how to take the prime oar.
+\\
+>undo
+>undo
+
+>pry more
+by a point
+
+>out
+>nw
+
+>e
+
+@part
+##balance undos
+#testcase-one-right-table-of-main-oronyms-punt-weaker-1-punt
+>punt xxx
+{$ONEWORD}
+\\
+>think
+You must have one word right for trading with the pun tweaker.
+\\
+>undo
+>undo
+\\
+#testcase-one-right-table-of-main-oronyms-punt-weaker-2-weaker
+>xxx weaker
+{$ONEWORD}
+\\
+>think
+You must have one word right for trading with the pun tweaker.
+\\
+>undo
+>undo
+
+@all
+#+testcase-room-names-beach-ill
+`Dune Ever-Do-Never
+
+>punt weaker
+by a point
+
+>e
+
+@all
+#testcase-room-names-a-pile-up-isle
+`A Pile-Up Isle
+
+@part
+##balance undos
+#testcase-one-right-table-of-main-oronyms-base-pikes-1-base
+>base xxx
+{$ONEWORD}
+\\
+>think
+You must have one word right for figuring a way through the bay spikes.
+\\
+>undo
+>undo
+\\
+#testcase-one-right-table-of-main-oronyms-base-pikes-2-pikes
+>xxx pikes
+{$ONEWORD}
+\\
+>think
+You must have one word right for figuring a way through the bay spikes.
+\\
+>undo
+>undo
+
+>base pikes
+by a point
+
+@part
+##balance undos
+#testcase-one-right-table-of-main-oronyms-pie-crust-1-pie
+>pie xxx
+{$ONEWORD}
+\\
+>think
+You must have one word right for finding what's under the pike rust.
+\\
+>undo
+>undo
+\\
+#testcase-one-right-table-of-main-oronyms-pie-crust-2-crust
+>xxx crust
+{$ONEWORD}
+\\
+>think
+You must have one word right for finding what's under the pike rust.
+\\
+>undo
+>undo
+
+>pie crust
+by a point
+
+@part
+##balance undos
+#testcase-one-right-table-of-main-oronyms-hike-up-1-hike
+>hike xxx
+{$ONEWORD}
+\\
+>think
+You must have one word right for reaching the high cup.
+\\
+>undo
+>undo
+\\
+#testcase-one-right-table-of-main-oronyms-hike-up-2-up
+>xxx up
+{$ONEWORD}
+\\
+>think
+You must have one word right for reaching the high cup.
+\\
+>undo
+>undo
+
+>hike up
+by a point
+
+>w
+>w
+
+>nw
+
+@all
+`Sore Dark
+
+@part
+##balance undos
+#testcase-one-right-table-of-main-oronyms-sword-ark-1-sword
+>sword xxx
+{$ONEWORD}
+\\
+>think
+You must have one word right for finding something in the Sore Dark.
+\\
+>undo
+>undo
+\\
+#testcase-one-right-table-of-main-oronyms-sword-ark-2-ark
+>xxx ark
+{$ONEWORD}
+\\
+>think
+You must have one word right for finding something in the Sore Dark.
+\\
+>undo
+>undo
+
+>sword ark
+by a point
+
+@part
+##balance undos
+#testcase-one-right-table-of-main-oronyms-blast-ring-1-blast
+>blast xxx
+{$ONEWORD}
+\\
+>think
+You must have one word right for finding the blah string's true purpose.
+\\
+>undo
+>undo
+\\
+#testcase-one-right-table-of-main-oronyms-blast-ring-2-ring
+>xxx ring
+{$ONEWORD}
+\\
+>think
+You must have one word right for finding the blah string's true purpose.
+\\
+>undo
+>undo
+
+>blast ring
+by a point
+
+@part
+##balance undos
+#testcase-one-right-table-of-main-oronyms-terrible-aid-1-terrible
+>terrible xxx
+{$ONEWORD}
+\\
+>think
+You must have one word right for becoming worthy of the Terra Blade.
+\\
+>undo
+>undo
+\\
+#testcase-one-right-table-of-main-oronyms-terrible-aid-2-aid
+>xxx aid
+{$ONEWORD}
+\\
+>think
+You must have one word right for becoming worthy of the Terra Blade.
+\\
+>undo
+>undo
+
+>terrible aid
+by a point
+
+@all
+`Ur-Branch
+
+>sw
+
+@all
+#testcase-room-names-fort-earns-four-turns
+`Fort Earns-Four-Turns
+
+@part
+##balance undos
+#testcase-one-right-table-of-main-oronyms-oh-clever-1-oh
+>oh xxx
+{$ONEWORD}
+\\
+>think
+You must have one word right for operating the oak lever.
+\\
+>undo
+>undo
+\\
+#testcase-one-right-table-of-main-oronyms-oh-clever-2-clever
+>xxx clever
+{$ONEWORD}
+\\
+>think
+You must have one word right for operating the oak lever.
+\\
+>undo
+>undo
+
+>oh clever
+by a point
+
+>x beak
+
+>ne
+
+>s
+
+@all
+#testcase-room-names-tube-rod
+`Tube/Rod
+
+@part
+##balance undos
+#testcase-one-right-table-of-main-oronyms-too-broad-1-too
+>too xxx
+{$ONEWORD}
+\\
+>think
+You must have one word right for how to fracture the tube/rod.
+\\
+>undo
+>undo
+\\
+#testcase-one-right-table-of-main-oronyms-too-broad-2-broad
+>xxx broad
+{$ONEWORD}
+\\
+>think
+You must have one word right for how to fracture the tube/rod.
+\\
+>undo
+>undo
+
+>too broad
+by a point
+
+>n
+
+>sw
+
+>x beak
+
+>ne
+
+>sw
+
+>ne
+
+>s
+
+@all
+#testcase-room-names-too-dark-tude-ark
+`Too-Dark Tude Ark
+
+@part
+##balance undos
+#testcase-one-right-table-of-main-oronyms-ho-languor-langour-1-ho
+>ho xxx
+{$ONEWORD}
+\\
+>think
+You must have one word right for dealing with the paralyzing whole anger.
+\\
+>undo
+>undo
+\\
+#testcase-one-right-table-of-main-oronyms-ho-languor-langour-2-languor-langour
+>xxx languor
+{$ONEWORD}
+\\
+>think
+You must have one word right for dealing with the paralyzing whole anger.
+\\
+>undo
+>undo
+
+@alt
+#testcase-alt-words-table-of-main-oronyms-54-ho-languor-langour
+>ho languor
+by a point
+\\
+>undo
+
+>ho langour
+by a point
+
+@all
+#+testcase-room-names-too-dark-tude-ark
+`"Ugh?! Lo, a Glow"
+
+>n
+
+>sw
+
+@part
+##balance undos
+#testcase-one-right-table-of-main-oronyms-fell-trap-1-fell
+>fell xxx
+{$ONEWORD}
+\\
+>think
+You must have one word right for revealing what's behind the felt wrap.
+\\
+>undo
+>undo
+\\
+#testcase-one-right-table-of-main-oronyms-fell-trap-2-trap
+>xxx trap
+{$ONEWORD}
+\\
+>think
+You must have one word right for revealing what's behind the felt wrap.
+\\
+>undo
+>undo
+
+>fell trap
+by a point
+
+>x trap
+
+@all
+#testcase-room-names-cell-urban
+`Cell, Urban
+
+@part
+##balance undos
+#testcase-one-right-table-of-main-oronyms-cellar-bin-1-cellar
+>cellar xxx
+{$ONEWORD}
+\\
+>think
+You must have one word right for escaping the Cell, Urban.
+\\
+>undo
+>undo
+\\
+#testcase-one-right-table-of-main-oronyms-cellar-bin-2-bin
+>xxx bin
+{$ONEWORD}
+\\
+>think
+You must have one word right for escaping the Cell, Urban.
+\\
+>undo
+>undo
+
+>cellar bin
+by a point
+
+@all
+#testcase-room-names-cellar-bin
+`Cellar Bin
+
+>u
+
+>x beak
+
+>x trap
+
+>u
+>ne
+>s
+
+@all
+#testcase-room-names-sage-oaks
+`Sage Oaks
+
+@part
+##balance undos
+#testcase-one-right-table-of-main-oronyms-say-jokes-1-say
+>say xxx
+{$ONEWORD}
+\\
+>think
+You must have one word right for get by the Sage Oaks.
+\\
+>undo
+>undo
+\\
+#testcase-one-right-table-of-main-oronyms-say-jokes-2-jokes
+>xxx jokes
+{$ONEWORD}
+\\
+>think
+You must have one word right for get by the Sage Oaks.
+\\
+>undo
+>undo
+
+>say jokes
+by a point
+
+@part
+##balance undos
+#testcase-one-right-table-of-main-oronyms-gas-pouch-1-gas
+>gas xxx
+{$ONEWORD}
+\\
+>think
+You must have one word right for see how to stop gasping OUCH.
+\\
+>undo
+>undo
+\\
+#testcase-one-right-table-of-main-oronyms-gas-pouch-2-pouch
+>xxx pouch
+{$ONEWORD}
+\\
+>think
+You must have one word right for see how to stop gasping OUCH.
+\\
+>undo
+>undo
+
+>gas pouch
+by a point
+
+>n
+
+>sss
+>s
+
+@all
+#testcase-room-names-dam-pink
+`Dam, Pink
+
+@part
+##balance undos
+#testcase-one-right-table-of-main-oronyms-claim-it-1-claim
+>claim xxx
+{$ONEWORD}
+\\
+>think
+You must have one word right for gathering the clay mitt.
+\\
+>undo
+>undo
+\\
+#testcase-one-right-table-of-main-oronyms-claim-it-2-it
+>xxx it
+{$ONEWORD}
+\\
+>think
+You must have one word right for gathering the clay mitt.
+\\
+>undo
+>undo
+
+@mis
+#testcase-mistake-us-too-say-text-say-2
+>say text
+You found the only important command to start with SAY.
+\\
+>say
+You found the only important command to start with SAY.
+
+>claim it
+by a point
+
+@mis
+#testcase-mistake-us-too-claim-it
+>claim it
+You wonder if you should reclaim the mitt, but then, you think it might start to reek. Lame.
+
+@part
+##balance undos
+#testcase-one-right-table-of-main-oronyms-damp-ink-1-damp
+>damp xxx
+{$ONEWORD}
+\\
+>think
+You must have one word right for getting something from the dam.
+\\
+>undo
+>undo
+\\
+#testcase-one-right-table-of-main-oronyms-damp-ink-2-ink
+>xxx ink
+{$ONEWORD}
+\\
+>think
+You must have one word right for getting something from the dam.
+\\
+>undo
+>undo
+
+>damp ink
+by a point
+
+>n
+>n
+>s
+>s
+
+@all
+#testcase-room-names-scribe-room
+`Scribe Room
+
+@part
+##balance undos
+#testcase-one-right-table-of-main-oronyms-scry-broom-1-scry
+>scry xxx
+{$ONEWORD}
+\\
+>think
+You must have one word right for getting something from the Scribe Room.
+\\
+>undo
+>undo
+\\
+#testcase-one-right-table-of-main-oronyms-scry-broom-2-broom
+>xxx broom
+{$ONEWORD}
+\\
+>think
+You must have one word right for getting something from the Scribe Room.
+\\
+>undo
+>undo
+
+>scry broom
+by a point
+
+>n
+>n
+>ss
+>s
+
+@all
+#testcase-room-names-dust-which-does-twitch
+`Dust Which Does Twitch
+
+@part
+##balance undos
+#testcase-one-right-table-of-main-oronyms-pro-sweeping-1-pro
+>pro xxx
+{$ONEWORD}
+\\
+>think
+You must have one word right for figuring how to clear some dust a bit.
+\\
+>undo
+>undo
+\\
+#testcase-one-right-table-of-main-oronyms-pro-sweeping-2-sweeping
+>xxx sweeping
+{$ONEWORD}
+\\
+>think
+You must have one word right for figuring how to clear some dust a bit.
+\\
+>undo
+>undo
+
+>pro sweeping
+by a point
+
+@all
+#+testcase-room-names-dust-which-does-twitch
+`Teal Eaves
+
+@part
+##balance undos
+#testcase-one-right-table-of-main-oronyms-cold-rum-1-cold
+>cold xxx
+{$ONEWORD}
+\\
+>think
+You must have one word right for knowing what to look for in the coal drum.
+\\
+>undo
+>undo
+\\
+#testcase-one-right-table-of-main-oronyms-cold-rum-2-rum
+>xxx rum
+{$ONEWORD}
+\\
+>think
+You must have one word right for knowing what to look for in the coal drum.
+\\
+>undo
+>undo
+
+>cold rum
+by a point
+
+@part
+##balance undos
+#testcase-one-right-table-of-main-oronyms-tea-leaves-1-tea
+>tea xxx
+{$ONEWORD}
+\\
+>think
+You must have one word right for divining what's beneath Teal Eaves.
+\\
+>undo
+>undo
+\\
+#testcase-one-right-table-of-main-oronyms-tea-leaves-2-leaves
+>xxx leaves
+{$ONEWORD}
+\\
+>think
+You must have one word right for divining what's beneath Teal Eaves.
+\\
+>undo
+>undo
+
+>tea leaves
+by a point
+
+>n
+>n
+>s
+>s
+
+@part
+##balance undos
+#testcase-one-right-table-of-main-oronyms-belt-rusted-1-belt
+>belt xxx
+{$ONEWORD}
+\\
+>think
+You must have one word right for figuring how to "clean" the bell (trusted).
+\\
+>undo
+>undo
+\\
+#testcase-one-right-table-of-main-oronyms-belt-rusted-2-rusted
+>xxx rusted
+{$ONEWORD}
+\\
+>think
+You must have one word right for figuring how to "clean" the bell (trusted).
+\\
+>undo
+>undo
+
+>belt rusted
+by a point
+
+>n
+>n
+
+>sw
+>x beak
+>ne
+>w
+
+@all
+#testcase-room-names-bowl-ditch
+`Bowl Ditch
+
+@part
+##balance undos
+#testcase-one-right-table-of-main-oronyms-bold-itch-1-bold
+>bold xxx
+{$ONEWORD}
+\\
+>think
+You must have one word right for figuring how to get back on your feet in Bowl/Ditch.
+\\
+>undo
+>undo
+\\
+#testcase-one-right-table-of-main-oronyms-bold-itch-2-itch
+>xxx itch
+{$ONEWORD}
+\\
+>think
+You must have one word right for figuring how to get back on your feet in Bowl/Ditch.
+\\
+>undo
+>undo
+
+>bold itch
+by a point
+
+>w
+
+@all
+`Turbo Tours
+
+@part
+##balance undos
+#testcase-one-right-table-of-main-oronyms-tour-boaters-1-tour
+>tour xxx
+{$ONEWORD}
+\\
+>think
+You must have one word right for bringing more business to Turbo Tours.
+\\
+>undo
+>undo
+\\
+#testcase-one-right-table-of-main-oronyms-tour-boaters-2-boaters
+>xxx boaters
+{$ONEWORD}
+\\
+>think
+You must have one word right for bringing more business to Turbo Tours.
+\\
+>undo
+>undo
+
+@!min
+>tour boaters
+by a bonus point
+
+@part
+##balance undos
+#testcase-one-right-table-of-main-oronyms-stark-raft-1-stark
+>stark xxx
+{$ONEWORD}
+\\
+>think
+You must have one word right for finding more appropriate transport than the star craft.
+\\
+>undo
+>undo
+\\
+#testcase-one-right-table-of-main-oronyms-stark-raft-2-raft
+>xxx raft
+{$ONEWORD}
+\\
+>think
+You must have one word right for finding more appropriate transport than the star craft.
+\\
+>undo
+>undo
+
+>stark raft
+by a point
+
+>s
+
+@all
+#testcase-room-names-far-miles-farm-isles
+Far Miles Farm Isles
+
+@part
+##balance undos
+#testcase-one-right-table-of-main-oronyms-find-rinks-1-find
+>find xxx
+{$ONEWORD}
+\\
+>think
+You must have one word right for seeing another place on the Farm Isles.
+\\
+>undo
+>undo
+\\
+#testcase-one-right-table-of-main-oronyms-find-rinks-2-rinks
+>xxx rinks
+{$ONEWORD}
+\\
+>think
+You must have one word right for seeing another place on the Farm Isles.
+\\
+>undo
+>undo
+
+>find rinks
+by a point
+
+@all
+#testcase-room-names-berries-pond
+`Berries Pond
+
+@part
+##balance undos
+#testcase-one-right-table-of-main-oronyms-bear-respond-1-bear
+>bear xxx
+{$ONEWORD}
+\\
+>think
+You must have one word right for getting the berries in Berries Pond.
+\\
+>undo
+>undo
+\\
+#testcase-one-right-table-of-main-oronyms-bear-respond-2-respond
+>xxx respond
+{$ONEWORD}
+\\
+>think
+You must have one word right for getting the berries in Berries Pond.
+\\
+>undo
+>undo
+
+>bear respond
+by a point
+
+@all
+`Far Miles Farm Isles
+
+@part
+##balance undos
+#testcase-one-right-table-of-main-oronyms-barn-open-1-barn
+>barn xxx
+{$ONEWORD}
+\\
+>think
+You must have one word right for overcoming rejection from the bar.
+\\
+>undo
+>undo
+\\
+#testcase-one-right-table-of-main-oronyms-barn-open-2-open
+>xxx open
+{$ONEWORD}
+\\
+>think
+You must have one word right for overcoming rejection from the bar.
+\\
+>undo
+>undo
+
+>barn open
+by a point
+
+>n
+>e
+>n
+
+@all
+#testcase-room-names-sob-acres
+`Sob Acres
+
+@part
+##balance undos
+#testcase-one-right-table-of-main-oronyms-saw-bakers-1-saw
+>saw xxx
+{$ONEWORD}
+\\
+>think
+You must have one word right for finding signs of life in Sob Acres.
+\\
+>undo
+>undo
+\\
+#testcase-one-right-table-of-main-oronyms-saw-bakers-2-bakers
+>xxx bakers
+{$ONEWORD}
+\\
+>think
+You must have one word right for finding signs of life in Sob Acres.
+\\
+>undo
+>undo
+
+>saw bakers
+by a point
+
+>in
+
+@all
+#testcase-room-names-deli-stern
+`Deli, Stern
+
+@part
+##balance undos
+#testcase-one-right-table-of-main-oronyms-dell-eastern-1-dell
+>dell xxx
+{$ONEWORD}
+\\
+>think
+You must have one word right for making Sob Acres less forbidding.
+\\
+>undo
+>undo
+\\
+#testcase-one-right-table-of-main-oronyms-dell-eastern-2-eastern
+>xxx eastern
+{$ONEWORD}
+\\
+>think
+You must have one word right for making Sob Acres less forbidding.
+\\
+>undo
+>undo
+
+>dell eastern
+by a point
+
+>e
+
+@all
+#+testcase-room-names-sob-acres
+`Dell, Eastern
+
+>w
+
+@part
+##balance undos
+#testcase-one-right-table-of-main-oronyms-dope-ale-1-dope
+>dope xxx
+{$ONEWORD}
+\\
+>think
+You must have one word right for finding something to trade your dough pail for.
+\\
+>undo
+>undo
+\\
+#testcase-one-right-table-of-main-oronyms-dope-ale-2-ale
+>xxx ale
+{$ONEWORD}
+\\
+>think
+You must have one word right for finding something to trade your dough pail for.
+\\
+>undo
+>undo
+
+>dope ale
+by a point
+
+>e
+>w
+
+@all
+#+testcase-room-names-deli-stern
+`"Die, Nerviness" Diner Venus
+
+@part
+##balance undos
+#testcase-one-right-table-of-main-oronyms-beef-ordering-1-beef
+>beef xxx
+{$ONEWORD}
+\\
+>think
+You must have one word right for figuring what the Toon Eat-Too-Neat really means.
+\\
+>undo
+>undo
+\\
+#testcase-one-right-table-of-main-oronyms-beef-ordering-2-ordering
+>xxx ordering
+{$ONEWORD}
+\\
+>think
+You must have one word right for figuring what the Toon Eat-Too-Neat really means.
+\\
+>undo
+>undo
+
+>beef ordering
+by a point
+
+>e
+>w
+
+@part
+##balance undos
+#testcase-one-right-table-of-main-oronyms-wheat-rye-1-wheat
+>wheat xxx
+{$ONEWORD}
+\\
+>think
+You must have one word right for guessing what free samples are on offer.
+\\
+>undo
+>undo
+\\
+#testcase-one-right-table-of-main-oronyms-wheat-rye-2-rye
+>xxx rye
+{$ONEWORD}
+\\
+>think
+You must have one word right for guessing what free samples are on offer.
+\\
+>undo
+>undo
+
+>wheat rye
+by a point
+
+>e
+
+@part
+##balance undos
+#testcase-one-right-table-of-main-oronyms-den-specs-1-den
+>den xxx
+{$ONEWORD}
+\\
+>think
+You must have one word right for finding something more useful than dense pecs.
+\\
+>undo
+>undo
+\\
+#testcase-one-right-table-of-main-oronyms-den-specs-2-specs
+>xxx specs
+{$ONEWORD}
+\\
+>think
+You must have one word right for finding something more useful than dense pecs.
+\\
+>undo
+>undo
+
+>den specs
+by a point
+
+>d
+
+@all
+#testcase-room-names-groan-odes
+`Groan Odes
+
+@part
+##balance undos
+#testcase-one-right-table-of-main-oronyms-grow-nodes-1-grow
+>grow xxx
+{$ONEWORD}
+\\
+>think
+You must have one word right for seeing what's behind the groan odes.
+\\
+>undo
+>undo
+\\
+#testcase-one-right-table-of-main-oronyms-grow-nodes-2-nodes
+>xxx nodes
+{$ONEWORD}
+\\
+>think
+You must have one word right for seeing what's behind the groan odes.
+\\
+>undo
+>undo
+
+>grow nodes
+by a point
+
+@all
+#+testcase-room-names-groan-odes
+`Numb Bursting Number String
+
+@part
+##balance undos
+#testcase-one-right-table-of-main-oronyms-no-date-1-no
+>no xxx
+{$ONEWORD}
+\\
+>think
+You must have one word right for figuring how to destroy the nodes, or the most important one.
+\\
+>undo
+>undo
+\\
+#testcase-one-right-table-of-main-oronyms-no-date-2-date
+>xxx date
+{$ONEWORD}
+\\
+>think
+You must have one word right for figuring how to destroy the nodes, or the most important one.
+\\
+>undo
+>undo
+
+>no date
+by a point
+
+>e
+>s
+>e
+>ne
+
+@part
+##balance undos
+#testcase-one-right-table-of-main-oronyms-malt-hour-1-malt
+>malt xxx
+{$ONEWORD}
+\\
+>think
+You must have one word right for befriending the guardians in the maul tower.
+\\
+>undo
+>undo
+\\
+#testcase-one-right-table-of-main-oronyms-malt-hour-2-hour
+>xxx hour
+{$ONEWORD}
+\\
+>think
+You must have one word right for befriending the guardians in the maul tower.
+\\
+>undo
+>undo
+
+>malt hour
+by a point
+
+>e
+
+@all
+#testcase-room-names-joy-nadir
+`Joy Nadir
+
+@part
+##balance undos
+#testcase-one-right-table-of-main-oronyms-join-aider-1-join
+>join xxx
+{$ONEWORD}
+\\
+>think
+You must have one word right for doing something worthwhile in the joy nadir.
+\\
+>undo
+>undo
+\\
+#testcase-one-right-table-of-main-oronyms-join-aider-2-aider
+>xxx aider
+{$ONEWORD}
+\\
+>think
+You must have one word right for doing something worthwhile in the joy nadir.
+\\
+>undo
+>undo
+
+>join aider
+by a point
+
+@all
+#testcase-room-names-joy-nadir
+`Dew Pit
+
+@part
+##balance undos
+#testcase-one-right-table-of-main-oronyms-dupe-it-1-dupe
+>dupe xxx
+{$ONEWORD}
+\\
+>think
+You must have one word right for making the dew pit useful.
+\\
+>undo
+>undo
+\\
+#testcase-one-right-table-of-main-oronyms-dupe-it-2-it
+>xxx it
+{$ONEWORD}
+\\
+>think
+You must have one word right for making the dew pit useful.
+\\
+>undo
+>undo
+
+>dupe it
+by a point
+
+>u
+
+@all
+#testcase-room-names-throne-ow-throw-now
+`Throne Ow-Throw-Now
+
+@part
+##balance undos
+#testcase-one-right-table-of-main-oronyms-use-it-1-use
+>use xxx
+{$ONEWORD}
+\\
+>think
+You must have one word right for disobeying the throne's orders.
+\\
+>undo
+>undo
+\\
+#testcase-one-right-table-of-main-oronyms-use-it-2-it
+>xxx it
+{$ONEWORD}
+\\
+>think
+You must have one word right for disobeying the throne's orders.
+\\
+>undo
+>undo
+
+>use it
+by a point
+
+@all
+#+testcase-room-names-throne-ow-throw-now
+`Final (?) and Fine Land
+
+@part
+##balance undos
+#testcase-one-right-table-of-main-oronyms-lie-fruits-1-lie
+>lie xxx
+{$ONEWORD}
+\\
+>think
+You must have one word right for getting something useful from the life roots.
+\\
+>undo
+>undo
+\\
+#testcase-one-right-table-of-main-oronyms-lie-fruits-2-fruits
+>xxx fruits
+{$ONEWORD}
+\\
+>think
+You must have one word right for getting something useful from the life roots.
+\\
+>undo
+>undo
+
+>lie fruits
+by a point
+
+@rej
+#testcase-reject-end-table-of-main-oronyms-pre-meh-skit-rule
+>meh skit
+{$REJECT2}
+\\
+#testcase-reject-end-table-of-main-oronyms-pre-mess-pot-rule
+>mess pot
+{$REJECT2}
+
+>d
+
+@part
+##balance undos
+
+@rej
+#testcase-reject-end-table-of-main-oronyms-pre-barn-open-rule
+>barn open
+{$REJECT2}
+\\
+#testcase-reject-end-table-of-main-oronyms-pre-base-pikes-rule
+>base pikes
+{$REJECT2}
+\\
+#testcase-reject-end-table-of-main-oronyms-pre-be-chill-rule
+>be chill
+{$REJECT2}
+\\
+#testcase-reject-end-table-of-main-oronyms-pre-be-strong-rule
+>be strong
+{$REJECT2}
+\\
+#testcase-reject-end-table-of-main-oronyms-pre-bear-respond-rule
+>bear respond
+{$REJECT2}
+\\
+#testcase-reject-end-table-of-main-oronyms-pre-beef-ordering-rule
+>beef ordering
+{$REJECT2}
+\\
+#testcase-reject-end-table-of-main-oronyms-pre-belt-rusted-rule
+>belt rusted
+{$REJECT2}
+\\
+#testcase-reject-end-table-of-main-oronyms-pre-blah-copse-rule
+>blah copse
+{$REJECT2}
+\\
+#testcase-reject-end-table-of-main-oronyms-pre-blast-ring-rule
+>blast ring
+{$REJECT2}
+\\
+#testcase-reject-end-table-of-main-oronyms-pre-board-red-rule
+>board red
+{$REJECT2}
+\\
+#testcase-reject-end-table-of-main-oronyms-pre-bold-itch-rule
+>bold itch
+{$REJECT2}
+\\
+#testcase-reject-end-table-of-main-oronyms-pre-can-take-rule
+>can take
+{$REJECT2}
+\\
+#testcase-reject-end-table-of-main-oronyms-pre-cellar-bin-rule
+>cellar bin
+{$REJECT2}
+\\
+#testcase-reject-end-table-of-main-oronyms-pre-cold-rum-rule
+>cold rum
+{$REJECT2}
+\\
+#testcase-reject-end-table-of-main-oronyms-pre-damp-ink-rule
+>damp ink
+{$REJECT2}
+\\
+#testcase-reject-end-table-of-main-oronyms-pre-dell-eastern-rule
+>dell eastern
+{$REJECT2}
+\\
+#testcase-reject-end-table-of-main-oronyms-pre-dope-ale-rule
+>dope ale
+{$REJECT2}
+\\
+#testcase-reject-end-table-of-main-oronyms-pre-dough-making-rule
+>dough making
+{$REJECT2}
+\\
+#testcase-reject-end-table-of-main-oronyms-pre-dupe-it-rule
+>dupe it
+{$REJECT2}
+\\
+#testcase-reject-end-table-of-main-oronyms-pre-fell-trap-rule
+>fell trap
+{$REJECT2}
+\\
+#testcase-reject-end-table-of-main-oronyms-pre-find-rinks-rule
+>find rinks
+{$REJECT2}
+\\
+#testcase-reject-end-table-of-main-oronyms-pre-gas-pouch-rule
+>gas pouch
+{$REJECT2}
+\\
+#testcase-reject-end-table-of-main-oronyms-pre-gray-tin-rule
+>gray tin
+{$REJECT2}
+\\
+#testcase-reject-end-table-of-main-oronyms-pre-grow-nodes-rule
+>grow nodes
+{$REJECT2}
+\\
+#testcase-reject-end-table-of-main-oronyms-pre-guard-entry-rule
+>guard entry
+{$REJECT2}
+\\
+#testcase-reject-end-table-of-main-oronyms-pre-herb-ranch-rule
+>herb ranch
+{$REJECT2}
+\\
+#testcase-reject-end-table-of-main-oronyms-pre-hike-up-rule
+>hike up
+{$REJECT2}
+\\
+#testcase-reject-end-table-of-main-oronyms-pre-ho-langour-rule
+>ho languor
+{$REJECT2}
+\\
+#testcase-reject-end-table-of-main-oronyms-pre-in-earnest-rule
+>in earnest
+The first word was a valid command that could stand on its own. The second may be unnecessary, or a typo.
+\\
+#testcase-reject-end-table-of-main-oronyms-pre-join-aider-rule
+>join aider
+{$REJECT2}
+\\
+#testcase-reject-end-table-of-main-oronyms-pre-lie-fruits-rule
+>lie fruits
+{$REJECT2}
+\\
+#testcase-reject-end-table-of-main-oronyms-pre-loose-intro-rule
+>loose intro
+{$REJECT2}
+\\
+#testcase-reject-end-table-of-main-oronyms-pre-malt-hour-rule
+>malt hour
+{$REJECT2}
+\\
+#testcase-reject-end-table-of-main-oronyms-pre-more-flares-rule
+>more flares
+{$REJECT2}
+\\
+#testcase-reject-end-table-of-main-oronyms-pre-nah-queue-rule
+>nah queue
+{$REJECT2}
+\\
+#testcase-reject-end-table-of-main-oronyms-pre-nice-warm-rule
+>nice warm
+{$REJECT2}
+\\
+#testcase-reject-end-table-of-main-oronyms-pre-no-date-rule
+>no date
+The first word was a valid command that could stand on its own. The second may be unnecessary, or a typo.
+\\
+#testcase-reject-end-table-of-main-oronyms-pre-oh-clever-rule
+>oh clever
+{$REJECT2}
+\\
+#testcase-reject-end-table-of-main-oronyms-pre-or-clerk-rule
+>or clerk
+{$REJECT2}
+\\
+#testcase-reject-end-table-of-main-oronyms-pre-pea-pod-rule
+>pea pod
+{$REJECT2}
+\\
+#testcase-reject-end-table-of-main-oronyms-pre-peace-talks-rule
+>peace talks
+{$REJECT2}
+\\
+#testcase-reject-end-table-of-main-oronyms-pre-pie-crust-rule
+>pie crust
+{$REJECT2}
+\\
+#testcase-reject-end-table-of-main-oronyms-pre-pro-sweeping-rule
+>pro sweeping
+{$REJECT2}
+\\
+#testcase-reject-end-table-of-main-oronyms-pre-probe-all-rule
+>probe all
+{$REJECT2}
+\\
+#testcase-reject-end-table-of-main-oronyms-pre-pry-more-rule
+>pry more
+{$REJECT2}
+\\
+#testcase-reject-end-table-of-main-oronyms-pre-punt-weaker-rule
+>punt weaker
+{$REJECT2}
+\\
+#testcase-reject-end-table-of-main-oronyms-pre-rope-ladder-rule
+>rope ladder
+{$REJECT2}
+\\
+#testcase-reject-end-table-of-main-oronyms-pre-saw-bakers-rule
+>saw bakers
+{$REJECT2}
+\\
+#testcase-reject-end-table-of-main-oronyms-pre-say-jokes-rule
+>say jokes
+You found the only important command to start with SAY.
+\\
+#testcase-reject-end-table-of-main-oronyms-pre-scry-broom-rule
+>scry broom
+{$REJECT2}
+\\
+#testcase-reject-end-table-of-main-oronyms-pre-stark-raft-rule
+>stark raft
+{$REJECT2}
+\\
+#testcase-reject-end-table-of-main-oronyms-pre-summer-bay-rule
+>summer bay
+You already used the herb to expand your mind! It is only good for seasoning now.
+\\
+#testcase-reject-end-table-of-main-oronyms-pre-surf-ready-rule
+>surf ready
+{$REJECT2}
+\\
+#testcase-reject-end-table-of-main-oronyms-pre-sword-ark-rule
+>sword ark
+{$REJECT2}
+\\
+#testcase-reject-end-table-of-main-oronyms-pre-tea-leaves-rule
+>tea leaves
+{$REJECT2}
+\\
+#testcase-reject-end-table-of-main-oronyms-pre-terrible-aid-rule
+>terrible aid
+{$REJECT2}
+\\
+#testcase-reject-end-table-of-main-oronyms-pre-too-broad-rule
+>too broad
+{$REJECT2}
+\\
+#testcase-reject-end-table-of-main-oronyms-pre-tour-boaters-rule
+>tour boaters
+{$REJECT2}
+\\
+#testcase-reject-end-table-of-main-oronyms-pre-use-it-rule
+>use it
+{$REJECT2}
+\\
+#testcase-reject-end-table-of-main-oronyms-pre-wheat-rye-rule
+>wheat rye
+{$REJECT2}
+
+>a stew
+by a point
