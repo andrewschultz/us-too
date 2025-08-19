@@ -1138,13 +1138,13 @@ volume unsorted
 
 volume going out
 
-the can't exit when not inside anything rule is not listed in any rulebook.
-
 definition: a direction (called v) is viable:
 	if the room v of location of player is nowhere, no;
 	yes;
 
-check exiting: try going outside instead;
+understand the command "leave" as something new.
+understand the command "out" as something new.
+understand the command "exit" as something new.
 
 check going outside:
 	unless the room gone to is nowhere, continue the action;
