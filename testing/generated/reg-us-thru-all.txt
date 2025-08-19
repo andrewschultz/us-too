@@ -164,12 +164,6 @@ by a bonus point
 >can take
 by a point
 
-#testcase-alt-words-table-of-main-oronyms-33-gray-grey-tin
->grey tin
-by a point
-
->undo
-
 >gray tin
 by a point
 
@@ -484,7 +478,7 @@ by a point
 >join aider
 by a point
 
-#testcase-room-names-joy-nadir
+#+testcase-room-names-joy-nadir
 `Dew Pit
 
 >dupe it
@@ -510,3 +504,12 @@ by a point
 
 >a stew
 by a point
+
+#testcase-check-pre-a-stew-rule-fallthrough
+#testcase-run-post-a-stew-rule-fallthrough
+You look at A'ight, Amusing Item Using. You have everything you need, but you don't have, well, a cohesive dish. You remember the lawyers needling you with "us too." Yes, that's what it has to be. You call them and your friends. They're prepared -- the mine is only an hour's drive from the city.
+So you make the stew to pass the time until then. You try to avoid thinking of it as my stew, because eww, that'd be a me-ill meal. Our stew might be, too.
+You're no natural cook, but you do your best. (You make other random seeming stews over there years, and people always seem to appreciate them, but none quite has the flavor of this one.) After the meal, the announcement -- the mine is yours, and you can sell it now. You wonder if there's anything else, but you don't want to be greedy.
+Everyone winds down by playing poker. The lawyers are, unsurprisingly, all quite good at it. Well, you're not playing with real money, so you don't mind losing. You got enough today, right? Someone asks you offhand what you call the stew. Aunt Rickie-Anne surprisingly didn't specify it. You give your answer, and you wonder if maybe there is one more subtle odd test. The lawyers seem to have an inside joke going as they finish the remains of your...
+
+Place-to-Play Stew

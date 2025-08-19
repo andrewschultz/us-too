@@ -19,10 +19,12 @@ Note that X will default to A'ight, Amusing Item Using in the future.
 >z
 
 #testcase-reject-start-table-of-main-oronyms-pre-barn-open-rule
+#testcase-check-pre-barn-open-rule-if-player-is-not-in-far-miles-farm-isles
 >barn open
 That thought/action/observation/request brings up nothing. Us Too has a limited set of verbs, and the main thing is to guess a two-word phrase. To see what verbs are used, try VERBS.
 
 #testcase-reject-start-table-of-main-oronyms-pre-base-pikes-rule
+#testcase-check-pre-base-pikes-rule-if-player-is-not-in-a-pile-up-isle
 >base pikes
 That thought/action/observation/request brings up nothing. Us Too has a limited set of verbs, and the main thing is to guess a two-word phrase. To see what verbs are used, try VERBS.
 
@@ -285,7 +287,7 @@ That thought/action/observation/request brings up nothing. Us Too has a limited 
 >try quest
 You already have an idea of your quest!
 
-#testcase-check-pre-a-stew-rule-if-sco-a-stew-is-false
+#testcase-check-pre-a-stew-rule-if-number-of-not-discovered-stewitems->-0-and-debug-win-is-false
 >a stew
 You think far ahead to what you might need. You'd need to read an ingredient list for that. Maybe you have one on you to start.
 
@@ -385,12 +387,6 @@ by a bonus point
 
 >can take
 by a point
-
-#testcase-alt-words-table-of-main-oronyms-33-gray-grey-tin
->grey tin
-by a point
-
->undo
 
 >gray tin
 by a point
@@ -889,3 +885,5 @@ That thought/action/observation/request brings up nothing. Us Too has a limited 
 
 >a stew
 by a point
+
+Place-to-Play Stew

@@ -78,10 +78,12 @@ war pawn
 
 @rej
 #testcase-reject-start-table-of-main-oronyms-pre-barn-open-rule
+#testcase-check-pre-barn-open-rule-if-player-is-not-in-far-miles-farm-isles
 >barn open
 {$REJECT2}
 \\
 #testcase-reject-start-table-of-main-oronyms-pre-base-pikes-rule
+#testcase-check-pre-base-pikes-rule-if-player-is-not-in-a-pile-up-isle
 >base pikes
 {$REJECT2}
 \\
@@ -413,7 +415,7 @@ You already have an idea of your quest!
 The beast (wrong) blocks your way. How wrong of it! You try physically shifting around, but it's unmoved. Maybe adjusting your mental attitude will do the trick.
 
 @rej
-#testcase-check-pre-a-stew-rule-if-sco-a-stew-is-false
+#testcase-check-pre-a-stew-rule-if-number-of-not-discovered-stewitems->-0-and-debug-win-is-false
 >a stew
 You think far ahead to what you might need. You'd need to read an ingredient list for that. Maybe you have one on you to start.
 
@@ -448,7 +450,7 @@ The eyes light up green and show two dots, then six dots.
 by a point
 
 @hint
-#testcase-values-eyes-number-of-beast-wrong-is-26
+#+testcase-values-eyes-number-of-beast-wrong-is-26
 >eye beast wrong
 You can't see any such thing.
 
@@ -488,6 +490,7 @@ The eyes glow dimly green and show four dots, then two dots.
 {$EYEITMNO}
 
 @hint+
+#testcase-values-eyes-number-of-sly-size-slice-eyes-is-1
 >eye eyes
 The eyes will light up two sets of dots if there is something you still need to do in the area. (1/6)
 \\
@@ -631,7 +634,7 @@ Hmm, can't be the whole document. Must be one thing in particular you can pick o
 by a point
 
 @hint
-#testcase-values-eyes-number-of-aight-amusing-item-using-is-66
+#+testcase-values-eyes-number-of-aight-amusing-item-using-is-66
 >eye aight amusing item using
 {$EYEITMDONE} A'ight
 !can't be the whole document
@@ -687,7 +690,7 @@ The eyes light up green and show four dots, then five dots.
 by a point
 
 @hint
-#testcase-values-eyes-number-of-ur-branch-is-45
+#+testcase-values-eyes-number-of-ur-branch-is-45
 >eye
 {$EYERMDONE}
 
@@ -763,7 +766,7 @@ You must have one word right for dealing with the beach, ill.
 by a point
 
 @hint
-#testcase-values-eyes-number-of-beach-ill-is-25
+#+testcase-values-eyes-number-of-beach-ill-is-25
 >eye
 {$EYERMDONE}
 
@@ -798,7 +801,7 @@ The eyes light up green and show four dots, then four dots.
 by a point
 
 @hint
-#testcase-values-eyes-number-of-nigh-swarm-is-44
+#+testcase-values-eyes-number-of-nigh-swarm-is-44
 >eye nigh swarm
 {$NOTHERE}
 
@@ -844,6 +847,10 @@ by a point
 #testcase-values-eyes-number-of-gauche-hip-go-ship-is-1
 >eye gauche hip go ship
 {$EYEITMNO}
+\\
+#testcase-values-eyes-number-of-pun-tweaker-is-46
+>eye pun tweaker
+The eyes light up yellow and show four dots, then six dots.
 
 >w
 >d
@@ -915,7 +922,7 @@ The eyes glow dimly green and show three dots, then four dots.
 by a bonus point
 
 @hint
-#testcase-values-eyes-number-of-mess-kit-is--34
+#+testcase-values-eyes-number-of-mess-kit-is--34
 >eye mess kit
 {$EYEITMDONE}
 
@@ -957,7 +964,7 @@ The eyes light up green and show five dots, then three dots.
 by a point
 
 @hint
-#testcase-values-eyes-number-of-bore-dread-is-53
+#+testcase-values-eyes-number-of-bore-dread-is-53
 >eye
 {$EYERMDONE}
 \\
@@ -1096,7 +1103,7 @@ The eyes light up green and show four dots, then five dots.
 by a point
 
 @hint
-#testcase-values-eyes-number-of-sir-freddie-is-45
+#+testcase-values-eyes-number-of-sir-freddie-is-45
 >eye sir freddie
 {$NOTHERE}
 
@@ -1191,7 +1198,7 @@ The eyes show nothing. You've done everything you need to get something from Sir
 >n
 
 @hint
-#testcase-values-eyes-number-of-morph-lairs-is-46
+#+testcase-values-eyes-number-of-morph-lairs-is-46
 >eye
 {$EYERMDONE}
 
@@ -1226,7 +1233,7 @@ The eyes light up green and show four dots, then six dots.
 by a point
 
 @hint
-#testcase-values-eyes-number-of-row-plaider-is-46
+#+testcase-values-eyes-number-of-row-plaider-is-46
 >eye row plaider
 {$NOTHERE}
 \\
@@ -1298,8 +1305,18 @@ You must have one word right for finding something incorporeal within the Pea St
 >undo
 >undo
 
+@hint
+#+testcase-values-eyes-number-of-pun-tweaker-is-46
+>eye pun tweaker
+The eyes light up yellow and show four dots, then six dots.
+
 >peace talks
 by a point
+
+@hint
+#+testcase-values-eyes-number-of-pun-tweaker-is-46
+>eye pun tweaker
+The eyes light up green and show four dots, then six dots.
 
 @part
 ##balance undos
@@ -1385,11 +1402,11 @@ You must have one word right for dispelling the Can't-Ache.
 by a point
 
 @hint
-#testcase-values-eyes-number-of-dome-aching-is-56
+#+testcase-values-eyes-number-of-dome-aching-is-56
 >eye
 The eyes light up green and show five dots, then six dots.
 \\
-#testcase-values-eyes-number-of-cant-ache-is-34
+#+testcase-values-eyes-number-of-cant-ache-is-34
 >eye cant ache
 You can't see any such thing.
 
@@ -1415,6 +1432,7 @@ You must have one word right for discover what the Great Inn holds.
 >undo
 >undo
 
+@alt
 #testcase-alt-words-table-of-main-oronyms-33-gray-grey-tin
 >grey tin
 by a point
@@ -1430,7 +1448,7 @@ The eyes light up green and show four dots, then three dots.
 by a point
 
 @hint
-#testcase-values-eyes-number-of-great-inn-is-43
+#+testcase-values-eyes-number-of-great-inn-is-43
 >eye great inn
 {$EYEITMDONE}
 \\
@@ -1494,7 +1512,7 @@ The eyes light up green and show two dots, then seven dots.
 by a point
 
 @hint
-#testcase-values-eyes-number-of-inscen-is-27
+#+testcase-values-eyes-number-of-inscen-is-27
 >eye inner nest
 {$EYEITMDONE}
 
@@ -1540,7 +1558,7 @@ The eyes light up green and show three dots, then four dots.
 by a point
 
 @hint
-#testcase-values-eyes-number-of-prime-oar-is-34
+#+testcase-values-eyes-number-of-prime-oar-is-34
 >eye prime oar
 {$EYEITMDONE}
 
@@ -1625,7 +1643,7 @@ The eyes light up green and show four dots, then five dots.
 by a point
 
 @hint
-#testcase-values-eyes-number-of-bay-spikes-is-45
+#+testcase-values-eyes-number-of-bay-spikes-is-45
 >eye spikes
 {$NOTHERE}
 \\
@@ -1664,7 +1682,7 @@ The eyes light up green and show three dots, then five dots.
 by a point
 
 @hint
-#testcase-values-eyes-number-of-pike-rust-is-35
+#+testcase-values-eyes-number-of-pike-rust-is-35
 >eye pike rust
 {$NOTHERE}
 \\
@@ -1703,7 +1721,7 @@ The eyes light up green and show four dots, then two dots.
 by a point
 
 @hint
-#testcase-values-eyes-number-of-high-cup-is-42
+#+testcase-values-eyes-number-of-high-cup-is-42
 >eye high cup
 {$EYEITMDONE}
 
@@ -1812,7 +1830,7 @@ You must have one word right for becoming worthy of the Terra Blade.
 >undo
 
 @hint
-#testcase-values-eyes-number-of-terra-blade-is-83
+#+testcase-values-eyes-number-of-terra-blade-is-83
 >eye terra blade
 The eyes light up green and show eight dots, then three dots.
 
@@ -1820,7 +1838,7 @@ The eyes light up green and show eight dots, then three dots.
 by a point
 
 @hint
-#testcase-values-eyes-number-of-terra-blade-is-83
+#+testcase-values-eyes-number-of-terra-blade-is-83
 >eye terra blade
 {$EYEITMDONE}
 
@@ -1893,7 +1911,7 @@ by a point
 >eye
 The eyes light up green and show three dots, then five dots.
 \\
-#testcase-values-eyes-number-of-tuberodscen-is-1
+#testcase-values-eyes-number-of-tuberodscen-is-35
 >eye tube rod
 The eyes light up green and show three dots, then five dots.
 
@@ -2084,11 +2102,11 @@ by a point
 `Sage Oaks
 
 @hint
-#testcase-values-eyes-number-of-sage-oaks-is-35
+#+testcase-values-eyes-number-of-sage-oaks-is-35
 >eye
 The eyes light up green and show three dots, then five dots.
 \\
-#testcase-values-eyes-number-of-sageoakscen-is-35
+#+testcase-values-eyes-number-of-sageoakscen-is-35
 >eye sage oaks
 The eyes light up green and show three dots, then five dots.
 
@@ -2159,7 +2177,7 @@ by a point
 >n
 
 @hint
-#testcase-values-eyes-number-of-sign-ought-sigh-not-is--1
+#testcase-values-eyes-number-of-sign-ought-sigh-not-is-1
 >eye sign
 {$EYEITMNO} the Sign Ought-Sigh-Not.
 
@@ -2236,7 +2254,7 @@ You must have one word right for getting something from the dam.
 >undo
 
 @hint
-#testcase-values-eyes-number-of-dam-pink-is-43
+#+testcase-values-eyes-number-of-dam-pink-is-43
 >eye
 The eyes light up green and show four dots, then three dots.
 
@@ -2292,7 +2310,7 @@ by a point
 The eyes show nothing. Perhaps it's better the broom isn't magical. You saw Fantasia. It could probably help you clean up somewhere, though.
 !Probably don't
 \\
-#testcase-values-eyes-number-of-scribe-room-is-45
+#+testcase-values-eyes-number-of-scribe-room-is-45
 >eye
 {$EYERMDONE}
 
@@ -2333,7 +2351,7 @@ You must have one word right for figuring how to clear some dust a bit.
 >undo
 
 @hint
-#testcase-values-eyes-number-of-prose-weeping-is-38
+#+testcase-values-eyes-number-of-prose-weeping-is-38
 >eye prose weeping
 The eyes light up green and show three dots, then eight dots.
 
@@ -2345,7 +2363,7 @@ by a point
 `Teal Eaves
 
 @hint
-#testcase-values-eyes-number-of-dust-which-is-1
+#+testcase-values-eyes-number-of-dust-which-is-1
 >eye
 The eyes light up green and show three dots, then six dots.
 
@@ -2380,7 +2398,7 @@ The eyes light up green and show four dots, then three dots.
 by a point
 
 @hint
-#testcase-values-eyes-number-of-coal-drum-is-43
+#+testcase-values-eyes-number-of-coal-drum-is-43
 >eye coal drum
 {$NOTHERE}
 \\
@@ -2454,7 +2472,7 @@ The eyes light up green and show four dots, then six dots.
 by a point
 
 @hint
-#testcase-values-eyes-number-of-bell-trusted-is-46
+#+testcase-values-eyes-number-of-bell-trusted-is-46
 >eye bell
 You can't see any such thing.
 \\
@@ -2505,7 +2523,7 @@ The eyes light up green and show four dots, then four dots.
 by a point
 
 @hint
-#testcase-values-eyes-number-of-bowl-ditch-is-44
+#+testcase-values-eyes-number-of-bowl-ditch-is-44
 >eye
 {$EYERMDONE}
 
@@ -2546,7 +2564,7 @@ The eyes glow dimly green and show four dots, then seven dots.
 by a bonus point
 
 @hint
-#testcase-values-eyes-number-of-turbo-tours-is--47
+#+testcase-values-eyes-number-of-turbo-tours-is--47
 >eye
 {$EYERMDONE}
 
@@ -2667,7 +2685,7 @@ by a point
 >eye
 {$EYERMNO}
 \\
-#testcase-values-eyes-number-of-fine-drinks-ad-is-45
+#+testcase-values-eyes-number-of-fine-drinks-ad-is-45
 >eye fine drinks
 {$EYEITMDONE}
 
@@ -2694,7 +2712,7 @@ You must have one word right for overcoming rejection from the bar.
 >undo
 
 @hint
-#testcase-values-eyes-number-of-bar-nopin-is-44
+#+testcase-values-eyes-number-of-bar-nopin-is-44
 >eye bar nopin
 The eyes light up green and show four dots, then four dots.
 
@@ -2745,7 +2763,7 @@ The eyes light up green and show three dots, then six dots.
 by a point
 
 @hint
-#testcase-values-eyes-number-of-sob-acres-is-36
+#+testcase-values-eyes-number-of-sob-acres-is-36
 >eye
 {$EYERMDONE}
 
@@ -2792,7 +2810,7 @@ The eyes light up green and show four dots, then seven dots.
 by a point
 
 @hint
-#testcase-values-eyes-number-of-deli-stern-is-47
+#+testcase-values-eyes-number-of-deli-stern-is-47
 >eye
 {$EYERMDONE}
 
@@ -2929,7 +2947,7 @@ by a point
 >eye sign
 {$EYEITMDONE}
 \\
-#testcase-values-eyes-number-of-owners-is-1
+#+testcase-values-eyes-number-of-owners-is-1
 >eye owners
 You've done everything you can here for the fey loners/fail-owners.
 !Perhaps
@@ -2967,7 +2985,7 @@ You must have one word right for finding something more useful than dense pecs.
 >undo
 
 @hint
-#+testcase-values-eyes-number-of-dense-pecs-is-35
+#testcase-values-eyes-number-of-dense-pecs-is-35
 >eye dense pecs
 The eyes light up green and show three dots, then five dots.
 
@@ -3020,7 +3038,7 @@ by a point
 `Numb Bursting Number String
 
 @hint
-#testcase-values-eyes-number-of-groan-odes-is-45
+#+testcase-values-eyes-number-of-groan-odes-is-45
 >eye
 {$EYERMDONE}
 
@@ -3055,7 +3073,7 @@ The eyes light up green and show two dots, then four dots.
 by a point
 
 @hint
-#testcase-values-eyes-number-of-nodes-is-24
+#+testcase-values-eyes-number-of-nodes-is-24
 >eye nodes
 {$NOTHERE}
 \\
@@ -3135,7 +3153,7 @@ The eyes light up green and show four dots, then five dots.
 by a point
 
 @all
-#testcase-room-names-joy-nadir
+#+testcase-room-names-joy-nadir
 `Dew Pit
 
 @hint
@@ -3191,7 +3209,7 @@ Ur-Branch
 `Throne Ow-Throw-Now
 
 @hint
-#testcase-values-eyes-number-of-throne-ow-throw-now-is-1
+#testcase-values-eyes-number-of-throne-ow-throw-now-is-32
 >eye
 The eyes light up green and show three dots, then two dots.
 \\
@@ -3520,3 +3538,13 @@ You already used the herb to expand your mind! It is only good for seasoning now
 
 >a stew
 by a point
+
+@all
+#testcase-check-pre-a-stew-rule-fallthrough
+#testcase-run-post-a-stew-rule-fallthrough
+You look at A'ight, Amusing Item Using. You have everything you need, but you don't have, well, a cohesive dish. You remember the lawyers needling you with "us too." Yes, that's what it has to be. You call them and your friends. They're prepared -- the mine is only an hour's drive from the city.
+So you make the stew to pass the time until then. You try to avoid thinking of it as my stew, because eww, that'd be a me-ill meal. Our stew might be, too.
+You're no natural cook, but you do your best. (You make other random seeming stews over there years, and people always seem to appreciate them, but none quite has the flavor of this one.) After the meal, the announcement -- the mine is yours, and you can sell it now. You wonder if there's anything else, but you don't want to be greedy.
+Everyone winds down by playing poker. The lawyers are, unsurprisingly, all quite good at it. Well, you're not playing with real money, so you don't mind losing. You got enough today, right? Someone asks you offhand what you call the stew. Aunt Rickie-Anne surprisingly didn't specify it. You give your answer, and you wonder if maybe there is one more subtle odd test. The lawyers seem to have an inside joke going as they finish the remains of your...
+
+Place-to-Play Stew
