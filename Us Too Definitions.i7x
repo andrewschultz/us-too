@@ -219,7 +219,7 @@ rule for printing a parser error (this is the check forks rule):
 			say "Not much happens, but you feel like that might help, at least halfway, some time later. Much later, or just a little, you can't tell.";
 		the rule succeeds;
 	if got-partial-done is true:
-		if debug-state is true, say "[partial-row] row ...";
+		if debug-state is true, say "DEBUG NOTE got-partial-done was set.";
 		say "Hmm, no, you already did that, or something like that. You'll know if and when you need to flip between things.";
 		the rule succeeds;
 	continue the action;

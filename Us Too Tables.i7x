@@ -559,7 +559,7 @@ this is the post-peace-talks rule:
 	now sco-peace-talks is true;
 	say "Getting back to nature and stuff leaves you at peace with yourself. So at peace, you want to spread that peace to others, whether or not they fully deserve it. However, now you're so at peace, you recognize you are disturbing the plants' peace. You retreat to the Ur-Branch.";
 	if sco-pea-pod is false:
-		now eyes-number of pea stalks is -43;
+		now eyes-number of pea stalks is -33;
 	else:
 		declue-here;
 	inside-block-back;

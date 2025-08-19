@@ -1280,7 +1280,7 @@ report eyeing team:
 	continue the action;
 
 report eyeing toon:
-	say "Hmm. Seems a bit long. Whatever's on the doon, you'll need to decipher it.";
+	say "Hmm. Seems a bit long. Whatever's on the toon, you'll need to decipher it.";
 	continue the action;
 
 check eyeing broom: say "The eyes show nothing. Perhaps it's better the broom isn't magical. You saw [i]Fantasia[r]. It could probably help you clean up somewhere, though." instead;

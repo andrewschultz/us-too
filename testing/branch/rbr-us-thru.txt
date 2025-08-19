@@ -13,6 +13,7 @@ file=reg-us-thru-partright.txt,abbr=part,desc=walkthrough with partial solutions
 file=reg-us-thru-alt-verbs.txt,abbr=alt,desc=walkthrough with altverb tests
 file=reg-us-thru-mistakes.txt,abbr=mis,desc=walkthrough testing all mistakes
 file=reg-us-thru-homonyms.txt,abbr=hom,desc=walkthrough testing homonyms
+file=reg-us-thru-hints.txt,abbr=hin/hint/hints,desc=walkthrough testing eye cluing
 file=reg-us-thru-goto.txt,abbr=goto/gt/go,desc=walkthrough testing GOTO
 file=reg-us-thru-lookinv.txt,abbr=li/look/inv,desc=walkthrough testing inventory and room description changes
 file=reg-us-thru-verbs.txt,abbr=v/verb/verbs,desc=special verb testing inventory and room description changes
@@ -990,6 +991,10 @@ You must have one word right for finding something unusual within the Pea Stalks
 >undo
 >undo
 
+@hint
+>eye
+The eyes show 3, then 3.
+
 @!min
 >pea pod
 by a bonus point
@@ -1731,6 +1736,11 @@ by a point
 @all
 #+testcase-room-names-dust-which-does-twitch
 `Teal Eaves
+
+@hint
+#testcase-to-do
+>eye
+The eyes show 3, then 6.
 
 @part
 ##balance undos
