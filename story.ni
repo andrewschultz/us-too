@@ -1044,7 +1044,14 @@ the gas pouch is a thing. description is "It's a pouch that once held gas, curre
 
 part Dam Pink
 
-Dam Pink is a room in universal. printed name is "Dam, Pink". "You can only go back north.". eyes-number of Dam Pink is 43. eyes-rule of Dam Pink is pre-damp-ink rule.
+Dam Pink is a room in universal. printed name is "Dam, Pink". "You can only go back north. The dam is oozing various liquids, though [if sco-damp-ink is true]you got what you wanted[else][liquid-need][end if].". eyes-number of Dam Pink is 43. eyes-rule of Dam Pink is pre-damp-ink rule.
+
+to say liquid-need:
+	choose row with check-rule of pre-damp-ink rule in table of main oronyms;
+	if think-cue entry is true:
+		say "you know what you want but didn't have a container";
+	else:
+		say "you're not sure which you want or need";
 
 chapter clay mitt
 
