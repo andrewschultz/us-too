@@ -358,10 +358,10 @@ check examining loose intro when loose intro is unexamined:
 
 to say intro-table:
 	choose row intro-row in table of intro jabber;
-	say "[my-jabber entry] ([intro-row]/[number of rows in table of intro jabber])[line break]";
+	say "[my-jabber entry] ([intro-row]/[number of rows in table of intro jabber])";
 	increment intro-row;
 	if intro-row > number of rows in table of intro jabber:
-		say "[line break][one of]Well, that's it.[or]Was it really worth reading twice? Thank you![stopping][run paragraph on]";
+		say "[line break][one of]Well, that's the last of the loose intro.[or]Was it really worth reading twice? Thank you![stopping][run paragraph on]";
 		now intro-row is 1;
 
 chapter meh spot
