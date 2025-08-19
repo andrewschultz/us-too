@@ -148,8 +148,8 @@ part "item using"
 Aight Amusing Item Using is a startthing. description of Aight is "It's a list of all the things [ara] said you need to provide a feast.". printed name of Aight is "[i][']Aight, Amusing Item Using[r]". eyes-number of Aight Amusing Item Using is 1.
 
 report examining Aight Amusing:
-	let gotany be whether or not number of carried stewitems > 0;
-	let missedany be whether or not number of carried stewitems < number of stewitems;
+	let gotany be whether or not number of discovered stewitems > 0;
+	let missedany be whether or not number of discovered stewitems < number of stewitems;
 	if gotany is false:
 		say "You haven't found any yet, so I didn't sort them into have and don't have.[line break]";
 	else if missedany is false:
@@ -158,17 +158,17 @@ report examining Aight Amusing:
 		say "[one of]While things won't magically switch order in the list, I've organized them into what you have at the top and what you don't at the bottom.[or]Sorted into have/have not:[line break][stopping]";
 	say "[line break]";
 	let mentioned-alcohol be false;
-	repeat with SI running through carried stewitems:
+	repeat with SI running through discovered stewitems:
 		if SI is pie crust, next;
 		if SI is alcoholic:
 			if mentioned-alcohol is false:
-				say "-- [if sco-malt-hour is true]enough alcohol left over ([the list of alcoholic stewitems])[else if number of carried alcoholic stewitems is 2]almost a bit too much alcohol ([the list of alcoholic stewitems])[else]some alcohol, but not enough variety: [the list of carried alcoholic stewitems][end if][line break]";
+				say "-- [if sco-malt-hour is true]enough alcohol left over ([the list of alcoholic stewitems])[else if number of discovered alcoholic stewitems is 2]almost a bit too much alcohol ([the list of alcoholic stewitems])[else]some alcohol, but not enough variety: [the list of discovered alcoholic stewitems][end if][line break]";
 			now mentioned-alcohol is true;
 			next;
 		say "-- [invtext of SI][line break]";
 	now mentioned-alcohol is false;
 	if gotany is true and missedany is true, say "[line break]";
-	repeat with SI running through not carried stewitems:
+	repeat with SI running through not discovered stewitems:
 		if SI is pie crust, next;
 		if SI is alcoholic:
 			if mentioned-alcohol is false:
@@ -1152,7 +1152,7 @@ carry out taking inventory (this is the UT specific inventory rule):
 	now dense pecs are unmarked for listing;
 	list the contents of the player, with newlines, indented, including contents, listing marked items only, giving inventory information, with extra indentation;
 	let cas be number of carried alcoholic stewitems;
-	if all stewitems are carried:
+	if all stewitems are discovered:
 		say "[line break]You've got all the items in [aight]! Surely you must be almost done now.";
 	else if number of carried stewitems > 0:
 		say "[line break]You have [number of carried stewitems in words] of [number of stewitems in words] items from [amusing].";
