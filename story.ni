@@ -145,7 +145,7 @@ does the player mean examining Trike when player has meat rack: it is likely.
 
 part "item using"
 
-Aight Amusing Item Using is a startthing. description of Aight is "It's a list of all the things [ara] said you need to provide a feast.". printed name of Aight is "[i][']Aight, Amusing Item Using[r]". eyes-number of Aight Amusing Item Using is 1.
+Aight Amusing Item Using is a startthing. description of Aight is "It's a list of all the things [ara] said you need to provide a feast.". printed name of Aight is "[i][']Aight, Amusing Item Using[r]". eyes-number of Aight Amusing Item Using is 66.
 
 report examining Aight Amusing:
 	let gotany be whether or not number of discovered stewitems > 0;
@@ -612,7 +612,7 @@ book north branch
 
 part Blah Copse
 
-Blah Copse is a room in universal. "[if sco-or-clerk is false]The only really clear safe path is[else]Thanks to Sir Freddie and your own cleverness, you found a way north as well as[end if] back south to [branch].". eyes-number of Blah Copse is -1.
+Blah Copse is a room in universal. "[if sco-or-clerk is false]The only really clear safe path is[else]Thanks to Sir Freddie and your own cleverness, you found a way north as well as[end if] back south to [branch].". eyes-number of Blah Copse is 1.
 
 check going to Blah Copse when sco-blah-copse is false:
 	now gs-tried-black-ops is true;
@@ -951,7 +951,7 @@ the WHEE TRY sign is a thing. "A WHEE TRY sign is here--free samples!". descript
 
 chapter wheat rye
 
-there is a eatworthy stewitem called wheat and rye bread. description is "Looks tastier and healthier than bleached old white bread.". eyes-number of bread is -1.
+there is a eatworthy stewitem called wheat and rye bread. description is "Looks tastier and healthier than bleached old white bread.". eyes-number of bread is 1.
 
 invtext of rye bread is "[if sco-wheat-rye is false]more than one type of bread[else]the wheat and rye from [deli][end if]".
 
@@ -1021,7 +1021,7 @@ part Tube Rod
 
 Tube Rod is an ordroom in universal. eyes-number of Tube Rod is 35. printed name is "Tube/Rod". eyes-rule of Tube Rod is pre-too-broad rule. "[if sco-too-broad is false]Well, you're blocked south by a huge a huge nondescript wall with a single tube/rod sticking out of it[else]With the tube/rod burst, you can now go south as well as back north[end if]."
 
-the tuberodscen is privately-named scenery in Tube Rod. eyes-number of tuberodscen is 1. "Well, you can't do much with the wall, which is pretty boring and large. The tube/rod, on the other hand ...". printed name is "tube/rod".
+the tuberodscen is privately-named scenery in Tube Rod. "Well, you can't do much with the wall, which is pretty boring and large. The tube/rod, on the other hand ...". printed name is "tube/rod". eyes-number of tuberodscen is 35. eyes-rule of tuberodscen is pre-too-broad rule.
 
 understand "wall" and "tube/rod" and "tube rod" as tuberodscen when tuberodscen is touchable.
 
@@ -1116,7 +1116,7 @@ book up area
 
 part Throne Ow Throw Now
 
-Throne Ow Throw Now is a room in universal. printed name is "[if sco-use-it is true]Final (?) and Fine Land[else]Throne Ow-Throw-Now[end if]". description is "[if sco-lie-fruits is true]You've gotten what you need from here[else if sco-use-it is true]With the throne gone, the oppression has lifted[else]Weird, you thought hell was usually down, but your hell pin is protecting you here, you think[end if]. You can only go back down to the Ur-Branch.". eyes-number of Throne Ow Throw Now is 1.
+Throne Ow Throw Now is a room in universal. printed name is "[if sco-use-it is true]Final (?) and Fine Land[else]Throne Ow-Throw-Now[end if]". description is "[if sco-lie-fruits is true]You've gotten what you need from here[else if sco-use-it is true]With the throne gone, the oppression has lifted[else]Weird, you thought hell was usually down, but your hell pin is protecting you here, you think[end if]. You can only go back down to the Ur-Branch.". eyes-number of Throne Ow Throw Now is 32.
 
 chapter thronescen
 
@@ -1277,6 +1277,10 @@ report eyeing aight when sco-summon-cheese is false:
 
 report eyeing team:
 	say "Hmm, that seems a bit short. Can't be them. Maybe what they're saying.";
+	continue the action;
+
+report eyeing owners:
+	say "[if sco-wheat-rye is true]You've done everything you can here for [the owners][else]Perhaps you need to change things around [the owners][end if].";
 	continue the action;
 
 report eyeing toon:

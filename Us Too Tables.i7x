@@ -445,6 +445,7 @@ this is the post-join-aider rule:
 	moot pro ball;
 	now player has orb;
 	move dew pit to joy nadir;
+	now eyes-number of joy nadir is 42;
 
 a wordtwisting rule (this is the pre-dupe-it rule):
 	if player is not in joy nadir, unavailable;
@@ -1137,6 +1138,7 @@ this is the post-use-it rule:
 	say "Defying the throne, you hold the [ORB] high in the air. It crackles. Energy shoots to the throne, from which emits a loud 'NO TERROR?! NOTE: ERROR!!!!!' The orb flies from your hand and towards the throne and explodes. You also feel the [pin] ripped from you ... it clunks off somewhere forgotten, maybe to help someone who gets in a more serious pickle than you do.";
 	wfak;
 	say "Where the throne once sat, there's now something glistening. 'You have freed the life roots,' booms a melodramatic voice.";
+	declue-here;
 	move life roots to Throne;
 	moot orb;
 	moot hell pin;
