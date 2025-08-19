@@ -489,6 +489,8 @@ by a point
 >dupe it
 by a point
 
+Ur-Branch
+
 >u
 
 #testcase-room-names-throne-ow-throw-now

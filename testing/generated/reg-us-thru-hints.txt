@@ -11,13 +11,34 @@
 >how so
 by a point
 
+>x row
+
+>get all
+slice eyes
+war pawn
+
 >z
+
+#testcase-values-eyes-number-of-trike-west-is-35
+>eye me
+The eyes light up green and show three dots, then five dots.
+
+>eye trike west
+The eyes light up green and show three dots, then five dots.
 
 >try quest
 by a point
 
+#testcase-values-eyes-number-of-beast-wrong-is-26
+>eye beast wrong
+The eyes light up green and show two dots, then six dots.
+
 >be strong
 by a point
+
+#testcase-values-eyes-number-of-beast-wrong-is-26
+>eye beast wrong
+WRONG
 
 >i
 Your Aw-Lug-All-Ugh has nothing special in it.
@@ -26,47 +47,220 @@ Note that X will default to 'Aight, Amusing Item Using in the future.
 
 >x
 
+#testcase-values-eyes-number-of-war-pawn-is--42
+>eye war pawn
+The eyes glow dimly and show four dots, then two dots.
+
+#testcase-values-eyes-number-of-message-is-1
+>eye message
+The eyes show nothing. Probably don't need to do anything with
+
+#testcase-values-eyes-number-of-mine-ooh-is-1
+>eye mine ooh
+The eyes show nothing. Probably don't need to do anything with the general area, though specific things may provide a clue.
+
+#testcase-values-eyes-number-of-too-rad-tour-ad-is-1
+>eye too rad tour ad
+The eyes show nothing. Probably don't need to do anything with
+
+>eye eyes
+WRONG
+
+>gonear sage oaks
+
+#testcase-values-eyes-number-of-sage-oaks-is-35
+>eye sage oaks
+The eyes light up yellow and show X dots, then X dots.
+
+#testcase-values-eyes-number-of-sageoakscen-is-35
+>eye sage oaks
+The eyes light up yellow and show X dots, then X dots.
+
+>undo
+>undo
+>undo
+
+>gonear dust which
+
+#testcase-values-eyes-number-of-prose-weeping-is-38
+>eye prose weeping
+The eyes light up yellow and show X dots, then X dots.
+
+>undo
+>undo
+
+>gonear scribe room
+
+#testcase-values-eyes-number-of-bell-trusted-is-46
+>eye bell trusted
+The eyes light up yellow and show X dots, then X dots.
+
+>undo
+>undo
+
+>gonear dam pink
+
+#testcase-values-eyes-number-of-dam-pink-is-43
+>eye
+The eyes light up yellow and show X dots, then X dots.
+
+>undo
+>undo
+
+#testcase-values-eyes-number-of-lucent-row-is--55
+>eye lucent row
+The eyes glow dimly green and show five dots, then five dots.
+
 >loose intro
 by a bonus point
+
+#testcase-values-eyes-number-of-loose-intro-is--1
+>eye loose intro
+The eyes show nothing. You've done everything you need to with the loose intro.
+
+#testcase-values-eyes-number-of-goal-edge-go-ledge-is-1
+>eye goal edge go ledge
+The eyes show nothing. Probably don't need to do anything with
+
+#testcase-values-eyes-number-of-aight-amusing-item-using-is-66
+>eye aight amusing item using
+The eyes light up green and show six dots, then six dots.
 
 >summon cheese
 by a point
 
+#testcase-values-eyes-number-of-aight-amusing-item-using-is-66
+>eye aight amusing item using
+The eyes show nothing. You've done everything you need to with
+
+#testcase-values-eyes-number-of-cheese-is-1
+>eye cheese
+The eyes show nothing. You've done everything you need to with
+
 >u
+
+#testcase-values-eyes-number-of-ur-branch-is-45
+>eye ur branch
+The eyes light up green and show four dots, then five dots.
 
 >herb ranch
 by a point
 
+#testcase-values-eyes-number-of-ur-branch-is-45
+>eye ur branch
+The eyes show nothing. You've done everything you need to with the general area, though specific things may provide a clue.
+
+#testcase-values-eyes-number-of-some-herbs-is-63
+>eye some herbs
+The eyes light up green and show six dots, then three dots.
+
 >summer bay
 by a point
 
+#+testcase-values-eyes-number-of-some-herbs-is-63
+>eye some herbs
+The eyes show nothing. You've done everything you need to with
+
 >e
+
+#testcase-values-eyes-number-of-beach-ill-is-25
+>eye
+The eyes light up green and show two dots, then five dots.
 
 >be chill
 by a point
 
+#testcase-values-eyes-number-of-beach-ill-is-25
+>eye
+The eyes show nothing. You've done everything you need to with the general area, though specific things may provide a clue.
+
+#testcase-values-eyes-number-of-nigh-swarm-is-44
+>eye nigh swarm
+The eyes light up green and show four dots, then four dots.
+
 >nice warm
 by a point
+
+#testcase-values-eyes-number-of-nigh-swarm-is-44
+>eye nigh swarm
+WRONG
+
+#testcase-values-eyes-number-of-pro-ball-is-53
+>eye pro ball
+The eyes light up green and show five dots, then three dots.
 
 >probe all
 by a point
 
+#+testcase-values-eyes-number-of-pro-ball-is-53
+>eye pro ball
+The eyes show nothing. You've done everything you need to with
+
+#testcase-values-eyes-number-of-gauche-hip-go-ship-is-1
+>eye gauche hip go ship
+The eyes show nothing. Probably don't need to do anything with
+
 >w
 >d
+
+#testcase-values-eyes-number-of-meh-spot-is-43
+>eye meh spot
+The eyes light up green and show four dots, then three dots.
 
 >mess pot
 by a point
 
+#+testcase-values-eyes-number-of-meh-spot-is-43
+>eye meh spot
+WRONG
+
+#testcase-values-eyes-number-of-mess-kit-is--34
+>eye mess kit
+The eyes glow dimly green and show three dots, then four dots.
+
 >meh skit
 by a bonus point
+
+#testcase-values-eyes-number-of-mess-kit-is--34
+>eye mess kit
+The eyes show nothing. You've done everything you need to with
 
 >u
 >ne
 
+#testcase-values-eyes-number-of-bore-dread-is-53
+>eye
+The eyes light up green and show five dots, then three dots.
+
 >board red
 by a point
 
+#testcase-values-eyes-number-of-bore-dread-is-53
+>eye
+The eyes show nothing. You've done everything you need to with the general area, though specific things may provide a clue.
+
+#testcase-values-eyes-number-of-board-red-is--1
+>eye board red
+The eyes show nothing. You've done everything you need to with
+
+#testcase-values-eyes-number-of-maul-tower-is-44
+>eye maul tower
+The eyes light up yellow and show four dots, then four dots.
+
 >sw
+
+>nw
+
+#testcase-values-eyes-number-of-sore-dark-is-53
+>eye
+The eyes light up yellow and show five dots, then three dots.
+
+>undo
+>undo
+
+#testcase-values-eyes-number-of-black-ops-is-45
+>eye black ops
+The eyes light up green and show four dots, then five dots.
 
 >n
 You walk towards the black ops site, but you're flagged down. What are you doing here? How did you even get close? After some questioning, you're sent back to the Ur-Branch by people who "suggest" you forget this ever happened. Returning is ... not advised.
@@ -74,29 +268,86 @@ You walk towards the black ops site, but you're flagged down. What are you doing
 >blah copse
 by a point
 
+#testcase-values-eyes-number-of-blah-copse-is-1
+>eye
+The eyes show nothing. Probably don't need to do anything with the general area, though specific things may provide a clue.
+
+#testcase-values-eyes-number-of-forest-team-is-35
+>eye forest team
+The eyes light up green and show three dots, then five dots.
+
 >nah queue
 by a point
 
+#testcase-values-eyes-number-of-sir-freddie-is-45
+>eye sir freddie
+The eyes light up green and show four dots, then five dots.
+
 >surf ready
 by a point
+
+#testcase-values-eyes-number-of-sir-freddie-is-45
+>eye sir freddie
+WRONG
+
+#testcase-values-eyes-number-of-blah-string-is-54
+>eye blah string
+The eyes light up yellow and show five dots, then four dots.
 
 >or clerk
 by a point
 
 >n
 
+#testcase-values-eyes-number-of-morph-lairs-is-46
+>eye
+The eyes light up green and show four dots, then six dots.
+
 >more flares
 by a point
 
+>e
+
+#+testcase-values-eyes-number-of-sir-freddie-is-45
+>eye sir freddie
+The eyes show nothing. You've done everything you need to with
+
+>undo
+>undo
+
 >n
 
 >n
+
+#testcase-values-eyes-number-of-morph-lairs-is-46
+>eye morph lairs
+The eyes show nothing. You've done everything you need to with the general area, though specific things may provide a clue.
+
+#testcase-values-eyes-number-of-row-plaider-is-46
+>eye row plaider
+The eyes light up green and show four dots, then six dots.
 
 >rope ladder
 by a point
 
+#testcase-values-eyes-number-of-row-plaider-is-46
+>eye row plaider
+WRONG
+
+#testcase-values-eyes-number-of-rope-ladder-is--1
+>eye rope ladder
+The eyes show nothing. You've done everything you need to with
+
+#testcase-values-eyes-number-of-garden-tree-is-55
+>eye garden tree
+The eyes light up green and show five dots, then five dots.
+
 >guard entry
 by a point
+
+#testcase-values-eyes-number-of-pea-stalks-is-55
+>eye
+The eyes light up green and show five dots, then five dots.
 
 >peace talks
 by a point
@@ -107,12 +358,28 @@ The eyes show 3, then 3.
 >pea pod
 by a bonus point
 
+#testcase-values-eyes-number-of-pea-pod-is--1
+>eye pea pod
+The eyes show nothing. You've done everything you need to with
+
 >out
+
+#+testcase-values-eyes-number-of-garden-tree-is-55
+>eye garden tree
+The eyes show nothing. You've done everything you need to with
 
 >se
 
+#testcase-values-eyes-number-of-dome-aching-is-56
+>eye dome aching
+The eyes light up yellow and show five dots, then six dots.
+
 >can take
 by a point
+
+#testcase-values-eyes-number-of-dome-aching-is-56
+>eye dome aching
+The eyes light up green and show five dots, then six dots.
 
 #testcase-alt-words-table-of-main-oronyms-33-gray-grey-tin
 >grey tin
@@ -120,19 +387,51 @@ by a point
 
 >undo
 
+#testcase-values-eyes-number-of-great-inn-is-43
+>eye great inn
+The eyes light up green and show four dots, then three dots.
+
 >gray tin
 by a point
+
+#testcase-values-eyes-number-of-great-inn-is-43
+>eye great inn
+The eyes show nothing. You've done everything you need to with
+
+#testcase-values-eyes-number-of-gray-tin-is--1
+>eye gray tin
+The eyes show nothing. You've done everything you need to with
 
 >dough making
 by a point
 
+#testcase-values-eyes-number-of-inscen-is-27
+>eye inner nest
+The eyes light up green and show two dots, then seven dots.
+
 >in earnest
 by a point
 
+#testcase-values-eyes-number-of-inscen-is-27
+>eye inner nest
+The eyes show nothing. You've done everything you need to with
+
 >in
+
+#testcase-values-eyes-number-of-inner-nest-is--1
+>eye inner nest
+The eyes show nothing. You've done everything you need to with the general area, though specific things may provide a clue.
+
+#testcase-values-eyes-number-of-prime-oar-is-34
+>eye prime oar
+The eyes light up green and show three dots, then four dots.
 
 >pry more
 by a point
+
+#testcase-values-eyes-number-of-prime-oar-is-34
+>eye prime oar
+The eyes show nothing. You've done everything you need to with
 
 >out
 >nw
@@ -142,41 +441,133 @@ by a point
 >punt weaker
 by a point
 
+#testcase-values-eyes-number-of-punt-weaker-is--1
+>eye punt weaker
+The eyes show nothing. You've done everything you need to with
+
 >e
+
+#testcase-values-eyes-number-of-a-pile-up-isle-is-1
+>eye
+The eyes show nothing. Probably don't need to do anything with the general area, though specific things may provide a clue.
+
+#testcase-values-eyes-number-of-bay-spikes-is-45
+>eye bay spikes
+The eyes light up green and show four dots, then five dots.
 
 >base pikes
 by a point
 
+#testcase-values-eyes-number-of-bay-spikes-is-45
+>eye bay spikes
+WRONG
+
+#testcase-values-eyes-number-of-base-pikes-is--1
+>eye base pikes
+The eyes show nothing. You've done everything you need to with
+
+#testcase-values-eyes-number-of-pike-rust-is-35
+>eye pike rust
+The eyes light up green and show three dots, then five dots.
+
 >pie crust
 by a point
 
+#testcase-values-eyes-number-of-pike-rust-is-35
+>eye pike rust
+WRONG
+
+#testcase-values-eyes-number-of-pie-crust-is--1
+>eye pie crust
+The eyes show nothing. You've done everything you need to with
+
+#testcase-values-eyes-number-of-high-cup-is-42
+>eye high cup
+The eyes light up green and show four dots, then two dots.
+
 >hike up
 by a point
+
+#testcase-values-eyes-number-of-high-cup-is-42
+>eye high cup
+The eyes show nothing. You've done everything you need to with
 
 >w
 >w
 
 >nw
 
+#testcase-values-eyes-number-of-sore-dark-is-53
+>eye
+The eyes light up green and show five dots, then three dots.
+
 >sword ark
 by a point
+
+#+testcase-values-eyes-number-of-sore-dark-is-53
+>eye
+The eyes show nothing. You've done everything you need to with the general area, though specific things may provide a clue.
+
+#testcase-values-eyes-number-of-sword-ark-is--1
+>eye sword ark
+The eyes show nothing. You've done everything you need to with
+
+#+testcase-values-eyes-number-of-blah-string-is-54
+>eye blah string
+The eyes light up green and show five dots, then four dots.
 
 >blast ring
 by a point
 
+#+testcase-values-eyes-number-of-blah-string-is-54
+>eye blah string
+WRONG
+
+#testcase-values-eyes-number-of-terra-blade-is-83
+>eye terra blade
+The eyes light up green and show eight dots, then three dots.
+
 >terrible aid
 by a point
 
+#testcase-values-eyes-number-of-terra-blade-is-83
+>eye terra blade
+The eyes show nothing. You've done everything you need to with
+
 >sw
+
+#testcase-values-eyes-number-of-fort-earns-is-1
+>eye
+The eyes show nothing. Probably don't need to do anything with the general area, though specific things may provide a clue.
+
+#testcase-values-eyes-number-of-oak-lever-is-26
+>eye oak lever
+The eyes light up green and show two dots, then six dots.
 
 >oh clever
 by a point
 
+#+testcase-values-eyes-number-of-oak-lever-is-26
+>eye oak lever
+WRONG
+
 >x beak
+
+#testcase-values-eyes-number-of-be-quick-beak-wick-is--1
+>eye be quick beak wick
+The eyes show nothing. You've done everything you need to with
 
 >ne
 
 >s
+
+#testcase-values-eyes-number-of-tube-rod-is-35
+>eye
+The eyes light up green and show three dots, then five dots.
+
+#testcase-values-eyes-number-of-tuberodscen-is-1
+>eye tube rod
+The eyes light up green and show three dots, then five dots.
 
 >too broad
 by a point
@@ -195,6 +586,14 @@ by a point
 
 >s
 
+#testcase-values-eyes-number-of-too-dark-tude-ark-is-1
+>eye too dark tude ark
+The eyes show nothing. Probably don't need to do anything with the general area, though specific things may provide a clue.
+
+#testcase-values-eyes-number-of-whole-anger-is-27
+>eye whole anger
+The eyes light up green and show two dots, then seven dots.
+
 >ho langour
 by a point
 
@@ -202,13 +601,29 @@ by a point
 
 >sw
 
+#testcase-values-eyes-number-of-felt-wrap-is-44
+>eye felt wrap
+The eyes light up green and show four dots, then four dots.
+
 >fell trap
 by a point
 
+#testcase-values-eyes-number-of-fell-trap-is--1
+>eye fell trap
+The eyes show nothing. You've done everything you need to with
+
 >x trap
+
+#testcase-values-eyes-number-of-cell-urban-is-63
+>eye
+The eyes light up green and show six dots, then three dots.
 
 >cellar bin
 by a point
+
+#testcase-values-eyes-number-of-cellar-bin-is--1
+>eye
+The eyes show nothing. You've done everything you need to with the general area, though specific things may provide a clue.
 
 >u
 
@@ -220,19 +635,51 @@ by a point
 >ne
 >s
 
+#testcase-values-eyes-number-of-sage-oaks-is-35
+>eye sage oaks
+The eyes light up green and show three dots, then five dots.
+
+#testcase-values-eyes-number-of-sageoakscen-is-35
+>eye sageoakscen
+The eyes light up green and show three dots, then five dots.
+
 >say jokes
 by a point
+
+#+testcase-values-eyes-number-of-sage-oaks-is-35
+>eye sage oaks
+The eyes show nothing. You've done everything you need to with
+
+#+testcase-values-eyes-number-of-sageoakscen-is-35
+>eye sageoakscen
+The eyes show nothing. You've done everything you need to with the general area, though specific things may provide a clue.
+
+#testcase-values-eyes-number-of-gas-pouch-is--1
+>eye gas pouch
+The eyes show nothing. You've done everything you need to with
 
 >gas pouch
 by a point
 
 >n
 
+#testcase-values-eyes-number-of-sign-ought-sigh-not-is--1
+>eye sign ought sigh not
+The eyes show nothing. Probably don't need to do anything with
+
 >sss
 >s
 
+#testcase-values-eyes-number-of-clay-mitt-is-52
+>eye clay mitt
+The eyes light up green and show five dots, then two dots.
+
 >claim it
 by a point
+
+#testcase-values-eyes-number-of-dam-pink-is-43
+>eye
+The eyes light up green and show four dots, then three dots.
 
 >damp ink
 by a point
@@ -242,13 +689,37 @@ by a point
 >s
 >s
 
+#testcase-values-eyes-number-of-scribe-room-is-45
+>eye scribe room
+The eyes light up green and show four dots, then five dots.
+
+#testcase-values-eyes-number-of-scribes-is-1
+>eye scribes
+The eyes show nothing. Probably don't need to do anything with
+
 >scry broom
 by a point
+
+#testcase-values-eyes-number-of-broom-is-1
+>eye broom
+The eyes show nothing. Probably don't need to do anything with
+
+#testcase-values-eyes-number-of-scribe-room-is-45
+>eye scribe room
+The eyes show nothing. You've done everything you need to with the general area, though specific things may provide a clue.
 
 >n
 >n
 >ss
 >s
+
+#testcase-values-eyes-number-of-dust-which-is-1
+>eye dust which
+The eyes show nothing. Probably don't need to do anything with the general area, though specific things may provide a clue.
+
+#testcase-values-eyes-number-of-prose-weeping-is-38
+>eye prose weeping
+The eyes light up green and show three dots, then eight dots.
 
 >pro sweeping
 by a point
@@ -257,19 +728,47 @@ by a point
 >eye
 The eyes show 3, then 6.
 
+#testcase-values-eyes-number-of-coal-drum-is-43
+>eye coal drum
+The eyes light up green and show four dots, then three dots.
+
 >cold rum
 by a point
+
+#testcase-values-eyes-number-of-coal-drum-is-43
+>eye coal drum
+WRONG
+
+#testcase-values-eyes-number-of-cold-rum-is--1
+>eye cold rum
+The eyes light up green and show X dots, then X dots.
 
 >tea leaves
 by a point
 
+#testcase-values-eyes-number-of-tea-leaves-is--1
+>eye tea leaves
+The eyes show nothing. You've done everything you need to with
+
 >n
 >n
 >s
 >s
 
+#testcase-values-eyes-number-of-bell-trusted-is-46
+>eye bell trusted
+The eyes light up green and show four dots, then six dots.
+
 >belt rusted
 by a point
+
+#testcase-values-eyes-number-of-bell-trusted-is-46
+>eye bell trusted
+The eyes show nothing. You've done everything you need to with
+
+#testcase-values-eyes-number-of-belt-rusted-is--1
+>eye belt rusted
+The eyes light up green and show X dots, then X dots.
 
 >n
 >n
@@ -279,95 +778,281 @@ by a point
 >ne
 >w
 
+#testcase-values-eyes-number-of-bowl-ditch-is-44
+>eye
+The eyes light up green and show four dots, then four dots.
+
 >bold itch
 by a point
 
+#testcase-values-eyes-number-of-bowl-ditch-is-44
+>eye
+The eyes show nothing. You've done everything you need to with the general area, though specific things may provide a clue.
+
 >w
+
+#testcase-values-eyes-number-of-turbo-tours-is--47
+>eye
+The eyes glow dimly and show four dots, then seven dots.
 
 >tour boaters
 by a bonus point
 
+#testcase-values-eyes-number-of-turbo-tours-is--47
+>eye
+The eyes show nothing. You've done everything you need to with the general area, though specific things may provide a clue.
+
+#testcase-values-eyes-number-of-star-craft-is-54
+>eye star craft
+The eyes light up green and show five dots, then four dots.
+
 >stark raft
 by a point
 
+#testcase-values-eyes-number-of-stark-raft-is--1
+>eye stark raft
+The eyes show nothing. You've done everything you need to with
+
 >s
+
+#testcase-values-eyes-number-of-bar-nopin-is-44
+>eye bar nopin
+The eyes light up yellow and show four dots, then four dots.
+
+#testcase-values-eyes-number-of-fine-drinks-ad-is-45
+>eye fine drinks
+The eyes light up green and show four dots, then five dots.
 
 >find rinks
 by a point
 
+#testcase-values-eyes-number-of-berries-pond-is-47
+>eye
+The eyes light up green and show four dots, then seven dots.
+
 >bear respond
 by a point
+
+#testcase-values-eyes-number-of-farm-isles-is-1
+>eye
+The eyes show nothing. Probably don't need to do anything with the general area, though specific things may provide a clue.
+
+#testcase-values-eyes-number-of-fine-drinks-ad-is-45
+>eye fine drinks
+The eyes show nothing. You've done everything you need to with
+
+#testcase-values-eyes-number-of-bar-nopin-is-44
+>eye bar nopin
+The eyes light up green and show four dots, then four dots.
 
 >barn open
 by a point
 
+#testcase-values-eyes-number-of-egg-of-a-guv-is-1
+>eye egg of a guv
+The eyes show nothing. Probably don't need to do anything with
+
 >n
 >e
 >n
+
+#testcase-values-eyes-number-of-sob-acres-is-36
+>eye sob acres
+The eyes light up green and show three dots, then six dots.
 
 >saw bakers
 by a point
 
+#testcase-values-eyes-number-of-sob-acres-is-36
+>eye sob acres
+The eyes show nothing. You've done everything you need to with the general area, though specific things may provide a clue.
+
 >in
+
+#testcase-values-eyes-number-of-owners-is-1
+>eye owners
+The eyes show nothing. Probably don't need to do anything with
+Perhaps you can change things around the owners.
+
+#testcase-values-eyes-number-of-deli-stern-is-47
+>eye
+The eyes light up green and show four dots, then seven dots.
 
 >dell eastern
 by a point
 
+#testcase-values-eyes-number-of-deli-stern-is-47
+>eye
+The eyes show nothing. You've done everything you need to with the general area, though specific things may provide a clue.
+
 >e
 
 >w
+
+#testcase-values-eyes-number-of-dough-pail-is-43
+>eye dough pail
+The eyes light up green and show four dots, then three dots.
 
 >dope ale
 by a point
 
+#+testcase-values-eyes-number-of-dough-pail-is-43
+>eye dough pail
+WRONG
+
+#testcase-values-eyes-number-of-dope-ale-is--1
+>eye dope ale
+The eyes show nothing. You've done everything you need to with
+
 >e
 >w
+
+#testcase-values-eyes-number-of-toon-is-48
+>eye toon
+The eyes light up green and show four dots, then eight dots.
 
 >beef ordering
 by a point
 
+#testcase-values-eyes-number-of-meat-rack-is--1
+>eye meat rack
+The eyes show nothing. You've done everything you need to with the meat rack.
+
 >e
 >w
+
+#testcase-values-eyes-number-of-whee-try-is-53
+>eye whee try
+The eyes light up green and show five dots, then three dots.
 
 >wheat rye
 by a point
 
+#+testcase-values-eyes-number-of-whee-try-is-53
+>eye whee try
+The eyes show nothing. You've done everything you need to with
+
+#testcase-values-eyes-number-of-owners-is-1
+>eye owners
+The eyes show nothing. Probably don't need to do anything with
+!Perhaps
+
+#testcase-values-eyes-number-of-pliers-is-1
+>eye pliers
+The eyes show nothing. Probably don't need to do anything with
+
+#testcase-values-eyes-number-of-bread-is-1
+>eye bread
+The eyes show nothing. Probably don't need to do anything with
+
+#testcase-values-eyes-number-of-dense-pecs-is-35
+>eye dense pecs
+The eyes light up yellow and show three dots, then five dots.
+
 >e
+
+#+testcase-values-eyes-number-of-dense-pecs-is-35
+>eye dense pecs
+The eyes light up green and show three dots, then five dots.
 
 >den specs
 by a point
 
+#testcase-values-eyes-number-of-den-specs-is--1
+>eye den specs
+The eyes show nothing. You've done everything you need to with
+
 >d
+
+#testcase-values-eyes-number-of-groan-odes-is-45
+>eye
+The eyes light up green and show four dots, then five dots.
 
 >grow nodes
 by a point
 
+#testcase-values-eyes-number-of-groan-odes-is-45
+>eye
+The eyes show nothing. You've done everything you need to with the general area, though specific things may provide a clue.
+
+#testcase-values-eyes-number-of-nodes-is-24
+>eye nodes
+The eyes light up green and show two dots, then four dots.
+
 >no date
 by a point
+
+#testcase-values-eyes-number-of-nodes-is-24
+>eye nodes
+WRONG
+
+#testcase-values-eyes-number-of-hell-pin-is-1
+>eye hell pin
+The eyes show nothing. Probably don't need to do anything with
 
 >e
 >s
 >e
 >ne
 
+#+testcase-values-eyes-number-of-maul-tower-is-44
+>eye maul tower
+The eyes light up green and show four dots, then four dots.
+
 >malt hour
 by a point
 
 >e
 
+#testcase-values-eyes-number-of-joy-nadir-is-45
+>eye
+The eyes light up green and show four dots, then five dots.
+
 >join aider
 by a point
+
+#+testcase-values-eyes-number-of-joy-nadir-is-45
+>eye
+The eyes light up green and show four dots, then two dots.
+
+#testcase-values-eyes-number-of-orb-is--1
+>eye orb
+The eyes show nothing. You've done everything you need to with
+
+#testcase-values-eyes-number-of-dew-pit-is-42
+>eye dew pit
+The eyes light up green and show four dots, then two dots.
 
 >dupe it
 by a point
 
+#testcase-values-eyes-number-of-tender-eggs-is--1
+>eye tender eggs
+The eyes show nothing. You've done everything you need to with
+
 >u
+
+#testcase-values-eyes-number-of-throne-ow-throw-now-is-1
+>eye
+The eyes light up green and show three dots, then two dots.
+
+#testcase-values-eyes-number-of-thronescen-is-32
+>eye throne
+The eyes light up green and show three dots, then two dots.
 
 >use it
 by a point
 
+#testcase-values-eyes-number-of-life-roots-is-36
+>eye life roots
+The eyes light up green and show three dots, then six dots.
+
 >lie fruits
 by a point
+
+#testcase-values-eyes-number-of-assortment-is--1
+>eye assortment
+The eyes show nothing. You've done everything you need to with
 
 >d
 
