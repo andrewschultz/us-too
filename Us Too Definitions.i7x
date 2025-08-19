@@ -168,7 +168,7 @@ to say eye-with:
 	if current action is eyering:
 		say "with the general area, though specific things may provide a clue";
 	else if noun is a sentient:
-		say "to [if noun is hostile]neutralize[else if noun is agreeable]aid[else]improve[end if] [the noun]";
+		say "to [if noun is hostile]neutralize[else if noun is impressable]impress[else if noun is agreeable]aid[else]get something from[end if] [the noun] directly";
 	else:
 		say "with [the noun]";
 

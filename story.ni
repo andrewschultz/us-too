@@ -149,7 +149,7 @@ does the player mean examining Trike when player has meat rack: it is likely.
 
 part "item using"
 
-Aight Amusing Item Using is a startthing. description of Aight is "It's a list of all the things [ara] said you need to provide a feast.". printed name of Aight is "[i][']Aight, Amusing Item Using[r]". eyes-number of Aight Amusing Item Using is 66.
+Aight Amusing Item Using is a startthing. description of Aight is "It's a list of all the things [ara] said you need to provide a feast.". printed name of Aight is "[i]A'ight, Amusing Item Using[r]". eyes-number of Aight Amusing Item Using is 66. eyes-rule of aight is pre-summon-cheese rule.
 
 report examining Aight Amusing:
 	let gotany be whether or not number of discovered stewitems > 0;
@@ -462,7 +462,7 @@ the garden tree is a thing. "[if sco-guard-entry is true]The garden tree stands 
 
 chapter sign and verbs
 
-the sign ought sigh not is a thing. printed name is "Sign Ought-Sigh-Not". "[one of]A new sign titled SIGN OUGHT-SIGH-NOT stands here. What a relief! It explains how to get back south without, well, wearing yourself out with busy work.[or]The SIGN OUGHT-SIGH-NOT stands here for reference.[stopping]". description of sign ought sigh not is "WAYS SOUTH:". eyes-number of Sign Ought Sigh Not is -1.
+the sign ought sigh not is a thing. printed name is "Sign Ought-Sigh-Not". "[one of]A new sign titled SIGN OUGHT-SIGH-NOT stands here. What a relief! It explains how to get back south without, well, wearing yourself out with busy work.[or]The SIGN OUGHT-SIGH-NOT stands here for reference.[stopping]". description of sign ought sigh not is "WAYS SOUTH:". eyes-number of Sign Ought Sigh Not is 1.
 
 report examining sign ought sigh not:
 	list-which-room;
@@ -621,7 +621,7 @@ Blah Copse is a room in universal. "[if sco-or-clerk is false]The only really cl
 check going to Blah Copse when sco-blah-copse is false:
 	now gs-tried-black-ops is true;
 	move black ops to Ur Branch;
-	say "[one of]You walk towards the black ops site, but you're flagged down. What are you doing here? How did you even get close? After some questioning, you're sent back to the Ur-Branch by people who 'suggest' you forget this ever happened. Returning is ... not advised.[or]Oh, no, you're not going back to the black ops site. You're not sure what was going on. You must've made a wrong turn. Maybe you can figure out where you were supposed to REALLY go.[stopping]"  instead;
+	say "[one of]You walk north, but somehow, you stumble by a black ops site, and you're flagged down. What are you doing here? How did you even get close? After some questioning, you're sent back to the Ur-Branch by people who 'suggest' you forget this ever happened. Returning is ... not advised.[or]Oh, no, you're not going back to the black ops site. You're not sure what was going on. You must've made a wrong turn. Maybe you can figure out where you were supposed to REALLY go.[stopping]"  instead;
 
 after printing the locale description for Blah Copse when sco-surf-ready is true and sco-or-clerk is false:
 	say "Sir Freddie also thought he heard an orc lurk to the north. What's up with that?";
@@ -1043,7 +1043,7 @@ part Sage Oaks
 
 Sage Oaks is an ordroom in universal. "Sage oaks stand here, [if sco-say-jokes is false]glaring at your unworthy self[else]almost nodding with respect for you. There seems to be passage south, too[end if]. You can always just go back north.". eyes-number of Sage Oaks is 35. eyes-rule of Sage Oaks is pre-say-jokes rule.
 
-sageoakscen is a plural-named sentient in Sage Oaks. they are scenery. description of sageoakscen is "The sage oaks offer [if sco-say-jokes is false]no great hint as to how to impress them or weaken their will to block you[else if sco-gas-pouch is false]no indication they do, or don't, actually want you to go south[else]something almost nearing respect for you[end if].". eyes-number of sageoakscen is 35. eyes-rule of sageoakscen is pre-say-jokes rule.
+sageoakscen is a plural-named privately-named impressable sentient in Sage Oaks. they are scenery. description of sageoakscen is "The sage oaks offer [if sco-say-jokes is false]no great hint as to how to impress them or weaken their will to block you[else if sco-gas-pouch is false]no indication they do, or don't, actually want you to go south[else]something almost nearing respect for you[end if].". printed name is "the sage oaks". eyes-number of sageoakscen is 35. eyes-rule of sageoakscen is pre-say-jokes rule.
 
 understand "sage/oaks" and "sage oaks" as sageoakscen.
 
@@ -1052,7 +1052,7 @@ check going south in Sage Oaks when sco-gas-pouch is false:
 
 chapter gas pouch
 
-the gas pouch is a thing. description is "It's a pouch that once held gas, currently full/empty.". eyes-number of gas pouch is -1.
+the gas pouch is a thing. description is "It's a pouch that once held gas, currently [if sco-damp-ink is true]full with damp ink[else]empty[end if].". eyes-number of gas pouch is -1.
 
 part Dam Pink
 
@@ -1124,7 +1124,7 @@ book up area
 
 part Throne Ow Throw Now
 
-Throne Ow Throw Now is a room in universal. printed name is "[if sco-use-it is true]Final (?) and Fine Land[else]Throne Ow-Throw-Now[end if]". description is "[if sco-lie-fruits is true]You've gotten what you need from here[else if sco-use-it is true]With the throne gone, the oppression has lifted[else]Weird, you thought hell was usually down, but your hell pin is protecting you here, you think[end if]. You can only go back down to the Ur-Branch.". eyes-number of Throne Ow Throw Now is 32.
+Throne Ow Throw Now is a room in universal. printed name is "[if sco-use-it is true]Final (?) and Fine Land[else]Throne Ow-Throw-Now[end if]". description is "[if sco-lie-fruits is true]You've gotten what you need from here[else if sco-use-it is true]With the throne gone, the oppression has lifted[else]Weird, you thought hell was usually down, but your hell pin is protecting you here, you think[end if]. You can only go back down to the Ur-Branch.". eyes-number of Throne Ow Throw Now is 32. eyes-rule of Throne Ow Throw Now is pre-use-it rule.
 
 chapter thronescen
 
@@ -1287,8 +1287,10 @@ report eyeing team:
 	say "Hmm, that seems a bit short. Can't be them. Maybe what they're saying.";
 	continue the action;
 
+check eyeing owners when sco-wheat-rye is true: say "You've done everything you can here for [the owners]." instead;
+
 report eyeing owners:
-	say "[if sco-wheat-rye is true]You've done everything you can here for [the owners][else]Perhaps you need to change things around [the owners][end if].";
+	say "Perhaps you need to change [if sco-dell-eastern is true]more [end if]things around [the owners], though.";
 	continue the action;
 
 report eyeing toon:
@@ -1314,7 +1316,7 @@ report eyering in ur branch when sco-herb-ranch is false:
 	continue the action;
 
 report eyering when player is in pea stalks and sco-peace-talks is true:
-	say "Hmm. Something about this place, not this place, looks like.";
+	say "Hmm. Looks like some detail about this place to explore, if you're curious.";
 	continue the action;
 
 report eyering when player is in throne and thronescen is in throne:

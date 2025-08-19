@@ -204,6 +204,7 @@ this is the post-summon-cheese rule:
 	now sco-summon-cheese is true;
 	say "You're confident you've figured what the munchies are. And you know what? You're right! You have all sorts of cheese now.";
 	now player has cheese;
+	declue Aight;
 
 chapter ur branch scoring
 
@@ -389,6 +390,7 @@ this is the post-terrible-aid rule:
 	now sco-terrible-aid is true;
 	say "You make the point that the Terra Blade would be a terrible aid for your humble goals, whatever they may be. That proves you are worthy![paragraph break]You hear rumbling. You can't imagine there are any bigger secret here, so it seems like it's time to leave.";
 	declue terra blade;
+	now player has terra blade;
 	block-and-back;
 
 book northeast branch scoring
@@ -446,6 +448,7 @@ this is the post-join-aider rule:
 	now player has orb;
 	move dew pit to joy nadir;
 	now eyes-number of joy nadir is 42;
+	now eyes-rule of joy nadir is pre-dupe-it rule;
 
 a wordtwisting rule (this is the pre-dupe-it rule):
 	if player is not in joy nadir, unavailable;
@@ -497,6 +500,7 @@ this is the post-surf-ready rule:
 	say "Sir Freddie agrees with you, but he doesn't know how to get started. You have just the thing! Your red board is kind of bulky but not heavy. It'd be nice not to have to carry it around. He waves. 'See you later. Oh, one other thing... I think I heard an orc lurk to the north. Another reason to give up this questing.'";
 	moot board red;
 	move Sir Freddie to Beach Ill;
+	declue Sir Freddie;
 
 a wordtwisting rule (this is the pre-or-clerk rule):
 	if player is not in blah copse, unavailable;
@@ -841,6 +845,7 @@ this is the post-wheat-rye rule:
 	say "The [owners] applaud you. 'Yes ... that's just the thing ...' they chop up the wheat and rye with the erstwhile Terra Blade. 'Oh! There's one other thing ... business is booming so much, maybe this will come in handy for you. We don't have any repairs.' They hand you some [pliers].";
 	now player has rye bread;
 	now player has pliers;
+	declue whee try sign;
 
 chapter turbo tours scoring
 
@@ -935,6 +940,7 @@ this is the post-grow-nodes rule:
 	now sco-grow-nodes is true;
 	say "The groan odes retract, as nodes grow out, creating a more menacing noise. Ah, so that's what you're up against!";
 	move nodes to odes;
+	declue-here;
 
 a wordtwisting rule (this is the pre-no-date rule):
 	if player is not in groan odes, unavailable;
@@ -1034,19 +1040,21 @@ this is the post-scry-broom rule:
 a wordtwisting rule (this is the pre-belt-rusted rule):
 	if player is not in scribe room, unavailable;
 	if bell trusted is not in scribe room, unavailable;
-	if sco-belt-rusted is true:
-		say "You already made the bell (trusted) look better.";
 	ready;
 
 this is the post-belt-rusted rule:
 	now sco-belt-rusted is true;
-	say "The scribes get together and nod their heads. They agree this must be it. Your request is a wise choice, one not motivated by greed. The rust from the bell flakes off to form a belt. It becomes much shinier. And perhaps ... well, this belt, rusted, was something much more once. Perhaps you are the one to return it to its former questing glory. Such things do not interest scribes.";
+	say "The scribes get together and nod their heads. They agree this must be it. Your request is a wise choice, one not motivated by greed. They give you a rag and a surprisingly modern squirt-bottle full of cleaning liquid, and the rust from the bell flakes off to form a belt. It becomes much shinier. And perhaps ... well, this belt, rusted, was something much more once. Perhaps you are the one to return it to its former questing glory. Such things do not interest scribes. They move the bell back to the out-of-sight (it really IS quite a work of architecture) bell tower from whence it came.";
 	now player has belt rusted;
+	moot bell trusted;
 
 chapter sage oaks scoring
 
 a wordtwisting rule (this is the pre-say-jokes rule):
 	if player is not in sage oaks, unavailable;
+	if sco-ho-langour is false:
+		vcp "You try to bull through with jokes, but you're forcing it. You haven't naturally boosted yourself.";
+		not-yet;
 	if sco-say-jokes is true:
 		vcal "Don't push it. The sage oaks might find such foolish risks stupid and change their views of you.";
 		already-done;
@@ -1060,7 +1068,7 @@ this is the post-say-jokes rule:
 	declue sageoakscen;
 
 a wordtwisting rule (this is the pre-gas-pouch rule):
-	if player is not in sage oaks and player does not have gas pouch, unavailable;
+	if (player is not in sage oaks or sco-say-jokes is false) and player does not have gas pouch, unavailable;
 	if sco-gas-pouch is true:
 		vcal "You don't need two gas pouches.";
 		already-done;
@@ -1069,6 +1077,7 @@ a wordtwisting rule (this is the pre-gas-pouch rule):
 this is the post-gas-pouch rule:
 	now sco-gas-pouch is true;
 	say "The sage oaks chuckle. And you chuckle a bit, too. Turnabout is fair play! They release the gas from the pouch all at once -- of course, not in your direction. 'It can hold liquid, too,' they say. 'But one more thing. Do you know where we got this from?'[paragraph break]You shake your head.[paragraph break]'The Grove Ouch-Grow-Vouch.'[paragraph break]Well, you had to figure they had one or two left.[paragraph break]'You are completely free to go south now. Whether or not it will be productive right now, we will not say,' they intone.";
+	now player has gas pouch;
 
 chapter dust which does twitch scoring
 
@@ -1087,6 +1096,8 @@ this is the post-pro-sweeping rule:
 	say "The dust gets clearer. You see you are in a library. You also notice a coal drum off to the side. Maybe it was the source of some of the dust.";
 	moot prose weeping;
 	move coal drum to dust which;
+	now eyes-rule of dust which is pre-tea-leaves rule;
+	now eyes-number of dust which is 36;
 
 a wordtwisting rule (this is the pre-cold-rum rule):
 	if player is not in dust which, unavailable;
