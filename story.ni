@@ -273,6 +273,7 @@ check thinking in Mine Ooh when sco-try-quest is false:
 	if gs-taken-inventory is true:
 		say "[line break]--the [tour ad] and [using] are ... odd, to say the least.";
 	say "[line break]--your name is Trike West. [ara] said she REALLY liked that name.";
+	if doable-hinted is 1, say "[line break]--you also figured to need to make [b]A STEW[r] from the lawyers' 'Us too,' which is down the road, but it's good to have a goal in mind.";
 	if gs-taken-inventory is false:
 		say "[line break]Maybe you should take [b]INVENTORY[r] with [b]I[r]. That might provide another clue.";
 	the rule succeeds;
@@ -416,6 +417,7 @@ check going to Ur Branch when southwest is branchcan:
 to wink-out (di - a direction):
 	say "[line break]You consult the pro ball to make sure. It shows a large map of where you've been, and after a couple  seconds, [the di] area grows dim.";
 		now di is branchdone;
+
 after printing the locale description for Ur Branch when player has rope ladder and up is branchcant:
 	say "You feel [the ladder] tug you off in an odd direction. There you find a steep cliff face. The rope ladder seems to uncoil and go upwards. Hmm, you'd have missed that, but you know it now.";
 	reveal Throne Ow Throw Now to up;
@@ -520,6 +522,7 @@ to decide whether south-covered:
 	if sco-tea-leaves is false, no;
 	if sco-belt-rusted is false, no;
 	yes;
+
 book east branch
 
 part Beach Ill
@@ -1386,6 +1389,7 @@ carry out creditsing:
 	say "[line break][b]GENERAL THANKS[r]:[paragraph break]";
 	say "Thanks to everyone past and future involved in the administration of IFComp.";
 	say "Thanks to the I7 board on Intfiction.org for their help, as well as the people in the general topics and the spoilers topic as we discussed our plans.";
+	say "The [if sign ought is off-stage]additional branch directions (sort of) late in the game[else]S/SS/SSS[end if] were inspired by a game which, if I told you the name, would spoil it. I hate it when things like that happen, because I'd like to give them credit.";
 
 book verbs
 
