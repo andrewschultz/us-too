@@ -408,6 +408,14 @@ after printing the locale description for Ur Branch when sco-mess-pot is true an
 	reveal sore dark to northwest;
 	continue the action;
 
+check going to Ur Branch when southwest is branchcan:
+	if bowl ditch is visited and tude ark is visited and sage oaks is visited and tube rod is visited:
+		say "As [fort] comes into view, you feel dizzy at the thought of needing [the beak]'s help again.[paragraph break]Or do you really? You used it pretty much every which way. You don't see a need to, further.";
+		wink-out southwest;
+
+to wink-out (di - a direction):
+	say "[line break]You consult the pro ball to make sure. It shows a large map of where you've been, and after a couple  seconds, [the di] area grows dim.";
+		now di is branchdone;
 after printing the locale description for Ur Branch when player has rope ladder and up is branchcant:
 	say "You feel [the ladder] tug you off in an odd direction. There you find a steep cliff face. The rope ladder seems to uncoil and go upwards. Hmm, you'd have missed that, but you know it now.";
 	reveal Throne Ow Throw Now to up;
@@ -416,7 +424,7 @@ after printing the locale description for Ur Branch when player has rope ladder 
 check going up in Ur Branch when up is not branchcant and sco-no-date is false:
 	say "You feel a sense of dread as you climb up the rope ladder. Whatever's up there, you're not ready." instead;
 
-check going west in Ur Branch when sco-hike-up is true:
+check going west in Ur Branch when sco-hike-up is true and west is not branchdone:
 	if bowl ditch is visited:
 		say "The trail you blazed is easy to follow back[if extra-turns > 0], though in following it, you lose your built-up speed[end if].";
 		now extra-turns is 0;
@@ -501,6 +509,17 @@ carry out nning:
 	move player to Ur Branch;
 	the rule succeeds;
 
+check going north to ur branch:
+	if south-covered:
+		say "You retrace your steps. You're pretty sure you've cleared everything to the south.";
+		wink-out south;
+
+to decide whether south-covered:
+	if sco-claim-it is false, no;
+	if sco-cold-rum is false, no;
+	if sco-tea-leaves is false, no;
+	if sco-belt-rusted is false, no;
+	yes;
 book east branch
 
 part Beach Ill
@@ -524,7 +543,7 @@ check going east in Beach Ill when sco-probe-all is true:
 	move oar to isle;
 
 check going west in beach ill:
-	if pile-done, now west is branchdone;
+	if pile-done, now east is branchdone;
 
 chapter nigh swarm
 
