@@ -550,7 +550,7 @@ check going west in beach ill:
 
 chapter nigh swarm
 
-the nigh swarm is a thing. "A nigh swarm ruins the tranquility of the area. You can't see behind it.". description is "The nigh swarm buzzes aggresively.". eyes-number of nigh swarm is 44. eyes-rule of nigh swarm is pre-nice-warm rule.
+the nigh swarm is a thing. "A nigh swarm ruins the tranquility of the area. You can't see behind it.". description is "The nigh swarm buzzes aggressively.". eyes-number of nigh swarm is 44. eyes-rule of nigh swarm is pre-nice-warm rule.
 
 chapter pro ball
 
@@ -580,7 +580,7 @@ the gauche hip go ship is scenery. printed name is "Gauche/Hip GO-Ship". "It's r
 
 chapter punt weaker
 
-the punt weaker is a thing. "Your punt, weaker, floats here[punt-status].". description is "It seems pretty sturdy, actually. Perhaps its speed is weaker than something gas-powered or whtever.". eyes-number of punt weaker is -1.
+the punt weaker is a thing. "Your punt, weaker, floats here[punt-status].". description is "It seems pretty sturdy, actually. Perhaps its speed is weaker than something gas-powered or whatever.". eyes-number of punt weaker is -1.
 
 to say punt-status:
 	if pile-done:
@@ -706,7 +706,7 @@ book east branch
 
 part A Pile Up Isle
 
-A Pile Up Isle is a room in universal. printed name is "A Pile-Up Isle". eyes-number of A Pile Up Isle is 1. "You've found the isle west of the erstwile Beach, Ill. It's ... not been tended to for a while."
+A Pile Up Isle is a room in universal. printed name is "A Pile-Up Isle". eyes-number of A Pile Up Isle is 1. "You've found the isle west of the erstwhile Beach, Ill. It's ... not been tended to for a while."
 
 the bay spikes are a plural-named thing in A Pile Up Isle. "Bay spikes seem to guard you from entering the large pile. They are too sharp to walk on. What to do?". description is "Too sharp to walk on.". eyes-number of bay spikes is 45. eyes-rule of bay spikes is pre-base-pikes rule.
 
@@ -922,7 +922,7 @@ after printing the locale description for deli stern:
 		say "The [owners] perk up on seeing you. 'We had a few customers. We might even have prospective repeat customers! But we're running short of bread. We had some of the cheap white generic stuff.'";
 	if gs-deli-ale-left is true and gs-deli-ale-return is false:
 		now gs-deli-ale-return is true;
-		say "The [owners] look a bit happier than before. 'We've had a few more customers. We even rebranded our business! And created some ambience! It advertises some new meals! If you could be our first customer and try it out... we think it's sort of cute...' They point to something they drew on the wall. 'A [toon]! Pretty spiffy, eh?'";
+		say "The [owners] look a bit happier than before. 'We've had a few more customers. We even rebranded our business! And created some ambiance! It advertises some new meals! If you could be our first customer and try it out... we think it's sort of cute...' They point to something they drew on the wall. 'A [toon]! Pretty spiffy, eh?'";
 		move toon to Deli Stern;
 	if gs-deli-beef-left is true and gs-deli-beef-return is false:
 		now gs-deli-beef-return is true;
@@ -942,7 +942,7 @@ invtext of Me Track Meat Rack is "[if sco-beef-ordering is false]a variety of me
 
 chapter pliers
 
-The mope liars mo pliers are a plural-named thing. description is "On the one hand, they're pliers, so they can't be too hard to use. But on the other hand, they were supposed to be kind of special, so you're worried you've overlooked an obvious feature. Gues you can only hope to use them right when the time comes.". printed name is "'Mope, Liars, Mo[']' Pliers". eyes-number of pliers is 1.
+The mope liars mo pliers are a plural-named thing. description is "On the one hand, they're pliers, so they can't be too hard to use. But on the other hand, they were supposed to be kind of special, so you're worried you've overlooked an obvious feature. Guess you can only hope to use them right when the time comes.". printed name is "'Mope, Liars, Mo[']' Pliers". eyes-number of pliers is 1.
 
 chapter WHEE TRY
 
@@ -1026,7 +1026,7 @@ understand "wall" and "tube/rod" and "tube rod" as tuberodscen when tuberodscen 
 
 part Too Dark Tude Ark
 
-Too Dark Tude Ark is an ordroom in universal. printed name of tude ark is "[if sco-ho-langour is true]'Ugh?! Lo, a Glow'[else]Too-Dark Tude Ark[end if]". "[if sco-ho-langour is false]Your attitude can't help grow dark as you wonder if it was really worth running all the way here or even going back north, and if there is anywhere beyond that will require even more running, which it doesn't look like, becaue it's hard to see[else]It's no longer too dark here. There's not much here, but at least it's not too dark. Oh, there's a passage south as well as one back north[end if].". eyes-number of Too Dark Tude Ark is 1.
+Too Dark Tude Ark is an ordroom in universal. printed name of tude ark is "[if sco-ho-langour is true]'Ugh?! Lo, a Glow'[else]Too-Dark Tude Ark[end if]". "[if sco-ho-langour is false]Your attitude can't help grow dark as you wonder if it was really worth running all the way here or even going back north, and if there is anywhere beyond that will require even more running, which it doesn't look like, because it's hard to see[else]It's no longer too dark here. There's not much here, but at least it's not too dark. Oh, there's a passage south as well as one back north[end if].". eyes-number of Too Dark Tude Ark is 1.
 
 the whole anger is a thing in Tude Ark. "Whole anger swirls around here, consuming your every thought.". description is "How can one describe anger? It's there, and it's tough to shake.". eyes-number of whole anger is 27. eyes-rule of whole anger is pre-ho-langour rule.
 

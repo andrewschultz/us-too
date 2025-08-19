@@ -32,7 +32,7 @@ w1 (text)	w2 (text)	first-hom (text)	second-hom	hom-txt-rule (rule)	first-exact	
 "board"	"red"	"bored"	--	--	false	false	false	false	"finding something in the Bore Dread"	false	true	true	false	false	bore dread	pre-board-red rule	post-board-red rule	--	--
 "malt"	"hour"	--	--	--	false	false	false	false	"befriending the guardians in the maul tower"	false	true	true	false	false	bore dread	pre-malt-hour rule	post-malt-hour rule	--	"You can call MALT HOUR [once-now of pre-malt-hour rule] you have a variety of alcohol to share."
 "join"	"aider"	--	--	--	false	false	false	false	"doing something worthwhile in the joy nadir"	false	true	true	false	false	joy nadir	pre-join-aider rule	post-join-aider rule	--	"You can call a JOIN AIDER [once-now of pre-join-aider rule] once you have two items of power to join."
-"dupe"	"it"	--	--	--	false	false	false	false	"making the dew pit useful"	false	true	true	false	false	joy nadir	pre-dupe-it rule	post-dupe-it rule	--	"You can DUPE IT [once-now of pre-dupe-it rule] you have something unique and worth duplicationg."
+"dupe"	"it"	--	--	--	false	false	false	false	"making the dew pit useful"	false	true	true	false	false	joy nadir	pre-dupe-it rule	post-dupe-it rule	--	"You can DUPE IT [once-now of pre-dupe-it rule] you have something unique and worth duplicating."
 "nah"	"queue"	--	--	--	false	false	false	false	"repelling the [team]"	false	true	true	false	false	blah copse	pre-nah-queue rule	post-nah-queue rule	--	--
 "surf"	"ready"	--	--	--	false	false	false	false	"giving Sir Freddie a new direction"	false	true	true	false	false	blah copse	pre-surf-ready rule	post-surf-ready rule	--	"You can SURF READY [once-now of pre-surf-ready rule] you have surfing materials for Sir Freddie."
 "or"	"clerk"	--	--	--	false	false	false	false	"figuring what Sir Freddie was scared of"	false	true	true	false	false	blah copse	pre-or-clerk rule	post-or-clerk rule	--	--
@@ -148,17 +148,18 @@ a wordtwisting rule (this is the pre-a-stew rule):
 		vcp "You think far ahead to what you might need. You'd need to read an ingredient list for that. Maybe you have one on you to start.";
 		not-yet;
 	if number of not discovered stewitems > 0 and debug-win is false:
-		vcp "You don't have all the stew ingredients you need! Currently, you have [number of carried stewitems in words] out of [number of stewitems in words].";
+		vcp "You don't have all the stew ingredients you need! Currently, you have [number of discovered stewitems in words] out of [number of stewitems in words].";
 		not-yet;
 	ready;
 
 this is the post-a-stew rule:
 	now sco-a-stew is true;
-	say "You look at [aight]. You have everything you need, but you don't have, well, a cohesive dish. You remember the lawyers needling you with 'us too.' Yes, that's what it has to be. You call them and your friends. They're prepared -- the mine is omly an hour's drive from the city.";
+	say "You look at [aight]. You have everything you need, but you don't have, well, a cohesive dish. You remember the lawyers needling you with 'us too.' Yes, that's what it has to be. You call them and your friends. They're prepared -- the mine is only an hour's drive from the city.";
 	wfak;
 	say "So you make the stew to pass the time until then. You try to avoid thinking of it as [i]my stew[r], because eww, that'd be a me-ill meal. [i]Our stew[r] might be, too.[paragraph break]You're no natural cook, but you do your best. (You make other random seeming stews over there years, and people always seem to appreciate them, but none quite has the flavor of this one.) After the meal, the announcement -- the mine is yours, and you can sell it now. You wonder if there's anything else, but you don't want to be greedy.";
 	wfak;
-	say "Everyone winds down by playing poker. The lawyers are, unsurprisingly, all quite good at it. Well, you're not playing with real money, so you don't mind losing. You got enough today, right? Someone asks you offhand what you call the stew. [ara] surprisingly didn't specify it. You give your answer, and you wonder if maybe there is one more subtle odd test. The lawyers seem to have an inside joke going as they finish the remains of yout...";
+	say "Everyone winds down by playing poker. The lawyers are, unsurprisingly, all quite good at it. Well, you're not playing with real money, so you don't mind losing. You got enough today, right? Someone asks you offhand what you call the stew. [ara] surprisingly didn't specify it. You give your answer, and you wonder if maybe there is one more subtle odd test. The lawyers seem to have an inside joke going as they finish the remains of your...";
+	follow the score and thinking changes rule;
 	end the story finally saying "Place-to-Play Stew";
 	follow the shutdown rules;
 
@@ -328,7 +329,7 @@ a wordtwisting rule (this is the pre-punt-weaker rule):
 
 this is the post-punt-weaker rule:
 	now sco-punt-weaker is true;
-	say "'Ah, yes, that's it. A small gift for a small favor.' The pun tweaker goes to the back of [the ship], and you hear a splash. The pun tweaker reappers, clothes wet, pushing a pretty scrawny punt. 'It won't get very far, but there's something to the east. Oh, and I hope you have a way to steer it, too. Anyway, here you go. My repairs are complete!'";
+	say "'Ah, yes, that's it. A small gift for a small favor.' The pun tweaker goes to the back of [the ship], and you hear a splash. The pun tweaker reappears, clothes wet, pushing a pretty scrawny punt. 'It won't get very far, but there's something to the east. Oh, and I hope you have a way to steer it, too. Anyway, here you go. My repairs are complete!'";
 	move punt weaker to beach ill;
 	moot pun tweaker;
 	moot ship;
@@ -401,7 +402,7 @@ a wordtwisting rule (this is the pre-board-red rule):
 
 this is the post-board-red rule:
 	now sco-board-red is true;
-	say "You turn up a board (red) ... it's narrow and six feet long, made of styrofoam, with CATCH THE WAVES and STAND ON THIS SIDE written on one side. Since it wasn't hard to find, you don't feel excited you found it, but you carry it anyway. Thankfully, nobody in the maul tower gaffles or arrests you for stealing.";
+	say "You turn up a board (red) ... it's narrow and six feet long, made of Styrofoam, with CATCH THE WAVES and STAND ON THIS SIDE written on one side. Since it wasn't hard to find, you don't feel excited you found it, but you carry it anyway. Thankfully, nobody in the maul tower gaffles or arrests you for stealing.";
 	now player has board red;
 	declue-here;
 
