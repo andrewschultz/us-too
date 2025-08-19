@@ -143,9 +143,9 @@ test w64 with "test w6u/test w6b/test w6c/test w6a".
 test w65 with "test w6u/test w6c/test w6a/test w6b".
 test w66 with "test w6u/test w6c/test w6b/test w6a".
 
-test w7 with "sss/s/damp ink/n/n/s/s/scry broom/n/n/ss/s/pro sweeping/cold rum/tea leaves/n/n/s/s/belt rusted/n/n".
+test w7 with "sss/s/claim it/damp ink/n/n/s/s/scry broom/n/n/ss/s/pro sweeping/cold rum/tea leaves/n/n/s/s/belt rusted/n/n".
 
-test w8 with "sw/x beak/ne/w/bold itch/claim it/w/stark raft/s/find rinks/bear respond/barn open/n"
+test w8 with "sw/x beak/ne/w/bold itch/w/stark raft/s/find rinks/bear respond/barn open/n"
 
 test w9 with "e/n/saw bakers/in/dell eastern/e/w/dope ale/e/w/beef ordering/e/w/wheat rye/e/den specs/d/grow nodes/no date".
 

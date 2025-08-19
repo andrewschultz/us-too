@@ -48,7 +48,6 @@ w1 (text)	w2 (text)	first-hom (text)	second-hom	hom-txt-rule (rule)	first-exact	
 "pry"	"more"	--	--	--	false	false	false	false	"figuring how to take the prime oar"	false	true	true	false	false	inner nest	pre-pry-more rule	post-pry-more rule	--	--
 "oh"	"clever"	--	--	--	false	false	false	false	"operating the oak lever"	false	true	true	false	false	fort earns four turns	pre-oh-clever rule	post-oh-clever rule	--	--
 "bold"	"itch"	--	--	--	false	false	false	false	"figuring how to get back on your feet in Bowl/Ditch"	false	true	true	false	false	bowl ditch	pre-bold-itch rule	post-bold-itch rule	--	--
-"claim"	"it"	--	--	--	false	false	false	false	"gathering the clay mitt"	false	true	true	false	false	Bowl Ditch	pre-claim-it rule	post-claim-it rule	--	--
 "stark"	"raft"	--	--	--	false	false	false	false	"finding more appropriate transport than the star craft"	false	true	true	false	false	turbo tours	pre-stark-raft rule	post-stark-raft rule	--	--
 "tour"	"boaters"	--	--	--	false	false	false	false	"bringing more business to Turbo Tours"	false	true	false	false	false	turbo tours	pre-tour-boaters rule	post-tour-boaters rule	--	--
 "find"	"rinks"	--	--	--	false	false	false	false	"seeing another place on the Farm Isles"	false	true	true	false	false	far miles farm isles	pre-find-rinks rule	post-find-rinks rule	--	--
@@ -67,6 +66,7 @@ w1 (text)	w2 (text)	first-hom (text)	second-hom	hom-txt-rule (rule)	first-exact	
 "ho"	"languor|langour"	--	--	--	false	false	false	false	"dealing with the paralyzing whole anger"	false	true	true	false	false	tude ark	pre-ho-langour rule	post-ho-langour rule	--	"You can yell HO LANGUOR [once-now of pre-ho-langour rule] you have done something, anything, else in the south."
 "say"	"jokes"	--	--	--	false	false	false	false	"get by the Sage Oaks"	false	true	true	false	false	sage oaks	pre-say-jokes rule	post-say-jokes rule	--	--
 "gas"	"pouch"	--	--	--	false	false	false	false	"see how to stop gasping OUCH"	false	true	true	false	false	sage oaks	pre-gas-pouch rule	post-gas-pouch rule	--	--
+"claim"	"it"	--	--	--	false	false	false	false	"gathering the clay mitt"	false	true	true	false	false	Dam Pink	pre-claim-it rule	post-claim-it rule	--	--
 "damp"	"ink"	--	--	--	false	false	false	false	"getting something from the dam"	false	true	true	false	false	dam pink	pre-damp-ink rule	post-damp-ink rule	--	"You can pick up DAMP INK [once-now of pre-damp-ink rule] you have a proper container."
 "scry"	"broom"	--	--	--	false	false	false	false	"getting something from the Scribe Room"	false	true	true	false	false	scribe room	pre-scry-broom rule	post-scry-broom rule	--	"You can SCRY BROOM and get int[once-now of pre-scry-broom rule] you have something the scribes want."
 "belt"	"rusted"	--	--	--	false	false	false	false	"figuring how to 'clean' the bell (trusted)"	false	true	true	false	false	scribe room	pre-belt-rusted rule	post-belt-rusted rule	--	--
@@ -745,14 +745,13 @@ a wordtwisting rule (this is the pre-bold-itch rule):
 
 this is the post-bold-itch rule:
 	now sco-bold-itch is true;
-	say "You have a think. It's not terrible. You've gotten here. You can get back. You really did trample through whatever was to the east. You walk off the ankle sprain you get from falling down. At the edges of the ditch, you notice:  hey, isn't that a clay mitt? And hey, you can see things clearing out to the north!";
-	move clay mitt to Bowl Ditch;
+	say "You have a think. It's not terrible. You've gotten here. You can get back. You really did trample through whatever was to the east. You walk off the ankle sprain you get from falling down. As you do, you notice passages west and north -- a bit hidden, but actually a bit more obvious than the way back east. You're glad you were able to take a deep breath and get some perspective.";
 	reveal Sob Acres to north;
 	reveal Turbo Tours to west;
 	declue-here;
 
 a wordtwisting rule (this is the pre-claim-it rule):
-	if player is not in bowl ditch and player does not have clay mitt, unavailable;
+	if player is not in dam pink and player does not have clay mitt, unavailable;
 	if sco-claim-it is true:
 		vcal "You reclaim the clay mitt, which makes you feel powerful and proud, I guess.";
 		already-done;

@@ -847,13 +847,11 @@ part Bowl Ditch
 
 Bowl Ditch is a room in universal. "[if sob acres is visited]You wonder why this place ever intimidated you. There's Sob Acres to the north and the Ur-Branch back east[else if sco-bold-itch is true]Now you've got your bearings, you see passages north and west, as well as back east[else]Ouch. Oww. You're lying on the ground, embarrassed how you tripped and fell, worried and scared there's no way back. Your injury is probably more psychological than physical, but it's there, and you need to overcome it[end if].". eyes-number of Bowl Ditch is 44. eyes-rule of Bowl Ditch is pre-bold-itch rule.
 
-chapter clay mitt
-
-the clay mitt is an uneatable stewitem. description is "[if sco-claim-it is false]It's not yours, so you can't take it. You guess. Well, as things stand[else]It should protect your hands against all but the fieriest of oven flames[end if].". eyes-number of clay mitt is 52. eyes-rule of clay mitt is pre-claim-it rule.
-
-invtext of clay mitt is "[if sco-claim-it is false]hand protection from the heat[else]you got the clay mitt for hand protection[end if]".
-
-check taking clay mitt when clay mitt is in Bowl Ditch: say "You don't feel bold enough to. Just taking isn't enough." instead;
+check going east in bowl ditch:
+	if sco-no-date is true and sco-barn-open is true:
+		say "You got that egg, and you destroyed the nodes. You're pretty sure the west is clear.";
+		wink-out west;
+		wfak;
 
 part Sob Acres
 
@@ -1028,6 +1026,14 @@ the gas pouch is a thing. description is "It's a pouch that once held gas, curre
 part Dam Pink
 
 Dam Pink is a room in universal. printed name is "Dam, Pink". "You can only go back north.". eyes-number of Dam Pink is 43. eyes-rule of Dam Pink is pre-damp-ink rule.
+
+chapter clay mitt
+
+the clay mitt is an uneatable stewitem in Dam Pink. "A clay mitt lies here. Perhaps it was dislodged when you broadened the tube/rod, or perhaps it was just lying around forever. But you'd feel weird just [b]TAKE[r]ing it.". description is "[if sco-claim-it is false]It's not yours, so you can't take it. You guess. Well, as things stand[else]It should protect your hands against all but the fieriest of oven flames[end if].". eyes-number of clay mitt is 52. eyes-rule of clay mitt is pre-claim-it rule.
+
+invtext of clay mitt is "[if sco-claim-it is false]hand protection from the heat[else]you got the clay mitt for hand protection[end if]".
+
+check taking clay mitt when clay mitt is in Dam Pink: say "You don't feel bold enough to. Just taking isn't enough." instead;
 
 part Scribe Room
 
@@ -1325,6 +1331,7 @@ rule for supplying a missing noun when ting:
 		the rule fails;
 	now noun is random sentient in location of player;
 	continue the action;
+
 volume meta-verbs
 
 book about
