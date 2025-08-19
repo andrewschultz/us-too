@@ -122,7 +122,7 @@ test w1 with "how so/try quest/be strong/i/x/summon cheese/u/herb ranch/summer b
 
 test w2 with "be chill/nice warm/probe all/w/d/mess pot".
 
-test w3 with "u/ne/board red/sw/blah copse/n/nah queue/surf ready/or clerk/n/more flares/n/n/rope ladder/guard entry/in/peace talks".
+test w3 with "u/ne/board red/sw/n/blah copse/nah queue/surf ready/or clerk/n/more flares/n/n/rope ladder/guard entry/in/peace talks".
 
 test w4 with "out/se/can take/grey tin/dough making/in earnest/in/pry more/out/nw/e/punt weaker/e/base pikes/pie crust/hike up/w/w".
 

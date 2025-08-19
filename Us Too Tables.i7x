@@ -269,6 +269,7 @@ this is the post-guard-entry rule:
 
 a wordtwisting rule (this is the pre-blah-copse rule):
 	if player is not in ur branch, unavailable;
+	if black ops are not in ur branch, unavailable;
 	if north is branchcant, unavailable;
 	if sco-blah-copse is true:
 		vcal "You already figured how to evade the black ops! You can just go north if you need to.";

@@ -276,6 +276,7 @@ check thinking in Mine Ooh when sco-try-quest is false:
 	if doable-hinted is 1, say "[line break]--you also figured to need to make [b]A STEW[r] from the lawyers' 'Us too,' which is down the road, but it's good to have a goal in mind.";
 	if gs-taken-inventory is false:
 		say "[line break]Maybe you should take [b]INVENTORY[r] with [b]I[r]. That might provide another clue.";
+	process the partial-oronym-check rule;
 	the rule succeeds;
 
 check going up in Mine Ooh:
@@ -1018,7 +1019,7 @@ after printing the locale description when (player is in scribe room or player i
 
 part Tube Rod
 
-Tube Rod is an ordroom in universal. eyes-number of Tube Rod is 35. eyes-rule of Tube Rod is pre-too-broad rule. "[if sco-too-broad is false]Well, you're blocked south by a huge a huge nondescript wall with a single tube/rod sticking out of it[else]With the tube/rod burst, you can now go south as well as back north[end if]."
+Tube Rod is an ordroom in universal. eyes-number of Tube Rod is 35. printed name is "Tube/Rod". eyes-rule of Tube Rod is pre-too-broad rule. "[if sco-too-broad is false]Well, you're blocked south by a huge a huge nondescript wall with a single tube/rod sticking out of it[else]With the tube/rod burst, you can now go south as well as back north[end if]."
 
 the tuberodscen is privately-named scenery in Tube Rod. eyes-number of tuberodscen is 1. "Well, you can't do much with the wall, which is pretty boring and large. The tube/rod, on the other hand ...". printed name is "tube/rod".
 
