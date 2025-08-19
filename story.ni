@@ -10,6 +10,8 @@ include Conditional Undo by Jesse McGrew.
 
 section general
 
+include Punctuation Stripper by Andrew Schultz.
+
 include Bold Final Question Rows by Andrew Schultz.
 
 include Standard Helping Metaverbs by Andrew Schultz.
@@ -118,6 +120,8 @@ after reading a command when player is in House Well How Swell:
 	increment starter-counter;
 	if starter-counter is 5, follow the explain the house rule;
 	reject the player's command;
+
+the punctuation-munge rule is listed first in the after reading a command rulebook.
 
 after printing the locale description for house when house is unvisited:
 	follow the explain the house rule;
