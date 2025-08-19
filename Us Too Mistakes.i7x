@@ -10,6 +10,8 @@ understand "say [text]" and "say" as a mistake ("You found the only important co
 
 volume puzzle-specific mistakes
 
+understand "claim it" as a mistake ("You wonder if you should reclaim the mitt, but then, you think it might start to reek. Lame.") when player has clay mitt. [this is so the mitt doesn't intersect with two other "IT" puzzles]
+
 Us Too Mistakes ends here.
 
 ---- DOCUMENTATION ----

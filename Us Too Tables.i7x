@@ -105,6 +105,7 @@ this is the post-nice-warm rule:
 
 a wordtwisting rule (this is the pre-be-strong rule):
 	if player is not in mine ooh, unavailable;
+	if beast wrong is not in mine ooh, unavailable;
 	if sco-be-strong is true:
 		vcal "You already felt strong! There's the matter of details, but those aren't nailed down by repetition here.";
 		already-done;
@@ -195,7 +196,7 @@ a wordtwisting rule (this is the pre-summon-cheese rule):
 	if aight is not examined, unavailable;
 	if player does not have aight, unavailable;
 	if sco-summon-cheese is true:
-		vcal "You already got some munchies! No need to be greedy";
+		vcal "You already got some munchies! No need to be greedy.";
 		already-done;
 	ready;
 
@@ -240,7 +241,7 @@ this is the post-probe-all rule:
 a wordtwisting rule (this is the pre-summer-bay rule):
 	if player does not have herbs, unavailable;
 	if sco-summer-bay is true:
-		vcal "You already used the herb to expand your mind! It is only good for seasoning now";
+		vcal "You already used the herb to expand your mind! It is only good for seasoning now.";
 		already-done;
 	if player is not in ur branch:
 		vcp "Perhaps you should use the herb in a more wide-open place. Like the Ur-Branch where you got it.";
@@ -753,10 +754,7 @@ this is the post-bold-itch rule:
 	declue-here;
 
 a wordtwisting rule (this is the pre-claim-it rule):
-	if player is not in dam pink and player does not have clay mitt, unavailable;
-	if sco-claim-it is true:
-		vcal "You reclaim the clay mitt, which makes you feel powerful and proud, I guess.";
-		already-done;
+	if player is not in dam pink or clay mitt is not in dam pink, unavailable;
 	ready;
 
 this is the post-claim-it rule:
