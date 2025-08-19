@@ -758,6 +758,10 @@ to say dome-scen:
 check going inside in Dome Aching when sco-can-take is true and sco-in-earnest is false:
 	say "The inner nest repels you. Your motives aren't pure. Quester see, quester visit, quester score points. So cold and calculating!" instead;
 
+chapter cant ache
+
+the cant ache is a thing in Dome Aching. "A can't ache sweeps through the air, paralyzing you from doing anything constructive.". description is "Analyzing the ache will do no good. It can't be subdued physically. You just have to take that leap and neutralize it.". printed name of cant ache is "can't-ache". eyes-number of cant ache is 34. eyes-rule of cant ache is pre-can-take rule.
+
 chapter great inn
 
 the great inn is scenery. "It's very impressive. [if sco-gray-tin is false]Maybe it has some cast-off items for you[else]But you doubt it holds and more freebies[end if].". eyes-number of great inn is 43. eyes-rule of great inn is pre-gray-tin rule.

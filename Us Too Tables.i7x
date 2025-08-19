@@ -629,9 +629,10 @@ a wordtwisting rule (this is the pre-can-take rule):
 
 this is the post-can-take rule:
 	now sco-can-take is true;
-	say "You feel you can take the aching. It takes a bit of time, and you worry a worse aching may replace it ... and, in a way, it does. You wonder what you need to do here now. You see a great inn and an inner nest. Which is worth visiting?";
+	say "You feel you can take the aching. It takes a bit of time, even though your proposed solution feels a bit glib and simplistic, and you worry a worse aching may replace it ... and, in a way, it does. You wonder what you need to do here now. You see a great inn and an inner nest. Which is worth visiting?";
 	move great inn to Dome Aching;
 	move inscen to Dome Aching;
+	moot cant ache;
 
 a wordtwisting rule (this is the pre-gray-tin rule):
 	if player is not in dome aching, unavailable;
