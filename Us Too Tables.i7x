@@ -102,6 +102,7 @@ this is the post-nice-warm rule:
 	say "The nigh swarm grows less volatile and, yes, more nice, warm. It rises in the air, then buzzes off to somewhere to maybe be nice, cool, too. Perhaps there is a nigh school![paragraph break]Behind the nigh swarm is a pro ball.";
 	moot nigh swarm;
 	move pro ball to beach ill;
+	print-the-loc;
 
 a wordtwisting rule (this is the pre-be-strong rule):
 	if player is not in mine ooh, unavailable;
@@ -231,7 +232,7 @@ a wordtwisting rule (this is the pre-probe-all rule):
 this is the post-probe-all rule:
 	now sco-probe-all is true;
 	say "You reach out to the pro ball. It seems to sense what you want it for. You take it, then look at it from many different angles. Reflected in it, you see ... well, a meh spot [here-in of my new mine ooh] that could use sprucing up. But how?[paragraph break]Yet much of the pro ball remains cloudy. Perhaps it will reveal what you need, as you need it.";
-	say "[line break]It also reveals something near here. You notice some sort of ship. You wave, and its captain, so to speak, waves back. They introduce themselves as the Pun Tweaker. Their ship is the Gauche Hip Go Ship. They immediately start in with some crunching puns.[paragraph break][i][bracket][b]NOTE[r][i]: you don't need to examine the pro ball from here on out for it to open new passages.[close bracket][i][line break]";
+	say "[line break]It also reveals something near here. You notice some sort of ship. You wave, and its captain, so to speak, waves back. They introduce themselves as the Pun Tweaker. Their ship is the [gauche]. They immediately start in with some crunching puns.[paragraph break][i][bracket][b]NOTE[r][i]: you don't need to examine the pro ball from here on out for it to open new passages.[close bracket][i][line break]";
 	move meh spot to my new mine ooh;
 	now player has pro ball;
 	move pun tweaker to beach ill;
@@ -338,6 +339,7 @@ this is the post-punt-weaker rule:
 	moot ship;
 	check-oar-punt;
 	reveal Pile Up Isle to east;
+	print-the-loc;
 
 to check-oar-punt:
 	if player has prime oar and sco-punt-weaker is true:
@@ -449,6 +451,7 @@ this is the post-join-aider rule:
 	move dew pit to joy nadir;
 	now eyes-number of joy nadir is 42;
 	now eyes-rule of joy nadir is pre-dupe-it rule;
+	print-the-loc;
 
 a wordtwisting rule (this is the pre-dupe-it rule):
 	if player is not in joy nadir, unavailable;
@@ -562,7 +565,7 @@ a wordtwisting rule (this is the pre-peace-talks rule):
 
 this is the post-peace-talks rule:
 	now sco-peace-talks is true;
-	say "Getting back to nature and stuff leaves you at peace with yourself. So at peace, you want to spread that peace to others, whether or not they fully deserve it. However, now you're so at peace, you recognize you are disturbing the plants' peace. You retreat to the Ur-Branch.";
+	say "Getting back to nature and stuff leaves you at peace with yourself. So at peace, you want to spread that peace to others, whether or not they fully deserve it. However, now you're so at peace, you recognize you are disturbing the plants['] peace. You retreat to the Ur-Branch.";
 	if sco-pea-pod is false:
 		now eyes-number of pea stalks is -33;
 	else:
@@ -663,7 +666,7 @@ a wordtwisting rule (this is the pre-dough-making rule):
 
 this is the post-dough-making rule:
 	now sco-dough-making is true;
-	say "Excellent! Not only do you make the dough, but the great inn offer you somewhere to keep it. You wind up with a dough pail.";
+	say "Excellent! Not only do you make the dough, but the great inn offers you somewhere to keep it. You wind up with a dough pail.";
 	now player has dough pail;
 	declue-here;
 
@@ -765,7 +768,7 @@ a wordtwisting rule (this is the pre-claim-it rule):
 
 this is the post-claim-it rule:
 	now sco-claim-it is true;
-	say "You wonder if someone would really miss this clay mitt. But then you realize there's nothing stopping you, and they probably didn't just stop by here on vacation and lose it.";
+	say "You wonder if someone would really miss this clay mitt. But then you realize there's nothing stopping you, and they probably didn't just stop by here on vacation and lose it. Maybe they left it here because they thought someone else might find it more useful!";
 	now player has clay mitt;
 	declue clay mitt;
 
@@ -842,7 +845,7 @@ a wordtwisting rule (this is the pre-wheat-rye rule):
 
 this is the post-wheat-rye rule:
 	now sco-wheat-rye is true;
-	say "The [owners] applaud you. 'Yes ... that's just the thing ...' they chop up the wheat and rye with the erstwhile Terra Blade. 'Oh! There's one other thing ... business is booming so much, maybe this will come in handy for you. We don't have any repairs.' They hand you some [pliers].";
+	say "The [owners] applaud you. 'Yes ... that's just the thing ...' they chop up the wheat and rye with the erstwhile Terra Blade. 'Oh! There's one other thing ... business is booming so much, maybe this will come in handy for you. We don't need any repairs.' They hand you some [pliers].";
 	now player has rye bread;
 	now player has pliers;
 	declue whee try sign;
@@ -941,6 +944,7 @@ this is the post-grow-nodes rule:
 	say "The groan odes retract, as nodes grow out, creating a more menacing noise. Ah, so that's what you're up against!";
 	move nodes to odes;
 	declue-here;
+	print-the-loc;
 
 a wordtwisting rule (this is the pre-no-date rule):
 	if player is not in groan odes, unavailable;
@@ -1017,6 +1021,7 @@ this is the post-ho-langour rule:
 	say "Passive resistance is the way to go! You worry you are just doing nothing by default, and it doesn't really count, but then you remember how you busted up the tube/rod. You feel your blood pressure falling. Things aren't so bad, now.";
 	reveal Scribe Room to south;
 	declue whole anger;
+	print-the-loc;
 
 chapter scribe room scoring
 
@@ -1076,7 +1081,7 @@ a wordtwisting rule (this is the pre-gas-pouch rule):
 
 this is the post-gas-pouch rule:
 	now sco-gas-pouch is true;
-	say "The sage oaks chuckle. And you chuckle a bit, too. Turnabout is fair play! They release the gas from the pouch all at once -- of course, not in your direction. 'It can hold liquid, too,' they say. 'But one more thing. Do you know where we got this from?'[paragraph break]You shake your head.[paragraph break]'The Grove Ouch-Grow-Vouch.'[paragraph break]Well, you had to figure they had one or two left.[paragraph break]'You are completely free to go south now. Whether or not it will be productive right now, we will not say,' they intone.";
+	say "The sage oaks chuckle. And you chuckle a bit, too. Turnabout is fair play! They release the gas from the pouch all at once -- of course, not in your direction. 'It can hold liquid, too,' they say. 'But one more thing. Do you know where we got this from?'[paragraph break]You shake your head.[paragraph break]'The Grove Ouch-Grow-Vouch.'[paragraph break]Well, you had to figure they had one or two zingers left.[paragraph break]'You are completely free to go south now. Whether or not it will be productive right now, we will not say,' they intone.";
 	now player has gas pouch;
 
 chapter dust which does twitch scoring
@@ -1098,6 +1103,7 @@ this is the post-pro-sweeping rule:
 	move coal drum to dust which;
 	now eyes-rule of dust which is pre-tea-leaves rule;
 	now eyes-number of dust which is 36;
+	print-the-loc;
 
 a wordtwisting rule (this is the pre-cold-rum rule):
 	if player is not in dust which, unavailable;
@@ -1147,13 +1153,14 @@ a wordtwisting rule (this is the pre-use-it rule):
 
 this is the post-use-it rule:
 	now sco-use-it is true;
-	say "Defying the throne, you hold the [ORB] high in the air. It crackles. Energy shoots to the throne, from which emits a loud 'NO TERROR?! NOTE: ERROR!!!!!' The orb flies from your hand and towards the throne and explodes. You also feel the [pin] ripped from you ... it clunks off somewhere forgotten, maybe to help someone who gets in a more serious pickle than you do.";
+	say "Defying the throne, you hold the [ORB] high in the air. It crackles. Energy shoots to the throne, from which emits a loud 'NO TERROR?! NOTE: ERROR!!!!!' The orb flies from your hand and towards the throne and explodes. You also feel the [pin] ripped from you ... it clunks off somewhere forgotten, maybe to help someone who gets in a more serious pickle than you did.";
 	wfak;
 	say "Where the throne once sat, there's now something glistening. 'You have freed the life roots,' booms a melodramatic voice.";
 	declue-here;
 	move life roots to Throne;
 	moot orb;
 	moot hell pin;
+	print-the-loc;
 
 a wordtwisting rule (this is the pre-lie-fruits rule):
 	if player is not in throne, unavailable;
@@ -1162,7 +1169,7 @@ a wordtwisting rule (this is the pre-lie-fruits rule):
 
 this is the post-lie-fruits rule:
 	now sco-lie-fruits is true;
-	say "You call out the life roots: 'come on, we can't do a heck of a lot with that. Do you really need to be all basso profundo?'[paragraph break]To your surprise, they shrivel up. A voice intones: 'Congratulations. You have seen through us. So many adventurers would start looking for eternal life, or profiting from this.'";
+	say "You call out the life roots: 'Come on, this is a bit overblown. Do you really need to be all basso profundo?'[paragraph break]To your surprise, they shrivel up. A voice intones: 'Congratulations. You have seen through us. So many adventurers would start looking for eternal life, or profiting from this.'";
 	wfak;
 	say "'Actually,' you say, 'I just have this list of stuff I needed for a big meal. I've looked everywhere, but I'm still out a ton of vegetables and fruits. I was kinda hoping there'd be at least some fruits here...'";
 	wfak;
@@ -1170,7 +1177,7 @@ this is the post-lie-fruits rule:
 	wfak;
 	say "'Your self-awareness is admirable. Yes, we have spare vegetables. They are kind of funny-shaped. Is that a problem? No? Good.'[paragraph break]Your [ugh] feels like it may burst from the additional weight! Good thing you kept those dense pecs when you made the den specs.";
 	wfak;
-	say "But now, this space needs to heal, free of human interference. Even worthy humans.' You nod and leave. There can't be much left to do, now.";
+	say "'But now, this space needs to heal, free of human interference. Even worthy humans.' You nod and leave. There can't be much left to do, now.";
 	now player has assortment;
 	block-and-back;
 
