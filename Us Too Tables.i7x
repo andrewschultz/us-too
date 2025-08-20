@@ -18,7 +18,7 @@ w1 (text)	w2 (text)	first-hom (text)	second-hom	hom-txt-rule (rule)	first-exact	
 "meh"	"skit"	--	--	--	false	false	false	false	"having harmless, useless fun with the mess kit"	false	true	false	false	false	mine ooh	pre-meh-skit rule	post-meh-skit rule	--	--
 "a"	"stew"	--	--	--	false	false	false	false	"achieving the game's objective"	false	true	true	false	false	mine ooh	pre-a-stew rule	post-a-stew rule	--	"You can make [b]A STEW[r] [once-now of pre-a-stew rule] you have all the ingredients you need. [b]X[r] should list them."
 "herb"	"ranch"	--	--	--	false	false	false	false	"finding the first place to visit from the Ur-Branch"	false	true	true	false	false	ur branch	pre-herb-ranch rule	post-herb-ranch rule	--	"You can discover an herb ranch [once-now of pre-herb-ranch rule] you are back in the Ur-Branch."
-"summer"	"bay"	--	--	--	false	false	false	false	"letting the herb reveal a new location"	false	true	true	false	false	ur branch	pre-summer-bay rule	post-summer-bay rule	--	"You can discover a summer bay [once-now of pre-summer-bay rule] you are back in the Ur-Branch."
+"summer"	"bay"	--	--	--	false	false	false	false	"letting the herb reveal a new location"	false	true	true	false	false	ur branch	pre-summer-bay rule	post-summer-bay rule	--	"You can discover a SUMMER BAY [once-now of pre-summer-bay rule] you are back in the Ur-Branch."
 "blah"	"copse"	--	--	--	false	false	false	false	"avoiding the black ops"	false	true	true	false	false	ur branch	pre-blah-copse rule	post-blah-copse rule	--	--
 "guard"	"entry"	--	--	--	false	false	false	false	"finding a way past the garden tree"	false	true	true	false	false	ur branch	pre-guard-entry rule	post-guard-entry rule	--	--
 "be"	"chill"	--	--	--	false	false	false	false	"dealing with the beach, ill"	false	true	true	false	false	Beach Ill	pre-be-chill rule	post-be-chill rule	--	--
@@ -26,12 +26,12 @@ w1 (text)	w2 (text)	first-hom (text)	second-hom	hom-txt-rule (rule)	first-exact	
 "base"	"pikes"	--	--	--	false	false	false	false	"figuring a way through the bay spikes"	false	true	true	false	false	a pile up isle	pre-base-pikes rule	post-base-pikes rule	--	--
 "pie"	"crust"	"pi"	--	--	false	false	false	false	"finding what's under the pike rust"	false	true	true	false	false	A Pile Up Isle	pre-pie-crust rule	post-pie-crust rule	--	"You can get the PIE CRUST [once-now of pre-pie-crust rule] you have a container for it."
 "hike"	"up"	--	--	--	false	false	false	false	"reaching the high cup"	false	true	true	false	false	a pile up isle	pre-hike-up rule	post-hike-up rule	--	--
-"sword"	"ark"	"soared"	--	--	false	false	false	false	"finding something in the Sore Dark"	false	true	true	false	false	sore dark	pre-sword-ark rule	post-sword-ark rule	--	--
-"blast"	"ring"	--	--	--	false	false	false	false	"finding the blah string's true purpose"	false	true	true	false	false	sore dark	pre-blast-ring rule	post-blast-ring rule	--	--
+"sword"	"ark"	"soared"	"arc"	hom-sword-ark rule	false	false	false	false	"finding something in the Sore Dark"	false	true	true	false	false	sore dark	pre-sword-ark rule	post-sword-ark rule	--	--
+"blast"	"ring"	--	--	--	false	false	false	false	"finding the blah string's true purpose"	false	true	true	false	false	sore dark	pre-blast-ring rule	post-blast-ring rule	--	"You can BLAST RING [once-now of pre-blast-ring rule] you have found something to blast."
 "terrible"	"aid"	--	--	--	false	false	false	false	"becoming worthy of the Terra Blade"	false	true	true	false	false	sore dark	pre-terrible-aid rule	post-terrible-aid rule	--	"You can summon a TERRIBLE AID [once-now of pre-terrible-aid rule] you can physically grab it."
 "board"	"red"	"bored"	--	--	false	false	false	false	"finding something in the Bore Dread"	false	true	true	false	false	bore dread	pre-board-red rule	post-board-red rule	--	--
 "malt"	"hour"	--	--	--	false	false	false	false	"befriending the guardians in the maul tower"	false	true	true	false	false	bore dread	pre-malt-hour rule	post-malt-hour rule	--	"You can call MALT HOUR [once-now of pre-malt-hour rule] you have a variety of alcohol to share."
-"join"	"aider"	--	--	--	false	false	false	false	"doing something worthwhile in the joy nadir"	false	true	true	false	false	joy nadir	pre-join-aider rule	post-join-aider rule	--	"You can call a JOIN AIDER [once-now of pre-join-aider rule] once you have two items of power to join."
+"join"	"aider"	--	--	--	false	false	false	false	"doing something worthwhile in the joy nadir"	false	true	true	false	false	joy nadir	pre-join-aider rule	post-join-aider rule	--	"You can call a JOIN AIDER [once-now of pre-join-aider rule] you have two items of power to join."
 "dupe"	"it"	--	--	--	false	false	false	false	"making the dew pit useful"	false	true	true	false	false	joy nadir	pre-dupe-it rule	post-dupe-it rule	--	"You can DUPE IT [once-now of pre-dupe-it rule] you have something unique and worth duplicating."
 "nah"	"queue"	--	--	--	false	false	false	false	"repelling the [team]"	false	true	true	false	false	blah copse	pre-nah-queue rule	post-nah-queue rule	--	--
 "surf"	"ready"	--	--	--	false	false	false	false	"giving Sir Freddie a new direction"	false	true	true	false	false	blah copse	pre-surf-ready rule	post-surf-ready rule	--	"You can SURF READY [once-now of pre-surf-ready rule] you have surfing materials for Sir Freddie."
@@ -55,7 +55,7 @@ w1 (text)	w2 (text)	first-hom (text)	second-hom	hom-txt-rule (rule)	first-exact	
 "bear"	"respond"	--	--	--	false	false	false	false	"getting the berries in Berries Pond"	false	true	true	false	false	berries pond	pre-bear-respond rule	post-bear-respond rule	--	--
 "saw"	"bakers"	--	--	--	false	false	false	false	"finding signs of life in Sob Acres"	false	true	true	false	false	sob acres	pre-saw-bakers rule	post-saw-bakers rule	--	--
 "dell"	"eastern"	--	--	--	false	false	false	false	"making Sob Acres less forbidding"	false	true	true	false	false	deli stern	pre-dell-eastern rule	post-dell-eastern rule	--	--
-"dope"	"ale"	--	--	--	false	false	false	false	"finding something to trade your dough pail for"	false	true	true	false	false	deli stern	pre-dope-ale rule	post-dope-ale rule	--	"You can trade some of the DOPE ALE [once-now of pre-dope-ale rule] you find people who need it."
+"dope"	"ale"	--	--	--	false	false	false	false	"finding something to trade your dough pail for"	false	true	true	false	false	deli stern	pre-dope-ale rule	post-dope-ale rule	--	"You can trade for some DOPE ALE [once-now of pre-dope-ale rule] DOPE ALE once you've found find willing traders with a bit extra."
 "beef"	"ordering"	--	--	--	false	false	false	false	"figuring what the [toon] really means"	false	true	true	false	false	deli stern	pre-beef-ordering rule	post-beef-ordering rule	--	--
 "wheat"	"rye"	--	--	--	false	false	false	false	"guessing what free samples are on offer"	false	true	true	false	false	deli stern	pre-wheat-rye rule	post-wheat-rye rule	--	--
 "grow"	"nodes"	--	--	--	false	false	false	false	"seeing what's behind the groan odes"	false	true	true	false	false	groan odes	pre-grow-nodes rule	post-grow-nodes rule	--	--
@@ -68,7 +68,7 @@ w1 (text)	w2 (text)	first-hom (text)	second-hom	hom-txt-rule (rule)	first-exact	
 "gas"	"pouch"	--	--	--	false	false	false	false	"see how to stop gasping OUCH"	false	true	true	false	false	sage oaks	pre-gas-pouch rule	post-gas-pouch rule	--	--
 "claim"	"it"	--	--	--	false	false	false	false	"gathering the clay mitt"	false	true	true	false	false	Dam Pink	pre-claim-it rule	post-claim-it rule	--	--
 "damp"	"ink"	--	--	--	false	false	false	false	"getting something from the dam"	false	true	true	false	false	dam pink	pre-damp-ink rule	post-damp-ink rule	--	"You can pick up DAMP INK [once-now of pre-damp-ink rule] you have a proper container."
-"scry"	"broom"	--	--	--	false	false	false	false	"getting something from the Scribe Room"	false	true	true	false	false	scribe room	pre-scry-broom rule	post-scry-broom rule	--	"You can SCRY BROOM and get int[once-now of pre-scry-broom rule] you have something the scribes want."
+"scry"	"broom"	--	--	--	false	false	false	false	"getting something from the Scribe Room"	false	true	true	false	false	scribe room	pre-scry-broom rule	post-scry-broom rule	--	"You can SCRY BROOM and get it [once-now of pre-scry-broom rule] you have something the scribes want."
 "belt"	"rusted"	--	--	--	false	false	false	false	"figuring how to 'clean' the bell (trusted)"	false	true	true	false	false	scribe room	pre-belt-rusted rule	post-belt-rusted rule	--	--
 "pro"	"sweeping"	--	--	--	false	false	false	false	"figuring how to clear some dust a bit"	false	true	true	false	false	dust which	pre-pro-sweeping rule	post-pro-sweeping rule	--	"You can get PRO SWEEPING [once-now of pre-pro-sweeping rule] you have something to sweep with."
 "cold"	"rum"	--	--	--	false	false	false	false	"knowing what to look for in the coal drum"	false	true	true	false	false	dust which	pre-cold-rum rule	post-cold-rum rule	--	--
@@ -105,11 +105,7 @@ this is the post-nice-warm rule:
 	print-the-loc;
 
 a wordtwisting rule (this is the pre-be-strong rule):
-	if player is not in mine ooh, unavailable;
-	if beast wrong is not in mine ooh, unavailable;
-	if sco-be-strong is true:
-		vcal "You already felt strong! There's the matter of details, but those aren't nailed down by repetition here.";
-		already-done;
+	if beast wrong is not in location of player, unavailable;
 	ready;
 
 this is the post-be-strong rule:
@@ -167,7 +163,9 @@ this is the post-a-stew rule:
 
 a wordtwisting rule (this is the pre-loose-intro rule):
 	if player is not in my new mine ooh, unavailable;
-	if lucent row is not in my new mine ooh, unavailable;
+	if loose intro is not off-stage:
+		vcal "There is no more intro.";
+		already-done;
 	ready;
 
 this is the post-loose-intro rule:
@@ -195,7 +193,6 @@ this is the post-den-specs rule:
 
 a wordtwisting rule (this is the pre-summon-cheese rule):
 	if aight is not examined, unavailable;
-	if player does not have aight, unavailable;
 	if sco-summon-cheese is true:
 		vcal "You already got some munchies! No need to be greedy.";
 		already-done;
@@ -273,7 +270,6 @@ this is the post-guard-entry rule:
 a wordtwisting rule (this is the pre-blah-copse rule):
 	if player is not in ur branch, unavailable;
 	if black ops are not in ur branch, unavailable;
-	if north is branchcant, unavailable;
 	if sco-blah-copse is true:
 		vcal "You already figured how to evade the black ops! You can just go north if you need to.";
 		already-done;
@@ -321,10 +317,7 @@ this is the post-pie-crust rule:
 a wordtwisting rule (this is the pre-punt-weaker rule):
 	if player is not in beach ill, unavailable;
 	if sir freddie is not in beach ill and sir freddie is not moot:
-		vcp "The pun tweaker says 'Yeah, maybe I have one. But what can you do for me?'";
-		not-yet;
-	if sco-peace-talks is false:
-		vcp "Perhaps if you managed to get rid of Sir Freddie...";
+		vcp "The pun tweaker says 'Yeah, maybe I have one. [if sir freddie is in beach]Get rid of this guy, I'll give you it.'[else]But what can you do for me?'[end if]";
 		not-yet;
 	if sco-punt-weaker is true:
 		vcal "You already got the punt, weaker!";
@@ -351,10 +344,13 @@ book northwest branch scoring
 
 chapter sore dark scoring
 
+this is the hom-sword-ark rule:
+	say "No, that would put something way too high up out of reach, even if the light were perfect. But you must be close!";
+
 a wordtwisting rule (this is the pre-sword-ark rule):
 	if player is not in sore dark, unavailable;
 	if sco-sword-ark is true:
-		vcal "You don't need another sword! You just want to get out of here.";
+		vcal "There doesn't need to be another sword ark!";
 		already-done;
 	ready;
 
@@ -368,7 +364,7 @@ this is the post-sword-ark rule:
 a wordtwisting rule (this is the pre-blast-ring rule):
 	if player does not have blah string, unavailable;
 	if player is not in sore dark or sword ark is not in sore dark:
-		vcal "You can see nothing to blast!";
+		vcp "You can see nothing to blast!";
 		not-yet;
 	ready;
 
@@ -509,7 +505,7 @@ a wordtwisting rule (this is the pre-or-clerk rule):
 	if player is not in blah copse, unavailable;
 	if sco-surf-ready is false, unavailable;
 	if sco-or-clerk is true:
-		vcal "You already figured nothing awful was lurking to the north";
+		vcal "You already figured nothing awful was lurking to the north.";
 		already-done;
 	ready;
 
@@ -565,7 +561,7 @@ a wordtwisting rule (this is the pre-peace-talks rule):
 
 this is the post-peace-talks rule:
 	now sco-peace-talks is true;
-	say "Getting back to nature and stuff leaves you at peace with yourself. So at peace, you want to spread that peace to others, whether or not they fully deserve it. However, now you're so at peace, you recognize you are disturbing the plants['] peace. You retreat to the Ur-Branch.";
+	say "Getting back to nature and stuff leaves you at peace with yourself. So at peace, you want to spread that peace to others, whether or not they fully deserve it[if sco-pea-pod is true]. However, now you're so at peace, you recognize you are potentially disturbing the plants['] peace. You retreat to the Ur-Branch[end if].";
 	if sco-pea-pod is false:
 		now eyes-number of pea stalks is -33;
 	else:
@@ -630,7 +626,7 @@ chapter dome aching scoring
 a wordtwisting rule (this is the pre-can-take rule):
 	if player is not in dome aching, unavailable;
 	if sco-can-take is true:
-		vcal "You already affirmed you can take it.";
+		vcal "You already affirmed you can 'take it.'";
 		already-done;
 	ready;
 
@@ -751,7 +747,7 @@ chapter Bowl Ditch scoring
 a wordtwisting rule (this is the pre-bold-itch rule):
 	if player is not in bowl ditch, unavailable;
 	if sco-bold-itch is true:
-		vcal "You already shook off your initial embarrassment and fears. Too much itch, and you'll get rash";
+		vcal "You already shook off your initial embarrassment and fears. Too much itch, and you'll get rash!";
 		already-done;
 	ready;
 
@@ -811,7 +807,7 @@ a wordtwisting rule (this is the pre-dope-ale rule):
 		vcp "The [owners] whine that the location here is terrible. It's so dreary outside. So what if they can actually make bread?";
 		not-yet;
 	if gs-deli-dell-left is false:
-		vcp "The [owners] almost look bright for a minute. 'Hey, we could pull off that trade, if ... if ... we got some customers. Come back in a bit, eh?";
+		vcp "The [owners] almost look bright for a minute. 'Hey, we could pull off that trade, if ... if ... we got some customers. Come back in a bit, eh?'";
 		not-yet;
 	ready;
 
@@ -1093,7 +1089,7 @@ a wordtwisting rule (this is the pre-pro-sweeping rule):
 		vcp "You have nothing that could sweep!";
 		not-yet;
 	if sco-pro-sweeping is true:
-		vcal "It's clean enough here.";
+		vcal "It's clean enough here. You swept this place like a pro! Go, you!";
 		already-done;
 	ready;
 
@@ -1189,7 +1185,7 @@ to say ur-branch-desc: say "the [if branch is visited]Ur-Branch[else]hub room ju
 table of intro jabber
 my-jabber
 "There's a brief explanation about how [this-game] reuses a lot of the code from [wp], though hopefully the different stories and puzzles give enough variety to keep you interested. Both are polite on the Zarfian cruelty scale, so there's no way to die."
-"[this-game] has 29 rooms which can be placed in a 5x6 map--well, one pair of rooms in the code actually functions as 'two rooms below a certain room.' and I don't count the initial room in the map. A map comes with the game, but location names may spoil puzzles. (On the other hand, they may help you look ahead if you want.) It has a basic hub location where you slowly discover other passages. There are thirteen total, not including back down.[paragraph break]For reference, the House would be the northeast corner, with the Mine to the left, and [ur-branch-desc] two southwest of the House."
+"[this-game] has 29 rooms which can be placed in a 5x6 map--well, one pair of rooms in the code actually functions as 'two rooms below a certain room,' and I don't count the initial room in the map. A map comes with the game, but location names may spoil puzzles. (On the other hand, they may help you look ahead if you want.) It has a basic hub location where you slowly discover other passages. There are thirteen total, not including back down.[paragraph break]For reference, the House would be the northeast corner, with the Mine to the left, and [ur-branch-desc] two southwest of the House."
 "For those who played [wp], you won't have companions, but you will have NPCs to deal with, hostile and friendly."
 "[this-game] has more points than [wp], but I hope the points are more intuitive than [wp]. You should get a few in bunches, which may seem too easy, but there are fewer you have to wait to get."
 "[this-game] also has a few puzzles where you have to go beyond the physical description. There'll be a clue that it implies something else, e.g. 'What do these words mean?' But I hope it adds variety once you've offered the main mechanic."
