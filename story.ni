@@ -1158,6 +1158,8 @@ volume going out
 
 definition: a direction (called v) is viable:
 	if the room v of location of player is nowhere, no;
+	if player is in ur branch and v is branchdone, no;
+	if player is in ur branch and v is down, no;
 	yes;
 
 understand the command "leave" as something new.
@@ -1167,7 +1169,8 @@ understand the command "exit" as something new.
 check going outside:
 	unless the room gone to is nowhere, continue the action;
 	let v be number of viable directions;
-	if v > 1, say "Ambiguous. Two ways to go out." instead;
+	if v > 1, say "Ambiguous. There are [v in words] ways to go out: [list of viable directions]." instead;
+	if v < 1, continue the action;
 	let j be a random viable direction;
 	if j is not outside:
 		say "Mapping outside to [j].";
