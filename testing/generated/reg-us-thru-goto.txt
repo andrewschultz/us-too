@@ -11,6 +11,13 @@
 >how so
 by a point
 
+#testcase-goto-table-of-noways-my-new-mine-ooh
+>n
+You could explore your mine, but you have no purpose, or errand, or ... there's another word, here.
+
+>u
+You don't want to go wandering outside after you just got here! You need to catch your bearings. Focus on yourself a bit. Maybe even a lot.
+
 >i
 Your Aw-Lug-All-Ugh has nothing special in it.
 You have that too-rad tour ad flopping about, too. It seems non-critical. You can probably examine and then drop it.
@@ -18,9 +25,17 @@ Note that X will default to A'ight, Amusing Item Using in the future.
 
 >z
 
+#+testcase-goto-table-of-noways-my-new-mine-ooh
+>n
+You could explore your mine, but you have no purpose, or errand, or ... there's another word, here.
+
+>u
+You don't want to go wandering outside after you just got here! You need to catch your bearings. Focus on yourself a bit. Maybe even a lot.
+
 >try quest
 by a point
 
+#+testcase-goto-table-of-noways-my-new-mine-ooh
 >n
 You could explore your mine, but you really should get rid of that beast.
 
@@ -30,6 +45,7 @@ The beast (wrong) blocks your way. How wrong of it! You try physically shifting 
 >be strong
 by a point
 
+#+testcase-goto-table-of-noways-my-new-mine-ooh
 >n
 You could explore your mine, but you sense the real adventure lies back above in the outdoors.
 
@@ -44,10 +60,15 @@ by a bonus point
 >summon cheese
 by a point
 
+#testcase-goto-table-of-noways-my-new-mine-ooh
 >n
-WRONG
+You could explore your mine, but you sense the real adventure lies back above in the outdoors.
 
 >u
+
+#testcase-goto-table-of-noways-ur-branch
+>w
+You can't go west yet.
 
 >herb ranch
 by a point
@@ -56,6 +77,10 @@ by a point
 by a point
 
 >e
+
+#testcase-goto-table-of-noways-beach-ill
+>e
+You can only walk back west.
 
 >be chill
 by a point
@@ -78,6 +103,10 @@ by a bonus point
 >u
 >ne
 
+#testcase-goto-table-of-noways-bore-dread
+>n
+You can only go southwest or, maybe, east once you figure a way.
+
 >board red
 by a point
 
@@ -88,6 +117,10 @@ by a point
 >blah copse
 by a point
 
+#testcase-goto-table-of-noways-blah-copse
+>n
+You can only leave the copse to the south.
+
 >nah queue
 by a point
 
@@ -97,7 +130,15 @@ by a point
 >or clerk
 by a point
 
+#+testcase-goto-table-of-noways-blah-copse
+>e
+You can only leave the copse to the south or north.
+
 >n
+
+#testcase-goto-table-of-noways-morph-lairs
+>n
+Since you can't dare the morph lairs, the only way to leave is back south.
 
 >more flares
 by a point
@@ -112,6 +153,10 @@ by a point
 >guard entry
 by a point
 
+#testcase-goto-table-of-noways-pea-stalks
+>n
+Compass directions befuddle you at the moment. You can only go back out.
+
 >peace talks
 by a point
 
@@ -121,6 +166,13 @@ by a bonus point
 >out
 
 >se
+
+#testcase-goto-table-of-noways-dome-aching
+>ne
+The only compass direction you can go is back northwest. However, you may also find a way in to the inner nest.
+
+>in
+The can't-ache kicks in, leaving you feeling like you couldn't possibly deserve to visit such a private place!
 
 >can take
 by a point
@@ -134,7 +186,15 @@ by a point
 >in earnest
 by a point
 
+#+testcase-goto-table-of-noways-dome-aching
+>e
+The only compass direction you can go is back northwest. However, you may also go in to the inner nest.
+
 >in
+
+#testcase-goto-table-of-noways-inner-nest
+>n
+No secret passages here. You just need to go back out.
 
 >pry more
 by a point
@@ -147,7 +207,15 @@ by a point
 >punt weaker
 by a point
 
+#+testcase-goto-table-of-noways-beach-ill
+>n
+You can only walk back west or take the punt east.
+
 >e
+
+#testcase-goto-table-of-noways-pile-up-isle
+>n
+You can't see land anywhere except to the west.
 
 >base pikes
 by a point
@@ -163,6 +231,10 @@ by a point
 
 >nw
 
+#testcase-goto-table-of-noways-sore-dark
+>n
+The only exit from this cavern is southeast.
+
 >sword ark
 by a point
 
@@ -174,6 +246,10 @@ by a point
 
 >sw
 
+#testcase-goto-table-of-noways-fort-earns
+>w
+You can leave the fort to the northeast.
+
 >oh clever
 by a point
 
@@ -182,6 +258,10 @@ by a point
 >ne
 
 >s
+
+#testcase-goto-table-of-noways-tube-rod
+>s
+Only back north right now, but maybe there's something beyond the tube/rod.
 
 >too broad
 by a point
@@ -200,6 +280,10 @@ by a point
 
 >s
 
+#testcase-goto-table-of-noways-too-dark-tude-ark
+>s
+It feels hopeless to go any way but back north. Well, for now.
+
 >ho langour
 by a point
 
@@ -212,10 +296,22 @@ by a point
 
 >x trap
 
+#testcase-goto-table-of-noways-cell-urban
+>n
+You'll have to use your wits to leave.
+
 >cellar bin
 by a point
 
+#testcase-goto-table-of-noways-cellar-bin
+>n
+Just go up to leave.
+
 >u
+
+#+testcase-goto-table-of-noways-fort-earns
+>w
+You can leave the fort to the northeast or X TRAP to fall to the cellar bin.
 
 >x beak
 
@@ -225,16 +321,37 @@ by a point
 >ne
 >s
 
+#testcase-goto-table-of-noways-sage-oaks
+>s
+Only back north until you can deal with the Sage Oaks.
+
 >say jokes
 by a point
+
+#+testcase-goto-table-of-noways-sage-oaks
+>w
+Only back north or, once you figure how to suppress the "ouch" you feel, south.
 
 >gas pouch
 by a point
 
+#+testcase-goto-table-of-noways-sage-oaks
+>w
+Only back north or south beyond the Sage Oaks.
+
 >n
 
 >sss
+
+#+testcase-goto-table-of-noways-tube-rod
+>w
+Only back north or south past the remnants of the tube/rod.
+
 >s
+
+#testcase-goto-table-of-noways-dam-pink
+>s
+You can't see any way but back north.
 
 >claim it
 by a point
@@ -245,7 +362,16 @@ by a point
 >n
 >n
 >s
+
+#+testcase-goto-table-of-noways-too-dark-tude-ark
+>w
+You can only see passage north or south.
+
 >s
+
+#testcase-goto-table-of-noways-scribe-room
+>w
+You can't see any way but back north.
 
 >scry broom
 by a point
@@ -254,6 +380,10 @@ by a point
 >n
 >ss
 >s
+
+#testcase-goto-table-of-noways-dust-which-does-twitch
+>w
+You can't see any way but back north.
 
 >pro sweeping
 by a point
@@ -280,10 +410,25 @@ by a point
 >ne
 >w
 
+#testcase-goto-table-of-noways-bowl-ditch
+>w
+You can only go back east.
+
+>n
+You can only go back east.
+
 >bold itch
 by a point
 
+#+testcase-goto-table-of-noways-bowl-ditch
+>s
+You can only go north, west or back east.
+
 >w
+
+#testcase-goto-table-of-noways-turbo-tours
+>s
+You can only go back east to the Bowl/Ditch.
 
 >tour boaters
 by a bonus point
@@ -291,32 +436,83 @@ by a bonus point
 >stark raft
 by a point
 
+#+testcase-goto-table-of-noways-turbo-tours
+>w
+You can only go back east to the Bowl/Ditch or south via the raft.
+
 >s
+
+#testcase-goto-table-of-noways-farm-isles
+>s
+You can only go back north to Turbo Tours.
 
 >find rinks
 by a point
 
+#testcase-goto-table-of-noways-berries-pond
+>e
+You can't see any way but back north.
+
+>n
+
+#+testcase-goto-table-of-noways-farm-isles
+>w
+You can only go back north to Turbo Tours or south.
+
+>s
+
 >bear respond
 by a point
+
+#testcase-goto-table-of-noways-farm-isles
+>s
+Berries Pond is off limits now. You got enough there.
 
 >barn open
 by a point
 
 >n
+
+#+testcase-goto-table-of-noways-turbo-tours
+>w
+You can only go back east to the Bowl/Ditch. South, you got what you needed.
+
 >e
 >n
+
+#testcase-goto-table-of-noways-sob-acres
+>e
+While it's pretty open here, you see safety only to the south, for now.
 
 >saw bakers
 by a point
 
+#+testcase-goto-table-of-noways-sob-acres
+>e
+While it's pretty open here, the only safe ways are south or inside.
+!That den
+
 >in
+
+#testcase-goto-table-of-noways-deli-stern
+>e
+Not that way. Out.
 
 >dell eastern
 by a point
 
 >e
 
+#+testcase-goto-table-of-noways-sob-acres
+>e
+While it's pretty open here, the only safe ways are south or west/inside.
+!That den
+
 >w
+
+#+testcase-goto-table-of-noways-deli-stern
+>w
+Not that way. Out or east.
 
 >dope ale
 by a point
@@ -338,13 +534,29 @@ by a point
 >den specs
 by a point
 
+#+testcase-goto-table-of-noways-sob-acres
+>e
+While it's pretty open here, the only safe ways are south or west/inside. That den below is a possibility, as well.
+
 >d
+
+#testcase-goto-table-of-noways-groan-odes
+>n
+The only safe way is back up.
 
 >grow nodes
 by a point
 
 >no date
 by a point
+
+>e
+While it's pretty open here, the only safe ways are south or west/inside.
+
+>w
+
+>e
+You can only go south. The den is destroyed, and the deli is busy.
 
 >e
 >s
@@ -354,7 +566,15 @@ by a point
 >malt hour
 by a point
 
+#testcase-goto-table-of-noways-bore-dread
+>n
+You can only go southwest or east.
+
 >e
+
+#testcase-goto-table-of-noways-joy-nadir
+>n
+The only way out is back west.
 
 >join aider
 by a point
@@ -364,11 +584,19 @@ by a point
 
 >u
 
+#testcase-goto-table-of-noways-throne-ow-throw-now
+>n
+You can only go back down here.
+
 >use it
 by a point
 
 >lie fruits
 by a point
+
+#+testcase-goto-table-of-noways-ur-branch
+>out
+You can't go outside. There are no new ways to go.
 
 >d
 

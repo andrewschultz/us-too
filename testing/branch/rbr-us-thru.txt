@@ -61,6 +61,14 @@ by a point
 #testcase-room-names-my-new-mine-ooh
 `My New Mine, Ooh!
 
+@gt
+#testcase-goto-table-of-noways-my-new-mine-ooh
+>n
+You could explore your mine, but you have no purpose, or errand, or ... there's another word, here.
+\\
+>u
+You don't want to go wandering outside after you just got here! You need to catch your bearings. Focus on yourself a bit. Maybe even a lot.
+
 >i
 Your Aw-Lug-All-Ugh has nothing special in it.
 You have that too-rad tour ad flopping about, too. It seems non-critical. You can probably examine and then drop it.
@@ -343,6 +351,14 @@ You don't need to prefix any important two-word command with SAY. Just say the t
 >say
 You don't need to prefix any important two-word command with SAY. Just say the two words.
 
+@gt
+#+testcase-goto-table-of-noways-my-new-mine-ooh
+>n
+You could explore your mine, but you have no purpose, or errand, or ... there's another word, here.
+\\
+>u
+You don't want to go wandering outside after you just got here! You need to catch your bearings. Focus on yourself a bit. Maybe even a lot.
+
 @part
 #testcase-one-right-table-of-main-oronyms-try-quest-1-try
 >try xxx
@@ -413,6 +429,7 @@ You must have one word right for achieving the game's objective.
 You already have an idea of your quest!
 
 @gt
+#+testcase-goto-table-of-noways-my-new-mine-ooh
 >n
 You could explore your mine, but you really should get rid of that beast.
 \\
@@ -465,6 +482,7 @@ You manage to stand up to the beast a bit. It could beat you, sure, but you're n
 You can't see any such thing.
 
 @gt
+#+testcase-goto-table-of-noways-my-new-mine-ooh
 >n
 You could explore your mine, but you sense the real adventure lies back above in the outdoors.
 \\
@@ -692,14 +710,20 @@ You're confident you've figured what the munchies are. And you know what? You're
 {$EYEITMNO} the cheese.
 
 @gt
+#testcase-goto-table-of-noways-my-new-mine-ooh
 >n
-WRONG
+You could explore your mine, but you sense the real adventure lies back above in the outdoors.
 
 >u
 
 @all
 #testcase-room-names-ur-branch
 `Ur-Branch
+
+@gt
+#testcase-goto-table-of-noways-ur-branch
+>w
+You can't go west yet.
 
 @rej
 #testcase-reject-start-table-of-main-oronyms-pre-loose-intro-rule
@@ -798,6 +822,11 @@ Your newly opened mind discerns a safe passage east. Hey, that's a start!
 @all
 #testcase-room-names-beach-ill
 `Beach, Ill
+
+@gt
+#testcase-goto-table-of-noways-beach-ill
+>e
+You can only walk back west.
 
 @hint
 #testcase-values-eyes-number-of-beach-ill-is-25
@@ -1026,6 +1055,11 @@ Perhaps it's too obvious, but you decide to have fun, and you do.
 #testcase-room-names-bore-dread
 `Bore Dread
 
+@gt
+#testcase-goto-table-of-noways-bore-dread
+>n
+You can only go southwest or, maybe, east once you figure a way.
+
 @part
 ##balance undos
 #testcase-one-right-table-of-main-oronyms-board-red-1-board
@@ -1136,6 +1170,11 @@ Aha! That was what you were doing wrong. You just needed to tweak a thing or two
 \\
 #testcase-room-names-blah-copse
 `Blah Copse
+
+@gt
+#testcase-goto-table-of-noways-blah-copse
+>n
+You can only leave the copse to the south.
 
 @hint
 #testcase-values-eyes-number-of-blah-copse-is-1
@@ -1256,10 +1295,20 @@ With that, the clerk runs away, turning briefly to wave at you.
 >eye blah string
 The eyes light up yellow and show five dots, then four dots.
 
+@gt
+#+testcase-goto-table-of-noways-blah-copse
+>e
+You can only leave the copse to the south or north.
+
 >n
 @all
 #testcase-room-names-morph-lairs
 `Morph Lairs
+
+@gt
+#testcase-goto-table-of-noways-morph-lairs
+>n
+Since you can't dare the morph lairs, the only way to leave is back south.
 
 @hom
 #testcase-homonym-detail-hom-flairs-flayers-rule-if-the-player's-command-includes-flairs-or-the-player's-command-includes-flair
@@ -1425,6 +1474,11 @@ You look for a way past the tree, and suddenly you have an idea, and once you kn
 #testcase-room-names-pea-stalks
 `Pea Stalks
 
+@gt
+#testcase-goto-table-of-noways-pea-stalks
+>n
+Compass directions befuddle you at the moment. You can only go back out.
+
 @hint
 #testcase-values-eyes-number-of-pea-stalks-is-55
 >eye
@@ -1524,6 +1578,14 @@ Oh wait! There is something that will add a bit of flavor! Actually, it's a weir
 @all
 #testcase-room-names-dome-aching
 `Dome, Aching
+
+@gt
+#testcase-goto-table-of-noways-dome-aching
+>ne
+The only compass direction you can go is back northwest. However, you may also find a way in to the inner nest.
+\\
+>in
+The can't-ache kicks in, leaving you feeling like you couldn't possibly deserve to visit such a private place!
 
 @hint
 #testcase-values-eyes-number-of-dome-aching-is-56
@@ -1689,6 +1751,11 @@ by a point
 #testcase-run-post-in-earnest-rule-default
 The inner nest seems to open up a bit more, comfortable you're not just running through a checklist. Well, perhaps you still are. But worst case, you took the time to pretend and make it believable. You can now go IN.
 
+@gt
+#+testcase-goto-table-of-noways-dome-aching
+>e
+The only compass direction you can go is back northwest. However, you may also go in to the inner nest.
+
 @hint
 #+testcase-values-eyes-number-of-inscen-is-27
 >eye inner nest
@@ -1699,6 +1766,11 @@ The inner nest seems to open up a bit more, comfortable you're not just running 
 @all
 #testcase-room-names-inner-nest
 `Inner Nest
+
+@gt
+#testcase-goto-table-of-noways-inner-nest
+>n
+No secret passages here. You just need to go back out.
 
 @hint
 #testcase-values-eyes-number-of-inner-nest-is--1
@@ -1789,11 +1861,21 @@ by a point
 >eye punt weaker
 {$EYEITMDONE}
 
+@gt
+#+testcase-goto-table-of-noways-beach-ill
+>n
+You can only walk back west or take the punt east.
+
 >e
 
 @all
 #testcase-room-names-a-pile-up-isle
 `A Pile-Up Isle
+
+@gt
+#testcase-goto-table-of-noways-pile-up-isle
+>n
+You can't see land anywhere except to the west.
 
 @hint
 #testcase-values-eyes-number-of-a-pile-up-isle-is-1
@@ -1938,6 +2020,11 @@ It makes you almost forget about the high cup. Well, it turns out the high cup i
 @all
 `Sore Dark
 
+@gt
+#testcase-goto-table-of-noways-sore-dark
+>n
+The only exit from this cavern is southeast.
+
 @part
 ##balance undos
 #testcase-one-right-table-of-main-oronyms-sword-ark-1-sword
@@ -2072,6 +2159,11 @@ You hear rumbling. You can't imagine there are any bigger secret here, so it see
 #testcase-room-names-fort-earns-four-turns
 `Fort Earns-Four-Turns
 
+@gt
+#testcase-goto-table-of-noways-fort-earns
+>w
+You can leave the fort to the northeast.
+
 @hint
 #testcase-values-eyes-number-of-fort-earns-is-1
 >eye
@@ -2134,6 +2226,11 @@ Then you notice what the lever was hiding: a be-quick beak wick! Nice if you nee
 #testcase-room-names-tube-rod
 `Tube/Rod
 
+@gt
+#testcase-goto-table-of-noways-tube-rod
+>s
+Only back north right now, but maybe there's something beyond the tube/rod.
+
 @hint
 #testcase-values-eyes-number-of-tube-rod-is-35
 >eye
@@ -2190,6 +2287,11 @@ The tube/rod slowly cracks, then bursts. A passage now leads south. You pause a 
 @all
 #testcase-room-names-too-dark-tude-ark
 `Too-Dark Tude Ark
+
+@gt
+#testcase-goto-table-of-noways-too-dark-tude-ark
+>s
+It feels hopeless to go any way but back north. Well, for now.
 
 @hint
 #testcase-values-eyes-number-of-too-dark-tude-ark-is-1
@@ -2290,6 +2392,11 @@ Oh my! You pull the felt wrap away, and that is one fell looking trap!
 #testcase-room-names-cell-urban
 `Cell, Urban
 
+@gt
+#testcase-goto-table-of-noways-cell-urban
+>n
+You'll have to use your wits to leave.
+
 @hint
 #testcase-values-eyes-number-of-cell-urban-is-63
 >eye
@@ -2334,7 +2441,17 @@ You bang on the cell door, claiming you've been sent to the wrong place. To your
 >eye
 {$EYERMDONE}
 
+@gt
+#testcase-goto-table-of-noways-cellar-bin
+>n
+Just go up to leave.
+
 >u
+
+@gt
+#+testcase-goto-table-of-noways-fort-earns
+>w
+You can leave the fort to the northeast or X TRAP to fall to the cellar bin.
 
 >x beak
 
@@ -2347,6 +2464,11 @@ You bang on the cell door, claiming you've been sent to the wrong place. To your
 @all
 #testcase-room-names-sage-oaks
 `Sage Oaks
+
+@gt
+#testcase-goto-table-of-noways-sage-oaks
+>s
+Only back north until you can deal with the Sage Oaks.
 
 @hint
 #+testcase-values-eyes-number-of-sage-oaks-is-35
@@ -2387,6 +2509,11 @@ by a point
 #testcase-run-post-say-jokes-rule-default
 "Eh, jokes age oaks," they mutter at first. But they get into it more. They warn you of the trouble you'll get in if you keep telling corny jokes. It doesn't show you're smart. But then you explain you carefully crafted said jokes to peeve them. You've had experience all game with wordplay, too.
 They're pretty impressed with your presentation. You feel a magic surge--you can pass to the south now.
+
+@gt
+#+testcase-goto-table-of-noways-sage-oaks
+>w
+Only back north or, once you figure how to suppress the "ouch" you feel, south.
 
 @hint
 #+testcase-values-eyes-number-of-sage-oaks-is-35
@@ -2431,6 +2558,11 @@ You shake your head.
 Well, you had to figure they had one or two zingers left.
 "You are completely free to go south now. Whether or not it will be productive right now, we will not say," they intone.
 
+@gt
+#+testcase-goto-table-of-noways-sage-oaks
+>w
+Only back north or south beyond the Sage Oaks.
+
 @hint
 #testcase-values-eyes-number-of-gas-pouch-is--1
 >eye gas pouch
@@ -2444,11 +2576,22 @@ Well, you had to figure they had one or two zingers left.
 {$EYEITMNO} the Sign Ought-Sigh-Not.
 
 >sss
+
+@gt
+#+testcase-goto-table-of-noways-tube-rod
+>w
+Only back north or south past the remnants of the tube/rod.
+
 >s
 
 @all
 #testcase-room-names-dam-pink
 `Dam, Pink
+
+@gt
+#testcase-goto-table-of-noways-dam-pink
+>s
+You can't see any way but back north.
 
 @part
 ##balance undos
@@ -2536,11 +2679,22 @@ You use the gas pouch to drain out a good dose of damp ink that's dripping from 
 >n
 >n
 >s
+
+@gt
+#+testcase-goto-table-of-noways-too-dark-tude-ark
+>w
+You can only see passage north or south.
+
 >s
 
 @all
 #testcase-room-names-scribe-room
 `Scribe Room
+
+@gt
+#testcase-goto-table-of-noways-scribe-room
+>w
+You can't see any way but back north.
 
 @part
 ##balance undos
@@ -2599,6 +2753,11 @@ The eyes show nothing. Perhaps it's better the broom isn't magical. You saw Fant
 @all
 #testcase-room-names-dust-which-does-twitch
 `Dust Which Does Twitch
+
+@gt
+#testcase-goto-table-of-noways-dust-which-does-twitch
+>w
+You can't see any way but back north.
 
 @hint
 #testcase-values-eyes-number-of-dust-which-is-1
@@ -2788,6 +2947,14 @@ You can't see any such thing.
 #testcase-room-names-bowl-ditch
 `Bowl Ditch
 
+@gt
+#testcase-goto-table-of-noways-bowl-ditch
+>w
+You can only go back east.
+\\
+>n
+You can only go back east.
+
 @part
 ##balance undos
 #testcase-one-right-table-of-main-oronyms-bold-itch-1-bold
@@ -2828,10 +2995,20 @@ You have a think. It's not terrible. You've gotten here. You can get back. You r
 >eye
 {$EYERMDONE}
 
+@gt
+#+testcase-goto-table-of-noways-bowl-ditch
+>s
+You can only go north, west or back east.
+
 >w
 
 @all
 `Turbo Tours
+
+@gt
+#testcase-goto-table-of-noways-turbo-tours
+>s
+You can only go back east to the Bowl/Ditch.
 
 @part
 ##balance undos
@@ -2905,6 +3082,11 @@ The eyes light up green and show five dots, then four dots.
 >stark raft
 by a point
 
+@gt
+#+testcase-goto-table-of-noways-turbo-tours
+>w
+You can only go back east to the Bowl/Ditch or south via the raft.
+
 @all
 #testcase-check-pre-stark-raft-rule-fallthrough
 #testcase-run-post-stark-raft-rule-default
@@ -2920,6 +3102,11 @@ You let slip that perhaps a stark raft is more in your price range. A voice from
 @all
 #testcase-room-names-far-miles-farm-isles
 Far Miles Farm Isles
+
+@gt
+#testcase-goto-table-of-noways-farm-isles
+>s
+You can only go back north to Turbo Tours.
 
 @rej
 >barn open
@@ -2975,6 +3162,19 @@ It's too warm out for ice rinks, but then, you didn't expect any clues to be obv
 #testcase-room-names-berries-pond
 `Berries Pond
 
+@gt
+#testcase-goto-table-of-noways-berries-pond
+>e
+You can't see any way but back north.
+\\
+>n
+\\
+#+testcase-goto-table-of-noways-farm-isles
+>w
+You can only go back north to Turbo Tours or south.
+\\
+>s
+
 @part
 ##balance undos
 #testcase-one-right-table-of-main-oronyms-bear-respond-1-bear
@@ -3013,6 +3213,11 @@ You wave the oar at the tree, then wave it, hoping to catch a bear's attention. 
 
 @all+
 `Far Miles Farm Isles
+
+@gt
+#testcase-goto-table-of-noways-farm-isles
+>s
+Berries Pond is off limits now. You got enough there.
 
 @hint
 #testcase-values-eyes-number-of-farm-isles-is-1
@@ -3069,12 +3274,23 @@ Of course it makes sense there'd be a barn on farm isles. You visit the barn. In
 {$EYEITMNO}
 
 >n
+
+@gt
+#+testcase-goto-table-of-noways-turbo-tours
+>w
+You can only go back east to the Bowl/Ditch. South, you got what you needed.
+
 >e
 >n
 
 @all
 #testcase-room-names-sob-acres
 `Sob Acres
+
+@gt
+#testcase-goto-table-of-noways-sob-acres
+>e
+While it's pretty open here, you see safety only to the south, for now.
 
 @part
 ##balance undos
@@ -3116,11 +3332,22 @@ You keep an eye out for other people. Eventually, you see them: bakers, upset th
 >eye
 {$EYERMDONE}
 
+@gt
+#+testcase-goto-table-of-noways-sob-acres
+>e
+While it's pretty open here, the only safe ways are south or inside.
+!That den
+
 >in
 
 @all
 #testcase-room-names-deli-stern
 `Deli, Stern
+
+@gt
+#testcase-goto-table-of-noways-deli-stern
+>e
+Not that way. Out.
 
 @hint
 #testcase-values-eyes-number-of-owners-is-1
@@ -3174,6 +3401,12 @@ The surroundings are a bit more welcoming now. Oh, you can go east as well as ou
 #+testcase-room-names-sob-acres
 `Dell, Eastern
 
+@gt
+#+testcase-goto-table-of-noways-sob-acres
+>e
+While it's pretty open here, the only safe ways are south or west/inside.
+!That den
+
 >w
 
 @hint
@@ -3208,6 +3441,11 @@ You must have one word right for finding something to trade your dough pail for.
 #testcase-values-eyes-number-of-dough-pail-is-43
 >eye dough pail
 The eyes light up green and show four dots, then three dots.
+
+@gt
+#+testcase-goto-table-of-noways-deli-stern
+>w
+Not that way. Out or east.
 
 >dope ale
 by a point
@@ -3373,11 +3611,21 @@ You lose a bit of strength, strength you didn't really need, and wind up with a 
 >eye den specs
 {$EYEITMDONE}
 
+@gt
+#+testcase-goto-table-of-noways-sob-acres
+>e
+While it's pretty open here, the only safe ways are south or west/inside. That den below is a possibility, as well.
+
 >d
 
 @all
 #testcase-room-names-groan-odes
 `Groan Odes
+
+@gt
+#testcase-goto-table-of-noways-groan-odes
+>n
+The only safe way is back up.
 
 @hint
 #testcase-values-eyes-number-of-groan-odes-is-45
@@ -3471,6 +3719,15 @@ There's not much else to say. You feel a bit awkward. All you can do is tell the
 >eye hell pin
 {$EYEITMNO}
 
+@gt
+>e
+While it's pretty open here, the only safe ways are south or west/inside.
+\\
+>w
+\\
+>e
+You can only go south. The den is destroyed, and the deli is busy.
+
 >e
 >s
 >e
@@ -3512,11 +3769,21 @@ by a point
 You call out for malt hour, which maybe isn't quite as good as happy hour. Heck, it might even be a chocolate malt and not malt liquor. But you promise liquid refreshment, which you have in spades, and the guardians come down to share it with you. There are fewer guardians than you thought, so you can save some alcohol for later.
 You have a good old talk about ... well, everything. You explain your quest, which they actually find kind of cool. They mention they need to sleep off the booze and are glad to let you through to the east.
 
+@gt
+#testcase-goto-table-of-noways-bore-dread
+>n
+You can only go southwest or east.
+
 >e
 
 @all
 #testcase-room-names-joy-nadir
 `Joy Nadir
+
+@gt
+#testcase-goto-table-of-noways-joy-nadir
+>n
+The only way out is back west.
 
 @part
 ##balance undos
@@ -3612,6 +3879,11 @@ Ur-Branch
 @all
 #testcase-room-names-throne-ow-throw-now
 `Throne Ow-Throw-Now
+
+@gt
+#testcase-goto-table-of-noways-throne-ow-throw-now
+>n
+You can only go back down here.
 
 @hint
 #testcase-values-eyes-number-of-throne-ow-throw-now-is-32
@@ -3711,6 +3983,11 @@ Your Aw-Lug-All-Ugh feels like it may burst from the additional weight! Good thi
 #testcase-reject-end-table-of-main-oronyms-pre-mess-pot-rule
 >mess pot
 {$REJECT2}
+
+@gt
+#+testcase-goto-table-of-noways-ur-branch
+>out
+You can't go outside. There are no new ways to go.
 
 >d
 

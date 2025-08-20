@@ -226,6 +226,7 @@ by a point
 >n
 
 >sss
+
 >s
 
 #testcase-mistake-us-too-say-text-say-2
@@ -248,6 +249,7 @@ by a point
 >n
 >n
 >s
+
 >s
 
 >scry broom
@@ -306,6 +308,7 @@ by a point
 by a point
 
 >n
+
 >e
 >n
 

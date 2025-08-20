@@ -219,6 +219,7 @@ by a point
 >n
 
 >sss
+
 >s
 
 >claim it
@@ -230,6 +231,7 @@ by a point
 >n
 >n
 >s
+
 >s
 
 >scry broom
@@ -288,6 +290,7 @@ by a point
 by a point
 
 >n
+
 >e
 >n
 

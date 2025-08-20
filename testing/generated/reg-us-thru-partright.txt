@@ -1039,6 +1039,7 @@ by a point
 >n
 
 >sss
+
 >s
 
 #testcase-one-right-table-of-main-oronyms-claim-it-1-claim
@@ -1090,6 +1091,7 @@ by a point
 >n
 >n
 >s
+
 >s
 
 #testcase-one-right-table-of-main-oronyms-scry-broom-1-scry
@@ -1368,6 +1370,7 @@ You must have one word right for overcoming rejection from the bar.
 by a point
 
 >n
+
 >e
 >n
 

@@ -502,6 +502,7 @@ Well, you had to figure they had one or two zingers left.
 >n
 
 >sss
+
 >s
 
 #testcase-room-names-dam-pink
@@ -524,6 +525,7 @@ You use the gas pouch to drain out a good dose of damp ink that's dripping from 
 >n
 >n
 >s
+
 >s
 
 #testcase-room-names-scribe-room
@@ -650,6 +652,7 @@ by a point
 Of course it makes sense there'd be a barn on farm isles. You visit the barn. Inside it are some truly glorious eggs! Of course, they are not for free, but you have plenty of extra berries. The farmer thanks you--picking berries to the south is so treacherous--and hands you the very best egg. It's an egg of a GUV'!
 
 >n
+
 >e
 >n
 

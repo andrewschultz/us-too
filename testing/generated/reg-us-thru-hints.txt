@@ -713,6 +713,7 @@ The eyes show nothing. You've done everything you need with
 The eyes show nothing. Probably don't need to do anything with the Sign Ought-Sigh-Not.
 
 >sss
+
 >s
 
 #testcase-values-eyes-number-of-clay-mitt-is-52
@@ -732,6 +733,7 @@ by a point
 >n
 >n
 >s
+
 >s
 
 #testcase-values-eyes-number-of-scribe-room-is-45
@@ -899,6 +901,7 @@ by a point
 The eyes show nothing. Probably don't need to do anything with
 
 >n
+
 >e
 >n
 
