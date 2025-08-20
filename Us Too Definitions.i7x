@@ -82,7 +82,6 @@ to say which-south of (orm - an ordroom):
 	repeat with X running from 1 to rmord of orm:
 		say "S";
 
-
 check going south in ur branch when extra-turns > 0:
 	repeat with o running through ordrooms:
 		if rmord of o is extra-turns:

@@ -525,7 +525,7 @@ this is the hom-flairs-flayers rule:
 	if the player's command includes "flayers" or the player's command includes "flayer":
 		say "You probably don't need flayers as allies, and you really don't need them as enemies.";
 	if the player's command includes "flairs" or the player's command includes "flair":
-		say "Your clothes fail to become less jazzy. Fortunately, since you're on a quest, there's no restaurant manager around requiring this.";
+		say "Your clothes fail to become jazzier. Fortunately, since you're on a quest, there's no restaurant manager around requiring this.";
 
 a wordtwisting rule (this is the pre-more-flares rule):
 	if player is not in morph lairs, unavailable;
@@ -1067,7 +1067,8 @@ a wordtwisting rule (this is the pre-say-jokes rule):
 
 this is the post-say-jokes rule:
 	now sco-say-jokes is true;
-	say "'Eh, jokes age oaks,' they mutter at first. But they get into it more. They warn you of the trouble you'll get in if you keep telling corny jokes. It doesn't show you're smart. But then you explain you carefully crafted said jokes to peeve them. You've had experience all game with wordplay, too.[paragraph break]They're pretty impressed with your presentation. You feel a magic surge--you can pass to the south now.";
+	say "'Eh, jokes age oaks,' they mutter at first. But they get into it more. They warn you of the trouble you'll get in if you keep telling corny jokes. It doesn't show you're smart. But then you explain you carefully crafted said jokes to peeve them. You've had experience all game with wordplay, too.[paragraph break]They're pretty impressed with your presentation. Their branches and leaves blow in the wind, beckoning you south. You start, then gasp 'ouch.' What the heck?! They were fibbing.";
+	say "[line break]The sage oaks laugh a bit. 'Just a bit of revenge for those painful jokes,' they say, 'nothing permanent. We never said we'd give painless passage south. It will be for your own good in the long term. Just a bit of hazing.'";
 	reveal dust which does twitch to south;
 	declue-here;
 	declue sageoakscen;
@@ -1201,36 +1202,40 @@ volume directions
 table of noways
 noway-rm	noway-txt
 My New Mine Ooh	"You could explore your mine, but you [if sco-try-quest is false]have no purpose, or errand, or ... there's another word, here[else if sco-be-strong is false]really should get rid of that beast[else]sense the real adventure lies back above in the outdoors[end if]."
-Ur Branch	"You can't go [noun][if noun is eventual] yet[end if][if south is branchcan and west is branchcan]. There are no new ways to go[end if]."
+Ur Branch	"You can't go [noun][if noun is eventual] yet[end if][if south is branchdone and west is branchdone]. There are no new ways to go[end if]."
 Beach Ill	"You can only walk back west[if sco-punt-weaker is true] or take the punt east[end if]."
 Pile Up Isle	"You can't see land anywhere except to the west."
 Sore Dark	"The only exit from this cavern is southeast."
-Bore Dread	"The only exit from this enclosure is southwest."
+Bore Dread	"You can only go southwest or[if sco-malt-hour is false], maybe, east once you figure a way[else] east[end if]."
 Blah Copse	"You can only leave the copse to the south[if sco-or-clerk is true] or north[end if]."
 Morph Lairs	"Since you can't dare the morph lairs, the only way to leave is back south."
 Pea Stalks	"Compass directions befuddle you at the moment. You can only go back out."
 Dome Aching	"The only compass direction you can go is back northwest. However, you may also [if sco-in-earnest is true]go[else]find a way[end if] in to the inner nest."
 Inner Nest	"No secret passages here. You just need to go back out."
-Fort Earns	"You can leave the fort to the northeast [if cellar bin is visited]or X TRAP to fall to the cellar bin[end if]."
+Fort Earns	"You can leave the fort to the northeast[if cellar bin is visited] or X TRAP to fall to the cellar bin[end if]."
 Cell Urban	"You'll have to use your wits to leave."
 Cellar Bin	"Just go up to leave."
-Bowl Ditch	"You can only go [if sco-bold-itch is true]north or [end if]back east."
-Sob Acres	"While it's pretty open here, [if sco-saw-bakers is true]the only safe ways are south or [acres-to-deli][else]you see safety only to the south, for now[end if]."
+Bowl Ditch	"You can only go [if sco-bold-itch is true]north, west or [end if]back east."
+Sob Acres	"[if gs-deli-party is true]You can only go south. The den is destroyed, and the deli is busy[else][sob-acres-cantgo][end if]."
 Deli Stern	"Not that way. Out[if sco-dell-eastern is true] or east[end if]."
 Tube Rod	"Only back north [if sco-too-broad is false]right now, but maybe there's something beyond the tube/rod[else]or south past the remnants of the tube/rod[end if]."
-Sage Oaks	"Only back north [if sco-gas-pouch is true]or south beyond the Sage Oaks[else if sco-say-jokes is true]or south once you figure how to suppress the 'ouch' you feel[else]until you can deal with the Sage Oaks[end if]."
-Too Dark Tude Ark	"[if sco-ho-langour is false]It feels hopeless to go any way but back north[else]You feel a bit more Only back north. Well, for now."
+Sage Oaks	"Only back north [if sco-gas-pouch is true]or south beyond the Sage Oaks[else if sco-say-jokes is true]or, once you figure how to suppress the 'ouch' you feel, south[else]until you can deal with the Sage Oaks[end if]."
+Too Dark Tude Ark	"[if sco-ho-langour is false]It feels hopeless to go any way but back north. Well, for now[else]You can only see passage north or south[end if]."
 Dam Pink	"You can't see any way but back north."
 Scribe Room	"You can't see any way but back north."
 Dust Which Does Twitch	"You can't see any way but back north."
-Turbo Tours	"You can only go back east to the Bowl/Ditch[if sco-stark-raft is true and sco-bear-respond is false]or south via the raft[end if]."
-Farm Isles	"You can only go back north to [Turbo Tours][if sco-find-rinks is true and sco-bear-respond is false] or south[end if]."
+Turbo Tours	"You can only go back east to the Bowl/Ditch[if sco-barn-open is true]. South, you got what you needed[else if sco-stark-raft is true and sco-bear-respond is false] or south via the raft[end if]."
+Farm Isles	"You can only go back north to Turbo Tours[if sco-find-rinks is true and sco-bear-respond is false] or south[end if]."
 Berries Pond	"You can't see any way but back north."
 Joy Nadir	"The only way out is back west."
-Groan Odes	"The only safe way is back outside."
+Groan Odes	"The only safe way is back up."
 Throne Ow Throw Now	"You can only go back down here."
 
-to say acres-to-deli: say "[if sco-dell-eastern is true]west/[end if]in"
+to say sob-acres-cantgo: say "While it's pretty open here, [if sco-saw-bakers is true]the only safe ways are south or [acres-to-deli][else]you see safety only to the south, for now[end if][if sco-den-specs is true]. [den-below][end if]"
+
+to say acres-to-deli: say "[if sco-dell-eastern is true]west/[end if]inside"
+
+to say den-below: say "[if sco-no-date is false]That den below is a possibility, as well[else]You destroyed the den below[end if]"
 
 Us Too Tables ends here.
 

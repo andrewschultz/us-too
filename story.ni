@@ -762,7 +762,8 @@ to say dome-scen:
 	else:
 		say "You showed you were worthy to visit the inner nest";
 
-check going inside in Dome Aching when sco-can-take is true and sco-in-earnest is false:
+check going inside in Dome Aching when sco-in-earnest is false:
+	if sco-can-take is false, say "The can't-ache kicks in, leaving you feeling like you couldn't possibly deserve to visit such a private place!" instead;
 	say "The inner nest repels you. Your motives aren't pure. Quester see, quester visit, quester score points. So cold and calculating!" instead;
 
 chapter cant ache
@@ -1005,6 +1006,8 @@ Far Miles Farm Isles is a room in universal. eyes-number of Farm Isles is 1. "We
 
 check going north in farm isles: raft-tours;
 
+check going south in farm isles when sco-bear-respond is true: say "Berries Pond is off limits now. You got enough there." instead;
+
 chapter bar nopin
 
 the Bar Nopin is a thing in Far Miles. "A Bar, Nopin['], sits here trying to look elite. Perhaps you don't need to get there but somewhere else. It has a fine drinks add attached to it.". description is "Unfortunately, with the fine drinks sign on it, it's probably out of your price range, so it won't help with the alcohol requirements in your list. [if booze-score is 2]No big deal. You found enough[else if booze-score is 1]But you've found some already, which is nice[else]Perhaps there is easier booze to find elsewhere[end if].". printed name of Bar Nopin is "Bar, Nopin[']". eyes-number of bar nopin is 44. eyes-rule of bar nopin is pre-barn-open rule.
@@ -1054,8 +1057,8 @@ sageoakscen is a plural-named privately-named impressable sentient in Sage Oaks.
 
 understand "sage/oaks" and "sage oaks" as sageoakscen.
 
-check going south in Sage Oaks when sco-gas-pouch is false:
-	say "[one of]As you go south, you hear a tingling that makes you gasp 'ouch.' It grows as you continue, and you have to turn back. What's up with that? They said they'd make a passage south.[paragraph break]The sage oaks laugh a bit. 'Just a bit of revenge for those painful joke,' they say, 'nothing permanent. We never said we'd give painless passage south unless ... well, what you need to do, it will be for your own good in the long run.'[paragraph break]Now what did they mean by that?[or]Again, you try to go south, and again you gasp 'ouch,' and the sage oaks chuckle. This is getting a bit tiresome. What to do?[stopping]" instead;
+check going south in Sage Oaks when sco-gas-pouch is false and sco-say-jokes is true:
+	say "You go south again and back off quickly once you gasp 'ouch.'" instead;
 
 chapter gas pouch
 
