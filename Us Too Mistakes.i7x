@@ -10,7 +10,13 @@ understand "say [text]" and "say" as a mistake ("You found the only important co
 
 volume puzzle-specific mistakes
 
+book clay mitt
+
 understand "claim it" as a mistake ("You wonder if you should reclaim the mitt, but then, you think it might start to reek. Lame.") when player has clay mitt. [this is so the mitt doesn't intersect with two other "IT" puzzles]
+
+book the throne
+
+understand "sit" and "sit [text]" as a mistake ("You were smart enough to get this far. I'm gonna go out on a limb and say you're smart enough not to heed a demanding, evil voice asking you to do the equivalent of touching a live wire, and you're just poking around for fun")
 
 Us Too Mistakes ends here.
 

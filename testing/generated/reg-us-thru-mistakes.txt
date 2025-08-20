@@ -372,6 +372,14 @@ by a point
 
 >u
 
+#testcase-mistake-us-too-sit-sit-text
+>sit
+You were smart enough to get this far. I'm gonna go out on a limb and say you're smart enough not to heed a demanding, evil voice asking you to do the equivalent of touching a live wire, and you're just poking around for fun.
+
+#+testcase-mistake-us-too-sit-sit-text
+>sit text
+You were smart enough to get this far. I'm gonna go out on a limb and say you're smart enough not to heed a demanding, evil voice asking you to do the equivalent of touching a live wire, and you're just poking around for fun.
+
 >use it
 by a point
 

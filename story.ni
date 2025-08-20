@@ -14,6 +14,8 @@ include Punctuation Stripper by Andrew Schultz.
 
 include Bold Final Question Rows by Andrew Schultz.
 
+include Old School Verb Total Carnage by Andrew Schultz.
+
 include Standard Helping Metaverbs by Andrew Schultz.
 
 include Versioning and Extensions Tweak by Andrew Schultz.
