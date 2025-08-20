@@ -225,7 +225,7 @@ by a point
 The eyes show nothing. You've done everything you need with
 
 #testcase-values-eyes-number-of-gauche-hip-go-ship-is-1
->eye gauche hip go ship
+>eye ship
 The eyes show nothing. Probably don't need to do anything with
 
 #testcase-values-eyes-number-of-pun-tweaker-is-46
@@ -1106,4 +1106,4 @@ The eyes show nothing. You've done everything you need with
 >a stew
 by a point
 
-Place-to-Play Stew
+Would you like to

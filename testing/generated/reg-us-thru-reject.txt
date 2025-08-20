@@ -556,11 +556,26 @@ by a point
 
 >s
 
+>barn open
+Of course it makes sense there'd be a barn on farm isles. You find a barn, open, hidden behind the bar. There are some truly glorious eggs in there, but you have nothing to trade for them yet.
+
+>barn open
+!Of course it makes sense there'd be a barn on farm isles.
+You find a barn, open, hidden behind the bar. There are some truly glorious eggs in there, but you have nothing to trade for them yet.
+
+#testcase-think-table-of-main-oronyms-pre-barn-open-rule
+>think
+You can transact with the BARN OPEN once you have something of value to trade.
+
 >find rinks
 by a point
 
 >bear respond
 by a point
+
+#testcase-think-table-of-main-oronyms-pre-barn-open-rule
+>think
+You can transact with the BARN OPEN now you have something of value to trade.
 
 >barn open
 by a point
@@ -886,4 +901,4 @@ That thought/action/observation/request brings up nothing. Us Too has a limited 
 >a stew
 by a point
 
-Place-to-Play Stew
+Would you like to
