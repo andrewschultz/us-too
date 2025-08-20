@@ -244,6 +244,7 @@ by a point
 
 >n
 >n
+
 >s
 >s
 
@@ -304,6 +305,7 @@ by a point
 by a point
 
 >e
+
 >w
 
 >wheat rye

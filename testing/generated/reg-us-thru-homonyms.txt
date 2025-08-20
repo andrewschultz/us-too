@@ -63,6 +63,10 @@ by a bonus point
 >u
 >ne
 
+#testcase-homonym-reject-table-of-main-oronyms-bored
+>bored xxx
+WRONG
+
 >board red
 by a point
 
@@ -84,6 +88,7 @@ by a point
 
 >n
 
+#testcase-homonym-reject-table-of-main-oronyms-flayers-flayer-flair-flairs-hom-flairs-flayers-rule
 #testcase-homonym-detail-hom-flairs-flayers-rule-if-the-player's-command-includes-flairs-or-the-player's-command-includes-flair
 >more flair
 Your clothes fail to become jazzier. Fortunately, since you're on a quest, there's no restaurant manager around requiring this.
@@ -91,6 +96,7 @@ Your clothes fail to become jazzier. Fortunately, since you're on a quest, there
 >more flairs
 Your clothes fail to become jazzier. Fortunately, since you're on a quest, there's no restaurant manager around requiring this.
 
+#+testcase-homonym-reject-table-of-main-oronyms-flayers-flayer-flair-flairs-hom-flairs-flayers-rule
 #testcase-homonym-detail-hom-flairs-flayers-rule-if-the-player's-command-includes-flayers-or-the-player's-command-includes-flayer
 >more flayer
 You probably don't need flayers as allies, and you really don't need them as enemies.
@@ -154,6 +160,10 @@ by a point
 >pie crust
 by a point
 
+#testcase-homonym-reject-table-of-main-oronyms-pi
+>pi xxx
+$HOMONYM TEXT HERE
+
 >hike up
 by a point
 
@@ -161,6 +171,16 @@ by a point
 >w
 
 >nw
+
+#testcase-homonym-detail-hom-sword-ark-rule-default
+#testcase-homonym-reject-table-of-main-oronyms-soared-arc-hom-sword-ark-rule
+>xxx arc
+No, that would put something way too high up out of reach, even if the light were perfect. But you must be close!
+
+#+testcase-homonym-detail-hom-sword-ark-rule-default
+#+testcase-homonym-reject-table-of-main-oronyms-soared-arc-hom-sword-ark-rule
+>xxx arc
+No, that would put something way too high up out of reach, even if the light were perfect. But you must be close!
 
 >sword ark
 by a point
@@ -267,6 +287,7 @@ by a point
 
 >n
 >n
+
 >s
 >s
 
@@ -330,6 +351,7 @@ by a point
 by a point
 
 >e
+
 >w
 
 >wheat rye

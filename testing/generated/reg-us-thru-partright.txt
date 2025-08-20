@@ -1193,6 +1193,7 @@ by a point
 
 >n
 >n
+
 >s
 >s
 
@@ -1476,6 +1477,7 @@ You must have one word right for figuring what the Toon Eat-Too-Neat really mean
 by a point
 
 >e
+
 >w
 
 #testcase-one-right-table-of-main-oronyms-wheat-rye-1-wheat

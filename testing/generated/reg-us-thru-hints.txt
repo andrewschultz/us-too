@@ -390,10 +390,6 @@ The eyes light up yellow and show four dots, then six dots.
 >peace talks
 by a point
 
-#+testcase-values-eyes-number-of-pun-tweaker-is-46
->eye pun tweaker
-The eyes light up green and show four dots, then six dots.
-
 >eye
 The eyes glow dimly green and show three dots, then three dots.
 Hmm. Looks like some detail about this place to explore, if you're curious.
@@ -482,6 +478,10 @@ The eyes show nothing. You've done everything you need with
 >nw
 
 >e
+
+#+testcase-values-eyes-number-of-pun-tweaker-is-46
+>eye pun tweaker
+The eyes light up green and show four dots, then six dots.
 
 >punt weaker
 by a point
@@ -800,6 +800,7 @@ The eyes show nothing. You've done everything you need with
 
 >n
 >n
+
 >s
 >s
 
@@ -973,6 +974,7 @@ by a point
 The eyes show nothing. You've done everything you need with the me-track-meat rack.
 
 >e
+
 >w
 
 #testcase-values-eyes-number-of-whee-try-is-53

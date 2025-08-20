@@ -72,9 +72,42 @@ by a bonus point
 
 #testcase-check-pre-loose-intro-rule-fallthrough
 #testcase-run-post-loose-intro-rule-default
-A loose intro flutters down from the lucent row. You pick it up. As you do, the lucent row stops glowing and becomes a ledge. A Goal-Edge-Go Ledge, to be precise.
 #testcase-run-post-loose-intro-rule-if-lucent-row-is-examined-and-eyes-are-not-in-mine-and-pawn-is-not-in-mine
+A loose intro flutters down from the lucent row. You pick it up. As you do, the lucent row stops glowing and becomes a ledge. A Goal-Edge-Go Ledge, to be precise.
 !But then the Goal-Edge-Go Ledge, containing nothing, retracts after a bit. Well, you got everything you could want from it.
+
+#testcase-x-intro-table-of-intro-jabber-1
+>x intro
+There's a brief explanation about how Us Too reuses a lot of the code from Why Pout, though hopefully the different stories and puzzles give enough variety to keep you interested. Both are polite on the Zarfian cruelty scale, so there's no way to die.
+
+#testcase-x-intro-table-of-intro-jabber-2
+>x intro
+Us Too has 29 rooms which can be placed in a 5x6 map--well, one pair of rooms in the code actually functions as "two rooms below a certain room," and I don't count the initial room in the map. A map comes with the game, but location names may spoil puzzles. (On the other hand, they may help you look ahead if you want.) It has a basic hub location where you slowly discover other passages. There are thirteen total, not including back down.
+For reference, the House would be the northeast corner, with the Mine to the left, and the hub room just after the mine two southwest of the House.
+
+#testcase-x-intro-table-of-intro-jabber-3
+>x intro
+For those who played Why Pout, you won't have companions, but you will have NPCs to deal with, hostile and friendly.
+
+#testcase-x-intro-table-of-intro-jabber-4
+>x intro
+Us Too has more points than Why Pout, but I hope the points are more intuitive than Why Pout. You should get a few in bunches, which may seem too easy, but there are fewer you have to wait to get.
+
+#testcase-x-intro-table-of-intro-jabber-5
+>x intro
+Us Too also has a few puzzles where you have to go beyond the physical description. There'll be a clue that it implies something else, e.g. "What do these words mean?" But I hope it adds variety once you've offered the main mechanic.
+
+#testcase-x-intro-table-of-intro-jabber-6
+>x intro
+Us Too also has a puzzle where one direction leads to different rooms.
+
+#testcase-x-intro-table-of-intro-jabber-7
+>x intro
+Us Too felt a bit more rushed than Why Pout -- I spent early 2025 writing my first Adventuron game, which took more out of me than was expected, but it was worth it. Then I decided to get a head start on an EctoComp entry. So I'm not as happy with the story, and I'm worried about specific game polish, but on the other hand, I was able to spruce up some features from Why Pout and include some I didn't have the time for, which will work both here and in Why Pout.
+
+#testcase-x-intro-table-of-intro-jabber-8
+>x intro
+Us Too has more four-word things you don't need to do anything with but hopefully just laugh at. I piled up a bunch of good examples, and as I let them sit, some started to stand out as "Hey, this is worth putting in."
 
 >summon cheese
 by a point
@@ -87,6 +120,15 @@ You're confident you've figured what the munchies are. And you know what? You're
 
 #testcase-room-names-ur-branch
 `Ur-Branch
+
+#+testcase-x-intro-table-of-intro-jabber-1
+>x intro
+There's a brief explanation about how Us Too reuses a lot of the code from Why Pout, though hopefully the different stories and puzzles give enough variety to keep you interested. Both are polite on the Zarfian cruelty scale, so there's no way to die.
+
+#+testcase-x-intro-table-of-intro-jabber-2
+>x intro
+Us Too has 29 rooms which can be placed in a 5x6 map--well, one pair of rooms in the code actually functions as "two rooms below a certain room," and I don't count the initial room in the map. A map comes with the game, but location names may spoil puzzles. (On the other hand, they may help you look ahead if you want.) It has a basic hub location where you slowly discover other passages. There are thirteen total, not including back down.
+For reference, the House would be the northeast corner, with the Mine to the left, and the Ur-Branch two southwest of the House.
 
 >herb ranch
 by a point
@@ -169,9 +211,6 @@ You turn up a board (red) ... it's narrow and six feet long, made of Styrofoam, 
 
 >sw
 
->blah copse
-!by one point
-
 >n
 
 You walk north, but somehow, you stumble by a black ops site, and you're flagged down. What are you doing here? How did you even get close? After some questioning, you're sent back to the Ur-Branch by people who "suggest" you forget this ever happened. Returning is ... not advised.
@@ -247,13 +286,30 @@ You look for a way past the tree, and suddenly you have an idea, and once you kn
 #testcase-room-names-pea-stalks
 `Pea Stalks
 
+>pea pod
+bonus point
+
+#testcase-check-pre-pea-pod-rule-if-sco-pea-pod-is-true
+>pea pod
+There are no other odd pea pods.
+
+#testcase-run-post-peace-talks-rule-if-sco-pea-pod-is-false
+>peace talks
+Getting back to nature and stuff leaves you at peace with yourself. So at peace, you want to spread that peace to others, whether or not they fully deserve it. However, now you're so at peace, you recognize you are disturbing the plants' peace. You retreat to the Ur-Branch.
+`Ur-Branch
+
+>undo
+>undo
+>undo
+
 >peace talks
 by a point
 
 #testcase-check-pre-peace-talks-rule-fallthrough
 #testcase-run-post-peace-talks-rule-default
 #testcase-run-post-peace-talks-rule-fallthrough
-Getting back to nature and stuff leaves you at peace with yourself. So at peace, you want to spread that peace to others, whether or not they fully deserve it. However, now you're so at peace, you recognize you are disturbing the plants' peace. You retreat to the Ur-Branch.
+#+testcase-run-post-peace-talks-rule-if-sco-pea-pod-is-false
+!Ur-Branch
 
 >pea pod
 by a bonus point
@@ -572,6 +628,7 @@ Using your rope ladder, you climb on the roof and down into a spare attic compar
 
 >n
 >n
+
 >s
 >s
 
@@ -707,6 +764,7 @@ Yes, that's what to do. You consider ordering, but what can you pay with? You ha
 But wait! The fey loners/fail-owners spy the Terra Blade on you. You start mumbling surely it can't be used for something so pedestrian ... but perhaps it, or the spirit in it, is sick of saving the world and stuff. "Beef rended: befriended!" the fey loners/fail-owners exclaim, as they hand you a full variety platter: a me-track-meat rack!
 
 >e
+
 >w
 
 >wheat rye
@@ -825,7 +883,6 @@ by a point
 
 #testcase-check-pre-a-stew-rule-fallthrough
 #testcase-run-post-a-stew-rule-fallthrough
-#testcase-check-pre-a-stew-rule-fallthrough
 #testcase-run-post-a-stew-rule-default
 #testcase-run-post-a-stew-rule-follow-the-score-and-thinking-changes-rule
 #testcase-run-post-a-stew-rule-follow-the-shutdown-rules

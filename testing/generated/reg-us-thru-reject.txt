@@ -28,30 +28,37 @@ That thought/action/observation/request brings up nothing. Us Too has a limited 
 >base pikes
 That thought/action/observation/request brings up nothing. Us Too has a limited set of verbs, and the main thing is to guess a two-word phrase. To see what verbs are used, try VERBS.
 
+#testcase-check-pre-be-chill-rule-if-player-is-not-in-beach-ill
 #testcase-reject-start-table-of-main-oronyms-pre-be-chill-rule
 >be chill
 That thought/action/observation/request brings up nothing. Us Too has a limited set of verbs, and the main thing is to guess a two-word phrase. To see what verbs are used, try VERBS.
 
+#testcase-check-pre-be-strong-rule-if-beast-wrong-is-not-in-location-of-player
 #testcase-reject-start-table-of-main-oronyms-pre-be-strong-rule
 >be strong
 That thought/action/observation/request brings up nothing. Us Too has a limited set of verbs, and the main thing is to guess a two-word phrase. To see what verbs are used, try VERBS.
 
+#testcase-check-pre-bear-respond-rule-if-player-is-not-in-berries-pond
 #testcase-reject-start-table-of-main-oronyms-pre-bear-respond-rule
 >bear respond
 That thought/action/observation/request brings up nothing. Us Too has a limited set of verbs, and the main thing is to guess a two-word phrase. To see what verbs are used, try VERBS.
 
+#testcase-check-pre-beef-ordering-rule-if-player-is-not-in-deli-stern
 #testcase-reject-start-table-of-main-oronyms-pre-beef-ordering-rule
 >beef ordering
 That thought/action/observation/request brings up nothing. Us Too has a limited set of verbs, and the main thing is to guess a two-word phrase. To see what verbs are used, try VERBS.
 
+#testcase-check-pre-belt-rusted-rule-if-player-is-not-in-scribe-room
 #testcase-reject-start-table-of-main-oronyms-pre-belt-rusted-rule
 >belt rusted
 That thought/action/observation/request brings up nothing. Us Too has a limited set of verbs, and the main thing is to guess a two-word phrase. To see what verbs are used, try VERBS.
 
+#testcase-check-pre-blah-copse-rule-if-player-is-not-in-ur-branch
 #testcase-reject-start-table-of-main-oronyms-pre-blah-copse-rule
 >blah copse
 That thought/action/observation/request brings up nothing. Us Too has a limited set of verbs, and the main thing is to guess a two-word phrase. To see what verbs are used, try VERBS.
 
+#testcase-check-pre-blast-ring-rule-if-player-does-not-have-blah-string
 #testcase-reject-start-table-of-main-oronyms-pre-blast-ring-rule
 >blast ring
 That thought/action/observation/request brings up nothing. Us Too has a limited set of verbs, and the main thing is to guess a two-word phrase. To see what verbs are used, try VERBS.
@@ -60,218 +67,272 @@ That thought/action/observation/request brings up nothing. Us Too has a limited 
 >board red
 That thought/action/observation/request brings up nothing. Us Too has a limited set of verbs, and the main thing is to guess a two-word phrase. To see what verbs are used, try VERBS.
 
+#testcase-check-pre-bold-itch-rule-if-player-is-not-in-bowl-ditch
 #testcase-reject-start-table-of-main-oronyms-pre-bold-itch-rule
 >bold itch
 That thought/action/observation/request brings up nothing. Us Too has a limited set of verbs, and the main thing is to guess a two-word phrase. To see what verbs are used, try VERBS.
 
+#testcase-check-pre-can-take-rule-if-player-is-not-in-dome-aching
 #testcase-reject-start-table-of-main-oronyms-pre-can-take-rule
 >can take
 That thought/action/observation/request brings up nothing. Us Too has a limited set of verbs, and the main thing is to guess a two-word phrase. To see what verbs are used, try VERBS.
 
+#testcase-check-pre-cellar-bin-rule-if-player-is-not-in-cell-urban
 #testcase-reject-start-table-of-main-oronyms-pre-cellar-bin-rule
 >cellar bin
 That thought/action/observation/request brings up nothing. Us Too has a limited set of verbs, and the main thing is to guess a two-word phrase. To see what verbs are used, try VERBS.
 
+#testcase-check-pre-claim-it-rule-if-player-is-not-in-dam-pink-or-clay-mitt-is-not-in-dam-pink
 #testcase-reject-start-table-of-main-oronyms-pre-claim-it-rule
 >claim it
 That thought/action/observation/request brings up nothing. Us Too has a limited set of verbs, and the main thing is to guess a two-word phrase. To see what verbs are used, try VERBS.
 
+#testcase-check-pre-cold-rum-rule-if-player-is-not-in-dust-which
 #testcase-reject-start-table-of-main-oronyms-pre-cold-rum-rule
 >cold rum
 That thought/action/observation/request brings up nothing. Us Too has a limited set of verbs, and the main thing is to guess a two-word phrase. To see what verbs are used, try VERBS.
 
+#testcase-check-pre-damp-ink-rule-if-player-is-not-in-dam-pink
 #testcase-reject-start-table-of-main-oronyms-pre-damp-ink-rule
 >damp ink
 That thought/action/observation/request brings up nothing. Us Too has a limited set of verbs, and the main thing is to guess a two-word phrase. To see what verbs are used, try VERBS.
 
+#testcase-check-pre-dell-eastern-rule-if-player-is-not-in-deli-stern
 #testcase-reject-start-table-of-main-oronyms-pre-dell-eastern-rule
 >dell eastern
 That thought/action/observation/request brings up nothing. Us Too has a limited set of verbs, and the main thing is to guess a two-word phrase. To see what verbs are used, try VERBS.
 
+#testcase-check-pre-den-specs-rule-if-player-does-not-have-dense-pecs
 #testcase-reject-start-table-of-main-oronyms-pre-den-specs-rule
 >den specs
 That thought/action/observation/request brings up nothing. Us Too has a limited set of verbs, and the main thing is to guess a two-word phrase. To see what verbs are used, try VERBS.
 
+#testcase-check-pre-dope-ale-rule-if-player-does-not-have-dough-pail
 #testcase-reject-start-table-of-main-oronyms-pre-dope-ale-rule
 >dope ale
 That thought/action/observation/request brings up nothing. Us Too has a limited set of verbs, and the main thing is to guess a two-word phrase. To see what verbs are used, try VERBS.
 
+#testcase-check-pre-dough-making-rule-if-player-is-not-in-dome-aching
 #testcase-reject-start-table-of-main-oronyms-pre-dough-making-rule
 >dough making
 That thought/action/observation/request brings up nothing. Us Too has a limited set of verbs, and the main thing is to guess a two-word phrase. To see what verbs are used, try VERBS.
 
+#testcase-check-pre-dupe-it-rule-if-player-is-not-in-joy-nadir
 #testcase-reject-start-table-of-main-oronyms-pre-dupe-it-rule
 >dupe it
 That thought/action/observation/request brings up nothing. Us Too has a limited set of verbs, and the main thing is to guess a two-word phrase. To see what verbs are used, try VERBS.
 
+#testcase-check-pre-fell-trap-rule-if-player-is-not-in-fort-earns
 #testcase-reject-start-table-of-main-oronyms-pre-fell-trap-rule
 >fell trap
 That thought/action/observation/request brings up nothing. Us Too has a limited set of verbs, and the main thing is to guess a two-word phrase. To see what verbs are used, try VERBS.
 
+#testcase-check-pre-find-rinks-rule-if-player-is-not-in-far-miles-farm-isles
 #testcase-reject-start-table-of-main-oronyms-pre-find-rinks-rule
 >find rinks
 That thought/action/observation/request brings up nothing. Us Too has a limited set of verbs, and the main thing is to guess a two-word phrase. To see what verbs are used, try VERBS.
 
+#testcase-check-pre-gas-pouch-rule-if-player-is-not-in-sage-oaks-or-sco-say-jokes-is-false-and-player-does-not-have-gas-pouch
 #testcase-reject-start-table-of-main-oronyms-pre-gas-pouch-rule
 >gas pouch
 That thought/action/observation/request brings up nothing. Us Too has a limited set of verbs, and the main thing is to guess a two-word phrase. To see what verbs are used, try VERBS.
 
+#testcase-check-pre-gray-tin-rule-if-player-is-not-in-dome-aching
 #testcase-reject-start-table-of-main-oronyms-pre-gray-tin-rule
 >gray tin
 That thought/action/observation/request brings up nothing. Us Too has a limited set of verbs, and the main thing is to guess a two-word phrase. To see what verbs are used, try VERBS.
 
+#testcase-check-pre-grow-nodes-rule-if-player-is-not-in-groan-odes
 #testcase-reject-start-table-of-main-oronyms-pre-grow-nodes-rule
 >grow nodes
 That thought/action/observation/request brings up nothing. Us Too has a limited set of verbs, and the main thing is to guess a two-word phrase. To see what verbs are used, try VERBS.
 
+#testcase-check-pre-guard-entry-rule-if-player-is-not-in-ur-branch
 #testcase-reject-start-table-of-main-oronyms-pre-guard-entry-rule
 >guard entry
 That thought/action/observation/request brings up nothing. Us Too has a limited set of verbs, and the main thing is to guess a two-word phrase. To see what verbs are used, try VERBS.
 
+#testcase-check-pre-herb-ranch-rule-if-player-is-not-in-ur-branch
 #testcase-reject-start-table-of-main-oronyms-pre-herb-ranch-rule
 >herb ranch
 That thought/action/observation/request brings up nothing. Us Too has a limited set of verbs, and the main thing is to guess a two-word phrase. To see what verbs are used, try VERBS.
 
+#testcase-check-pre-hike-up-rule-if-player-is-not-in-a-pile-up-isle
 #testcase-reject-start-table-of-main-oronyms-pre-hike-up-rule
 >hike up
 That thought/action/observation/request brings up nothing. Us Too has a limited set of verbs, and the main thing is to guess a two-word phrase. To see what verbs are used, try VERBS.
 
+#testcase-check-pre-ho-langour-rule-if-player-is-not-in-tude-ark
 #testcase-reject-start-table-of-main-oronyms-pre-ho-langour-rule
 >ho languor
 That thought/action/observation/request brings up nothing. Us Too has a limited set of verbs, and the main thing is to guess a two-word phrase. To see what verbs are used, try VERBS.
 
+#testcase-check-pre-in-earnest-rule-if-player-is-not-in-dome-aching
 #testcase-reject-start-table-of-main-oronyms-pre-in-earnest-rule
 >in earnest
 The first word was a valid command that could stand on its own. The second may be unnecessary, or a typo.
 
+#testcase-check-pre-join-aider-rule-if-player-is-not-in-joy-nadir
 #testcase-reject-start-table-of-main-oronyms-pre-join-aider-rule
 >join aider
 That thought/action/observation/request brings up nothing. Us Too has a limited set of verbs, and the main thing is to guess a two-word phrase. To see what verbs are used, try VERBS.
 
+#testcase-check-pre-lie-fruits-rule-if-player-is-not-in-throne
 #testcase-reject-start-table-of-main-oronyms-pre-lie-fruits-rule
 >lie fruits
 That thought/action/observation/request brings up nothing. Us Too has a limited set of verbs, and the main thing is to guess a two-word phrase. To see what verbs are used, try VERBS.
 
+#testcase-check-pre-malt-hour-rule-if-player-is-not-in-bore-dread
 #testcase-reject-start-table-of-main-oronyms-pre-malt-hour-rule
 >malt hour
 That thought/action/observation/request brings up nothing. Us Too has a limited set of verbs, and the main thing is to guess a two-word phrase. To see what verbs are used, try VERBS.
 
+#testcase-check-pre-meh-skit-rule-if-mess-kit-is-not-touchable
 #testcase-reject-start-table-of-main-oronyms-pre-meh-skit-rule
 >meh skit
 That thought/action/observation/request brings up nothing. Us Too has a limited set of verbs, and the main thing is to guess a two-word phrase. To see what verbs are used, try VERBS.
 
+#testcase-check-pre-mess-pot-rule-if-meh-spot-is-not-touchable-and-mess-kit-is-not-touchable
 #testcase-reject-start-table-of-main-oronyms-pre-mess-pot-rule
 >mess pot
 That thought/action/observation/request brings up nothing. Us Too has a limited set of verbs, and the main thing is to guess a two-word phrase. To see what verbs are used, try VERBS.
 
+#testcase-check-pre-more-flares-rule-if-player-is-not-in-morph-lairs
 #testcase-reject-start-table-of-main-oronyms-pre-more-flares-rule
 >more flares
 That thought/action/observation/request brings up nothing. Us Too has a limited set of verbs, and the main thing is to guess a two-word phrase. To see what verbs are used, try VERBS.
 
+#testcase-check-pre-nah-queue-rule-if-forest-is-not-in-location-of-player
 #testcase-reject-start-table-of-main-oronyms-pre-nah-queue-rule
 >nah queue
 That thought/action/observation/request brings up nothing. Us Too has a limited set of verbs, and the main thing is to guess a two-word phrase. To see what verbs are used, try VERBS.
 
+#testcase-check-pre-nice-warm-rule-if-nigh-swarm-is-not-touchable
 #testcase-reject-start-table-of-main-oronyms-pre-nice-warm-rule
 >nice warm
 That thought/action/observation/request brings up nothing. Us Too has a limited set of verbs, and the main thing is to guess a two-word phrase. To see what verbs are used, try VERBS.
 
+#testcase-check-pre-no-date-rule-if-player-is-not-in-groan-odes
 #testcase-reject-start-table-of-main-oronyms-pre-no-date-rule
 >no date
 The first word was a valid command that could stand on its own. The second may be unnecessary, or a typo.
 
+#testcase-check-pre-oh-clever-rule-if-location-of-player-is-not-fort-earns
 #testcase-reject-start-table-of-main-oronyms-pre-oh-clever-rule
 >oh clever
 That thought/action/observation/request brings up nothing. Us Too has a limited set of verbs, and the main thing is to guess a two-word phrase. To see what verbs are used, try VERBS.
 
+#testcase-check-pre-or-clerk-rule-if-player-is-not-in-blah-copse
 #testcase-reject-start-table-of-main-oronyms-pre-or-clerk-rule
 >or clerk
 That thought/action/observation/request brings up nothing. Us Too has a limited set of verbs, and the main thing is to guess a two-word phrase. To see what verbs are used, try VERBS.
 
+#testcase-check-pre-pea-pod-rule-if-player-is-not-in-pea-stalks
 #testcase-reject-start-table-of-main-oronyms-pre-pea-pod-rule
 >pea pod
 That thought/action/observation/request brings up nothing. Us Too has a limited set of verbs, and the main thing is to guess a two-word phrase. To see what verbs are used, try VERBS.
 
+#testcase-check-pre-peace-talks-rule-if-player-is-not-in-pea-stalks
 #testcase-reject-start-table-of-main-oronyms-pre-peace-talks-rule
 >peace talks
 That thought/action/observation/request brings up nothing. Us Too has a limited set of verbs, and the main thing is to guess a two-word phrase. To see what verbs are used, try VERBS.
 
+#testcase-check-pre-pie-crust-rule-if-player-is-not-in-pile-up-isle-or-pike-rust-is-not-in-location-of-player
 #testcase-reject-start-table-of-main-oronyms-pre-pie-crust-rule
 >pie crust
 That thought/action/observation/request brings up nothing. Us Too has a limited set of verbs, and the main thing is to guess a two-word phrase. To see what verbs are used, try VERBS.
 
+#testcase-check-pre-pro-sweeping-rule-if-player-is-not-in-dust-which
 #testcase-reject-start-table-of-main-oronyms-pre-pro-sweeping-rule
 >pro sweeping
 That thought/action/observation/request brings up nothing. Us Too has a limited set of verbs, and the main thing is to guess a two-word phrase. To see what verbs are used, try VERBS.
 
+#testcase-check-pre-probe-all-rule-if-pro-ball-is-not-touchable
 #testcase-reject-start-table-of-main-oronyms-pre-probe-all-rule
 >probe all
 That thought/action/observation/request brings up nothing. Us Too has a limited set of verbs, and the main thing is to guess a two-word phrase. To see what verbs are used, try VERBS.
 
+#testcase-check-pre-pry-more-rule-if-player-is-not-in-inner-nest
 #testcase-reject-start-table-of-main-oronyms-pre-pry-more-rule
 >pry more
 That thought/action/observation/request brings up nothing. Us Too has a limited set of verbs, and the main thing is to guess a two-word phrase. To see what verbs are used, try VERBS.
 
+#testcase-check-pre-punt-weaker-rule-if-player-is-not-in-beach-ill
 #testcase-reject-start-table-of-main-oronyms-pre-punt-weaker-rule
 >punt weaker
 That thought/action/observation/request brings up nothing. Us Too has a limited set of verbs, and the main thing is to guess a two-word phrase. To see what verbs are used, try VERBS.
 
+#testcase-check-pre-rope-ladder-rule-if-player-is-not-in-morph-lairs
 #testcase-reject-start-table-of-main-oronyms-pre-rope-ladder-rule
 >rope ladder
 That thought/action/observation/request brings up nothing. Us Too has a limited set of verbs, and the main thing is to guess a two-word phrase. To see what verbs are used, try VERBS.
 
+#testcase-check-pre-saw-bakers-rule-if-player-is-not-in-sob-acres
 #testcase-reject-start-table-of-main-oronyms-pre-saw-bakers-rule
 >saw bakers
 That thought/action/observation/request brings up nothing. Us Too has a limited set of verbs, and the main thing is to guess a two-word phrase. To see what verbs are used, try VERBS.
 
+#testcase-check-pre-say-jokes-rule-if-player-is-not-in-sage-oaks
 #testcase-reject-start-table-of-main-oronyms-pre-say-jokes-rule
 >say jokes
 You don't need to prefix any important two-word command with SAY. Just say the two words.
 
+#testcase-check-pre-scry-broom-rule-if-player-is-not-in-scribe-room
 #testcase-reject-start-table-of-main-oronyms-pre-scry-broom-rule
 >scry broom
 That thought/action/observation/request brings up nothing. Us Too has a limited set of verbs, and the main thing is to guess a two-word phrase. To see what verbs are used, try VERBS.
 
+#testcase-check-pre-stark-raft-rule-if-player-is-not-in-turbo-tours
 #testcase-reject-start-table-of-main-oronyms-pre-stark-raft-rule
 >stark raft
 That thought/action/observation/request brings up nothing. Us Too has a limited set of verbs, and the main thing is to guess a two-word phrase. To see what verbs are used, try VERBS.
 
+#testcase-check-pre-summer-bay-rule-if-player-does-not-have-herbs
 #testcase-reject-start-table-of-main-oronyms-pre-summer-bay-rule
 >summer bay
 That thought/action/observation/request brings up nothing. Us Too has a limited set of verbs, and the main thing is to guess a two-word phrase. To see what verbs are used, try VERBS.
 
+#testcase-check-pre-summon-cheese-rule-if-aight-is-not-examined
 #testcase-reject-start-table-of-main-oronyms-pre-summon-cheese-rule
 >summon cheese
 That thought/action/observation/request brings up nothing. Us Too has a limited set of verbs, and the main thing is to guess a two-word phrase. To see what verbs are used, try VERBS.
 
+#testcase-check-pre-surf-ready-rule-if-sir-freddie-is-not-in-location-of-player
 #testcase-reject-start-table-of-main-oronyms-pre-surf-ready-rule
 >surf ready
 That thought/action/observation/request brings up nothing. Us Too has a limited set of verbs, and the main thing is to guess a two-word phrase. To see what verbs are used, try VERBS.
 
+#testcase-check-pre-sword-ark-rule-if-player-is-not-in-sore-dark
 #testcase-reject-start-table-of-main-oronyms-pre-sword-ark-rule
 >sword ark
 That thought/action/observation/request brings up nothing. Us Too has a limited set of verbs, and the main thing is to guess a two-word phrase. To see what verbs are used, try VERBS.
 
+#testcase-check-pre-tea-leaves-rule-if-player-is-not-in-dust-which
 #testcase-reject-start-table-of-main-oronyms-pre-tea-leaves-rule
 >tea leaves
 That thought/action/observation/request brings up nothing. Us Too has a limited set of verbs, and the main thing is to guess a two-word phrase. To see what verbs are used, try VERBS.
 
+#testcase-check-pre-terrible-aid-rule-if-player-is-not-in-sore-dark-and-player-does-not-have-terra-blade
 #testcase-reject-start-table-of-main-oronyms-pre-terrible-aid-rule
 >terrible aid
 That thought/action/observation/request brings up nothing. Us Too has a limited set of verbs, and the main thing is to guess a two-word phrase. To see what verbs are used, try VERBS.
 
+#testcase-check-pre-too-broad-rule-if-player-is-not-in-tube-rod
 #testcase-reject-start-table-of-main-oronyms-pre-too-broad-rule
 >too broad
 That thought/action/observation/request brings up nothing. Us Too has a limited set of verbs, and the main thing is to guess a two-word phrase. To see what verbs are used, try VERBS.
 
+#testcase-check-pre-tour-boaters-rule-if-player-is-not-in-turbo-tours
 #testcase-reject-start-table-of-main-oronyms-pre-tour-boaters-rule
 >tour boaters
 That thought/action/observation/request brings up nothing. Us Too has a limited set of verbs, and the main thing is to guess a two-word phrase. To see what verbs are used, try VERBS.
 
+#testcase-check-pre-use-it-rule-if-player-is-not-in-throne
 #testcase-reject-start-table-of-main-oronyms-pre-use-it-rule
 >use it
 That thought/action/observation/request brings up nothing. Us Too has a limited set of verbs, and the main thing is to guess a two-word phrase. To see what verbs are used, try VERBS.
 
+#testcase-check-pre-wheat-rye-rule-if-player-is-not-in-deli-stern
 #testcase-reject-start-table-of-main-oronyms-pre-wheat-rye-rule
 >wheat rye
 That thought/action/observation/request brings up nothing. Us Too has a limited set of verbs, and the main thing is to guess a two-word phrase. To see what verbs are used, try VERBS.
@@ -300,13 +361,73 @@ by a point
 >a stew
 You don't have all the stew ingredients you need! Currently, you have zero out of thirteen.
 
+>out
+
+#testcase-check-pre-loose-intro-rule-if-player-is-not-in-my-new-mine-ooh
+>loose intro
+That thought/action/observation/request brings up nothing. Us Too has a limited set of verbs, and the main thing is to guess a two-word phrase. To see what verbs are used, try VERBS.
+
+>undo
+>undo
+
 >loose intro
 by a bonus point
+
+#testcase-check-pre-loose-intro-rule-if-loose-intro-is-not-off-stage
+>loose intro
+There is no more intro.
 
 >summon cheese
 by a point
 
+#testcase-check-pre-summon-cheese-rule-if-sco-summon-cheese-is-true
+>summon cheese
+You already got some munchies! No need to be greedy.
+
 >u
+
+#TTC.PY bookmark: this is where I GOTO places that don't fit in the walkthrough, so I can test all the THINK
+
+>gonear tude ark
+
+#testcase-check-pre-ho-langour-rule-if-sco-too-broad-is-false
+>ho langour
+But it doesn't quite work yet, calling for languor ... you haven't done anything down this way.
+
+>gonear sage oaks
+#testcase-check-pre-say-jokes-rule-if-sco-ho-langour-is-false
+>say jokes
+You try to bull through with jokes, but you're forcing it. You haven't naturally boosted yourself.
+
+#testcase-think-table-of-main-oronyms-pre-ho-langour-rule
+>think
+You can yell HO LANGUOR once you have done something, anything, else in the south.
+
+>gonear blah copse
+
+#testcase-check-pre-surf-ready-rule-if-sco-board-red-is-false
+>surf ready
+Sir Freddie finds that interesting, but ... he doesn't have the right gear to get started on him, and neither do you, for the moment.
+
+#testcase-think-table-of-main-oronyms-pre-surf-ready-rule
+>think
+You can SURF READY once you have surfing materials for Sir Freddie.
+
+>gonear throne
+
+#testcase-check-pre-use-it-rule-if-sco-dupe-it-is-false
+>use it
+It would be useful to have an item of power, but alas, you do not, at the moment.
+
+#testcase-think-table-of-main-oronyms-pre-use-it-rule
+>think
+You can USE IT once you have an item of power to use.
+
+#testcase-check-pre-use-it-rule-if-sco-use-it-is-true
+>use it
+The orb and/or band crumbled away when you used it.
+
+>gonear branch
 
 #testcase-reject-start-table-of-main-oronyms-pre-loose-intro-rule
 >loose intro
@@ -316,16 +437,56 @@ That thought/action/observation/request brings up nothing. Us Too has a limited 
 >a stew
 You need to be back in your mine for this.
 
+>d
+
+>herb ranch
+
+#testcase-think-table-of-main-oronyms-pre-herb-ranch-rule
+>think
+You can discover an herb ranch once you are back in the Ur-Branch.
+
 >herb ranch
 by a point
 
+#testcase-check-pre-herb-ranch-rule-if-sco-herb-ranch-is-true
+>herb ranch
+You already found the herb ranch! One free sample should be enough.
+
+#+testcase-think-table-of-main-oronyms-pre-herb-ranch-rule
+>think
+You can discover an herb ranch now you are back in the Ur-Branch.
+
+>d
+
+#testcase-check-pre-summer-bay-rule-if-player-is-not-in-ur-branch
+>summer bay
+WRONG
+
+#testcase-think-table-of-main-oronyms-pre-summer-bay-rule
+>think
+You can discover a SUMMER BAY once you are back in the Ur-Branch.
+
+>u
+
+#+testcase-think-table-of-main-oronyms-pre-summer-bay-rule
+>think
+You can discover a SUMMER BAY now you are back in the Ur-Branch.
+
 >summer bay
 by a point
+
+#testcase-check-pre-summer-bay-rule-if-sco-summer-bay-is-true
+>summer bay
+You already used the herb to expand your mind! It is only good for seasoning now.
 
 >e
 
 >be chill
 by a point
+
+#testcase-check-pre-be-chill-rule-if-sco-be-chill-is-true
+>be chill
+The beach is already chill enough!
 
 >nice warm
 by a point
@@ -333,14 +494,34 @@ by a point
 >probe all
 by a point
 
+#testcase-check-pre-punt-weaker-rule-if-sir-freddie-is-not-in-beach-ill-and-sir-freddie-is-not-moot
+>punt weaker
+The pun tweaker says "Yeah, maybe I have one. But what can you do for me?"
+
+#testcase-check-pre-probe-all-rule-if-sco-probe-all-is-true
+>probe all
+You already probed the pro ball enough to get a feel for hidden exits in your surroundings! More will appear as you need them.
+
+#testcase-think-table-of-main-oronyms-pre-punt-weaker-rule
+>think
+You can get a PUNT WEAKER once you are able to please the pun tweaker.
+
 >w
 >d
 
 >mess pot
 by a point
 
+#testcase-check-pre-mess-pot-rule-if-sco-mess-pot-is-true
+>mess pot
+You already found the mess pot/kit!
+
 >meh skit
 by a bonus point
+
+#testcase-check-pre-meh-skit-rule-if-sco-meh-skit-is-true
+>meh skit
+The skit would go from meh to cringe if you did it again.
 
 >u
 >ne
@@ -348,15 +529,51 @@ by a bonus point
 >board red
 by a point
 
+#testcase-check-pre-board-red-rule-if-sco-board-red-is-true
+>board red
+You shouldn't need another board!
+
+#testcase-check-pre-malt-hour-rule-if-booze-score-is-0
+>malt hour
+You would like to call out that there are alcoholic refreshments, but you don't have any.
+
+#testcase-think-table-of-main-oronyms-pre-malt-hour-rule
+>think
+You can call MALT HOUR once you have a variety of alcohol to share.
+
 >sw
+
+#testcase-check-pre-blah-copse-rule-if-black-ops-are-not-in-ur-branch
+>blah copse
+!by one point
+
+#testcase-check-pre-guard-entry-rule-if-garden-tree-is-not-in-ur-branch
+>guard entry
+That thought/action/observation/request brings up nothing. Us Too has a limited set of verbs, and the main thing is to guess a two-word phrase. To see what verbs are used, try VERBS.
 
 >n
 
 >blah copse
 by a point
 
+#testcase-check-pre-blah-copse-rule-if-sco-blah-copse-is-true
+>blah copse
+You already figured how to evade the black ops! You can just go north if you need to.
+
 >nah queue
 by a point
+
+#testcase-check-pre-nah-queue-rule-if-sco-nah-queue-is-true
+>nah queue
+You already brushed back the Forest Team for Esteem that way!
+
+#+testcase-think-table-of-main-oronyms-pre-surf-ready-rule
+>think
+You can SURF READY now you have surfing materials for Sir Freddie.
+
+#testcase-check-pre-or-clerk-rule-if-sco-surf-ready-is-false
+>or clerk
+That thought/action/observation/request brings up nothing. Us Too has a limited set of verbs, and the main thing is to guess a two-word phrase. To see what verbs are used, try VERBS.
 
 >surf ready
 by a point
@@ -364,10 +581,34 @@ by a point
 >or clerk
 by a point
 
+#testcase-check-pre-or-clerk-rule-if-sco-or-clerk-is-true
+>or clerk
+You already figured nothing awful was lurking to the north.
+
+#testcase-check-pre-blast-ring-rule-if-player-is-not-in-sore-dark-or-sword-ark-is-not-in-sore-dark
+>blah string
+You can see nothing to blast!
+
+#testcase-think-table-of-main-oronyms-pre-blast-ring-rule
+>think
+You can BLAST RING once you have found something to blast.
+
 >n
 
 >more flares
 by a point
+
+>e
+
+#testcase-check-pre-surf-ready-rule-if-sco-surf-ready-is-true
+>surf ready
+But Sir Freddie has already found a new passion!
+
+#+testcase-check-pre-punt-weaker-rule-if-sir-freddie-is-not-in-beach-ill-and-sir-freddie-is-not-moot
+>punt weaker
+The pun tweaker says "Yeah, maybe I have one. Get rid of this guy, I'll give you it."
+
+>w
 
 >n
 
@@ -379,8 +620,16 @@ by a point
 >guard entry
 by a point
 
+#testcase-check-pre-guard-entry-rule-if-sco-guard-entry-is-true
+>guard entry
+You already snuck past the garden tree so you could go IN!
+
 >peace talks
 by a point
+
+#testcase-check-pre-peace-talks-rule-if-sco-peace-talks-is-true
+>peace talks
+You already fathomed peace talks!
 
 >pea pod
 by a bonus point
@@ -389,60 +638,162 @@ by a bonus point
 
 >se
 
+#testcase-check-pre-dough-making-rule-if-sco-can-take-is-false
+>dough making
+The can't-ache prevents you from doing anything constructive!
+
+#testcase-think-table-of-main-oronyms-pre-dough-making-rule
+>think
+You can commence DOUGH MAKING once you have overcome the can't-ache.
+
+#testcase-check-pre-in-earnest-rule-if-inscen-is-not-in-dome-aching
+>in earnest
+That thought/action/observation/request brings up nothing. Us Too has a limited set of verbs, and the main thing is to guess a two-word phrase. To see what verbs are used, try VERBS.
+
 >can take
 by a point
+
+#testcase-check-pre-can-take-rule-if-sco-can-take-is-true
+>can take
+You already affirmed you can "take it."
 
 >gray tin
 by a point
 
+#testcase-check-pre-gray-tin-rule-if-sco-gray-tin-is-true
+>gray tin
+You already got a gray tin from the Great Inn!
+
+#+testcase-think-table-of-main-oronyms-pre-dough-making-rule
+>think
+You can commence DOUGH MAKING now you have overcome the can't-ache.
+
 >dough making
 by a point
 
+#testcase-check-pre-dope-ale-rule-if-player-is-not-in-deli-stern
+>dope ale
+Hmm, you could exchange the dough pail for dope ale, but ... nobody here wants dough, and nobody here might have dope ale.
+
+#testcase-check-pre-dough-making-rule-if-sco-dough-making-is-true
+>dough making
+You already made enough dough!
+
+#testcase-think-table-of-main-oronyms-pre-dope-ale-rule
+>think
+You can trade for some DOPE ALE once you've found find willing traders with a bit extra.
+
 >in earnest
 by a point
+
+#testcase-check-pre-in-earnest-rule-if-sco-in-earnest-is-true
+>in earnest
+Don't want to get too earnest, here.
 
 >in
 
 >pry more
 by a point
 
+#testcase-check-pre-pry-more-rule-if-sco-pry-more-is-true
+>pry more
+You already pried and got the prime oar!
+
 >out
 >nw
 
 >e
 
+#+testcase-think-table-of-main-oronyms-pre-punt-weaker-rule
+>think
+You can get a PUNT WEAKER now you are able to please the pun tweaker.
+
 >punt weaker
 by a point
+
+#testcase-check-pre-punt-weaker-rule-if-sco-punt-weaker-is-true
+>punt weaker
+You already got the punt, weaker!
 
 >e
 
 >base pikes
 by a point
 
+#testcase-check-pre-base-pikes-rule-if-sco-base-pikes-is-true
+>base pikes
+You already cleared a path through the bay spikes!
+
 >pie crust
 by a point
 
+#testcase-check-pre-pie-crust-rule-if-sco-pie-crust-is-true
+>pie crust
+You already de-rusted the pike!
+
 >hike up
 by a point
+
+#testcase-check-pre-hike-up-rule-if-sco-hike-up-is-true
+>hike up
+There's nothing else to be found from another hike up. You're not getting the high cup, and you don't need it.
 
 >w
 >w
 
 >nw
 
+#+testcase-check-pre-blast-ring-rule-if-player-is-not-in-sore-dark-or-sword-ark-is-not-in-sore-dark
+>blast ring
+You can see nothing to blast!
+
+#+testcase-check-pre-terrible-aid-rule-if-player-is-not-in-sore-dark-and-player-does-not-have-terra-blade
+>terra blade
+That thought/action/observation/request brings up nothing. Us Too has a limited set of verbs, and the main thing is to guess a two-word phrase. To see what verbs are used, try VERBS.
+
 >sword ark
 by a point
+
+#testcase-check-pre-sword-ark-rule-if-sco-sword-ark-is-true
+>sword ark
+There doesn't need to be another sword ark!
+
+#testcase-check-pre-terrible-aid-rule-if-sco-blast-ring-is-false
+>terrible aid
+Hmm, yes, it doesn't matter if it's terrible while it's unattainable.
+
+>think
+
+#testcase-think-table-of-main-oronyms-pre-terrible-aid-rule
+>think
+You can summon a TERRIBLE AID once you can physically grab it.
+
+#+testcase-think-table-of-main-oronyms-pre-blast-ring-rule
+>think
+You can BLAST RING now you have found something to blast.
 
 >blast ring
 by a point
 
+#+testcase-think-table-of-main-oronyms-pre-terrible-aid-rule
+>think
+You can summon a TERRIBLE AID now you can physically grab it.
+
 >terrible aid
 by a point
+
+#testcase-check-pre-terrible-aid-rule-if-sco-terrible-aid-is-true
+>terrible aid
+You probably shouldn't actively diss the Terra Blade, now you're carrying it.
 
 >sw
 
 >oh clever
 by a point
+
+#testcase-check-pre-oh-clever-rule-if-sco-oh-clever-is-true
+>oak lever
+You already pulled the oak lever and made it disappear! You just need to do something with the be-quick beak/wick from here on out.
 
 >x beak
 
@@ -450,8 +801,28 @@ by a point
 
 >s
 
+#testcase-check-pre-too-broad-rule-if-sco-too-broad-is-true
+>too broad
+You already burst the tube/rod!
+
 >too broad
 by a point
+
+#+testcase-check-pre-too-broad-rule-if-sco-too-broad-is-true
+>too broad
+You already burst the tube/rod!
+
+>s
+
+#testcase-check-pre-damp-ink-rule-if-sco-gas-pouch-is-false
+>damp ink
+But you have nothing that can hold the ink without leaking!
+
+#testcase-think-table-of-main-oronyms-pre-damp-ink-rule
+>think
+You can pick up DAMP INK once you have a proper container.
+
+>n
 
 >n
 
@@ -467,8 +838,30 @@ by a point
 
 >s
 
+#+testcase-think-table-of-main-oronyms-pre-ho-langour-rule
+>think
+You can yell HO LANGUOR now you have done something, anything, else in the south.
+
 >ho langour
 by a point
+
+#testcase-check-pre-ho-langour-rule-if-sco-ho-langour-is-true
+>ho langour
+You already dealt with your anger! If you want more anger to have to deal with, why, you might get your wish, if you're not careful.
+
+>s
+
+#testcase-check-pre-belt-rusted-rule-if-bell-trusted-is-not-in-scribe-room
+>belt rusted
+That thought/action/observation/request brings up nothing. Us Too has a limited set of verbs, and the main thing is to guess a two-word phrase. To see what verbs are used, try VERBS.
+
+#testcase-check-pre-scry-broom-rule-if-sco-damp-ink-is-false
+>scry broom
+The scribes won't trade a broom for NOTHING...
+
+#testcase-think-table-of-main-oronyms-pre-scry-broom-rule
+>think
+You can SCRY BROOM and get it once you have something the scribes want.
 
 >n
 
@@ -477,14 +870,31 @@ by a point
 >fell trap
 by a point
 
+#testcase-check-pre-fell-trap-rule-if-sco-fell-trap-is-true
+>fell trap
+You can just X TRAP to see what it might do.
+<already-done;>
+
 >x trap
 
 >cellar bin
 by a point
 
+#testcase-check-pre-cellar-bin-rule-if-sco-cellar-bin-is-true-and-player-is-in-fort-earns-or-player-is-in-cellar-bin
+>cellar bin
+Whenever you want to revisit the cellar bin, you can just X TRAP.
+
 >u
 
+#+testcase-check-pre-cellar-bin-rule-if-sco-cellar-bin-is-true-and-player-is-in-fort-earns-or-player-is-in-cellar-bin
+>cellar bin
+Whenever you want to revisit the cellar bin, you can just X TRAP.
+
 >x beak
+
+#+testcase-check-pre-fell-trap-rule-if-sco-fell-trap-is-true
+>fell trap
+You can just X TRAP to return.
 
 >x trap
 
@@ -492,11 +902,35 @@ by a point
 >ne
 >s
 
+#+testcase-check-pre-gas-pouch-rule-if-player-is-not-in-sage-oaks-or-sco-say-jokes-is-false-and-player-does-not-have-gas-pouch
+>gas pouch
+That thought/action/observation/request brings up nothing. Us Too has a limited set of verbs, and the main thing is to guess a two-word phrase. To see what verbs are used, try VERBS.
+
 >say jokes
 by a point
 
+#testcase-check-pre-say-jokes-rule-if-sco-say-jokes-is-true
+>say jokes
+Don't push it. The sage oaks might find such foolish risks stupid and change their views of you.
+
 >gas pouch
 by a point
+
+#testcase-check-pre-gas-pouch-rule-if-sco-gas-pouch-is-true
+>gas pouch
+You don't need two gas pouches.
+
+>s
+
+#testcase-check-pre-pro-sweeping-rule-if-sco-scry-broom-is-false
+>pro sweeping
+You have nothing that could sweep!
+
+>think
+
+#testcase-think-table-of-main-oronyms-pre-pro-sweeping-rule
+>think
+You can get PRO SWEEPING once you have something to sweep with.
 
 >n
 
@@ -507,39 +941,104 @@ by a point
 >claim it
 by a point
 
+>think
+You can pick up DAMP INK now you have a proper container.
+
 >damp ink
 by a point
 
+#testcase-check-pre-damp-ink-rule-if-sco-damp-ink-is-true
+>damp ink
+You got enough ink.
+
 >n
 >n
 >s
 
 >s
+
+#+testcase-think-table-of-main-oronyms-pre-scry-broom-rule
+>think
+You can SCRY BROOM and get it now you have something the scribes want.
 
 >scry broom
 by a point
+
+#testcase-check-pre-scry-broom-rule-if-sco-scry-broom-is-true
+>scry broom
+You neither want nor need two brooms.
 
 >n
 >n
 >ss
 >s
 
+#testcase-check-pre-cold-rum-rule-if-coal-drum-is-not-in-dust-which
+>cold rum
+<if coal drum is not in dust which, unavailable;>
+
+#+testcase-think-table-of-main-oronyms-pre-pro-sweeping-rule
+>think
+You can get PRO SWEEPING now you have something to sweep with.
+
 >pro sweeping
 by a point
+
+#testcase-check-pre-pro-sweeping-rule-if-sco-pro-sweeping-is-true
+>pro sweeping
+It's clean enough here. You swept this place like a pro! Go, you!
 
 >cold rum
 by a point
 
+#testcase-check-pre-cold-rum-rule-if-sco-cold-rum-is-true
+>cold rum
+You already found what you could in the coal drum!
+
 >tea leaves
 by a point
 
+#testcase-check-pre-tea-leaves-rule-if-sco-tea-leaves-is-true
+>tea leaves
+You already got tea leaves.
+
 >n
 >n
+
+>ne
+
+#testcase-check-pre-malt-hour-rule-if-booze-score-is-1
+>malt hour
+The cold rum isn't quite enough. A rumbling from the maul tower suggests they want variety, if they can't specifically get malt. They have a point, you guess. There are probably quite a few of them there.
+
 >s
 >s
 
+>n
+>n
+>ne
+
+>malt hour
+by a point
+
+>e
+
+#testcase-check-pre-join-aider-rule-if-player-does-not-have-belt-rusted
+>join aider
+The pro ball crackles, but nothing else happens.
+
+#testcase-think-table-of-main-oronyms-pre-join-aider-rule
+>think
+You can call a JOIN AIDER once you have two items of power to join.
+
+>gonear scribe room
+
 >belt rusted
 by a point
+
+#+testcase-check-pre-belt-rusted-rule-if-bell-trusted-is-not-in-scribe-room
+>belt rusted
+That thought/action/observation/request brings up nothing. Us Too has a limited set of verbs, and the main thing is to guess a two-word phrase. To see what verbs are used, try VERBS.
 
 >n
 >n
@@ -552,19 +1051,33 @@ by a point
 >bold itch
 by a point
 
+#testcase-check-pre-bold-itch-rule-if-sco-bold-itch-is-true
+>bold itch
+You already shook off your initial embarrassment and fears. Too much itch, and you'll get rash!
+
 >w
 
 >tour boaters
 by a bonus point
 
+#testcase-check-pre-tour-boaters-rule-if-sco-tour-boaters-is-true
+>tour boaters
+You already brought in additional business to Turbo Tours!
+
 >stark raft
 by a point
 
+#testcase-check-pre-stark-raft-rule-if-sco-stark-raft-is-true
+>stark raft
+You already build the stark raft!
+
 >s
 
+#testcase-check-pre-barn-open-rule-if-sco-bear-respond-is-false
 >barn open
 Of course it makes sense there'd be a barn on farm isles. You find a barn, open, hidden behind the bar. There are some truly glorious eggs in there, but you have nothing to trade for them yet.
 
+#+testcase-check-pre-barn-open-rule-if-sco-bear-respond-is-false
 >barn open
 !Of course it makes sense there'd be a barn on farm isles.
 You find a barn, open, hidden behind the bar. There are some truly glorious eggs in there, but you have nothing to trade for them yet.
@@ -576,15 +1089,32 @@ You can transact with the BARN OPEN once you have something of value to trade.
 >find rinks
 by a point
 
+>n
+
+#testcase-check-pre-find-rinks-rule-if-sco-find-rinks-is-true
+>find rinks
+You already found them! You just need to figure what to do to the south.
+
+>undo
+>undo
+
 >bear respond
 by a point
 
-#testcase-think-table-of-main-oronyms-pre-barn-open-rule
+#+testcase-check-pre-find-rinks-rule-if-sco-find-rinks-is-true
+>find rinks
+You already found them! You don't need to go back.
+
+#+testcase-think-table-of-main-oronyms-pre-barn-open-rule
 >think
 You can transact with the BARN OPEN now you have something of value to trade.
 
 >barn open
 by a point
+
+#testcase-check-pre-barn-open-rule-if-sco-barn-open-is-true
+>barn open
+You already got an egg from the barn! It was a one-time deal, so you'll need to find somewhere else to get more eggs, even if they're not as good as the one you've got.
 
 >n
 
@@ -594,14 +1124,46 @@ by a point
 >saw bakers
 by a point
 
+#testcase-check-pre-saw-bakers-rule-if-sco-saw-bakers-is-true
+>saw bakers
+You already discovered the deli!
+
+#+testcase-check-pre-dell-eastern-rule-if-player-is-not-in-deli-stern
+>dell eastern
+That thought/action/observation/request brings up nothing. Us Too has a limited set of verbs, and the main thing is to guess a two-word phrase. To see what verbs are used, try VERBS.
+
 >in
+
+#testcase-check-pre-wheat-rye-rule-if-whee-try-sign-is-not-in-deli-stern
+>wheat rye
+That thought/action/observation/request brings up nothing. Us Too has a limited set of verbs, and the main thing is to guess a two-word phrase. To see what verbs are used, try VERBS.
+
+#testcase-check-pre-beef-ordering-rule-if-toon-is-not-in-deli-stern
+>beef ordering
+That thought/action/observation/request brings up nothing. Us Too has a limited set of verbs, and the main thing is to guess a two-word phrase. To see what verbs are used, try VERBS.
+
+#testcase-check-pre-dope-ale-rule-if-sco-dell-eastern-is-false
+>dope ale
+The fey loners/fail-owners whine that the location here is terrible. It's so dreary outside. Nobody would come here for alcohol with things as they are.
 
 >dell eastern
 by a point
 
+#testcase-check-pre-dell-eastern-rule-if-sco-dell-eastern-is-true
+>dell eastern
+You already made things nicer to the east!
+
+#testcase-check-pre-dope-ale-rule-if-gs-deli-dell-left-is-false
+>dope ale
+The fey loners/fail-owners almost look bright for a minute. "Hey, we could pull off that trade, if ... if ... we got some customers. Come back in a bit, eh?"
+
 >e
 
 >w
+
+#+testcase-think-table-of-main-oronyms-pre-dope-ale-rule
+>think
+You can trade for some DOPE ALE once you've found find willing traders with a bit extra.
 
 >dope ale
 by a point
@@ -612,21 +1174,73 @@ by a point
 >beef ordering
 by a point
 
+#testcase-check-pre-beef-ordering-rule-if-sco-beef-ordering-is-true
+>beef ordering
+You already decoded the Toon Eat-Too-Neat and made a good swap for the beef!
+
 >e
+
+>den specs
+
+>d
+
+>groan odes
+
+#testcase-check-pre-no-date-rule-if-player-does-not-have-pliers
+>no date
+Yes ... that feels right, but you have no tool with which to tear apart node eight.
+
+#testcase-think-table-of-main-oronyms-pre-no-date-rule
+>think
+You can claim NO DATE once you have a tool that can destroy the nodes.
+
+>undo
+>u
+>w
+>e
+>d
+
+#+testcase-think-table-of-main-oronyms-pre-no-date-rule
+>think
+You can claim NO DATE now you have a tool that can destroy the nodes.
+
+>undo
+>undo
+>undo
+>undo
+>undo
+>undo
+>undo
+>undo
+>undo
+
 >w
 
 >wheat rye
 by a point
 
+#testcase-check-pre-wheat-rye-rule-if-sco-wheat-rye-is-true
+>wheat rye
+You already got enough free bread!
+
 >e
 
+#testcase-check-pre-den-specs-rule-if-sco-den-specs-is-true
 >den specs
-by a point
+You don't need two pairs.
 
 >d
 
+#testcase-check-pre-no-date-rule-if-nodes-are-not-in-groan-odes
+>no date
+That thought/action/observation/request brings up nothing. Us Too has a limited set of verbs, and the main thing is to guess a two-word phrase. To see what verbs are used, try VERBS.
+
 >grow nodes
 by a point
+
+#testcase-check-pre-grow-nodes-rule-if-sco-grow-nodes-is-true
+>grow nodes
+The nodes have already grown and been revealed. How to destroy them?!
 
 >no date
 by a point
@@ -639,15 +1253,48 @@ by a point
 >malt hour
 by a point
 
+#testcase-check-pre-malt-hour-rule-if-sco-malt-hour-is-true
+>malt hour
+You already called out to share refreshments. You need to save some for the final meet-up.
+
 >e
+
+#+testcase-think-table-of-main-oronyms-pre-join-aider-rule
+>think
+You can call a JOIN AIDER now you have two items of power to join.
 
 >join aider
 by a point
 
+#testcase-check-pre-join-aider-rule-if-sco-join-aider-is-true
+>join aider
+You already formed the orb and/or band!
+
 >dupe it
 by a point
 
+#testcase-check-pre-dupe-it-rule-if-sco-dupe-it-is-true
+>dupe it
+You already duplicated the egg of a guv! The dew pit is inactive now.
+
+>gonear farm isles
+
+#+testcase-check-pre-barn-open-rule-if-sco-barn-open-is-true
+>barn open
+You already got an egg from the barn! You figured where to get more, too.
+
+>undo
+>undo
+
 >u
+
+#testcase-check-pre-lie-fruits-rule-if-life-roots-are-not-in-throne
+>lie fruits
+That thought/action/observation/request brings up nothing. Us Too has a limited set of verbs, and the main thing is to guess a two-word phrase. To see what verbs are used, try VERBS.
+
+#+testcase-think-table-of-main-oronyms-pre-use-it-rule
+>think
+You can USE IT now you have an item of power to use.
 
 >use it
 by a point
@@ -904,6 +1551,10 @@ That thought/action/observation/request brings up nothing. Us Too has a limited 
 #testcase-reject-end-table-of-main-oronyms-pre-wheat-rye-rule
 >wheat rye
 That thought/action/observation/request brings up nothing. Us Too has a limited set of verbs, and the main thing is to guess a two-word phrase. To see what verbs are used, try VERBS.
+
+#testcase-think-table-of-main-oronyms-pre-a-stew-rule
+>think
+You can make A STEW now you have all the ingredients you need. X should list them.
 
 >a stew
 by a point
