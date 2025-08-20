@@ -67,6 +67,7 @@ to assign-rmord:
 	now entry extra-turns of south-found is rm;
 	if debug-state is true, say "(DEBUG) [rm] has been assigned rmord [extra-turns].";
 	move player to rm;
+	change north exit of rm to ur branch;
 	if number of entries in south-to-find is 0:
 		say "Whew! You've discovered three new entries to the south of the Ur-Branch. You're kind of worried it will be tricky to remember.";
 		say "[line break][i][bracket][b]NOTE[r][i]: don't worry. There will be. And you won't have to run back and forth, now you've discovered all of them.[close bracket]";
@@ -81,7 +82,6 @@ to say which-south of (orm - an ordroom):
 	repeat with X running from 1 to rmord of orm:
 		say "S";
 
-check going north in an ordroom: move player to ur branch instead;
 
 check going south in ur branch when extra-turns > 0:
 	repeat with o running through ordrooms:
@@ -112,7 +112,7 @@ definition: a direction (called di) is branchcant:
 definition: a direction (called di) is branchcan:
 	if di is branchdone, no;
 	if di is down, no;
-	if the room di of location of player is nowhere, no;
+	if the room di of ur branch is nowhere, no;
 	yes;
 
 after printing the name of a direction (called di) while pri-branch-reject is true:

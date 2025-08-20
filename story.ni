@@ -414,14 +414,20 @@ after printing the locale description for Ur Branch when sco-mess-pot is true an
 	reveal sore dark to northwest;
 	continue the action;
 
+after printing the locale description for Ur Branch when player was in Dome Aching:
+	if sco-pry-more is true and sco-gray-tin is true and sco-dough-making is true:
+		say "You think back to all you did to the southeast. It was sparse enough. There can't be anything more to do.";
+		now southeast is branchdone;
+	continue the action;
+
 check going to Ur Branch when southwest is branchcan:
 	if bowl ditch is visited and tude ark is visited and sage oaks is visited and tube rod is visited:
 		say "As [fort] comes into view, you feel dizzy at the thought of needing [the beak]'s help again.[paragraph break]Or do you really? You used it pretty much every which way. You don't see a need to, further.";
 		wink-out southwest;
 
 to wink-out (di - a direction):
-	say "[line break]You consult the pro ball to make sure. It shows a large map of where you've been, and after a couple  seconds, [the di] area grows dim.";
-		now di is branchdone;
+	say "[line break]You consult the pro ball to make sure. It shows a large map of where you've been, and after a couple seconds, [the di] area grows dim.";
+	now di is branchdone;
 
 after printing the locale description for Ur Branch when player has rope ladder and up is branchcant:
 	say "You feel [the ladder] tug you off in an odd direction. There you find a steep cliff face. The rope ladder seems to uncoil and go upwards. Hmm, you'd have missed that, but you know it now.";
@@ -513,10 +519,11 @@ understand "n2" as nning when player is in Dust Which or player is in Scribe Roo
 understand "2n" as nning when player is in Dust Which or player is in Scribe Room or player is in Dam Pink.
 
 carry out nning:
+	follow the possibly wink out south rule;
 	move player to Ur Branch;
 	the rule succeeds;
 
-check going north to ur branch:
+check going north when room gone to is ur branch (this is the possibly wink out south rule):
 	if south-covered:
 		say "You retrace your steps. You're pretty sure you've cleared everything to the south.";
 		wink-out south;
