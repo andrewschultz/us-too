@@ -84,6 +84,20 @@ by a point
 
 >n
 
+#testcase-homonym-detail-hom-flairs-flayers-rule-if-the-player's-command-includes-flairs-or-the-player's-command-includes-flair
+>more flair
+Your clothes fail to become jazzier. Fortunately, since you're on a quest, there's no restaurant manager around requiring this.
+
+>more flairs
+Your clothes fail to become jazzier. Fortunately, since you're on a quest, there's no restaurant manager around requiring this.
+
+#testcase-homonym-detail-hom-flairs-flayers-rule-if-the-player's-command-includes-flayers-or-the-player's-command-includes-flayer
+>more flayer
+You probably don't need flayers as allies, and you really don't need them as enemies.
+
+>more flayers
+You probably don't need flayers as allies, and you really don't need them as enemies.
+
 >more flares
 by a point
 

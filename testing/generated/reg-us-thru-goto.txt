@@ -18,17 +18,23 @@ Note that X will default to A'ight, Amusing Item Using in the future.
 
 >z
 
->out
-You don't want to go wandering outside after you just got here! You need to catch your bearings. Focus on yourself a bit. Maybe even a lot.
-
 >try quest
 by a point
+
+>n
+You could explore your mine, but you really should get rid of that beast.
 
 >u
 The beast (wrong) blocks your way. How wrong of it! You try physically shifting around, but it's unmoved. Maybe adjusting your mental attitude will do the trick.
 
 >be strong
 by a point
+
+>n
+You could explore your mine, but you sense the real adventure lies back above in the outdoors.
+
+>u
+You're eager to rush out there, but perhaps you should peruse the ... documentation you were given, first. You haven't really looked at A'ight, Amusing Item Using from your inventory, yet. Sure, you could go out there and find stuff scattershot, but why not have some direction?
 
 >x
 
@@ -37,6 +43,9 @@ by a bonus point
 
 >summon cheese
 by a point
+
+>n
+WRONG
 
 >u
 

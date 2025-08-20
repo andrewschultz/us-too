@@ -287,7 +287,7 @@ That thought/action/observation/request brings up nothing. Us Too has a limited 
 >try quest
 You already have an idea of your quest!
 
-#testcase-check-pre-a-stew-rule-if-number-of-not-discovered-stewitems->-0-and-debug-win-is-false
+#testcase-check-pre-a-stew-rule-if-aight-is-unexamined
 >a stew
 You think far ahead to what you might need. You'd need to read an ingredient list for that. Maybe you have one on you to start.
 
@@ -295,6 +295,10 @@ You think far ahead to what you might need. You'd need to read an ingredient lis
 by a point
 
 >x
+
+#testcase-check-pre-a-stew-rule-if-number-of-not-discovered-stewitems->-0-and-debug-win-is-false
+>a stew
+You don't have all the stew ingredients you need! Currently, you have zero out of thirteen.
 
 >loose intro
 by a bonus point

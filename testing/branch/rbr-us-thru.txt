@@ -343,10 +343,6 @@ You don't need to prefix any important two-word command with SAY. Just say the t
 >say
 You don't need to prefix any important two-word command with SAY. Just say the two words.
 
-@gt
->out
-You don't want to go wandering outside after you just got here! You need to catch your bearings. Focus on yourself a bit. Maybe even a lot.
-
 @part
 #testcase-one-right-table-of-main-oronyms-try-quest-1-try
 >try xxx
@@ -380,6 +376,7 @@ The eyes light up green and show three dots, then five dots.
 by a point
 
 @all
+#testcase-check-pre-try-quest-rule-fallthrough
 #testcase-run-post-try-quest-rule-default
 Yes, yes. That's what really matters. Your quest.
 You doze off, and when you awake, you find ... well, a beast, wrong, blocking your way.
@@ -416,11 +413,14 @@ You must have one word right for achieving the game's objective.
 You already have an idea of your quest!
 
 @gt
+>n
+You could explore your mine, but you really should get rid of that beast.
+\\
 >u
 The beast (wrong) blocks your way. How wrong of it! You try physically shifting around, but it's unmoved. Maybe adjusting your mental attitude will do the trick.
 
 @rej
-#testcase-check-pre-a-stew-rule-if-number-of-not-discovered-stewitems->-0-and-debug-win-is-false
+#testcase-check-pre-a-stew-rule-if-aight-is-unexamined
 >a stew
 You think far ahead to what you might need. You'd need to read an ingredient list for that. Maybe you have one on you to start.
 
@@ -455,6 +455,7 @@ The eyes light up green and show two dots, then six dots.
 by a point
 
 @all
+#testcase-check-pre-be-strong-rule-fallthrough
 #testcase-run-post-be-strong-rule-default
 You manage to stand up to the beast a bit. It could beat you, sure, but you're not worth the effort. It trudges off, no longer blocking you from leaving. It has easier prey. "Be stranger, beast-ranger," you call out, gaining confidence.
 
@@ -462,6 +463,13 @@ You manage to stand up to the beast a bit. It could beat you, sure, but you're n
 #+testcase-values-eyes-number-of-beast-wrong-is-26
 >eye beast wrong
 You can't see any such thing.
+
+@gt
+>n
+You could explore your mine, but you sense the real adventure lies back above in the outdoors.
+\\
+>u
+You're eager to rush out there, but perhaps you should peruse the ... documentation you were given, first. You haven't really looked at A'ight, Amusing Item Using from your inventory, yet. Sure, you could go out there and find stuff scattershot, but why not have some direction?
 
 >x
 
@@ -480,6 +488,11 @@ You haven't found any yet, so I didn't sort them into have and don't have.
 -- hand protection from the heat
 -- nonalcoholic refreshment
 -- well, just all sorts of fruits and vegetables
+
+@rej
+#testcase-check-pre-a-stew-rule-if-number-of-not-discovered-stewitems->-0-and-debug-win-is-false
+>a stew
+You don't have all the stew ingredients you need! Currently, you have zero out of thirteen.
 
 @hint
 #testcase-values-eyes-number-of-war-pawn-is--42
@@ -617,6 +630,7 @@ But then the Goal-Edge-Go Ledge, containing nothing, retracts after a bit. Well,
 by a bonus point
 
 @all
+#testcase-check-pre-loose-intro-rule-fallthrough
 #testcase-run-post-loose-intro-rule-default
 A loose intro flutters down from the lucent row. You pick it up. As you do, the lucent row stops glowing and becomes a ledge. A Goal-Edge-Go Ledge, to be precise.
 #testcase-run-post-loose-intro-rule-if-lucent-row-is-examined-and-eyes-are-not-in-mine-and-pawn-is-not-in-mine
@@ -663,6 +677,7 @@ Hmm, can't be the whole document. Must be one thing in particular you can pick o
 by a point
 
 @all
+#testcase-check-pre-summon-cheese-rule-fallthrough
 #testcase-run-post-summon-cheese-rule-default
 You're confident you've figured what the munchies are. And you know what? You're right! You have all sorts of cheese now.
 
@@ -675,6 +690,10 @@ You're confident you've figured what the munchies are. And you know what? You're
 #testcase-values-eyes-number-of-cheese-is-1
 >eye cheese
 {$EYEITMNO} the cheese.
+
+@gt
+>n
+WRONG
 
 >u
 
@@ -723,6 +742,7 @@ The eyes light up green and show four dots, then five dots.
 by a point
 
 @all
+#testcase-check-pre-herb-ranch-rule-fallthrough
 #testcase-run-post-herb-ranch-rule-default
 You find a path to a herb ranch. Of course every stew needs herbs. The farmer there gives you a sample saying "Some herb, eh?" The phrase sticks with you as conversation continues.
 It's a surprisingly enlightening one. What can you do with it?
@@ -763,6 +783,7 @@ The eyes light up green and show six dots, then three dots.
 by a point
 
 @all
+#testcase-check-pre-summer-bay-rule-fallthrough
 #testcase-run-post-summer-bay-rule-default
 The herb gives off a weird ... well, not quite a smell. But it opens your mind to new passages, passages that might actually lead somewhere, without having to light it or do anything adults who drank a lot told you was very, very dangerous.
 Your newly opened mind discerns a safe passage east. Hey, that's a start!
@@ -809,6 +830,7 @@ You must have one word right for dealing with the beach, ill.
 by a point
 
 @all
+#testcase-check-pre-be-chill-rule-fallthrough
 #testcase-run-post-be-chill-rule-default
 Your general sense of malaise disperses, which makes you more observant. Observant enough to notice a nigh swarm which ... keeps things from being perfect.
 
@@ -848,6 +870,7 @@ The eyes light up green and show four dots, then four dots.
 by a point
 
 @all
+#testcase-check-pre-nice-warm-rule-fallthrough
 #testcase-run-post-nice-warm-rule-default
 The nigh swarm grows less volatile and, yes, more nice, warm. It rises in the air, then buzzes off to somewhere to maybe be nice, cool, too. Perhaps there is a nigh school!
 Behind the nigh swarm is a pro ball.
@@ -892,6 +915,7 @@ The eyes light up green and show five dots, then three dots.
 by a point
 
 @all
+#testcase-check-pre-probe-all-rule-fallthrough
 #testcase-run-post-probe-all-rule-default
 You reach out to the pro ball. It seems to sense what you want it for. You take it, then look at it from many different angles. Reflected in it, you see ... well, a meh spot in My New Mine, Ooh! that could use sprucing up. But how?
 Yet much of the pro ball remains cloudy. Perhaps it will reveal what you need, as you need it.
@@ -945,6 +969,7 @@ The eyes light up green and show four dots, then three dots.
 by a point
 
 @all
+#testcase-check-pre-mess-pot-rule-fallthrough
 #testcase-run-post-mess-pot-rule-default
 Ah. There it is. You, in fact, find a whole mess kit.
 
@@ -985,6 +1010,7 @@ The eyes glow dimly green and show three dots, then four dots.
 by a bonus point
 
 @all
+#testcase-check-pre-meh-skit-rule-fallthrough
 #testcase-run-post-meh-skit-rule-default
 Perhaps it's too obvious, but you decide to have fun, and you do.
 
@@ -1031,6 +1057,7 @@ The eyes light up green and show five dots, then three dots.
 by a point
 
 @all
+#testcase-check-pre-board-red-rule-fallthrough
 #testcase-run-post-board-red-rule-default
 You turn up a board (red) ... it's narrow and six feet long, made of Styrofoam, with CATCH THE WAVES and STAND ON THIS SIDE written on one side. Since it wasn't hard to find, you don't feel excited you found it, but you carry it anyway. Thankfully, nobody in the maul tower gaffles or arrests you for stealing.
 
@@ -1103,6 +1130,7 @@ You must have one word right for avoiding the black ops.
 by a point
 
 @all
+#testcase-check-pre-blah-copse-rule-fallthrough
 #testcase-run-post-blah-copse-rule-default
 Aha! That was what you were doing wrong. You just needed to tweak a thing or two as you walked north. This time, you avoid the black-ops site. Once you see the path, well, it's hard to un-see.
 \\
@@ -1145,6 +1173,7 @@ The eyes light up green and show three dots, then five dots.
 by a point
 
 @all
+#testcase-check-pre-nah-queue-rule-fallthrough
 #testcase-run-post-nah-queue-rule-default
 You reject the Forest Team for Esteem's jibes consistently and forcefully, not worrying about intellectual rigor. They give up on you. Someone else appears, relieved you got rid of them. He introduces himself as Sir Freddie. He thinks perhaps they are right, and he is not cut out for quests.
 [NOTE: if you wish, you can refer to him as F or Sir F.]
@@ -1180,6 +1209,7 @@ The eyes light up green and show four dots, then five dots.
 by a point
 
 @all
+#testcase-check-pre-surf-ready-rule-fallthrough
 #testcase-run-post-surf-ready-rule-default
 Sir Freddie agrees with you, but he doesn't know how to get started. You have just the thing! Your red board is kind of bulky but not heavy. It'd be nice not to have to carry it around. He waves. "See you later. Oh, one other thing... I think I heard an orc lurk to the north. Another reason to give up this questing."
 
@@ -1214,6 +1244,7 @@ You must have one word right for figuring what Sir Freddie was scared of.
 by a point
 
 @all
+#testcase-check-pre-or-clerk-rule-fallthrough
 #testcase-run-post-or-clerk-rule-default
 Haha! Sir Freddie seemed nice enough, but you guess he was scared of someone else who was scared and putting up a front. Sure enough, a clerk Sir Freddie could've beaten up with one hand (if Sir Freddie had the courage to fight, of course) comes out of a bunker with their hands up. They begin to apologize, but you say it's all right.
 "You ... you aren't part of the forest team?" Certainly not, you assure them.
@@ -1229,6 +1260,21 @@ The eyes light up yellow and show five dots, then four dots.
 @all
 #testcase-room-names-morph-lairs
 `Morph Lairs
+
+@hom
+#testcase-homonym-detail-hom-flairs-flayers-rule-if-the-player's-command-includes-flairs-or-the-player's-command-includes-flair
+>more flair
+Your clothes fail to become jazzier. Fortunately, since you're on a quest, there's no restaurant manager around requiring this.
+\\
+>more flairs
+Your clothes fail to become jazzier. Fortunately, since you're on a quest, there's no restaurant manager around requiring this.
+\\
+#testcase-homonym-detail-hom-flairs-flayers-rule-if-the-player's-command-includes-flayers-or-the-player's-command-includes-flayer
+>more flayer
+You probably don't need flayers as allies, and you really don't need them as enemies.
+\\
+>more flayers
+You probably don't need flayers as allies, and you really don't need them as enemies.
 
 @part
 ##balance undos
@@ -1268,6 +1314,7 @@ The eyes light up green and show four dots, then six dots.
 by a point
 
 @all
+#testcase-check-pre-more-flares-rule-fallthrough
 #testcase-run-post-more-flares-rule-default
 You set off the flares, and what do you know? You see another flare coming towards the morph lairs from a distance. Fortunately you already started running to the Ur-Branch. Whereupon you see smoke you follow ... a bit. The path opens up a bit further to the southeast. You have somewhere new to go, yet you're still wondering what became of the morph lairs.
 \\
@@ -1324,6 +1371,7 @@ The eyes light up green and show four dots, then six dots.
 by a point
 
 @all
+#testcase-check-pre-rope-ladder-rule-fallthrough
 #testcase-run-post-rope-ladder-rule-default
 Your eyes finally adjust to all the egregious plaid, and you discover a plain but sturdy rope ladder. You wonder if there is anything else to do here, but shortly you hear an electronic "HOW?! SCAM!!!!!!" You look up and see a house cam! You run, just in case there's more security ... surely you must be done here, though ...
 
@@ -1370,6 +1418,7 @@ The eyes light up green and show five dots, then five dots.
 by a point
 
 @all
+#testcase-check-pre-guard-entry-rule-fallthrough
 #testcase-run-post-guard-entry-rule-default
 You look for a way past the tree, and suddenly you have an idea, and once you know what to look for, it's easy. You're less threatening than the Forest Team for Esteem, so it's no problem. The protective magic or whatever is fooled, or maybe it thinks that if you're willing to risk the guard entry, you're not visiting for greedy purposes. Whichever it is, you make it...
 \\
@@ -1412,6 +1461,7 @@ The eyes light up yellow and show four dots, then six dots.
 by a point
 
 @all
+#testcase-check-pre-peace-talks-rule-fallthrough
 #testcase-run-post-peace-talks-rule-default
 #testcase-run-post-peace-talks-rule-fallthrough
 Getting back to nature and stuff leaves you at peace with yourself. So at peace, you want to spread that peace to others, whether or not they fully deserve it. However, now you're so at peace, you recognize you are disturbing the plants' peace. You retreat to the Ur-Branch.
@@ -1453,6 +1503,7 @@ Hmm. Looks like some detail about this place to explore, if you're curious.
 by a bonus point
 
 @all
+#testcase-check-pre-pea-pod-rule-fallthrough
 #testcase-run-post-pea-pod-rule-default
 Oh wait! There is something that will add a bit of flavor! Actually, it's a weird giant pea pod!
 
@@ -1509,6 +1560,7 @@ You must have one word right for dispelling the Can't-Ache.
 by a point
 
 @all
+#testcase-check-pre-can-take-rule-fallthrough
 #testcase-run-post-can-take-rule-default
 You feel you can take the aching. It takes a bit of time, even though your proposed solution feels a bit glib and simplistic, and you worry a worse aching may replace it ... and, in a way, it does. You wonder what you need to do here now. You see a great inn and an inner nest. Which is worth visiting?
 
@@ -1559,6 +1611,7 @@ The eyes light up green and show four dots, then three dots.
 by a point
 
 @all
+#testcase-check-pre-gray-tin-rule-fallthrough
 #testcase-run-post-gray-tin-rule-default
 Why not? A tin could hold something handy. The great inn seems to be able to spare a lot, though they mention they can't let you hog too many.
 
@@ -1597,6 +1650,7 @@ You must have one word right for doing something positive in Dome, Aching.
 by a point
 
 @all
+#testcase-check-pre-dough-making-rule-fallthrough
 #testcase-run-post-dough-making-rule-default
 Excellent! Not only do you make the dough, but the great inn offers you somewhere to keep it. You wind up with a dough pail.
 
@@ -1631,6 +1685,7 @@ The eyes light up green and show two dots, then seven dots.
 by a point
 
 @all
+#testcase-check-pre-in-earnest-rule-fallthrough
 #testcase-run-post-in-earnest-rule-default
 The inner nest seems to open up a bit more, comfortable you're not just running through a checklist. Well, perhaps you still are. But worst case, you took the time to pretend and make it believable. You can now go IN.
 
@@ -1681,6 +1736,7 @@ The eyes light up green and show three dots, then four dots.
 by a point
 
 @all
+#testcase-check-pre-pry-more-rule-fallthrough
 #testcase-run-post-pry-more-rule-default
 Surely there must be some way to get the oar, you think. And you pry constructively. After an hour's work, you have an oar, lightweight and powerful.
 
@@ -1724,6 +1780,7 @@ by a point
 `Dune Ever-Do-Never
 
 @all+
+#testcase-check-pre-punt-weaker-rule-fallthrough
 #testcase-run-post-punt-weaker-rule-default
 "Ah, yes, that's it. A small gift for a small favor." The pun tweaker goes to the back of the Gauche/Hip GO-Ship, and you hear a splash. The pun tweaker reappears, clothes wet, pushing a pretty scrawny punt. "It won't get very far, but there's something to the east. Oh, and I hope you have a way to steer it, too. Anyway, here you go. My repairs are complete!"
 
@@ -1774,6 +1831,7 @@ The eyes light up green and show four dots, then five dots.
 by a point
 
 @all
+#testcase-check-pre-base-pikes-rule-fallthrough
 #testcase-run-post-base-pikes-rule-default
 Well, someone must've been able to get through the bay spikes to dump stuff on the pile, you reason. And you discover something -- base pikes, one you wouldn't want to use on any person, but then again, these spikes could hurt someone, so that seems okay.
 Walking through the path you made, you see a high cup near the top of the pile.
@@ -1818,6 +1876,7 @@ The eyes light up green and show three dots, then five dots.
 by a point
 
 @all
+#testcase-check-pre-pie-crust-rule-fallthrough
 #testcase-run-post-pie-crust-rule-default
 Yup! Pie crust! It fits in your tin nicely.
 
@@ -1861,6 +1920,7 @@ The eyes light up green and show four dots, then two dots.
 by a point
 
 @all
+#testcase-check-pre-hike-up-rule-fallthrough
 #testcase-run-post-hike-up-rule-default
 You decide the direct way of climbing the pile at a steep angle just won't work. But it's a big pile, and as you walk around, you see a slower way, less steep, but less likely to cause you to slip. You get to the top and have a look around. From your vantage point, you see a new path from the Ur-Branch, to the southwest! You also see places well beyond it, to the west and south. Well, that should cover all the directions.
 It makes you almost forget about the high cup. Well, it turns out the high cup is glued to other trash. Dang it! You're not sure if you needed it, anyway. It looks a bit too fancy for whatever you want to prepare.
@@ -1909,6 +1969,7 @@ The eyes light up green and show five dots, then three dots.
 by a point
 
 @all
+#testcase-check-pre-sword-ark-rule-fallthrough
 #testcase-run-post-sword-ark-rule-default
 It takes a while of stumbling around, but you have confidence the sword ark is there. In said sword ark is contained, shockingly, a sword! And not just any sword, but the TERRA BLADE. However, the blade is still out of reach. It's a pretty tall ark.
 
@@ -1952,6 +2013,7 @@ The eyes light up green and show five dots, then four dots.
 by a point
 
 @all
+#testcase-check-pre-blast-ring-rule-fallthrough
 #testcase-run-post-blast-ring-rule-default
 You aim the blah string at the sword ark. You feel a pull--yes, this must be when to transform the blah string. And boom! The sword ark shatters, and the Terra Blade falls to the ground.
 
@@ -1991,6 +2053,7 @@ The eyes light up green and show eight dots, then three dots.
 by a point
 
 @all
+#testcase-check-pre-terrible-aid-rule-fallthrough
 #testcase-run-post-terrible-aid-rule-default
 You make the point that the Terra Blade would be a terrible aid for your humble goals, whatever they may be. That proves you are worthy!
 You hear rumbling. You can't imagine there are any bigger secret here, so it seems like it's time to leave.
@@ -2045,6 +2108,7 @@ The eyes light up green and show two dots, then six dots.
 by a point
 
 @all
+#testcase-check-pre-oh-clever-rule-fallthrough
 #testcase-run-post-oh-clever-rule-default
 You think and think and think. Of course, they wouldn't want any old fool pulling the lever. So there's no obvious way to pull it. You try a hundred different ways, then feel clever on the hundred and first when -- CLICK -- it flips, revealing a compartment behind!
 The feeling of cleverness lasts only a few seconds, though. You realize how you could've seen it sooner if you'd been paying attention. After fifteen minutes, you feel even less clever for having spent fifteen minutes unconstructively visiting the past.
@@ -2105,6 +2169,7 @@ You must have one word right for how to fracture the tube/rod.
 by a point
 
 @all
+#testcase-check-pre-too-broad-rule-fallthrough
 #testcase-run-post-too-broad-rule-default
 The tube/rod slowly cracks, then bursts. A passage now leads south. You pause a bit and hope it's not a tube leading to bleeding...
 
@@ -2168,6 +2233,7 @@ by a point
 by a point
 
 @all
+#testcase-check-pre-ho-langour-rule-fallthrough
 #testcase-run-post-ho-langour-rule-default
 Passive resistance is the way to go! You worry you are just doing nothing by default, and it doesn't really count, but then you remember how you busted up the tube/rod. You feel your blood pressure falling. Things aren't so bad, now.
 \\
@@ -2209,6 +2275,7 @@ The eyes light up green and show four dots, then four dots.
 by a point
 
 @all
+#testcase-check-pre-fell-trap-rule-fallthrough
 #testcase-run-post-fell-trap-rule-default
 Oh my! You pull the felt wrap away, and that is one fell looking trap!
 
@@ -2254,6 +2321,7 @@ You must have one word right for escaping the Cell, Urban.
 by a point
 
 @all
+#testcase-check-pre-cellar-bin-rule-fallthrough
 #testcase-run-post-cellar-bin-rule-default
 You bang on the cell door, claiming you've been sent to the wrong place. To your surprise, two maintenance workers come by and agree. One pushes a button. You are spun around! You fall to the floor, dizzy.
 "Okay. Next time, if you fall in the trap, you'll fall somewhere else." You thank them, you guess, not entirely sure what good it will do.
@@ -2315,6 +2383,7 @@ You must have one word right for get by the Sage Oaks.
 by a point
 
 @all
+#testcase-check-pre-say-jokes-rule-fallthrough
 #testcase-run-post-say-jokes-rule-default
 "Eh, jokes age oaks," they mutter at first. But they get into it more. They warn you of the trouble you'll get in if you keep telling corny jokes. It doesn't show you're smart. But then you explain you carefully crafted said jokes to peeve them. You've had experience all game with wordplay, too.
 They're pretty impressed with your presentation. You feel a magic surge--you can pass to the south now.
@@ -2354,6 +2423,7 @@ You must have one word right for see how to stop gasping OUCH.
 by a point
 
 @all
+#testcase-check-pre-gas-pouch-rule-fallthrough
 #testcase-run-post-gas-pouch-rule-default
 The sage oaks chuckle. And you chuckle a bit, too. Turnabout is fair play! They release the gas from the pouch all at once -- of course, not in your direction. "It can hold liquid, too," they say. "But one more thing. Do you know where we got this from?"
 You shake your head.
@@ -2419,6 +2489,7 @@ The eyes light up green and show five dots, then two dots.
 by a point
 
 @all
+#testcase-check-pre-claim-it-rule-fallthrough
 #testcase-run-post-claim-it-rule-default
 You wonder if someone would really miss this clay mitt. But then you realize there's nothing stopping you, and they probably didn't just stop by here on vacation and lose it. Maybe they left it here because they thought someone else might find it more useful!
 
@@ -2458,6 +2529,7 @@ The eyes light up green and show four dots, then three dots.
 by a point
 
 @all
+#testcase-check-pre-damp-ink-rule-fallthrough
 #testcase-run-post-damp-ink-rule-default
 You use the gas pouch to drain out a good dose of damp ink that's dripping from the dam.
 
@@ -2505,6 +2577,7 @@ The eyes show nothing. Probably don't need to do anything to get something from 
 by a point
 
 @all
+#testcase-check-pre-scry-broom-rule-fallthrough
 #testcase-run-post-scry-broom-rule-default
 You realize a broom must be here. You trade the damp ink in the gas pouch for it. The scribes are impressed with the ink ... so much, they show you an artifact few get to see. "It is our BELL, TRUSTED. Yet it has some hidden purpose we could not find. Perhaps it will help you. And -- oh, yes -- that broom? Do return it when you're done."
 
@@ -2563,6 +2636,7 @@ The eyes light up green and show three dots, then eight dots.
 by a point
 
 @all
+#testcase-check-pre-pro-sweeping-rule-fallthrough
 #testcase-run-post-pro-sweeping-rule-default
 The dust gets clearer. You see you are in a library. You also notice a coal drum off to the side. Maybe it was the source of some of the dust.
 \\
@@ -2605,6 +2679,7 @@ The eyes light up green and show four dots, then three dots.
 by a point
 
 @all
+#testcase-check-pre-cold-rum-rule-fallthrough
 #testcase-run-post-cold-rum-rule-default
 It's a pretty big coal drum. You rummage around, and sure enough ... you find some cold rum. Way too much to drink on your own.
 
@@ -2643,6 +2718,7 @@ You must have one word right for divining what's beneath Teal Eaves.
 by a point
 
 @all
+#testcase-check-pre-tea-leaves-rule-fallthrough
 #testcase-run-post-tea-leaves-rule-default
 Using your rope ladder, you climb on the roof and down into a spare attic compartment. People watch in disbelief as you pull out many different tea leaves.
 
@@ -2687,6 +2763,7 @@ The eyes light up green and show four dots, then six dots.
 by a point
 
 @all
+#testcase-check-pre-belt-rusted-rule-fallthrough
 #testcase-run-post-belt-rusted-rule-default
 The scribes get together and nod their heads. They agree this must be it. Your request is a wise choice, one not motivated by greed. They give you a rag and a surprisingly modern squirt-bottle full of cleaning liquid, and the rust from the bell flakes off to form a belt. It becomes much shinier. And perhaps ... well, this belt, rusted, was something much more once. Perhaps you are the one to return it to its former questing glory. Such things do not interest scribes. They move the bell back to the out-of-sight (it really IS quite a work of architecture) bell tower from whence it came.
 
@@ -2742,6 +2819,7 @@ The eyes light up green and show four dots, then four dots.
 by a point
 
 @all
+#testcase-check-pre-bold-itch-rule-fallthrough
 #testcase-run-post-bold-itch-rule-default
 You have a think. It's not terrible. You've gotten here. You can get back. You really did trample through whatever was to the east. You walk off the ankle sprain you get from falling down. As you do, you notice passages west and north -- a bit hidden, but actually a bit more obvious than the way back east. You're glad you were able to take a deep breath and get some perspective.
 
@@ -2787,6 +2865,7 @@ The eyes glow dimly green and show four dots, then seven dots.
 by a bonus point
 
 @all
+#testcase-check-pre-tour-boaters-rule-fallthrough
 #testcase-run-post-tour-boaters-rule-default
 You have a business idea! You explain it to the folks at Turbo Tours. They play it down, but of course, after a bit they implement it and it works well and they take credit for it.
 That's sort of a bummer, but you find it nice to be around people who are having their own adventures.
@@ -2827,6 +2906,7 @@ The eyes light up green and show five dots, then four dots.
 by a point
 
 @all
+#testcase-check-pre-stark-raft-rule-fallthrough
 #testcase-run-post-stark-raft-rule-default
 You let slip that perhaps a stark raft is more in your price range. A voice from behind the star craft agrees. They, in fact, have a particularly plain one which has been not at all good for business. They're willing to give it to you, if you promise not to loiter too much. Thus, they redirect you away to a new area of Turbo Tours, one without the star craft. You feel belittled, but hey, a free raft is a free raft. Your prime oar should work just fine on it. It's worth going back to the beach to get it.
 
@@ -2888,6 +2968,7 @@ The eyes light up green and show four dots, then five dots.
 by a point
 
 @all
+#testcase-check-pre-find-rinks-rule-fallthrough
 #testcase-run-post-find-rinks-rule-default
 It's too warm out for ice rinks, but then, you didn't expect any clues to be obvious. Perhaps you just need to look for reasonably-sized ponds that could freeze pretty quickly in the winter. A bit of wandering, and you find them...
 \\
@@ -2925,6 +3006,7 @@ The eyes light up green and show four dots, then seven dots.
 by a point
 
 @all
+#testcase-check-pre-bear-respond-rule-fallthrough
 #testcase-run-post-bear-respond-rule-default
 You have no idea whether to call a bear or even if it's a good idea. But you find a honeycomb high up in a tree. It's too high up for you, even when you return with the prime oar, which will maybe be useful if things get violent.
 You wave the oar at the tree, then wave it, hoping to catch a bear's attention. The bear nods at you as if to say "Huh, Neatest Honey Test!" You hand it the prime oar, and it swats down the honeycomb, which it takes. But it provides you with a variety of berries in payment. Then it lifts up a paw. You are on its territory. It would not do to stay. You have gotten what you want, and it is time to go. So you do.
@@ -2977,6 +3059,7 @@ You can transact with the BARN OPEN now you have something of value to trade.
 by a point
 
 @all
+#testcase-check-pre-barn-open-rule-fallthrough
 #testcase-run-post-barn-open-rule-default
 Of course it makes sense there'd be a barn on farm isles. You visit the barn. Inside it are some truly glorious eggs! Of course, they are not for free, but you have plenty of extra berries. The farmer thanks you--picking berries to the south is so treacherous--and hands you the very best egg. It's an egg of a GUV'!
 
@@ -3024,6 +3107,7 @@ The eyes light up green and show three dots, then six dots.
 by a point
 
 @all
+#testcase-check-pre-saw-bakers-rule-fallthrough
 #testcase-run-post-saw-bakers-rule-default
 You keep an eye out for other people. Eventually, you see them: bakers, upset they're getting no business. You can probably go INSIDE to their deli.
 
@@ -3075,6 +3159,7 @@ The eyes light up green and show four dots, then seven dots.
 by a point
 
 @all
+#testcase-check-pre-dell-eastern-rule-fallthrough
 #testcase-run-post-dell-eastern-rule-default
 The surroundings are a bit more welcoming now. Oh, you can go east as well as out, too.
 
@@ -3128,6 +3213,7 @@ The eyes light up green and show four dots, then three dots.
 by a point
 
 @all
+#testcase-check-pre-dope-ale-rule-fallthrough
 #testcase-run-post-dope-ale-rule-default
 You make the trade: dough pail for dope ale! The fey loners/fail-owners note they're actually getting business. They bet if you come back a bit later, there'll be even more.
 
@@ -3178,6 +3264,7 @@ The eyes light up green and show four dots, then eight dots.
 by a point
 
 @all
+#testcase-check-pre-beef-ordering-rule-fallthrough
 #testcase-run-post-beef-ordering-rule-default
 Yes, that's what to do. You consider ordering, but what can you pay with? You have nothing too valuable, or so it seems.
 But wait! The fey loners/fail-owners spy the Terra Blade on you. You start mumbling surely it can't be used for something so pedestrian ... but perhaps it, or the spirit in it, is sick of saving the world and stuff. "Beef rended: befriended!" the fey loners/fail-owners exclaim, as they hand you a full variety platter: a me-track-meat rack!
@@ -3221,6 +3308,7 @@ The eyes light up green and show five dots, then three dots.
 by a point
 
 @all
+#testcase-check-pre-wheat-rye-rule-fallthrough
 #testcase-run-post-wheat-rye-rule-default
 #APOSTROPHE-OK
 The fey loners/fail-owners applaud you. "Yes ... that's just the thing ..." they chop up the wheat and rye with the erstwhile Terra Blade. "Oh! There's one other thing ... business is booming so much, maybe this will come in handy for you. We don't need any repairs." They hand you some "Mope, Liars, Mo'" Pliers.
@@ -3276,6 +3364,7 @@ The eyes light up green and show three dots, then five dots.
 by a point
 
 @all
+#testcase-check-pre-den-specs-rule-fallthrough
 #testcase-run-post-den-specs-rule-default
 You lose a bit of strength, strength you didn't really need, and wind up with a pair of glasses that may help you find a secret passage somewhere. You hope.
 
@@ -3321,6 +3410,7 @@ You must have one word right for seeing what's behind the groan odes.
 by a point
 
 @all
+#testcase-check-pre-grow-nodes-rule-fallthrough
 #testcase-run-post-grow-nodes-rule-default
 The groan odes retract, as nodes grow out, creating a more menacing noise. Ah, so that's what you're up against!
 \\
@@ -3363,6 +3453,7 @@ The eyes light up green and show two dots, then four dots.
 by a point
 
 @all
+#testcase-check-pre-no-date-rule-fallthrough
 #testcase-run-post-no-date-rule-default
 You realize which node to hack up. You realise what to say. The "Mope, Liars, Mo'" Pliers do their work on node eight. "Imminent destruction?" you scoff. "NO DATE!"
 You hear a FIZZ, then a BOOM ... the explosion knocks you back. Boy! It's a good thing you were still wearing those den specs! Thr pliers fly from your hand and into the specs, which they twist and shatter and blow off your face into a corner. A corner which disappears as the roof starts to collapse. You figure it's a good time to go back to the dell.
@@ -3416,6 +3507,7 @@ The eyes light up green and show four dots, then four dots.
 by a point
 
 @all
+#testcase-check-pre-malt-hour-rule-fallthrough
 #testcase-run-post-malt-hour-rule-default
 You call out for malt hour, which maybe isn't quite as good as happy hour. Heck, it might even be a chocolate malt and not malt liquor. But you promise liquid refreshment, which you have in spades, and the guardians come down to share it with you. There are fewer guardians than you thought, so you can save some alcohol for later.
 You have a good old talk about ... well, everything. You explain your quest, which they actually find kind of cool. They mention they need to sleep off the booze and are glad to let you through to the east.
@@ -3457,6 +3549,7 @@ The eyes light up green and show four dots, then five dots.
 by a point
 
 @all
+#testcase-check-pre-join-aider-rule-fallthrough
 #testcase-run-post-join-aider-rule-default
 With a rumble, the belt and the pro ball come together to form ... an ORB AND/OR BAND! You feel its power. It is not to be used lightly. Also, the gloom in the general area lifts. It feels less dry, and a dew pit appears.
 \\
@@ -3502,6 +3595,7 @@ You must have one word right for making the dew pit useful.
 by a point
 
 @all
+#testcase-check-pre-dupe-it-rule-fallthrough
 #testcase-run-post-dupe-it-rule-default
 You rest the egg of a guv in the dew pit. Nothing happens, then a rumbling. The egg grows and splits into ten identical, larger eggs ... and not only that, a small cardboard container arises from the dew pit. It's labeled TEN DREGS' TENDER EGGS. You take it. The dew pit grows dull. It's probably served its purpose. In fact, you can't think of anything else to do here. So you return to...
 
@@ -3554,6 +3648,7 @@ You must have one word right for disobeying the throne's orders.
 by a point
 
 @all
+#testcase-check-pre-use-it-rule-fallthrough
 #testcase-run-post-use-it-rule-default
 Defying the throne, you hold the orb and/or band high in the air. It crackles. Energy shoots to the throne, from which emits a loud "NO TERROR?! NOTE: ERROR!!!!!" The orb flies from your hand and towards the throne and explodes. You also feel the help-in-hell pin ripped from you ... it clunks off somewhere forgotten, maybe to help someone who gets in a more serious pickle than you did.
 Where the throne once sat, there's now something glistening. "You have freed the life roots," booms a melodramatic voice.
@@ -3593,6 +3688,7 @@ The eyes light up green and show three dots, then six dots.
 by a point
 
 @all
+#testcase-check-pre-lie-fruits-rule-fallthrough
 #testcase-run-post-lie-fruits-rule-default
 You call out the life roots: "Come on, this is a bit overblown. Do you really need to be all basso profundo?"
 To your surprise, they shrivel up. A voice intones: "Congratulations. You have seen through us. So many adventurers would start looking for eternal life, or profiting from this."
@@ -3868,6 +3964,7 @@ by a point
 @all
 #testcase-check-pre-a-stew-rule-fallthrough
 #testcase-run-post-a-stew-rule-fallthrough
+#testcase-check-pre-a-stew-rule-fallthrough
 #testcase-run-post-a-stew-rule-default
 #testcase-run-post-a-stew-rule-follow-the-score-and-thinking-changes-rule
 #testcase-run-post-a-stew-rule-follow-the-shutdown-rules
