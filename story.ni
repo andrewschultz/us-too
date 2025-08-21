@@ -12,6 +12,8 @@ section general
 
 include Punctuation Stripper by Andrew Schultz.
 
+include Oops Zapper by Andrew Schultz.
+
 include Bold Final Question Rows by Andrew Schultz.
 
 include Old School Verb Total Carnage by Andrew Schultz.
@@ -1178,6 +1180,8 @@ volume unsorted
 
 volume going out
 
+understand the command "o" as something new. understand "o" as outside.
+
 definition: a direction (called v) is viable:
 	if the room v of location of player is nowhere, no;
 	if player is in ur branch and v is branchdone, no;
@@ -1450,11 +1454,12 @@ check verbsing when player is in house:
 
 carry out verbsing:
 	say "[this-game] uses a reduced parser. You mostly just need to move around and guess special two-word commands indicated by your surroundings.";
-	say "[line break]Even commands like [b]TAKE[r] aren't necessary. Items are implicitly taken as you need them and used up, though you may [b]TAKE[r] and (to avoid temptation) [b]DROP[r] hinting items.";
-	say "[b]T[r]/[b]TALK[r] (subject not necessary--there is at most one NPC per room) or [b]LISTEN[r] may provide additional cues.";
+	say "[line break]Fo instance, [b]TAKE[r] isn't necessary. Items are implicitly taken as you need them and used up, though to help you avoid temptation, the game makes you [b]TAKE[r] hint items and lets you [b]DROP[r] them for good.";
+	say "[this-game] generally uses the four compass directions, but [if ur branch is unvisited]the hub room[else]Ur-Branch[end if] uses all four diagonal directions as well[if bore dread is unvisited and sore dark is unvisited]--don't worry, those are very small areas[end if]. [b]O[r] also goes outside, and if there's only one viable direction, it goes that way.";
+	say "[b]T[r]/[b]TALK[r]ing to NPCs (subject usually not necessary) or [b]LISTEN[r] may provide additional cues.";
 	say "[line break]Diagnostic commands include [b]I[r], and [b]X[r] alone will refer to [if gs-using-known is true][aight][else]a list of items needed to win[end if].";
-	say "[line break][b]THINK[r] is also useful to recall point-scoring commands that worked, or if you got one of two words right.";
-	if player has eyes, say "[line break][b]EYE[r] can be used on any item or person. Without an argument, it looks at the whole surrounding area.";
+	say "[line break][b]THINK[r] is also useful to recall point-scoring commands that you found that will work later, or if you got one of two words right.";
+	if player has eyes, say "[line break]Since you have [the eyes], [b]EYE[r] can be used on any item or person. Without an argument, it looks at the whole surrounding area.";
 	if player has war pawn, say "[line break]A special command is required to use the war pawn. [if core-score > 4]Now[else]Once[end if]you've got a few points, you shouldn't have much trouble figuring it[if core-score < 10], though you may wish to save it for later[end if].";
 
 book versions
