@@ -19,7 +19,7 @@ w1 (text)	w2 (text)	first-hom (text)	second-hom	hom-txt-rule (rule)	first-exact	
 "a"	"stew"	--	--	--	false	false	false	false	"achieving the game's objective"	false	true	true	false	false	mine ooh	pre-a-stew rule	post-a-stew rule	--	"You can make [b]A STEW[r] [once-now of pre-a-stew rule] you have all the ingredients you need. [b]X[r] should list them."
 "herb"	"ranch"	--	--	--	false	false	false	false	"finding the first place to visit from the Ur-Branch"	false	true	true	false	false	ur branch	pre-herb-ranch rule	post-herb-ranch rule	--	"You can discover an HERB RANCH [once-now of pre-herb-ranch rule] you are back in the Ur-Branch."
 "summer"	"bay"	--	--	--	false	false	false	false	"letting the herb reveal a new location"	false	true	true	false	false	ur branch	pre-summer-bay rule	post-summer-bay rule	--	"You can discover a SUMMER BAY [once-now of pre-summer-bay rule] you are back in the Ur-Branch."
-"blah"	"copse"	--	--	--	false	false	false	false	"avoiding the black ops"	false	true	true	false	false	ur branch	pre-blah-copse rule	post-blah-copse rule	--	--
+"blah"	"copse"	"cops"	--	hom-blah-copse rule	false	false	false	false	"avoiding the black ops"	false	true	true	false	false	ur branch	pre-blah-copse rule	post-blah-copse rule	--	--
 "guard"	"entry"	--	--	--	false	false	false	false	"finding a way past the garden tree"	false	true	true	false	false	ur branch	pre-guard-entry rule	post-guard-entry rule	--	--
 "be"	"chill"	--	--	--	false	false	false	false	"dealing with the beach, ill"	false	true	true	false	false	Beach Ill	pre-be-chill rule	post-be-chill rule	--	--
 "punt"	"weaker"	--	--	--	false	false	false	false	"trading with the pun tweaker"	false	true	true	false	false	Beach Ill	pre-punt-weaker rule	post-punt-weaker rule	--	"You can get a PUNT WEAKER [once-now of pre-punt-weaker rule] you are able to please the pun tweaker."
@@ -270,6 +270,9 @@ this is the post-guard-entry rule:
 	say "You look for a way past the tree, and suddenly you have an idea, and once you know what to look for, it's easy. You're less threatening than [the forest team], so it's no problem. The protective magic or whatever is fooled, or maybe it thinks that if you're willing to risk the guard entry, you're not visiting for greedy purposes. Whichever it is, you make it...";
 	move player to Pea Stalks;
 	declue garden tree;
+
+this is the hom-blah-copse rule:
+	say "You really don't need to bait cops to start patrolling the black ops. You'd like to find something more peaceful and back to nature, and stuff.";
 
 a wordtwisting rule (this is the pre-blah-copse rule):
 	if player is not in ur branch, unavailable;
