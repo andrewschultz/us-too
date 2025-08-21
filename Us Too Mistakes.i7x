@@ -16,7 +16,7 @@ understand "claim it" as a mistake ("You wonder if you should reclaim the mitt, 
 
 book the throne
 
-understand "sit" and "sit [text]" as a mistake ("You were smart enough to get this far. I'm gonna go out on a limb and say you're smart enough not to heed a demanding, evil voice asking you to do the equivalent of touching a live wire, and you're just poking around for fun")
+understand "sit" and "sit [text]" as a mistake ("You were smart enough to get this far. I'm gonna go out on a limb and say you're smart enough not to heed a demanding, evil voice asking you to do the equivalent of touching a live wire, and you're just poking around for fun.")
 
 Us Too Mistakes ends here.
 

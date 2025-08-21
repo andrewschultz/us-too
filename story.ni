@@ -1132,7 +1132,7 @@ the prose weeping is a thing in Dust Which Does Twitch. "The sound of prose, wee
 
 chapter coal drum
 
-the coal drum is a thing. description is "Plenty dirty. Perhaps there is something beneath the coal, but you might have to figure what, before digging.". eyes-number of coal drum is 43. eyes-rule of coal drum is pre-cold-rum rule.
+the coal drum is a thing. description is "Plenty dirty. [if sco-cold-rum is true]You don't want to go digging for more than the cold rum you found[else]Perhaps there is something beneath the coal, but you might have to figure what, before digging[end if].". eyes-number of coal drum is 43. eyes-rule of coal drum is pre-cold-rum rule.
 
 chapter cold rum
 

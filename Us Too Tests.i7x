@@ -104,7 +104,7 @@ when play begins:
 
 chapter in-game
 
-every turn when extra-turns > 0: say "(DEBUG GAUGE) [extra-turns] extra turns."
+every turn when extra-turns > 0: say "(DEBUG GAUGE) [extra-turns] extra turns, [number of visited ordrooms] ordrooms visited."
 
 volume test commands
 

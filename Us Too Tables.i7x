@@ -17,7 +17,7 @@ w1 (text)	w2 (text)	first-hom (text)	second-hom	hom-txt-rule (rule)	first-exact	
 "mess"	"pot"	--	--	--	false	false	false	false	"making the meh spot into something more useful"	false	true	true	false	false	mine ooh	pre-mess-pot rule	post-mess-pot rule	--	--
 "meh"	"skit"	--	--	--	false	false	false	false	"having harmless, useless fun with the mess kit"	false	true	false	false	false	mine ooh	pre-meh-skit rule	post-meh-skit rule	--	--
 "a"	"stew"	--	--	--	false	false	false	false	"achieving the game's objective"	false	true	true	false	false	mine ooh	pre-a-stew rule	post-a-stew rule	--	"You can make [b]A STEW[r] [once-now of pre-a-stew rule] you have all the ingredients you need. [b]X[r] should list them."
-"herb"	"ranch"	--	--	--	false	false	false	false	"finding the first place to visit from the Ur-Branch"	false	true	true	false	false	ur branch	pre-herb-ranch rule	post-herb-ranch rule	--	"You can discover an herb ranch [once-now of pre-herb-ranch rule] you are back in the Ur-Branch."
+"herb"	"ranch"	--	--	--	false	false	false	false	"finding the first place to visit from the Ur-Branch"	false	true	true	false	false	ur branch	pre-herb-ranch rule	post-herb-ranch rule	--	"You can discover an HERB RANCH [once-now of pre-herb-ranch rule] you are back in the Ur-Branch."
 "summer"	"bay"	--	--	--	false	false	false	false	"letting the herb reveal a new location"	false	true	true	false	false	ur branch	pre-summer-bay rule	post-summer-bay rule	--	"You can discover a SUMMER BAY [once-now of pre-summer-bay rule] you are back in the Ur-Branch."
 "blah"	"copse"	--	--	--	false	false	false	false	"avoiding the black ops"	false	true	true	false	false	ur branch	pre-blah-copse rule	post-blah-copse rule	--	--
 "guard"	"entry"	--	--	--	false	false	false	false	"finding a way past the garden tree"	false	true	true	false	false	ur branch	pre-guard-entry rule	post-guard-entry rule	--	--
@@ -55,7 +55,7 @@ w1 (text)	w2 (text)	first-hom (text)	second-hom	hom-txt-rule (rule)	first-exact	
 "bear"	"respond"	--	--	--	false	false	false	false	"getting the berries in Berries Pond"	false	true	true	false	false	berries pond	pre-bear-respond rule	post-bear-respond rule	--	--
 "saw"	"bakers"	--	--	--	false	false	false	false	"finding signs of life in Sob Acres"	false	true	true	false	false	sob acres	pre-saw-bakers rule	post-saw-bakers rule	--	--
 "dell"	"eastern"	--	--	--	false	false	false	false	"making Sob Acres less forbidding"	false	true	true	false	false	deli stern	pre-dell-eastern rule	post-dell-eastern rule	--	--
-"dope"	"ale"	--	--	--	false	false	false	false	"finding something to trade your dough pail for"	false	true	true	false	false	deli stern	pre-dope-ale rule	post-dope-ale rule	--	"You can trade for some DOPE ALE [once-now of pre-dope-ale rule] DOPE ALE once you've found find willing traders with a bit extra."
+"dope"	"ale"	--	--	--	false	false	false	false	"finding something to trade your dough pail for"	false	true	true	false	false	deli stern	pre-dope-ale rule	post-dope-ale rule	--	"You can trade for some DOPE ALE [once-now of pre-dope-ale rule] you've found find willing traders with a bit extra."
 "beef"	"ordering"	--	--	--	false	false	false	false	"figuring what the [toon] really means"	false	true	true	false	false	deli stern	pre-beef-ordering rule	post-beef-ordering rule	--	--
 "wheat"	"rye"	--	--	--	false	false	false	false	"guessing what free samples are on offer"	false	true	true	false	false	deli stern	pre-wheat-rye rule	post-wheat-rye rule	--	--
 "grow"	"nodes"	--	--	--	false	false	false	false	"seeing what's behind the groan odes"	false	true	true	false	false	groan odes	pre-grow-nodes rule	post-grow-nodes rule	--	--
@@ -64,7 +64,7 @@ w1 (text)	w2 (text)	first-hom (text)	second-hom	hom-txt-rule (rule)	first-exact	
 "cellar"	"bin"	--	--	--	false	false	false	false	"escaping the Cell, Urban"	false	true	true	false	false	cell urban	pre-cellar-bin rule	post-cellar-bin rule	--	--
 "too"	"broad"	--	--	--	false	false	false	false	"how to fracture the tube/rod"	false	true	true	false	false	tube rod	pre-too-broad rule	post-too-broad rule	--	--
 "ho"	"languor|langour"	--	--	--	false	false	false	false	"dealing with the paralyzing whole anger"	false	true	true	false	false	tude ark	pre-ho-langour rule	post-ho-langour rule	--	"You can yell HO LANGUOR [once-now of pre-ho-langour rule] you have done something, anything, else in the south."
-"say"	"jokes"	--	--	--	false	false	false	false	"get by the Sage Oaks"	false	true	true	false	false	sage oaks	pre-say-jokes rule	post-say-jokes rule	--	--
+"say"	"jokes"	--	--	--	false	false	false	false	"get by the Sage Oaks"	false	true	true	false	false	sage oaks	pre-say-jokes rule	post-say-jokes rule	--	"You can SAY JOKES [once-now of pre-say-jokes rule] you're cheerier for having done a bit more."
 "gas"	"pouch"	--	--	--	false	false	false	false	"see how to stop gasping OUCH"	false	true	true	false	false	sage oaks	pre-gas-pouch rule	post-gas-pouch rule	--	--
 "claim"	"it"	--	--	--	false	false	false	false	"gathering the clay mitt"	false	true	true	false	false	Dam Pink	pre-claim-it rule	post-claim-it rule	--	--
 "damp"	"ink"	--	--	--	false	false	false	false	"getting something from the dam"	false	true	true	false	false	dam pink	pre-damp-ink rule	post-damp-ink rule	--	"You can pick up DAMP INK [once-now of pre-damp-ink rule] you have a proper container."
@@ -207,7 +207,10 @@ this is the post-summon-cheese rule:
 chapter ur branch scoring
 
 a wordtwisting rule (this is the pre-herb-ranch rule):
-	if player is not in ur branch, unavailable;
+	if ur branch is unvisited, unavailable;
+	if player is not in ur branch:
+		vcp "Yes, yes, a bit of time away from Ur-Branch made it clear where to go first. You should go back there and try again.";
+		not-yet;
 	if sco-herb-ranch is true:
 		vcal "You already found the herb ranch! One free sample should be enough.";
 		already-done;
@@ -269,10 +272,10 @@ this is the post-guard-entry rule:
 
 a wordtwisting rule (this is the pre-blah-copse rule):
 	if player is not in ur branch, unavailable;
-	if black ops are not in ur branch, unavailable;
 	if sco-blah-copse is true:
-		vcal "You already figured how to evade the black ops! You can just go north if you need to.";
+		vcal "You already figured how to evade the black ops! You can just go back north if you need to.";
 		already-done;
+	if black ops are not in ur branch, unavailable;
 	ready;
 
 this is the post-blah-copse rule:
@@ -303,9 +306,6 @@ a wordtwisting rule (this is the pre-pie-crust rule):
 	if sco-gray-tin is false:
 		vcp "You unfortunately have nothing that can contain pie crust, yet.";
 		not-yet;
-	if sco-pie-crust is true:
-		vcal "You already de-rusted the pike!";
-		already-done;
 	ready;
 
 this is the post-pie-crust rule:
@@ -316,6 +316,9 @@ this is the post-pie-crust rule:
 
 a wordtwisting rule (this is the pre-punt-weaker rule):
 	if player is not in beach ill, unavailable;
+	if sir freddie is in beach ill and sco-peace-talks is false:
+		vcp "The pun tweaker whispers 'I'll give you it, if you just get rid of THIS GUY.'";
+		not-yet;
 	if sir freddie is not in beach ill and sir freddie is not moot:
 		vcp "The pun tweaker says 'Yeah, maybe I have one. [if sir freddie is in beach]Get rid of this guy, I'll give you it.'[else]But what can you do for me?'[end if]";
 		not-yet;
@@ -471,9 +474,9 @@ book north branch scoring
 chapter blah copse scoring
 
 a wordtwisting rule (this is the pre-nah-queue rule):
-	if forest is not in location of player, unavailable;
+	if player is not in blah copse, unavailable;
 	if sco-nah-queue is true:
-		vcal "You already brushed back [the forest] that way!";
+		vcal "You hear [the forest]'s taunts ring in your ears, and you brush them back again.";
 		already-done;
 	ready;
 
@@ -561,7 +564,7 @@ a wordtwisting rule (this is the pre-peace-talks rule):
 
 this is the post-peace-talks rule:
 	now sco-peace-talks is true;
-	say "Getting back to nature and stuff leaves you at peace with yourself. So at peace, you want to spread that peace to others, whether or not they fully deserve it[if sco-pea-pod is true]. However, now you're so at peace, you recognize you are potentially disturbing the plants['] peace. You retreat to the Ur-Branch[end if].";
+	say "Getting back to nature and stuff leaves you at peace with yourself. So at peace, you want to spread that peace to others, whether or not they fully deserve it[if sco-pea-pod is true]. However, now you're so at peace, you recognize you are potentially disturbing the plants['] peace.[paragraph break]You retreat to the Ur-Branch[end if].";
 	if sco-pea-pod is false:
 		now eyes-number of pea stalks is -33;
 	else:
@@ -804,7 +807,7 @@ a wordtwisting rule (this is the pre-dope-ale rule):
 		vcp "Hmm, you could exchange the dough pail for dope ale, but ... nobody here wants dough, and nobody here might have dope ale.";
 		not-yet;
 	if sco-dell-eastern is false:
-		vcp "The [owners] whine that the location here is terrible. It's so dreary outside. So what if they can actually make bread?";
+		vcp "The [owners] whine that the location here is terrible. It's so dreary outside. Nobody would come here for alcohol with things as they are.";
 		not-yet;
 	if gs-deli-dell-left is false:
 		vcp "The [owners] almost look bright for a minute. 'Hey, we could pull off that trade, if ... if ... we got some customers. Come back in a bit, eh?'";
@@ -883,7 +886,7 @@ chapter far miles farm isles scoring
 a wordtwisting rule (this is the pre-find-rinks rule):
 	if player is not in far miles farm isles, unavailable;
 	if sco-find-rinks is true:
-		vcal "You already found them! [if sco-bear-respond is false]You don't need to go back[else]You just need to figure what to do to the south[end if].";
+		vcal "You already found them! [if sco-bear-respond is true]You don't need to go back[else]You just need to figure what to do to the south[end if].";
 		already-done;
 	ready;
 
@@ -1114,7 +1117,6 @@ this is the post-cold-rum rule:
 	now sco-cold-rum is true;
 	say "It's a pretty big coal drum. You rummage around, and sure enough ... you find some cold rum. Way too much to drink on your own.";
 	now player has cold rum;
-	moot coal drum;
 	now eyes-number of dust which is 36;
 	now eyes-rule of dust which is pre-tea-leaves rule;
 
