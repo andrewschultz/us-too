@@ -48,7 +48,7 @@ a startthing is a kind of thing.
 
 volume ordroom
 
-an ordroom is a kind of room. an ordroom has a number called rmord. rmord of an ordroom is usually 0.
+an ordroom is a kind of room. an ordroom has a number called rmord. rmord of an ordroom is usually 0. an ordroom has text called roomdirs.
 
 ordrooms-in-order is a list of rooms variable. ordrooms-in-order is { tude ark, sage oaks, tube rod }.
 
@@ -69,13 +69,18 @@ to decide whether south-sorted:
 to list-which-room:
 	repeat with ORM running through ordrooms-in-order:
 		if orm is visited:
-			say "[ORM]: [which-south of ORM][line break]";
+			say "[ORM]: [which-south of ORM]";
 		else:
-			say "<a blank row>[line break]";
+			say "<a blank row ... odd>";
+		say "[line break]";
 
 to say which-south of (orm - an ordroom):
-	repeat with X running from 1 to rmord of orm:
-		say "S";
+	if south-sorted:
+		repeat with X running from 1 to rmord of orm:
+			say "S";
+		say " (command)";
+	else:
+		say "[rmord of orm] south, [roomdirs of orm]";
 
 check going south in ur branch when extra-turns > 0 and number of visited ordrooms < 3:
 	let rm be entry extra-turns in ordrooms-in-order;

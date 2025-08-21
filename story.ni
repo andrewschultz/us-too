@@ -470,7 +470,7 @@ the garden tree is a thing. "[if sco-guard-entry is true]The garden tree stands 
 
 chapter sign and verbs
 
-the sign ought sigh not is a thing. printed name is "Sign Ought-Sigh-Not". "[one of]A new sign titled SIGN OUGHT-SIGH-NOT stands here.[or]The SIGN OUGHT-SIGH-NOT stands here for reference.[stopping]". description of sign ought sigh not is "WAYS SOUTH:". eyes-number of Sign Ought Sigh Not is 1.
+the sign ought sigh not is a thing. printed name is "Sign Ought-Sigh-Not". "[one of]A new sign titled SIGN OUGHT-SIGH-NOT stands here.[or]The SIGN OUGHT-SIGH-NOT stands here for reference.[stopping]". description of sign ought sigh not is "[if south-sorted]***SHORTCUT COMMANDS***[paragraph break]N2 or 2N or NN gets you all the way back north[else]WAYS SOUTH:[end if]". eyes-number of Sign Ought Sigh Not is 1.
 
 report examining sign ought sigh not:
 	list-which-room;
@@ -1051,7 +1051,7 @@ after printing the locale description when (player is in scribe room or player i
 
 part Tube Rod
 
-Tube Rod is an ordroom in universal. rmord of Tube Rod is 3. eyes-number of Tube Rod is 35. printed name is "Tube/Rod". eyes-rule of Tube Rod is pre-too-broad rule. "[if sco-too-broad is false]Well, you're blocked south by a huge a huge nondescript wall with a single tube/rod sticking out of it[else]With the tube/rod burst, you can now go south as well as back north[end if]."
+Tube Rod is an ordroom in universal. rmord of Tube Rod is 3. eyes-number of Tube Rod is 35. printed name is "Tube/Rod". eyes-rule of Tube Rod is pre-too-broad rule. "[if sco-too-broad is false]Well, you're blocked south by a huge a huge nondescript wall with a single tube/rod sticking out of it[else]With the tube/rod burst, you can now go south as well as back north[end if].". roomdirs of Tube Rod is "NE/S".
 
 the tuberodscen is privately-named scenery in Tube Rod. "Well, you can't do much with the wall, which is pretty boring and large. The tube/rod, on the other hand ...". printed name is "tube/rod". eyes-number of tuberodscen is 35. eyes-rule of tuberodscen is pre-too-broad rule.
 
@@ -1059,13 +1059,13 @@ understand "wall" and "tube/rod" and "tube rod" as tuberodscen when tuberodscen 
 
 part Too Dark Tude Ark
 
-Too Dark Tude Ark is an ordroom in universal. rmord of Too Dark is 1. printed name of tude ark is "[if sco-ho-langour is true]'Ugh?! Lo, a Glow'[else]Too-Dark Tude Ark[end if]". "[if sco-ho-langour is false]Your attitude can't help grow dark as you wonder if it was really worth running all the way here or even going back north, and if there is anywhere beyond that will require even more running, which it doesn't look like, because it's hard to see[else]It's no longer too dark here. There's not much here, but at least it's not too dark. Oh, there's a passage south as well as one back north[end if].". eyes-number of Too Dark Tude Ark is 1.
+Too Dark Tude Ark is an ordroom in universal. rmord of Too Dark is 1. printed name of tude ark is "[if sco-ho-langour is true]'Ugh?! Lo, a Glow'[else]Too-Dark Tude Ark[end if]". "[if sco-ho-langour is false]Your attitude can't help grow dark as you wonder if it was really worth running all the way here or even going back north, and if there is anywhere beyond that will require even more running, which it doesn't look like, because it's hard to see[else]It's no longer too dark here. There's not much here, but at least it's not too dark. Oh, there's a passage south as well as one back north[end if].". eyes-number of Too Dark Tude Ark is 1. roomdirs of Tude Ark is "NE/D/U/S".
 
 the whole anger is a thing in Tude Ark. "Whole anger swirls around here, consuming your every thought.". description is "How can one describe anger? It's there, and it's tough to shake.". eyes-number of whole anger is 27. eyes-rule of whole anger is pre-ho-langour rule.
 
 part Sage Oaks
 
-Sage Oaks is an ordroom in universal. rmord of Sage Oaks is 2. "Sage oaks stand here, [if sco-say-jokes is false]glaring at your unworthy self[else]almost nodding with respect for you. There seems to be passage south, too[end if]. You can always just go back north.". eyes-number of Sage Oaks is 35. eyes-rule of Sage Oaks is pre-say-jokes rule.
+Sage Oaks is an ordroom in universal. rmord of Sage Oaks is 2. "Sage oaks stand here, [if sco-say-jokes is false]glaring at your unworthy self[else]almost nodding with respect for you. There seems to be passage south, too[end if]. You can always just go back north.". eyes-number of Sage Oaks is 35. eyes-rule of Sage Oaks is pre-say-jokes rule. roomdirs of Sage Oaks is "X TRAP/U/NE/S".
 
 sageoakscen is a plural-named privately-named impressable sentient in Sage Oaks. they are scenery. description of sageoakscen is "The sage oaks offer [if sco-say-jokes is false]no great hint as to how to impress them or weaken their will to block you[else if sco-gas-pouch is false]no indication they do, or don't, actually want you to go south[else]something almost nearing respect for you[end if].". printed name is "the sage oaks". eyes-number of sageoakscen is 35. eyes-rule of sageoakscen is pre-say-jokes rule.
 
