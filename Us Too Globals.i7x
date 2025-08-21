@@ -53,6 +53,7 @@ gs-up-cellar-bin is a truth state that varies.
 gs-row-plaider is a truth state that varies.
 
 gs-nn-noted is a truth state that varies. [helpful note]
+gs-bin-while-fast is a truth state that varies. [don't let player fall twice]
 
 chapter bonus stuff
 

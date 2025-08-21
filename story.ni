@@ -856,6 +856,7 @@ after examining quick beak wick:
 	else:
 		say "[one of]You instantly feel a disorienting surge of speed. What can you do with it?[or]You feel that speed rush again.[stopping]";
 	now extra-turns is 4;
+	now gs-bin-while-fast is false;
 	continue the action;
 
 check examining beak wick when bowl ditch is visited and oaks are visited and tude ark is visited and tube rod is visited:
@@ -875,13 +876,20 @@ check examining fell trap:
 		change up exit of Cellar Bin to Fort Earns;
 		move player to cell urban;
 		the rule succeeds;
-	say "Thud! But you're a bit more prepared for the drop this time[if extra-turns > 0], and best of all, you don't waste any speed pacing around nervously[end if].";
+	say "Thud! But you're a bit more prepared for the drop this time.";
+	if extra-turns > 0:
+		if gs-bin-while-fast is true:
+			say "[line break]Unfortunately, falling down two times in quick succession knocked the speed out of you.";
+			now extra-turns is 0;
+		else:
+			say "[line break]Ouch! That hurt, but you still have your speed intact. In fact, the fall was so brief, you don't think you lost any serious time. You wouldn't want to fall quickly again, though. That'd leave you dazed, even though you knew what was coming.";
+			now gs-bin-while-fast is true;
 	move player to Cellar Bin;
 	the rule succeeds;
 
 part Cell Urban
 
-Cell Urban is a room in universal. printed name is "Cell, Urban". "[one of]THUD! [if extra-turns is 0]You're so anxious about being trapped here, you keep pacing until your speed wears off. [end if]Ugh. You see no way out to start. Perhaps you can complain to the manager, somehow[or]Still stuck. No fair! There must be a way out![stopping][line break]You're getting sick of the noises of the city all around you. You have no clue where they came from.". eyes-number of Cell Urban is 63. eyes-rule of Cell Urban is pre-cellar-bin rule.
+Cell Urban is a room in universal. printed name is "Cell, Urban". "[one of]THUD! [if extra-turns is 0]You're so anxious about being trapped here, you keep pacing until your speed wears off. [end if]Ugh. You see no way out to start. Perhaps you can complain to the manager, somehow.[or]Still stuck. No fair! There must be a way out![stopping][line break]You're getting sick of the noises of the city all around you. You have no clue where they came from.". eyes-number of Cell Urban is 63. eyes-rule of Cell Urban is pre-cellar-bin rule.
 
 part Cellar Bin
 
