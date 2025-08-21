@@ -269,7 +269,7 @@ war pawn
 >more flares
 {$REJECT2}
 \\
-#testcase-check-pre-nah-queue-rule-if-forest-is-not-in-location-of-player
+#testcase-check-pre-nah-queue-rule-if-player-is-not-in-blah-copse
 #testcase-reject-start-table-of-main-oronyms-pre-nah-queue-rule
 >nah queue
 {$REJECT2}
@@ -1634,7 +1634,7 @@ You set off the flares, and what do you know? You see another flare coming towar
 >surf ready
 But Sir Freddie has already found a new passion!
 \\
-#testcase-check-pre-punt-weaker-rule-if-sir-freddie-is-in-beach-ill-and-sco-peach-talks-is-false
+#testcase-check-pre-punt-weaker-rule-if-sir-freddie-is-in-beach-ill-and-sco-peace-talks-is-false
 >punt weaker
 The pun tweaker whispers "I'll give you it, if you just get rid of THIS GUY."
 \\
@@ -2718,7 +2718,7 @@ by a point
 The tube/rod slowly cracks, then bursts. A passage now leads south. You pause a bit and hope it's not a tube leading to bleeding...
 
 @rej
-#+testcase-check-pre-too-broad-rule-if-sco-too-broad-is-true
+#testcase-check-pre-too-broad-rule-if-sco-too-broad-is-true
 >too broad
 You already burst the tube/rod!
 
@@ -2795,11 +2795,6 @@ You must have one word right for dealing with the paralyzing whole anger.
 by a point
 \\
 >undo
-
-@rej
-#+testcase-think-table-of-main-oronyms-pre-ho-langour-rule
->think
-You can yell HO LANGUOR now you have done something, anything, else in the south.
 
 >ho langour
 by a point
@@ -3016,10 +3011,6 @@ You must have one word right for get by the Sage Oaks.
 \\
 >undo
 >undo
-
-@rej
->think
-You can SAY JOKES now you're cheerier for having done a bit more.
 
 >say jokes
 by a point
@@ -3482,6 +3473,8 @@ You already got tea leaves.
 #testcase-check-pre-malt-hour-rule-if-booze-score-is-1
 >malt hour
 The cold rum isn't quite enough. A rumbling from the maul tower suggests they want variety, if they can't specifically get malt. They have a point, you guess. There are probably quite a few of them there.
+\\
+>sw
 
 >s
 >s
@@ -3513,26 +3506,7 @@ You must have one word right for figuring how to "clean" the bell (trusted).
 >eye bell
 The eyes light up green and show four dots, then six dots.
 
-@rej
->n
->n
->ne
-\\
->malt hour
-by a point
-\\
->e
-\\
-#testcase-check-pre-join-aider-rule-if-player-does-not-have-belt-rusted
->join aider
-The pro ball crackles, but nothing else happens.
-\\
-#testcase-think-table-of-main-oronyms-pre-join-aider-rule
->think
-You can call a JOIN AIDER once you have two items of power to join.
-\\
->gonear scribe room
-
+@!rej
 >belt rusted
 by a point
 
@@ -3540,11 +3514,6 @@ by a point
 #testcase-check-pre-belt-rusted-rule-fallthrough
 #testcase-run-post-belt-rusted-rule-default
 The scribes get together and nod their heads. They agree this must be it. Your request is a wise choice, one not motivated by greed. They give you a rag and a surprisingly modern squirt-bottle full of cleaning liquid, and the rust from the bell flakes off to form a belt. It becomes much shinier. And perhaps ... well, this belt, rusted, was something much more once. Perhaps you are the one to return it to its former questing glory. Such things do not interest scribes. They move the bell back to the out-of-sight (it really IS quite a work of architecture) bell tower from whence it came.
-
-@rej
-#+testcase-check-pre-belt-rusted-rule-if-bell-trusted-is-not-in-scribe-room
->belt rusted
-{$REJECT2}
 
 @hint
 #+testcase-values-eyes-number-of-bell-trusted-is-46
@@ -4214,42 +4183,6 @@ You already decoded the Toon Eat-Too-Neat and made a good swap for the beef!
 
 >e
 
-@rej
-##balance undos
->den specs
-\\
->d
-\\
->groan odes
-\\
-#testcase-check-pre-no-date-rule-if-player-does-not-have-pliers
->no date
-Yes ... that feels right, but you have no tool with which to tear apart node eight.
-\\
-#testcase-think-table-of-main-oronyms-pre-no-date-rule
->think
-You can claim NO DATE once you have a tool that can destroy the nodes.
-\\
->undo
->u
->w
->e
->d
-\\
-#+testcase-think-table-of-main-oronyms-pre-no-date-rule
->think
-You can claim NO DATE now you have a tool that can destroy the nodes.
-\\
->undo
->undo
->undo
->undo
->undo
->undo
->undo
->undo
->undo
-
 >w
 
 @part
@@ -4340,7 +4273,6 @@ You must have one word right for finding something more useful than dense pecs.
 >eye dense pecs
 The eyes light up green and show three dots, then five dots.
 
-@!rej
 >den specs
 by a point
 
@@ -4378,7 +4310,7 @@ The only safe way is back up.
 @rej
 #testcase-check-pre-no-date-rule-if-nodes-are-not-in-groan-odes
 >no date
-{$REJECT2}
+{$XTRA}
 
 @hint
 #testcase-values-eyes-number-of-groan-odes-is-45
@@ -4489,7 +4421,7 @@ You can only go south. The den is destroyed, and the deli is busy.
 >s
 >e
 
-@think
+@rej
 >u
 \\
 #testcase-check-pre-use-it-rule-if-sco-dupe-it-is-false
@@ -4499,6 +4431,8 @@ It would be useful to have an item of power, but alas, you do not, at the moment
 #testcase-think-table-of-main-oronyms-pre-use-it-rule
 >think
 You can USE IT once you have an item of power to use.
+\\
+>d
 
 >ne
 
@@ -4587,6 +4521,31 @@ You must have one word right for doing something worthwhile in the joy nadir.
 The eyes light up green and show four dots, then five dots.
 
 @rej
+#testcase-check-pre-join-aider-rule-if-player-does-not-have-belt-rusted
+>join aider
+The pro ball crackles, but nothing else happens.
+\\
+#testcase-think-table-of-main-oronyms-pre-join-aider-rule
+>think
+You can call a JOIN AIDER once you have two items of power to join.
+\\
+>w
+>sw
+>s
+>s
+\\
+>belt rusted
+by a point
+\\
+#+testcase-check-pre-belt-rusted-rule-if-bell-trusted-is-not-in-scribe-room
+>belt rusted
+{$REJECT2}
+\\
+>n
+>n
+>ne
+>e
+\\
 #+testcase-think-table-of-main-oronyms-pre-join-aider-rule
 >think
 You can call a JOIN AIDER now you have two items of power to join.
@@ -4648,7 +4607,7 @@ by a point
 @all
 #testcase-check-pre-dupe-it-rule-fallthrough
 #testcase-run-post-dupe-it-rule-default
-You rest the egg of a guv in the dew pit. Nothing happens, then a rumbling. The egg grows and splits into ten identical, larger eggs ... and not only that, a small cardboard container arises from the dew pit. It's labeled TEN DREGS' TENDER EGGS. You take it. The dew pit grows dull. It's probably served its purpose. In fact, you can't think of anything else to do here. So you return to...
+You rest the egg of a guv in the dew pit. Nothing happens, then a rumbling. The egg grows and splits into ten identical, larger eggs ... and not only that, a small cardboard container arises from the dew pit. It's labeled TEN DREGS' TENDER EGGS. You take it. The dew pit grows dull. It's probably served its purpose. In fact, you can't think of anything else to do here. You high-five one of the maul tower guardians that's still awake (they heard some noise) on the way back to...
 
 @hint
 #testcase-values-eyes-number-of-tender-eggs-is--1
@@ -4659,11 +4618,6 @@ You rest the egg of a guv in the dew pit. Nothing happens, then a rumbling. The 
 Ur-Branch
 
 @rej
-#testcase-check-pre-dupe-it-rule-if-sco-dupe-it-is-true
->dupe it
-You already duplicated the egg of a guv! The dew pit is inactive now.
-
-@rej+
 ##balance undos
 >gonear farm isles
 \\
@@ -4941,10 +4895,6 @@ You can't go outside. There are no new ways to go.
 \\
 #testcase-reject-end-table-of-main-oronyms-pre-lie-fruits-rule
 >lie fruits
-{$REJECT2}
-\\
-#testcase-reject-end-table-of-main-oronyms-pre-loose-intro-rule
->loose intro
 {$REJECT2}
 \\
 #testcase-reject-end-table-of-main-oronyms-pre-malt-hour-rule

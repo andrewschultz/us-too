@@ -82,7 +82,7 @@ by a point
 
 >n
 
-#testcase-think-table-of-main-oronyms-pre-surf-ready-rule
+#+testcase-think-table-of-main-oronyms-pre-surf-ready-rule
 >think
 You can SURF READY now you have surfing materials for Sir Freddie.
 
@@ -188,27 +188,15 @@ by a point
 
 >ne
 
->s
-
->too broad
-by a point
-
->n
-
->sw
-
->x beak
-
->ne
-
 >sw
 
 >ne
 
 >s
 
+#testcase-check-pre-ho-langour-rule-if-sco-too-broad-is-false
 >ho langour
-by a point
+But it doesn't quite work yet, calling for languor ... you haven't done anything down this way.
 
 >n
 
@@ -231,6 +219,40 @@ by a point
 >u
 >ne
 >s
+
+#testcase-check-pre-say-jokes-rule-if-sco-ho-langour-is-false
+>say jokes
+You try to bull through with jokes, but you're forcing it. You haven't naturally boosted yourself.
+
+#testcase-think-table-of-main-oronyms-pre-ho-langour-rule
+#testcase-think-table-of-main-oronyms-pre-say-jokes-rule
+>think
+You can SAY JOKES once you're cheerier for having done a bit more.
+You can yell HO LANGUOR once you have done something, anything, else in the south.
+
+>n
+
+>sw
+
+>x beak
+
+>ne
+
+>s
+
+>too broad
+by a point
+
+>n
+
+>s
+
+>ho langour
+by a point
+
+>n
+
+>ss
 
 >say jokes
 by a point
@@ -358,6 +380,23 @@ by a point
 
 >e
 
+>den specs
+by a point
+
+>d
+
+>groan odes
+by a point
+
+#testcase-check-pre-no-date-rule-if-player-does-not-have-pliers
+>no date
+Yes ... that feels right, but you have no tool with which to tear apart node eight.
+
+#testcase-think-table-of-main-oronyms-pre-no-date-rule
+>think
+You can claim NO DATE once you have a tool that can destroy the nodes.
+
+>u
 >w
 
 >wheat rye
@@ -365,13 +404,11 @@ by a point
 
 >e
 
->den specs
-by a point
-
 >d
 
->grow nodes
-by a point
+#+testcase-think-table-of-main-oronyms-pre-no-date-rule
+>think
+You can claim NO DATE now you have a tool that can destroy the nodes.
 
 >no date
 by a point
@@ -431,5 +468,3 @@ by a point
 
 >a stew
 by a point
-
-Would you like to

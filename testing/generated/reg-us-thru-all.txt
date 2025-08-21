@@ -846,7 +846,7 @@ by a point
 
 #testcase-check-pre-dupe-it-rule-fallthrough
 #testcase-run-post-dupe-it-rule-default
-You rest the egg of a guv in the dew pit. Nothing happens, then a rumbling. The egg grows and splits into ten identical, larger eggs ... and not only that, a small cardboard container arises from the dew pit. It's labeled TEN DREGS' TENDER EGGS. You take it. The dew pit grows dull. It's probably served its purpose. In fact, you can't think of anything else to do here. So you return to...
+You rest the egg of a guv in the dew pit. Nothing happens, then a rumbling. The egg grows and splits into ten identical, larger eggs ... and not only that, a small cardboard container arises from the dew pit. It's labeled TEN DREGS' TENDER EGGS. You take it. The dew pit grows dull. It's probably served its purpose. In fact, you can't think of anything else to do here. You high-five one of the maul tower guardians that's still awake (they heard some noise) on the way back to...
 
 Ur-Branch
 

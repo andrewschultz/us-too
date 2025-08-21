@@ -208,12 +208,13 @@ chapter ur branch scoring
 
 a wordtwisting rule (this is the pre-herb-ranch rule):
 	if ur branch is unvisited, unavailable;
-	if player is not in ur branch:
-		vcp "Yes, yes, a bit of time away from Ur-Branch made it clear where to go first. You should go back there and try again.";
-		not-yet;
+	if beach ill is visited and player is not in ur branch, unavailable;
 	if sco-herb-ranch is true:
 		vcal "You already found the herb ranch! One free sample should be enough.";
 		already-done;
+	if player is not in ur branch:
+		vcp "Yes, yes, a bit of time away from Ur-Branch made it clear where to go first. You should go back there and try again.";
+		not-yet;
 	ready;
 
 this is the post-herb-ranch rule:
@@ -433,12 +434,12 @@ chapter joy nadir scoring
 
 a wordtwisting rule (this is the pre-join-aider rule):
 	if player is not in joy nadir, unavailable;
-	if player does not have belt rusted:
-		vcp "The pro ball crackles, but nothing else happens.";
-		not-yet;
 	if sco-join-aider is true:
 		vcal "You already formed the [orb]!";
 		already-done;
+	if sco-belt-rusted is false:
+		vcp "The pro ball crackles, but nothing else happens.";
+		not-yet;
 	ready;
 
 this is the post-join-aider rule:
@@ -452,19 +453,16 @@ this is the post-join-aider rule:
 	now eyes-rule of joy nadir is pre-dupe-it rule;
 	print-the-loc;
 
-a wordtwisting rule (this is the pre-dupe-it rule):
+a wordtwisting rule (this is the pre-dupe-it rule): [no need to check dupe-it since we block-and-back right after]
 	if player is not in joy nadir, unavailable;
 	if player does not have egg of a guv:
 		vcp "You have nothing that needs duplicating.";
 		not-yet;
-	if sco-dupe-it is true:
-		vcal "You already duplicated the egg of a guv! The dew pit is inactive now.";
-		already-done;
 	ready;
 
 this is the post-dupe-it rule:
 	now sco-dupe-it is true;
-	say "You rest the egg of a guv in the dew pit. Nothing happens, then a rumbling. The egg grows and splits into ten identical, larger eggs ... and not only that, a small cardboard container arises from the dew pit. It's labeled TEN DREGS['] TENDER EGGS. You take it. The dew pit grows dull. It's probably served its purpose. In fact, you can't think of anything else to do here. So you return to...";
+	say "You rest the egg of a guv in the dew pit. Nothing happens, then a rumbling. The egg grows and splits into ten identical, larger eggs ... and not only that, a small cardboard container arises from the dew pit. It's labeled TEN DREGS['] TENDER EGGS. You take it. The dew pit grows dull. It's probably served its purpose. In fact, you can't think of anything else to do here. You high-five one of the maul tower guardians that's still awake (they heard some noise) on the way back to...";
 	now player has tender eggs;
 	moot egg of a guv;
 	block-and-back;

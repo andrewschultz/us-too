@@ -202,7 +202,7 @@ That thought/action/observation/request brings up nothing. Us Too has a limited 
 >more flares
 That thought/action/observation/request brings up nothing. Us Too has a limited set of verbs, and the main thing is to guess a two-word phrase. To see what verbs are used, try VERBS.
 
-#testcase-check-pre-nah-queue-rule-if-forest-is-not-in-location-of-player
+#testcase-check-pre-nah-queue-rule-if-player-is-not-in-blah-copse
 #testcase-reject-start-table-of-main-oronyms-pre-nah-queue-rule
 >nah queue
 That thought/action/observation/request brings up nothing. Us Too has a limited set of verbs, and the main thing is to guess a two-word phrase. To see what verbs are used, try VERBS.
@@ -562,7 +562,7 @@ by a point
 >surf ready
 But Sir Freddie has already found a new passion!
 
-#testcase-check-pre-punt-weaker-rule-if-sir-freddie-is-in-beach-ill-and-sco-peach-talks-is-false
+#testcase-check-pre-punt-weaker-rule-if-sir-freddie-is-in-beach-ill-and-sco-peace-talks-is-false
 >punt weaker
 The pun tweaker whispers "I'll give you it, if you just get rid of THIS GUY."
 
@@ -773,7 +773,7 @@ You already pulled the oak lever and made it disappear! You just need to do some
 >too broad
 by a point
 
-#+testcase-check-pre-too-broad-rule-if-sco-too-broad-is-true
+#testcase-check-pre-too-broad-rule-if-sco-too-broad-is-true
 >too broad
 You already burst the tube/rod!
 
@@ -802,10 +802,6 @@ You can pick up DAMP INK once you have a proper container.
 >ne
 
 >s
-
-#+testcase-think-table-of-main-oronyms-pre-ho-langour-rule
->think
-You can yell HO LANGUOR now you have done something, anything, else in the south.
 
 >ho langour
 by a point
@@ -871,9 +867,6 @@ You can just X TRAP to return.
 #+testcase-check-pre-gas-pouch-rule-if-player-is-not-in-sage-oaks-or-sco-say-jokes-is-false-and-player-does-not-have-gas-pouch
 >gas pouch
 That thought/action/observation/request brings up nothing. Us Too has a limited set of verbs, and the main thing is to guess a two-word phrase. To see what verbs are used, try VERBS.
-
->think
-You can SAY JOKES now you're cheerier for having done a bit more.
 
 >say jokes
 by a point
@@ -980,34 +973,10 @@ You already got tea leaves.
 >malt hour
 The cold rum isn't quite enough. A rumbling from the maul tower suggests they want variety, if they can't specifically get malt. They have a point, you guess. There are probably quite a few of them there.
 
+>sw
+
 >s
 >s
-
->n
->n
->ne
-
->malt hour
-by a point
-
->e
-
-#testcase-check-pre-join-aider-rule-if-player-does-not-have-belt-rusted
->join aider
-The pro ball crackles, but nothing else happens.
-
-#testcase-think-table-of-main-oronyms-pre-join-aider-rule
->think
-You can call a JOIN AIDER once you have two items of power to join.
-
->gonear scribe room
-
->belt rusted
-by a point
-
-#+testcase-check-pre-belt-rusted-rule-if-bell-trusted-is-not-in-scribe-room
->belt rusted
-That thought/action/observation/request brings up nothing. Us Too has a limited set of verbs, and the main thing is to guess a two-word phrase. To see what verbs are used, try VERBS.
 
 >n
 >n
@@ -1149,40 +1118,6 @@ You already decoded the Toon Eat-Too-Neat and made a good swap for the beef!
 
 >e
 
->den specs
-
->d
-
->groan odes
-
-#testcase-check-pre-no-date-rule-if-player-does-not-have-pliers
->no date
-Yes ... that feels right, but you have no tool with which to tear apart node eight.
-
-#testcase-think-table-of-main-oronyms-pre-no-date-rule
->think
-You can claim NO DATE once you have a tool that can destroy the nodes.
-
->undo
->u
->w
->e
->d
-
-#+testcase-think-table-of-main-oronyms-pre-no-date-rule
->think
-You can claim NO DATE now you have a tool that can destroy the nodes.
-
->undo
->undo
->undo
->undo
->undo
->undo
->undo
->undo
->undo
-
 >w
 
 >wheat rye
@@ -1194,6 +1129,9 @@ You already got enough free bread!
 
 >e
 
+>den specs
+by a point
+
 #testcase-check-pre-den-specs-rule-if-sco-den-specs-is-true
 >den specs
 You don't need two pairs.
@@ -1202,7 +1140,7 @@ You don't need two pairs.
 
 #testcase-check-pre-no-date-rule-if-nodes-are-not-in-groan-odes
 >no date
-That thought/action/observation/request brings up nothing. Us Too has a limited set of verbs, and the main thing is to guess a two-word phrase. To see what verbs are used, try VERBS.
+The first word was a valid command that could stand on its own. The second may be unnecessary, or a typo.
 
 >grow nodes
 by a point
@@ -1217,6 +1155,18 @@ by a point
 >s
 >e
 
+>u
+
+#testcase-check-pre-use-it-rule-if-sco-dupe-it-is-false
+>use it
+It would be useful to have an item of power, but alas, you do not, at the moment.
+
+#testcase-think-table-of-main-oronyms-pre-use-it-rule
+>think
+You can USE IT once you have an item of power to use.
+
+>d
+
 >ne
 
 >malt hour
@@ -1226,6 +1176,31 @@ by a point
 >malt hour
 You already called out to share refreshments. You need to save some for the final meet-up.
 
+>e
+
+#testcase-check-pre-join-aider-rule-if-player-does-not-have-belt-rusted
+>join aider
+The pro ball crackles, but nothing else happens.
+
+#testcase-think-table-of-main-oronyms-pre-join-aider-rule
+>think
+You can call a JOIN AIDER once you have two items of power to join.
+
+>w
+>sw
+>s
+>s
+
+>belt rusted
+by a point
+
+#+testcase-check-pre-belt-rusted-rule-if-bell-trusted-is-not-in-scribe-room
+>belt rusted
+That thought/action/observation/request brings up nothing. Us Too has a limited set of verbs, and the main thing is to guess a two-word phrase. To see what verbs are used, try VERBS.
+
+>n
+>n
+>ne
 >e
 
 #+testcase-think-table-of-main-oronyms-pre-join-aider-rule
@@ -1241,10 +1216,6 @@ You already formed the orb and/or band!
 
 >dupe it
 by a point
-
-#testcase-check-pre-dupe-it-rule-if-sco-dupe-it-is-true
->dupe it
-You already duplicated the egg of a guv! The dew pit is inactive now.
 
 >gonear farm isles
 
@@ -1407,10 +1378,6 @@ That thought/action/observation/request brings up nothing. Us Too has a limited 
 
 #testcase-reject-end-table-of-main-oronyms-pre-lie-fruits-rule
 >lie fruits
-That thought/action/observation/request brings up nothing. Us Too has a limited set of verbs, and the main thing is to guess a two-word phrase. To see what verbs are used, try VERBS.
-
-#testcase-reject-end-table-of-main-oronyms-pre-loose-intro-rule
->loose intro
 That thought/action/observation/request brings up nothing. Us Too has a limited set of verbs, and the main thing is to guess a two-word phrase. To see what verbs are used, try VERBS.
 
 #testcase-reject-end-table-of-main-oronyms-pre-malt-hour-rule
