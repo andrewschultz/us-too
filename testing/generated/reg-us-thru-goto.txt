@@ -560,9 +560,9 @@ While it's pretty open here, the only safe ways are south or west/inside.
 >e
 You can only go south. The den is destroyed, and the deli is busy.
 
->e
 >s
 >e
+
 >ne
 
 >malt hour

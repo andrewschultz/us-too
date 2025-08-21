@@ -1042,9 +1042,9 @@ You can't see any such thing.
 >eye hell pin
 The eyes show nothing. Probably don't need to do anything with
 
->e
 >s
 >e
+
 >ne
 
 #+testcase-values-eyes-number-of-maul-tower-is-44

@@ -395,6 +395,7 @@ You already got some munchies! No need to be greedy.
 But it doesn't quite work yet, calling for languor ... you haven't done anything down this way.
 
 >gonear sage oaks
+
 #testcase-check-pre-say-jokes-rule-if-sco-ho-langour-is-false
 >say jokes
 You try to bull through with jokes, but you're forcing it. You haven't naturally boosted yourself.
@@ -404,28 +405,6 @@ You try to bull through with jokes, but you're forcing it. You haven't naturally
 You can yell HO LANGUOR once you have done something, anything, else in the south.
 
 >gonear blah copse
-
-#testcase-check-pre-surf-ready-rule-if-sco-board-red-is-false
->surf ready
-Sir Freddie finds that interesting, but ... he doesn't have the right gear to get started on him, and neither do you, for the moment.
-
-#testcase-think-table-of-main-oronyms-pre-surf-ready-rule
->think
-You can SURF READY once you have surfing materials for Sir Freddie.
-
->gonear throne
-
-#testcase-check-pre-use-it-rule-if-sco-dupe-it-is-false
->use it
-It would be useful to have an item of power, but alas, you do not, at the moment.
-
-#testcase-think-table-of-main-oronyms-pre-use-it-rule
->think
-You can USE IT once you have an item of power to use.
-
-#testcase-check-pre-use-it-rule-if-sco-use-it-is-true
->use it
-The orb and/or band crumbled away when you used it.
 
 >gonear branch
 
@@ -1255,9 +1234,9 @@ The nodes have already grown and been revealed. How to destroy them?!
 >no date
 by a point
 
->e
 >s
 >e
+
 >ne
 
 >malt hour
@@ -1308,6 +1287,10 @@ You can USE IT now you have an item of power to use.
 
 >use it
 by a point
+
+#testcase-check-pre-use-it-rule-if-sco-use-it-is-true
+>use it
+The orb and/or band crumbled away when you used it.
 
 >lie fruits
 by a point

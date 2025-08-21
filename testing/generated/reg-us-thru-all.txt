@@ -808,9 +808,9 @@ There, people start streaming towards you. They lift you up in the air, which is
 You are cut off again. It will help you in anywhere unusually uncomfortable. Well, it sure can't hurt.
 There's not much else to say. You feel a bit awkward. All you can do is tell them to visit the nice cheery new deli just off to the west! That, they do. Hooray, bringing people together!
 
->e
 >s
 >e
+
 >ne
 
 >malt hour

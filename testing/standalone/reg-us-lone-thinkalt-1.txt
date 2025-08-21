@@ -55,6 +55,24 @@ by a point
 by a point
 
 >u
+
+>n
+
+>blah copse
+by a point
+
+>nah queue
+by a point
+
+#testcase-check-pre-surf-ready-rule-if-sco-board-red-is-false
+>surf ready
+Sir Freddie finds that interesting, but ... he doesn't have the right gear to get started on him, and neither do you, for the moment.
+
+#testcase-think-table-of-main-oronyms-pre-surf-ready-rule
+>think
+You can SURF READY once you have surfing materials for Sir Freddie.
+
+>s
 >ne
 
 >board red
@@ -64,11 +82,9 @@ by a point
 
 >n
 
->blah copse
-by a point
-
->nah queue
-by a point
+#testcase-think-table-of-main-oronyms-pre-surf-ready-rule
+>think
+You can SURF READY now you have surfing materials for Sir Freddie.
 
 >surf ready
 by a point

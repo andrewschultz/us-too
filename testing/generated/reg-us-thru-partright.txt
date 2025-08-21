@@ -1576,9 +1576,9 @@ You must have one word right for figuring how to destroy the nodes, or the most 
 >no date
 by a point
 
->e
 >s
 >e
+
 >ne
 
 #testcase-one-right-table-of-main-oronyms-malt-hour-1-malt

@@ -856,28 +856,6 @@ You try to bull through with jokes, but you're forcing it. You haven't naturally
 You can yell HO LANGUOR once you have done something, anything, else in the south.
 \\
 >gonear blah copse
-\\
-#testcase-check-pre-surf-ready-rule-if-sco-board-red-is-false
->surf ready
-Sir Freddie finds that interesting, but ... he doesn't have the right gear to get started on him, and neither do you, for the moment.
-\\
-#testcase-think-table-of-main-oronyms-pre-surf-ready-rule
->think
-You can SURF READY once you have surfing materials for Sir Freddie.
-\\
->gonear throne
-\\
-#testcase-check-pre-use-it-rule-if-sco-dupe-it-is-false
->use it
-It would be useful to have an item of power, but alas, you do not, at the moment.
-\\
-#testcase-think-table-of-main-oronyms-pre-use-it-rule
->think
-You can USE IT once you have an item of power to use.
-\\
-#testcase-check-pre-use-it-rule-if-sco-use-it-is-true
->use it
-The orb and/or band crumbled away when you used it.
 
 @rej+
 >gonear branch
@@ -4524,9 +4502,20 @@ While it's pretty open here, the only safe ways are south or west/inside.
 >e
 You can only go south. The den is destroyed, and the deli is busy.
 
->e
 >s
 >e
+
+@think
+>u
+\\
+#testcase-check-pre-use-it-rule-if-sco-dupe-it-is-false
+>use it
+It would be useful to have an item of power, but alas, you do not, at the moment.
+\\
+#testcase-think-table-of-main-oronyms-pre-use-it-rule
+>think
+You can USE IT once you have an item of power to use.
+
 >ne
 
 @part
@@ -4774,6 +4763,11 @@ Where the throne once sat, there's now something glistening. "You have freed the
 @all+
 #+testcase-room-names-throne-ow-throw-now
 `Final (?) and Fine Land
+
+@rej
+#testcase-check-pre-use-it-rule-if-sco-use-it-is-true
+>use it
+The orb and/or band crumbled away when you used it.
 
 @part
 ##balance undos
