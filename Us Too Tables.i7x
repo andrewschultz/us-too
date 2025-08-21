@@ -46,7 +46,7 @@ w1 (text)	w2 (text)	first-hom (text)	second-hom	hom-txt-rule (rule)	first-exact	
 "dough"	"making"	--	--	--	false	false	false	false	"doing something positive in [dome]"	false	true	true	false	false	dome aching	pre-dough-making rule	post-dough-making rule	--	"You can commence DOUGH MAKING [once-now of pre-dough-making rule] you have overcome the can't-ache."
 "in"	"earnest"	--	--	--	false	false	false	false	"figure how to visit the inner nest"	false	true	true	false	false	dome aching	pre-in-earnest rule	post-in-earnest rule	--	--
 "pry"	"more"	--	--	--	false	false	false	false	"figuring how to take the prime oar"	false	true	true	false	false	inner nest	pre-pry-more rule	post-pry-more rule	--	--
-"oh"	"clever"	--	--	--	false	false	false	false	"operating the oak lever"	false	true	true	false	false	fort earns four turns	pre-oh-clever rule	post-oh-clever rule	--	--
+"oh|o"	"clever"	--	"cleaver"	hom-oh-clever rule	false	false	false	false	"operating the oak lever"	false	true	true	false	false	fort earns four turns	pre-oh-clever rule	post-oh-clever rule	--	--
 "bold"	"itch"	--	--	--	false	false	false	false	"figuring how to get back on your feet in Bowl/Ditch"	false	true	true	false	false	bowl ditch	pre-bold-itch rule	post-bold-itch rule	--	--
 "stark"	"raft"	--	--	--	false	false	false	false	"finding more appropriate transport than the star craft"	false	true	true	false	false	turbo tours	pre-stark-raft rule	post-stark-raft rule	--	--
 "tour"	"boaters"	--	--	--	false	false	false	false	"bringing more business to Turbo Tours"	false	true	false	false	false	turbo tours	pre-tour-boaters rule	post-tour-boaters rule	--	--
@@ -703,6 +703,8 @@ book southwest branch sorting
 
 chapter fort earns four turns scoring
 
+this is the hom-oh-clever rule:
+	say "A very American voice, heavy as lead, booms 'didn't mean to lead you that way.'[paragraph break]Besides, you don't need a cleaver. This isn't that sort of adventure.";
 a wordtwisting rule (this is the pre-oh-clever rule):
 	if location of player is not fort earns, unavailable;
 	if sco-oh-clever is true:
