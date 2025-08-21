@@ -100,7 +100,7 @@ after reading a command when player is in House Well How Swell:
 		move player to My New Mine Ooh;
 		reject the player's command;
 	if the player's command includes "envelope" or the player's command includes "think" or the player's command includes "hint" or the player's command includes "help" or w1 is "i" or w1 is "inventory":
-		say "You glance at your envelope, pretty much all you have on you, [one of]once again [or][stopping]worried you might be cheating. But you can't imagine what other clue you have.[paragraph break]The lawyers [one of]still [or][stopping]look nonchalant, fortunately. It says [hohs], contrasting [hwhs] on most of other guests['] invites.";
+		say "You glance at your envelope, pretty much all you have on you, [one of][or]once again [stopping]worried you might be cheating. But you can't imagine what other clue you have.[paragraph break]The lawyers [one of]still [or][stopping]look nonchalant, fortunately. It says [hohs], contrasting [hwhs] on most of other guests['] invites.";
 		now gs-envelope is true;
 		now starter-counter is 1;
 		reject the player's command;
@@ -191,7 +191,7 @@ report examining Aight Amusing:
 Trike West carries Aight Amusing Item Using.
 
 check examining aight for the first time:
-	say "It's a recipe, actually.";
+	say "On inspection, you realize [aight] is sort of a recipe, full of food and food preparation items.";
 
 check examining aight when sco-try-quest is false:
 	say "It seems to require you to go look for all manner of weird stuff. You're just not up to fetching stuff at the moment. You don't want to feel like a gofer. You want something more purposeful." instead;
@@ -265,6 +265,9 @@ after printing the locale description for Mine Ooh when core-score is core-max -
 
 My New Mine Ooh is a room in intro. printed name is "My New Mine, Ooh!". description is "You're down in your new mine, with a passage up back to the great wide world[if sco-be-strong is true]. You've cleared the way--you can't be sure of the direction, as the path twists a bit[else if sco-try-quest is false]. Fortunately it's more 'Ooh' than 'Eew.' It could go either way, you realize. But you're still finding your bearings and purpose. You feel a bit blown away being given such a big mine, and you'd feel silly wandering purposelessly. At least you know who you are, and maybe that'll help reframe things[end if].". eyes-number of Mine Ooh is 1.
 
+After choosing notable locale objects when player is in Mine Ooh:
+	if war pawn is in mine ooh, set locale priority of war pawn to 0;
+	if slice eyes are in mine ooh, set locale priority of slice eyes to 0;
 to note-mine (th - a thing):
 	if th is in location of player, say "A [th] juts out here. [if ledge is unexamined]Maybe something is on it.[else]You see [the list of hintthings in mine ooh] on it, and you can [b]EXAMINE[r] [ara]'s message on it again, too.";
 
