@@ -65,7 +65,7 @@ by a bonus point
 
 #testcase-homonym-reject-table-of-main-oronyms-bored
 >bored xxx
-WRONG
+Hmm. That kind of partway SOUNDED like it should work, but it didn't.
 
 >board red
 by a point
@@ -157,12 +157,12 @@ by a point
 >base pikes
 by a point
 
->pie crust
-by a point
-
 #testcase-homonym-reject-table-of-main-oronyms-pi
 >pi xxx
-$HOMONYM TEXT HERE
+Hmm. That kind of partway SOUNDED like it should work, but it didn't.
+
+>pie crust
+by a point
 
 >hike up
 by a point

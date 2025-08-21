@@ -219,7 +219,7 @@ war pawn
 >guard entry
 {$REJECT2}
 \\
-#testcase-check-pre-herb-ranch-rule-if-player-is-not-in-ur-branch
+#testcase-check-pre-herb-ranch-rule-if-ur-branch-is-unvisited
 #testcase-reject-start-table-of-main-oronyms-pre-herb-ranch-rule
 >herb ranch
 {$REJECT2}
@@ -763,6 +763,9 @@ You must have one word right for figuring what some munchies are.
 There is no more intro.
 
 @all
+>x intro
+It's an introduction to your world, not from Aunt Rickie-Anne, but from one Hugh Morris AKA Mick Stupp. At the top is a warning about mild spoilers that get less mild as you read on.
+\\
 #testcase-x-intro-table-of-intro-jabber-1
 >x intro
 There's a brief explanation about how Us Too reuses a lot of the code from Why Pout, though hopefully the different stories and puzzles give enough variety to keep you interested. Both are polite on the Zarfian cruelty scale, so there's no way to die.
@@ -836,31 +839,7 @@ You already got some munchies! No need to be greedy.
 #testcase-room-names-ur-branch
 `Ur-Branch
 
-@rej
-#TTC.PY bookmark: this is where I GOTO places that don't fit in the walkthrough, so I can test all the THINK
-\\
->gonear tude ark
-\\
-#testcase-check-pre-ho-langour-rule-if-sco-too-broad-is-false
->ho langour
-But it doesn't quite work yet, calling for languor ... you haven't done anything down this way.
-\\
->gonear sage oaks
-\\
-#testcase-check-pre-say-jokes-rule-if-sco-ho-langour-is-false
->say jokes
-You try to bull through with jokes, but you're forcing it. You haven't naturally boosted yourself.
-\\
-#testcase-think-table-of-main-oronyms-pre-ho-langour-rule
->think
-You can yell HO LANGUOR once you have done something, anything, else in the south.
-\\
->gonear blah copse
-
-@rej+
->gonear branch
-
-@all
+@all+
 #+testcase-x-intro-table-of-intro-jabber-1
 >x intro
 There's a brief explanation about how Us Too reuses a lot of the code from Why Pout, though hopefully the different stories and puzzles give enough variety to keep you interested. Both are polite on the Zarfian cruelty scale, so there's no way to die.
@@ -915,11 +894,15 @@ The eyes light up green and show four dots, then five dots.
 @rej
 >d
 \\
+#testcase-check-pre-herb-ranch-rule-if-player-is-not-in-ur-branch
 >herb ranch
+Yes, yes, a bit of time away from Ur-Branch made it clear where to go first. You should go back there and try again.
 \\
 #testcase-think-table-of-main-oronyms-pre-herb-ranch-rule
 >think
-You can discover an herb ranch once you are back in the Ur-Branch.
+You can discover an HERB RANCH once you are back in the Ur-Branch.
+\\
+>u
 
 >herb ranch
 by a point
@@ -968,15 +951,11 @@ You must have one word right for letting the herb reveal a new location.
 The eyes light up green and show six dots, then three dots.
 
 @rej
-#+testcase-think-table-of-main-oronyms-pre-herb-ranch-rule
->think
-You can discover an herb ranch now you are back in the Ur-Branch.
-\\
 >d
 \\
 #testcase-check-pre-summer-bay-rule-if-player-is-not-in-ur-branch
 >summer bay
-WRONG
+Perhaps you should use the herb in a more wide-open place. Like the Ur-Branch where you got it.
 \\
 #testcase-think-table-of-main-oronyms-pre-summer-bay-rule
 >think
@@ -1309,7 +1288,7 @@ The eyes light up green and show five dots, then three dots.
 @hom
 #testcase-homonym-reject-table-of-main-oronyms-bored
 >bored xxx
-WRONG
+Hmm. That kind of partway SOUNDED like it should work, but it didn't.
 
 >board red
 by a point
@@ -1414,9 +1393,15 @@ Aha! That was what you were doing wrong. You just needed to tweak a thing or two
 `Blah Copse
 
 @rej
+##balance undos
+>s
+\\
 #testcase-check-pre-blah-copse-rule-if-sco-blah-copse-is-true
 >blah copse
-You already figured how to evade the black ops! You can just go north if you need to.
+You already figured how to evade the black ops! You can just go back north if you need to.
+\\
+>undo
+>undo
 
 @gt
 #testcase-goto-table-of-noways-blah-copse
@@ -1467,7 +1452,7 @@ You reject the Forest Team for Esteem's jibes consistently and forcefully, not w
 @rej
 #testcase-check-pre-nah-queue-rule-if-sco-nah-queue-is-true
 >nah queue
-You already brushed back the Forest Team for Esteem that way!
+You hear the Forest Team for Esteem's taunts ring in your ears, and you brush them back again.
 
 @part
 ##balance undos
@@ -1497,10 +1482,6 @@ You must have one word right for giving Sir Freddie a new direction.
 The eyes light up green and show four dots, then five dots.
 
 @rej
-#+testcase-think-table-of-main-oronyms-pre-surf-ready-rule
->think
-You can SURF READY now you have surfing materials for Sir Freddie.
-\\
 #testcase-check-pre-or-clerk-rule-if-sco-surf-ready-is-false
 >or clerk
 {$REJECT2}
@@ -1568,7 +1549,7 @@ You can only leave the copse to the south or north.
 
 @rej
 #testcase-check-pre-blast-ring-rule-if-player-is-not-in-sore-dark-or-sword-ark-is-not-in-sore-dark
->blah string
+>blast ring
 You can see nothing to blast!
 \\
 #testcase-think-table-of-main-oronyms-pre-blast-ring-rule
@@ -1653,9 +1634,9 @@ You set off the flares, and what do you know? You see another flare coming towar
 >surf ready
 But Sir Freddie has already found a new passion!
 \\
-#+testcase-check-pre-punt-weaker-rule-if-sir-freddie-is-not-in-beach-ill-and-sir-freddie-is-not-moot
+#testcase-check-pre-punt-weaker-rule-if-sir-freddie-is-in-beach-ill-and-sco-peach-talks-is-false
 >punt weaker
-The pun tweaker says "Yeah, maybe I have one. Get rid of this guy, I'll give you it."
+The pun tweaker whispers "I'll give you it, if you just get rid of THIS GUY."
 \\
 >w
 
@@ -1667,6 +1648,11 @@ The pun tweaker says "Yeah, maybe I have one. Get rid of this guy, I'll give you
 >eye sir freddie
 The eyes show nothing. You've done everything you need to get something from Sir Freddie directly.
 \\
+#+testcase-values-eyes-number-of-pun-tweaker-is-46
+>eye pun tweaker
+The eyes light up yellow and show four dots, then six dots.
+\\
+>undo
 >undo
 >undo
 
@@ -1765,9 +1751,15 @@ You look for a way past the tree, and suddenly you have an idea, and once you kn
 `Pea Stalks
 
 @rej
+##balance undos
+>out
+\\
 #testcase-check-pre-guard-entry-rule-if-sco-guard-entry-is-true
 >guard entry
 You already snuck past the garden tree so you could go IN!
+\\
+>undo
+>undo
 
 @gt
 #testcase-goto-table-of-noways-pea-stalks
@@ -1801,11 +1793,6 @@ You must have one word right for finding something incorporeal within the Pea St
 >undo
 >undo
 
-@hint
-#+testcase-values-eyes-number-of-pun-tweaker-is-46
->eye pun tweaker
-The eyes light up yellow and show four dots, then six dots.
-
 @rej
 ##balance undos
 >pea pod
@@ -1827,7 +1814,8 @@ bonus point
 \\
 #testcase-run-post-peace-talks-rule-if-sco-pea-pod-is-false
 >peace talks
-Getting back to nature and stuff leaves you at peace with yourself. So at peace, you want to spread that peace to others, whether or not they fully deserve it. However, now you're so at peace, you recognize you are disturbing the plants' peace. You retreat to the Ur-Branch.
+Getting back to nature and stuff leaves you at peace with yourself. So at peace, you want to spread that peace to others, whether or not they fully deserve it. However, now you're so at peace, you recognize you are potentially disturbing the plants' peace.
+You retreat to the Ur-Branch.
 `Ur-Branch
 \\
 >undo
@@ -1953,7 +1941,7 @@ You can commence DOUGH MAKING once you have overcome the can't-ache.
 \\
 #testcase-check-pre-in-earnest-rule-if-inscen-is-not-in-dome-aching
 >in earnest
-{$REJECT2}
+{$XTRA}
 
 >can take
 by a point
@@ -2349,6 +2337,11 @@ You must have one word right for finding what's under the pike rust.
 >eye pike rust
 The eyes light up green and show three dots, then five dots.
 
+@hom
+#testcase-homonym-reject-table-of-main-oronyms-pi
+>pi xxx
+Hmm. That kind of partway SOUNDED like it should work, but it didn't.
+
 >pie crust
 by a point
 
@@ -2356,16 +2349,6 @@ by a point
 #testcase-check-pre-pie-crust-rule-fallthrough
 #testcase-run-post-pie-crust-rule-default
 Yup! Pie crust! It fits in your tin nicely.
-
-@hom
-#testcase-homonym-reject-table-of-main-oronyms-pi
->pi xxx
-$HOMONYM TEXT HERE
-
-@rej
-#testcase-check-pre-pie-crust-rule-if-sco-pie-crust-is-true
->pie crust
-You already de-rusted the pike!
 
 @hint
 #+testcase-values-eyes-number-of-pike-rust-is-35
@@ -2667,7 +2650,7 @@ Then you notice what the lever was hiding: a be-quick beak wick! Nice if you nee
 
 @rej
 #testcase-check-pre-oh-clever-rule-if-sco-oh-clever-is-true
->oak lever
+>oh clever
 You already pulled the oak lever and made it disappear! You just need to do something with the be-quick beak/wick from here on out.
 
 @hint
@@ -2725,11 +2708,6 @@ You must have one word right for how to fracture the tube/rod.
 \\
 >undo
 >undo
-
-@rej
-#testcase-check-pre-too-broad-rule-if-sco-too-broad-is-true
->too broad
-You already burst the tube/rod!
 
 >too broad
 by a point
@@ -2852,6 +2830,8 @@ The scribes won't trade a broom for NOTHING...
 #testcase-think-table-of-main-oronyms-pre-scry-broom-rule
 >think
 You can SCRY BROOM and get it once you have something the scribes want.
+\\
+>n
 
 >n
 
@@ -2901,7 +2881,6 @@ Oh my! You pull the felt wrap away, and that is one fell looking trap!
 #testcase-check-pre-fell-trap-rule-if-sco-fell-trap-is-true
 >fell trap
 You can just X TRAP to see what it might do.
-<already-done;>
 
 >x trap
 
@@ -3038,6 +3017,10 @@ You must have one word right for get by the Sage Oaks.
 >undo
 >undo
 
+@rej
+>think
+You can SAY JOKES now you're cheerier for having done a bit more.
+
 >say jokes
 by a point
 
@@ -3045,7 +3028,8 @@ by a point
 #testcase-check-pre-say-jokes-rule-fallthrough
 #testcase-run-post-say-jokes-rule-default
 "Eh, jokes age oaks," they mutter at first. But they get into it more. They warn you of the trouble you'll get in if you keep telling corny jokes. It doesn't show you're smart. But then you explain you carefully crafted said jokes to peeve them. You've had experience all game with wordplay, too.
-They're pretty impressed with your presentation. You feel a magic surge--you can pass to the south now.
+They're pretty impressed with your presentation. Their branches and leaves blow in the wind, beckoning you south. You start, then gasp "ouch." What the heck?! They were fibbing.
+The sage oaks laugh a bit. "Just a bit of revenge for those painful jokes," they say, "nothing permanent. We never said we'd give painless passage south. It will be for your own good in the long term. Just a bit of hazing."
 
 @gt
 #+testcase-goto-table-of-noways-sage-oaks
@@ -3340,7 +3324,7 @@ You can't see any way but back north.
 @rej
 #testcase-check-pre-cold-rum-rule-if-coal-drum-is-not-in-dust-which
 >cold rum
-<if coal drum is not in dust which, unavailable;>
+{$REJECT2}
 
 @hint
 #testcase-values-eyes-number-of-dust-which-is-1
@@ -4156,7 +4140,7 @@ Not that way. Out or east.
 @rej
 #+testcase-think-table-of-main-oronyms-pre-dope-ale-rule
 >think
-You can trade for some DOPE ALE once you've found find willing traders with a bit extra.
+You can trade for some DOPE ALE now you've found find willing traders with a bit extra.
 
 >dope ale
 by a point
@@ -4949,7 +4933,7 @@ You can't go outside. There are no new ways to go.
 \\
 #testcase-reject-end-table-of-main-oronyms-pre-in-earnest-rule
 >in earnest
-The first word was a valid command that could stand on its own. The second may be unnecessary, or a typo.
+{$XTRA}
 \\
 #testcase-reject-end-table-of-main-oronyms-pre-join-aider-rule
 >join aider
@@ -4981,7 +4965,7 @@ The first word was a valid command that could stand on its own. The second may b
 \\
 #testcase-reject-end-table-of-main-oronyms-pre-no-date-rule
 >no date
-The first word was a valid command that could stand on its own. The second may be unnecessary, or a typo.
+{$XTRA}
 \\
 #testcase-reject-end-table-of-main-oronyms-pre-oh-clever-rule
 >oh clever

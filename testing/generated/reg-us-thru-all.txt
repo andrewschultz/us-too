@@ -76,6 +76,9 @@ by a bonus point
 A loose intro flutters down from the lucent row. You pick it up. As you do, the lucent row stops glowing and becomes a ledge. A Goal-Edge-Go Ledge, to be precise.
 !But then the Goal-Edge-Go Ledge, containing nothing, retracts after a bit. Well, you got everything you could want from it.
 
+>x intro
+It's an introduction to your world, not from Aunt Rickie-Anne, but from one Hugh Morris AKA Mick Stupp. At the top is a warning about mild spoilers that get less mild as you read on.
+
 #testcase-x-intro-table-of-intro-jabber-1
 >x intro
 There's a brief explanation about how Us Too reuses a lot of the code from Why Pout, though hopefully the different stories and puzzles give enough variety to keep you interested. Both are polite on the Zarfian cruelty scale, so there's no way to die.
@@ -293,7 +296,8 @@ bonus point
 
 #testcase-run-post-peace-talks-rule-if-sco-pea-pod-is-false
 >peace talks
-Getting back to nature and stuff leaves you at peace with yourself. So at peace, you want to spread that peace to others, whether or not they fully deserve it. However, now you're so at peace, you recognize you are disturbing the plants' peace. You retreat to the Ur-Branch.
+Getting back to nature and stuff leaves you at peace with yourself. So at peace, you want to spread that peace to others, whether or not they fully deserve it. However, now you're so at peace, you recognize you are potentially disturbing the plants' peace.
+You retreat to the Ur-Branch.
 `Ur-Branch
 
 >undo
@@ -540,7 +544,8 @@ by a point
 #testcase-check-pre-say-jokes-rule-fallthrough
 #testcase-run-post-say-jokes-rule-default
 "Eh, jokes age oaks," they mutter at first. But they get into it more. They warn you of the trouble you'll get in if you keep telling corny jokes. It doesn't show you're smart. But then you explain you carefully crafted said jokes to peeve them. You've had experience all game with wordplay, too.
-They're pretty impressed with your presentation. You feel a magic surge--you can pass to the south now.
+They're pretty impressed with your presentation. Their branches and leaves blow in the wind, beckoning you south. You start, then gasp "ouch." What the heck?! They were fibbing.
+The sage oaks laugh a bit. "Just a bit of revenge for those painful jokes," they say, "nothing permanent. We never said we'd give painless passage south. It will be for your own good in the long term. Just a bit of hazing."
 
 >gas pouch
 by a point

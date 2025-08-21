@@ -152,7 +152,7 @@ That thought/action/observation/request brings up nothing. Us Too has a limited 
 >guard entry
 That thought/action/observation/request brings up nothing. Us Too has a limited set of verbs, and the main thing is to guess a two-word phrase. To see what verbs are used, try VERBS.
 
-#testcase-check-pre-herb-ranch-rule-if-player-is-not-in-ur-branch
+#testcase-check-pre-herb-ranch-rule-if-ur-branch-is-unvisited
 #testcase-reject-start-table-of-main-oronyms-pre-herb-ranch-rule
 >herb ranch
 That thought/action/observation/request brings up nothing. Us Too has a limited set of verbs, and the main thing is to guess a two-word phrase. To see what verbs are used, try VERBS.
@@ -386,28 +386,6 @@ You already got some munchies! No need to be greedy.
 
 >u
 
-#TTC.PY bookmark: this is where I GOTO places that don't fit in the walkthrough, so I can test all the THINK
-
->gonear tude ark
-
-#testcase-check-pre-ho-langour-rule-if-sco-too-broad-is-false
->ho langour
-But it doesn't quite work yet, calling for languor ... you haven't done anything down this way.
-
->gonear sage oaks
-
-#testcase-check-pre-say-jokes-rule-if-sco-ho-langour-is-false
->say jokes
-You try to bull through with jokes, but you're forcing it. You haven't naturally boosted yourself.
-
-#testcase-think-table-of-main-oronyms-pre-ho-langour-rule
->think
-You can yell HO LANGUOR once you have done something, anything, else in the south.
-
->gonear blah copse
-
->gonear branch
-
 #testcase-reject-start-table-of-main-oronyms-pre-loose-intro-rule
 >loose intro
 That thought/action/observation/request brings up nothing. Us Too has a limited set of verbs, and the main thing is to guess a two-word phrase. To see what verbs are used, try VERBS.
@@ -418,11 +396,15 @@ You need to be back in your mine for this.
 
 >d
 
+#testcase-check-pre-herb-ranch-rule-if-player-is-not-in-ur-branch
 >herb ranch
+Yes, yes, a bit of time away from Ur-Branch made it clear where to go first. You should go back there and try again.
 
 #testcase-think-table-of-main-oronyms-pre-herb-ranch-rule
 >think
-You can discover an herb ranch once you are back in the Ur-Branch.
+You can discover an HERB RANCH once you are back in the Ur-Branch.
+
+>u
 
 >herb ranch
 by a point
@@ -431,15 +413,11 @@ by a point
 >herb ranch
 You already found the herb ranch! One free sample should be enough.
 
-#+testcase-think-table-of-main-oronyms-pre-herb-ranch-rule
->think
-You can discover an herb ranch now you are back in the Ur-Branch.
-
 >d
 
 #testcase-check-pre-summer-bay-rule-if-player-is-not-in-ur-branch
 >summer bay
-WRONG
+Perhaps you should use the herb in a more wide-open place. Like the Ur-Branch where you got it.
 
 #testcase-think-table-of-main-oronyms-pre-summer-bay-rule
 >think
@@ -535,20 +513,21 @@ That thought/action/observation/request brings up nothing. Us Too has a limited 
 >blah copse
 by a point
 
+>s
+
 #testcase-check-pre-blah-copse-rule-if-sco-blah-copse-is-true
 >blah copse
-You already figured how to evade the black ops! You can just go north if you need to.
+You already figured how to evade the black ops! You can just go back north if you need to.
+
+>undo
+>undo
 
 >nah queue
 by a point
 
 #testcase-check-pre-nah-queue-rule-if-sco-nah-queue-is-true
 >nah queue
-You already brushed back the Forest Team for Esteem that way!
-
-#+testcase-think-table-of-main-oronyms-pre-surf-ready-rule
->think
-You can SURF READY now you have surfing materials for Sir Freddie.
+You hear the Forest Team for Esteem's taunts ring in your ears, and you brush them back again.
 
 #testcase-check-pre-or-clerk-rule-if-sco-surf-ready-is-false
 >or clerk
@@ -565,7 +544,7 @@ by a point
 You already figured nothing awful was lurking to the north.
 
 #testcase-check-pre-blast-ring-rule-if-player-is-not-in-sore-dark-or-sword-ark-is-not-in-sore-dark
->blah string
+>blast ring
 You can see nothing to blast!
 
 #testcase-think-table-of-main-oronyms-pre-blast-ring-rule
@@ -583,9 +562,9 @@ by a point
 >surf ready
 But Sir Freddie has already found a new passion!
 
-#+testcase-check-pre-punt-weaker-rule-if-sir-freddie-is-not-in-beach-ill-and-sir-freddie-is-not-moot
+#testcase-check-pre-punt-weaker-rule-if-sir-freddie-is-in-beach-ill-and-sco-peach-talks-is-false
 >punt weaker
-The pun tweaker says "Yeah, maybe I have one. Get rid of this guy, I'll give you it."
+The pun tweaker whispers "I'll give you it, if you just get rid of THIS GUY."
 
 >w
 
@@ -599,9 +578,14 @@ by a point
 >guard entry
 by a point
 
+>out
+
 #testcase-check-pre-guard-entry-rule-if-sco-guard-entry-is-true
 >guard entry
 You already snuck past the garden tree so you could go IN!
+
+>undo
+>undo
 
 >pea pod
 bonus point
@@ -637,7 +621,7 @@ You can commence DOUGH MAKING once you have overcome the can't-ache.
 
 #testcase-check-pre-in-earnest-rule-if-inscen-is-not-in-dome-aching
 >in earnest
-That thought/action/observation/request brings up nothing. Us Too has a limited set of verbs, and the main thing is to guess a two-word phrase. To see what verbs are used, try VERBS.
+The first word was a valid command that could stand on its own. The second may be unnecessary, or a typo.
 
 >can take
 by a point
@@ -716,10 +700,6 @@ You already cleared a path through the bay spikes!
 >pie crust
 by a point
 
-#testcase-check-pre-pie-crust-rule-if-sco-pie-crust-is-true
->pie crust
-You already de-rusted the pike!
-
 >hike up
 by a point
 
@@ -781,7 +761,7 @@ You probably shouldn't actively diss the Terra Blade, now you're carrying it.
 by a point
 
 #testcase-check-pre-oh-clever-rule-if-sco-oh-clever-is-true
->oak lever
+>oh clever
 You already pulled the oak lever and made it disappear! You just need to do something with the be-quick beak/wick from here on out.
 
 >x beak
@@ -789,10 +769,6 @@ You already pulled the oak lever and made it disappear! You just need to do some
 >ne
 
 >s
-
-#testcase-check-pre-too-broad-rule-if-sco-too-broad-is-true
->too broad
-You already burst the tube/rod!
 
 >too broad
 by a point
@@ -854,6 +830,8 @@ You can SCRY BROOM and get it once you have something the scribes want.
 
 >n
 
+>n
+
 >sw
 
 >fell trap
@@ -862,7 +840,6 @@ by a point
 #testcase-check-pre-fell-trap-rule-if-sco-fell-trap-is-true
 >fell trap
 You can just X TRAP to see what it might do.
-<already-done;>
 
 >x trap
 
@@ -894,6 +871,9 @@ You can just X TRAP to return.
 #+testcase-check-pre-gas-pouch-rule-if-player-is-not-in-sage-oaks-or-sco-say-jokes-is-false-and-player-does-not-have-gas-pouch
 >gas pouch
 That thought/action/observation/request brings up nothing. Us Too has a limited set of verbs, and the main thing is to guess a two-word phrase. To see what verbs are used, try VERBS.
+
+>think
+You can SAY JOKES now you're cheerier for having done a bit more.
 
 >say jokes
 by a point
@@ -964,7 +944,7 @@ You neither want nor need two brooms.
 
 #testcase-check-pre-cold-rum-rule-if-coal-drum-is-not-in-dust-which
 >cold rum
-<if coal drum is not in dust which, unavailable;>
+That thought/action/observation/request brings up nothing. Us Too has a limited set of verbs, and the main thing is to guess a two-word phrase. To see what verbs are used, try VERBS.
 
 #+testcase-think-table-of-main-oronyms-pre-pro-sweeping-rule
 >think
@@ -1152,7 +1132,7 @@ The fey loners/fail-owners almost look bright for a minute. "Hey, we could pull 
 
 #+testcase-think-table-of-main-oronyms-pre-dope-ale-rule
 >think
-You can trade for some DOPE ALE once you've found find willing traders with a bit extra.
+You can trade for some DOPE ALE now you've found find willing traders with a bit extra.
 
 >dope ale
 by a point

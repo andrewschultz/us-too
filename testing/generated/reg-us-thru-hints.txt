@@ -346,6 +346,11 @@ by a point
 >eye sir freddie
 The eyes show nothing. You've done everything you need to get something from Sir Freddie directly.
 
+#+testcase-values-eyes-number-of-pun-tweaker-is-46
+>eye pun tweaker
+The eyes light up yellow and show four dots, then six dots.
+
+>undo
 >undo
 >undo
 
@@ -382,10 +387,6 @@ by a point
 #testcase-values-eyes-number-of-pea-stalks-is-55
 >eye
 The eyes light up green and show five dots, then five dots.
-
-#+testcase-values-eyes-number-of-pun-tweaker-is-46
->eye pun tweaker
-The eyes light up yellow and show four dots, then six dots.
 
 >peace talks
 by a point
