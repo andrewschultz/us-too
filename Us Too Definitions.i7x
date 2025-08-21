@@ -50,9 +50,7 @@ volume ordroom
 
 an ordroom is a kind of room. an ordroom has a number called rmord. rmord of an ordroom is usually 0.
 
-south-to-find is a list of ordrooms variable. south-to-find is { Tube Rod, Too Dark Tude Ark, Sage Oaks }.
-
-south-found is a list of ordrooms variable. south-found is { Tube Rod, Tube Rod, Tube Rod }.
+ordrooms-in-order is a list of rooms variable. ordrooms-in-order is { tude ark, sage oaks, tube rod }.
 
 definition: a number (called q) is claimable:
 	if q < 1 or q > number of ordrooms, no;
@@ -60,38 +58,36 @@ definition: a number (called q) is claimable:
 		if rmord of R is q, no;
 	yes;
 
-to assign-rmord:
-	let rm be entry 1 in south-to-find;
-	remove rm from south-to-find;
-	now rmord of rm is extra-turns;
-	now entry extra-turns of south-found is rm;
-	if debug-state is true, say "(DEBUG) [rm] has been assigned rmord [extra-turns].";
-	move player to rm;
-	change north exit of rm to ur branch;
-	if number of entries in south-to-find is 0:
-		say "Whew! You've discovered three new entries to the south of the Ur-Branch. You're kind of worried it will be tricky to remember.";
-		say "[line break][i][bracket][b]NOTE[r][i]: don't worry. There will be. And you won't have to run back and forth, now you've discovered all of them.[close bracket]";
-		move sign ought sigh not to ur branch;
-		change south exit of ur branch to entry 1 in south-found;
+when play begins:
+	repeat with rm running through ordrooms:
+		change north exit of rm to Ur Branch;
+
+to decide whether south-sorted:
+	if number of unvisited ordrooms is 0, yes;
+	no;
 
 to list-which-room:
-	repeat with ORM running through south-found:
-		say "[ORM]: [which-south of ORM][line break]";
+	repeat with ORM running through ordrooms-in-order:
+		if orm is visited:
+			say "[ORM]: [which-south of ORM][line break]";
+		else:
+			say "<a blank row>[line break]";
 
 to say which-south of (orm - an ordroom):
 	repeat with X running from 1 to rmord of orm:
 		say "S";
 
-check going south in ur branch when extra-turns > 0:
-	repeat with o running through ordrooms:
-		if rmord of o is extra-turns:
-			move player to o;
-			if debug-state is true, say "Already been to [o] ([extra-turns] turns).";
-			the rule succeeds;
-	assign-rmord;
-	say "You take a look around your new surroundings. Hey, somewhere new!";
-	if extra-turns > 0, say "[line break]You spend so much time pacing around said somewhere new, your burst of speed vanishes.";
-	now extra-turns is 0;
+check going south in ur branch when extra-turns > 0 and number of visited ordrooms < 3:
+	let rm be entry extra-turns in ordrooms-in-order;
+	move player to rm;
+	if rm is unvisited:
+		say "You take a look around your new surroundings. Hey, somewhere new!";
+		say "[one of]You ran past a lot to get here. Maybe you missed something you can find later.[or]You wonder if there was a bit more to look for.[or]You think you've discovered everywhere.[stopping]";
+	else:
+		say "You've been here before. It's nice not to get lost, but you wonder where else there is.";
+	if extra-turns > 0:
+		say "[line break]You spent so much time pacing around said somewhere new, your burst of speed vanishes.";
+		now extra-turns is 0;
 	the rule succeeds;
 
 volume directions
