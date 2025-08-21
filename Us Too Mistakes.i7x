@@ -8,7 +8,25 @@ understand "say [text]" and "say" as a mistake ("You don't need to prefix any im
 
 understand "say [text]" and "say" as a mistake ("You found the only important command to start with [b]SAY[r].") when sco-say-jokes is true and player is not in sage oaks.
 
+volume weird parser stuff
+
 volume puzzle-specific mistakes
+
+book stuff that needs the parser
+
+[note: this could *potentially* be put in another table we read through after the main oronyms. But there's only one example, so I keep it here for now.]
+
+after reading a command:
+	if forest team is touchable:
+		if the player's command includes "steam":
+			say "You need to get less steamed up. And you need to kill [the team]'s head of steam.";
+			reject the player's command;
+
+book forest team
+
+understand "fora steam" as a mistake ("No, [the team] doesn't need a big stage with steam to spread their banter.") when forest team is touchable.
+
+understand "fora" and "fora [text]" as a mistake ("No, [the team] doesn't need fora to talk more.") when forest team is touchable.
 
 book clay mitt
 

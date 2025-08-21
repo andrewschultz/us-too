@@ -561,7 +561,7 @@ book east branch
 
 part Beach Ill
 
-Beach Ill is a room in universal. printed name is "[if sco-be-chill is false]Beach, Ill[else if sco-punt-weaker is false]Bless-and-Bleah Sand[else]Dune Ever-Do-Never[end if]". "[if sco-be-chill is false]You have a general sense of malaise here, which isn't usual for these environs, but it's there, and not being able to get rid of it simply is causing more malaise[else]It's nice here. The only way out on foot is back west, since you can't swim the other ways[end if].". eyes-number of Beach Ill is 25. eyes-rule of Beach Ill is pre-be-chill rule.
+Beach Ill is a room in universal. printed name is "[if sco-be-chill is false]Beach, Ill[else if sco-punt-weaker is false]Bless-and-Bleah Sand[else]Dune Ever-Do-Never[end if]". "[if sco-be-chill is false]While the environs aren't totally illun['], you do have a general sense of malaise here, and not being able to get rid of it despite beaches usually being cheery is simply is causing more malaise. You're overthinking things a bit, maybe, and you're feeling slightly agitated[else]It's nice here. The only way out on foot is back west, since you can't swim the other ways[end if].". eyes-number of Beach Ill is 25. eyes-rule of Beach Ill is pre-be-chill rule.
 
 After choosing notable locale objects when player is in Beach Ill:
 	if Freddie is in beach, set the locale priority of Freddie to 9;
@@ -586,9 +586,13 @@ chapter nigh swarm
 
 the nigh swarm is a thing. "A nigh swarm ruins the tranquility of the area. You can't see behind it.". description is "The nigh swarm buzzes aggressively.". eyes-number of nigh swarm is 44. eyes-rule of nigh swarm is pre-nice-warm rule.
 
+chapter sand
+
+there is a thing called bless and bleah sand. it is scenery. eyes-number of sand is 1. "There's nothing special about the sand, but there is a lot of it. It wouldn't be much of a beach without sand."
+
 chapter pro ball
 
-the pro ball is a thing. description is "[if sco-probe-all is false]If you look at it right, you may be able to see a bit more, but you haven't, yet[else]Hmmph. The pro ball doesn't seem to reveal anything new when you look at it for any period of time[end if].". eyes-number of pro ball is 53. eyes-rule of pro ball is pre-probe-all rule.
+the pro ball is a thing. description is "[if sco-probe-all is false]If you look at it right, you may be able to see a bit more, but you haven't, yet[else]You stare a bit at the pro ball and see nothing new. Maybe it only changes after you've done or found something significant.[end if].". eyes-number of pro ball is 53. eyes-rule of pro ball is pre-probe-all rule.
 
 check examining pro ball for the first time: say "It's not a pro sports ball. More like an orb. But if it were an orb, well, it wouldn't quite work as-is. I think you understand by now.";
 
@@ -606,7 +610,7 @@ to say pun-tweaker-desc:
 	if sir freddie is in beach ill:
 		say "The pun tweaker glances with annoyance at Sir Freddie's surfing antics";
 	else:
-		say "Relatively jokey and carefree";
+		say "Relatively jokey and carefree. This does not extend to their ";
 
 chapter gauche hip go ship
 
@@ -626,6 +630,10 @@ check going west in Pile Up Isle:
 	say "You have no problem steering the punt back now you've got the hang of things. It seems surprisingly sturdy.";
 	move punt to beach;
 	move oar to beach;
+
+chapter dune ever do never
+
+there is a thing called dune ever do never. it is scenery. eyes-number of dune is 1. "It sits lazily around. It's not worth climbing or exploring. It is what it is.". printed name is "Dune Ever-Do-Never".
 
 book northwest branch
 
