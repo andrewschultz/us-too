@@ -1414,7 +1414,7 @@ report abouting:
 book credits
 
 carry out creditsing:
-	say "Thanks to my testers, <FILL IN LATER>.";
+	say "Thanks to my testers, Wade Clarke, Olaf Nowacki and Tabitha.";
 	say "[line break]The cover art is my fault, and my fault alone.";
 	say "[line break][b]GENERAL THANKS[r]:[paragraph break]";
 	say "Thanks to everyone past and future involved in the administration of IFComp.";

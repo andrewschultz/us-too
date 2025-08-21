@@ -289,9 +289,7 @@ You look for a way past the tree, and suddenly you have an idea, and once you kn
 >pea pod
 bonus point
 
-#testcase-check-pre-pea-pod-rule-if-sco-pea-pod-is-true
 >pea pod
-There are no other odd pea pods.
 
 #testcase-run-post-peace-talks-rule-if-sco-pea-pod-is-false
 >peace talks

@@ -846,6 +846,7 @@ You already got some munchies! No need to be greedy.
 But it doesn't quite work yet, calling for languor ... you haven't done anything down this way.
 \\
 >gonear sage oaks
+\\
 #testcase-check-pre-say-jokes-rule-if-sco-ho-langour-is-false
 >say jokes
 You try to bull through with jokes, but you're forcing it. You haven't naturally boosted yourself.
@@ -1827,7 +1828,7 @@ You must have one word right for finding something incorporeal within the Pea St
 >eye pun tweaker
 The eyes light up yellow and show four dots, then six dots.
 
-@all
+@rej
 ##balance undos
 >pea pod
 bonus point
@@ -1835,6 +1836,16 @@ bonus point
 #testcase-check-pre-pea-pod-rule-if-sco-pea-pod-is-true
 >pea pod
 There are no other odd pea pods.
+\\
+>undo
+>undo
+
+@all
+##balance undos
+>pea pod
+bonus point
+\\
+>pea pod
 \\
 #testcase-run-post-peace-talks-rule-if-sco-pea-pod-is-false
 >peace talks

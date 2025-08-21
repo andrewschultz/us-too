@@ -624,6 +624,16 @@ by a point
 >guard entry
 You already snuck past the garden tree so you could go IN!
 
+>pea pod
+bonus point
+
+#testcase-check-pre-pea-pod-rule-if-sco-pea-pod-is-true
+>pea pod
+There are no other odd pea pods.
+
+>undo
+>undo
+
 >peace talks
 by a point
 
