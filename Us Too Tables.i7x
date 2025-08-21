@@ -1115,6 +1115,7 @@ this is the post-cold-rum rule:
 	now sco-cold-rum is true;
 	say "It's a pretty big coal drum. You rummage around, and sure enough ... you find some cold rum. Way too much to drink on your own.";
 	now player has cold rum;
+	declue coal drum;
 	now eyes-number of dust which is 36;
 	now eyes-rule of dust which is pre-tea-leaves rule;
 

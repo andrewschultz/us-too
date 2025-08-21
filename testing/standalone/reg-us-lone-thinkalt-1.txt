@@ -385,7 +385,7 @@ by a point
 
 >d
 
->groan odes
+>grow nodes
 by a point
 
 #testcase-check-pre-no-date-rule-if-player-does-not-have-pliers

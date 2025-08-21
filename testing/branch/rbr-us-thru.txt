@@ -3418,7 +3418,7 @@ You already found what you could in the coal drum!
 @hint
 #+testcase-values-eyes-number-of-coal-drum-is-43
 >eye coal drum
-{$NOTHERE}
+The eyes show nothing. You've done everything you need with the coal drum.
 \\
 #testcase-values-eyes-number-of-cold-rum-is--1
 >eye cold rum
