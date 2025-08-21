@@ -244,7 +244,10 @@ part too rad tour ad
 
 the too rad tour ad is a startthing. eyes-number of too rad tour ad is 1.
 
-check drop2ing tour ad when tour ad is unexamined: say "You can drop it, but read it, first, to make sure it isn't really useful." instead;
+check drop2ing tour ad:
+	if tour ad is unexamined, say "You can drop it, but read it, first, to make sure it isn't really useful." instead;
+	moot tour ad;
+	say "You actually just crumple it up and put it in your pocket, in case you need to start a fire later. Littering isn't cool! But it's out of your inventory, now." instead;
 
 Trike West carries the too rad tour ad. printed name of tour ad is "too-rad tour ad".
 
