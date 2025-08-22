@@ -1263,10 +1263,6 @@ after printing the name of gray tin when taking inventory:
 
 book drop/take
 
-check taking: if noun is not a hintthing, say "You never need to take anything explicitly in [this-game], though you have the option of taking two hint items. However, trying to take an item may give you a hint as to what you really need to do to acquire or use it." instead;
-
-check drop2ing: say "You never need to drop anything explicitly in [this-game]. Often, when you're done with something, it will be consumed. Also, there is no inventory limit." instead;
-
 volume cheating
 
 chapter warponing
