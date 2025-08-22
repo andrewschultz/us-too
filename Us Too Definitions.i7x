@@ -129,7 +129,7 @@ after printing the name of a direction (called di) while pri-branch-reject is tr
 	if the room di of location of player is visited, say " to [the room di of location of player]";
 	continue the action;
 
-a direction has text called donetext. donetext of a direction is "You're done [the item described]. I should detail this better, but for now, the upshot is: you don't need to go back [the item described]."
+a direction has text called donetext. donetext of a direction is "You're done to [the item described]. I should detail this better, but for now, the upshot is: you don't need to go back [the item described]."
 
 donetext of inside is "You got peace talks and an extra vegetable from behind the garden tree.".
 donetext of north is "You looted the Morph Lairs well enough.".
@@ -137,9 +137,10 @@ donetext of northwest is "You can't imagine anything is in the dark other than t
 donetext of northeast is "Between getting lots of eggs, the [orb] and, oh yeah, that board (red,) you think you've made out well enough to the northeast.".
 donetext of west is "You fixed up the deli AND destroyed the nodes. Well done! There's no need to go back.".
 donetext of south is "You found all three southish passages and what was in them. Nice going.".
-donetext of up is "You got what you needed from the life roots.".
+donetext of up is "You destroyed the evil throne and got what you needed from the life roots.".
 donetext of east is "You got everything you needed to the east, which helped you discover passages to the south, west and southwest.".
 donetext of southwest is "You are done with the southwest and using the beak to speed through to new places.".
+donetext of southeast is "You looted the dome and the inner nest nicely.".
 
 chapter directions from/to Ur-Branch
 
