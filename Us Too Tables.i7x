@@ -324,7 +324,7 @@ a wordtwisting rule (this is the pre-punt-weaker rule):
 		vcp "The pun tweaker whispers 'I'll give you it, if you just get rid of THIS GUY.'";
 		not-yet;
 	if sir freddie is not in beach ill and sir freddie is not moot:
-		vcp "The pun tweaker says 'Yeah, maybe I have one. [if sir freddie is in beach]Get rid of this guy, I'll give you it.'[else]But what can you do for me?'[end if]";
+		vcp "The pun tweaker says 'You want transport, eh? Any sort of transport? [if sir freddie is in beach]Get rid of this guy, I'll give you it.'[else]But what can you do for me?'[end if]";
 		not-yet;
 	if sco-punt-weaker is true:
 		vcal "You already got the punt, weaker!";
@@ -747,7 +747,7 @@ a wordtwisting rule (this is the pre-cellar-bin rule):
 
 this is the post-cellar-bin rule:
 	now sco-cellar-bin is true;
-	say "You bang on the cell door, claiming you've been sent to the wrong place. To your surprise, two maintenance workers come by and agree. One pushes a button. You are spun around! You fall to the floor, dizzy.[paragraph break]'Okay. Next time, if you fall in the trap, you'll fall somewhere else.' You thank them, you guess, not entirely sure what good it will do.";
+	say "You bang on the cell door, claiming you've been sent to the wrong place. To your surprise, two maintenance workers come by and agree. One pushes a button. You are spun around! You fall to the floor, dizzy.[paragraph break]'Okay. Next time, if you fall in the trap, you'll fall here in the cellar instead of the cell.' You thank them, you guess, not immediately sure what good it will do.";
 	declue-here;
 	move player to Cellar Bin;
 
@@ -1211,7 +1211,7 @@ noway-rm	noway-txt
 My New Mine Ooh	"You could explore your mine, but you [if sco-try-quest is false]have no purpose, or errand, or ... there's another word, here[else if sco-be-strong is false]really should get rid of that beast[else]sense the real adventure lies back above in the outdoors[end if]."
 Ur Branch	"You can't go [noun][if noun is eventual] yet[end if][if south is branchdone and west is branchdone]. There are no new ways to go[end if]."
 Beach Ill	"You can only walk back west[if sco-punt-weaker is true] or take the punt east[end if]."
-Pile Up Isle	"You can't see land anywhere except to the west."
+Pile Up Isle	"You can't see land anywhere except back to the west."
 Sore Dark	"The only exit from this cavern is southeast."
 Bore Dread	"You can only go southwest or[if sco-malt-hour is false], maybe, east once you figure a way[else] east[end if]."
 Blah Copse	"You can only leave the copse to the south[if sco-or-clerk is true] or north[end if]."

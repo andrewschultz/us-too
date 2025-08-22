@@ -268,8 +268,9 @@ My New Mine Ooh is a room in intro. printed name is "My New Mine, Ooh!". descrip
 After choosing notable locale objects when player is in Mine Ooh:
 	if war pawn is in mine ooh, set locale priority of war pawn to 0;
 	if slice eyes are in mine ooh, set locale priority of slice eyes to 0;
+
 to note-mine (th - a thing):
-	if th is in location of player, say "A [th] juts out here. [if ledge is unexamined]Maybe something is on it.[else]You see [the list of hintthings in mine ooh] on it, and you can [b]EXAMINE[r] [ara]'s message on it again, too.";
+	if th is in location of player, say "A [th] juts out here. [if ledge is unexamined]Looks like it's not empty.[else]You see [the list of hintthings in mine ooh] on it, and you can [b]EXAMINE[r] [ara]'s message on it again, too.";
 
 after printing the locale description for My New Mine Ooh:
 	note-mine lucent row;
@@ -343,7 +344,7 @@ check examining startprop when the noun is unexamined:
 	now ledge is examined;
 	the rule succeeds;
 
-the message is scenery. "On [the random startprop in mine ooh], in a facsimile of [ara]'s handwriting: 'Row is for practice if you want. Items on it may help when needed. No shame using everywhere or ignoring.'". eyes-number of message is 1.
+the message is scenery. "On [the random startprop in mine ooh], in a facsimile of [ara]'s handwriting: 'Row is for practice if you want. Items on it may help when needed. No shame using them everywhere, and I won't be offended if you find them useless.'". eyes-number of message is 1.
 
 chapter taking hintthings
 
@@ -368,7 +369,7 @@ chapter loose intro
 the loose intro is a hintthing. description is "[intro-table]". eyes-number of loose intro is -1.
 
 check examining loose intro when loose intro is unexamined:
-	say "It's an introduction to your world, not from [ara], but from one Hugh Morris AKA Mick Stupp. At the top is a warning about mild spoilers that get less mild as you read on.";
+	say "It's an introduction to your world, not from [ara], but from one Hugh Morris AKA Mick Stupp. At the top is a note that while no puzzles are spoiled or hinted, the author does discuss his views on how [this-game] compares to [wp] (length, plot, etc.) and also mentions how two or three puzzles break the mold a bit.";
 	now loose intro is examined;
 	the rule succeeds;
 
@@ -412,7 +413,7 @@ after printing the locale description for Ur Branch when sco-hike-up is true and
 	continue the action;
 
 after printing the locale description for Ur Branch when sco-nah-queue is true and inside is branchcant:
-	say "You hear a scuffle and see the [Forest] running away. They moan something about a garden tree getting in the way. You didn't see one before, but ... you see one, now, and you see their most recent footprints. It doesn't appear particularly aggressive, but it's in the way.";
+	say "You hear a scuffle and see the [Forest] running away. They moan something about a garden tree getting in the way. You didn't see one before, but tracing the team's most recent footprints leads you to a garden tree.[paragraph break]It doesn't appear particularly aggressive, but it's in the way.";
 	reveal Pea Stalks to inside;
 	move garden tree to Ur Branch;
 	continue the action;
@@ -470,7 +471,7 @@ invtext of herbs is "[if player does not have herbs]seasoning[else]you've got lo
 
 chapter black ops
 
-the black ops are a thing. "You know black ops are lurking to the north.". description is "If I could describe them, they wouldn't be very good black ops.". eyes-number of black ops is 45. eyes-rule of black ops is pre-blah-copse rule.
+the black ops are a thing. "You also know black ops are lurking to the north, and you haven't figured what you really need to find there. Yet.". description is "If I could describe them, either they wouldn't be very good black ops. Or perhaps I can describe them well, but I'd get in big trouble if I did.[paragraph break](Looks nervously around, then whispers: 'Anyway. They're avoidable. I can't say more.')". eyes-number of black ops is 45. eyes-rule of black ops is pre-blah-copse rule.
 
 chapter garden tree
 
@@ -628,7 +629,7 @@ to say punt-status:
 	if pile-done:
 		say ". It served you well, [if player is in isle]and you think you've seen what you needed here[else]but you can't think of a reason to go back to the isle[end if]";
 	else:
-		say ", ready to take you [if isle is visited]back [end if][if player is in isle]west[else]east[end if]"
+		say ", ready to take you [if player is in isle or isle is visited]back [end if][if player is in isle]west[else]east[end if]"
 
 check going west in Pile Up Isle:
 	say "You have no problem steering the punt back now you've got the hang of things. It seems surprisingly sturdy.";
@@ -643,7 +644,7 @@ book northwest branch
 
 part Sore Dark
 
-Sore Dark is a room in universal. description is "[if sco-sword-ark is false]You can't see much here, but maybe if you fumble around for what you need, or make an educated guess, you'll find it[else if sco-blast-ring is false]The sword ark hangs above you, the Terra Blade intertwined in it[else]The Terra Blade lies among the erstwhile rubble of the sword ark[end if].". eyes-number of Sore Dark is 53. eyes-rule of Sore Dark is pre-sword-ark rule.
+Sore Dark is a room in universal. description is "[if sco-sword-ark is false]You can't see much here, but maybe if you fumble around for what you need, or make an educated guess, you'll find it[else if sco-blast-ring is false]The sword ark hangs above you, the Terra Blade intertwined in it, far too high to climb up to[else]The Terra Blade lies among the erstwhile rubble of the sword ark[end if].". eyes-number of Sore Dark is 53. eyes-rule of Sore Dark is pre-sword-ark rule.
 
 chapter sword ark
 
@@ -662,7 +663,7 @@ Blah Copse is a room in universal. "[if sco-or-clerk is false]The only really cl
 check going to Blah Copse when sco-blah-copse is false:
 	now gs-tried-black-ops is true;
 	move black ops to Ur Branch;
-	say "[one of]You walk north, but somehow, you stumble by a black ops site, and you're flagged down. What are you doing here? How did you even get close? After some questioning, you're sent back to the Ur-Branch by people who 'suggest' you forget this ever happened. Returning is ... not advised.[or]Oh, no, you're not going back to the black ops site. You're not sure what was going on. You must've made a wrong turn. Maybe you can figure out where you were supposed to REALLY go.[stopping]"  instead;
+	say "[one of]You walk north, but somehow, you stumble by a black ops site, and you're flagged down. What are you doing here? How did you even get close? After some questioning, you're sent back to the Ur-Branch by people who 'suggest' you forget this ever happened. Returning is ... not advised. This does nothing to quell your curioaity about what's REALLY north[or]Oh, no, you can't risk going back to the black ops site. The pro ball indicated something north, but you're missing where you REALLY need to go. Once you know that, you know you can avoid the wrong turn. Until then, it's too risky.[stopping]"  instead;
 
 after printing the locale description for Blah Copse when sco-surf-ready is true and sco-or-clerk is false:
 	say "Sir Freddie also thought he heard an orc lurk to the north. What's up with that?";
@@ -670,11 +671,11 @@ after printing the locale description for Blah Copse when sco-surf-ready is true
 
 chapter Forest Team
 
-the Forest Team for Esteem is a plural-named hostile sentient in Blah Copse. "[one of]A group of adventurers is waiting for you here. After an over-friendly introduction where the introduce themselves as the Forest Team for Esteem, and where you don't impress them back, they begin to knock you, well, verbally[or]The Forest Team for Esteem continues to knock you verbally. Which isn't fatal, but it's getting in the way of you deciding what to do next[stopping].". description is "A bunch of boors with little better to do than knock you.". eyes-number of Forest Team is 35. eyes-rule of Forest Team is pre-nah-queue rule.
+the Forest Team for Esteem is a plural-named hostile sentient in Blah Copse. "[one of]A group of adventurers is waiting for you here. After an over-friendly introduction where they introduce themselves as the Forest Team for Esteem, and where you don't impress them back, they begin to knock you, well, verbally[or]The Forest Team for Esteem continues to knock you verbally. Which isn't fatal, but it's getting in the way of you deciding what to do next[stopping].". description is "A bunch of boors with little better to do than knock you.". eyes-number of Forest Team is 35. eyes-rule of Forest Team is pre-nah-queue rule.
 
 chapter Sir Freddie
 
-Sir Freddie is a sentient. "Sir Freddie [if player is in blah copse]stands here nervously[else]catches wave after wave, much to the dismay of the pun tweaker[end if].". description is "[if player is in blah copse]He looks uneasy. He clearly doesn't want to be here, but he also seems clueless where to go[else]Much more confident now he's surfing, but it'd be nice to broker peace, here[end if].". eyes-number of Sir Freddie is 45. eyes-rule of Sir Freddie is pre-surf-ready rule.
+Sir Freddie is a sentient. "Sir Freddie [if player is in blah copse]stands here nervously[else]catches wave after wave, much to the dismay of the pun tweaker[end if].". description is "[if player is in blah copse]He looks uneasy, out of his depth here in a legitimately questy area, and clueless where else he might go[else]Much more confident now he's surfing, but it'd be nice to broker peace, here[end if].". eyes-number of Sir Freddie is 45. eyes-rule of Sir Freddie is pre-surf-ready rule.
 
 understand "f/fred/freddy" and "sir f/fred/freddy" as Sir Freddie when Sir Freddie is touchable.
 
@@ -742,7 +743,7 @@ book inside
 
 part Pea Stalks
 
-Pea Stalks is a room in universal. "Pea stalks grow here. But they're nothing you can eat, or prepare to eat quickly[if sco-pea-pod is false]. Maybe you can peep odd things here, if you are careful[end if]. You can only go back [b]OUT[r].". eyes-number of Pea Stalks is 55. eyes-rule of Pea Stalks is pre-peace-talks rule.
+Pea Stalks is a room in universal. "Pea stalks grow here. But they're nothing you can eat, or prepare to eat quickly[if sco-pea-pod is false]. Maybe you can peep odd things here, if you have something specific in mind[end if]. You can only go back [b]OUT[r].". eyes-number of Pea Stalks is 55. eyes-rule of Pea Stalks is pre-peace-talks rule.
 
 chapter pea pod
 
@@ -752,7 +753,7 @@ book east branch
 
 part A Pile Up Isle
 
-A Pile Up Isle is a room in universal. printed name is "A Pile-Up Isle". eyes-number of A Pile Up Isle is 1. "You've found the isle west of the erstwhile Beach, Ill. It's ... not been tended to for a while."
+A Pile Up Isle is a room in universal. printed name is "A Pile-Up Isle". eyes-number of A Pile Up Isle is 1. "You've found the isle east of the erstwhile Beach, Ill. It's ... not been tended to for a while."
 
 the bay spikes are a plural-named thing in A Pile Up Isle. "Bay spikes seem to guard you from entering the large pile. They are too sharp to walk on. What to do?". description is "Too sharp to walk on.". eyes-number of bay spikes is 45. eyes-rule of bay spikes is pre-base-pikes rule.
 
@@ -771,7 +772,7 @@ check taking pike rust: say "Oh, it might flake off uselessly if you just took i
 
 chapter high cup
 
-The high cup is a thing. "A high cup is at the top of the pile.". description is "[if sco-hike-up is true]It wasn't such a big deal once you saw it[else]It looks quite impressive--from a distance. But you haven't figured how to reach it.". eyes-number of high cup is 42. eyes-rule of high cup is pre-hike-up rule.
+The high cup is a thing. "A high cup is at the top of the pile.". description is "[if sco-hike-up is true]It wasn't such a big deal once you saw it[else]It looks quite impressive--from a distance. But you haven't figured how to reach it[end if].". eyes-number of high cup is 42. eyes-rule of high cup is pre-hike-up rule.
 
 check taking the high cup when high cup is in Pile Up Isle: say "You take a direct path, but it's too steep." instead;
 
@@ -779,7 +780,7 @@ book southeast branch
 
 part Dome Aching
 
-Dome Aching is a room in universal. printed name is "Dome, Aching". "[if sco-can-take is false]Ugh. You're not physically uncomfortable, you just feel ... oh, how can I describe it? A can't-ache. It prevents you from seeing anything here[else]You're a bit more aware of your surroundings now[end if]. Of course, you can always go back northwest to the Ur-Branch.". eyes-number of Dome Aching is 56. eyes-rule of Dome Aching is pre-dough-making rule.
+Dome Aching is a room in universal. printed name is "Dome, Aching". "[if sco-can-take is false]Ugh. You're not physically uncomfortable, you just feel ... oh, how can I describe it? A can't-ache. You're so focused on the pain, you're not really looking for anything useful here[else]You're a bit more aware of your surroundings now[end if]. Of course, you can always go back northwest to the Ur-Branch.". eyes-number of Dome Aching is 56. eyes-rule of Dome Aching is pre-dough-making rule.
 
 after printing the locale description for dome aching when sco-can-take is true:
 	say "[if sco-gray-tin is true]The Great Inn probably gave everything it had to offer.[else]A Great Inn is located off to the side here. What could they hold?[end if]";
@@ -850,7 +851,7 @@ there is a room called Fort Earns Four Turns. it is in universal. printed name i
 
 chapter oak lever
 
-the oak lever is scenery in Fort Earns Four Turns. "It looks intricate, not something any yutz can just walk in and pull.". eyes-number of oak lever is 26. eyes-rule of oak lever is pre-oh-clever rule.
+the oak lever is scenery in Fort Earns Four Turns. "It looks intricate, not something any yutz can just walk in and pull. Before and after examining it, you think 'I read it' and 'I read it.' The second sentence feels better.". eyes-number of oak lever is 26. eyes-rule of oak lever is pre-oh-clever rule.
 
 check taking oak lever: say "If you snap it off, you'll never find what will happen when you pull it." instead;
 
@@ -911,7 +912,7 @@ check examining fell trap:
 
 part Cell Urban
 
-Cell Urban is a room in universal. printed name is "Cell, Urban". "[one of]THUD! [if extra-turns is 0]You're so anxious about being trapped here, you keep pacing until your speed wears off. [end if]Ugh. You see no way out to start. Perhaps you can complain to the manager, somehow.[or]Still stuck. No fair! There must be a way out![stopping][line break]You're getting sick of the noises of the city all around you. You have no clue where they came from.". eyes-number of Cell Urban is 63. eyes-rule of Cell Urban is pre-cellar-bin rule.
+Cell Urban is a room in universal. printed name is "Cell, Urban". "[one of]THUD! [if extra-turns > 0]You're so anxious about being trapped here, you keep pacing until your speed wears off. [end if]Ugh. You see no way out to start. Perhaps you can complain to the manager, somehow.[or]Still stuck. No fair! There must be a way out![stopping][line break]You're getting sick of the noises of the city all around you. You have no clue where they're coming from. You're not aware you were anywhere near a city. But what's more important is getting out of here.". eyes-number of Cell Urban is 63. eyes-rule of Cell Urban is pre-cellar-bin rule.
 
 part Cellar Bin
 
@@ -1441,7 +1442,7 @@ book about
 carry out abouting:
 	say "[this-game] was released for IFComp 2025. It reuses a lot of code from [wp], my IFComp 2024 entry. It uses the same sort of progress mechanic, but the two are different in nature and story.";
 	say "[line break]As in 2024, I had bigger projects that didn't make it, but fortunately (well, for me,) I found the title early on and built from there.";
-	say "[line break]Like most of my games, [this-game] rates merciful on the Zarfian cruelty scale. However, in this case, I want the puzzles to be more merciful in terms of general difficulty on the player's psyche than usual."
+	say "[line break]Like most of my games, [this-game] rates merciful on the Zarfian cruelty scale, which only means it can't get in an unwinnable state. However, in this case, I want the puzzles to be more merciful in terms of general difficulty on the player's psyche than usual."
 
 report abouting:
 	if player is in house well:
