@@ -92,11 +92,14 @@ after reading a command when player is in House Well How Swell:
 		wfak;
 		say "You're a bit worried. You can't just up and leave your job like that. What if it's a scam? The lawyers assure you the mine is not going anywhere. You've built up vacation time from work. You call some trusted friends. 'You're getting shafted,' a few laugh. Enough don't.";
 		wfak;
-		say "You meet up with the lawyers again. They inform you you may need to carry a lot of stuff around. They offer you an odd-looking item. '[ara] figured you would need this. It's an [ugh].' The lawyers then squabble over whether the 'A' is a short or long a. They argue over how important the pronunciation is. 'It can go either way,' one says, trying to be a peacemaker. 'At least, for other phrases.'";
+		say "You meet up with the lawyers again. They inform you you may need to carry a lot of stuff around. They offer you an odd-looking item. '[ara] figured you would need this. It's an [ugh].' The lawyers then squabble over whether the 'A' is a short or long a. They argue over how important the pronunciation is. 'It can go either way,' one says, trying to be a peacemaker. 'At least, for other phrases. Anyway, before we forget, she wrote a [jot], too. Just introductory stuff.'";
 		wfak;
 		say "The squabbling dies down, after some debate over whether or not you can just pronounce a word slightly differently to suit your needs. They all have to admit they've done it to prove a point.[paragraph break]'Oh ... one other thing? Invite your friends when you have everything on [ara]'s list. And, of course, invite ...'";
 		wfak;
 		say "'Us too!' the lawyers yell together, in unison.";
+		wfak;
+		say "You check your belongings. The [ugh], to carry stuff. The [jot], for early help. You set aside vacation time...";
+		wfas;
 		move player to My New Mine Ooh;
 		reject the player's command;
 	if the player's command includes "envelope" or the player's command includes "think" or the player's command includes "hint" or the player's command includes "help" or w1 is "i" or w1 is "inventory":
@@ -249,7 +252,13 @@ check drop2ing er jot:
 
 Trike West carries the urgh ought er jot. printed name of er jot is "Urgh-Ought-[']Er Jot".
 
-description of Jot is ""
+description of Jot is "It's a note from [ara]: 'The row/ledge is for practice if you want, but you don't need to change it. Items on it may help when needed. No shame using them everywhere, and I won't be offended if you find them useless or even drop them.'". eyes-number of jot is 1.
+
+report examining jot:
+	if gs-jot-row-ledge is false and lucent row is in mine:
+		say "Wait? Row/ledge? You only see a row ... hmm, small mystery, here.";
+		now gs-jot-row-ledge is true;
+	continue the action;
 
 volume main rooms
 
@@ -268,7 +277,7 @@ After choosing notable locale objects when player is in Mine Ooh:
 	if slice eyes are in mine ooh, set locale priority of slice eyes to 0;
 
 to note-mine (th - a thing):
-	if th is in location of player, say "A [th] juts out here. [if ledge is unexamined]Looks like it's not empty.[else]You see [the list of hintthings in mine ooh] on it, and you can [b]EXAMINE[r] [ara]'s message on it again, too.";
+	if th is in location of player, say "A [th] juts out here. [if ledge is unexamined]Looks like it's not empty.[else]You see [the list of hintthings in mine ooh] on it.";
 
 after printing the locale description for My New Mine Ooh:
 	note-mine lucent row;
@@ -334,15 +343,12 @@ check taking a startprop:
 	say "You can just take [the list of hintthings in Mine Ooh] if you want." instead;
 
 check examining startprop when the noun is unexamined:
-	say "The items on [the noun] look weird at first, but after having a thought, you see they are [eyes] and [a war pawn]. You're free to [b]TAKE[r] them, if you want.[paragraph break]Also, there's a message kind of carved in it, in a facsimile of [ara]'s handwriting.";
+	say "The items on [the noun] look weird at first, but after having a thought, you see they are [eyes] and [a war pawn]. You're free to [b]TAKE[r] them, if you want.";
 	move slice eyes to mine ooh;
 	move war pawn to mine ooh;
-	move message to mine ooh;
 	now the noun is examined;
 	now ledge is examined;
 	the rule succeeds;
-
-the message is scenery. "On [the random startprop in mine ooh], in a facsimile of [ara]'s handwriting: 'Row is for practice if you want. Items on it may help when needed. No shame using them everywhere, and I won't be offended if you find them useless.'". eyes-number of message is 1.
 
 chapter taking hintthings
 
@@ -358,7 +364,7 @@ report taking a hintthing when gs-take-hintthing-note is true:
 		say "On taking [the noun], you see the ledge recede, as it has nothing more to offer.";
 		moot ledge;
 	else:
-		say "The lucent row starts to recede, then stops. [if lucent row is not examined]Hmm, maybe it has something else to offer[else if message is examined]Perhaps the message on it might clarify things[else][ara] said it might be useful for practice, but it wasn't critical[end if].";
+		say "The lucent row starts to recede, then stops. [if jot is examined]You remember what was on [the jot], where [ara] called it a row/ledge[else]What's with that? Maybe [the jot] [ara] gave you can explain[end if].";
 	now gs-take-hintthing-note is true;
 	the rule succeeds;
 
@@ -1257,9 +1263,15 @@ carry out taking inventory (this is the UT specific inventory rule):
 	tip-herb-use;
 	if cas > 0 and sco-malt-hour is false, say "[line break]You've got more than enough alcohol in the form of [the list of carried alcoholic stewitems], so maybe you can use [if cas is 1]it[else]them[end if] to bribe someone or a group of people.";
 	if player has dense pecs, say "[line break]You've got those dense pecs[if sco-den-specs is true], but you probably got what you needed[else], which may be useful in some other weird way[end if].";
-	if player has er jot, say "[line break]You [if core-score > 10]still [end if]have that [er jot] flopping about, too. It [if er jot is examined]didn't seem too important, though, so you can drop it[else]probably only had stuff to help you get started, which you don't need any more. You can probably examine and then drop it[end if].";
-	say "[line break]Finally, of the stuff you started with, [aight] keeps track of [ara]'s requests";
+	if player has er jot, say "[line break]You [if core-score > 10]still [end if]have that [er jot] flopping about, too. It [if er jot is examined]didn't seem too important, though, so you can drop it[else]probably only had stuff to help you get started, which [jot-usefulness][end if].";
+	say "[line break]Finally, of the stuff you started with, [aight] keeps track of [ara]'s requests.";
 	the rule succeeds;
+
+to say jot-usefulness:
+	if branch is visited:
+		say "you don't need any more";
+	else:
+		say "might help you figure how to get going"
 
 after printing the name of gray tin when taking inventory:
 	if sco-pie-crust is false:

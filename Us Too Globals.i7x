@@ -42,6 +42,7 @@ gs-explained-house is a truth state that varies.
 
 chapter after prologue, optional but very likely
 
+gs-jot-row-ledge is a truth state that varies.
 gs-using-known is a truth state that varies.
 gs-taken-inventory is a truth state that varies.
 gs-take-hintthing-note is a truth state that varies.
