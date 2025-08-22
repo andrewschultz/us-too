@@ -200,7 +200,7 @@ check examining aight when sco-try-quest is false:
 	say "It seems to require you to go look for all manner of weird stuff. You're just not up to fetching stuff at the moment. You don't want to feel like a gofer. You want something more purposeful." instead;
 
 to default-x-to-aight:
-	say "Note that [b]X[r] will default to [using] in the future.";
+	say "For future reference, [b]X[r] will default to [using] in the future. It will be about as helpful to you as [b]I[r]/[b]INVENTORY[r].";
 	now gs-using-known is true;
 
 report examining Aight Amusing Item Using when gs-using-known is false:
@@ -501,7 +501,7 @@ after printing the locale description of ur branch when player was in an ordroom
 this is the south-block rule:
 	if south-covered, say "You don't need to go back." instead;
 
-section ring
+section r1ing
 
 chapter r1ing
 
@@ -601,7 +601,7 @@ book east branch
 
 part Beach Ill
 
-Beach Ill is a room in universal. printed name is "[if sco-be-chill is false]Beach, Ill[else if sco-punt-weaker is false]Bless-and-Bleah Sand[else]Dune Ever-Do-Never[end if]". "[if sco-be-chill is false]While the environs aren't totally illun['], you do have a general sense of malaise here, and not being able to get rid of it despite beaches usually being cheery is simply is causing more malaise. You're overthinking things a bit, maybe, and you're feeling slightly agitated[else]It's nice here. The only way out on foot is back west, since you can't swim the other ways[end if].". eyes-number of Beach Ill is 25. eyes-rule of Beach Ill is pre-be-chill rule.
+Beach Ill is a room in universal. printed name is "[if sco-be-chill is false]Beach, Ill[else if sco-punt-weaker is false]Bless-and-Bleah Sand[else]Dune Ever-Do-Never[end if]". "[if sco-be-chill is false]While the environs aren't totally illun['], you do have a general sense of malaise here, and not being able to get rid of it despite beaches usually being cheery is simply is causing more malaise. You're overthinking things a bit, maybe, and you're feeling slightly agitated. You can go back west[else]It's nice here. The only way out on foot is back west, since you can't swim the other ways[end if].". eyes-number of Beach Ill is 25. eyes-rule of Beach Ill is pre-be-chill rule.
 
 After choosing notable locale objects when player is in Beach Ill:
 	if Freddie is in beach, set the locale priority of Freddie to 9;
@@ -1296,15 +1296,17 @@ carry out taking inventory (this is the UT specific inventory rule):
 	now dense pecs are unmarked for listing;
 	list the contents of the player, with newlines, indented, including contents, listing marked items only, giving inventory information, with extra indentation;
 	let cas be number of carried alcoholic stewitems;
+	say "[line break]";
 	if all stewitems are discovered:
-		say "[line break]You've got all the items in [aight]! Surely you must be almost done now.";
+		say "You've got all the items in [aight]! Surely you must be almost done now.";
 	else if number of carried stewitems > 0:
-		say "[line break]You have [number of carried stewitems in words] of [number of stewitems in words] items from [amusing].";
+		say "You have [number of carried stewitems in words] of [number of stewitems in words] items from [aight].";
+	else:
+		say "[aight], which you got to starft, lists items [ara] asked for. You don't have any yet.";
 	tip-herb-use;
 	if cas > 0 and sco-malt-hour is false, say "[line break]You've got more than enough alcohol in the form of [the list of carried alcoholic stewitems], so maybe you can use [if cas is 1]it[else]them[end if] to bribe someone or a group of people.";
-	if player has dense pecs, say "[line break]You've got those dense pecs[if sco-den-specs is true], but you probably got what you needed[else], which may be useful in some other weird way[end if].";
+	if player has dense pecs, say "[line break]You've infused with dense pecs from all your carrying stuff and using the prime oar[if sco-den-specs is true], but you probably got what you needed from them[else], which may be useful in some other weird way[end if].";
 	if player has er jot, say "[line break]You [if core-score > 10]still [end if]have that [er jot] flopping about, too. It [if er jot is examined]didn't seem too important, though, so you can drop it[else]probably only had stuff to help you get started, which [jot-usefulness][end if].";
-	say "[line break]Finally, of the stuff you started with, [aight] keeps track of [ara]'s requests.";
 	the rule succeeds;
 
 to say jot-usefulness:
@@ -1565,8 +1567,8 @@ carry out verbsing:
 	say "[line break]Fo instance, [b]TAKE[r] isn't necessary. Items are implicitly taken as you need them and used up, though to help you avoid temptation, the game makes you [b]TAKE[r] hint items and lets you [b]DROP[r] them for good.";
 	say "[this-game] generally uses the four compass directions, but [if ur branch is unvisited]the hub room[else]Ur-Branch[end if] uses all four diagonal directions as well[if bore dread is unvisited and sore dark is unvisited]--don't worry, those are very small areas[end if]. [b]O[r] also goes outside, and if there's only one viable direction, it goes that way.";
 	say "[b]T[r]/[b]TALK[r]ing to NPCs (subject usually not necessary) or [b]LISTEN[r] may provide additional cues. Additionally, [b]EAT[r] and [b]CLIMB[r] may be marginally useful or amusing.";
-	say "[line break]Diagnostic commands include [b]I[r], and [b]X[r] alone will refer to [if gs-using-known is true][aight][else]a list of items needed to win[end if].";
-	say "[line break][b]THINK[r] is also useful to recall point-scoring commands that you found that will work later, or if you got one of two words right.";
+	say "[line break]Useful one-letter diagnostic commands: [b]I[r] inventories  what you're carrying, though it delegates items on [ara]'s list ([aight]) to [b]X[r][if gs-using-known is false] after the first time you use it[end if] so you don't have to read too much at once.";
+	say "[line break]While [b]SCORE[r] gives your game-score (also listed in the upper right), [b]THINK[r] may be more useful looking forward, to track point-scoring commands that you found that will work later, or commands you got half-right.";
 
 report verbsing when south-sorted or gs-noted-r is true:
 	say "[if south-sorted]N2/NN/2N kicks you back to Ur-Branch from very south locations[end if][if south-sorted or gs-noted-r is true], and [end if][if gs-noted-r is true]R/RR can rotate among the three near [or-far]south locations[end if].";
