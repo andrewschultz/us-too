@@ -303,6 +303,7 @@ this is the post-be-chill rule:
 	now sco-be-chill is true;
 	move nigh swarm to Beach Ill;
 	say "Your general sense of malaise disperses, which makes you more observant. Observant enough to notice a nigh swarm which ... keeps things from being perfect.";
+	move sand to Beach Ill;
 	declue-here;
 
 a wordtwisting rule (this is the pre-pie-crust rule):
@@ -336,6 +337,7 @@ this is the post-punt-weaker rule:
 	say "'Ah, yes, that's it. A small gift for a small favor.' The pun tweaker goes to the back of [the ship], and you hear a splash. The pun tweaker reappears, clothes wet, pushing a pretty scrawny punt. 'It won't get very far, but there's something to the east. Oh, and I hope you have a way to steer it, too. Anyway, here you go. My repairs are complete!'";
 	move punt weaker to beach ill;
 	moot pun tweaker;
+	move dune to beach ill;
 	moot ship;
 	check-oar-punt;
 	reveal Pile Up Isle to east;
@@ -568,7 +570,7 @@ a wordtwisting rule (this is the pre-peace-talks rule):
 
 this is the post-peace-talks rule:
 	now sco-peace-talks is true;
-	say "Getting back to nature and stuff leaves you at peace with yourself. So at peace, you want to spread that peace to others, whether or not they fully deserve it[if sco-pea-pod is true]. However, now you're so at peace, you recognize you are potentially disturbing the plants['] peace.";
+	say "Getting back to nature and stuff leaves you at peace with yourself. So at peace, you want to spread that peace to others, whether or not they fully deserve it[if sco-pea-pod is true]. However, now you're so at peace, you recognize you are potentially disturbing the plants['] peace[end if].";
 	if sco-pea-pod is false:
 		now eyes-number of pea stalks is -33;
 	else:
