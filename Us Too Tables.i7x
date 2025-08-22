@@ -28,12 +28,12 @@ w1 (text)	w2 (text)	first-hom (text)	second-hom	hom-txt-rule (rule)	first-exact	
 "hike"	"up"	--	--	--	false	false	false	false	"reaching the high cup"	false	true	true	false	false	a pile up isle	pre-hike-up rule	post-hike-up rule	--	--
 "sword"	"ark"	"soared"	"arc"	hom-sword-ark rule	false	false	false	false	"finding something in the Sore Dark"	false	true	true	false	false	sore dark	pre-sword-ark rule	post-sword-ark rule	--	--
 "blast"	"ring"	--	--	--	false	false	false	false	"finding the blah string's true purpose"	false	true	true	false	false	sore dark	pre-blast-ring rule	post-blast-ring rule	--	"You can BLAST RING [once-now of pre-blast-ring rule] you have found something to blast."
-"terrible"	"aid"	--	--	--	false	false	false	false	"becoming worthy of the Terra Blade"	false	true	true	false	false	sore dark	pre-terrible-aid rule	post-terrible-aid rule	--	"You can summon a TERRIBLE AID [once-now of pre-terrible-aid rule] you can physically grab it."
+"terrible"	"aid"	--	--	--	false	false	false	false	"becoming worthy of the Terra Blade"	false	true	true	false	false	sore dark	pre-terrible-aid rule	post-terrible-aid rule	--	"You can become the owner of a TERRIBLE AID [once-now of pre-terrible-aid rule] you can bring it down from the ark."
 "board"	"red"	"bored"	--	hom-board-red rule	false	false	false	false	"finding something in the Bore Dread"	false	true	true	false	false	bore dread	pre-board-red rule	post-board-red rule	--	--
 "malt"	"hour"	--	--	--	false	false	false	false	"befriending the guardians in the maul tower"	false	true	true	false	false	bore dread	pre-malt-hour rule	post-malt-hour rule	--	"You can call MALT HOUR [once-now of pre-malt-hour rule] you have a variety of alcohol to share."
 "join"	"aider"	--	--	--	false	false	false	false	"doing something worthwhile in the joy nadir"	false	true	true	false	false	joy nadir	pre-join-aider rule	post-join-aider rule	--	"You can call a JOIN AIDER [once-now of pre-join-aider rule] you have two items of power to join."
 "dupe"	"it"	--	--	--	false	false	false	false	"making the dew pit useful"	false	true	true	false	false	joy nadir	pre-dupe-it rule	post-dupe-it rule	--	"You can DUPE IT [once-now of pre-dupe-it rule] you have something unique and worth duplicating."
-"nah"	"queue"	--	--	--	false	false	false	false	"repelling the [team]"	false	true	true	false	false	blah copse	pre-nah-queue rule	post-nah-queue rule	--	--
+"nah|naw"	"queue"	"gnaw"	--	--	false	false	false	false	"repelling the [team]"	false	true	true	false	false	blah copse	pre-nah-queue rule	post-nah-queue rule	--	--
 "surf"	"ready"	--	--	--	false	false	false	false	"giving Sir Freddie a new direction"	false	true	true	false	false	blah copse	pre-surf-ready rule	post-surf-ready rule	--	"You can SURF READY [once-now of pre-surf-ready rule] you have surfing materials for Sir Freddie."
 "or"	"clerk"	--	--	--	false	false	false	false	"figuring what Sir Freddie was scared of"	false	true	true	false	false	blah copse	pre-or-clerk rule	post-or-clerk rule	--	--
 "more"	"flares|flare"	--	"flayers|flayer|flair|flairs"	hom-flairs-flayers rule	false	false	false	false	"activating the morph lairs"	false	true	true	false	false	morph lairs	pre-more-flares rule	post-more-flares rule	--	--
@@ -568,7 +568,7 @@ a wordtwisting rule (this is the pre-peace-talks rule):
 
 this is the post-peace-talks rule:
 	now sco-peace-talks is true;
-	say "Getting back to nature and stuff leaves you at peace with yourself. So at peace, you want to spread that peace to others, whether or not they fully deserve it[if sco-pea-pod is true]. However, now you're so at peace, you recognize you are potentially disturbing the plants['] peace.[paragraph break]You retreat to the Ur-Branch[end if].";
+	say "Getting back to nature and stuff leaves you at peace with yourself. So at peace, you want to spread that peace to others, whether or not they fully deserve it[if sco-pea-pod is true]. However, now you're so at peace, you recognize you are potentially disturbing the plants['] peace.";
 	if sco-pea-pod is false:
 		now eyes-number of pea stalks is -33;
 	else:
@@ -589,8 +589,9 @@ this is the post-pea-pod rule:
 	inside-block-back;
 
 to inside-block-back:
+	say "[line break]";
 	if sco-pea-pod is true and sco-peace-talks is true:
-		say "You feel a moment of zen. You've done what you could here, and you sense you don't fully belong. It's time to move on.";
+		say "You feel a moment of zen. You've done what you could here, and you sense you don't fully belong. You retreat to the Ur-Branch.";
 		block-and-back;
 	else if sco-pea-pod is true:
 		say "You're pleased you found something out of the way, but perhaps there's something bigger to figure here.";
@@ -708,6 +709,7 @@ chapter fort earns four turns scoring
 
 this is the hom-oh-clever rule:
 	say "A very American voice, heavy as lead, booms 'didn't mean to lead you that way.'[paragraph break]Besides, you don't need a cleaver. This isn't that sort of adventure.";
+
 a wordtwisting rule (this is the pre-oh-clever rule):
 	if location of player is not fort earns, unavailable;
 	if sco-oh-clever is true:
