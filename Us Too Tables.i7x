@@ -153,9 +153,9 @@ a wordtwisting rule (this is the pre-a-stew rule):
 this is the post-a-stew rule:
 	now sco-a-stew is true;
 	say "You look at [aight]. You have everything you need, but you don't have, well, a cohesive dish. You remember the lawyers needling you with 'us too.' Yes, that's what it has to be. You call them and your friends. They're prepared -- the mine is only an hour's drive from the city.";
-	wfak;
+	wfas;
 	say "So you make the stew to pass the time until then. You try to avoid thinking of it as [i]my stew[r], because eww, that'd be a me-ill meal. [i]Our stew[r] might be, too.[paragraph break]You're no natural cook, but you do your best. (You make other random seeming stews over there years, and people always seem to appreciate them, but none quite has the flavor of this one.) After the meal, the announcement -- the mine is yours, and you can sell it now. You wonder if there's anything else, but you don't want to be greedy.";
-	wfak;
+	wfas;
 	say "Everyone winds down by playing poker. The lawyers are, unsurprisingly, all quite good at it. Well, you're not playing with real money, so you don't mind losing. You got enough today, right? Someone asks you offhand what you call the stew. [ara] surprisingly didn't specify it. You give your answer, and you wonder if maybe there is one more subtle odd test. The lawyers seem to have an inside joke going as they finish the remains of your...";
 	follow the score and thinking changes rule;
 	end the story finally saying "Place-to-Play Stew";
@@ -548,7 +548,7 @@ this is the post-more-flares rule:
 	say "You set off the flares, and what do you know? You see another flare coming towards the morph lairs from a distance. Fortunately you already started running to the Ur-Branch. Whereupon you see smoke you follow ... a bit. The path opens up a bit further to the southeast. You have somewhere new to go, yet you're still wondering what became of the morph lairs.";
 	now Dome Aching is mapped southeast of Ur Branch;
 	now Ur Branch is mapped northwest of Dome Aching;
-	wfak;
+	wfas;
 	declue-here;
 	move player to Ur Branch;
 
@@ -977,9 +977,9 @@ a wordtwisting rule (this is the pre-no-date rule):
 this is the post-no-date rule:
 	now sco-no-date is true;
 	say "You realize which node to hack up. You realise what to say. The [pliers] do their work on node eight. 'Imminent destruction?' you scoff. 'NO DATE!'[paragraph break]You hear a FIZZ, then a BOOM ... the explosion knocks you back. Boy! It's a good thing you were still wearing those den specs! Thr pliers fly from your hand and into the specs, which they twist and shatter and blow off your face into a corner. A corner which disappears as the roof starts to collapse. You figure it's a good time to go back to the dell.";
-	wfak;
+	wfas;
 	say "There, people start streaming towards you. They lift you up in the air, which is fun for the first fifteen seconds, but you know they mean well. They prove they mean well by handing you a valuable item.";
-	wfak;
+	wfas;
 	say "'THE HELP-IN-HELL PIN,' one of them booms. You note you haven't come across anything close to hell, so maybe ... well ...";
 	say "[line break]You are cut off again. It will help you in anywhere unusually uncomfortable. Well, it sure can't hurt.";
 	say "[line break]There's not much else to say. You feel a bit awkward. All you can do is tell them to visit the nice cheery new deli just off to the west! That, they do. Hooray, bringing people together!";
@@ -1175,7 +1175,7 @@ a wordtwisting rule (this is the pre-use-it rule):
 this is the post-use-it rule:
 	now sco-use-it is true;
 	say "Defying the throne, you hold the [ORB] high in the air. It crackles. Energy shoots to the throne, from which emits a loud 'NO TERROR?! NOTE: ERROR!!!!!' The orb flies from your hand and towards the throne and explodes. You also feel the [pin] ripped from you ... it clunks off somewhere forgotten, maybe to help someone who gets in a more serious pickle than you did.";
-	wfak;
+	wfas;
 	say "Where the throne once sat, there's now something glistening. 'You have freed the life roots,' booms a melodramatic voice.";
 	declue-here;
 	move life roots to Throne;
@@ -1191,13 +1191,13 @@ a wordtwisting rule (this is the pre-lie-fruits rule):
 this is the post-lie-fruits rule:
 	now sco-lie-fruits is true;
 	say "You call out the life roots: 'Come on, this is a bit overblown. Do you really need to be all basso profundo?'[paragraph break]To your surprise, they shrivel up. A voice intones: 'Congratulations. You have seen through us. So many adventurers would start looking for eternal life, or profiting from this.'";
-	wfak;
+	wfas;
 	say "'Actually,' you say, 'I just have this list of stuff I needed for a big meal. I've looked everywhere, but I'm still out a ton of vegetables and fruits. I was kinda hoping there'd be at least some fruits here...'";
-	wfak;
+	wfas;
 	say "'Are you saying the life roots are incapable of creating vegetables, too?'[paragraph break]'Um, no, not at all, just didn't want to ask anyone to do too much, here. I mean it might like harm the soil and render it untillable for generations of farmers to come. Or something. Heck. Now I'm sounding basso profundo.'";
-	wfak;
+	wfas;
 	say "'Your self-awareness is admirable. Yes, we have spare vegetables. They are kind of funny-shaped. Is that a problem? No? Good.'[paragraph break]Your [ugh] feels like it may burst from the additional weight! Good thing you kept those dense pecs when you made the den specs.";
-	wfak;
+	wfas;
 	say "'But now, this space needs to heal, free of human interference. Even worthy humans.' You nod and leave. There can't be much left to do, now.";
 	now player has assortment;
 	block-and-back;

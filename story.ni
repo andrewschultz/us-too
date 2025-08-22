@@ -47,19 +47,19 @@ volume intro
 when play begins:
 	now left hand status line is "[location of player]";
 	say "The old mine is yours, now. You were left it in a will by a relative you barely remember. [ara]. She gave you a weird little logic puzzle. 'Tricky,' you mused, and she seemed to smile. But you did not solve it until the family gathering was over. She had already gotten in her car, and you tried to yell as she drove away. Your family told you not to bug her, which was funny, because everyone seemed to be buttering her up about how rich she was.";
-	wfak;
+	wfas;
 	say "You explained this to your parents, who got really cheesed off you didn't figure it sooner to impress her. That could've been their ticket! Uh, they meant, yours." ;
-	wfak;
+	wfas;
 	say "[ara] held on longer than anyone thought. Your parents went up to get a good word with her, not bringing you, of course, after your flub. But she remained secretive about her will.";
-	wfak;
+	wfas;
 	say "Soon after she died, her relatives received envelopes in the mail. They were each from the same address, but the actual location was a bit different. Your parents and siblings? [hwhs]. You? [hohs].";
-	wfak;
+	wfas;
 	say "You were one of the few to get [hohs]. It seemed like a terrible sign, but as the will was read, the [hwhs] people roared furiously as [ara]'s will labeled them 'too naggy' or 'too flattering.' She kept special track of charities people enjoyed, or said they enjoyed, and donates a lot to the charities. But nobody left empty-handed. All the living relatives there had already had travel expenses paid and would get $1000 more if they sarcastically said 'Well, how swell.' And promptly left. Most said it, with passion.";
-	wfak;
+	wfas;
 	say "You were ready to say so, for your own $1000. And it felt weird, being one of three people left, eventually.";
-	wfak;
+	wfas;
 	say "'You impressed her,' one of the lawyers tells you, waiting for the response. 'But you need to impress us, now. No babbling. She was never big on words. Especially big words. Fail, and you only get $10000. You have as long as you need. We have been comped well for our time.'";
-	wfak;
+	wfas;
 	say "You fumble nervously with your envelope. What [i]could[r] they be talking about?";
 
 book you
@@ -85,19 +85,19 @@ after reading a command when player is in House Well How Swell:
 		say "One lawyer stands up and snaps their fingers. 'There you go! I knew you'd get it.";
 		increment core-score;
 		follow the score and thinking changes rule;
-		wfak;
+		wfas;
 		say "'Let's see, you're ... oh, you're the kid who ran after her with the solution to her little puzzle. Uh, were. She really was impressed, but she was just so sick of being fawned over, she didn't want to get out of her car again. She knew from the way some of her worse relatives bad-mouthed you, you were more than all right. She owned this old mine and even had a small trust fund to pay taxes. Though for you, it's sort of a new mine... and just checking, but you know what to say?'";
-		wfak;
+		wfas;
 		say "You pause. Then 'MY new mine?! Ooh...'[paragraph break]'Bingo! Again! But she just wants to make sure you're worthy, so you'll have to visit there.'";
-		wfak;
+		wfas;
 		say "You're a bit worried. You can't just up and leave your job like that. What if it's a scam? The lawyers assure you the mine is not going anywhere. You've built up vacation time from work. You call some trusted friends. 'You're getting shafted,' a few laugh. Enough don't.";
-		wfak;
+		wfas;
 		say "You meet up with the lawyers again. They inform you you may need to carry a lot of stuff around. They offer you an odd-looking item. '[ara] figured you would need this. It's an [ugh].' The lawyers then squabble over whether the 'A' is a short or long a. They argue over how important the pronunciation is. 'It can go either way,' one says, trying to be a peacemaker. 'At least, for other phrases. Anyway, before we forget, she wrote a [jot], too. Just introductory stuff.'";
-		wfak;
+		wfas;
 		say "The squabbling dies down, after some debate over whether or not you can just pronounce a word slightly differently to suit your needs. They all have to admit they've done it to prove a point.[paragraph break]'Oh ... one other thing? Invite your friends when you have everything on [ara]'s list. And, of course, invite ...'";
-		wfak;
+		wfas;
 		say "'Us too!' the lawyers yell together, in unison.";
-		wfak;
+		wfas;
 		say "You check your belongings. The [ugh], to carry stuff. The [jot], for early help. You set aside vacation time...";
 		wfas;
 		move player to My New Mine Ooh;
@@ -974,7 +974,7 @@ check going east in bowl ditch:
 	if sco-no-date is true and sco-barn-open is true:
 		say "You got that egg, and you destroyed the nodes. You're pretty sure the west is clear.";
 		wink-out west;
-		wfak;
+		wfas;
 
 part Sob Acres
 
