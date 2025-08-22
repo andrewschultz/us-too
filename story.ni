@@ -622,6 +622,8 @@ chapter punt weaker
 
 the punt weaker is a thing. "Your punt, weaker, floats here[punt-status].". description is "It seems pretty sturdy, actually. Perhaps its speed is weaker than something gas-powered or whatever.". eyes-number of punt weaker is -1.
 
+check taking punt: say "You can just go east or west as needed." instead;
+
 to say punt-status:
 	if pile-done:
 		say ". It served you well, [if player is in isle]and you think you've seen what you needed here[else]but you can't think of a reason to go back to the isle[end if]";
@@ -800,7 +802,9 @@ check going inside in Dome Aching when sco-in-earnest is false:
 
 chapter cant ache
 
-the cant ache is a thing in Dome Aching. "A can't ache sweeps through the air, paralyzing you from doing anything constructive.". description is "Analyzing the ache will do no good. It can't be subdued physically. You just have to take that leap and neutralize it.". printed name of cant ache is "can't-ache". eyes-number of cant ache is 34. eyes-rule of cant ache is pre-can-take rule.
+the cant ache is a thing in Dome Aching. "The can't-ache sweeps through the air, paralyzing you from doing anything constructive.". description is "Analyzing the ache will do no good. It can't be subdued physically. You just have to take that leap and neutralize it.". printed name of cant ache is "can't-ache". eyes-number of cant ache is 34. eyes-rule of cant ache is pre-can-take rule.
+
+check taking cant ache: say "Hmm, you may or may not have figured what to do, so I'm going to be pedantic and insist on you saying it absoutely tight." instead;
 
 chapter great inn
 
@@ -1035,6 +1039,8 @@ check going south to Farm Isles:
 chapter star craft
 
 the star craft is a thing in Turbo Tours. "A huge star craft rests here. No way you'll be able to afford it -- something more modest, perhaps.". description is "Impressive but way out of your price range.". eyes-number of star craft is 54. eyes-rule of star craft is pre-stark-raft rule.
+
+check taking raft: say "You can just go south or north as needed." instead;
 
 chapter stark raft
 
