@@ -1218,11 +1218,11 @@ understand the command "exit" as something new.
 check going outside:
 	unless the room gone to is nowhere, continue the action;
 	let v be number of viable directions;
-	if v > 1, say "Ambiguous. There are [v in words] ways to go out: [list of viable directions]." instead;
+	if v > 1, say "Out is ambiguous here. There are [v in words] ways to go out: [list of viable directions]." instead;
 	if v < 1, continue the action;
 	let j be a random viable direction;
 	if j is not outside:
-		say "Mapping outside to [j].";
+		say "Mapping outside to [j], since it is the only direction you can go.";
 		try going j instead;
 
 volume regular verbs

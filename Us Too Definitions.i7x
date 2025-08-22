@@ -100,7 +100,7 @@ volume directions
 a direction can be branchdone. a direction is usually not branchdone.
 
 definition: a direction (called di) is eventual:
-	if di is up or di is outside, no;
+	if di is outside, no;
 	if di is branchcant, yes;
 	no;
 
