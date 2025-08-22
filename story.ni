@@ -240,18 +240,16 @@ the dense pecs are a plural-named thing. description is "You admire your well-ea
 
 the den specs are a plural-named thing. description is "You have no idea how cool or uncool they make you look. Probably not as cool as your dense pecs. But it sure was cool to find a den below [sob acres].". eyes-number of den specs is -1.
 
-part too rad tour ad
+part urgh ought er jot
 
-the too rad tour ad is a startthing. eyes-number of too rad tour ad is 1.
+the urgh ought er jot is a startthing. eyes-number of er jot is 1.
 
-check drop2ing tour ad:
-	if tour ad is unexamined, say "You can drop it, but read it, first, to make sure it isn't really useful." instead;
-	moot tour ad;
+check drop2ing er jot:
 	say "You actually just crumple it up and put it in your pocket, in case you need to start a fire later. Littering isn't cool! But it's out of your inventory, now." instead;
 
-Trike West carries the too rad tour ad. printed name of tour ad is "too-rad tour ad".
+Trike West carries the urgh ought er jot. printed name of er jot is "Urgh-Ought-[']Er Jot".
 
-description of tour ad is "It describes the joys of owning a mine, particularly this one, in detail. The mine is apparently too big to live in for the rest of your days, so you need friends to bring together. And you need a way to bring them together."
+description of Jot is ""
 
 volume main rooms
 
@@ -286,7 +284,7 @@ check thinking in Mine Ooh when sco-try-quest is false:
 	say "[line break]--you went to [hwhs], called [hohs], and your response 'How so?' impressed the lawyers.";
 	say "[line break]--the lawyers reacted positively to 'My new mine, ooh!'";
 	if gs-taken-inventory is true:
-		say "[line break]--the [tour ad] and [using] are ... odd, to say the least.";
+		say "[line break]--[the jot] and [using] are ... odd, to say the least.";
 	say "[line break]--your name is Trike West. [ara] said she REALLY liked that name.";
 	if doable-hinted is 1, say "[line break]--you also figured to need to make [b]A STEW[r] from the lawyers' 'Us too,' which is down the road, but it's good to have a goal in mind.";
 	if gs-taken-inventory is false:
@@ -320,7 +318,7 @@ section lucent row
 a lucent row is a startprop in My New Mine Ooh. "[intro-hintthings].". eyes-number of lucent row is -55. eyes-rule of lucent row is pre-loose-intro rule.
 
 check examining lucent row when lucent row is examined and number of hintthings in My New Mine Ooh is 0:
-	say "There's nothing on the lucent row now that you took the eyes and pawn, but maybe if you looked at it right, it might show something beyond its message[if message is not examined], which you haven't [b]examined[r] yet.[paragraph break]What could that practice be? Lucent is a weird word -- but [ara] wouldn't have had you do something weird early[end if]." instead;
+	say "There's nothing on the lucent row now that you took the eyes and pawn, but it seems to hold a small mystery.[paragraph break]What could that practice be? [if jot is unexamined]Perhaps the [er jot] would offer a clue. [end if]Lucent is a weird word -- but [ara] wouldn't have had you do something weird early." instead;
 
 report examining lucent row:
 	say "Oh. The glare and brightness seem a bit unaesthetic, like [the noun] could even be hiding something, but it can't be a huge deal.";
@@ -1235,7 +1233,7 @@ definition: a thing (called th) is ughlistable:
 	unless th is carried, no;
 	if th is ugh, no;
 	if th is aight, no;
-	if th is tour ad, no;
+	if th is er jot, no;
 	if th is dense pecs, no;
 	if th is a stewitem, no;
 	yes;
@@ -1259,7 +1257,8 @@ carry out taking inventory (this is the UT specific inventory rule):
 	tip-herb-use;
 	if cas > 0 and sco-malt-hour is false, say "[line break]You've got more than enough alcohol in the form of [the list of carried alcoholic stewitems], so maybe you can use [if cas is 1]it[else]them[end if] to bribe someone or a group of people.";
 	if player has dense pecs, say "[line break]You've got those dense pecs[if sco-den-specs is true], but you probably got what you needed[else], which may be useful in some other weird way[end if].";
-	if player has too rad, say "[line break]You [if core-score > 10]still [end if]have that too-rad tour ad flopping about, too. It [if tour ad is examined]didn't seem too important, though, so you can drop it[else]seems non-critical. You can probably examine and then drop it[end if].";
+	if player has er jot, say "[line break]You [if core-score > 10]still [end if]have that [er jot] flopping about, too. It [if er jot is examined]didn't seem too important, though, so you can drop it[else]probably only had stuff to help you get started, which you don't need any more. You can probably examine and then drop it[end if].";
+	say "[line break]Finally, of the stuff you started with, [aight] keeps track of [ara]'s requests";
 	the rule succeeds;
 
 after printing the name of gray tin when taking inventory:
