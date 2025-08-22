@@ -29,7 +29,7 @@ w1 (text)	w2 (text)	first-hom (text)	second-hom	hom-txt-rule (rule)	first-exact	
 "sword"	"ark"	"soared"	"arc"	hom-sword-ark rule	false	false	false	false	"finding something in the Sore Dark"	false	true	true	false	false	sore dark	pre-sword-ark rule	post-sword-ark rule	--	--
 "blast"	"ring"	--	--	--	false	false	false	false	"finding the blah string's true purpose"	false	true	true	false	false	sore dark	pre-blast-ring rule	post-blast-ring rule	--	"You can BLAST RING [once-now of pre-blast-ring rule] you have found something to blast."
 "terrible"	"aid"	--	--	--	false	false	false	false	"becoming worthy of the Terra Blade"	false	true	true	false	false	sore dark	pre-terrible-aid rule	post-terrible-aid rule	--	"You can summon a TERRIBLE AID [once-now of pre-terrible-aid rule] you can physically grab it."
-"board"	"red"	"bored"	--	--	false	false	false	false	"finding something in the Bore Dread"	false	true	true	false	false	bore dread	pre-board-red rule	post-board-red rule	--	--
+"board"	"red"	"bored"	--	hom-board-red rule	false	false	false	false	"finding something in the Bore Dread"	false	true	true	false	false	bore dread	pre-board-red rule	post-board-red rule	--	--
 "malt"	"hour"	--	--	--	false	false	false	false	"befriending the guardians in the maul tower"	false	true	true	false	false	bore dread	pre-malt-hour rule	post-malt-hour rule	--	"You can call MALT HOUR [once-now of pre-malt-hour rule] you have a variety of alcohol to share."
 "join"	"aider"	--	--	--	false	false	false	false	"doing something worthwhile in the joy nadir"	false	true	true	false	false	joy nadir	pre-join-aider rule	post-join-aider rule	--	"You can call a JOIN AIDER [once-now of pre-join-aider rule] you have two items of power to join."
 "dupe"	"it"	--	--	--	false	false	false	false	"making the dew pit useful"	false	true	true	false	false	joy nadir	pre-dupe-it rule	post-dupe-it rule	--	"You can DUPE IT [once-now of pre-dupe-it rule] you have something unique and worth duplicating."
@@ -401,6 +401,9 @@ this is the post-terrible-aid rule:
 book northeast branch scoring
 
 chapter bore dread scoring
+
+this is the hom-board-red rule:
+	say "No, becoming bored would be giving in. But you must be close, here.";
 
 a wordtwisting rule (this is the pre-board-red rule):
 	if player is not in bore dread, unavailable;
