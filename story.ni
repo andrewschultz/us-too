@@ -584,7 +584,9 @@ check going west in beach ill:
 
 chapter nigh swarm
 
-the nigh swarm is a thing. "A nigh swarm ruins the tranquility of the area. You can't see behind it.". description is "The nigh swarm buzzes aggressively.". eyes-number of nigh swarm is 44. eyes-rule of nigh swarm is pre-nice-warm rule.
+the nigh swarm is a thing. "A nigh swarm ruins the tranquility of the area. You can't see behind it.". description is "[swarm-buzz].". eyes-number of nigh swarm is 44. eyes-rule of nigh swarm is pre-nice-warm rule.
+
+to say swarm-buzz: say "The nigh swarm buzzes aggressively, which leaves you feeling slightly frozen"
 
 chapter sand
 
@@ -1379,8 +1381,9 @@ report eyering when player is in throne and thronescen is in throne:
 book listening
 
 check listening (this is the game specific ambient sound rule):
-	if forest team is touchable, say "Annoying banter from [the team].";
-	if player is in isle and freddie is in isle and tweaker is in isle, say "Occasional squabbling between Sir Freddie and the pun tweaker.";
+	if forest team is touchable, say "Annoying banter from [the team]. They continued to knock you and knock you, well, verbally." instead;
+	if nigh swarm is touchable, say "The nigh swarm buzzes aggressively, which leaves you feeling slightly frozen.";
+	if player is in isle and freddie is in isle and tweaker is in isle, say "Occasional squabbling between Sir Freddie and the pun tweaker." instead;
 	if player is in deli stern, say "The [owners] talk between themselves how to drum up more business." instead;
 	if player is in scribe room, say "The occasional scratching of quills, or philosophical discussion." instead;
 	if player is in groan odes, say "[if sco-grow-nodes is false]The groan odes continue.[else]From the numbered nodes, threats of imminent destruction. But when?[end if]" instead;
