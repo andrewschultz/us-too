@@ -35,13 +35,13 @@ w1 (text)	w2 (text)	first-hom (text)	second-hom	hom-txt-rule (rule)	first-exact	
 "dupe"	"it"	--	--	--	false	false	false	false	"making the dew pit useful"	false	true	true	false	false	joy nadir	pre-dupe-it rule	post-dupe-it rule	--	"You can DUPE IT [once-now of pre-dupe-it rule] you have something unique and worth duplicating."
 "nah|naw"	"queue"	"gnaw"	--	--	false	false	false	false	"repelling the [team]"	false	true	true	false	false	blah copse	pre-nah-queue rule	post-nah-queue rule	--	--
 "surf"	"ready"	--	--	--	false	false	false	false	"giving Sir Freddie a new direction"	false	true	true	false	false	blah copse	pre-surf-ready rule	post-surf-ready rule	--	"You can SURF READY [once-now of pre-surf-ready rule] you have surfing materials for Sir Freddie."
-"or"	"clerk"	--	--	--	false	false	false	false	"figuring what Sir Freddie was scared of"	false	true	true	false	false	blah copse	pre-or-clerk rule	post-or-clerk rule	--	--
+"or"	"clerk"	"ore|oar"	--	--	false	false	false	false	"figuring what Sir Freddie was scared of"	false	true	true	false	false	blah copse	pre-or-clerk rule	post-or-clerk rule	--	--
 "more"	"flares|flare"	--	"flayers|flayer|flair|flairs"	hom-flairs-flayers rule	false	false	false	false	"activating the morph lairs"	false	true	true	false	false	morph lairs	pre-more-flares rule	post-more-flares rule	--	--
 "rope"	"ladder"	--	--	--	false	false	false	false	"discovering what the row (plaider) holds"	false	true	true	false	false	morph lairs	pre-rope-ladder rule	post-rope-ladder rule	--	--
 "probe"	"all"	--	--	--	false	false	false	false	"finding a purpose for the pro ball"	false	true	true	false	false	ur branch	pre-probe-all rule	post-probe-all rule	--	--
 "peace"	"talks"	--	--	--	false	false	false	false	"finding something incorporeal within the Pea Stalks"	false	true	true	false	false	pea stalks	pre-peace-talks rule	post-peace-talks rule	--	--
 "pea"	"pod"	--	--	--	false	false	false	false	"finding something unusual within the Pea Stalks"	false	true	false	false	false	pea stalks	pre-pea-pod rule	post-pea-pod rule	--	--
-"can"	"take"	--	--	--	false	false	false	false	"dispelling the Can't-Ache"	false	true	true	false	false	dome aching	pre-can-take rule	post-can-take rule	--	--
+"can"	"take"	"cannes"	--	hom-can-take rule	false	false	false	false	"dispelling the Can't-Ache"	false	true	true	false	false	dome aching	pre-can-take rule	post-can-take rule	--	--
 "gray|grey"	"tin"	--	--	--	false	false	false	false	"discover what the Great Inn holds"	false	true	true	false	false	dome aching	pre-gray-tin rule	post-gray-tin rule	--	--
 "dough"	"making"	--	--	--	false	false	false	false	"doing something positive in [dome]"	false	true	true	false	false	dome aching	pre-dough-making rule	post-dough-making rule	--	"You can commence DOUGH MAKING [once-now of pre-dough-making rule] you have overcome the can't-ache."
 "in"	"earnest"	--	--	--	false	false	false	false	"figure how to visit the inner nest"	false	true	true	false	false	dome aching	pre-in-earnest rule	post-in-earnest rule	--	--
@@ -630,6 +630,10 @@ this is the post-hike-up rule:
 book southeast branch sorting
 
 chapter dome aching scoring
+
+this is the hom-can-take rule:
+	say "You will not need to go to France or watch any films. It's simpler than that.";
+	eyes-rebuke;
 
 a wordtwisting rule (this is the pre-can-take rule):
 	if player is not in dome aching, unavailable;
