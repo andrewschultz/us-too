@@ -203,6 +203,12 @@ this is the post-summon-cheese rule:
 	say "You're confident you've figured what the munchies are. And you know what? You're right! You have all sorts of cheese now.";
 	now player has cheese;
 	declue Aight;
+	aight-ping;
+
+to aight-ping:
+	if gs-aight-ping is false:
+		say "[line break][i][bracket][b]NOTE[r][i]: you just found your first item [ara] requested from [aight][i]. It's now divided into items you've found and ones you haven't. You can [if gs-using-known is false]use [b]I[r][i] to take inventory and abbreviate [b]X AIGHT[r][i] to [end if][b]X[r][i] to see it all.[close bracket][line break]";
+		now gs-aight-ping is true;
 
 chapter ur branch scoring
 
@@ -222,6 +228,7 @@ this is the post-herb-ranch rule:
 	say "You find a path to a herb ranch. Of course every stew needs herbs. The farmer there gives you a sample saying 'Some herb, eh?' The phrase sticks with you as conversation continues.[paragraph break]It's a surprisingly enlightening one. What can you do with it?";
 	now player has herbs;
 	declue-here;
+	aight-ping;
 
 a wordtwisting rule (this is the pre-probe-all rule):
 	if pro ball is not touchable, unavailable;

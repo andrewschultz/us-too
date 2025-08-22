@@ -50,6 +50,7 @@ gs-noted-r is a truth state that varies.
 
 chapter game-critical, or definitely seen in the course of the game
 
+gs-aight-ping is a truth state that varies.
 gs-tried-black-ops is a truth state that varies.
 gs-up-cellar-bin is a truth state that varies.
 gs-row-plaider is a truth state that varies.
