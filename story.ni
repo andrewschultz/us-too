@@ -861,7 +861,7 @@ to say oak-how: say "It's not immediately obvious how. But there must be a way, 
 
 chapter beak wick
 
-the be quick beak wick is scenery. "The be-quick beak wick sits here. [if extra-turns > 0]You can still feel its effect, though it can't hurt to touch it again[else if beak wick is examined]Just do anything with it to get it going again[else]It doesn't seem dangerous. Perhaps you should inspect it a bit[end if].". printed name is "be-quick beak/wick". eyes-number of be quick beak wick is -1.
+the be quick beak wick is scenery. "The [wick] sits here. [if extra-turns > 0]You can still feel its effect, though it can't hurt to touch it again[else if beak wick is examined]Just do anything with it to get it going again[else]It doesn't seem dangerous. Perhaps you should inspect it a bit[end if].". printed name is "be-quick beak/wick". eyes-number of be quick beak wick is -1.
 
 check waiting when extra-turns > 0: say "You're too antsy to sit and wait. For better or worse, the be-quick beak-wick doesn't just give you the opportunity to be faster. It COMPELS you." instead;
 
@@ -882,7 +882,7 @@ after examining quick beak wick:
 	continue the action;
 
 check examining beak wick when bowl ditch is visited and oaks are visited and tude ark is visited and tube rod is visited:
-	say "You feel slightly dizzy just looking at the beak wick. Extra speed isn't all it's cracked up to be. You've discovered everywhere it can take you, and your pro ball seems to agree, lighting up red." instead;
+	say "You feel slightly dizzy just looking at [the wick]. Extra speed isn't all it's cracked up to be. You've discovered everywhere it can take you, and your pro ball seems to agree, lighting up red." instead;
 
 chapter felt wrap
 
