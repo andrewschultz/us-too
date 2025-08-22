@@ -6,6 +6,8 @@ volume core code relies on this
 
 intro is a region.
 
+r-south is a region.
+
 universal is a region.
 
 definition: a rule (called ru) is thinknoteblocking:
@@ -46,9 +48,11 @@ a startprop is a kind of thing. a startprop is usually scenery.
 
 a startthing is a kind of thing.
 
-volume ordroom
+volume rotroom and ordroom
 
-an ordroom is a kind of room. an ordroom has a number called rmord. rmord of an ordroom is usually 0. an ordroom has text called roomdirs.
+a rotroom is a kind of room. a rotroom has a rotroom called nextroom.
+
+an ordroom is a kind of rotroom. an ordroom has a number called rmord. rmord of an ordroom is usually 0. an ordroom has text called roomdirs.
 
 ordrooms-in-order is a list of rooms variable. ordrooms-in-order is { tude ark, sage oaks, tube rod }.
 
@@ -73,6 +77,11 @@ to list-which-room:
 		else:
 			say "<a blank row ... odd>";
 		say "[line break]";
+	if number of visited ordrooms is 3:
+		now gs-noted-r is true;
+		say "[line break]There's also a note that R cycles/rotates between [tube rod], [tude ark] and Sage Oaks, and RR does the reverse.";
+		if number of visited rotrooms is 6:
+			say "And what's more, it notes R also cycles/rotates between [dam pink], [scribe room] and [dust which], with RR doing the reverse.";
 
 to say which-south of (orm - an ordroom):
 	if south-sorted:
@@ -87,7 +96,7 @@ check going south in ur branch when extra-turns > 0 and number of visited ordroo
 	move player to rm;
 	if rm is unvisited:
 		say "You take a look around your new surroundings. Hey, somewhere new!";
-		say "[one of]You ran past a lot to get here. Maybe you missed something you can find later.[or]You wonder if there was a bit more to look for.[or]You think you've discovered everywhere.[stopping]";
+		say "[line break][one of]You ran past a lot to get here. Maybe you missed something you can find later.[or]You wonder if there was a bit more to look for.[or]You think you've discovered everywhere.[stopping]";
 	else:
 		say "You've been here before. It's nice not to get lost, but you wonder where else there is.";
 	if extra-turns > 0:

@@ -46,6 +46,7 @@ gs-jot-row-ledge is a truth state that varies.
 gs-using-known is a truth state that varies.
 gs-taken-inventory is a truth state that varies.
 gs-take-hintthing-note is a truth state that varies.
+gs-noted-r is a truth state that varies.
 
 chapter game-critical, or definitely seen in the course of the game
 

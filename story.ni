@@ -481,7 +481,7 @@ chapter garden tree
 
 the garden tree is a thing. "[if sco-guard-entry is true]The garden tree stands here, passively[else]That garden tree the [forest] were whining about stands here[end if].". description of garden tree is "[if sco-guard-entry is false]It doesn't seem violent, but its branches are long enough it could pull you back if it doesn't trust you[else]It seems quiet enough to let you pass[end if].". eyes-number of garden tree is 55. eyes-rule of garden tree is pre-guard-entry rule.
 
-chapter sign and verbs
+chapter sign and south area verbs
 
 the sign ought sigh not is a thing. printed name is "Sign Ought-Sigh-Not". "[one of]A new sign titled SIGN OUGHT-SIGH-NOT stands here.[or]The SIGN OUGHT-SIGH-NOT stands here for reference.[stopping]". description of sign ought sigh not is "[if south-sorted]***SHORTCUT COMMANDS***[paragraph break]N2 or 2N or NN gets you all the way back north[else]WAYS SOUTH:[end if]". eyes-number of Sign Ought Sigh Not is 1.
 
@@ -495,12 +495,47 @@ after printing the locale description of ur branch when player was in an ordroom
 		move sign ought to ur branch;
 	if room south of ur branch is nowhere and number of visited ordrooms is 3:
 		reveal tude ark to south;
+		say "Ooh! There's something new on the sign. A new command, to make traversing easier.";
 	continue the action;
 
 this is the south-block rule:
 	if south-covered, say "You don't need to go back." instead;
 
-chapter ssing
+section ring
+
+chapter r1ing
+
+r1ing is an action out of world.
+
+understand the command "r" as something new.
+
+understand "r" as r1ing when gs-noted-r is true.
+
+carry out r1ing:
+	move player to nextroom of location of player;
+	the rule succeeds;
+
+chapter r2ing
+
+r2ing is an action out of world.
+
+understand the command "rr" as something new.
+understand the command "r2" as something new.
+understand the command "2r" as something new.
+
+understand "r2" as r2ing when gs-noted-r is true.
+understand "rr" as r2ing when gs-noted-r is true.
+understand "22" as r2ing when gs-noted-r is true.
+
+this is the check-south-rotation rule:
+	if player is not in a rotroom, say "You need to be in the south to be able to rotate." instead;
+	if number of unvisited rotrooms > 0, say "But you haven't visited everywhere in the south. Once you have, you can rotate. You can probably just go north and rotate as a workaround until you have." instead;
+
+carry out r2ing:
+	move player to nextroom of (nextroom of location of player);
+	the rule succeeds;
+
+section ssing
 
 ssing is an action out of world.
 
@@ -517,7 +552,7 @@ carry out ssing:
 	move player to Sage Oaks;
 	the rule succeeds;
 
-chapter sssing
+section sssing
 
 sssing is an action out of world.
 
@@ -1079,16 +1114,16 @@ Berries Pond is a room in universal. eyes-number of Berries Pond is 47. eyes-rul
 
 check going to berries pond when sco-bear-respond is true: say "That would be greedy." instead;
 
-book south area
+book south branch
 
-after printing the locale description when (player is in scribe room or player is in dam pink or player is in dust which) and gs-nn-noted is false:
+after printing the locale description when gs-nn-noted is false and (player is in a rotroom) and (player is not in an ordroom):
 	now gs-nn-noted is true;
-	say "[i][bracket][b]NOTE[r][i]: you can use NN to go back to the ur-branch from here or (spoiler alert) any other room like this.[close bracket][i][line break]";
+	say "[i][bracket][b]NOTE[r][i]: you can use [b]NN[r] to go back to the ur-branch from here or (spoiler alert) any other room like this. Also, you can use [b]R[r][i] to rotate between these rooms once you've found them all.[close bracket][i][line break]";
 	continue the action;
 
 part Tube Rod
 
-Tube Rod is an ordroom in universal. rmord of Tube Rod is 3. eyes-number of Tube Rod is 35. printed name is "Tube/Rod". eyes-rule of Tube Rod is pre-too-broad rule. "[if sco-too-broad is false]Well, you're blocked south by a huge a huge nondescript wall with a single tube/rod sticking out of it[else]With the tube/rod burst, you can now go south as well as back north[end if].". roomdirs of Tube Rod is "NE/S".
+Tube Rod is an ordroom in r-south. rmord of Tube Rod is 3. eyes-number of Tube Rod is 35. printed name is "Tube/Rod". eyes-rule of Tube Rod is pre-too-broad rule. "[if sco-too-broad is false]Well, you're blocked south by a huge a huge nondescript wall with a single tube/rod sticking out of it[else]With the tube/rod burst, you can now go south as well as back north[end if].". roomdirs of Tube Rod is "NE/S".
 
 the tuberodscen is privately-named scenery in Tube Rod. "Well, you can't do much with the wall, which is pretty boring and large. The tube/rod, on the other hand ...". printed name is "tube/rod". eyes-number of tuberodscen is 35. eyes-rule of tuberodscen is pre-too-broad rule.
 
@@ -1096,13 +1131,13 @@ understand "wall" and "tube/rod" and "tube rod" as tuberodscen when tuberodscen 
 
 part Too Dark Tude Ark
 
-Too Dark Tude Ark is an ordroom in universal. rmord of Too Dark is 1. printed name of tude ark is "[if sco-ho-langour is true]'Ugh?! Lo, a Glow'[else]Too-Dark Tude Ark[end if]". "[if sco-ho-langour is false]Your attitude can't help grow dark as you wonder if it was really worth running all the way here or even going back north, and if there is anywhere beyond that will require even more running, which it doesn't look like, because it's hard to see[else]It's no longer too dark here. There's not much here, but at least it's not too dark. Oh, there's a passage south as well as one back north[end if].". eyes-number of Too Dark Tude Ark is 1. roomdirs of Tude Ark is "NE/D/U/S".
+Too Dark Tude Ark is an ordroom in r-south. rmord of Too Dark is 1. printed name of tude ark is "[if sco-ho-langour is true]'Ugh?! Lo, a Glow'[else]Too-Dark Tude Ark[end if]". "[if sco-ho-langour is false]Your attitude can't help grow dark as you wonder if it was really worth running all the way here or even going back north, and if there is anywhere beyond that will require even more running, which it doesn't look like, because it's hard to see[else]It's no longer too dark here. There's not much here, but at least it's not too dark. Oh, there's a passage south as well as one back north[end if].". eyes-number of Too Dark Tude Ark is 1. roomdirs of Tude Ark is "NE/D/U/S".
 
 the whole anger is a thing in Tude Ark. "Whole anger swirls around here, consuming your every thought.". description is "How can one describe anger? It's there, and it's tough to shake.". eyes-number of whole anger is 27. eyes-rule of whole anger is pre-ho-langour rule.
 
 part Sage Oaks
 
-Sage Oaks is an ordroom in universal. rmord of Sage Oaks is 2. "Sage oaks stand here, [if sco-say-jokes is false]glaring at your unworthy self[else]almost nodding with respect for you. There seems to be passage south, too[end if]. You can always just go back north.". eyes-number of Sage Oaks is 35. eyes-rule of Sage Oaks is pre-say-jokes rule. roomdirs of Sage Oaks is "X TRAP/U/NE/S".
+Sage Oaks is an ordroom in r-south. rmord of Sage Oaks is 2. "Sage oaks stand here, [if sco-say-jokes is false]glaring at your unworthy self[else]almost nodding with respect for you. There seems to be passage south, too[end if]. You can always just go back north.". eyes-number of Sage Oaks is 35. eyes-rule of Sage Oaks is pre-say-jokes rule. roomdirs of Sage Oaks is "X TRAP/U/NE/S".
 
 sageoakscen is a plural-named privately-named impressable sentient in Sage Oaks. they are scenery. description of sageoakscen is "The sage oaks offer [if sco-say-jokes is false]no great hint as to how to impress them or weaken their will to block you[else if sco-gas-pouch is false]no indication they do, or don't, actually want you to go south[else]something almost nearing respect for you[end if].". printed name is "the sage oaks". eyes-number of sageoakscen is 35. eyes-rule of sageoakscen is pre-say-jokes rule.
 
@@ -1117,7 +1152,7 @@ the gas pouch is a thing. description is "It's a pouch that once held gas, curre
 
 part Dam Pink
 
-Dam Pink is a room in universal. printed name is "Dam, Pink". "You can only go back north. The dam is oozing various liquids, though [if sco-damp-ink is true]you got what you wanted[else][liquid-need][end if].". eyes-number of Dam Pink is 43. eyes-rule of Dam Pink is pre-damp-ink rule.
+Dam Pink is a rotroom in r-south. printed name is "Dam, Pink". "You can only go back north. The dam is oozing various liquids, though [if sco-damp-ink is true]you got what you wanted[else][liquid-need][end if].". eyes-number of Dam Pink is 43. eyes-rule of Dam Pink is pre-damp-ink rule.
 
 to say liquid-need:
 	choose row with check-rule of pre-damp-ink rule in table of main oronyms;
@@ -1136,7 +1171,7 @@ check taking clay mitt when clay mitt is in Dam Pink: say "You don't feel bold e
 
 part Scribe Room
 
-Scribe Room is a room in universal. "You can only go back north.". eyes-number of Scribe Room is 45. eyes-rule of Scribe Room is pre-scry-broom rule.
+Scribe Room is a rotroom in r-south. "You can only go back north.". eyes-number of Scribe Room is 45. eyes-rule of Scribe Room is pre-scry-broom rule.
 
 after printing the locale description for scribe room when player has broom and sco-pro-sweeping is true:
 	say "You hand the broom back to the scribes. They're very impressed you can do ... that sort of work. They pull out something else: a bell (trusted). It's big and impressive, but it's a bit tarnished, which each of them mentions in an offhand way, just in case you know anyone who might be able to help. Or you're good at other things besides sweeping. You seem multi-talented, they say.";
@@ -1161,7 +1196,7 @@ the belt rusted is a thing. description is "It might look quite nice if it were 
 
 part Dust Which Does Twitch
 
-Dust Which Does Twitch is a room in universal. printed name is "[if sco-pro-sweeping is false]Dust Which Does Twitch[else]Teal Eaves[end if]". "[if sco-pro-sweeping is false]You can only go (and see) back north[else]You can see where you are now. Apparently a place called Teal Eaves. It's teal on the outside and inside[end if].". eyes-number of Dust Which is 1.
+Dust Which Does Twitch is a rotroom in r-south. printed name is "[if sco-pro-sweeping is false]Dust Which Does Twitch[else]Teal Eaves[end if]". "[if sco-pro-sweeping is false]You can only go (and see) back north[else]You can see where you are now. Apparently a place called Teal Eaves. It's teal on the outside and inside[end if].". eyes-number of Dust Which is 1.
 
 chapter prose weeping
 
@@ -1180,6 +1215,11 @@ chapter tea leaves
 some tea leaves are an ingredient stewitem.  description is "All sorts. They smell different and, you imagine, will taste different.". eyes-number of tea leaves is -1.
 
 invtext of tea leaves is "[if sco-tea-leaves is false]nonalcoholic refreshment[else]the tea leaves will provide all sorts of flavors of tea[end if]".
+
+part rotations
+
+nextroom of Tube Rod is Tude Ark. nextroom of Tude Ark is Sage Oaks. nextroom of Sage Oaks is Tube Rod.
+nextroom of Dam Pink is Scribe Room. nextroom of Scribe Room is Dust Which. nextroom of Dust Which is Dam Pink.
 
 book up area
 
@@ -1527,6 +1567,12 @@ carry out verbsing:
 	say "[b]T[r]/[b]TALK[r]ing to NPCs (subject usually not necessary) or [b]LISTEN[r] may provide additional cues. Additionally, [b]EAT[r] and [b]CLIMB[r] may be marginally useful or amusing.";
 	say "[line break]Diagnostic commands include [b]I[r], and [b]X[r] alone will refer to [if gs-using-known is true][aight][else]a list of items needed to win[end if].";
 	say "[line break][b]THINK[r] is also useful to recall point-scoring commands that you found that will work later, or if you got one of two words right.";
+
+report verbsing when south-sorted or gs-noted-r is true:
+	say "[if south-sorted]N2/NN/2N kicks you back to Ur-Branch from very south locations[end if][if south-sorted or gs-noted-r is true], and [end if][if gs-noted-r is true]R/RR can rotate among the three near [or-far]south locations[end if].";
+	continue the action;
+
+to say or-far: if number of unvisited rotrooms is 0, say "or far "
 
 book versions
 
