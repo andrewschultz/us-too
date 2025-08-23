@@ -324,6 +324,7 @@ this is the post-pie-crust rule:
 	now sco-pie-crust is true;
 	say "Yup! Pie crust! It fits in your tin nicely.";
 	now player has pie crust;
+	now gray tin is not listed-yet;
 	moot pike rust;
 
 a wordtwisting rule (this is the pre-punt-weaker rule):
@@ -844,6 +845,7 @@ a wordtwisting rule (this is the pre-dope-ale rule):
 this is the post-dope-ale rule:
 	now sco-dope-ale is true;
 	now player has dope ale;
+	now cold rum is not listed-yet;
 	moot dough pail;
 	say "You make the trade: dough pail for dope ale! The [owners] note they're actually getting business. They bet if you come back a bit later, there'll be even more.";
 
@@ -1143,6 +1145,7 @@ this is the post-cold-rum rule:
 	now sco-cold-rum is true;
 	say "It's a pretty big coal drum. You rummage around, and sure enough ... you find some cold rum. Way too much to drink on your own.";
 	now player has cold rum;
+	now dope ale is not listed-yet;
 	declue coal drum;
 	now eyes-number of dust which is 36;
 	now eyes-rule of dust which is pre-tea-leaves rule;
