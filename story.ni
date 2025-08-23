@@ -1144,6 +1144,7 @@ part Turbo Tours
 Turbo Tours is a room in universal. printed name is "Turbo Tours[if sco-tour-boaters is true] (now with tour boaters)[end if]". "You can go back east, but there are also tours that cross water to the south--or go far beyond.". eyes-number of Turbo Tours is -47. eyes-rule of Turbo Tours is pre-tour-boaters rule.
 
 check going south to Farm Isles:
+	if sco-barn-open is true, say "You got the [egg] and berries from the Farm Isles. That was a good enough haul." instead;
 	say "[one of]Your prime oar really is prime! You effortlessly navigate your way south[or]Your prime oar holds up nicely as you steer the stark raft back south[stopping].";
 	move stark raft to Farm Isles;
 	move prime oar to Farm Isles;
@@ -1161,6 +1162,10 @@ the stark raft is a thing. "The stark raft [if farm isles is unvisited]waits her
 part Far Miles Farm Isles
 
 Far Miles Farm Isles is a room in universal. eyes-number of Farm Isles is 1. "Well, maybe not that far. Perhaps it's just named that way to seem more exotic."
+
+after printing the locale description for Far Miles Farm Isles when sco-find-rinks is true and sco-bear-respond is false:
+	say "You can go back south to Berries Pond, too.";
+	continue the action;
 
 check going north in farm isles: raft-tours;
 
