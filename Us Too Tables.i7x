@@ -188,7 +188,7 @@ a wordtwisting rule (this is the pre-den-specs rule):
 
 this is the post-den-specs rule:
 	now sco-den-specs is true;
-	say "You lose a bit of strength, strength you didn't really need, and wind up with a pair of glasses that may help you find a secret passage somewhere. You hope.";
+	say "You lose a bit of strength, strength you didn't really need, and wind up with a pair of glasses that may help you find a secret passage somewhere. You hope. You're secretly happy your dense pecs remain, though you don't really pay attention to them now they got you something.";
 	now player has den specs;
 
 a wordtwisting rule (this is the pre-summon-cheese rule):
@@ -342,7 +342,8 @@ a wordtwisting rule (this is the pre-punt-weaker rule):
 
 this is the post-punt-weaker rule:
 	now sco-punt-weaker is true;
-	say "'Ah, yes, that's it. A small gift for a small favor.' The pun tweaker goes to the back of [the ship], and you hear a splash. The pun tweaker reappears, clothes wet, pushing a pretty scrawny punt. 'It won't get very far, but there's something to the east. Oh, and I hope you have a way to steer it, too. Anyway, here you go. My repairs are complete!'";
+	say "'Ah, yes, that's it. A small gift for a small favor.' The pun tweaker goes to the back of [the ship], and you hear a splash. The pun tweaker reappears, clothes wet, pushing a pretty scrawny punt. 'It won't get very far, but there's something to the east. Oh, and I hope you have a way to steer it, too. Anyway, here you go. My repairs are complete, without the distraction!'";
+	if sco-pry-more is false, say "[line break]Well, you don't have a way to steer the punt, yet.";
 	move punt weaker to beach ill;
 	moot pun tweaker;
 	move dune to beach ill;
@@ -381,7 +382,7 @@ this is the post-sword-ark rule:
 a wordtwisting rule (this is the pre-blast-ring rule):
 	if player does not have blah string, unavailable;
 	if player is not in sore dark or sword ark is not in sore dark:
-		vcp "You can see nothing to blast!";
+		vcp "Why, you bet you could make that from the blah string, but you see nothing blastable. Or that needs to be blasted, to help you progress. And it wouldn't do to carry around something that volatile. Accidents might happen.";
 		not-yet;
 	ready;
 
@@ -888,7 +889,7 @@ a wordtwisting rule (this is the pre-stark-raft rule):
 
 this is the post-stark-raft rule:
 	now sco-stark-raft is true;
-	say "You let slip that perhaps a stark raft is more in your price range. A voice from behind the star craft agrees. They, in fact, have a particularly plain one which has been not at all good for business. They're willing to give it to you, if you promise not to loiter too much. Thus, they redirect you away to a new area of Turbo Tours, one without the star craft. You feel belittled, but hey, a free raft is a free raft. Your prime oar should work just fine on it. It's worth going back to the beach to get it.";
+	say "You let slip that perhaps a stark raft is more in your price range. A voice from behind the star craft agrees. They, in fact, have a particularly plain one which has been not at all good for business. They're willing to give it to you, if you promise not to loiter too much. Thus, they redirect you away to a new area of Turbo Tours, one without the star craft, and tell you the 'budget' vacation is a rustic isle just south. Not at all crowded with tourists![paragraph break]You feel belittled, but hey, a free raft is a free raft. Your prime oar should work just fine on it. You quickly run back to the beach to get it, then return and fit it to the raft.";
 	raft-tours;
 	moot star craft;
 	reveal Far Miles Farm Isles to south;
@@ -906,7 +907,7 @@ a wordtwisting rule (this is the pre-tour-boaters rule):
 
 this is the post-tour-boaters rule:
 	now sco-tour-boaters is true;
-	say "You have a business idea! You explain it to the folks at Turbo Tours. They play it down, but of course, after a bit they implement it and it works well and they take credit for it.[paragraph break]That's sort of a bummer, but you find it nice to be around people who are having their own adventures.";
+	say "You have a business idea! You explain it to the folks at Turbo Tours. They play it down, but of course, after a bit they implement it and it works well and they take credit for it.[paragraph break]That's sort of a bummer, but you are glad to have made the area a bit more accessible to less aggressive tourists.";
 	declue-here;
 
 chapter far miles farm isles scoring
@@ -952,7 +953,7 @@ a wordtwisting rule (this is the pre-bear-respond rule):
 this is the post-bear-respond rule:
 	now sco-bear-respond is true;
 	say "You have no idea whether to call a bear or even if it's a good idea. But you find a honeycomb high up in a tree. It's too high up for you, even when you return with the prime oar, which will maybe be useful if things get violent.";
-	say "[line break]You wave the oar at the tree, then wave it, hoping to catch a bear's attention. The bear nods at you as if to say 'Huh, Neatest Honey Test!' You hand it the prime oar, and it swats down the honeycomb, which it takes. But it provides you with a variety of berries in payment. Then it lifts up a paw. You are on its territory. It would not do to stay. You have gotten what you want, and it is time to go. So you do.";
+	say "[line break]You wave the oar around the tree, hoping to catch a bear's attention. The bear nods at you as if to say 'Huh, Neatest Honey Test!' You hand it the prime oar, and it swats down the honeycomb, which it takes. But it provides you with a variety of berries in payment for saving it the effort with the oar. Then it lifts up a paw. You are on its territory. It would not do to stay. You have gotten what you want, and it is time to go. So you do.";
 	declue-here;
 	raft-tours;
 	drop-player-at farm isles;
