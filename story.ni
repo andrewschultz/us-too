@@ -160,7 +160,11 @@ does the player mean examining Trike when player has meat rack: it is likely.
 
 part "item using"
 
-Aight Amusing Item Using is a startthing. description of Aight is "It's a list of all the things [ara] said you need to provide a feast.". printed name of Aight is "[i]A'ight, Amusing Item Using[r]". eyes-number of Aight Amusing Item Using is 66. eyes-rule of aight is pre-summon-cheese rule.
+Aight Amusing Item Using is a proper-named startthing. description of Aight is "It's a list of all the things [ara] said you need to provide a feast.". printed name of Aight is "[i]A'ight, Amusing Item Using[r]". eyes-number of Aight Amusing Item Using is 66. eyes-rule of aight is pre-summon-cheese rule.
+
+to say aight-count: say "You have [number of discovered stewitems in words] of [number of stewitems in words] items"
+
+to say new-aight-bold: if nds > last-stewitem-xaight, say " ([b]BOLD[r]ing stuff found since last time)";
 
 report examining Aight Amusing:
 	let gotany be whether or not number of discovered stewitems > 0;
@@ -170,17 +174,26 @@ report examining Aight Amusing:
 	else if missedany is false:
 		say "You have everything you need, but why not list it for fun?[line break]";
 	else:
-		say "[one of]While things won't magically switch order in the list, I've organized them into what you have at the top and what you don't at the bottom.[or]Sorted into have/have not:[line break][stopping]";
+		say "[aight-count]. ";
+		say "[one of]While things won't magically switch order in the list, I've organized them into what you have at the top and what you don't at the bottom[new-aight-bold].[or]Sorted into have/have not[new-aight-bold]:[line break][stopping]";
 	say "[line break]";
 	let mentioned-alcohol be false;
 	repeat with SI running through discovered stewitems:
 		if SI is pie crust, next;
+		if SI is not listed-yet, say "[b]";
 		if SI is alcoholic:
 			if mentioned-alcohol is false:
 				say "-- [if sco-malt-hour is true]enough alcohol left over ([the list of alcoholic stewitems])[else if number of discovered alcoholic stewitems is 2]almost a bit too much alcohol ([the list of alcoholic stewitems])[else]some alcohol, but not enough variety: [the list of discovered alcoholic stewitems][end if][line break]";
 			now mentioned-alcohol is true;
-			next;
-		say "-- [invtext of SI][line break]";
+		else:
+			say "-- [invtext of SI]";
+		say "[if SI is not listed-yet] (new)[end if][r]";
+		if SI is not listed-yet:
+			if SI is alcoholic and booze-score is 2:
+				now cold rum is listed-yet;
+				now dope ale is listed-yet;
+		now SI is listed-yet;
+		say "[line break]";
 	now mentioned-alcohol is false;
 	if gotany is true and missedany is true, say "[line break]";
 	repeat with SI running through not discovered stewitems:
@@ -193,6 +206,7 @@ report examining Aight Amusing:
 		say "-- [invtext of SI][line break]";
 	tip-herb-use;
 	say "[line break]At the bottom, the lawyers have written 'There's one thing that's sort of missing from this list and sort of isn't. Don't forget to invite us too once you're ready to make it!'";
+	now last-stewitem-xaight is nds;
 	continue the action;
 
 Trike West carries Aight Amusing Item Using.
@@ -1301,6 +1315,7 @@ definition: a thing (called th) is ughlistable:
 	if th is er jot, no;
 	if th is dense pecs, no;
 	if th is a stewitem, no;
+	if th is a hintthing, no;
 	yes;
 
 carry out taking inventory (this is the UT specific inventory rule):
@@ -1318,13 +1333,18 @@ carry out taking inventory (this is the UT specific inventory rule):
 	say "[line break]";
 	if all stewitems are discovered:
 		say "You've got all the items in [aight]! Surely you must be almost done now.";
-	else if number of carried stewitems > 0:
-		say "You have [number of carried stewitems in words] of [number of stewitems in words] items from [aight].";
+	else if nds > 0:
+		say "[aight-count] from [aight].";
+		if nds > last-stewitem-inventory:
+			say "[line break]You got [if nds - last-stewitem-inventory > 1]some new ones[else]a new one[end if] since you last checked. To see [if nds - last-stewitem-inventory > 1]them[else]it[end if], [b]X[r][if gs-using-known is false][b] AIGHT[r][end if].";
+			now last-stewitem-inventory is nds;
 	else:
-		say "[aight], which you got to starft, lists items [ara] asked for. You don't have any yet.";
+		say "[aight], which you got to start, lists items [ara] asked for. You don't have any yet.";
 	tip-herb-use;
+	let nch be number of carried hintthings;
+	if nch > 0, say "[line break]You also have [the list of carried hintthings] [if nch is 1]is[else]are[end if] to help you solve puzzles.";
 	if cas > 0 and sco-malt-hour is false, say "[line break]You've got more than enough alcohol in the form of [the list of carried alcoholic stewitems], so maybe you can use [if cas is 1]it[else]them[end if] to bribe someone or a group of people.";
-	if player has dense pecs, say "[line break]You've infused with dense pecs from all your carrying stuff and using the prime oar[if sco-den-specs is true], but you probably got what you needed from them[else], which may be useful in some other weird way[end if].";
+	if player has dense pecs and sco-den-specs is false, say "[line break]You're infused with dense pecs from all your carrying stuff and using the prime oar. They may be useful in some other weird way.";
 	if player has er jot, say "[line break]You [if core-score > 10]still [end if]have that [er jot] flopping about, too. It [if er jot is examined]didn't seem too important, though, so you can drop it[else]probably only had stuff to help you get started, which [jot-usefulness][end if].";
 	the rule succeeds;
 
