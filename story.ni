@@ -476,6 +476,11 @@ after printing the locale description for Ur Branch when player has rope ladder 
 	reveal Throne Ow Throw Now to up;
 	continue the action;
 
+after printing the locale description for Ur Branch when southeast is not branchdone and sco-pry-more is true and sco-gray-tin is true and sco-dough-making is true:
+	say "You look back at the dome. Inns, inner nest, dough. There's nothing left to do there.";
+	wink-out southeast;
+	continue the action;
+
 check going up in Ur Branch when up is not branchcant and sco-no-date is false:
 	say "You feel a sense of dread as you climb up the rope ladder. Whatever's up there, you're not ready." instead;
 
