@@ -527,6 +527,18 @@ report examining sign ought sigh not:
 	list-which-room;
 	continue the action;
 
+after printing the locale description of ur branch when sco-hike-up is true and (not ordrooms-seen or bowl ditch is not visited):
+	say "The hike up to the high cup revealed passages south, west and southwest. ";
+	if fort is unvisited:
+		say "Southwest was the least treacherous.";
+	else if bowl ditch is visited:
+		say "[if number of visited ordrooms > 0]Maybe there's still some of the south left to explore[else]You've been west with a burst of speed, so that leaves the south. It looked rather twisty in the pro ball[end if].";
+	else if number of visited ordrooms > 0:
+		say "You've seen something to the south with a burst of speed but nothing to the west, yet.";
+	else:
+		say "The south and west both seemed to have treacherous terrain. How to minimize its risks?";
+	continue the action;
+
 after printing the locale description of ur branch when player was in an ordroom:
 	if sign ought sigh not is off-stage:
 		say "Ooh! There's a sign you didn't see before. A SIGN OUGHT-SIGH-NOT. It tells you how to get back to [random visited ordroom].";
