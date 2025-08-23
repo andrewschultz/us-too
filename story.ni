@@ -232,6 +232,8 @@ chapter Aw Lug All Ugh
 
 the Aw Lug All Ugh is a thing. printed name is "Aw-Lug-All-Ugh". description is "It's a thing your aunt gave you--well, willed you--which you don't know where it's from[one of]. It reminds you of that 'Hey, we're going to eat pizza' song[or][stopping].".
 
+check drop2ing ugh: say "While it is, indeed, a thing your aunt gave you, you don't need to drop and recover it to circumvent inventory limits." instead;
+
 report examining Ugh:
 	say "It looks really sturdy--[if core-score < 20]it can hold a lot, you bet[else if core-score < 40]it's held up well for the adventure[else if assortment is off-stage]you're slightly worried it will burst[else]it's pretty much full. Unless you have missed a detail, you might want to finish things up[here-in of mine][end if].". Trike West carries the Ugh. eyes-number of Ugh is -1.
 
@@ -254,7 +256,8 @@ part urgh ought er jot
 the urgh ought er jot is a startthing. eyes-number of er jot is 1.
 
 check drop2ing er jot:
-	say "You actually just crumple it up and put it in your pocket, in case you need to start a fire later. Littering isn't cool! But it's out of your inventory, now." instead;
+	moot jot;
+	say "You actually just crumple it up and put it in your pocket, in case you need to start a fire later to, I don't know, cook stuff. Plus, littering isn't cool![paragraph break][The jot] is out of your conscious inventory, now." instead;
 
 Trike West carries the urgh ought er jot. printed name of er jot is "Urgh-Ought-[']Er Jot".
 
