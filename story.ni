@@ -245,7 +245,7 @@ invtext of cheese is "some munchies ([if sco-summon-cheese is false]the kind is 
 
 chapter dense pecs / den specs
 
-the dense pecs are a plural-named thing. description is "You admire your well-earned, newfound physical fitness[if sco-den-specs is true], though perhaps you can swap it for something more useful, since this quest has been relatively nonviolent[else], as well as your prowess converting it into something more useful[end if].". eyes-number of dense pecs is 35. eyes-rule of dense pecs is pre-den-specs rule.
+dense pecs are a plural-named thing. description is "You admire your well-earned, newfound physical fitness[if sco-den-specs is true], though perhaps you can swap it for something more useful, since this quest has been relatively nonviolent[else], as well as your prowess converting it into something more useful[end if].". eyes-number of dense pecs is 35. eyes-rule of dense pecs is pre-den-specs rule. printed name of dense pecs is "your dense pecs".
 
 the den specs are a plural-named thing. description is "You have no idea how cool or uncool they make you look. Probably not as cool as your dense pecs[if gs-den-seen is true]. But it sure was cool to find a den below [sob acres][end if].". eyes-number of den specs is -1.
 
@@ -1327,6 +1327,11 @@ carry out taking inventory (this is the UT specific inventory rule):
 	if player has dense pecs, say "[line break]You've infused with dense pecs from all your carrying stuff and using the prime oar[if sco-den-specs is true], but you probably got what you needed from them[else], which may be useful in some other weird way[end if].";
 	if player has er jot, say "[line break]You [if core-score > 10]still [end if]have that [er jot] flopping about, too. It [if er jot is examined]didn't seem too important, though, so you can drop it[else]probably only had stuff to help you get started, which [jot-usefulness][end if].";
 	the rule succeeds;
+
+report taking inventory when player has dense pecs and sco-den-specs is true and gs-pecs-forget-note is false:
+	say "You still have some dense pecs left over from making the den specs, but ... they're a part of you. You're almost bored of having them. So I won't mention them again.";
+	now gs-pecs-forget-note is true;
+	continue the action;
 
 to say jot-usefulness:
 	if branch is visited:
