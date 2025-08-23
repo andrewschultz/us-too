@@ -1042,7 +1042,17 @@ after printing the locale description for deli stern:
 
 chapter Toon Eat Too Neat
 
-the Toon Eat Too Neat is a thing. printed name is "Toon Eat-Too-Neat". "The [toon] [the owners] scribbled is up on the wall here.". description is "[if sco-beef-ordering is true]You appreciate [the toon] a bit more, now you figured what it meant. Yay, you![else]The [toon] has three captions, two blurred, one saying AFTER. But the images are clear: a skinny frowning man, the same man ravenously eating, and the same man, belly distended, sitting happily in a recliner. What does it mean? What should it mean? What can it mean?[end if]". eyes-number of Toon is 48. eyes-rule of Toon is pre-beef-ordering rule.
+the Toon Eat Too Neat is a thing. printed name is "Toon Eat-Too-Neat". "The [toon] [the owners] scribbled is up on the wall here.". description is "[if sco-beef-ordering is true]You appreciate [the toon] a bit more, now you figured what it meant. Yay, you![else]The [toon] has three words, two blurred, one saying AFTER. But the images are clear: a skinny frowning man, the same man ravenously eating, and the same man, belly distended, sitting happily in a recliner. What does it mean? What should it mean? What can it mean?[end if]". eyes-number of Toon is 48. eyes-rule of Toon is pre-beef-ordering rule.
+
+report examining toon eat when sco-beef-ordering is false:
+	say "This might be worth talking out to yourself. Just figuring what the hidden words are.";
+	continue the action;
+
+report thinking (this is the toon partial thinking rule):
+	if sco-beef-ordering is false:
+		if toon-guess-score is 0, continue the action;
+		say "You've deciphered the toon [if toon-guess-score is 1]partway[else]completely[end if] but haven't guessed what to do with it. Right now, you know [if gs-toon-guess-1 is true]BEFORE[else]------[end if] [if gs-toon-guess-2 is true]DURING[else]------[end if].";
+	continue the action;
 
 chapter meat
 

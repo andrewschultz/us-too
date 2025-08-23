@@ -32,6 +32,30 @@ book clay mitt
 
 understand "claim it" as a mistake ("You wonder if you should reclaim the mitt, but then, you think it might start to reek. Lame.") when player has clay mitt. [this is so the mitt doesn't intersect with two other "IT" puzzles]
 
+book before during
+
+understand "before during" as a mistake ("Yes, this interpretation seems right[toon-1][toon-2].") when beef-ready.
+
+understand "before" and "before [text]" as a mistake ("Yes, that feels half right[toon-1].") when beef-ready.
+
+understand "during" and "[text] during" as a mistake ("Yes, that feels half right[toon-2].") when beef-ready.
+
+to say toon-1:
+	say "[first-toon-clue]";
+	now gs-toon-guess-1 is true;
+
+to say toon-2:
+	say "[first-toon-clue]";
+	now gs-toon-guess-2 is true;
+
+to say first-toon-clue:
+	if gs-toon-guess-2 is false and gs-toon-guess-1 is false:
+		say ". The [owners] probably wouldn't object to you talking your way through what the words should be";
+
+to decide whether beef-ready:
+	if toon is touchable and sco-beef-ordering is false, yes;
+	no;
+
 book the throne
 
 understand "sit" and "sit [text]" as a mistake ("You were smart enough to get this far. I'm gonna go out on a limb and say you're smart enough not to heed a demanding, evil voice asking you to do the equivalent of touching a live wire, and you're just poking around for fun.")

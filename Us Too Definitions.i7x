@@ -166,6 +166,9 @@ to decide which number is dome-in-score:
 to decide which number is booze-score:
 	decide on (boolval of sco-cold-rum) + (boolval of sco-dope-ale);
 
+to decide which number is toon-guess-score:
+	decide on (boolval of gs-toon-guess-1) + (boolval of gs-toon-guess-2);
+
 book composite booleans
 
 to decide whether pile-done:
