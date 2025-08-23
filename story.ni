@@ -486,7 +486,7 @@ check going up in Ur Branch when up is not branchcant and sco-no-date is false:
 
 check going west in Ur Branch when sco-hike-up is true and west is not branchdone:
 	if bowl ditch is visited:
-		say "The trail you blazed is easy to follow back[if extra-turns > 0], though in following it, you lose your built-up speed[end if].";
+		say "The trail you blazed is easy to follow back[if extra-turns > 0], though it's pretty long. In following it, you lose your built-up speed[end if].";
 		now extra-turns is 0;
 		continue the action;
 	if extra-turns is 0:
@@ -543,7 +543,7 @@ after printing the locale description of ur branch when player was in an ordroom
 	if sign ought sigh not is off-stage:
 		say "Ooh! There's a sign you didn't see before. A SIGN OUGHT-SIGH-NOT. It tells you how to get back to [random visited ordroom].";
 		move sign ought to ur branch;
-	if room south of ur branch is nowhere and number of visited ordrooms is 3:
+	if room south of ur branch is nowhere and ordrooms-seen:
 		reveal tude ark to south;
 		say "Ooh! There's something new on the sign. A new command, to make traversing easier.";
 	continue the action;
@@ -657,7 +657,7 @@ After choosing notable locale objects when player is in Beach Ill:
 	if Freddie is in beach, set the locale priority of Freddie to 9;
 
 after printing the locale description of Beach Ill when sco-peace-talks is true and Sir Freddie is not moot:
-	say "With the lessons learned from the Pea Stalks, you broker a tentative truce between the pun teaker and Sir Freddie. The pun tweaker is quite grateful for this. 'What can I offer you?' 'Oh, nothing much, you say.' The pun tweaker says 'oh of course' a bit too quickly.";
+	say "With the lessons learned from the Pea Stalks, you broker a tentative truce between the pun tweaker and Sir Freddie. You even have a dialogue, discussing nearby isles. Surprisingly, the pun tweaker notes one that Sir Freddie knows.[paragraph break]'Nay-Vile-Knave Isle?'[paragraph break]'No, the large waves scared me ... but they'd be a challenge now. I ... I can picture myself saying Nay, Vile Knave, to those who think they can out-surf me!' The formal rivals get together. The pun tweaker lets Sir Freddie know about a narrow river that will lead to where Sir Freddie can find a boat. Sir Freddie shakes the pun tweaker's hand and runs off.[paragraph break]The pun tweaker is quite grateful for this. 'I'll be able to fix my ship now, undistracted. What can I offer you?' 'Oh, nothing much, you say.' The pun tweaker says 'oh of course' a bit too quickly.";
 	moot Sir Freddie;
 	continue the action;
 
@@ -785,6 +785,8 @@ after printing the locale description for Morph Lairs when sco-more-flares is tr
 chapter row plaider
 
 the row plaider is scenery in Morph Lairs. "Boy, it's plaider than anything you've ever seen[if sco-rope-ladder is false]. All that plaid does a number on your eyes. Maybe it's hiding something in plain sight[else]. You're not all that interested in it, now that you've gotten the rope ladder[end if].". eyes-number of row plaider is 46. eyes-rule of row plaider is pre-rope-ladder rule.
+
+understand "house" and "houses" as row plaider when row plaider is touchable.
 
 chapter rope ladder
 
@@ -960,7 +962,7 @@ report going when extra-turns > 0:
 	if extra-turns is 0, say "You feel back to normal speed.";
 	continue the action;
 
-after examining quick beak wick:
+report examining quick beak wick:
 	if extra-turns is 4:
 		say "You're already at maximum speed.";
 	else if extra-turns > 0:
@@ -1565,11 +1567,11 @@ check ting:
 	if player is in beach and freddie is in beach:
 		if noun is pun tweaker or noun is Sir Freddie:
 			say "You don't have the skills to talk out a detente." instead;
-	if noun is pun tweaker, say "The pun tweaker throws a ton of puns you've heard before at you and feels very clever for this." instead;
+	if noun is pun tweaker, say "[if sir freddie is in beach]Not in the mood to chat with Sir Freddie around[else]You punch at pun chat but can't keep up with the pun tweaker[end if]." instead;
 	if noun is sageoakscen, say "[if sco-say-jokes is false]The oaks just don't seem to be bothered with regular talk[else]You wonder if you should say 'Forge, oaks, for jokes,' or ask for kludge-oaks that might clue jokes. But the oaks don't seem interested in talking[end if]." instead;
 	if noun is fey loners, say "They [if gs-deli-dell-left is false]grouse about how terrible business is[else if gs-deli-ale-left is false]moan about business picked up slightly, but still not enough[else if gs-deli-beef-left is false and toon is in deli]point to the new toon they made[else if sco-wheat-rye is false and whee try is in deli]point to the WHEE TRY sign, eager to give some handouts[else]talk about how good business has gotten[end if]." instead;
 	if noun is scribes, say "The scribes more or less ignore you while continuing their scribing. [if sco-scry-broom is false]You've offered them nothing, yet.[else if sco-pro-sweeping is false]You haven't figured what to do with their broom.[else]Why, they gave you that belt (rusted) and broom, and that should really be enough![end if]" instead;
-	if noun is Sir Freddie, say "'Ho, pawn! Hope on!'" instead;
+	if noun is Sir Freddie, say "[if player is in copse]'Ho, pawn! Hope on!'[else]A depressing outpouring of over-cheery surfing lingo. Harmless, but yeah. You see the pun tweaker's point.[end if]" instead;
 	if noun is not a sentient, say "No response. You should usually talk to living things, or things that can respond as if they were living." instead;
 	say "An awkward silence ensues, mostly brought about by how ... I forgot to code something. Please let me know or file a bug report!" instead;
 
