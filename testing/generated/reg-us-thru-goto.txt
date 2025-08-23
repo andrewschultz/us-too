@@ -19,9 +19,6 @@ You could explore your mine, but you have no purpose, or errand, or ... there's 
 You don't want to go wandering outside after you just got here! You need to catch your bearings. Focus on yourself a bit. Maybe even a lot.
 
 >i
-Your Aw-Lug-All-Ugh has nothing special in it.
-You have that too-rad tour ad flopping about, too. It seems non-critical. You can probably examine and then drop it.
-Note that X will default to A'ight, Amusing Item Using in the future.
 
 >z
 
@@ -215,7 +212,7 @@ You can only walk back west or take the punt east.
 
 #testcase-goto-table-of-noways-pile-up-isle
 >n
-You can't see land anywhere except to the west.
+You can't see land anywhere except back to the west.
 
 >base pikes
 by a point

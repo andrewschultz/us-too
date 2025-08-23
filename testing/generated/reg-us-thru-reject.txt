@@ -12,9 +12,6 @@
 by a point
 
 >i
-Your Aw-Lug-All-Ugh has nothing special in it.
-You have that too-rad tour ad flopping about, too. It seems non-critical. You can probably examine and then drop it.
-Note that X will default to A'ight, Amusing Item Using in the future.
 
 >z
 
@@ -453,7 +450,7 @@ by a point
 
 #testcase-check-pre-punt-weaker-rule-if-sir-freddie-is-not-in-beach-ill-and-sir-freddie-is-not-moot
 >punt weaker
-The pun tweaker says "Yeah, maybe I have one. But what can you do for me?"
+The pun tweaker says "You want transport, eh? Any sort of transport? But what can you do for me?"
 
 #testcase-check-pre-probe-all-rule-if-sco-probe-all-is-true
 >probe all
@@ -545,7 +542,7 @@ You already figured nothing awful was lurking to the north.
 
 #testcase-check-pre-blast-ring-rule-if-player-is-not-in-sore-dark-or-sword-ark-is-not-in-sore-dark
 >blast ring
-You can see nothing to blast!
+Why, you bet you could make that from the blah string, but you see nothing blastable. Or that needs to be blasted, to help you progress. And it wouldn't do to carry around something that volatile. Accidents might happen.
 
 #testcase-think-table-of-main-oronyms-pre-blast-ring-rule
 >think
@@ -714,7 +711,7 @@ There's nothing else to be found from another hike up. You're not getting the hi
 
 #+testcase-check-pre-blast-ring-rule-if-player-is-not-in-sore-dark-or-sword-ark-is-not-in-sore-dark
 >blast ring
-You can see nothing to blast!
+Why, you bet you could make that from the blah string, but you see nothing blastable. Or that needs to be blasted, to help you progress. And it wouldn't do to carry around something that volatile. Accidents might happen.
 
 #+testcase-check-pre-terrible-aid-rule-if-player-is-not-in-sore-dark-and-player-does-not-have-terra-blade
 >terra blade
@@ -735,7 +732,7 @@ Hmm, yes, it doesn't matter if it's terrible while it's unattainable.
 
 #testcase-think-table-of-main-oronyms-pre-terrible-aid-rule
 >think
-You can summon a TERRIBLE AID once you can physically grab it.
+You can become the owner of a TERRIBLE AID once you can bring it down from the ark.
 
 #+testcase-think-table-of-main-oronyms-pre-blast-ring-rule
 >think
@@ -746,7 +743,7 @@ by a point
 
 #+testcase-think-table-of-main-oronyms-pre-terrible-aid-rule
 >think
-You can summon a TERRIBLE AID now you can physically grab it.
+You can become the owner of a TERRIBLE AID now you can bring it down from the ark.
 
 >terrible aid
 by a point

@@ -17,9 +17,11 @@ by a point
 `My New Mine, Ooh!
 
 >i
+
 Your Aw-Lug-All-Ugh has nothing special in it.
-You have that too-rad tour ad flopping about, too. It seems non-critical. You can probably examine and then drop it.
-Note that X will default to A'ight, Amusing Item Using in the future.
+A'ight, Amusing Item Using, which you got to start, lists items Aunt Rickie-Anne asked for. You don't have any yet.
+You have that Urgh-Ought-'Er Jot flopping about, too. It probably only had stuff to help you get started, which might help you figure how to get going.
+For future reference, X will default to A'ight, Amusing Item Using in the future. It will be about as helpful to you as I/INVENTORY.
 
 >z
 
@@ -40,7 +42,7 @@ You manage to stand up to the beast a bit. It could beat you, sure, but you're n
 
 >x
 
-It's a recipe, actually.
+On inspection, you realize A'ight, Amusing Item Using is sort of a recipe, full of food and food preparation items.
 It's a list of all the things Aunt Rickie-Anne said you need to provide a feast.
 You haven't found any yet, so I didn't sort them into have and don't have.
 -- some munchies (the kind is not specified. What's up with that?)
@@ -77,7 +79,7 @@ A loose intro flutters down from the lucent row. You pick it up. As you do, the 
 !But then the Goal-Edge-Go Ledge, containing nothing, retracts after a bit. Well, you got everything you could want from it.
 
 >x intro
-It's an introduction to your world, not from Aunt Rickie-Anne, but from one Hugh Morris AKA Mick Stupp. At the top is a warning about mild spoilers that get less mild as you read on.
+It's an introduction to your world, not from Aunt Rickie-Anne, but from one Hugh Morris AKA Mick Stupp. At the top is a note that while no puzzles are spoiled or hinted, the author does discuss his views on how Us Too compares to Why Pout (length, plot, etc.) and also mentions how two or three puzzles break the mold a bit.
 
 #testcase-x-intro-table-of-intro-jabber-1
 >x intro
@@ -380,7 +382,8 @@ by a point
 
 #testcase-check-pre-punt-weaker-rule-fallthrough
 #testcase-run-post-punt-weaker-rule-default
-"Ah, yes, that's it. A small gift for a small favor." The pun tweaker goes to the back of the Gauche/Hip GO-Ship, and you hear a splash. The pun tweaker reappears, clothes wet, pushing a pretty scrawny punt. "It won't get very far, but there's something to the east. Oh, and I hope you have a way to steer it, too. Anyway, here you go. My repairs are complete!"
+"Ah, yes, that's it. A small gift for a small favor." The pun tweaker goes to the back of the Gauche/Hip GO-Ship, and you hear a splash. The pun tweaker reappears, clothes wet, pushing a pretty scrawny punt. "It won't get very far, but there's something to the east. Oh, and I hope you have a way to steer it, too. Anyway, here you go. My repairs are complete, without the distraction!"
+You hook the prime oar up to the punt.
 
 >e
 
@@ -453,7 +456,7 @@ by a point
 #testcase-run-post-oh-clever-rule-default
 You think and think and think. Of course, they wouldn't want any old fool pulling the lever. So there's no obvious way to pull it. You try a hundred different ways, then feel clever on the hundred and first when -- CLICK -- it flips, revealing a compartment behind!
 The feeling of cleverness lasts only a few seconds, though. You realize how you could've seen it sooner if you'd been paying attention. After fifteen minutes, you feel even less clever for having spent fifteen minutes unconstructively visiting the past.
-Then you notice what the lever was hiding: a be-quick beak wick! Nice if you need speed, you're sure.
+Then you notice what the lever was hiding: a be-quick beak/wick! Nice if you need speed, you're sure.
 
 >x beak
 
@@ -520,7 +523,7 @@ by a point
 #testcase-check-pre-cellar-bin-rule-fallthrough
 #testcase-run-post-cellar-bin-rule-default
 You bang on the cell door, claiming you've been sent to the wrong place. To your surprise, two maintenance workers come by and agree. One pushes a button. You are spun around! You fall to the floor, dizzy.
-"Okay. Next time, if you fall in the trap, you'll fall somewhere else." You thank them, you guess, not entirely sure what good it will do.
+"Okay. Next time, if you fall in the trap, you'll fall here in the cellar instead of the cell." You thank them, you guess, not immediately sure what good it will do.
 
 #testcase-room-names-cellar-bin
 `Cellar Bin
@@ -670,14 +673,15 @@ by a bonus point
 #testcase-check-pre-tour-boaters-rule-fallthrough
 #testcase-run-post-tour-boaters-rule-default
 You have a business idea! You explain it to the folks at Turbo Tours. They play it down, but of course, after a bit they implement it and it works well and they take credit for it.
-That's sort of a bummer, but you find it nice to be around people who are having their own adventures.
+That's sort of a bummer, but you are glad to have made the area a bit more accessible to less aggressive tourists.
 
 >stark raft
 by a point
 
 #testcase-check-pre-stark-raft-rule-fallthrough
 #testcase-run-post-stark-raft-rule-default
-You let slip that perhaps a stark raft is more in your price range. A voice from behind the star craft agrees. They, in fact, have a particularly plain one which has been not at all good for business. They're willing to give it to you, if you promise not to loiter too much. Thus, they redirect you away to a new area of Turbo Tours, one without the star craft. You feel belittled, but hey, a free raft is a free raft. Your prime oar should work just fine on it. It's worth going back to the beach to get it.
+You let slip that perhaps a stark raft is more in your price range. A voice from behind the star craft agrees. They, in fact, have a particularly plain one which has been not at all good for business. They're willing to give it to you, if you promise not to loiter too much. Thus, they redirect you away to a new area of Turbo Tours, one without the star craft, and tell you the "budget" vacation is a rustic isle just south. Not at all crowded with tourists!
+You feel belittled, but hey, a free raft is a free raft. Your prime oar should work just fine on it. You quickly run back to the beach to get it, then return and fit it to the raft.
 
 >s
 
@@ -700,7 +704,7 @@ by a point
 #testcase-check-pre-bear-respond-rule-fallthrough
 #testcase-run-post-bear-respond-rule-default
 You have no idea whether to call a bear or even if it's a good idea. But you find a honeycomb high up in a tree. It's too high up for you, even when you return with the prime oar, which will maybe be useful if things get violent.
-You wave the oar at the tree, then wave it, hoping to catch a bear's attention. The bear nods at you as if to say "Huh, Neatest Honey Test!" You hand it the prime oar, and it swats down the honeycomb, which it takes. But it provides you with a variety of berries in payment. Then it lifts up a paw. You are on its territory. It would not do to stay. You have gotten what you want, and it is time to go. So you do.
+You wave the oar around the tree, hoping to catch a bear's attention. The bear nods at you as if to say "Huh, Neatest Honey Test!" You hand it the prime oar, and it swats down the honeycomb, which it takes. But it provides you with a variety of berries in payment for saving it the effort with the oar. Then it lifts up a paw. You are on its territory. It would not do to stay. You have gotten what you want, and it is time to go. So you do.
 
 `Far Miles Farm Isles
 
@@ -775,9 +779,11 @@ by a point
 
 #testcase-check-pre-wheat-rye-rule-fallthrough
 #testcase-run-post-wheat-rye-rule-default
-The fey loners/fail-owners applaud you. "Yes ... that's just the thing ..." they chop up the wheat and rye with the erstwhile Terra Blade. "Oh! There's one other thing ... business is booming so much, maybe this will come in handy for you. We don't need any repairs." They hand you some "Mope, Liars, Mo'" Pliers.
+The fey loners/fail-owners applaud you. "Yes ... that's just the thing ..." they chop up the wheat and rye with the erstwhile Terra Blade. They give you a good chunk.
 
 >e
+
+"Oh! We almost forgot! Business is booming so much, maybe this will come in handy for you. We don't need any repairs at the moment, and if we did, we'd need a different tool." They hand you some "Mope, Liars, Mo'" Pliers.
 
 >den specs
 by a point

@@ -27,11 +27,15 @@ file=reg-us-thru-verbs.txt,abbr=v/verb/verbs,desc=special verb testing inventory
 }$REJECT2=That thought/action/observation/request brings up nothing. Us Too has a limited set of verbs, and the main thing is to guess a two-word phrase. To see what verbs are used, try VERBS.
 }$REJHOM=Hmm. That really, really SOUNDED like it should work, but it didn't.
 }$XTRA=The first word was a valid command that could stand on its own. The second may be unnecessary, or a typo.
-}$EYEITMNO=The eyes show nothing. Probably don't need to do anything with
-}$EYEITMDONE=The eyes show nothing. You've done everything you need with
+}$EYEITMNO=The eyes show nothing. Probably don't need to change up anything with
+}$EYEITMDONE=The eyes show nothing. You've changed up everything you need with
 }$EYERMNO=The eyes show nothing. Probably don't need to do anything with the general area, though specific things may provide a clue.
-}$EYERMDONE=The eyes show nothing. You've done everything you need with the general area, though specific things may provide a clue.
-}$NOTHERE=You can't see any such thing.
+}$NOTHEREHINT=Nothing (significant) here like that. (Once-per-room reminder:) room names are not usually worth examining and are often just for silly flavor, so you can just EYE without a subject for the room, or to see what needs changing in the room.
+}$NOTHEREHINT2=Nothing (significant) here like that.\n!silly flavor
+}$NOTHERE=Nothing (significant) here like that.
+}$EYESWANDER0=Nothing for the general area, and the sly size-slice eyes don't point to any individual item.
+}$EYESWANDER1=The eyes see nothing in the general area but seem to be wandering to 
+}$EYESWANDER2=Nothing for the general area, though the sly size-slice eyes seem to wander between
 
 }}MAX=68
 }}CURMAX=68
@@ -70,10 +74,13 @@ You could explore your mine, but you have no purpose, or errand, or ... there's 
 You don't want to go wandering outside after you just got here! You need to catch your bearings. Focus on yourself a bit. Maybe even a lot.
 
 >i
+
+@all
 Your Aw-Lug-All-Ugh has nothing special in it.
-You have that too-rad tour ad flopping about, too. It seems non-critical. You can probably examine and then drop it.
+A'ight, Amusing Item Using, which you got to start, lists items Aunt Rickie-Anne asked for. You don't have any yet.
 #OK-APOSTROPHE
-Note that X will default to A'ight, Amusing Item Using in the future.
+You have that Urgh-Ought-'Er Jot flopping about, too. It probably only had stuff to help you get started, which might help you figure how to get going.
+For future reference, X will default to A'ight, Amusing Item Using in the future. It will be about as helpful to you as I/INVENTORY.
 
 @hint
 >x row
@@ -540,7 +547,7 @@ You manage to stand up to the beast a bit. It could beat you, sure, but you're n
 @hint
 #+testcase-values-eyes-number-of-beast-wrong-is-26
 >eye beast wrong
-You can't see any such thing.
+Nothing (significant) here like that. Note that room names are not usually worth examining and are often just for silly flavor, so you can just EYE without a subject for the room, or to see what needs changing in the room.
 
 @gt
 #+testcase-goto-table-of-noways-my-new-mine-ooh
@@ -553,7 +560,7 @@ You're eager to rush out there, but perhaps you should peruse the ... documentat
 >x
 
 @all
-It's a recipe, actually.
+On inspection, you realize A'ight, Amusing Item Using is sort of a recipe, full of food and food preparation items.
 It's a list of all the things Aunt Rickie-Anne said you need to provide a feast.
 You haven't found any yet, so I didn't sort them into have and don't have.
 -- some munchies (the kind is not specified. What's up with that?)
@@ -578,17 +585,13 @@ You don't have all the stew ingredients you need! Currently, you have zero out o
 >eye war pawn
 The eyes glow dimly green and show four dots, then two dots.
 \\
-#testcase-values-eyes-number-of-message-is-1
->eye message
-{$EYEITMNO}
+#testcase-values-eyes-number-of-jot-is-1
+>eye jot
+{$EYEITMNO} the Urgh-Ought-'Er Jot.
 \\
 #testcase-values-eyes-number-of-mine-ooh-is-1
 >eye
-{$EYERMNO}
-\\
-#testcase-values-eyes-number-of-too-rad-tour-ad-is-1
->eye too rad tour ad
-{$EYEITMNO}
+{$EYESWANDER2} A'ight, Amusing Item Using and the lucent row.
 
 @hint+
 #testcase-values-eyes-number-of-sly-size-slice-eyes-is-1
@@ -764,7 +767,7 @@ There is no more intro.
 
 @all
 >x intro
-It's an introduction to your world, not from Aunt Rickie-Anne, but from one Hugh Morris AKA Mick Stupp. At the top is a warning about mild spoilers that get less mild as you read on.
+It's an introduction to your world, not from Aunt Rickie-Anne, but from one Hugh Morris AKA Mick Stupp. At the top is a note that while no puzzles are spoiled or hinted, the author does discuss his views on how Us Too compares to Why Pout (length, plot, etc.) and also mentions how two or three puzzles break the mold a bit.
 \\
 #testcase-x-intro-table-of-intro-jabber-1
 >x intro
@@ -921,7 +924,7 @@ You already found the herb ranch! One free sample should be enough.
 @hint
 #+testcase-values-eyes-number-of-ur-branch-is-45
 >eye
-{$EYERMDONE}
+{$EYESWANDER1} "some herb, eh?".
 
 @part
 ##balance undos
@@ -1040,7 +1043,7 @@ The beach is already chill enough!
 @hint
 #+testcase-values-eyes-number-of-beach-ill-is-25
 >eye
-{$EYERMDONE}
+{$EYESWANDER1} the nigh swarm.
 
 @part
 ##balance undos
@@ -1128,7 +1131,7 @@ It also reveals something near here. You notice some sort of ship. You wave, and
 @rej
 #testcase-check-pre-punt-weaker-rule-if-sir-freddie-is-not-in-beach-ill-and-sir-freddie-is-not-moot
 >punt weaker
-The pun tweaker says "Yeah, maybe I have one. But what can you do for me?"
+The pun tweaker says "You want transport, eh? Any sort of transport? But what can you do for me?"
 \\
 #testcase-check-pre-probe-all-rule-if-sco-probe-all-is-true
 >probe all
@@ -1288,7 +1291,7 @@ The eyes light up green and show five dots, then three dots.
 @hom
 #testcase-homonym-reject-table-of-main-oronyms-bored
 >bored xxx
-Hmm. That kind of partway SOUNDED like it should work, but it didn't.
+No, becoming bored would be giving in. But you must be close, here.
 
 >board red
 by a point
@@ -1314,7 +1317,7 @@ You can call MALT HOUR once you have a variety of alcohol to share.
 @hint
 #+testcase-values-eyes-number-of-bore-dread-is-53
 >eye
-{$EYERMDONE}
+{$EYESWANDER0}
 \\
 #testcase-values-eyes-number-of-board-red-is--1
 >eye board red
@@ -1411,7 +1414,7 @@ You can only leave the copse to the south.
 @hint
 #testcase-values-eyes-number-of-blah-copse-is-1
 >eye
-{$EYERMNO}
+{$EYESWANDER1} the Forest Team for Esteem.
 
 @part
 ##balance undos
@@ -1550,7 +1553,7 @@ You can only leave the copse to the south or north.
 @rej
 #testcase-check-pre-blast-ring-rule-if-player-is-not-in-sore-dark-or-sword-ark-is-not-in-sore-dark
 >blast ring
-You can see nothing to blast!
+Why, you bet you could make that from the blah string, but you see nothing blastable. Or that needs to be blasted, to help you progress. And it wouldn't do to carry around something that volatile. Accidents might happen.
 \\
 #testcase-think-table-of-main-oronyms-pre-blast-ring-rule
 >think
@@ -1646,7 +1649,7 @@ The pun tweaker whispers "I'll give you it, if you just get rid of THIS GUY."
 \\
 #+testcase-values-eyes-number-of-sir-freddie-is-45
 >eye sir freddie
-The eyes show nothing. You've done everything you need to get something from Sir Freddie directly.
+The eyes show nothing. You've changed up everything you need to get something from Sir Freddie directly.
 \\
 #+testcase-values-eyes-number-of-pun-tweaker-is-46
 >eye pun tweaker
@@ -1663,7 +1666,7 @@ The eyes light up yellow and show four dots, then six dots.
 @hint
 #+testcase-values-eyes-number-of-morph-lairs-is-46
 >eye
-{$EYERMDONE}
+{$EYESWANDER1} the row plaider.
 
 @part
 ##balance undos
@@ -1703,7 +1706,7 @@ Your eyes finally adjust to all the egregious plaid, and you discover a plain bu
 @hint
 #+testcase-values-eyes-number-of-row-plaider-is-46
 >eye row plaider
-{$NOTHERE}
+{$NOTHEREHINT}
 \\
 #testcase-values-eyes-number-of-rope-ladder-is--1
 >eye rope ladder
@@ -1963,7 +1966,7 @@ The eyes light up green and show five dots, then six dots.
 \\
 #+testcase-values-eyes-number-of-cant-ache-is-34
 >eye cant ache
-You can't see any such thing.
+{$NOTHEREHINT}
 
 @part
 ##balance undos
@@ -2133,7 +2136,7 @@ No secret passages here. You just need to go back out.
 @hint
 #testcase-values-eyes-number-of-inner-nest-is--1
 >eye
-{$EYERMDONE}
+{$EYESWANDER1} the prime oar.
 
 @part
 ##balance undos
@@ -2227,8 +2230,8 @@ by a point
 @all+
 #testcase-check-pre-punt-weaker-rule-fallthrough
 #testcase-run-post-punt-weaker-rule-default
-"Ah, yes, that's it. A small gift for a small favor." The pun tweaker goes to the back of the Gauche/Hip GO-Ship, and you hear a splash. The pun tweaker reappears, clothes wet, pushing a pretty scrawny punt. "It won't get very far, but there's something to the east. Oh, and I hope you have a way to steer it, too. Anyway, here you go. My repairs are complete!"
-
+"Ah, yes, that's it. A small gift for a small favor." The pun tweaker goes to the back of the Gauche/Hip GO-Ship, and you hear a splash. The pun tweaker reappears, clothes wet, pushing a pretty scrawny punt. "It won't get very far, but there's something to the east. Oh, and I hope you have a way to steer it, too. Anyway, here you go. My repairs are complete, without the distraction!"
+You hook the prime oar up to the punt.
 @rej
 #testcase-check-pre-punt-weaker-rule-if-sco-punt-weaker-is-true
 >punt weaker
@@ -2253,12 +2256,12 @@ You can only walk back west or take the punt east.
 @gt
 #testcase-goto-table-of-noways-pile-up-isle
 >n
-You can't see land anywhere except to the west.
+You can't see land anywhere except back to the west.
 
 @hint
 #testcase-values-eyes-number-of-a-pile-up-isle-is-1
 >eye
-{$EYERMNO}
+{$EYESWANDER1} the bay spikes.
 
 @part
 ##balance undos
@@ -2340,7 +2343,7 @@ The eyes light up green and show three dots, then five dots.
 @hom
 #testcase-homonym-reject-table-of-main-oronyms-pi
 >pi xxx
-Hmm. That kind of partway SOUNDED like it should work, but it didn't.
+Hmm. That SOUNDED like it should work at least part way, but it didn't.
 
 >pie crust
 by a point
@@ -2427,7 +2430,7 @@ No, that would put something way too high up out of reach, even if the light wer
 @rej
 #+testcase-check-pre-blast-ring-rule-if-player-is-not-in-sore-dark-or-sword-ark-is-not-in-sore-dark
 >blast ring
-You can see nothing to blast!
+Why, you bet you could make that from the blah string, but you see nothing blastable. Or that needs to be blasted, to help you progress. And it wouldn't do to carry around something that volatile. Accidents might happen.
 \\
 #+testcase-check-pre-terrible-aid-rule-if-player-is-not-in-sore-dark-and-player-does-not-have-terra-blade
 >terra blade
@@ -2476,7 +2479,7 @@ It takes a while of stumbling around, but you have confidence the sword ark is t
 @hint
 #+testcase-values-eyes-number-of-sore-dark-is-53
 >eye
-{$EYERMDONE}
+{$EYESWANDER1} the blah string.
 \\
 #testcase-values-eyes-number-of-sword-ark-is--1
 >eye sword ark
@@ -2522,7 +2525,7 @@ Hmm, yes, it doesn't matter if it's terrible while it's unattainable.
 \\
 #testcase-think-table-of-main-oronyms-pre-terrible-aid-rule
 >think
-You can summon a TERRIBLE AID once you can physically grab it.
+You can become the owner of a TERRIBLE AID once you can bring it down from the ark.
 \\
 #+testcase-think-table-of-main-oronyms-pre-blast-ring-rule
 >think
@@ -2571,7 +2574,7 @@ The eyes light up green and show eight dots, then three dots.
 @rej
 #+testcase-think-table-of-main-oronyms-pre-terrible-aid-rule
 >think
-You can summon a TERRIBLE AID now you can physically grab it.
+You can become the owner of a TERRIBLE AID now you can bring it down from the ark.
 
 >terrible aid
 by a point
@@ -2609,7 +2612,7 @@ You can leave the fort to the northeast.
 @hint
 #testcase-values-eyes-number-of-fort-earns-is-1
 >eye
-{$EYERMNO}
+{$EYESWANDER2} the oak lever and the felt wrap.
 
 @part
 ##balance undos
@@ -2646,7 +2649,7 @@ by a point
 #testcase-run-post-oh-clever-rule-default
 You think and think and think. Of course, they wouldn't want any old fool pulling the lever. So there's no obvious way to pull it. You try a hundred different ways, then feel clever on the hundred and first when -- CLICK -- it flips, revealing a compartment behind!
 The feeling of cleverness lasts only a few seconds, though. You realize how you could've seen it sooner if you'd been paying attention. After fifteen minutes, you feel even less clever for having spent fifteen minutes unconstructively visiting the past.
-Then you notice what the lever was hiding: a be-quick beak wick! Nice if you need speed, you're sure.
+Then you notice what the lever was hiding: a be-quick beak/wick! Nice if you need speed, you're sure.
 
 @rej
 #testcase-check-pre-oh-clever-rule-if-sco-oh-clever-is-true
@@ -2761,7 +2764,7 @@ It feels hopeless to go any way but back north. Well, for now.
 @hint
 #testcase-values-eyes-number-of-too-dark-tude-ark-is-1
 >eye
-{$EYERMNO}
+{$EYESWANDER1} the whole anger.
 \\
 #testcase-values-eyes-number-of-whole-anger-is-27
 >eye whole anger
@@ -2922,7 +2925,7 @@ by a point
 #testcase-check-pre-cellar-bin-rule-fallthrough
 #testcase-run-post-cellar-bin-rule-default
 You bang on the cell door, claiming you've been sent to the wrong place. To your surprise, two maintenance workers come by and agree. One pushes a button. You are spun around! You fall to the floor, dizzy.
-"Okay. Next time, if you fall in the trap, you'll fall somewhere else." You thank them, you guess, not entirely sure what good it will do.
+"Okay. Next time, if you fall in the trap, you'll fall here in the cellar instead of the cell." You thank them, you guess, not immediately sure what good it will do.
 \\
 #testcase-room-names-cellar-bin
 `Cellar Bin
@@ -2930,7 +2933,7 @@ You bang on the cell door, claiming you've been sent to the wrong place. To your
 @hint
 #testcase-values-eyes-number-of-cellar-bin-is--1
 >eye
-{$EYERMDONE}
+{$EYESWANDER0}
 
 @rej
 #testcase-check-pre-cellar-bin-rule-if-sco-cellar-bin-is-true-and-player-is-in-fort-earns-or-player-is-in-cellar-bin
@@ -3030,11 +3033,11 @@ Only back north or, once you figure how to suppress the "ouch" you feel, south.
 @hint
 #+testcase-values-eyes-number-of-sage-oaks-is-35
 >eye
-{$EYERMDONE}
+{$EYESWANDER0}
 \\
 #+testcase-values-eyes-number-of-sageoakscen-is-35
 >eye sage oaks
-The eyes show nothing. You've done everything you need to impress the sage oaks directly.
+The eyes show nothing. You've changed up everything you need to impress the sage oaks directly.
 
 @rej
 #testcase-check-pre-say-jokes-rule-if-sco-say-jokes-is-true
@@ -3268,7 +3271,7 @@ The eyes light up green and show four dots, then five dots.
 \\
 #testcase-values-eyes-number-of-scribes-is-1
 >eye scribes
-The eyes show nothing. Probably don't need to do anything to get something from the scribes directly.
+The eyes show nothing. Probably don't need to change up anything to get something from the scribes directly.
 
 @rej
 #+testcase-think-table-of-main-oronyms-pre-scry-broom-rule
@@ -3296,7 +3299,7 @@ The eyes show nothing. Perhaps it's better the broom isn't magical. You saw Fant
 \\
 #+testcase-values-eyes-number-of-scribe-room-is-45
 >eye
-{$EYERMDONE}
+{$EYESWANDER1} your dense pecs.
 
 >n
 >n
@@ -3320,7 +3323,7 @@ You can't see any way but back north.
 @hint
 #testcase-values-eyes-number-of-dust-which-is-1
 >eye
-{$EYERMNO}
+{$EYESWANDER2} your dense pecs and the prose weeping.
 
 @part
 ##balance undos
@@ -3418,11 +3421,11 @@ You already found what you could in the coal drum!
 @hint
 #+testcase-values-eyes-number-of-coal-drum-is-43
 >eye coal drum
-The eyes show nothing. You've done everything you need with the coal drum.
+The eyes show nothing. You've changed up everything you need with the coal drum.
 \\
 #testcase-values-eyes-number-of-cold-rum-is--1
 >eye cold rum
-{$EYEITMDONE}
+{$EYEITMDONE} the cold rum.
 
 @part
 ##balance undos
@@ -3518,7 +3521,7 @@ The scribes get together and nod their heads. They agree this must be it. Your r
 @hint
 #+testcase-values-eyes-number-of-bell-trusted-is-46
 >eye bell
-You can't see any such thing.
+{$NOTHEREHINT}
 \\
 #testcase-values-eyes-number-of-belt-rusted-is--1
 >eye belt rusted
@@ -3587,7 +3590,7 @@ You already shook off your initial embarrassment and fears. Too much itch, and y
 @hint
 #+testcase-values-eyes-number-of-bowl-ditch-is-44
 >eye
-{$EYERMDONE}
+{$EYESWANDER1} your dense pecs.
 
 @gt
 #+testcase-goto-table-of-noways-bowl-ditch
@@ -3639,7 +3642,7 @@ by a bonus point
 #testcase-check-pre-tour-boaters-rule-fallthrough
 #testcase-run-post-tour-boaters-rule-default
 You have a business idea! You explain it to the folks at Turbo Tours. They play it down, but of course, after a bit they implement it and it works well and they take credit for it.
-That's sort of a bummer, but you find it nice to be around people who are having their own adventures.
+That's sort of a bummer, but you are glad to have made the area a bit more accessible to less aggressive tourists.
 
 @rej
 #testcase-check-pre-tour-boaters-rule-if-sco-tour-boaters-is-true
@@ -3649,7 +3652,7 @@ You already brought in additional business to Turbo Tours!
 @hint
 #+testcase-values-eyes-number-of-turbo-tours-is--47
 >eye
-{$EYERMDONE}
+{$EYESWANDER2} your dense pecs and the star craft.
 
 @part
 ##balance undos
@@ -3684,7 +3687,8 @@ by a point
 @all
 #testcase-check-pre-stark-raft-rule-fallthrough
 #testcase-run-post-stark-raft-rule-default
-You let slip that perhaps a stark raft is more in your price range. A voice from behind the star craft agrees. They, in fact, have a particularly plain one which has been not at all good for business. They're willing to give it to you, if you promise not to loiter too much. Thus, they redirect you away to a new area of Turbo Tours, one without the star craft. You feel belittled, but hey, a free raft is a free raft. Your prime oar should work just fine on it. It's worth going back to the beach to get it.
+You let slip that perhaps a stark raft is more in your price range. A voice from behind the star craft agrees. They, in fact, have a particularly plain one which has been not at all good for business. They're willing to give it to you, if you promise not to loiter too much. Thus, they redirect you away to a new area of Turbo Tours, one without the star craft, and tell you the "budget" vacation is a rustic isle just south. Not at all crowded with tourists!
+You feel belittled, but hey, a free raft is a free raft. Your prime oar should work just fine on it. You quickly run back to the beach to get it, then return and fit it to the raft.
 
 @rej
 #testcase-check-pre-stark-raft-rule-if-sco-stark-raft-is-true
@@ -3826,7 +3830,7 @@ by a point
 #testcase-check-pre-bear-respond-rule-fallthrough
 #testcase-run-post-bear-respond-rule-default
 You have no idea whether to call a bear or even if it's a good idea. But you find a honeycomb high up in a tree. It's too high up for you, even when you return with the prime oar, which will maybe be useful if things get violent.
-You wave the oar at the tree, then wave it, hoping to catch a bear's attention. The bear nods at you as if to say "Huh, Neatest Honey Test!" You hand it the prime oar, and it swats down the honeycomb, which it takes. But it provides you with a variety of berries in payment. Then it lifts up a paw. You are on its territory. It would not do to stay. You have gotten what you want, and it is time to go. So you do.
+You wave the oar around the tree, hoping to catch a bear's attention. The bear nods at you as if to say "Huh, Neatest Honey Test!" You hand it the prime oar, and it swats down the honeycomb, which it takes. But it provides you with a variety of berries in payment for saving it the effort with the oar. Then it lifts up a paw. You are on its territory. It would not do to stay. You have gotten what you want, and it is time to go. So you do.
 
 @all+
 `Far Miles Farm Isles
@@ -3839,7 +3843,7 @@ Berries Pond is off limits now. You got enough there.
 @hint
 #testcase-values-eyes-number-of-farm-isles-is-1
 >eye
-{$EYERMNO}
+{$EYESWANDER2} your dense pecs and the Bar, Nopin'.
 \\
 #+testcase-values-eyes-number-of-fine-drinks-ad-is-45
 >eye fine drinks
@@ -3967,7 +3971,7 @@ You already discovered the deli!
 @hint
 #+testcase-values-eyes-number-of-sob-acres-is-36
 >eye
-{$EYERMDONE}
+{$EYESWANDER1} your dense pecs.
 
 @gt
 #+testcase-goto-table-of-noways-sob-acres
@@ -4002,7 +4006,7 @@ Not that way. Out.
 @hint
 #testcase-values-eyes-number-of-owners-is-1
 >eye owners
-The eyes show nothing. Probably don't need to do anything to get something from the fey loners/fail-owners directly.
+The eyes show nothing. Probably don't need to change up anything to get something from the fey loners/fail-owners directly.
 Perhaps you need to change things around the fey loners/fail-owners, though.
 
 @part
@@ -4043,7 +4047,7 @@ The surroundings are a bit more welcoming now. Oh, you can go east as well as ou
 @hint
 #+testcase-values-eyes-number-of-deli-stern-is-47
 >eye
-{$EYERMDONE}
+{$EYESWANDER1} your dense pecs.
 
 @rej
 #testcase-check-pre-dell-eastern-rule-if-sco-dell-eastern-is-true
@@ -4071,7 +4075,7 @@ While it's pretty open here, the only safe ways are south or west/inside.
 @hint
 #+testcase-values-eyes-number-of-owners-is-1
 >eye owners
-The eyes show nothing. Probably don't need to do anything to get something from the fey loners/fail-owners directly.
+The eyes show nothing. Probably don't need to change up anything to get something from the fey loners/fail-owners directly.
 Perhaps you need to change more things around the fey loners/fail-owners, though.
 
 @part
@@ -4219,7 +4223,7 @@ by a point
 #testcase-check-pre-wheat-rye-rule-fallthrough
 #testcase-run-post-wheat-rye-rule-default
 #APOSTROPHE-OK
-The fey loners/fail-owners applaud you. "Yes ... that's just the thing ..." they chop up the wheat and rye with the erstwhile Terra Blade. "Oh! There's one other thing ... business is booming so much, maybe this will come in handy for you. We don't need any repairs." They hand you some "Mope, Liars, Mo'" Pliers.
+The fey loners/fail-owners applaud you. "Yes ... that's just the thing ..." they chop up the wheat and rye with the erstwhile Terra Blade. They give you a good chunk.
 
 @hint
 #+testcase-values-eyes-number-of-whee-try-is-53
@@ -4231,10 +4235,6 @@ The fey loners/fail-owners applaud you. "Yes ... that's just the thing ..." they
 You've done everything you can here for the fey loners/fail-owners.
 !Perhaps
 \\
-#testcase-values-eyes-number-of-pliers-is-1
->eye pliers
-{$EYEITMNO}
-\\
 #testcase-values-eyes-number-of-bread-is-1
 >eye bread
 {$EYEITMNO}
@@ -4245,6 +4245,9 @@ You've done everything you can here for the fey loners/fail-owners.
 You already got enough free bread!
 
 >e
+
+@all
+"Oh! We almost forgot! Business is booming so much, maybe this will come in handy for you. We don't need any repairs at the moment, and if we did, we'd need a different tool." They hand you some "Mope, Liars, Mo'" Pliers.
 
 @part
 ##balance undos
@@ -4272,6 +4275,10 @@ You must have one word right for finding something more useful than dense pecs.
 #testcase-values-eyes-number-of-dense-pecs-is-35
 >eye dense pecs
 The eyes light up green and show three dots, then five dots.
+\\
+#testcase-values-eyes-number-of-pliers-is-1
+>eye pliers
+{$EYEITMNO}
 
 >den specs
 by a point
@@ -4353,7 +4360,7 @@ The groan odes retract, as nodes grow out, creating a more menacing noise. Ah, s
 @hint
 #+testcase-values-eyes-number-of-groan-odes-is-45
 >eye
-{$EYERMDONE}
+{$EYESWANDER1} the numbered nodes.
 
 @rej
 #testcase-check-pre-grow-nodes-rule-if-sco-grow-nodes-is-true

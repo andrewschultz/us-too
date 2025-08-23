@@ -13,8 +13,9 @@ by a point
 
 >i
 Your Aw-Lug-All-Ugh has nothing special in it.
-You have that too-rad tour ad flopping about, too. It seems non-critical. You can probably examine and then drop it.
-Note that X will default to A'ight, Amusing Item Using in the future.
+A'ight, Amusing Item Using, which you got to start, lists items Aunt Rickie-Anne asked for. You don't have any yet.
+You have that Urgh-Ought-'Er Jot flopping about, too. It probably only had stuff to help you get started, which might help you figure how to get going.
+For future reference, X will default to A'ight, Amusing Item Using in the future. It will be about as helpful to you as I/INVENTORY.
 
 >z
 

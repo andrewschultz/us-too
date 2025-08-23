@@ -12,9 +12,6 @@
 by a point
 
 >i
-Your Aw-Lug-All-Ugh has nothing special in it.
-You have that too-rad tour ad flopping about, too. It seems non-critical. You can probably examine and then drop it.
-Note that X will default to A'ight, Amusing Item Using in the future.
 
 >z
 
@@ -65,7 +62,7 @@ by a bonus point
 
 #testcase-homonym-reject-table-of-main-oronyms-bored
 >bored xxx
-Hmm. That kind of partway SOUNDED like it should work, but it didn't.
+No, becoming bored would be giving in. But you must be close, here.
 
 >board red
 by a point
@@ -159,7 +156,7 @@ by a point
 
 #testcase-homonym-reject-table-of-main-oronyms-pi
 >pi xxx
-Hmm. That kind of partway SOUNDED like it should work, but it didn't.
+Hmm. That SOUNDED like it should work at least part way, but it didn't.
 
 >pie crust
 by a point
