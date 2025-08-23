@@ -1025,7 +1025,8 @@ to say ditch-full:
 
 check going east in bowl ditch:
 	if sco-no-date is true and sco-barn-open is true:
-		say "You got that egg, and you destroyed the nodes. You're pretty sure the west is clear.";
+		say "You got that egg, and you destroyed the nodes. You're pretty sure the west is clear now.";
+		if sco-tour-boaters is false, max-down;
 		wink-out west;
 		wfas;
 
