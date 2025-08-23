@@ -198,7 +198,7 @@ to decide whether pile-done:
 volume cheat item stuff
 
 to say eye-with:
-	if current action is eyering:
+	if eye-the-room is true:
 		say "with the general area, though specific things may provide a clue";
 	else if noun is a sentient:
 		say "to [if noun is hostile]neutralize[else if noun is impressable]impress[else if noun is agreeable]aid[else]get something from[end if] [the noun] directly";
@@ -260,6 +260,12 @@ rule for printing a parser error (this is the check forks rule):
 rule for printing a parser error when the latest parser error is the not a verb I recognise error or the latest parser error is the didn't understand error (this is the catch bad verbs rule):
 	say "[generic-parser-error].";
 	the rule succeeds;
+
+rule for printing a parser error when the latest parser error is nothing to do error and player has pro ball:
+	if the player's command includes "all":
+		say "You already used ALL as you needed, for the pro ball. You don't need to act directly on multiple items.";
+		the rule succeeds;
+	continue the action;
 
 Us Too Definitions ends here.
 
