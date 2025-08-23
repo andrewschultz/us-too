@@ -12,16 +12,16 @@ table of main oronyms
 w1 (text)	w2 (text)	first-hom (text)	second-hom	hom-txt-rule (rule)	first-exact	first-close	second-exact	second-close	part-explain	think-cue	okflip	core	idid	everfail	best-room	check-rule	run-rule	wfull (topic)	think-advice (text)
 "loose"	"intro"	--	--	--	false	false	false	false	"finding something hidden in the lucent row"	false	true	false	false	false	my new mine ooh	pre-loose-intro rule	post-loose-intro rule	--	--
 "try"	"quest"	--	--	--	false	false	false	false	"how to get started and what to do"	false	true	true	false	false	mine ooh	pre-try-quest rule	post-try-quest rule	--	--
-"be"	"strong"	--	--	--	false	false	false	false	"getting rid of the beast"	false	true	true	false	false	mine ooh	pre-be-strong rule	post-be-strong rule	--	--
+"be"	"strong"	"bee"	--	--	false	false	false	false	"getting rid of the beast"	false	true	true	false	false	mine ooh	pre-be-strong rule	post-be-strong rule	--	--
 "nice"	"warm"	--	--	--	false	false	false	false	"making the swarm less aggressive"	false	true	true	false	false	mine ooh	pre-nice-warm rule	post-nice-warm rule	--	--
 "mess"	"pot"	--	--	--	false	false	false	false	"making the meh spot into something more useful"	false	true	true	false	false	mine ooh	pre-mess-pot rule	post-mess-pot rule	--	--
 "meh"	"skit"	--	--	--	false	false	false	false	"having harmless, useless fun with the mess kit"	false	true	false	false	false	mine ooh	pre-meh-skit rule	post-meh-skit rule	--	--
-"a"	"stew"	--	--	--	false	false	false	false	"achieving the game's objective"	false	true	true	false	false	mine ooh	pre-a-stew rule	post-a-stew rule	--	"You can make [b]A STEW[r] [once-now of pre-a-stew rule] you have all the ingredients you need. [b]X[r] should list them."
+"a"	"stew"	"uh"	--	--	false	false	false	false	"achieving the game's objective"	false	true	true	false	false	mine ooh	pre-a-stew rule	post-a-stew rule	--	"You can make [b]A STEW[r] [once-now of pre-a-stew rule] you have all the ingredients you need. [b]X[r] should list them."
 "herb"	"ranch"	--	--	--	false	false	false	false	"finding the first place to visit from the Ur-Branch"	false	true	true	false	false	ur branch	pre-herb-ranch rule	post-herb-ranch rule	--	"You can discover an HERB RANCH [once-now of pre-herb-ranch rule] you are back in the Ur-Branch."
 "summer"	"bay"	--	--	--	false	false	false	false	"letting the herb reveal a new location"	false	true	true	false	false	ur branch	pre-summer-bay rule	post-summer-bay rule	--	"You can discover a SUMMER BAY [once-now of pre-summer-bay rule] you are back in the Ur-Branch."
 "blah"	"copse"	"cops"	--	hom-blah-copse rule	false	false	false	false	"avoiding the black ops"	false	true	true	false	false	ur branch	pre-blah-copse rule	post-blah-copse rule	--	--
 "guard"	"entry"	--	--	--	false	false	false	false	"finding a way past the garden tree"	false	true	true	false	false	ur branch	pre-guard-entry rule	post-guard-entry rule	--	--
-"be"	"chill"	--	--	--	false	false	false	false	"dealing with the beach, ill"	false	true	true	false	false	Beach Ill	pre-be-chill rule	post-be-chill rule	--	--
+"be"	"chill"	"bee"	--	--	false	false	false	false	"dealing with the beach, ill"	false	true	true	false	false	Beach Ill	pre-be-chill rule	post-be-chill rule	--	--
 "punt"	"weaker"	--	--	--	false	false	false	false	"trading with the pun tweaker"	false	true	true	false	false	Beach Ill	pre-punt-weaker rule	post-punt-weaker rule	--	"You can get a PUNT WEAKER [once-now of pre-punt-weaker rule] you are able to please the pun tweaker."
 "base"	"pikes"	--	--	--	false	false	false	false	"figuring a way through the bay spikes"	false	true	true	false	false	a pile up isle	pre-base-pikes rule	post-base-pikes rule	--	--
 "pie"	"crust"	"pi"	--	--	false	false	false	false	"finding what's under the pike rust"	false	true	true	false	false	A Pile Up Isle	pre-pie-crust rule	post-pie-crust rule	--	"You can get the PIE CRUST [once-now of pre-pie-crust rule] you have a container for it."
@@ -30,10 +30,10 @@ w1 (text)	w2 (text)	first-hom (text)	second-hom	hom-txt-rule (rule)	first-exact	
 "blast"	"ring"	--	--	--	false	false	false	false	"finding the blah string's true purpose"	false	true	true	false	false	sore dark	pre-blast-ring rule	post-blast-ring rule	--	"You can BLAST RING [once-now of pre-blast-ring rule] you have found something to blast."
 "terrible"	"aid"	--	--	--	false	false	false	false	"becoming worthy of the Terra Blade"	false	true	true	false	false	sore dark	pre-terrible-aid rule	post-terrible-aid rule	--	"You can become the owner of a TERRIBLE AID [once-now of pre-terrible-aid rule] you can bring it down from the ark."
 "board"	"red"	"bored"	--	hom-board-red rule	false	false	false	false	"finding something in the Bore Dread"	false	true	true	false	false	bore dread	pre-board-red rule	post-board-red rule	--	--
-"malt"	"hour"	--	--	--	false	false	false	false	"befriending the guardians in the maul tower"	false	true	true	false	false	bore dread	pre-malt-hour rule	post-malt-hour rule	--	"You can call MALT HOUR [once-now of pre-malt-hour rule] you have a variety of alcohol to share."
+"malt"	"hour"	"mall"	--	hom-malt-hour rule	false	false	false	false	"befriending the guardians in the maul tower"	false	true	true	false	false	bore dread	pre-malt-hour rule	post-malt-hour rule	--	"You can call MALT HOUR [once-now of pre-malt-hour rule] you have a variety of alcohol to share."
 "join"	"aider"	--	--	--	false	false	false	false	"doing something worthwhile in the joy nadir"	false	true	true	false	false	joy nadir	pre-join-aider rule	post-join-aider rule	--	"You can call a JOIN AIDER [once-now of pre-join-aider rule] you have two items of power to join."
 "dupe"	"it"	--	--	--	false	false	false	false	"making the dew pit useful"	false	true	true	false	false	joy nadir	pre-dupe-it rule	post-dupe-it rule	--	"You can DUPE IT [once-now of pre-dupe-it rule] you have something unique and worth duplicating."
-"nah|naw"	"queue"	"gnaw"	--	--	false	false	false	false	"repelling the [team]"	false	true	true	false	false	blah copse	pre-nah-queue rule	post-nah-queue rule	--	--
+"nah|naw"	"queue"	"gnaw"	"cue"	--	false	false	false	false	"repelling the [team]"	false	true	true	false	false	blah copse	pre-nah-queue rule	post-nah-queue rule	--	--
 "surf"	"ready"	--	--	--	false	false	false	false	"giving Sir Freddie a new direction"	false	true	true	false	false	blah copse	pre-surf-ready rule	post-surf-ready rule	--	"You can SURF READY [once-now of pre-surf-ready rule] you have surfing materials for Sir Freddie."
 "or"	"clerk"	"ore|oar"	--	--	false	false	false	false	"figuring what Sir Freddie was scared of"	false	true	true	false	false	blah copse	pre-or-clerk rule	post-or-clerk rule	--	--
 "more"	"flares|flare"	--	"flayers|flayer|flair|flairs"	hom-flairs-flayers rule	false	false	false	false	"activating the morph lairs"	false	true	true	false	false	morph lairs	pre-more-flares rule	post-more-flares rule	--	--
@@ -43,40 +43,40 @@ w1 (text)	w2 (text)	first-hom (text)	second-hom	hom-txt-rule (rule)	first-exact	
 "pea"	"pod"	--	--	--	false	false	false	false	"finding something unusual within the Pea Stalks"	false	true	false	false	false	pea stalks	pre-pea-pod rule	post-pea-pod rule	--	--
 "can"	"take"	"cannes"	--	hom-can-take rule	false	false	false	false	"dispelling the Can't-Ache"	false	true	true	false	false	dome aching	pre-can-take rule	post-can-take rule	--	--
 "gray|grey"	"tin"	--	--	--	false	false	false	false	"discover what the Great Inn holds"	false	true	true	false	false	dome aching	pre-gray-tin rule	post-gray-tin rule	--	--
-"dough"	"making"	--	--	--	false	false	false	false	"doing something positive in [dome]"	false	true	true	false	false	dome aching	pre-dough-making rule	post-dough-making rule	--	"You can commence DOUGH MAKING [once-now of pre-dough-making rule] you have overcome the can't-ache."
-"in"	"earnest"	--	--	--	false	false	false	false	"figure how to visit the inner nest"	false	true	true	false	false	dome aching	pre-in-earnest rule	post-in-earnest rule	--	--
+"dough"	"making"	"doe"	--	--	false	false	false	false	"doing something positive in [dome]"	false	true	true	false	false	dome aching	pre-dough-making rule	post-dough-making rule	--	"You can commence DOUGH MAKING [once-now of pre-dough-making rule] you have overcome the can't-ache."
+"in"	"earnest"	"inn"	--	hom-in-earnest rule	false	false	false	false	"figure how to visit the inner nest"	false	true	true	false	false	dome aching	pre-in-earnest rule	post-in-earnest rule	--	--
 "pry"	"more"	--	--	--	false	false	false	false	"figuring how to take the prime oar"	false	true	true	false	false	inner nest	pre-pry-more rule	post-pry-more rule	--	--
 "oh|o"	"clever"	--	"cleaver"	hom-oh-clever rule	false	false	false	false	"operating the oak lever"	false	true	true	false	false	fort earns four turns	pre-oh-clever rule	post-oh-clever rule	--	--
-"bold"	"itch"	--	--	--	false	false	false	false	"figuring how to get back on your feet in Bowl/Ditch"	false	true	true	false	false	bowl ditch	pre-bold-itch rule	post-bold-itch rule	--	--
+"bold"	"itch"	"bowled"	--	--	false	false	false	false	"figuring how to get back on your feet in Bowl/Ditch"	false	true	true	false	false	bowl ditch	pre-bold-itch rule	post-bold-itch rule	--	--
 "stark"	"raft"	--	--	--	false	false	false	false	"finding more appropriate transport than the star craft"	false	true	true	false	false	turbo tours	pre-stark-raft rule	post-stark-raft rule	--	--
 "tour"	"boaters"	--	--	--	false	false	false	false	"bringing more business to Turbo Tours"	false	true	false	false	false	turbo tours	pre-tour-boaters rule	post-tour-boaters rule	--	--
-"find"	"rinks"	--	--	--	false	false	false	false	"seeing another place on the Farm Isles"	false	true	true	false	false	far miles farm isles	pre-find-rinks rule	post-find-rinks rule	--	--
+"find"	"rinks"	"fined"	--	--	false	false	false	false	"seeing another place on the Farm Isles"	false	true	true	false	false	far miles farm isles	pre-find-rinks rule	post-find-rinks rule	--	--
 "barn"	"open"	--	--	--	false	false	false	false	"overcoming rejection from the bar"	false	true	true	false	false	far miles farm isles	pre-barn-open rule	post-barn-open rule	--	"You can transact with the BARN OPEN [once-now of pre-barn-open rule] you have something of value to trade."
-"bear"	"respond"	--	--	--	false	false	false	false	"getting the berries in Berries Pond"	false	true	true	false	false	berries pond	pre-bear-respond rule	post-bear-respond rule	--	--
+"bear"	"respond"	"bare"	--	--	false	false	false	false	"getting the berries in Berries Pond"	false	true	true	false	false	berries pond	pre-bear-respond rule	post-bear-respond rule	--	--
 "saw"	"bakers"	--	--	--	false	false	false	false	"finding signs of life in Sob Acres"	false	true	true	false	false	sob acres	pre-saw-bakers rule	post-saw-bakers rule	--	--
 "dell"	"eastern"	--	--	--	false	false	false	false	"making Sob Acres less forbidding"	false	true	true	false	false	deli stern	pre-dell-eastern rule	post-dell-eastern rule	--	--
-"dope"	"ale"	--	--	--	false	false	false	false	"finding something to trade your dough pail for"	false	true	true	false	false	deli stern	pre-dope-ale rule	post-dope-ale rule	--	"You can trade for some DOPE ALE [once-now of pre-dope-ale rule] you've found find willing traders with a bit extra."
+"dope"	"ale"	--	"ail"	--	false	false	false	false	"finding something to trade your dough pail for"	false	true	true	false	false	deli stern	pre-dope-ale rule	post-dope-ale rule	--	"You can trade for some DOPE ALE [once-now of pre-dope-ale rule] you've found find willing traders with a bit extra."
 "beef"	"ordering"	--	--	--	false	false	false	false	"figuring what the [toon] really means"	false	true	true	false	false	deli stern	pre-beef-ordering rule	post-beef-ordering rule	--	--
 "wheat"	"rye"	--	--	--	false	false	false	false	"guessing what free samples are on offer"	false	true	true	false	false	deli stern	pre-wheat-rye rule	post-wheat-rye rule	--	--
 "grow"	"nodes"	--	--	--	false	false	false	false	"seeing what's behind the groan odes"	false	true	true	false	false	groan odes	pre-grow-nodes rule	post-grow-nodes rule	--	--
-"no"	"date"	--	--	--	false	false	false	false	"figuring how to destroy the nodes, or the most important one"	false	true	true	false	false	groan odes	pre-no-date rule	post-no-date rule	--	"You can claim NO DATE [once-now of pre-no-date rule] you have a tool that can destroy the nodes."
+"no"	"date"	"know"	--	--	false	false	false	false	"figuring how to destroy the nodes, or the most important one"	false	true	true	false	false	groan odes	pre-no-date rule	post-no-date rule	--	"You can claim NO DATE [once-now of pre-no-date rule] you have a tool that can destroy the nodes."
 "fell"	"trap"	--	--	--	false	false	false	false	"revealing what's behind the felt wrap"	false	true	true	false	false	fort earns	pre-fell-trap rule	post-fell-trap rule	--	--
-"cellar"	"bin"	--	--	--	false	false	false	false	"escaping the Cell, Urban"	false	true	true	false	false	cell urban	pre-cellar-bin rule	post-cellar-bin rule	--	--
-"too"	"broad"	--	--	--	false	false	false	false	"how to fracture the tube/rod"	false	true	true	false	false	tube rod	pre-too-broad rule	post-too-broad rule	--	--
-"ho"	"languor|langour"	--	--	--	false	false	false	false	"dealing with the paralyzing whole anger"	false	true	true	false	false	tude ark	pre-ho-langour rule	post-ho-langour rule	--	"You can yell HO LANGUOR [once-now of pre-ho-langour rule] you have done something, anything, else in the south."
+"cellar"	"bin"	"seller"	--	--	false	false	false	false	"escaping the Cell, Urban"	false	true	true	false	false	cell urban	pre-cellar-bin rule	post-cellar-bin rule	--	--
+"too"	"broad"	"to|two"	--	--	false	false	false	false	"how to fracture the tube/rod"	false	true	true	false	false	tube rod	pre-too-broad rule	post-too-broad rule	--	--
+"ho"	"languor|langour"	"hoe"	--	--	false	false	false	false	"dealing with the paralyzing whole anger"	false	true	true	false	false	tude ark	pre-ho-langour rule	post-ho-langour rule	--	"You can yell HO LANGUOR [once-now of pre-ho-langour rule] you have done something, anything, else in the south."
 "say"	"jokes"	--	--	--	false	false	false	false	"get by the Sage Oaks"	false	true	true	false	false	sage oaks	pre-say-jokes rule	post-say-jokes rule	--	"You can SAY JOKES [once-now of pre-say-jokes rule] you're cheerier for having done a bit more."
 "gas"	"pouch"	--	--	--	false	false	false	false	"see how to stop gasping OUCH"	false	true	true	false	false	sage oaks	pre-gas-pouch rule	post-gas-pouch rule	--	--
 "claim"	"it"	--	--	--	false	false	false	false	"gathering the clay mitt"	false	true	true	false	false	Dam Pink	pre-claim-it rule	post-claim-it rule	--	--
-"damp"	"ink"	--	--	--	false	false	false	false	"getting something from the dam"	false	true	true	false	false	dam pink	pre-damp-ink rule	post-damp-ink rule	--	"You can pick up DAMP INK [once-now of pre-damp-ink rule] you have a proper container."
+"damp"	"ink"	--	"inc"	--	false	false	false	false	"getting something from the dam"	false	true	true	false	false	dam pink	pre-damp-ink rule	post-damp-ink rule	--	"You can pick up DAMP INK [once-now of pre-damp-ink rule] you have a proper container."
 "scry"	"broom"	--	--	--	false	false	false	false	"getting something from the Scribe Room"	false	true	true	false	false	scribe room	pre-scry-broom rule	post-scry-broom rule	--	"You can SCRY BROOM and get it [once-now of pre-scry-broom rule] you have something the scribes want."
 "belt"	"rusted"	--	--	--	false	false	false	false	"figuring how to 'clean' the bell (trusted)"	false	true	true	false	false	scribe room	pre-belt-rusted rule	post-belt-rusted rule	--	--
 "pro"	"sweeping"	--	--	--	false	false	false	false	"figuring how to clear some dust a bit"	false	true	true	false	false	dust which	pre-pro-sweeping rule	post-pro-sweeping rule	--	"You can get PRO SWEEPING [once-now of pre-pro-sweeping rule] you have something to sweep with."
 "cold"	"rum"	--	--	--	false	false	false	false	"knowing what to look for in the coal drum"	false	true	true	false	false	dust which	pre-cold-rum rule	post-cold-rum rule	--	--
-"tea"	"leaves"	--	--	--	false	false	false	false	"divining what's beneath Teal Eaves"	false	true	true	false	false	dust which	pre-tea-leaves rule	post-tea-leaves rule	--	"You can get the TEA LEAVES [once-now of pre-tea-leaves rule] you have something that can get you to the top of the eaves."
+"tea"	"leaves"	"tee"	--	--	false	false	false	false	"divining what's beneath Teal Eaves"	false	true	true	false	false	dust which	pre-tea-leaves rule	post-tea-leaves rule	--	"You can get the TEA LEAVES [once-now of pre-tea-leaves rule] you have something that can get you to the top of the eaves."
 "summon"	"cheese"	--	--	--	false	false	false	false	"figuring what some munchies are"	false	true	true	false	false	--	pre-summon-cheese rule	post-summon-cheese rule	--	--
 "den"	"specs"	--	--	--	false	false	false	false	"finding something more useful than dense pecs"	false	true	true	false	false	--	pre-den-specs rule	post-den-specs rule	--	--
-"use"	"it"	--	--	--	false	false	false	false	"disobeying the throne's orders"	false	true	true	false	false	throne	pre-use-it rule	post-use-it rule	--	"You can USE IT [once-now of pre-use-it rule] you have an item of power to use."
-"lie"	"fruits"	--	--	--	false	false	false	false	"getting something useful from the life roots"	false	true	true	false	false	throne	pre-lie-fruits rule	post-lie-fruits rule	--	--
+"use"	"it"	"yews|yew"	--	--	false	false	false	false	"disobeying the throne's orders"	false	true	true	false	false	throne	pre-use-it rule	post-use-it rule	--	"You can USE IT [once-now of pre-use-it rule] you have an item of power to use."
+"lie"	"fruits"	"lye"	--	hom-lie-fruits rule	false	false	false	false	"getting something useful from the life roots"	false	true	true	false	false	throne	pre-lie-fruits rule	post-lie-fruits rule	--	--
 
 chapter mine ooh scoring
 
@@ -427,6 +427,9 @@ this is the post-board-red rule:
 	now player has board red;
 	declue-here;
 
+this is the hom-malt-hour rule:
+	say "No, you need to change the word's sound. And you don't have money to shop, either.";
+
 a wordtwisting rule (this is the pre-malt-hour rule):
 	if player is not in bore dread, unavailable;
 	if booze-score is 0:
@@ -686,6 +689,9 @@ this is the post-dough-making rule:
 	say "Excellent! Not only do you make the dough, but the great inn offers you somewhere to keep it. You wind up with a dough pail.";
 	now player has dough pail;
 	declue-here;
+
+this is the hom-in-earnest rule:
+	say "There's only room for one inn in this here dome.";
 
 a wordtwisting rule (this is the pre-in-earnest rule):
 	if player is not in dome aching, unavailable;
@@ -1181,6 +1187,9 @@ this is the post-use-it rule:
 	moot orb;
 	moot hell pin;
 	print-the-loc;
+
+this is the hom-lie-fruits rule:
+	say "You've already mostly cleaned up. Lye won't help."
 
 a wordtwisting rule (this is the pre-lie-fruits rule):
 	if player is not in throne, unavailable;
