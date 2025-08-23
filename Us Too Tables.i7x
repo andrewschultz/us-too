@@ -865,9 +865,8 @@ a wordtwisting rule (this is the pre-wheat-rye rule):
 
 this is the post-wheat-rye rule:
 	now sco-wheat-rye is true;
-	say "The [owners] applaud you. 'Yes ... that's just the thing ...' they chop up the wheat and rye with the erstwhile Terra Blade. 'Oh! There's one other thing ... business is booming so much, maybe this will come in handy for you. We don't need any repairs.' They hand you some [pliers].";
+	say "The [owners] applaud you. 'Yes ... that's just the thing ...' they chop up the wheat and rye with the erstwhile Terra Blade. They give you a good chunk.";
 	now player has rye bread;
-	now player has pliers;
 	declue whee try sign;
 
 chapter turbo tours scoring
