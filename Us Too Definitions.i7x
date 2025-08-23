@@ -132,6 +132,18 @@ definition: a direction (called di) is branchcan:
 	if the room di of ur branch is nowhere, no;
 	yes;
 
+definition: a direction (called di) is branchseen:
+	unless di is branchcan, no;
+	if the room di from branch is nowhere, no;
+	if the room di from branch is visited, yes;
+	no;
+
+definition: a direction (called di) is branchunseen:
+	unless di is branchcan, no;
+	if the room di from branch is nowhere, yes;
+	if the room di from branch is visited, no;
+	yes;
+
 after printing the name of a direction (called di) while pri-branch-reject is true:
 	if di is north and sco-blah-copse is false, say " to some black ops";
 	if the room di of location of player is visited, say " to [the room di of location of player]";

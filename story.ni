@@ -420,15 +420,20 @@ part ur branch
 Ur Branch is a room in universal. It is above My New Mine Ooh. printed name is "Ur-Branch". "There are so many branches here! While you can go back [b]DOWN[r] to your mine, [if sco-summer-bay is false]you have no idea where else to go. You could spend too much time wandering around. You could lose focus[else if sco-probe-all is false]there's only east, but maybe you can find more concrete places to visit[else]the branches make more sense than they did at first[end if].". eyes-number of Ur Branch is 45. eyes-rule of Ur Branch is pre-herb-ranch rule.
 
 rule for printing the locale description of ur branch:
-	now pri-branch-reject is true;
 	let numcan be number of branchcan directions;
-	if numcan is 0, say "Looks like you'll need to find something to do here to get started.";
-	if numcan > 0, say "The [if numcan > 1]branches you currently feel sure of lead[else]only branch you've found so far leads[end if] [list of branchcan directions]. ";
+	if numcan is 0:
+		say "Looks like you'll need to find something to do here to get started.";
+	else:
+		if number of branchseen directions > 0:
+			now pri-branch-reject is true;
+			say "The [if number of branchseen directions > 1]branches you've been to include[else]only available branch you've visited leads[end if] [list of branchseen directions]. ";
+		now pri-branch-reject is false;
+		if number of branchunseen directions > 0:
+			say "You've located [if number of branchunseen directions > 1]viable passages[else]a viable passage[end if] [list of branchunseen directions] without going there. ";
 	if number of branchdone directions > 0:
-		say "However, you don't need to go back [list of branchdone directions].";
+		say "Also, you've done all you need back [list of branchdone directions].";
 	else if numcan > 0:
 		say "[line break]";
-	now pri-branch-reject is false;
 	continue the action;
 
 check going in ur branch (this is the branch blocker rule): if noun is branchdone, say "[donetext of noun][line break]" instead;
