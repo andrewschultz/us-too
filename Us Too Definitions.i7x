@@ -38,6 +38,10 @@ volume types
 
 a stewitem is a kind of thing. a stewitem has text called invtext. a stewitem can be alcoholic, eatworthy, ingredient or uneatable. a stewitem is usually eatworthy.
 
+a stewitem can be listed-yet. a stewitem is usually not listed-yet.
+
+to decide which number is nds: decide on number of discovered stewitems;
+
 definition: a stewitem (called st) is discovered:
 	if st is mess kit:
 		if sco-mess-pot is true, yes;
@@ -53,6 +57,10 @@ volume rotroom and ordroom
 a rotroom is a kind of room. a rotroom has a rotroom called nextroom.
 
 an ordroom is a kind of rotroom. an ordroom has a number called rmord. rmord of an ordroom is usually 0. an ordroom has text called roomdirs.
+
+to decide whether ordrooms-seen:
+	if number of visited ordrooms is 3, yes;
+	no;
 
 ordrooms-in-order is a list of rooms variable. ordrooms-in-order is { tude ark, sage oaks, tube rod }.
 
@@ -77,7 +85,7 @@ to list-which-room:
 		else:
 			say "<a blank row ... odd>";
 		say "[line break]";
-	if number of visited ordrooms is 3:
+	if ordrooms-seen:
 		now gs-noted-r is true;
 		say "[line break]There's also a note that R cycles/rotates between [tube rod], [tude ark] and Sage Oaks, and RR does the reverse.";
 		if number of visited rotrooms is 6:
