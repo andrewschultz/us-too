@@ -245,7 +245,9 @@ chapter dense pecs / den specs
 
 the dense pecs are a plural-named thing. description is "You admire your well-earned, newfound physical fitness[if sco-den-specs is true], though perhaps you can swap it for something more useful, since this quest has been relatively nonviolent[else], as well as your prowess converting it into something more useful[end if].". eyes-number of dense pecs is 35. eyes-rule of dense pecs is pre-den-specs rule.
 
-the den specs are a plural-named thing. description is "You have no idea how cool or uncool they make you look. Probably not as cool as your dense pecs. But it sure was cool to find a den below [sob acres].". eyes-number of den specs is -1.
+the den specs are a plural-named thing. description is "You have no idea how cool or uncool they make you look. Probably not as cool as your dense pecs[if gs-den-seen is true]. But it sure was cool to find a den below [sob acres][end if].". eyes-number of den specs is -1.
+
+check wearing den specs: say "[if gs-den-seen is true]No need. You found where the den was.[else][one of]Whoah! They make everything look a bit weird. [or][stopping]You'll use them to have a look around when you visit somewhere new.[end if]" instead;
 
 part urgh ought er jot
 
