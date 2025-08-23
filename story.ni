@@ -1062,6 +1062,10 @@ part Deli Stern
 
 Deli Stern is a room in universal. printed name is "[if gs-deli-ale-left is true]'Die, Nerviness' Diner Venus[else]Deli, Stern[end if]". "You can only really go out[if sco-dell-eastern is true] (well, east, same thing)[end if] here.". eyes-number of Deli Stern is 47. eyes-rule of Deli Stern is pre-dell-eastern rule.
 
+after printing the locale description for Deli Stern when player was in Sob Acres and player has pliers:
+	say "'Business is great! We can't thank you enough. We wouldn't have the time. We're busy planning a new line of ice cream flavors. Say, did you ever find a use for those pliers?'";
+	continue the action;
+
 chapter Fey Loners Fail Owners
 
 the Fey Loners Fail Owners are a plural-named sentient in Deli Stern. Printed name is "fey loners/fail-owners". eyes-number of owners is 1. description is "They look pretty unsocial, which is pretty bad for business owners. Maybe you can TALK to them for what they need.". "Some [owners] [if gs-deli-dell-left is false]trudge around miserably here[else if gs-deli-ale-left is false][one of]look less miserable now[or]stand around, muttering about finding decent bread[stopping][else if sco-beef-ordering is false]point to the [toon][else if whee try is in deli and sco-wheat-rye is false]point at the WHEE TRY sign[else]beam with pride at their burgeoning business[end if]."
