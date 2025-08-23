@@ -279,7 +279,7 @@ description of Jot is "It's a note from [ara]: 'The row/ledge is for practice if
 
 report examining jot:
 	if gs-jot-row-ledge is false and lucent row is in mine:
-		say "Wait? Row/ledge? You only see a row ... hmm, small mystery, here.";
+		say "Wait? Row/ledge? You only [if player is in mine]see[else]saw[end if] a row ... hmm, small mystery, here.";
 		now gs-jot-row-ledge is true;
 	continue the action;
 
@@ -315,8 +315,7 @@ check thinking in Mine Ooh when sco-try-quest is false:
 	say "You're a bit lost, but you track what you know:";
 	say "[line break]--you went to [hwhs], called [hohs], and your response 'How so?' impressed the lawyers.";
 	say "[line break]--the lawyers reacted positively to 'My new mine, ooh!'";
-	if gs-taken-inventory is true:
-		say "[line break]--[the jot] and [using] are ... odd, to say the least.";
+	say "[line break]--[the jot] and [using], given to you at the start, are ... odd, to say the least.";
 	say "[line break]--your name is Trike West. [ara] said she REALLY liked that name.";
 	if doable-hinted is 1, say "[line break]--you also figured to need to make [b]A STEW[r] from the lawyers' 'Us too,' which is down the road, but it's good to have a goal in mind.";
 	if gs-taken-inventory is false:
@@ -347,7 +346,7 @@ to say intro-hintthings: say "You see [the list of hintthings in mine ooh] on it
 
 section lucent row
 
-a lucent row is a startprop in My New Mine Ooh. "[intro-hintthings].". eyes-number of lucent row is -55. eyes-rule of lucent row is pre-loose-intro rule.
+the lucent row is a startprop in My New Mine Ooh. "[intro-hintthings].". eyes-number of lucent row is -55. eyes-rule of lucent row is pre-loose-intro rule.
 
 check examining lucent row when lucent row is examined and number of hintthings in My New Mine Ooh is 0:
 	say "There's nothing on the lucent row now that you took the eyes and pawn, but it seems to hold a small mystery.[paragraph break]What could that practice be? [if jot is unexamined]Perhaps the [er jot] would offer a clue. [end if]Lucent is a weird word -- but [ara] wouldn't have had you do something weird early." instead;
