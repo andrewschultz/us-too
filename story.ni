@@ -498,7 +498,7 @@ invtext of herbs is "[if player does not have herbs]seasoning[else]you've got lo
 
 chapter black ops
 
-the black ops are a thing. "You also know black ops are lurking to the north, and you haven't figured what you really need to find there. Yet.". description is "If I could describe them, either they wouldn't be very good black ops. Or perhaps I can describe them well, but I'd get in big trouble if I did.[paragraph break](Looks nervously around, then whispers: 'Anyway. They're avoidable. I can't say more.')". eyes-number of black ops is 45. eyes-rule of black ops is pre-blah-copse rule.
+the black ops are a thing. "You also know black ops are lurking to the north, and you haven't figured what you really need to find there. Yet.". description is "If I could describe them usefully, they wouldn't be very good black ops. Or perhaps I can describe them well, but I'd get in big trouble if I did. Maybe somebody has even already had a talk with me about this matter![paragraph break](Looks nervously around, then whispers: 'Anyway. They're avoidable. I can't say more.')". eyes-number of black ops is 45. eyes-rule of black ops is pre-blah-copse rule.
 
 chapter garden tree
 
@@ -683,7 +683,7 @@ the gauche hip go ship is scenery. printed name is "Gauche/Hip GO-Ship". "It's r
 
 chapter punt weaker
 
-the punt weaker is a thing. "Your punt, weaker, floats here[punt-status].". description is "It seems pretty sturdy, actually. Perhaps its speed is weaker than something gas-powered or whatever.". eyes-number of punt weaker is -1.
+the punt weaker is a thing. "Your punt, weaker, floats here[punt-status].". description is "It seems pretty sturdy, actually. Perhaps its speed is weaker than something gas-powered or whatever[if sco-pry-more is true and sco-stark-raft is false]. The prime oar is attached to it[end if].". eyes-number of punt weaker is -1.
 
 check taking punt: say "You can just go east or west as needed." instead;
 
@@ -777,7 +777,7 @@ check going east in Bore Dread when sco-malt-hour is false: say "Not without des
 
 chapter maul tower
 
-the maul tower is a thing in Bore Dread. "A maul tower rises up menacingly to the east.". description is "[if sco-malt-hour is true]It seems much cozier not you met and bri--, uh, made friends with the inhabitants[else]You're not sure how to get past it, especially since you won't be able to maul back[end if].". eyes-number of maul tower is 44. eyes-rule of maul tower is pre-malt-hour rule.
+the maul tower is a thing in Bore Dread. "[if sco-dupe-it is true]The maul tower guards the way east, but there's nothing left to do there[else if sco-malt-hour is false]Well, there's that maul tower guarding the way east. Maybe you can sneak past it[else]There might be something still to do east of the maul tower[end if].". description is "[if sco-malt-hour is true]It seems much cozier not you met and bri--, uh, made friends with the inhabitants[else]You're not sure how to get past it, especially since you won't be able to maul back[end if].". eyes-number of maul tower is 44. eyes-rule of maul tower is pre-malt-hour rule.
 
 chapter board red
 
@@ -924,7 +924,7 @@ to say oak-how: say "It's not immediately obvious how. But there must be a way, 
 
 chapter beak wick
 
-the be quick beak wick is scenery. "The [wick] sits here. [if extra-turns > 0]You can still feel its effect, though it can't hurt to touch it again[else if beak wick is examined]Just do anything with it to get it going again[else]It doesn't seem dangerous. Perhaps you should inspect it a bit[end if].". printed name is "be-quick beak/wick". eyes-number of be quick beak wick is -1.
+the be quick beak wick is scenery. "The [wick] sits here. [if extra-turns > 0]You can still feel its effect, though it can't hurt to touch it again[else if beak wick is examined]You poke at it again[else]It doesn't seem dangerous. You inspect it a bit more closely[end if].". printed name is "be-quick beak/wick". eyes-number of be quick beak wick is -1.
 
 check waiting when extra-turns > 0: say "You're too antsy to sit and wait. For better or worse, the be-quick beak-wick doesn't just give you the opportunity to be faster. It COMPELS you." instead;
 
@@ -953,7 +953,7 @@ the felt wrap is a thing in Fort Earns Four Turns. "Some completely innocuous fe
 
 chapter fell trap
 
-the fell trap is a thing. "The fell trap has replaced the felt wrap. [if sco-cellar-bin is true]It looks as though it's been reset since you last visited, if you need to [b]EXAMINE[r] it and get caught again, for whatever reason[else]It looks pretty vicious! It might even catch anyone trying to [b]EXAMINE[r] it[end if]. But it might send you somewhere new you can't walk to.". description is "Filler text you shouldn't see. The check examining rule should send you to a new room.". eyes-number of fell trap is -1.
+the fell trap is a thing. "The fell trap [one of]has replaced the felt wrap[or]sits here ominously[stopping]. [if sco-cellar-bin is true]It looks as though it's been reset since you last visited, if you need to [b]EXAMINE[r] it and get caught again, for whatever reason[else]It looks pretty vicious! It might even catch anyone trying to [b]EXAMINE[r] it[end if]. But it might send you somewhere new you can't walk to.". description is "Filler text you shouldn't see. The check examining rule should send you to a new room.". eyes-number of fell trap is -1.
 
 check examining fell trap:
 	if cell urban is unvisited:
@@ -991,7 +991,10 @@ book west branch
 
 part Bowl Ditch
 
-Bowl Ditch is a room in universal. "[if sob acres is visited]You wonder why this place ever intimidated you. There's Sob Acres to the north and the Ur-Branch back east[else if sco-bold-itch is true]Now you've got your bearings, you see passages north and west, as well as back east[else]Ouch. Oww. You're lying on the ground, embarrassed how you tripped and fell, worried and scared there's no way back. Your injury is probably more psychological than physical, but it's there, and you need to overcome it[end if].". eyes-number of Bowl Ditch is 44. eyes-rule of Bowl Ditch is pre-bold-itch rule.
+Bowl Ditch is a room in universal. "[if sco-bold-itch is true][ditch-full][else]Ouch. Oww. You're lying on the ground, embarrassed how you tripped and fell, worried and scared there's no way back. Your injury is probably more psychological than physical, but it's there, and you need to overcome it[end if].". eyes-number of Bowl Ditch is 44. eyes-rule of Bowl Ditch is pre-bold-itch rule.
+
+to say ditch-full:
+	say "Now you've got your bearings, you wonder why this place ever intimidated you. You see passages north[if acres is visited] to [sob acres][end if] and west[if tours is visited] to [tours][end if], as well as back east to Ur-Branch"
 
 check going east in bowl ditch:
 	if sco-no-date is true and sco-barn-open is true:
@@ -1080,7 +1083,7 @@ The mope liars mo pliers are a plural-named thing. description is "On the one ha
 
 chapter WHEE TRY
 
-the WHEE TRY sign is a thing. "A WHEE TRY sign is here--free samples!". description is "[if sco-wheat-rye is false]The [owners] see you looking at the sign, which is covered with different types of bread. 'You won't just get a small free sample. You'll get a lot more... of what? Well, you have to guess[else]You look at the sign again. Man, those were some good free samples[end if].". eyes-number of WHEE TRY is 53. eyes-rule of WHEE TRY is pre-wheat-rye rule.
+the WHEE TRY sign is a thing. "A WHEE TRY sign is here--[if sco-wheat-rye is true]it'd be cheery even if you hadn't gotten free samples from it.[else]free samples![end if]". description is "[if sco-wheat-rye is false]The [owners] see you looking at the sign, which is covered with different types of bread. 'You won't just get a small free sample. You'll get a lot more... of what? Well, you have to guess.'[else]You look at the sign again. Man, those were some good free samples.'[end if]". eyes-number of WHEE TRY is 53. eyes-rule of WHEE TRY is pre-wheat-rye rule.
 
 chapter wheat rye
 
@@ -1090,11 +1093,11 @@ invtext of rye bread is "[if sco-wheat-rye is false]more than one type of bread[
 
 part groan odes
 
-Groan Odes is a room in universal. printed name is "[if sco-grow-nodes is false]Groan Odes[else]Numb Bursting Number String[end if]". "[if sco-grow-nodes is false]Groan odes ring out everywhere. What would this place be like without them? Are they repressing happy people? Covering something more sinister?[else]The groan odes have ceased, replaced by numbered nodes, from which emanate eerie silence interrupted by occasional menacing beeping and mechanical voice mentioning destruction is IMMINENT and all that sort of thing.[end if]". eyes-number of Groan Odes is 45. eyes-rule of groan odes is pre-grow-nodes rule.
+Groan Odes is a room in universal. printed name is "[if sco-grow-nodes is false]Groan Odes[else]Numb Bursting Number String[end if]". "[if sco-grow-nodes is false]Groan odes ring out everywhere. What would this place be like without them? Are they repressing happy people? Covering something more sinister?[else]The groan odes have ceased, replaced by numbered nodes, from which emanate eerie silence interrupted by occasional menacing beeping and mechanical voice mentioning destruction is IMMINENT and all that sort of thing.[end if][paragraph break]Only passage back up seems safe.". eyes-number of Groan Odes is 45. eyes-rule of groan odes is pre-grow-nodes rule.
 
 chapter numbered nodes
 
-the numbered nodes are plural-named scenery. "It's a long string of numbered nodes: node one, node two, and so forth. You feel helpless at the thought of disabling it all. Thus, a numb bursting number string.". eyes-number of nodes is 24. eyes-rule of nodes is pre-no-date rule.
+the numbered nodes are plural-named scenery. "It's a long string of numbered nodes: node one, node two, and so forth. You feel helpless at the thought of disabling it all. Thus, a numb bursting number string. But maybe there is a weak link!". eyes-number of nodes is 24. eyes-rule of nodes is pre-no-date rule.
 
 chapter hell pin
 
@@ -1117,7 +1120,7 @@ check taking raft: say "You can just go south or north as needed." instead;
 
 chapter stark raft
 
-the stark raft is a thing. "The stark raft [if farm isles is unvisited]waits here for you to take it and see what's south[else if player is in farm isles]can take you back north to [tours][else if sco-barn-open is true]sits here. It served you well, but you don't need to go back across the water[else]can lead you back south to the Farm Isles[end if].". description is "It's plain, but sturdy enough, you think, and your prime oar will help steer it[if far miles farm isles is visited] back south[end if].". eyes-number of stark raft is -1.
+the stark raft is a thing. "The stark raft [if farm isles is unvisited]waits here for you to take it and see what's south[else if player is in farm isles]can take you back north to [tours][else if sco-barn-open is true]sits here. It served you well, but you don't need to go back across the water. You've toured where you need to[else]can lead you back south to the Farm Isles[end if].". description is "It's plain, but sturdy enough, you think, and your prime oar will help steer it[if far miles farm isles is visited] back south[end if].". eyes-number of stark raft is -1.
 
 part Far Miles Farm Isles
 
@@ -1129,7 +1132,7 @@ check going south in farm isles when sco-bear-respond is true: say "Berries Pond
 
 chapter bar nopin
 
-the Bar Nopin is a thing in Far Miles. "A Bar, Nopin['], sits here trying to look elite. Perhaps you don't need to get there but somewhere else. It has a fine drinks add attached to it.". description is "Unfortunately, with the fine drinks sign on it, it's probably out of your price range, so it won't help with the alcohol requirements in your list. [if booze-score is 2]No big deal. You found enough[else if booze-score is 1]But you've found some already, which is nice[else]Perhaps there is easier booze to find elsewhere[end if].". printed name of Bar Nopin is "Bar, Nopin[']". eyes-number of bar nopin is 44. eyes-rule of bar nopin is pre-barn-open rule.
+the Bar Nopin is a thing in Far Miles. "A Bar, Nopin['], sits here trying to look elite. Perhaps you don't need to get there but somewhere else. It has a fine drinks ad attached to it.". description is "Unfortunately, with the fine drinks sign on it, it's probably out of your price range, so it won't help with the alcohol requirements in your list. [if booze-score is 2]No big deal. You found enough[else if booze-score is 1]But you've found some already, which is nice[else]Perhaps there is easier booze to find elsewhere[end if].". printed name of Bar Nopin is "Bar, Nopin[']". eyes-number of bar nopin is 44. eyes-rule of bar nopin is pre-barn-open rule.
 
 check entering bar: say "If you tried to get loaded, you'd soon feel low, dead." instead;
 
@@ -1143,7 +1146,7 @@ the egg of a guv is a thing. description is "It's only one egg, but boy is it im
 
 part Berries Pond
 
-Berries Pond is a room in universal. eyes-number of Berries Pond is 47. eyes-rule of Berries Pond is pre-bear-respond rule. "All sorts of vegetation is here. Alas, the bushes seem to have been picked clean. Maybe someone or something who knows more about the area could help you."
+Berries Pond is a room in universal. eyes-number of Berries Pond is 47. eyes-rule of Berries Pond is pre-bear-respond rule. "All sorts of vegetation is here. Alas, the bushes seem to have been picked clean. Maybe someone or something who knows more about the area could help you. Or you could just go back north to the more populated part of the farm isles."
 
 check going to berries pond when sco-bear-respond is true: say "That would be greedy." instead;
 
@@ -1213,7 +1216,7 @@ after printing the locale description for scribe room when player has broom and 
 
 chapter scribes
 
-the scribes are sentients in Scribe Room. "[one of]Unsurprisingly,[or]Those[stopping] scribes continue to do their scribing thing and occasionally bustle about to assist others' scribing.". description is "They look very impressive and uninterested in you [if sco-belt-rusted is true]now you've transacted[else if sco-scry-broom is true]unless you can help with the bell[else]unless you have something for them[end if].". eyes-number of scribes is 1.
+the scribes are plural-named sentients in Scribe Room. "[one of]Unsurprisingly,[or]Those[stopping] scribes continue to do their scribing thing and occasionally bustle about to assist others' scribing.". description is "They look very impressive and uninterested in you [if sco-belt-rusted is true]now you've transacted[else if sco-scry-broom is true]unless you can help with the bell[else]unless you have something for them[end if].". eyes-number of scribes is 1.
 
 chapter broom
 
@@ -1233,7 +1236,7 @@ Dust Which Does Twitch is a rotroom in r-south. printed name is "[if sco-pro-swe
 
 chapter prose weeping
 
-the prose weeping is a thing in Dust Which Does Twitch. "The sound of prose, weeping, rises from all the dustiness.". description is "You really don't want to examine or analyze it. It would be nice to get rid of.". eyes-number of prose weeping is 38. eyes-rule of prose weeping is pre-pro-sweeping rule.
+the prose weeping is a thing in Dust Which Does Twitch. "The sound of prose, weeping, rises from all the dustiness.". description is "You really don't want to examine or analyze it. It would be nice to get rid of.". indefinite article of prose is "some". eyes-number of prose weeping is 38. eyes-rule of prose weeping is pre-pro-sweeping rule.
 
 chapter coal drum
 
@@ -1295,7 +1298,7 @@ understand the command "exit" as something new.
 check going outside:
 	unless the room gone to is nowhere, continue the action;
 	let v be number of viable directions;
-	if v > 1, say "Out is ambiguous here. There are [v in words] ways to go out: [list of viable directions]." instead;
+	if v > 1, say "Out is ambiguous here. There are [v in words] ways to leave: [list of viable directions]." instead;
 	if v < 1, continue the action;
 	let j be a random viable direction;
 	if j is not outside:
@@ -1445,6 +1448,7 @@ report eyeing team:
 report eyeing orc lurk foreboding:
 	say "Just to check, it's not 'foreboding' to focus on, here.";
 	continue the action;
+
 check eyeing owners when sco-wheat-rye is true: say "You've done everything you can here for [the owners]." instead;
 
 report eyeing owners:
