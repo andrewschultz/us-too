@@ -499,6 +499,12 @@ check going west in Ur Branch when sco-hike-up is true and west is not branchdon
 
 check going inside in Ur Branch when sco-guard-entry is false and garden tree is in location of player: say "The garden tree blocks you. It doesn't allow just any old visitors." instead;
 
+check going south in Ur Branch when sco-hike-up is true and extra-turns is 0 and not ordrooms-seen:
+	say "The way south gets tangled very quickly. You sense there are a lot of predators you won't be able to run from, at least, not in your current condition.";
+	if number of visited ordrooms > 0:
+		say "[line break]But all the same, you've been somewhere. There wasn't a lot to do. You wonder if there could be more.";
+	the rule succeeds;
+
 chapter herbs
 
 some herbs are a proper-named eatworthy stewitems. description is "It's some herb, eh? [if sco-summer-bay is true]It helped you find a new place to visit, and it's still edible![else]Apparently it can give enlightenment to new life paths, but, uh, not THAT way.[end if]". printed name is "[if sco-summer-bay is true]those herbs[else]'some herb, eh?'". understand "herbs/herb eh" and "herb" as some herbs. eyes-number of some herbs is 63. eyes-rule of herbs is pre-summer-bay rule.
