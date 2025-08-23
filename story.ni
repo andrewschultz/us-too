@@ -1498,9 +1498,13 @@ check noteating:
 	if noun is sly size slice eyes, say "[this-game] is an IFComp entry, not an EctoComp entry." instead;
 	if noun is a sentient, say "Canny? Can nibble? Canny? Bull..." instead;
 	if noun is blah string or noun is felt, say "Well, full of fiber, I guess..." instead;
+	if noun is dough pail, say "But it's raw. Eww." instead;
+	if noun is egg of a guv, say "But then you wouldn't have an egg at all." instead;
+	if noun is life roots, say "High in fiber, but ... well, there's food beneath th em." instead;
+	if noun is an alcoholic stewitem, say "Alcohol shouldn't replace meals." instead;
 	if noun is an eatworthy stewitem, say "Some host you are. Wait until the meal is started." instead;
 	if noun is ingredient stewitem, say "Ugh ... needs preparation." instead;
-	if noun is uneatable stewitem, say "Can't eat that, but it'll help prepare food.." instead;
+	if noun is uneatable stewitem, say "Can't eat that, but it'll help prepare food." instead;
 	say "That's probably not edible." instead;
 
 book talk (redefined from standard Inform usage in Oronym Core)
