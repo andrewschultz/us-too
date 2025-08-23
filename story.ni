@@ -36,7 +36,9 @@ include Us Too Tables by Andrew Schultz.
 
 include Us Too Mistakes by Andrew Schultz.
 
-[ section beta heading (later) ]
+section beta testing - not for release
+
+include Us Too Beta Testing by Andrew Schultz.
 
 section testing headings - not for release
 
@@ -74,6 +76,8 @@ House Well How Swell is a room in intro. printed name is "House Well-How-Swell".
 
 after reading a command when player is in House Well How Swell:
 	let w1 be word number 1 in the player's command;
+	if in-beta is true:
+		if w1 is "j" or w1 is "jsouth", continue the action;
 	if debug-state is true:
 		if w1 is "test" or w1 is "gonear":
 			continue the action;
