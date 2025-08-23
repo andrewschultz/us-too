@@ -725,11 +725,7 @@ Blah Copse is a room in universal. "[if sco-or-clerk is false]The only really cl
 check going to Blah Copse when sco-blah-copse is false:
 	now gs-tried-black-ops is true;
 	move black ops to Ur Branch;
-	say "[one of]You walk north, but somehow, you stumble by a black ops site, and you're flagged down. What are you doing here? How did you even get close? After some questioning, you're sent back to the Ur-Branch by people who 'suggest' you forget this ever happened. Returning is ... not advised. This does nothing to quell your curioaity about what's REALLY north[or]Oh, no, you can't risk going back to the black ops site. The pro ball indicated something north, but you're missing where you REALLY need to go. Once you know that, you know you can avoid the wrong turn. Until then, it's too risky.[stopping]"  instead;
-
-after printing the locale description for Blah Copse when sco-surf-ready is true and sco-or-clerk is false:
-	say "Sir Freddie also thought he heard an orc lurk to the north. What's up with that?";
-	continue the action;
+	say "[one of]You walk north, but somehow, you stumble by a black ops site, and you're flagged down. What are you doing here? How did you even get close? After some questioning, you're sent back to the Ur-Branch by people who 'suggest' you forget this ever happened. Returning is ... not advised. This does nothing to quell your curioaity about what's REALLY north[or]Oh, no, you can't risk going back to the black ops site. The pro ball indicated something north, but you're missing where you REALLY need to go. Once you know that, you know you can avoid the wrong turn. Until then, it's too risky[stopping]."  instead;
 
 chapter Forest Team
 
@@ -744,6 +740,10 @@ understand "f/fred/freddy" and "sir f/fred/freddy" as Sir Freddie when Sir Fredd
 chapter blah string
 
 the blah string is a thing. description is "Looking at it, it doesn't seem like it could become anything powerful. Could it?". indefinite article of blah string is "some". eyes-number of blah string is 54. eyes-rule of blah string is pre-blast-ring rule.
+
+chapter orc lurk foreboding
+
+the orc lurk foreboding is a thing. "Sir Freddie's orc lurk foreboding was caused by something to the north. How to face it or prove it wasn't serious?". description is "You can't tell the exact source of Sir Freddie's orc lurk foreboding. Somewhere to the north[if player has eyes]. If you needed them to, your [eyes] could probably get a read on it[end if].". eyes-number of foreboding is 25. eyes-rule of foreboding is pre-or-clerk rule.
 
 part Morph Lairs
 
@@ -1442,6 +1442,9 @@ report eyeing team:
 	say "Hmm, that seems a bit short. Can't be them. Maybe what they're saying.";
 	continue the action;
 
+report eyeing orc lurk foreboding:
+	say "Just to check, it's not 'foreboding' to focus on, here.";
+	continue the action;
 check eyeing owners when sco-wheat-rye is true: say "You've done everything you can here for [the owners]." instead;
 
 report eyeing owners:
