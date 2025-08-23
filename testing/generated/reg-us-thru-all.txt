@@ -17,7 +17,6 @@ by a point
 `My New Mine, Ooh!
 
 >i
-
 Your Aw-Lug-All-Ugh has nothing special in it.
 A'ight, Amusing Item Using, which you got to start, lists items Aunt Rickie-Anne asked for. You don't have any yet.
 You have that Urgh-Ought-'Er Jot flopping about, too. It probably only had stuff to help you get started, which might help you figure how to get going.
@@ -489,7 +488,7 @@ The tube/rod slowly cracks, then bursts. A passage now leads south. You pause a 
 >s
 
 #testcase-room-names-too-dark-tude-ark
-`Too-Dark Tude Ark
+`Too-Dark 'Tude Ark
 
 >ho langour
 by a point

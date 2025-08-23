@@ -139,7 +139,7 @@ The eyes show nothing. You've changed up everything you need with the loose intr
 
 #testcase-values-eyes-number-of-goal-edge-go-ledge-is-1
 >eye goal edge go ledge
-The eyes show nothing. Probably don't need to change up anything with
+The eyes show nothing. Probably don't need to change up anything with the Goal-Edge-Go Ledge.
 
 #testcase-values-eyes-number-of-aight-amusing-item-using-is-66
 >eye aight amusing item using
@@ -180,7 +180,7 @@ by a point
 
 #+testcase-values-eyes-number-of-some-herbs-is-63
 >eye some herbs
-The eyes show nothing. You've changed up everything you need with
+The eyes show nothing. You've changed up everything you need with those herbs.
 
 >e
 
@@ -215,11 +215,11 @@ by a point
 
 #+testcase-values-eyes-number-of-pro-ball-is-53
 >eye pro ball
-The eyes show nothing. You've changed up everything you need with
+The eyes show nothing. You've changed up everything you need with the pro ball.
 
 #testcase-values-eyes-number-of-gauche-hip-go-ship-is-1
 >eye ship
-The eyes show nothing. Probably don't need to change up anything with
+The eyes show nothing. Probably don't need to change up anything with the Gauche/Hip GO-Ship.
 
 #testcase-values-eyes-number-of-pun-tweaker-is-46
 >eye pun tweaker
@@ -248,7 +248,7 @@ by a bonus point
 
 #+testcase-values-eyes-number-of-mess-kit-is--34
 >eye mess kit
-The eyes show nothing. You've changed up everything you need with
+The eyes show nothing. You've changed up everything you need with the mess kit.
 
 >u
 >ne
@@ -266,7 +266,7 @@ Nothing for the general area, and the sly size-slice eyes don't point to any ind
 
 #testcase-values-eyes-number-of-board-red-is--1
 >eye board red
-The eyes show nothing. You've changed up everything you need with
+The eyes show nothing. You've changed up everything you need with the board (red).
 
 #testcase-values-eyes-number-of-maul-tower-is-44
 >eye maul tower
@@ -368,7 +368,7 @@ Nothing (significant) here like that. (Once-per-room reminder:) room names are n
 
 #testcase-values-eyes-number-of-rope-ladder-is--1
 >eye rope ladder
-The eyes show nothing. You've changed up everything you need with
+The eyes show nothing. You've changed up everything you need with the rope ladder.
 
 #testcase-values-eyes-number-of-garden-tree-is-55
 >eye garden tree
@@ -393,13 +393,13 @@ by a bonus point
 
 #testcase-values-eyes-number-of-pea-pod-is--1
 >eye pea pod
-The eyes show nothing. You've changed up everything you need with
+The eyes show nothing. You've changed up everything you need with the pea pod.
 
 >out
 
 #+testcase-values-eyes-number-of-garden-tree-is-55
 >eye garden tree
-The eyes show nothing. You've changed up everything you need with
+The eyes show nothing. You've changed up everything you need with the garden tree.
 
 >se
 
@@ -431,11 +431,11 @@ by a point
 
 #+testcase-values-eyes-number-of-great-inn-is-43
 >eye great inn
-The eyes show nothing. You've changed up everything you need with
+The eyes show nothing. You've changed up everything you need with the great inn.
 
 #testcase-values-eyes-number-of-gray-tin-is--1
 >eye gray tin
-The eyes show nothing. You've changed up everything you need with
+The eyes show nothing. You've changed up everything you need with the gray tin.
 
 >dough making
 by a point
@@ -449,7 +449,7 @@ by a point
 
 #+testcase-values-eyes-number-of-inscen-is-27
 >eye inner nest
-The eyes show nothing. You've changed up everything you need with
+The eyes show nothing. You've changed up everything you need with the inner nest.
 
 >in
 
@@ -466,7 +466,7 @@ by a point
 
 #+testcase-values-eyes-number-of-prime-oar-is-34
 >eye prime oar
-The eyes show nothing. You've changed up everything you need with
+The eyes show nothing. You've changed up everything you need with the prime oar.
 
 >out
 >nw
@@ -482,7 +482,7 @@ by a point
 
 #testcase-values-eyes-number-of-punt-weaker-is--1
 >eye punt weaker
-The eyes show nothing. You've changed up everything you need with
+The eyes show nothing. You've changed up everything you need with the punt (weaker).
 
 >e
 
@@ -503,7 +503,7 @@ Nothing (significant) here like that.
 
 #testcase-values-eyes-number-of-base-pikes-is--1
 >eye base pikes
-The eyes show nothing. You've changed up everything you need with
+The eyes show nothing. You've changed up everything you need with the base pikes.
 
 #testcase-values-eyes-number-of-pike-rust-is-35
 >eye pike rust
@@ -518,7 +518,7 @@ Nothing (significant) here like that.
 
 #testcase-values-eyes-number-of-pie-crust-is--1
 >eye pie crust
-The eyes show nothing. You've changed up everything you need with
+The eyes show nothing. You've changed up everything you need with the pie crust.
 
 #testcase-values-eyes-number-of-high-cup-is-42
 >eye high cup
@@ -529,7 +529,7 @@ by a point
 
 #+testcase-values-eyes-number-of-high-cup-is-42
 >eye high cup
-The eyes show nothing. You've changed up everything you need with
+The eyes show nothing. You've changed up everything you need with the high cup.
 
 >w
 >w
@@ -549,7 +549,7 @@ The eyes see nothing in the general area but seem to be wandering to the blah st
 
 #testcase-values-eyes-number-of-sword-ark-is--1
 >eye sword ark
-The eyes show nothing. You've changed up everything you need with
+The eyes show nothing. You've changed up everything you need with the sword ark.
 
 #+testcase-values-eyes-number-of-blah-string-is-54
 >eye blah string
@@ -571,7 +571,7 @@ by a point
 
 #+testcase-values-eyes-number-of-terra-blade-is-83
 >eye terra blade
-The eyes show nothing. You've changed up everything you need with
+The eyes show nothing. You've changed up everything you need with the Terra Blade.
 
 >sw
 
@@ -594,7 +594,7 @@ Nothing (significant) here like that.
 
 #testcase-values-eyes-number-of-be-quick-beak-wick-is--1
 >eye be quick beak wick
-The eyes show nothing. You've changed up everything you need with
+The eyes show nothing. You've changed up everything you need with the be-quick beak/wick.
 
 >ne
 
@@ -649,7 +649,7 @@ by a point
 
 #testcase-values-eyes-number-of-fell-trap-is--1
 >eye fell trap
-The eyes show nothing. You've changed up everything you need with
+The eyes show nothing. You've changed up everything you need with the fell trap.
 
 >x trap
 
@@ -698,7 +698,7 @@ by a point
 
 #testcase-values-eyes-number-of-gas-pouch-is--1
 >eye gas pouch
-The eyes show nothing. You've changed up everything you need with
+The eyes show nothing. You've changed up everything you need with the gas pouch.
 
 >n
 
@@ -790,7 +790,7 @@ by a point
 
 #testcase-values-eyes-number-of-tea-leaves-is--1
 >eye tea leaves
-The eyes show nothing. You've changed up everything you need with
+The eyes show nothing. You've changed up everything you need with the tea leaves.
 
 >n
 >n
@@ -811,7 +811,7 @@ Nothing (significant) here like that. (Once-per-room reminder:) room names are n
 
 #testcase-values-eyes-number-of-belt-rusted-is--1
 >eye belt rusted
-The eyes show nothing. You've changed up everything you need with
+The eyes show nothing. You've changed up everything you need with the belt (rusted).
 
 >n
 >n
@@ -854,7 +854,7 @@ by a point
 
 #testcase-values-eyes-number-of-stark-raft-is--1
 >eye stark raft
-The eyes show nothing. You've changed up everything you need with
+The eyes show nothing. You've changed up everything you need with the stark raft.
 
 >s
 
@@ -882,7 +882,7 @@ Nothing for the general area, though the sly size-slice eyes seem to wander betw
 
 #+testcase-values-eyes-number-of-fine-drinks-ad-is-45
 >eye fine drinks
-The eyes show nothing. You've changed up everything you need with
+The eyes show nothing. You've changed up everything you need with the fine drinks ad.
 
 #+testcase-values-eyes-number-of-bar-nopin-is-44
 >eye bar nopin
@@ -893,7 +893,7 @@ by a point
 
 #testcase-values-eyes-number-of-egg-of-a-guv-is-1
 >eye egg of a guv
-The eyes show nothing. Probably don't need to change up anything with
+The eyes show nothing. Probably don't need to change up anything with the Egg of a Guv'.
 
 >n
 
@@ -951,7 +951,7 @@ Nothing (significant) here like that.
 
 #testcase-values-eyes-number-of-dope-ale-is--1
 >eye dope ale
-The eyes show nothing. You've changed up everything you need with
+The eyes show nothing. You've changed up everything you need with the dope ale.
 
 >e
 >w
@@ -980,7 +980,7 @@ by a point
 
 #+testcase-values-eyes-number-of-whee-try-is-53
 >eye sign
-The eyes show nothing. You've changed up everything you need with
+The eyes show nothing. You've changed up everything you need with the WHEE TRY sign.
 
 #+testcase-values-eyes-number-of-owners-is-1
 >eye owners
@@ -989,7 +989,7 @@ You've done everything you can here for the fey loners/fail-owners.
 
 #testcase-values-eyes-number-of-bread-is-1
 >eye bread
-The eyes show nothing. Probably don't need to change up anything with
+The eyes show nothing. Probably don't need to change up anything with the wheat and rye bread.
 
 >e
 
@@ -999,14 +999,14 @@ The eyes light up green and show three dots, then five dots.
 
 #testcase-values-eyes-number-of-pliers-is-1
 >eye pliers
-The eyes show nothing. Probably don't need to change up anything with
+The eyes show nothing. Probably don't need to change up anything with the "Mope, Liars, Mo'" Pliers.
 
 >den specs
 by a point
 
 #testcase-values-eyes-number-of-den-specs-is--1
 >eye den specs
-The eyes show nothing. You've changed up everything you need with
+The eyes show nothing. You've changed up everything you need with the den specs.
 
 >d
 
@@ -1034,7 +1034,7 @@ Nothing (significant) here like that.
 
 #testcase-values-eyes-number-of-hell-pin-is-1
 >eye hell pin
-The eyes show nothing. Probably don't need to change up anything with
+The eyes show nothing. Probably don't need to change up anything with the help-in-hell pin.
 
 >s
 >e
@@ -1063,7 +1063,7 @@ The eyes light up green and show four dots, then two dots.
 
 #testcase-values-eyes-number-of-orb-is--1
 >eye orb
-The eyes show nothing. You've changed up everything you need with
+The eyes show nothing. You've changed up everything you need with the orb and/or band.
 
 #testcase-values-eyes-number-of-dew-pit-is-42
 >eye dew pit
@@ -1074,7 +1074,7 @@ by a point
 
 #testcase-values-eyes-number-of-tender-eggs-is--1
 >eye tender eggs
-The eyes show nothing. You've changed up everything you need with
+The eyes show nothing. You've changed up everything you need with Ten Dregs' Tender Eggs.
 
 >u
 
@@ -1098,7 +1098,7 @@ by a point
 
 #testcase-values-eyes-number-of-assortment-is--1
 >eye assortment
-The eyes show nothing. You've changed up everything you need with
+The eyes show nothing. You've changed up everything you need with the fruit and veggie assortment.
 
 >d
 

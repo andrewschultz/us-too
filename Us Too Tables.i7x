@@ -207,7 +207,7 @@ this is the post-summon-cheese rule:
 
 to aight-ping:
 	if gs-aight-ping is false:
-		say "[line break][i][bracket][b]NOTE[r][i]: you just found your first item [ara] requested from [aight][i]. It's now divided into items you've found and ones you haven't. You can [if gs-using-known is false]use [b]I[r][i] to take inventory and abbreviate [b]X AIGHT[r][i] to [end if][b]X[r][i] to see it all.[close bracket][line break]";
+		say "[line break][i][bracket][b]NOTE[r][i]: you just found your first item [ara] requested from [aight][i]. It's now divided into items you've found and ones you haven't. You can [if gs-using-known is false]use [b]I[r][i] to take inventory and abbreviate [b]X AIGHT[r][i] to [end if][b]X[r][i] to see it all.[close bracket][r][line break]";
 		now gs-aight-ping is true;
 
 chapter ur branch scoring

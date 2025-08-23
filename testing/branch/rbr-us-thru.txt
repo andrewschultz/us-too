@@ -74,7 +74,6 @@ You could explore your mine, but you have no purpose, or errand, or ... there's 
 You don't want to go wandering outside after you just got here! You need to catch your bearings. Focus on yourself a bit. Maybe even a lot.
 
 >i
-
 @all
 Your Aw-Lug-All-Ugh has nothing special in it.
 A'ight, Amusing Item Using, which you got to start, lists items Aunt Rickie-Anne asked for. You don't have any yet.
@@ -736,7 +735,7 @@ A loose intro flutters down from the lucent row. You pick it up. As you do, the 
 \\
 #testcase-values-eyes-number-of-goal-edge-go-ledge-is-1
 >eye goal edge go ledge
-{$EYEITMNO}
+{$EYEITMNO} the Goal-Edge-Go Ledge.
 
 @part
 ##balance undos
@@ -982,7 +981,7 @@ Your newly opened mind discerns a safe passage east. Hey, that's a start!
 @hint
 #+testcase-values-eyes-number-of-some-herbs-is-63
 >eye some herbs
-{$EYEITMDONE}
+{$EYEITMDONE} those herbs.
 
 @rej
 #testcase-check-pre-summer-bay-rule-if-sco-summer-bay-is-true
@@ -1140,11 +1139,11 @@ You already probed the pro ball enough to get a feel for hidden exits in your su
 @hint
 #+testcase-values-eyes-number-of-pro-ball-is-53
 >eye pro ball
-{$EYEITMDONE}
+{$EYEITMDONE} the pro ball.
 \\
 #testcase-values-eyes-number-of-gauche-hip-go-ship-is-1
 >eye ship
-{$EYEITMNO}
+{$EYEITMNO} the Gauche/Hip GO-Ship.
 \\
 #testcase-values-eyes-number-of-pun-tweaker-is-46
 >eye pun tweaker
@@ -1242,7 +1241,7 @@ Perhaps it's too obvious, but you decide to have fun, and you do.
 @hint
 #+testcase-values-eyes-number-of-mess-kit-is--34
 >eye mess kit
-{$EYEITMDONE}
+{$EYEITMDONE} the mess kit.
 
 @rej
 #testcase-check-pre-meh-skit-rule-if-sco-meh-skit-is-true
@@ -1321,7 +1320,7 @@ You can call MALT HOUR once you have a variety of alcohol to share.
 \\
 #testcase-values-eyes-number-of-board-red-is--1
 >eye board red
-{$EYEITMDONE}
+{$EYEITMDONE} the board (red).
 \\
 #testcase-values-eyes-number-of-maul-tower-is-44
 >eye maul tower
@@ -1710,7 +1709,7 @@ Your eyes finally adjust to all the egregious plaid, and you discover a plain bu
 \\
 #testcase-values-eyes-number-of-rope-ladder-is--1
 >eye rope ladder
-{$EYEITMDONE}
+{$EYEITMDONE} the rope ladder.
 
 @all
 `Ur-Branch
@@ -1879,14 +1878,14 @@ Oh wait! There is something that will add a bit of flavor! Actually, it's a weir
 @hint
 #testcase-values-eyes-number-of-pea-pod-is--1
 >eye pea pod
-{$EYEITMDONE}
+{$EYEITMDONE} the pea pod.
 
 >out
 
 @hint
 #+testcase-values-eyes-number-of-garden-tree-is-55
 >eye garden tree
-{$EYEITMDONE}
+{$EYEITMDONE} the garden tree.
 
 >se
 
@@ -2018,11 +2017,11 @@ You already got a gray tin from the Great Inn!
 @hint
 #+testcase-values-eyes-number-of-great-inn-is-43
 >eye great inn
-{$EYEITMDONE}
+{$EYEITMDONE} the great inn.
 \\
 #testcase-values-eyes-number-of-gray-tin-is--1
 >eye gray tin
-{$EYEITMDONE}
+{$EYEITMDONE} the gray tin.
 
 @part
 ##balance undos
@@ -2120,7 +2119,7 @@ The only compass direction you can go is back northwest. However, you may also g
 @hint
 #+testcase-values-eyes-number-of-inscen-is-27
 >eye inner nest
-{$EYEITMDONE}
+{$EYEITMDONE} the inner nest.
 
 >in
 
@@ -2181,7 +2180,7 @@ You already pried and got the prime oar!
 @hint
 #+testcase-values-eyes-number-of-prime-oar-is-34
 >eye prime oar
-{$EYEITMDONE}
+{$EYEITMDONE} the prime oar.
 
 >out
 >nw
@@ -2240,7 +2239,7 @@ You already got the punt, weaker!
 @hint
 #testcase-values-eyes-number-of-punt-weaker-is--1
 >eye punt weaker
-{$EYEITMDONE}
+{$EYEITMDONE} the punt (weaker).
 
 @gt
 #+testcase-goto-table-of-noways-beach-ill
@@ -2311,7 +2310,7 @@ You already cleared a path through the bay spikes!
 \\
 #testcase-values-eyes-number-of-base-pikes-is--1
 >eye base pikes
-{$EYEITMDONE}
+{$EYEITMDONE} the base pikes.
 
 @part
 ##balance undos
@@ -2360,7 +2359,7 @@ Yup! Pie crust! It fits in your tin nicely.
 \\
 #testcase-values-eyes-number-of-pie-crust-is--1
 >eye pie crust
-{$EYEITMDONE}
+{$EYEITMDONE} the pie crust.
 
 @part
 ##balance undos
@@ -2406,7 +2405,7 @@ There's nothing else to be found from another hike up. You're not getting the hi
 @hint
 #+testcase-values-eyes-number-of-high-cup-is-42
 >eye high cup
-{$EYEITMDONE}
+{$EYEITMDONE} the high cup.
 
 >w
 >w
@@ -2483,7 +2482,7 @@ It takes a while of stumbling around, but you have confidence the sword ark is t
 \\
 #testcase-values-eyes-number-of-sword-ark-is--1
 >eye sword ark
-{$EYEITMDONE}
+{$EYEITMDONE} the sword ark.
 
 @part
 ##balance undos
@@ -2588,7 +2587,7 @@ You hear rumbling. You can't imagine there are any bigger secret here, so it see
 @hint
 #+testcase-values-eyes-number-of-terra-blade-is-83
 >eye terra blade
-{$EYEITMDONE}
+{$EYEITMDONE} the Terra Blade.
 
 @all
 `Ur-Branch
@@ -2666,7 +2665,7 @@ You already pulled the oak lever and made it disappear! You just need to do some
 @hint
 #testcase-values-eyes-number-of-be-quick-beak-wick-is--1
 >eye be quick beak wick
-{$EYEITMDONE}
+{$EYEITMDONE} the be-quick beak/wick.
 
 >ne
 
@@ -2754,7 +2753,7 @@ You can pick up DAMP INK once you have a proper container.
 
 @all
 #testcase-room-names-too-dark-tude-ark
-`Too-Dark Tude Ark
+`Too-Dark 'Tude Ark
 
 @gt
 #testcase-goto-table-of-noways-too-dark-tude-ark
@@ -2873,7 +2872,7 @@ Oh my! You pull the felt wrap away, and that is one fell looking trap!
 @hint
 #testcase-values-eyes-number-of-fell-trap-is--1
 >eye fell trap
-{$EYEITMDONE}
+{$EYEITMDONE} the fell trap.
 
 @rej
 #testcase-check-pre-fell-trap-rule-if-sco-fell-trap-is-true
@@ -3086,7 +3085,7 @@ Only back north or south beyond the Sage Oaks.
 @hint
 #testcase-values-eyes-number-of-gas-pouch-is--1
 >eye gas pouch
-{$EYEITMDONE}
+{$EYEITMDONE} the gas pouch.
 
 @rej
 #testcase-check-pre-gas-pouch-rule-if-sco-gas-pouch-is-true
@@ -3460,7 +3459,7 @@ Using your rope ladder, you climb on the roof and down into a spare attic compar
 @hint
 #testcase-values-eyes-number-of-tea-leaves-is--1
 >eye tea leaves
-{$EYEITMDONE}
+{$EYEITMDONE} the tea leaves.
 
 @rej
 #testcase-check-pre-tea-leaves-rule-if-sco-tea-leaves-is-true
@@ -3525,7 +3524,7 @@ The scribes get together and nod their heads. They agree this must be it. Your r
 \\
 #testcase-values-eyes-number-of-belt-rusted-is--1
 >eye belt rusted
-{$EYEITMDONE}
+{$EYEITMDONE} the belt (rusted).
 
 >n
 >n
@@ -3703,7 +3702,7 @@ You can only go back east to the Bowl/Ditch or south via the raft.
 @hint
 #testcase-values-eyes-number-of-stark-raft-is--1
 >eye stark raft
-{$EYEITMDONE}
+{$EYEITMDONE} the stark raft.
 
 >s
 
@@ -3847,7 +3846,7 @@ Berries Pond is off limits now. You got enough there.
 \\
 #+testcase-values-eyes-number-of-fine-drinks-ad-is-45
 >eye fine drinks
-{$EYEITMDONE}
+{$EYEITMDONE} the fine drinks ad.
 
 @rej
 #+testcase-check-pre-find-rinks-rule-if-sco-find-rinks-is-true
@@ -3897,7 +3896,7 @@ Of course it makes sense there'd be a barn on farm isles. You visit the barn. In
 @hint
 #testcase-values-eyes-number-of-egg-of-a-guv-is-1
 >eye egg of a guv
-{$EYEITMNO}
+{$EYEITMNO} the Egg of a Guv'.
 
 @rej
 #testcase-check-pre-barn-open-rule-if-sco-barn-open-is-true
@@ -4130,7 +4129,7 @@ You make the trade: dough pail for dope ale! The fey loners/fail-owners note the
 \\
 #testcase-values-eyes-number-of-dope-ale-is--1
 >eye dope ale
-{$EYEITMDONE}
+{$EYEITMDONE} the dope ale.
 
 >e
 >w
@@ -4228,7 +4227,7 @@ The fey loners/fail-owners applaud you. "Yes ... that's just the thing ..." they
 @hint
 #+testcase-values-eyes-number-of-whee-try-is-53
 >eye sign
-{$EYEITMDONE}
+{$EYEITMDONE} the WHEE TRY sign.
 \\
 #+testcase-values-eyes-number-of-owners-is-1
 >eye owners
@@ -4237,7 +4236,7 @@ You've done everything you can here for the fey loners/fail-owners.
 \\
 #testcase-values-eyes-number-of-bread-is-1
 >eye bread
-{$EYEITMNO}
+{$EYEITMNO} the wheat and rye bread.
 
 @rej
 #testcase-check-pre-wheat-rye-rule-if-sco-wheat-rye-is-true
@@ -4278,7 +4277,7 @@ The eyes light up green and show three dots, then five dots.
 \\
 #testcase-values-eyes-number-of-pliers-is-1
 >eye pliers
-{$EYEITMNO}
+{$EYEITMNO} the "Mope, Liars, Mo'" Pliers.
 
 >den specs
 by a point
@@ -4296,7 +4295,7 @@ You don't need two pairs.
 @hint
 #testcase-values-eyes-number-of-den-specs-is--1
 >eye den specs
-{$EYEITMDONE}
+{$EYEITMDONE} the den specs.
 
 @gt
 #+testcase-goto-table-of-noways-sob-acres
@@ -4414,7 +4413,7 @@ There's not much else to say. You feel a bit awkward. All you can do is tell the
 \\
 #testcase-values-eyes-number-of-hell-pin-is-1
 >eye hell pin
-{$EYEITMNO}
+{$EYEITMNO} the help-in-hell pin.
 
 @gt
 >e
@@ -4580,7 +4579,7 @@ The eyes light up green and show four dots, then two dots.
 \\
 #testcase-values-eyes-number-of-orb-is--1
 >eye orb
-{$EYEITMDONE}
+{$EYEITMDONE} the orb and/or band.
 \\
 #testcase-values-eyes-number-of-dew-pit-is-42
 >eye dew pit
@@ -4619,7 +4618,7 @@ You rest the egg of a guv in the dew pit. Nothing happens, then a rumbling. The 
 @hint
 #testcase-values-eyes-number-of-tender-eggs-is--1
 >eye tender eggs
-{$EYEITMDONE}
+{$EYEITMDONE} Ten Dregs' Tender Eggs.
 
 @all
 Ur-Branch
@@ -4758,7 +4757,7 @@ Your Aw-Lug-All-Ugh feels like it may burst from the additional weight! Good thi
 @hint
 #testcase-values-eyes-number-of-assortment-is--1
 >eye assortment
-{$EYEITMDONE}
+{$EYEITMDONE} the fruit and veggie assortment.
 
 @rej
 #testcase-reject-end-table-of-main-oronyms-pre-meh-skit-rule

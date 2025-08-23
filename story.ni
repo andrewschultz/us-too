@@ -710,7 +710,7 @@ the gauche hip go ship is scenery. printed name is "Gauche/Hip GO-Ship". "It's r
 
 chapter punt weaker
 
-the punt weaker is a thing. "Your punt, weaker, floats here[punt-status].". description is "It seems pretty sturdy, actually. Perhaps its speed is weaker than something gas-powered or whatever[if sco-pry-more is true and sco-stark-raft is false]. The prime oar is attached to it[end if].". eyes-number of punt weaker is -1.
+the punt weaker is a thing. printed name is "punt (weaker)". "Your punt, weaker, floats here[punt-status].". description is "It seems pretty sturdy, actually. Perhaps its speed is weaker than something gas-powered or whatever[if sco-pry-more is true and sco-stark-raft is false]. The prime oar is attached to it[end if].". eyes-number of punt weaker is -1.
 
 check taking punt: say "You can just go east or west as needed." instead;
 
@@ -912,7 +912,7 @@ invtext of gray tin is "[if sco-gray-tin is false]crust[else if sco-pie-crust is
 
 chapter inscen
 
-the inscen is privately-named scenery. description is "[inscen-desc].". understand "inner/nest" and "inner nest" as inscen when inscen is in location of player. eyes-number of inscen is 27. eyes-rule of inscen is pre-in-earnest rule.
+the inscen is privately-named scenery. printed name is "inner nest". description is "[inscen-desc].". understand "inner/nest" and "inner nest" as inscen when inscen is in location of player. eyes-number of inscen is 27. eyes-rule of inscen is pre-in-earnest rule.
 
 to say inscen-desc:
 	if inner nest is visited:
@@ -1125,7 +1125,7 @@ the WHEE TRY sign is a thing. "A WHEE TRY sign is here--[if sco-wheat-rye is tru
 
 chapter wheat rye
 
-there is a eatworthy stewitem called wheat and rye bread. description is "Looks tastier and healthier than bleached old white bread.". eyes-number of bread is 1.
+there is a eatworthy stewitem called the wheat and rye bread. description is "Looks tastier and healthier than bleached old white bread.". eyes-number of bread is 1.
 
 invtext of rye bread is "[if sco-wheat-rye is false]more than one type of bread[else]the wheat and rye from [deli][end if]".
 
@@ -1185,7 +1185,7 @@ the fine drinks ad is scenery in Far Miles. "It simply says FINE DRINKS as an ad
 
 chapter egg of a guv
 
-the egg of a guv is a thing. description is "It's only one egg, but boy is it impressive! The barn (open) really did you a favor, but all the same, you'll need more than one for your little shopping list.". eyes-number of egg of a guv is 1.
+the egg of a guv is a thing. printed name is "Egg of a Guv[']". description is "It's only one egg, but boy is it impressive! The barn (open) really did you a favor, but all the same, you'll need more than one for your little shopping list.". eyes-number of egg of a guv is 1.
 
 part Berries Pond
 
@@ -1210,7 +1210,7 @@ understand "wall" and "tube/rod" and "tube rod" as tuberodscen when tuberodscen 
 
 part Too Dark Tude Ark
 
-Too Dark Tude Ark is an ordroom in r-south. rmord of Too Dark is 1. printed name of tude ark is "[if sco-ho-langour is true]'Ugh?! Lo, a Glow'[else]Too-Dark Tude Ark[end if]". "[if sco-ho-langour is false]Your attitude can't help grow dark as you wonder if it was really worth running all the way here or even going back north, and if there is anywhere beyond that will require even more running, which it doesn't look like, because it's hard to see[else]It's no longer too dark here. There's not much here, but at least it's not too dark. Oh, there's a passage south as well as one back north[end if].". eyes-number of Too Dark Tude Ark is 1. roomdirs of Tude Ark is "NE/D/U/S".
+Too Dark Tude Ark is an ordroom in r-south. rmord of Too Dark is 1. printed name of tude ark is "[if sco-ho-langour is true]'Ugh?! Lo, a Glow'[else]Too-Dark [']Tude Ark[end if]". "[if sco-ho-langour is false]Your attitude can't help grow dark as you wonder if it was really worth running all the way here or even going back north, and if there is anywhere beyond that will require even more running, which it doesn't look like, because it's hard to see[else]It's no longer too dark here. There's not much here, but at least it's not too dark. Oh, there's a passage south as well as one back north[end if].". eyes-number of Too Dark Tude Ark is 1. roomdirs of Tude Ark is "NE/D/U/S".
 
 the whole anger is a thing in Tude Ark. "Whole anger swirls around here, consuming your every thought.". description is "How can one describe anger? It's there, and it's tough to shake.". eyes-number of whole anger is 27. eyes-rule of whole anger is pre-ho-langour rule.
 
@@ -1271,7 +1271,7 @@ the bell trusted is a thing. "The bell (trusted) the scribes showed you now sits
 
 chapter belt rusted
 
-the belt rusted is a thing. description is "It might look quite nice if it were spruced up a bit.". eyes-number of belt rusted is -1.
+the belt rusted is a thing. printed name is "belt (rusted)". description is "It might look quite nice if it were spruced up a bit.". eyes-number of belt rusted is -1.
 
 part Dust Which Does Twitch
 
