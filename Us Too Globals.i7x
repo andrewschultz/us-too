@@ -12,7 +12,7 @@ core-max is a number that varies. core-max is 64.
 
 cur-max-bonus is a number that varies. cur-max-bonus is 4.
 
-max-bonus is a number that varies. max-bonus is 4.
+max-bonus is a number that varies. max-bonus is 5.
 
 chapter game states
 
