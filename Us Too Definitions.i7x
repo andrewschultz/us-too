@@ -99,14 +99,15 @@ to say which-south of (orm - an ordroom):
 
 check going south in ur branch when extra-turns > 0 and number of visited ordrooms < 3:
 	let rm be entry extra-turns in ordrooms-in-order;
+	let is-seen be whether or not rm is visited;
 	move player to rm;
-	if rm is unvisited:
+	if is-seen is false:
 		say "You take a look around your new surroundings. Hey, somewhere new!";
 		say "[line break][one of]You ran past a lot to get here. Maybe you missed something you can find later.[or]You wonder if there was a bit more to look for.[or]You think you've discovered everywhere.[stopping]";
 	else:
 		say "You've been here before. It's nice not to get lost, but you wonder where else there is.";
 	if extra-turns > 0:
-		say "[line break]You spent so much time pacing around said somewhere new, your burst of speed vanishes.";
+		say "[line break]You spend time pacing around [if rm is visited]the new place[else]hoping the place was new, wondering how to get somewhere else[end if]. So much time, your burst of speed vanishes.";
 		now extra-turns is 0;
 	the rule succeeds;
 
