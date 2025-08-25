@@ -164,7 +164,6 @@ donetext of southeast is "You looted the dome and the inner nest nicely.".
 chapter directions from/to Ur-Branch
 
 to block-and-back:
-	say "[line break]It seems there's nothing else to do here. You hope there isn't. So you just go back to the Ur-Branch.";
 	let the way be the best route from Ur Branch to location of player;
 	now the way is branchdone;
 	drop-player-at Ur Branch;

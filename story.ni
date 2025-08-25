@@ -421,7 +421,7 @@ Ur Branch is a room in universal. It is above My New Mine Ooh. printed name is "
 
 rule for printing the locale description of ur branch:
 	let numcan be number of branchcan directions;
-	if numcan is 0:
+	if sco-summer-bay is false:
 		say "Looks like you'll need to find something to do here to get started.";
 	else:
 		if number of branchseen directions > 0:
@@ -482,7 +482,10 @@ after printing the locale description for Ur Branch when southeast is not branch
 	continue the action;
 
 check going up in Ur Branch when up is not branchcant and sco-no-date is false:
-	say "You feel a sense of dread as you climb up the rope ladder. Whatever's up there, you're not ready." instead;
+	say "You feel a sense of dread as you climb up the rope ladder. Whatever's up there, you're not ready. It would be nice to have a warding talisman or something." instead;
+	if Throne Ow is unvisited:
+		say "You feel a shiver as you reach the top. But then you feel a glow from your [pin], and you feel safer. You wonder if you're fully ready for a battle, but at least you won't be intimidated.";
+		wfas;
 
 check going west in Ur Branch when sco-hike-up is true and west is not branchdone:
 	if bowl ditch is visited:
@@ -539,7 +542,7 @@ after printing the locale description of ur branch when sco-hike-up is true and 
 		say "The south and west both seemed to have treacherous terrain. How to minimize its risks?";
 	continue the action;
 
-after printing the locale description of ur branch when player was in an ordroom:
+after printing the locale description of ur branch when player was in a rotroom:
 	if sign ought sigh not is off-stage:
 		say "Ooh! There's a sign you didn't see before. A SIGN OUGHT-SIGH-NOT. It tells you how to get back to [random visited ordroom].";
 		move sign ought to ur branch;
