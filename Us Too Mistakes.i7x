@@ -58,6 +58,14 @@ to decide whether beef-ready:
 	if toon is touchable and sco-beef-ordering is false, yes;
 	no;
 
+book nodes
+
+understand "no done" as a mistake ("Being able to riffing on node one would be nice, but ... it might be TOO easy or obvious, and you can't quite make the pronunciation work, anyway[first-syl-nodes]. Still, that felt at least half right--maybe look a little farther ahead.") when number string is touchable.
+
+to say first-syl-nodes:
+	choose row with check-rule of pre-no-date rule in table of main oronyms;
+	now first-exact entry is true;
+
 book the throne
 
 understand "sit" and "sit [text]" as a mistake ("You were smart enough to get this far. I'm gonna go out on a limb and say you're smart enough not to heed a demanding, evil voice asking you to do the equivalent of touching a live wire, and you're just poking around for fun.")
