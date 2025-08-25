@@ -19,8 +19,6 @@ to game-specific-cleanup:
 		now player has dense pecs;
 	if gs-den-seen is false and player is in sob acres and player has dense pecs:
 		reveal-den;
-	if eyeall-test is true:
-		follow the eyeall rule;
 
 definition: a thing (called th) is eyeable:
 	if th is not touchable, no;

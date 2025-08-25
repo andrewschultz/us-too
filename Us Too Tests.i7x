@@ -4,17 +4,9 @@ Version 1/241009 of Us Too Tests by Andrew Schultz begins here.
 
 understand "wp" as warponing.
 
-volume may be sent to main
+volume from main big function
 
-when play begins:
-	now core-max is 1;
-	now cur-max-bonus is 0;
-	repeat through table of main oronyms:
-		if core entry is true:
-			increment core-max;
-		else:
-			increment cur-max-bonus;
-	now max-bonus is cur-max-bonus;
+to game-specific-post-point-debugging-check: if eyeall-test is true, follow the eyeall rule;
 
 volume trying stuff
 
@@ -205,6 +197,18 @@ chapter invtext
 when play begins:
 	repeat with X running through stewitems:
 		if invtext of X is empty and X is not alcoholic, say "Give [x] invtext.";
+
+volume test code that may be reusable later
+
+[when play begins:
+	now core-max is 1;
+	now cur-max-bonus is 0;
+	repeat through table of main oronyms:
+		if core entry is true:
+			increment core-max;
+		else:
+			increment cur-max-bonus;
+	now max-bonus is cur-max-bonus;]
 
 Us Too Tests ends here.
 
