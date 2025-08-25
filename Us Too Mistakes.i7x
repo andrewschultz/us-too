@@ -58,6 +58,8 @@ to decide whether beef-ready:
 	if toon is touchable and sco-beef-ordering is false, yes;
 	no;
 
+understand "i scream" and "aye scream" as a mistake ("No, there's no ice cream available yet. And you won't need to scream for free samples when it is. You'll get them for free, for all your help.") when player is in deli stern and player has pliers.
+
 book nodes
 
 understand "no done" as a mistake ("Being able to riffing on node one would be nice, but ... it might be TOO easy or obvious, and you can't quite make the pronunciation work, anyway[first-syl-nodes]. Still, that felt at least half right--maybe look a little farther ahead.") when number string is touchable.
@@ -65,6 +67,10 @@ understand "no done" as a mistake ("Being able to riffing on node one would be n
 to say first-syl-nodes:
 	choose row with check-rule of pre-no-date rule in table of main oronyms;
 	now first-exact entry is true;
+
+book NE
+
+understand "joiner dear" as a mistake ("Seems right, but no need for cutesy names.") when player is in joy nadir and sco-join-aider is false.
 
 book the throne
 
