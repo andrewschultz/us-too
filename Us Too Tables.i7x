@@ -1250,8 +1250,8 @@ Cellar Bin	"Just go up to leave."
 Bowl Ditch	"You can only go [if sco-bold-itch is true]north, west or [end if]back east."
 Sob Acres	"[if gs-deli-party is true]You can only go south. The den is destroyed, and the deli is busy[else][sob-acres-cantgo][end if]."
 Deli Stern	"Not that way. Out[if sco-dell-eastern is true] or east[end if]."
-Tube Rod	"Only back north [if sco-too-broad is false]right now, but maybe there's something beyond the tube/rod[else]or south past the remnants of the tube/rod[end if]."
-Sage Oaks	"Only back north [if sco-gas-pouch is true]or south beyond the Sage Oaks[else if sco-say-jokes is true]or, once you figure how to suppress the 'ouch' you feel, south[else]until you can deal with the Sage Oaks[end if]."
+Tube Rod	"You can only go back north to Ur-Branch [if sco-too-broad is false]right now, but maybe there's something beyond the tube/rod[else]or south past the remnants of the tube/rod[end if]."
+Sage Oaks	"You can only go back north [if sco-gas-pouch is true]or south beyond the Sage Oaks[else if sco-say-jokes is true]or, once you figure how to suppress the 'ouch' you feel, south[else]until you can deal with the Sage Oaks[end if]."
 Too Dark Tude Ark	"[if sco-ho-langour is false]It feels hopeless to go any way but back north. Well, for now[else]You can only see passage north or south[end if]."
 Dam Pink	"You can't see any way but back north."
 Scribe Room	"You can't see any way but back north."
@@ -1260,10 +1260,10 @@ Turbo Tours	"You can only go back east to the Bowl/Ditch[if sco-barn-open is tru
 Farm Isles	"You can only go back north to Turbo Tours[if sco-find-rinks is true and sco-bear-respond is false] or south[end if]."
 Berries Pond	"You can't see any way but back north."
 Joy Nadir	"The only way out is back west."
-Groan Odes	"The only safe way is back up."
+Groan Odes	"It's too [if sco-no-date is true]easy to get lost[else]scary[end if] any way except back up."
 Throne Ow Throw Now	"You can only go back down here."
 
-to say sob-acres-cantgo: say "While it's pretty open here, [if sco-saw-bakers is true]the only safe ways are south or [acres-to-deli][else]you see safety only to the south, for now[end if][if sco-den-specs is true]. [den-below][end if]"
+to say sob-acres-cantgo: say "While it's pretty open here, [if sco-saw-bakers is true]the only passages that lead anywhere definitive are south or [acres-to-deli][else]you only see safe passage to the south, for now[end if][if sco-den-specs is true]. [den-below][end if]"
 
 to say acres-to-deli: say "[if sco-dell-eastern is true]west/[end if]inside"
 

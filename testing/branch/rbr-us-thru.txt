@@ -2678,7 +2678,7 @@ You already pulled the oak lever and made it disappear! You just need to do some
 @gt
 #testcase-goto-table-of-noways-tube-rod
 >s
-Only back north right now, but maybe there's something beyond the tube/rod.
+You can only go back north to Ur-Branch right now, but maybe there's something beyond the tube/rod.
 
 @hint
 #testcase-values-eyes-number-of-tube-rod-is-35
@@ -2981,7 +2981,7 @@ You can just X TRAP to return.
 @gt
 #testcase-goto-table-of-noways-sage-oaks
 >s
-Only back north until you can deal with the Sage Oaks.
+You can only go back north until you can deal with the Sage Oaks.
 
 @hint
 #+testcase-values-eyes-number-of-sage-oaks-is-35
@@ -3027,7 +3027,7 @@ The sage oaks laugh a bit. "Just a bit of revenge for those painful jokes," they
 @gt
 #+testcase-goto-table-of-noways-sage-oaks
 >w
-Only back north or, once you figure how to suppress the "ouch" you feel, south.
+You can only go back north or, once you figure how to suppress the "ouch" you feel, south.
 
 @hint
 #+testcase-values-eyes-number-of-sage-oaks-is-35
@@ -3080,7 +3080,7 @@ Well, you had to figure they had one or two zingers left.
 @gt
 #+testcase-goto-table-of-noways-sage-oaks
 >w
-Only back north or south beyond the Sage Oaks.
+You can only go back north or south beyond the Sage Oaks.
 
 @hint
 #testcase-values-eyes-number-of-gas-pouch-is--1
@@ -3116,7 +3116,7 @@ You can get PRO SWEEPING once you have something to sweep with.
 @gt
 #+testcase-goto-table-of-noways-tube-rod
 >w
-Only back north or south past the remnants of the tube/rod.
+You can only go back north to Ur-Branch or south past the remnants of the tube/rod.
 
 >s
 
@@ -3920,7 +3920,7 @@ You can only go back east to the Bowl/Ditch. South, you got what you needed.
 @gt
 #testcase-goto-table-of-noways-sob-acres
 >e
-While it's pretty open here, you see safety only to the south, for now.
+While it's pretty open here, you only see safe passage to the south, for now.
 
 @part
 ##balance undos
@@ -3975,7 +3975,7 @@ You already discovered the deli!
 @gt
 #+testcase-goto-table-of-noways-sob-acres
 >e
-While it's pretty open here, the only safe ways are south or inside.
+While it's pretty open here, the only passages that lead anywhere definitive are south or inside.
 !That den
 
 >in
@@ -4066,7 +4066,7 @@ The fey loners/fail-owners almost look bright for a minute. "Hey, we could pull 
 @gt
 #+testcase-goto-table-of-noways-sob-acres
 >e
-While it's pretty open here, the only safe ways are south or west/inside.
+While it's pretty open here, the only passages that lead anywhere definitive are south or west/inside.
 !That den
 
 >w
@@ -4300,7 +4300,7 @@ You don't need two pairs.
 @gt
 #+testcase-goto-table-of-noways-sob-acres
 >e
-While it's pretty open here, the only safe ways are south or west/inside. That den below is a possibility, as well.
+While it's pretty open here, the only passages that lead anywhere definitive are south or west/inside. That den below is a possibility, as well.
 
 >d
 
@@ -4311,7 +4311,7 @@ While it's pretty open here, the only safe ways are south or west/inside. That d
 @gt
 #testcase-goto-table-of-noways-groan-odes
 >n
-The only safe way is back up.
+It's too scary any way except back up.
 
 @rej
 #testcase-check-pre-no-date-rule-if-nodes-are-not-in-groan-odes
@@ -4417,7 +4417,7 @@ There's not much else to say. You feel a bit awkward. All you can do is tell the
 
 @gt
 >e
-While it's pretty open here, the only safe ways are south or west/inside.
+While it's pretty open here, the only passages that lead anywhere definitive are south or west/inside.
 \\
 >w
 \\

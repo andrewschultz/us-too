@@ -258,7 +258,7 @@ by a point
 
 #testcase-goto-table-of-noways-tube-rod
 >s
-Only back north right now, but maybe there's something beyond the tube/rod.
+You can only go back north to Ur-Branch right now, but maybe there's something beyond the tube/rod.
 
 >too broad
 by a point
@@ -320,21 +320,21 @@ You can leave the fort to the northeast or X TRAP to fall to the cellar bin.
 
 #testcase-goto-table-of-noways-sage-oaks
 >s
-Only back north until you can deal with the Sage Oaks.
+You can only go back north until you can deal with the Sage Oaks.
 
 >say jokes
 by a point
 
 #+testcase-goto-table-of-noways-sage-oaks
 >w
-Only back north or, once you figure how to suppress the "ouch" you feel, south.
+You can only go back north or, once you figure how to suppress the "ouch" you feel, south.
 
 >gas pouch
 by a point
 
 #+testcase-goto-table-of-noways-sage-oaks
 >w
-Only back north or south beyond the Sage Oaks.
+You can only go back north or south beyond the Sage Oaks.
 
 >n
 
@@ -342,7 +342,7 @@ Only back north or south beyond the Sage Oaks.
 
 #+testcase-goto-table-of-noways-tube-rod
 >w
-Only back north or south past the remnants of the tube/rod.
+You can only go back north to Ur-Branch or south past the remnants of the tube/rod.
 
 >s
 
@@ -480,14 +480,14 @@ You can only go back east to the Bowl/Ditch. South, you got what you needed.
 
 #testcase-goto-table-of-noways-sob-acres
 >e
-While it's pretty open here, you see safety only to the south, for now.
+While it's pretty open here, you only see safe passage to the south, for now.
 
 >saw bakers
 by a point
 
 #+testcase-goto-table-of-noways-sob-acres
 >e
-While it's pretty open here, the only safe ways are south or inside.
+While it's pretty open here, the only passages that lead anywhere definitive are south or inside.
 !That den
 
 >in
@@ -503,7 +503,7 @@ by a point
 
 #+testcase-goto-table-of-noways-sob-acres
 >e
-While it's pretty open here, the only safe ways are south or west/inside.
+While it's pretty open here, the only passages that lead anywhere definitive are south or west/inside.
 !That den
 
 >w
@@ -535,13 +535,13 @@ by a point
 
 #+testcase-goto-table-of-noways-sob-acres
 >e
-While it's pretty open here, the only safe ways are south or west/inside. That den below is a possibility, as well.
+While it's pretty open here, the only passages that lead anywhere definitive are south or west/inside. That den below is a possibility, as well.
 
 >d
 
 #testcase-goto-table-of-noways-groan-odes
 >n
-The only safe way is back up.
+It's too scary any way except back up.
 
 >grow nodes
 by a point
@@ -550,7 +550,7 @@ by a point
 by a point
 
 >e
-While it's pretty open here, the only safe ways are south or west/inside.
+While it's pretty open here, the only passages that lead anywhere definitive are south or west/inside.
 
 >w
 
