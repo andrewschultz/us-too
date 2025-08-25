@@ -4,6 +4,14 @@
 
 volume includes
 
+the release number is 1.
+
+release along with a website.
+
+release along with cover art.
+
+release along with the "Parchment" interpreter.
+
 section outside stuff
 
 include Conditional Undo by Jesse McGrew.
