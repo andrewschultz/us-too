@@ -173,9 +173,10 @@ this is the post-loose-intro rule:
 	say "A loose intro flutters down from the lucent row. You pick it up. As you do, the lucent row stops glowing and becomes a ledge. A Goal-Edge-Go Ledge, to be precise.";
 	now player has loose intro;
 	moot lucent row;
-	move ledge to My New Mine Ooh;
 	if lucent row is examined and eyes are not in mine and pawn is not in mine:
 		say "[line break]But then [the ledge], containing nothing, retracts after a bit. Well, you got everything you could want from it.";
+	else:
+		move ledge to My New Mine Ooh;
 
 book room-variant scoring
 
@@ -1054,7 +1055,7 @@ this is the post-ho-langour rule:
 	now sco-ho-langour is true;
 	say "Passive resistance is the way to go! You worry you are just doing nothing by default, and it doesn't really count, but then you remember how you busted up the tube/rod. You feel your blood pressure falling. Things aren't so bad, now.";
 	reveal Scribe Room to south;
-	declue whole anger;
+	moot whole anger;
 	print-the-loc;
 
 chapter scribe room scoring
@@ -1179,7 +1180,7 @@ chapter Throne Ow Throw Now scoring
 
 a wordtwisting rule (this is the pre-use-it rule):
 	if player is not in throne, unavailable;
-	if sco-dupe-it is false:
+	if sco-join-aider is false:
 		vcp "It would be useful to have an item of power, but alas, you do not, at the moment.";
 		not-yet;
 	if sco-use-it is true:
@@ -1196,6 +1197,7 @@ this is the post-use-it rule:
 	move life roots to Throne;
 	moot orb;
 	moot hell pin;
+	moot thronescen;
 	print-the-loc;
 
 this is the hom-lie-fruits rule:
