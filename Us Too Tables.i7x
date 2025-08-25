@@ -566,7 +566,7 @@ a wordtwisting rule (this is the pre-rope-ladder rule):
 
 this is the post-rope-ladder rule:
 	now sco-rope-ladder is true;
-	say "Your eyes finally adjust to all the egregious plaid, and you discover a plain but sturdy rope ladder. You wonder if there is anything else to do here, but shortly you hear an electronic 'HOW?! SCAM!!!!!!' You look up and see a house cam! You run, just in case there's more security ... surely you must be done here, though ...";
+	say "Your eyes finally adjust to all the egregious plaid, and you discover a plain but sturdy rope ladder. You wonder if there is anything else to do here, but shortly you hear an electronic 'HOW?! SCAM!!!!!!' You look up and see a house cam! You run, just in case there's more security. Surely you must be done to the north, you think, once you make it back to ...";
 	now player has rope ladder;
 	block-and-back;
 
@@ -828,6 +828,7 @@ a wordtwisting rule (this is the pre-dell-eastern rule):
 this is the post-dell-eastern rule:
 	now sco-dell-eastern is true;
 	say "The surroundings are a bit more welcoming now. Oh, you can go east as well as out, too.";
+	say "[line break]The [owners] look slightly cheerful. 'We can't expect business to pick up right away, but who knows? Next time you come back, there might be some progress.'";
 	reveal Sob Acres to the east;
 	declue-here;
 
@@ -1063,7 +1064,7 @@ chapter scribe room scoring
 a wordtwisting rule (this is the pre-scry-broom rule):
 	if player is not in scribe room, unavailable;
 	if sco-damp-ink is false:
-		vcp "The scribes won't trade a broom for NOTHING...";
+		vcp "The scribes notice you looking at the broom. 'Want it? Well, we won't trade it for NOTHING...' Now what could scribes use?";
 		not-yet;
 	if sco-scry-broom is true:
 		vcal "You neither want nor need two brooms.";
@@ -1117,7 +1118,7 @@ a wordtwisting rule (this is the pre-gas-pouch rule):
 
 this is the post-gas-pouch rule:
 	now sco-gas-pouch is true;
-	say "The sage oaks chuckle. And you chuckle a bit, too. Turnabout is fair play! They release the gas from the pouch all at once -- of course, not in your direction. 'It can hold liquid, too,' they say. 'But one more thing. Do you know where we got this from?'[paragraph break]You shake your head.[paragraph break]'The Grove Ouch-Grow-Vouch.'[paragraph break]Well, you had to figure they had one or two zingers left.[paragraph break]'You are completely free to go south now. Whether or not it will be productive right now, we will not say,' they intone.";
+	say "The sage oaks chuckle. And you chuckle a bit, too. Turnabout is fair play! They release the gas from the pouch all at once -- of course, not in your direction. 'It can hold liquid, too,' they say. 'But one more thing. Do you know where we got this from?'[paragraph break]You shake your head.[paragraph break]'The Grove Ouch-Grow-Vouch.'[paragraph break]Well, you had to figure they had one or two zingers left.[paragraph break]'You are completely free to go south now. Whether or not it will be productive right now, we will not say,' they intone. 'We concern ourselves with big-picture things beyond what text adventurers, even wise ones like you, carry in their inventory at any given moment.'";
 	now player has gas pouch;
 
 chapter dust which does twitch scoring
