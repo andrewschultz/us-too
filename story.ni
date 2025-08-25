@@ -933,9 +933,9 @@ to say inscen-desc:
 
 chapter dough
 
-the dough pail is a thing. description is "It's a pail full of dough.". eyes-number of dough pail is 43. eyes-rule of dough pail is pre-dope-ale rule.
+the dough pail is a thing. description is "It's a pail full of dough. Very white dough for white bread. Unfortunately, you don't have easy access to the sort of ovens that cook dough. Maybe it'd be useful for someone who did.". eyes-number of dough pail is 43. eyes-rule of dough pail is pre-dope-ale rule.
 
-the dope ale is an alcoholic stewitem. indefinite article of dope ale is "some". description is "Well, its label is pretty dope, you guess.". eyes-number of dope ale is -1.
+the dope ale is an alcoholic stewitem. indefinite article of dope ale is "some". description is "Well, its label is pretty dope, you guess. Maybe it has really dope television commercials, too. Ever since you were of legal drinking age, you started caring a lot less about that.". eyes-number of dope ale is -1.
 
 part Inner Nest
 
@@ -1045,7 +1045,7 @@ check going east in bowl ditch:
 
 part Sob Acres
 
-Sob Acres is a room in universal. printed name is "[if sco-dell-eastern is false]Sob Acres[else]Dell, Eastern[end if]". "[if sco-saw-bakers is false]You feel very sad and lonely here. You're looking for someone, anyone...[else if sco-dell-eastern is false]Hey, there's a deli you can go inside! It doesn't look very cheery, but it's something[else if sco-den-specs is false]This dell still has an air of mystery about it, but there's the deli inside to the west[else if sco-no-date is false]There's the deli to the west, or you can go DOWN into a den[else][deli-post-nodes][end if]. You can always just go back south, of course.". eyes-number of Sob Acres is 36. eyes-rule of Sob Acres is pre-saw-bakers rule.
+Sob Acres is a room in universal. printed name is "[if sco-dell-eastern is false]Sob Acres[else]Dell, Eastern[end if]". "[if sco-saw-bakers is false]You feel very sad and lonely here. You're looking for someone, anyone...[else if sco-dell-eastern is false]Hey, there's a deli you can go inside! It doesn't look very cheery, but it's something[else if sco-den-specs is false]This dell still has an air of mystery about it, like it's hiding something, but there's the deli inside to the west, and that's pretty good[else if sco-no-date is false]There's the deli to the west, or you can go DOWN into a den[else][deli-post-nodes][end if]. You can always just go back south, of course.". eyes-number of Sob Acres is 36. eyes-rule of Sob Acres is pre-saw-bakers rule.
 
 to say deli-post-nodes:
 	if gs-deli-party is false:
@@ -1095,14 +1095,14 @@ check going in Deli Stern when room gone to is not nowhere:
 after printing the locale description for deli stern:
 	if gs-deli-dell-left is true and gs-deli-dell-return is false:
 		now gs-deli-dell-return is true;
-		say "The [owners] perk up on seeing you. 'We had a few customers. We might even have prospective repeat customers! But we're running short of bread. We had some of the cheap white generic stuff.'";
+		say "The [owners] perk up on seeing you. 'We had a few customers. We might even have prospective repeat customers! But we're running short of bread. Even some of the cheap white generic stuff would do.'";
 	if gs-deli-ale-left is true and gs-deli-ale-return is false:
 		now gs-deli-ale-return is true;
-		say "The [owners] look a bit happier than before. 'We've had a few more customers. We even rebranded our business! And created some ambiance! It advertises some new meals! If you could be our first customer and try it out... we think it's sort of cute...' They point to something they drew on the wall. 'A [toon]! Pretty spiffy, eh?'";
+		say "The [owners] look a bit happier than before. 'We've had a few more customers. We even rebranded our business! And created some ambiance! Even got a promotion for new meals! No-one's figured it out yet, but maybe you can ... well, [i]we[r] think it's sort of cute...' They point to something they drew on the wall. 'A [toon]! Pretty spiffy, eh?'";
 		move toon to Deli Stern;
 	if gs-deli-beef-left is true and gs-deli-beef-return is false:
 		now gs-deli-beef-return is true;
-		say "The [owners] cheer your return. 'Wow! You've really helped up! Your dough was great, but ... with the profits from our latest customers, we bought some entirely new stuff!' They point to yet another sign up on the wall. 'Free samples for everyone! Well, you more than most, for all your help.'";
+		say "The [owners] cheer your return. 'Wow! You've really helped up! Your dough was great, but ... with the profits from our latest customers, we bought some entirely new stuff!' They point to yet another sign up on the wall. 'Free samples for everyone! Well, you more than most, for all your help.' The sign say WHEE TRY.";
 		move WHEE TRY to Deli Stern;
 	continue the action;
 
@@ -1118,6 +1118,7 @@ report thinking (this is the toon partial thinking rule):
 	if sco-beef-ordering is false:
 		if toon-guess-score is 0, continue the action;
 		say "You've deciphered the toon [if toon-guess-score is 1]partway[else]completely[end if] but haven't guessed what to do with it. Right now, you know [if gs-toon-guess-1 is true]BEFORE[else]------[end if] [if gs-toon-guess-2 is true]DURING[else]------[end if].";
+		now got-think is true;
 	continue the action;
 
 chapter meat
