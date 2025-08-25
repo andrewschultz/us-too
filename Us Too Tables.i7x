@@ -62,7 +62,7 @@ w1 (text)	w2 (text)	first-hom (text)	second-hom	hom-txt-rule (rule)	first-exact	
 "no"	"date"	"know"	--	--	false	false	false	false	"figuring how to destroy the nodes, or the most important one"	false	true	true	false	false	groan odes	pre-no-date rule	post-no-date rule	--	"You can claim NO DATE [once-now of pre-no-date rule] you have a tool that can destroy the nodes."
 "fell"	"trap"	--	--	--	false	false	false	false	"revealing what's behind the felt wrap"	false	true	true	false	false	fort earns	pre-fell-trap rule	post-fell-trap rule	--	--
 "cellar"	"bin"	"seller"	--	--	false	false	false	false	"escaping the Cell, Urban"	false	true	true	false	false	cell urban	pre-cellar-bin rule	post-cellar-bin rule	--	--
-"too"	"broad"	"to|two"	--	--	false	false	false	false	"how to fracture the tube/rod"	false	true	true	false	false	tube rod	pre-too-broad rule	post-too-broad rule	--	--
+"too"	"broad"	"to|two"	--	hom-too-broad rule	false	false	false	false	"how to fracture the tube/rod"	false	true	true	false	false	tube rod	pre-too-broad rule	post-too-broad rule	--	--
 "ho"	"languor|langour"	"hoe"	--	--	false	false	false	false	"dealing with the paralyzing whole anger"	false	true	true	false	false	tude ark	pre-ho-langour rule	post-ho-langour rule	--	"You can yell HO LANGUOR [once-now of pre-ho-langour rule] you have done something, anything, else in the south."
 "say"	"jokes"	--	--	--	false	false	false	false	"get by the Sage Oaks"	false	true	true	false	false	sage oaks	pre-say-jokes rule	post-say-jokes rule	--	"You can SAY JOKES [once-now of pre-say-jokes rule] you're cheerier for having done a bit more."
 "gas"	"pouch"	--	--	--	false	false	false	false	"see how to stop gasping OUCH"	false	true	true	false	false	sage oaks	pre-gas-pouch rule	post-gas-pouch rule	--	--
@@ -1000,6 +1000,12 @@ this is the post-no-date rule:
 book south branch sorting
 
 chapter tube rod scoring
+
+this is the hom-too-broad rule:
+	if the player's command includes "two":
+		say "No, you don't need to multiply the obstacles here. But you don't need to REDUCE them, per se. You're close.";
+	else:
+		the rule fails;
 
 a wordtwisting rule (this is the pre-too-broad rule):
 	if player is not in tube rod, unavailable;
