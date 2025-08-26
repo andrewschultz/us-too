@@ -12,7 +12,13 @@ volume weird parser stuff
 
 volume puzzle-specific mistakes
 
-book stuff that needs the parser
+book lucent row
+
+understand "loosen trou" as a mistake ("Goodness no this isn't that sort of game, but goodness yes that's a really close guess.") when lucent row is touchable.
+
+book forest team
+
+chapter stuff that needs the parser
 
 [note: this could *potentially* be put in another table we read through after the main oronyms. But there's only one example, so I keep it here for now.]
 
@@ -22,7 +28,7 @@ after reading a command:
 			say "You need to get less steamed up. And you need to kill [the team]'s head of steam.";
 			reject the player's command;
 
-book forest team
+book stuff that doesn't
 
 understand "fora steam" as a mistake ("No, [the team] doesn't need a big stage with steam to spread their banter.") when forest team is touchable.
 
