@@ -1349,6 +1349,11 @@ volume unsorted
 
 [intentionally left blank just in case]
 
+volume warp on modification(s)
+
+check warponing when player is not examined and sco-try-quest is false:
+	say "[one of]The war pawn wags its finger, then points its finger at you, at its eyes, and at you again. Sounds like a suggestion to [b]X ME[r] before using the pawn. Well, it's good to know where to start[or]The war pawn isn't going to help until you [b]X ME[r] or figure the first point. The two are related[stopping]." instead;
+
 volume going out
 
 understand the command "o" as something new. understand "o" as outside.
@@ -1435,10 +1440,6 @@ after printing the name of gray tin when taking inventory:
 		say " (empty)";
 	else:
 		say " (full of pie crust)";
-
-book drop/take
-
-volume cheating
 
 volume semi-regular/often used verbs
 
@@ -1591,6 +1592,22 @@ this is the climb-teal-eaves rule:
 	if sco-tea-leaves is true, say "You already climbed for tea leaves." instead;
 	say "There's something to climb for here, but you need to say what it is[if sco-rope-ladder is false] and have something to climb on[end if]." instead;
 
+book workaround for no
+
+understand the command "no" as something new.
+
+understand "no" as saying no when number string is not touchable.
+
+book swearing
+
+report swearing obscenely for the first time:
+	say "[i][bracket]There's no optional section for this, as there was in [b]Why Pout[r][i]. Sorry.[close bracket][r][line break]";
+	continue the action;
+
+book xyzzying
+
+carry out xyzzying: say "A hollow voice booms 'Sequel? Seek well? See? QUELL!'[paragraph break]But don't worry, it's just hollow, period." instead;
+
 volume meta-verbs
 
 book about
@@ -1648,16 +1665,6 @@ book versions
 
 carry out versioning:
 	say "Release 1 is targeted for August 28, 2025, for IFComp.";
-
-book swearing
-
-report swearing obscenely for the first time:
-	say "[i][bracket]There's no optional section for this, as there was in [b]Why Pout[r][i]. Sorry.[close bracket][r][line break]";
-	continue the action;
-
-book xyzzying
-
-carry out xyzzying: say "A hollow voice booms 'Sequel? Seek well? See? QUELL!'[paragraph break]But don't worry, it's just hollow, period." instead;
 
 volume ending tweak(s)
 
