@@ -57,20 +57,15 @@ volume intro
 when play begins:
 	now left hand status line is "[location of player]";
 	say "The old mine is yours, now. You were left it in a will by a relative you barely remember. [ara]. She gave you a weird little logic puzzle. 'Tricky,' you mused, and she seemed to smile. But you did not solve it until the family gathering was over. She had already gotten in her car, and you tried to yell as she drove away. Your family told you not to bug her, which was funny, because everyone seemed to be buttering her up about how rich she was.";
-	wfas;
-	say "You explained this to your parents, who got really cheesed off you didn't figure it sooner to impress her. That could've been their ticket! Uh, they meant, yours." ;
-	wfas;
-	say "[ara] held on longer than anyone thought. Your parents went up to get a good word with her, not bringing you, of course, after your flub. But she remained secretive about her will.";
+	say "[line break]You explained this to your parents, who got really cheesed off you didn't figure it sooner to impress her. That could've been their ticket! Uh, they meant, yours." ;
+	say "[line break][ara] held on longer than anyone thought. Your parents went up to get a good word with her, not bringing you, of course, after your flub. But she remained secretive about her will.";
 	wfas;
 	say "Soon after she died, her relatives received envelopes in the mail. They were each from the same address, but the actual location was a bit different. Your parents and siblings? [hwhs]. You? [hohs].";
-	wfas;
-	say "You were one of the few to get [hohs]. It seemed like a terrible sign, but as the will was read, the [hwhs] people roared furiously as [ara]'s will labeled them 'too naggy' or 'too flattering.' She kept special track of charities people enjoyed, or said they enjoyed, and donates a lot to the charities. But nobody left empty-handed. All the living relatives there had already had travel expenses paid and would get $1000 more if they sarcastically said 'Well, how swell.' And promptly left. Most said it, with passion.";
-	wfas;
-	say "You were ready to say so, for your own $1000. And it felt weird, being one of three people left, eventually.";
-	wfas;
-	say "'You impressed her,' one of the lawyers tells you, waiting for the response. 'But you need to impress us, now. No babbling. She was never big on words. Especially big words. Fail, and you only get $10000. You have as long as you need. We have been comped well for our time.'";
-	wfas;
+	say "[line break]You were one of the few to get [hohs]. It seemed like a terrible sign, but as the will was read, the [hwhs] people roared furiously as [ara]'s will labeled them 'too naggy' or 'too flattering.' She'd kept special track of charities people enjoyed, or said they enjoyed, and donated a lot to their charities. But nobody left empty-handed. All the living relatives there had already had travel expenses paid and would get $1000 more if they sarcastically said 'Well, how swell.' And promptly left. Most said it, with passion.";
+	say "[line break]You were ready to say so, for your own $1000. And it felt weird, being one of three people left, eventually.";
+	say "[line break]'You impressed her,' one of the lawyers tells you, waiting for the response. 'But you need to impress us, now. No babbling. She was never big on words. Especially big words. Fail, and you only get $10000. You have as long as you need. We have been comped well for our time.'";
 	say "You fumble nervously with your envelope. What [i]could[r] they be talking about?";
+	wfas;
 
 book you
 
@@ -97,20 +92,16 @@ after reading a command when player is in House Well How Swell:
 		say "One lawyer stands up and snaps their fingers. 'There you go! I knew you'd get it.";
 		increment core-score;
 		follow the score and thinking changes rule;
+		say "[line break]'Let's see, you're ... oh, you're [']Trike['] West. The kid who ran after her with the solution to her little puzzle. Uh, were. She really was impressed, but she was just so sick of being fawned over, she didn't want to get out of her car again. She knew from the way some of her worse relatives bad-mouthed you, you were more than all right. She owned this old mine and even had a small trust fund to pay taxes. Though for you, it's sort of a new mine... and just checking, but you know what to say?' You pause.";
 		wfas;
-		say "'Let's see, you're ... oh, you're the kid who ran after her with the solution to her little puzzle. Uh, were. She really was impressed, but she was just so sick of being fawned over, she didn't want to get out of her car again. She knew from the way some of her worse relatives bad-mouthed you, you were more than all right. She owned this old mine and even had a small trust fund to pay taxes. Though for you, it's sort of a new mine... and just checking, but you know what to say?'";
+		say "Then 'MY new mine?! Ooh...'[paragraph break]'Bingo! Again! But she just wants to make sure you're worthy, so you'll have to visit there.'";
+		say "[line break]You're a bit worried. You can't just up and leave your job like that. What if it's a scam? The lawyers assure you the mine is not going anywhere. You've built up vacation time from work. You call some trusted friends. 'You're getting shafted,' a few laugh. Enough don't.";
 		wfas;
-		say "You pause. Then 'MY new mine?! Ooh...'[paragraph break]'Bingo! Again! But she just wants to make sure you're worthy, so you'll have to visit there.'";
-		wfas;
-		say "You're a bit worried. You can't just up and leave your job like that. What if it's a scam? The lawyers assure you the mine is not going anywhere. You've built up vacation time from work. You call some trusted friends. 'You're getting shafted,' a few laugh. Enough don't.";
-		wfas;
-		say "You meet up with the lawyers again. They inform you you may need to carry a lot of stuff around. They offer you an odd-looking item. '[ara] figured you would need this. It's an [ugh].' The lawyers then squabble over whether the 'A' is a short or long a. They argue over how important the pronunciation is. 'It can go either way,' one says, trying to be a peacemaker. 'At least, for other phrases. Anyway, before we forget, she wrote a [jot], too. Just introductory stuff.'";
-		wfas;
-		say "The squabbling dies down, after some debate over whether or not you can just pronounce a word slightly differently to suit your needs. They all have to admit they've done it to prove a point.[paragraph break]'Oh ... one other thing? Invite your friends when you have everything on [ara]'s list. And, of course, invite ...'";
+		say "[line break]You meet up with the lawyers again. They inform you you may need to carry a lot of stuff around. They offer you an odd-looking item. '[ara] figured you would need this. It's an [ugh].' The lawyers then squabble over whether the 'A' is a short or long a. They argue over how important the pronunciation is. 'It can go either way,' one says, trying to be a peacemaker. 'At least, for other phrases. Anyway, before we forget, she wrote a [jot], too. Just introductory stuff.'";
+		say "[line break]The squabbling dies down, after some debate over whether or not you can just pronounce a word slightly differently to suit your needs. They all have to admit they've done it to prove a point.[paragraph break]'Oh ... one other thing? Invite your friends when you have everything on [ara]'s list. And, of course, invite ...'";
 		wfas;
 		say "'Us too!' the lawyers yell together, in unison.";
-		wfas;
-		say "You check your belongings. The [ugh], to carry stuff. The [jot], for early help. You set aside vacation time...";
+		say "[line break]You check your belongings. The [ugh], to carry stuff. The [jot], for early help. You set aside vacation time... before the flight, the lawyers call you and say [ara] has made other provisions, if you need them. They tell you if you just look at yourself and be yourself, you'll figure what to do. You realize they're the sort of good lawyers that help people cover all the bases. They're not jerks who find loopholes to make rich people richer. They didn't even judge your nickname, 'Trike' West.";
 		wfas;
 		move player to My New Mine Ooh;
 		reject the player's command;
@@ -312,7 +303,11 @@ after printing the locale description for Mine Ooh when core-score is core-max -
 	say "Okay, so what do you DO with all these ingredients? What can they make? Well, the ones that are still a bit raw...";
 	continue the action;
 
-My New Mine Ooh is a room in intro. printed name is "My New Mine, Ooh!". description is "You're down in your new mine, with a passage up back to the great wide world[if sco-be-strong is true]. You've cleared the way--you can't be sure of the direction, as the path twists a bit[else if sco-try-quest is false]. Fortunately it's more 'Ooh' than 'Eew.' It could go either way, you realize. But you're still finding your bearings and purpose. You feel a bit blown away being given such a big mine, and you'd feel silly wandering purposelessly. At least you know who you are, and maybe that'll help reframe things[end if].". eyes-number of Mine Ooh is 1.
+My New Mine Ooh is a room in intro. printed name is "My New Mine, Ooh!". description is "You're down in your new mine, with a passage up back to the great wide world[if sco-be-strong is true]. You've cleared the way--you can't be sure of the direction, as the path twists a bit[else if sco-try-quest is false]. Fortunately it's more 'Ooh' than 'Eew.' It could go either way, you realize. But you're still finding your bearings and purpose. You feel a bit blown away being given such a big mine, and you'd feel silly wandering purposelessly[end if].". eyes-number of Mine Ooh is 1.
+
+after printing the locale description for Mine Ooh when sco-try-quest is false:
+	say "You remember the advice the lawyers gave you. Focus on you first, and don't feel you need to look around the mine too much to get started.";
+	continue the action;
 
 After choosing notable locale objects when player is in Mine Ooh:
 	if war pawn is in mine ooh, set locale priority of war pawn to 0;
@@ -325,12 +320,12 @@ after examining lucent row:
 check thinking in Mine Ooh when sco-try-quest is false:
 	say "You're a bit lost, but you track what you know:";
 	say "[line break]--you went to [hwhs], called [hohs], and your response 'How so?' impressed the lawyers.";
+	say "[line break]--[the jot] and [using], given to you at the start, are ... oddly named, to say the least.";
 	say "[line break]--the lawyers reacted positively to 'My new mine, ooh!'";
-	say "[line break]--[the jot] and [using], given to you at the start, are ... odd, to say the least.";
 	say "[line break]--your name is Trike West. [ara] said she REALLY liked that name.";
 	if doable-hinted is 1, say "[line break]--you also figured to need to make [b]A STEW[r] from the lawyers' 'Us too,' which is down the road, but it's good to have a goal in mind.";
 	if gs-taken-inventory is false:
-		say "[line break]Maybe you should take [b]INVENTORY[r] with [b]I[r]. That might provide another clue.";
+		say "[line break]Maybe you should take [b]INVENTORY[r] with [b]I[r]. That might give you an idea what to do in the future.";
 	process the partial-oronym-check rule;
 	the rule succeeds;
 
@@ -410,7 +405,7 @@ check examining loose intro when loose intro is unexamined:
 
 to say intro-table:
 	choose row intro-row in table of intro jabber;
-	say "[my-jabber entry] ([intro-row]/[number of rows in table of intro jabber])";
+	say "[my-jabber entry] ([intro-row]/[number of rows in table of intro jabber][one of], [b]X INTRO[r] (or [b]G[r] to repeat commands) to see more[or][stopping])";
 	increment intro-row;
 	if intro-row > number of rows in table of intro jabber:
 		now gs-loose-intro-read is true;
@@ -670,7 +665,7 @@ After choosing notable locale objects when player is in Beach Ill:
 	if Freddie is in beach, set the locale priority of Freddie to 9;
 
 after printing the locale description of Beach Ill when sco-peace-talks is true and Sir Freddie is not moot:
-	say "With the lessons learned from the Pea Stalks, you broker a tentative truce between the pun tweaker and Sir Freddie. You even have a dialogue, discussing nearby isles. Surprisingly, the pun tweaker notes one that Sir Freddie knows.[paragraph break]'Nay-Vile-Knave Isle?'[paragraph break]'No, the large waves scared me ... but they'd be a challenge now. I ... I can picture myself saying Nay, Vile Knave, to those who think they can out-surf me!' The formal rivals get together. The pun tweaker lets Sir Freddie know about a narrow river that will lead to where Sir Freddie can find a boat. Sir Freddie shakes the pun tweaker's hand and runs off.[paragraph break]The pun tweaker is quite grateful for this. 'I'll be able to fix my ship now, undistracted. What can I offer you?' 'Oh, nothing much, you say.' The pun tweaker says 'oh of course' a bit too quickly.";
+	say "With the lessons learned from the Pea Stalks, you broker a tentative truce between the pun tweaker and Sir Freddie. You even have a dialogue, discussing nearby isles. Surprisingly, the pun tweaker notes one that Sir Freddie knows.[paragraph break]'Nay-Vile-Knave Isle?'[paragraph break]'No, the large waves scared me ... but they'd be a challenge now. I ... I can picture myself saying Nay, Vile Knave, to those who think they can out-surf me! What an idea! How could I help you back?'[paragraph break]The pun tweaker points to [the ship], which still need repairs. Sir Freddie blushes. 'I ... I never noticed! I was so busy with my new hobbies. But I can trade in all my questing stuff to help you repair things.'[paragraph break]The pun tweaker and Sir Freddie work together to repair [the ship]. They both shake your hands then sail off. The pun tweaker brings the ship back. 'Now. What can I offer you?' 'Oh, nothing much, you say.' The pun tweaker says 'oh of course' a bit too quickly.";
 	moot Sir Freddie;
 	continue the action;
 
