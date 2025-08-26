@@ -639,7 +639,7 @@ a wordtwisting rule (this is the pre-hike-up rule):
 
 this is the post-hike-up rule:
 	now sco-hike-up is true;
-	say "You decide the direct way of climbing the pile at a steep angle just won't work. But it's a big pile, and as you walk around, you see a slower way, less steep, but less likely to cause you to slip. You get to the top and have a look around. From your vantage point, you see a new path from the Ur-Branch, to the southwest! You also see places well beyond it, to the west and south. Well, that should cover all the directions.[paragraph break]It makes you almost forget about the high cup. Well, it turns out the high cup is glued to other trash. Dang it! You're not sure if you needed it, anyway. It looks a bit too fancy for whatever you want to prepare.";
+	say "You decide the direct way of climbing the pile at a steep angle just won't work. But it's a big pile, and as you walk around, you see a slower way, less steep, but less likely to cause you to slip. You get to the top and have a look around. From your vantage point, you see a new path from the Ur-Branch, to the southwest! You also see places well beyond it, to the west and south. Well, that should cover all the directions.[paragraph break]It makes you almost forget about the high cup. Well, it turns out the high cup is glued to other trash. Dang it! You're not sure if you needed it, anyway. It looks a bit too fancy for whatever you want to prepare.[paragraph break]And there's more. You see swirling inside the pro ball, to match the paths. Nice that it's active again.";
 	declue high cup;
 
 book southeast branch sorting

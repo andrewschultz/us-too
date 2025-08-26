@@ -701,11 +701,35 @@ there is a thing called bless and bleah sand. it is scenery. eyes-number of sand
 
 chapter pro ball
 
-the pro ball is a thing. description is "[if sco-probe-all is false]If you look at it right, you may be able to see a bit more, but you haven't, yet[else]You stare a bit at the pro ball and see nothing new. Maybe it only changes after you've done or found something significant.[end if].". eyes-number of pro ball is 53. eyes-rule of pro ball is pre-probe-all rule.
+the pro ball is a thing. description is "[if sco-probe-all is false]If you look at it right, you may be able to see a bit more, but you haven't, yet[else]You stare a bit at the pro ball.[end if].". eyes-number of pro ball is 53. eyes-rule of pro ball is pre-probe-all rule.
 
-check examining pro ball for the first time: say "It's not a pro sports ball. More like an orb. But if it were an orb, well, it wouldn't quite work as-is. I think you understand by now.";
+check examining pro ball when pro ball is unexamined: say "[if sco-probe-all is false]It's marked PRO, but really, [else]It's[end if]it's more like an orb than a ball. It's certainly polished enough to be an orb. But if it were an orb, well, you just don't see how you could change it. I trust you understand by now.";
 
 check taking pro ball when sco-probe-all is false: say "It won't budge. At least, not right now." instead;
+
+report examining pro ball:
+	if sco-hike-up is false:
+		say "Nothing new, alas. Perhaps it will provide more guidance when things get trickier.";
+		continue the action;
+	if west is branchdone and south is branchdone:
+		if sco-malt-hour is false:
+			say "In the rough map of where you are and where you've been, it seems to light up only the northeast.";
+		else:
+			say "It is dark again, just as it was before you found the high cup. Perhaps you've used it all you can in its current form.";
+		continue the action;
+	say "The orb maps out roughly where you've been. [one of]You recognize the southeast and north and east pretty easily. [or][stopping]You see a long passage dragging through the west, and you also see three branches to the south: short, medium and long. Between them is the southwest, which has the shortest path, no branch.";
+	say "[line break]Looking closer at the west, you see it has";
+	if west is branchdone:
+		say "dimmed out.";
+	else:
+		say "three branches as well.";
+	say "[line break]";
+	if number of visited rotrooms is 6:
+		say "The whole of the south area is lit up. You've found everything [if mrlp is r-south]there[else]here[end if].";
+	else if ordrooms-seen:
+		say "The north half of the south area is lit up, but to the south, the bottom half is [if number of visited rotrooms is 3]totally[else if number of visited rotrooms is 4]mostly[else]still a bit[end if] dark. A bit more to explore, then.";
+	else:
+		say "[if number of visited rotrooms is 0]The entire south is dark, though[else if number of visited rotrooms is 1]The south is mostly dark, though[else]The south is mostly lit up, except for one small corner[end if]."
 
 chapter pie crust
 
