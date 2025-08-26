@@ -157,7 +157,7 @@ this is the post-a-stew rule:
 	now sco-a-stew is true;
 	say "You look at [aight]. You have everything you need, but you don't have, well, a cohesive dish. You remember the lawyers needling you with 'us too.' Yes, that's what it has to be. You call them and your friends. They're prepared -- the mine is only an hour's drive from the city.";
 	wfas;
-	say "So you make the stew to pass the time until then. You try to avoid thinking of it as [i]my stew[r], because eww, that'd be a me-ill meal. [i]Our stew[r] might be, too.[paragraph break]You're no natural cook, but you do your best. (You make other random seeming stews over there years, and people always seem to appreciate them, but none quite has the flavor of this one.) After the meal, the announcement -- the mine is yours, and you can sell it now. You wonder if there's anything else, but you don't want to be greedy.";
+	say "So you make the stew to pass the time until then. You try to avoid thinking of it as [i]my stew[r], because eww, that'd be a me-ill meal. [i]Our stew[r] might be, too.[paragraph break]You're no natural cook, but you do your best. (You make other random seeming stews over the years, and people always seem to appreciate them, but none quite has the flavor of this one.) After the meal, the announcement -- the mine is yours, and you can sell it now. You wonder if there's anything else, but you don't want to be greedy.";
 	wfas;
 	say "Everyone winds down by playing poker. The lawyers are, unsurprisingly, all quite good at it. Well, you're not playing with real money, so you don't mind losing. You got enough today, right? Someone asks you offhand what you call the stew. [ara] surprisingly didn't specify it. You give your answer, and you wonder if maybe there is one more subtle odd test. The lawyers seem to have an inside joke going as they finish the remains of your...";
 	follow the score and thinking changes rule;
@@ -349,7 +349,7 @@ a wordtwisting rule (this is the pre-punt-weaker rule):
 
 this is the post-punt-weaker rule:
 	now sco-punt-weaker is true;
-	say "'Ah, yes, that's it. A small gift for a small favor.' The pun tweaker goes to the back of [the ship], and you hear a splash. The pun tweaker reappears, clothes wet, pushing a pretty scrawny punt. 'It won't get very far, but there's something to the east. Oh, and I hope you have a way to steer it, too. Anyway, here you go. My repairs are complete, without the distraction!'";
+	say "'Ah, yes, that's it. It's the least I can do as thanks. Not the very least, heh heh.' The pun tweaker goes to the back of [the ship], and you hear a splash. The pun tweaker reappears, clothes wet, pushing a pretty scrawny punt. 'It won't get very far, but there's something to the east. Oh, and I hope you have a way to steer it, too.'";
 	if sco-pry-more is false, say "[line break]Well, you don't have a way to steer the punt, yet.";
 	move punt weaker to beach ill;
 	moot pun tweaker;
@@ -465,7 +465,7 @@ a wordtwisting rule (this is the pre-join-aider rule):
 		vcal "You already formed the [orb]!";
 		already-done;
 	if sco-belt-rusted is false:
-		vcp "The pro ball crackles, but nothing else happens.";
+		vcp "The pro ball jumps an inch out of your hand and briefly crackles, but nothing else happens. You'll need to find what to join it to.";
 		not-yet;
 	ready;
 
@@ -483,7 +483,7 @@ this is the post-join-aider rule:
 a wordtwisting rule (this is the pre-dupe-it rule): [no need to check dupe-it since we block-and-back right after]
 	if player is not in joy nadir, unavailable;
 	if player does not have egg of a guv:
-		vcp "You have nothing that needs duplicating.";
+		vcp "You stand inside the dew pit and hold up everything in your inventory, but nothing is duplicated. Maybe you haven't found what you need, yet.";
 		not-yet;
 	ready;
 
@@ -514,7 +514,7 @@ a wordtwisting rule (this is the pre-nah-queue rule):
 this is the post-nah-queue rule:
 	now sco-nah-queue is true;
 	say "You reject [the forest]'s jibes consistently and forcefully, not worrying about intellectual rigor. They give up on you. Someone else appears, relieved you got rid of them. He introduces himself as Sir Freddie. He thinks perhaps they are right, and he is not cut out for quests.";
-	say "[line break][i][bracket][b]NOTE[r][i]: if you wish, you can refer to him as F or Sir F.[close bracket]";
+	say "[line break][i][bracket][b]NOTE[r][i]: if you wish, you can refer to him as F or Sir F.[close bracket][line break]";
 	moot forest;
 	move Sir Freddie to Blah Copse;
 
@@ -789,6 +789,7 @@ this is the hom-cellar-bin rule:
 		say "You're not in a position to be making laws, here. But that sounded somewhat right. Maybe you can make a change of scenery.";
 	else:
 		the rule fails;
+
 a wordtwisting rule (this is the pre-cellar-bin rule):
 	if sco-cellar-bin is true and (player is in fort earns or player is in cellar bin):
 		vcal "Whenever you want to revisit the cellar bin, you can just [b]X TRAP[r].";
@@ -815,7 +816,7 @@ a wordtwisting rule (this is the pre-bold-itch rule):
 
 this is the post-bold-itch rule:
 	now sco-bold-itch is true;
-	say "You have a think. It's not terrible. You've gotten here. You can get back. You really did trample through whatever was to the east. You walk off the ankle sprain you get from falling down. As you do, you notice passages west and north -- a bit hidden, but actually a bit more obvious than the way back east. You're glad you were able to take a deep breath and get some perspective.";
+	say "You have a think. It's not terrible. You've gotten here. You can get back. You really did trample through whatever was to the east. You walk off the ankle sprain you get from falling down. As you do, you notice passages west and north -- a bit hidden, but actually a bit more obvious than the way back east. Wow! The things you notice once you take a deep breath and try to gain perspective!";
 	reveal Sob Acres to north;
 	reveal Turbo Tours to west;
 	declue-here;
@@ -873,7 +874,7 @@ this is the post-dell-eastern rule:
 a wordtwisting rule (this is the pre-dope-ale rule):
 	if player does not have dough pail, unavailable;
 	if player is not in deli stern:
-		vcp "Hmm, you could exchange the dough pail for dope ale, but ... nobody here wants dough, and nobody here might have dope ale.";
+		vcp "[if player is in bore dread]Your promises of future alcohol fall on deaf ears. The maul tower's guardians are a cynical, untrusting bunch[else]Hmm, you could exchange the dough pail for dope ale, but ... nobody here wants dough, and nobody here might have dope ale.";
 		not-yet;
 	if sco-dell-eastern is false:
 		vcp "The [owners] whine that the location here is terrible. It's so dreary outside. Nobody would come here for alcohol with things as they are.";
@@ -914,7 +915,7 @@ a wordtwisting rule (this is the pre-wheat-rye rule):
 
 this is the post-wheat-rye rule:
 	now sco-wheat-rye is true;
-	say "The [owners] applaud you. 'Yes ... that's just the thing ...' they chop up the wheat and rye with the erstwhile Terra Blade. They give you a good chunk.";
+	say "The [owners] applaud you. 'Yes! That's just the thing!'[paragraph break]They chop up the wheat and rye with the erstwhile Terra Blade. They give you a good chunk. Of the bread, not the blade.";
 	now player has rye bread;
 	declue whee try sign;
 
@@ -969,7 +970,7 @@ this is the post-find-rinks rule:
 a wordtwisting rule (this is the pre-barn-open rule):
 	if player is not in far miles farm isles, unavailable;
 	if sco-bear-respond is false:
-		vcp "[farm-sense]You find a barn, open, hidden behind the bar. There are some truly glorious eggs in there, but you have nothing to trade for them yet.";
+		vcp "[farm-sense]You find a barn, open, hidden behind the bar. There are some truly glorious eggs in there, but you have nothing to barter for them yet. 'Food for food,' you're told. 'But only what you have extra of.'";
 		not-yet;
 	if sco-barn-open is true:
 		vcal "You already got an egg from the barn! [if sco-dupe-it is true]You figured where to get more, too[else]It was a one-time deal, so you'll need to find somewhere else to get more eggs, even if they're not as good as the one you've got[end if].";
@@ -1009,10 +1010,11 @@ a wordtwisting rule (this is the pre-grow-nodes rule):
 
 this is the post-grow-nodes rule:
 	now sco-grow-nodes is true;
-	say "The groan odes retract, as nodes grow out, creating a more menacing noise. Ah, so that's what you're up against!";
+	say "The groan odes retract, as nodes grow out, creating a more menacing noise. The nodes are numbered, too, from one on quite a while. There are a lot to poke at!";
 	move number string to odes;
 	declue-here;
 	print-the-loc;
+	say "[line break]So, yeah, there's something to [b]LISTEN[r] to and a bunch of numbered nodes. One must be a weak link.";
 
 a wordtwisting rule (this is the pre-no-date rule):
 	if player is not in groan odes, unavailable;
@@ -1254,14 +1256,12 @@ a wordtwisting rule (this is the pre-lie-fruits rule):
 this is the post-lie-fruits rule:
 	now sco-lie-fruits is true;
 	say "You call out the life roots: 'Come on, this is a bit overblown. Do you really need to be all basso profundo?'[paragraph break]To your surprise, they shrivel up. A voice intones: 'Congratulations. You have seen through us. So many adventurers would start looking for eternal life, or profiting from this.'";
-	wfas;
-	say "'Actually,' you say, 'I just have this list of stuff I needed for a big meal. I've looked everywhere, but I'm still out a ton of vegetables and fruits. I was kinda hoping there'd be at least some fruits here...'";
+	say "[line break]'Actually,' you say, 'I just have this list of stuff I needed for a big meal. I've looked everywhere, but I'm still out a ton of vegetables and fruits. I was kinda hoping there'd be at least some fruits here...'";
 	wfas;
 	say "'Are you saying the life roots are incapable of creating vegetables, too?'[paragraph break]'Um, no, not at all, just didn't want to ask anyone to do too much, here. I mean it might like harm the soil and render it untillable for generations of farmers to come. Or something. Heck. Now I'm sounding basso profundo.'";
+	say "[line break]'Your self-awareness is admirable. Yes, we have spare vegetables. They are kind of funny-shaped. Is that a problem? No? Good.'[paragraph break]Your [ugh] feels like it may burst from the additional weight! Good thing you kept those dense pecs when you made the den specs.";
+	say "[line break]'But now, this space needs to heal, free of human interference. Even worthy humans.' You nod and leave. There can't be much left to do, now.";
 	wfas;
-	say "'Your self-awareness is admirable. Yes, we have spare vegetables. They are kind of funny-shaped. Is that a problem? No? Good.'[paragraph break]Your [ugh] feels like it may burst from the additional weight! Good thing you kept those dense pecs when you made the den specs.";
-	wfas;
-	say "'But now, this space needs to heal, free of human interference. Even worthy humans.' You nod and leave. There can't be much left to do, now.";
 	now player has assortment;
 	block-and-back;
 
