@@ -191,7 +191,7 @@ report examining Aight Amusing:
 		if SI is not listed-yet, say "[b]";
 		if SI is alcoholic:
 			if mentioned-alcohol is false:
-				say "-- [if sco-malt-hour is true]enough alcohol left over ([the list of alcoholic stewitems])[else if number of discovered alcoholic stewitems is 2]almost a bit too much alcohol ([the list of alcoholic stewitems])[else]some alcohol, but not enough variety: [the list of discovered alcoholic stewitems][end if][line break]";
+				say "-- [if sco-malt-hour is true]enough alcohol left over ([the list of alcoholic stewitems])[else if number of discovered alcoholic stewitems is 2]two types of alcohol, almost too much quantity ([the list of alcoholic stewitems])[else]some alcohol, but not enough variety: [the list of discovered alcoholic stewitems][end if]";
 			now mentioned-alcohol is true;
 		else:
 			say "-- [invtext of SI]";
@@ -524,7 +524,7 @@ check going inside in Ur Branch when sco-guard-entry is false and garden tree is
 check going south in Ur Branch when sco-hike-up is true and extra-turns is 0 and not ordrooms-seen:
 	say "The way south gets tangled very quickly. You sense there are a lot of predators you won't be able to run from, at least, not in your current condition.";
 	if number of visited ordrooms > 0:
-		say "[line break]But all the same, you've been somewhere. There wasn't a lot to do. You wonder if there could be more.";
+		say "[line break]But all the same, you've been somewhere. There wasn't a lot to do once you got there. You wonder if there could be more.";
 	the rule succeeds;
 
 chapter herbs
@@ -975,7 +975,7 @@ chapter beak wick
 
 the be quick beak wick is scenery. "The [wick] sits here. [if extra-turns > 0]You can still feel its effect, though it can't hurt to touch it again[else if beak wick is examined]You poke at it again[else]It doesn't seem dangerous. You inspect it a bit more closely[end if].". printed name is "be-quick beak/wick". eyes-number of be quick beak wick is -1.
 
-check waiting when extra-turns > 0: say "You're too antsy to sit and wait. For better or worse, the be-quick beak-wick doesn't just give you the opportunity to be faster. It COMPELS you." instead;
+check waiting when extra-turns > 0: say "You're too antsy to sit and wait. For better or worse, the be-quick beak-wick doesn't just give you the opportunity to be faster. It COMPELS you. So you're not going to lose a turn of walking that way." instead;
 
 report going when extra-turns > 0:
 	decrement extra-turns;
@@ -1047,7 +1047,7 @@ to say ditch-full:
 
 check going east in bowl ditch:
 	if sco-no-date is true and sco-barn-open is true:
-		say "You got that egg, and you destroyed the nodes. You're pretty sure the west is clear now.";
+		say "You got that egg, and you destroyed the nodes. You're pretty sure the area behind you, to the west of Ur-Branch, is clear now.";
 		if sco-tour-boaters is false, max-down;
 		wink-out west;
 		wfas;
@@ -1259,9 +1259,9 @@ Dam Pink is a rotroom in r-south. printed name is "Dam, Pink". "You can only go 
 to say liquid-need:
 	choose row with check-rule of pre-damp-ink rule in table of main oronyms;
 	if think-cue entry is true:
-		say "you know what you want but didn't have a container";
+		say "you figured what you wanted but didn't have a container";
 	else:
-		say "you're not sure which you want or need";
+		say "you're not sure what you want or need yet";
 
 chapter clay mitt
 
@@ -1328,6 +1328,10 @@ book up area
 part Throne Ow Throw Now
 
 Throne Ow Throw Now is a room in universal. printed name is "[if sco-use-it is true]Final (?) and Fine Land[else]Throne Ow-Throw-Now[end if]". description is "[if sco-lie-fruits is true]You've gotten what you need from here[else if sco-use-it is true]With the throne gone, the oppression has lifted[else]Weird, you thought hell was usually down, but your hell pin is protecting you here, you think[end if]. You can only go back down to the Ur-Branch.". eyes-number of Throne Ow Throw Now is 32. eyes-rule of Throne Ow Throw Now is pre-use-it rule.
+
+after printing the locale description for throw now when extra-turns > 0:
+	say "Your extra speed doesn't seem to help here. You don't need to run from the throne. You need an item of power, not just one to help you survive like [the pin].";
+	continue the action;
 
 chapter thronescen
 
@@ -1436,7 +1440,7 @@ carry out taking inventory (this is the UT specific inventory rule):
 	else if nds > 0:
 		say "[aight-count] from [aight].";
 		if nds > last-stewitem-inventory:
-			say "[line break]You got [if nds - last-stewitem-inventory > 1]some new ones[else]a new one[end if] since you last checked. To see [if nds - last-stewitem-inventory > 1]them[else]it[end if], [b]X[r][if gs-using-known is false][b] AIGHT[r][end if].";
+			say "[line break]You got [if nds - last-stewitem-inventory > 1]some new ones[else]a new one[end if] since you last took inventory. To see [if nds - last-stewitem-inventory > 1]them[else]it[end if], [b]X[r][if gs-using-known is false][b] AIGHT[r][end if].";
 			now last-stewitem-inventory is nds;
 	else:
 		say "[aight], which you got to start, lists items [ara] asked for. You don't have any yet.";
@@ -1562,7 +1566,7 @@ check ting:
 			say "You don't have the skills to talk out a detente." instead;
 	if noun is pun tweaker, say "[if sir freddie is in beach]Not in the mood to chat with Sir Freddie around[else]You punch at pun chat but can't keep up with the pun tweaker[end if]." instead;
 	if noun is sageoakscen, say "[if sco-say-jokes is false]The oaks just don't seem to be bothered with regular talk[else]You wonder if you should say 'Forge, oaks, for jokes,' or ask for kludge-oaks that might clue jokes. But the oaks don't seem interested in talking[end if]." instead;
-	if noun is fey loners, say "They [if gs-deli-dell-left is false]grouse about how terrible business is[else if gs-deli-ale-left is false]moan about business picked up slightly, but still not enough[else if gs-deli-beef-left is false and toon is in deli]point to the new toon they made[else if sco-wheat-rye is false and whee try is in deli]point to the WHEE TRY sign, eager to give some handouts[else]talk about how good business has gotten[end if]." instead;
+	if noun is fey loners, say "They [if sco-dell-eastern is false]grouse about how the salesman lied that this deli had location[else if gs-deli-dell-left is false]grouse about how business had better pick up, now that the location's less dismal[else if gs-deli-ale-left is false]moan about business picked up slightly, but still not enough[else if gs-deli-beef-left is false and toon is in deli]point to the new toon they made[else if sco-wheat-rye is false and whee try is in deli]point to the WHEE TRY sign, eager to give some handouts[else]talk about how good business has gotten[end if]." instead;
 	if noun is scribes, say "The scribes more or less ignore you while continuing their scribing. [if sco-scry-broom is false]You've offered them nothing, yet.[else if sco-pro-sweeping is false]You haven't figured what to do with their broom.[else]Why, they gave you that belt (rusted) and broom, and that should really be enough![end if]" instead;
 	if noun is Sir Freddie, say "[if player is in copse]'Ho, pawn! Hope on!'[else]A depressing outpouring of over-cheery surfing lingo. Harmless, but yeah. You see the pun tweaker's point.[end if]" instead;
 	if noun is not a sentient, say "No response. You should usually talk to living things, or things that can respond as if they were living." instead;
