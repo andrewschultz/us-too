@@ -879,7 +879,7 @@ the base pikes are a plural-named thing. "Base pikes lie here as part of the bri
 
 section pike rust
 
-the pike rust is a thing. description is "It's on the pike, sort of a cover on the side. Perhaps it is better as something else.". eyes-number of pike rust is 35. eyes-rule of pike rust is pre-pie-crust rule.
+the pike rust is a thing. "Pike rust has piled up on the base pikes.". description is "It's on the pike, sort of a cover on the side. Perhaps it is better as something else.". eyes-number of pike rust is 35. eyes-rule of pike rust is pre-pie-crust rule.
 
 check taking pike rust: say "Oh, it might flake off uselessly if you just took it." instead;
 
@@ -930,7 +930,7 @@ chapter gray tin
 
 the gray tin is an uneatable stewitem. description is "The gray tin is curently [if sco-pie-crust is false]empty[else]full of pie crust.". understand "grey" and "grey tins" as gray tin. eyes-number of gray tin is -1.
 
-invtext of gray tin is "[if sco-gray-tin is false]crust[else if sco-pie-crust is false]some crust to put in the gray tin[else]pie crust in your gray tin[end if]"
+invtext of gray tin is "[if sco-gray-tin is false]crust[else if sco-pie-crust is false]some crust to put in the gray tin[else]pie crust in your gray tin (2 items from the list)[end if]"
 
 chapter inscen
 
@@ -1144,7 +1144,7 @@ The mope liars mo pliers are a plural-named thing. description is "On the one ha
 
 chapter WHEE TRY
 
-the WHEE TRY sign is a thing. "A WHEE TRY sign is here--[if sco-wheat-rye is true]it'd be cheery even if you hadn't gotten free samples from it.[else]free samples![end if]". description is "[if sco-wheat-rye is false]The [owners] see you looking at the sign, which is covered with different types of bread. 'You won't just get a small free sample. You'll get a lot more... of what? Well, you have to guess.'[else]You look at the sign again. Man, those were some good free samples.'[end if]". eyes-number of WHEE TRY is 53. eyes-rule of WHEE TRY is pre-wheat-rye rule.
+the WHEE TRY sign is a thing. "A WHEE TRY sign is here--[if sco-wheat-rye is true]it'd be cheery even if you hadn't gotten free samples from it.[else]free samples![end if]". description is "[if sco-wheat-rye is false]The [owners] see you looking at the WHEE TRY sign, which is covered with different types of bread. 'You won't just get a small free sample. You'll get a lot more... of what? Well, you have to guess.'[else]You look at the WHEE TRY sign again. Man, those were some good free samples.'[end if]". eyes-number of WHEE TRY is 53. eyes-rule of WHEE TRY is pre-wheat-rye rule.
 
 chapter wheat rye
 
@@ -1225,7 +1225,9 @@ after printing the locale description when gs-nn-noted is false and (player is i
 
 part Tube Rod
 
-Tube Rod is an ordroom in r-south. rmord of Tube Rod is 3. eyes-number of Tube Rod is 35. printed name is "Tube/Rod". eyes-rule of Tube Rod is pre-too-broad rule. "[if sco-too-broad is false]Well, you're blocked south by a huge a huge nondescript wall with a single tube/rod sticking out of it[else]With the tube/rod burst, you can now go south as well as back north[end if].". roomdirs of Tube Rod is "NE/S".
+Tube Rod is an ordroom in r-south. rmord of Tube Rod is 3. eyes-number of Tube Rod is 35. printed name is "Tube/Rod". eyes-rule of Tube Rod is pre-too-broad rule. "[if sco-too-broad is false]Further passage south is blocked by a huge nondescript wall with a single tube/rod sticking out of it[else]With the tube/rod burst, you can now go south as well as back north[end if].". roomdirs of Tube Rod is "NE/S".
+
+chapter tuberodscen
 
 the tuberodscen is privately-named scenery in Tube Rod. "Well, you can't do much with the wall, which is pretty boring and large. The tube/rod, on the other hand ...". printed name is "tube/rod". eyes-number of tuberodscen is 35. eyes-rule of tuberodscen is pre-too-broad rule.
 
@@ -1233,7 +1235,7 @@ understand "wall" and "tube/rod" and "tube rod" as tuberodscen when tuberodscen 
 
 part Too Dark Tude Ark
 
-Too Dark Tude Ark is an ordroom in r-south. rmord of Too Dark is 1. printed name of tude ark is "[if sco-ho-langour is true]'Ugh?! Lo, a Glow'[else]Too-Dark [']Tude Ark[end if]". "[if sco-ho-langour is false]Your attitude can't help grow dark as you wonder if it was really worth running all the way here or even going back north, and if there is anywhere beyond that will require even more running, which it doesn't look like, because it's hard to see[else]It's no longer too dark here. There's not much here, but at least it's not too dark. Oh, there's a passage south as well as one back north[end if].". eyes-number of Too Dark Tude Ark is 1. roomdirs of Tude Ark is "NE/D/U/S".
+Too Dark Tude Ark is an ordroom in r-south. rmord of Too Dark is 1. printed name of tude ark is "[if sco-ho-langour is true]'Ugh?! Lo, a Glow'[else]Too-Dark [']Tude Ark[end if]". "[if sco-ho-langour is false]Your attitude can't help grow dark as you wonder if it was really worth running all the way here from the north. A brief look shows nothing ahead. You found some shortcuts and hideouts so you can go back north safely, but that's no fun[else]It's no longer too dark here. There's not much here, but at least it's not too dark. Oh, there's a passage south as well as one back north[end if].". eyes-number of Too Dark Tude Ark is 1. roomdirs of Tude Ark is "NE/D/U/S".
 
 the whole anger is a thing in Tude Ark. "Whole anger swirls around here, consuming your every thought.". description is "How can one describe anger? It's there, and it's tough to shake.". eyes-number of whole anger is 27. eyes-rule of whole anger is pre-ho-langour rule.
 
@@ -1282,7 +1284,7 @@ after printing the locale description for scribe room when player has broom and 
 
 chapter scribes
 
-the scribes are plural-named sentients in Scribe Room. "[one of]Unsurprisingly,[or]Those[stopping] scribes continue to do their scribing thing and occasionally bustle about to assist others' scribing.". description is "They look very impressive and uninterested in you [if sco-belt-rusted is true]now you've transacted[else if sco-scry-broom is true]unless you can help with the bell[else]unless you have something for them[end if].". eyes-number of scribes is 1.
+the scribes are plural-named sentients in Scribe Room. "[one of]Unsurprisingly,[or]Those[stopping] scribes continue to do their scribing thing and occasionally bustle about to assist others['] scribing.". description is "They look very impressive and uninterested in you [if sco-belt-rusted is true]now you've transacted[else if sco-scry-broom is true]unless you can help with the bell[else]unless you have something for them[end if].". eyes-number of scribes is 1.
 
 chapter broom
 
