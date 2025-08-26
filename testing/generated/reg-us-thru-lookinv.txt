@@ -5,6 +5,7 @@
 
 ** game: /home/andrew/prt/debug-us-too.z8
 ** interpreter: /home/andrew/prt/dfrotz -m -w5000 -h25
+** checkclass: /home/andrew/prt/runtime.py
 
 * main-thru
 

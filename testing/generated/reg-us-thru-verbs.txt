@@ -1,15 +1,24 @@
 ## reg-us-thru-verbs.txt
 ## GENERATOR FILE: rbr-us-thru.txt
 
-## special verb testing inventory and room description changes
+## walkthrough testing odd verbs
 
 ** game: /home/andrew/prt/debug-us-too.z8
 ** interpreter: /home/andrew/prt/dfrotz -m -w5000 -h25
+** checkclass: /home/andrew/prt/runtime.py
 
 * main-thru
 
+>about
+Once you figure what to say to the lawyers (a short phrase with short words,) you will have the opportunity to uncover a small in-game document with my general relatively non-spoilery thoughts on Us Too's design. It's not necessary, of course, but attaining the bonus point may help gear you up for the other puzzles.
+
 >how so
 by a point
+
+>about
+The lucent row here contains, if you look at it right, something with more subjective details and opinions. It's a bonus point, but it might help prepare you for the rest of the game.
+
+>au 0
 
 >i
 
@@ -25,6 +34,89 @@ by a point
 
 >loose intro
 by a bonus point
+
+>drop jot
+You haven't examined the Urgh-Ought-'Er Jot yet, though you don't need to, to win the game. Drop it anyway?
+Next time, you'll drop it without this nag.
+
+>undo
+
+>x jot
+It's a note from Aunt Rickie-Anne: "The row/ledge is for practice if you want, but you don't need to change it. Items on it may help when needed. No shame using them everywhere, and I won't be offended if you find them useless or even drop them."
+
+>drop jot
+You actually just crumple it up and put it in your pocket, in case you need to start a fire later to, I don't know, cook stuff. Plus, littering isn't cool!
+The Urgh-Ought-'Er Jot is out of your conscious inventory, now.
+
+>drop jot
+Nothing (significant) here like that. Note that while you may need to act on room names, X (THIS ROOM'S NAME) is often not implemented because L or LOOK takes less characters to type.
+>i
+!Jot
+
+>drop intro
+You've currently not examined it yet.
+Are you sure you want to drop the loose intro? It's not game-critical.
+Okay, there will be no nag next time you try to drop the loose intro.
+
+>undo
+
+>x intro
+It's an introduction to your world, not from Aunt Rickie-Anne, but from one Hugh Morris AKA Mick Stupp. At the top is a note that while no puzzles are spoiled or hinted, the author does discuss his views on how Us Too compares to Why Pout (length, plot, etc.) and also mentions how two or three puzzles break the mold a bit.
+
+#testcase-x-intro-table-of-intro-jabber-1
+>x intro
+There's a brief explanation about how Us Too reuses a lot of the code from Why Pout, though hopefully the different stories and puzzles give enough variety to keep you interested. Both are polite on the Zarfian cruelty scale, so there's no way to die.
+
+#testcase-x-intro-table-of-intro-jabber-2
+>x intro
+Us Too has 29 rooms which can be placed in a 5x6 map--well, one pair of rooms in the code actually functions as "two rooms below a certain room," and I don't count the initial room in the map. A map comes with the game, but location names may spoil puzzles. (On the other hand, they may help you look ahead if you want.) It has a basic hub location where you slowly discover other passages. There are thirteen total, not including back down.
+For reference, the House would be the northeast corner, with the Mine to the left, and the hub room just after the mine two southwest of the House.
+
+>drop intro
+You've currently read two of eight pages.
+Are you sure you want to drop the loose intro? It's not game-critical.
+Okay, there will be no nag next time you try to drop the loose intro.
+
+>undo
+
+#testcase-x-intro-table-of-intro-jabber-3
+>x intro
+For those who played Why Pout, you won't have companions, but you will have NPCs to deal with, hostile and friendly.
+
+#testcase-x-intro-table-of-intro-jabber-4
+>x intro
+Us Too has more points than Why Pout, but I hope the points are more intuitive than Why Pout. You should get a few in bunches, which may seem too easy, but there are fewer you have to wait to get.
+
+#testcase-x-intro-table-of-intro-jabber-5
+>x intro
+Us Too also has a few puzzles where you have to go beyond the physical description. There'll be a clue that it implies something else, e.g. "What do these words mean?" But I hope it adds variety once you've offered the main mechanic.
+
+#testcase-x-intro-table-of-intro-jabber-6
+>x intro
+Us Too also has a puzzle where one direction leads to different rooms.
+
+#testcase-x-intro-table-of-intro-jabber-7
+>x intro
+Us Too felt a bit more rushed than Why Pout -- I spent early 2025 writing my first Adventuron game, which took more out of me than was expected, but it was worth it. Then I decided to get a head start on an EctoComp entry. So I'm not as happy with the story, and I'm worried about specific game polish, but on the other hand, I was able to spruce up some features from Why Pout and include some I didn't have the time for, which will work both here and in Why Pout.
+
+#testcase-x-intro-table-of-intro-jabber-8
+>x intro
+Us Too has more four-word things you don't need to do anything with but hopefully just laugh at. I piled up a bunch of good examples, and as I let them sit, some started to stand out as "Hey, this is worth putting in."
+
+>about
+You can re-read the loose intro to get more creative details on Us Too.
+
+>drop intro
+You've currently read it all.
+Are you sure you want to drop the loose intro? It's not game-critical.
+Okay, there will be no nag next time you try to drop the loose intro.
+
+>drop intro
+You actually just crumple it up and put it in your pocket, in case you need to start a fire later to, I don't know, cook stuff. Plus, littering isn't cool!
+The loose intro is out of your conscious inventory, now.
+
+>about
+You already discarded the loose intro that discusses design and such for Us Too, so you'll need to restart to read it again.
 
 >summon cheese
 by a point
