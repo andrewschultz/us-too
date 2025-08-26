@@ -1598,13 +1598,14 @@ book about
 carry out abouting:
 	say "[this-game] was released for IFComp 2025. It reuses a lot of code from [wp], my IFComp 2024 entry. It uses the same sort of progress mechanic, but the two are different in nature and story.";
 	say "[line break]As in 2024, I had bigger projects that didn't make it, but fortunately (well, for me,) I found the title early on and built from there.";
-	say "[line break]Like most of my games, [this-game] rates merciful on the Zarfian cruelty scale, which only means it can't get in an unwinnable state. However, in this case, I want the puzzles to be more merciful in terms of general difficulty on the player's psyche than usual."
+	say "[line break]Like most of my games, [this-game] rates merciful on the Zarfian cruelty scale, which only means it can't get in an unwinnable state. However, in this case, I want the puzzles to be more merciful in terms of general difficulty on the player's psyche than usual.";
+	say "[line break][email] is my email if you wish to send transcripts or whatever, or you can report bugs there or at the GitHub site mentioned above, [ghbase]/us-too. I can't see myself releasing a new version unless there are a few useful bugs or features.";
 
 report abouting:
 	if player is in house well:
-		say "Once you figure what to say to the lawyers (which is a short phrase with short words,) you will have the opportunity to find a small document with silly and fun observations. (This line will change once you get there, too.)";
+		say "Once you figure what to say to the lawyers (a short phrase with short words,) you will have the opportunity to uncover a small in-game document with my general relatively non-spoilery thoughts on [this-game]'s design. It's not necessary, of course, but attaining the bonus point may help gear you up for the other puzzles.";
 	else if loose intro is moot:
-		say "You already read the loose intro that goes into detail about things.";
+		say "You already discarded the loose intro that discusses design and such for [this-game], so you'll need to restart to read it again.";
 	else if player has loose intro:
 		say "You can [if loose intro is examined]re-[end if]read the loose intro to get more creative details on [this-game].";
 	else:
@@ -1614,12 +1615,13 @@ report abouting:
 book credits
 
 carry out creditsing:
-	say "Thanks to my testers, Wade Clarke, Olaf Nowacki and Tabitha.";
+	say "Thanks to my testers, Onno Brouwer, Wade Clarke, Olaf Nowacki, Daniel Stelzer and Tabitha. With my development schedule, I put them in a time crunch, and they found a lot--enough for me to add a few features that hopefully have no bugs.";
 	say "[line break]The cover art is my fault, and my fault alone.";
 	say "[line break][b]GENERAL THANKS[r]:[paragraph break]";
 	say "Thanks to everyone past and future involved in the administration of IFComp.";
 	say "Thanks to the I7 board on Intfiction.org for their help, as well as the people in the general topics and the spoilers topic as we discussed our plans.";
 	say "The [if sign ought is off-stage]additional branch directions (sort of) late in the game[else]S/SS/SSS[end if] were inspired by a game which, if I told you the name, would spoil it. I hate it when things like that happen, because I'd like to give them credit.";
+	general-thanks;
 
 book verbs
 
