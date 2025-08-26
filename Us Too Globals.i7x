@@ -10,7 +10,7 @@ chapter scoring
 
 core-max is a number that varies. core-max is 64.
 
-cur-max-bonus is a number that varies. cur-max-bonus is 4.
+cur-max-bonus is a number that varies. cur-max-bonus is 5.
 
 max-bonus is a number that varies. max-bonus is 5.
 
@@ -25,11 +25,6 @@ starter-counter is a number that varies.
 last-stewitem-xaight is a number that varies.
 
 volume booleans
-
-chapter hinting and such
-
-undo-okayed is a truth state that varies.
-gs-loose-intro-read is a truth state that varies.
 
 chapter printing details
 
@@ -50,6 +45,12 @@ gs-taken-inventory is a truth state that varies.
 gs-take-hintthing-note is a truth state that varies.
 gs-noted-r is a truth state that varies.
 gs-pecs-forget-note is a truth state that varies.
+
+chapter after prologue, optional and unlikely, mostly to funnel player to the right place
+
+undo-okayed is a truth state that varies.
+gs-loose-intro-read is a truth state that varies.
+gs-too-soon-x-aight is a truth state that varies.
 
 chapter game-critical, or definitely seen in the course of the game
 

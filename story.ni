@@ -1453,6 +1453,8 @@ definition: a thing (called th) is ughlistable:
 	if th is a hintthing, no;
 	yes;
 
+after printing the name of den specs when taking inventory: say " (from your dense pecs)";
+
 after printing the name of gas pouch when taking inventory: if sco-damp-ink is true, say "full of damp ink";
 
 to say x-aight: say "[b]X[if gs-using-known is false] AIGHT[r]"
@@ -1485,6 +1487,7 @@ carry out taking inventory (this is the UT specific inventory rule):
 	if cas > 0 and sco-malt-hour is false, say "[line break]You've got more than enough alcohol in the form of [the list of carried alcoholic stewitems], so maybe you can use [if cas is 1]it[else]them[end if] to bribe someone or a group of people.";
 	if player has dense pecs and sco-den-specs is false, say "[line break]You're infused with dense pecs from all your carrying stuff and using the prime oar. They may be useful in some other weird way.";
 	if player has er jot, say "[line break]You [if core-score > 10]still [end if]have that [er jot] flopping about, too. It [if er jot is examined]didn't seem too important, though, so you can drop it[else]probably only had stuff to help you get started, which [jot-usefulness][end if].";
+	now gs-taken-inventory is true;
 	the rule succeeds;
 
 report taking inventory when player has dense pecs and sco-den-specs is true and gs-pecs-forget-note is false:
@@ -1718,7 +1721,7 @@ carry out verbsing:
 	say "[line break]Useful one-letter diagnostic commands: [b]I[r] inventories  what you're carrying, though it delegates items on [ara]'s list ([aight]) to [b]X[r][if gs-using-known is false] after the first time you use it[end if] so you don't have to read too much at once. [b]X THING[r] still examines in-game items.";
 	say "[line break]While [b]SCORE[r] gives your game-score (also listed in the upper right), [b]THINK[r] may be more useful looking forward, to track point-scoring commands that you found that will work later, or commands you got half-right.";
 
-report verbsing when south-sorted or gs-noted-r is true:
+report verbsing when (south-sorted or gs-noted-r is true) and south is not branchdone:
 	say "[if south-sorted]N2/NN/2N kicks you back to Ur-Branch from very south locations[end if][if south-sorted or gs-noted-r is true], and [end if][if gs-noted-r is true]R/RR can rotate among the three near [or-far]south locations[end if].";
 	continue the action;
 
