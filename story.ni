@@ -1158,7 +1158,9 @@ Groan Odes is a room in universal. printed name is "[if sco-grow-nodes is false]
 
 chapter numbered nodes
 
-the numbered nodes are plural-named scenery. "It's a long string of numbered nodes: node one, node two, and so forth. You feel helpless at the thought of disabling it all. Thus, a numb bursting number string. But maybe there is a weak link!". eyes-number of nodes is 24. eyes-rule of nodes is pre-no-date rule.
+the numb bursting number string is scenery. "It's a long string of numbered nodes: node one, node two, and up past a hundred. You feel helpless at the thought of disabling it all. Thus, a numb bursting number string. But maybe one of the nodes is especially vulnerable!". printed name is "numb bursting number string/numbered nodes". eyes-number of nodes is 24. eyes-rule of nodes is pre-no-date rule.
+
+understand "numbered/nodes" and "numbered nodes" as number string when number string is touchable.
 
 chapter hell pin
 
@@ -1473,8 +1475,8 @@ report eyeing toon:
 
 check eyeing broom: say "The eyes show nothing. Perhaps it's better the broom isn't magical. You saw [i]Fantasia[r]. It could probably help you clean up somewhere, though." instead;
 
-report eyeing numbered nodes:
-	say "Perhaps one node is particularly weak, and that's the one to work on.";
+report eyeing number string:
+	say "Well! That's a low reading for a numbered string, or numbered nodes. Perhaps one node is particularly weak, and that's the one to work on.";
 	continue the action;
 
 report eyeing thronescen:
