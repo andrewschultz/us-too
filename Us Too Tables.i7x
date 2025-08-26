@@ -99,7 +99,7 @@ a wordtwisting rule (this is the pre-nice-warm rule):
 
 this is the post-nice-warm rule:
 	now sco-nice-warm is true;
-	say "The nigh swarm grows less volatile and, yes, more nice, warm. It rises in the air, then buzzes off to somewhere to maybe be nice, cool, too. Perhaps there is a nigh school![paragraph break]Behind the nigh swarm is a pro ball.";
+	say "The nigh swarm grows less volatile and, yes, more nice, warm. It rises in the air, then buzzes off to somewhere to maybe be nice, cool, too. Perhaps there is a nigh school![paragraph break]As the nigh swarm buzzes off, a pro ball has rolled into view. You're not sure what sport it could be for, but it's marked PRO.";
 	moot nigh swarm;
 	move pro ball to beach ill;
 	print-the-loc;
@@ -234,14 +234,14 @@ this is the post-herb-ranch rule:
 a wordtwisting rule (this is the pre-probe-all rule):
 	if pro ball is not touchable, unavailable;
 	if sco-probe-all is true:
-		vcal "You already probed the pro ball enough to get a feel for hidden exits in your surroundings! More will appear as you need them.";
+		vcal "You already probed the pro ball enough to get a feel for hidden exits in your surroundings! More will appear as you need them, and [if sco-hike-up is false]later, you'll be able to use it to navigate slightly trickier area maps[else]you can just examine it for an overview of the new terrain since you found the high cup[end if].";
 		already-done;
 	ready;
 
 this is the post-probe-all rule:
 	now sco-probe-all is true;
-	say "You reach out to the pro ball. It seems to sense what you want it for. You take it, then look at it from many different angles. Reflected in it, you see ... well, a meh spot [here-in of my new mine ooh] that could use sprucing up. But how?[paragraph break]Yet much of the pro ball remains cloudy. Perhaps it will reveal what you need, as you need it.";
-	say "[line break]It also reveals something near here. You notice some sort of ship. You wave, and someone on it waves back. They introduce themselves as the Pun Tweaker. Their ship is the [gauche]. They explain it needs repairs and then immediately start in with some crunching puns. Unfortunately, given some of the stuff you had to envision to get here, and what you expect you'll need to do, you can't really retaliate, but nothing's TOO terrible.[paragraph break][i][bracket][b]NOTE[r][i]: the pro ball will open passages of its own accord for a while. You'll never need to examine it explicitly, but it will help you with a complex map near the end.[close bracket][i][line break]";
+	say "You reach out to the pro ball. The PRO painted on it slowly dissolves. You take it, then look at it from many different angles. It's still very cloudy, but you start to see a map of where you are and where you've been. Reflected in one shiny corner, corresponding to [here-in of mine ooh], you see ... well, a meh spot that could use sprucing up. But how?[paragraph break]That seems useful, though. Perhaps it will become less cloudy as you need it.";
+	say "[line break]As you stare a bit more, you think you see an isle to the east of here, too. You spend time wondering how to get there, and when you look up, you notice some sort of ship. You wave, and someone on it waves back. They introduce themselves as the Pun Tweaker. Their ship is the [gauche]. They explain it needs repairs and then immediately start in with some crunching puns involving 'ship-shape' and other phrases that I won't repeat, because man, they are distressing. Unfortunately, given some of the stuff you had to envision to get here, and what you expect you'll need to do, you can't really retaliate, but nothing's TOO terrible.[paragraph break][i][bracket][b]NOTE[r][i]: the pro ball will open passages of its own accord for a while. You'll never need to examine it explicitly, but it will help you with a complex map near the end.[close bracket][i][line break]";
 	move meh spot to my new mine ooh;
 	now player has pro ball;
 	move pun tweaker to beach ill;

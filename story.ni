@@ -659,15 +659,24 @@ book east branch
 
 part Beach Ill
 
-Beach Ill is a room in universal. printed name is "[if sco-be-chill is false]Beach, Ill[else if sco-punt-weaker is false]Bless-and-Bleah Sand[else]Dune Ever-Do-Never[end if]". "[if sco-be-chill is false]While the environs aren't totally illun['], you do have a general sense of malaise here, and not being able to get rid of it despite beaches usually being cheery is simply is causing more malaise. You're overthinking things a bit, maybe, and you're feeling slightly agitated. You can go back west[else]It's nice here. The only way out on foot is back west, since you can't swim the other ways[end if].". eyes-number of Beach Ill is 25. eyes-rule of Beach Ill is pre-be-chill rule.
+Beach Ill is a room in universal. printed name is "[if sco-be-chill is false]Beach, Ill[else if sco-punt-weaker is false]Bless-and-Bleah Sand[else]Dune Ever-Do-Never[end if]". "[if sco-be-chill is false]While the environs aren't totally illun['], you do have a general sense of malaise here, and not being able to get rid of it despite beaches usually being cheery is simply is causing more malaise. You're overthinking things a bit, maybe, and you're feeling slightly agitated. You can go back west[else]It's nice here. The only way out on foot is back west, since you can't swim the other ways[end if][if sco-probe-all is true]. [isle-from-beach][end if].". eyes-number of Beach Ill is 25. eyes-rule of Beach Ill is pre-be-chill rule.
+
+to say isle-from-beach:
+	if pile up isle is visited:
+		say "A Pile-Up Isle is back east[if pile-done], though you're pretty sure you found all it had to offer[end if]";
+	else:
+		say "The pro ball seemed to indicate an island to the east"
 
 After choosing notable locale objects when player is in Beach Ill:
 	if Freddie is in beach, set the locale priority of Freddie to 9;
 
 after printing the locale description of Beach Ill when sco-peace-talks is true and Sir Freddie is not moot:
-	say "With the lessons learned from the Pea Stalks, you broker a tentative truce between the pun tweaker and Sir Freddie. You even have a dialogue, discussing nearby isles. Surprisingly, the pun tweaker notes one that Sir Freddie knows.[paragraph break]'Nay-Vile-Knave Isle?'[paragraph break]'No, the large waves scared me ... but they'd be a challenge now. I ... I can picture myself saying Nay, Vile Knave, to those who think they can out-surf me! What an idea! How could I help you back?'[paragraph break]The pun tweaker points to [the ship], which still need repairs. Sir Freddie blushes. 'I ... I never noticed! I was so busy with my new hobbies. But I can trade in all my questing stuff to help you repair things.'[paragraph break]The pun tweaker and Sir Freddie work together to repair [the ship]. They both shake your hands then sail off. The pun tweaker brings the ship back. 'Now. What can I offer you?' 'Oh, nothing much, you say.' The pun tweaker says 'oh of course' a bit too quickly.";
+	say "With the lessons learned from the Pea Stalks, you broker a tentative truce between the pun tweaker and Sir Freddie. You even have a dialogue, discussing nearby isles. Surprisingly, the pun tweaker notes one that Sir Freddie knows.[paragraph break]'Nay-Vile-Knave Isle?'[paragraph break]'No, the large waves scared me ... but they'd be a challenge now. I ... I can picture myself saying Nay, Vile Knave, to those who think they can out-surf me! What an idea! How could I help you back?'[paragraph break]The pun tweaker points to [the ship], which still need repairs. Sir Freddie blushes. 'I ... I never noticed! I was so busy with my new hobbies. But I can trade in all my questing stuff to help you repair things.'[paragraph break]The pun tweaker and Sir Freddie work together to repair [the ship]. They both shake your hand then sail off. You worry the pun tweaker might ditch you if they find you involuntarily inflicted Sir Freddie on them in the first place, but then you realize\: no Sir Freddie, no fixed ship. As you do, you see the ship coming back into view.[paragraph break]'Now. What can I offer you?' 'Oh, nothing much,' you say. The pun tweaker says 'oh of course' a bit too quickly.";
 	moot Sir Freddie;
 	continue the action;
+
+check going east in Beach Ill when player has board red:
+	say "You think about catching a wave all the way, but you wouldn't have the skills, even [if player has board]though that board would make a serviceable surfboard[else]if you had the right equipment[end if]." instead;
 
 check going east in Beach Ill when sco-probe-all is true:
 	if sco-punt-weaker is false, say "You have no transport. Yet. And the pun tweaker won't take you for free." instead;
@@ -678,7 +687,7 @@ check going east in Beach Ill when sco-probe-all is true:
 	move oar to isle;
 
 check going west in beach ill:
-	if pile-done, now east is branchdone;
+	if pile-done, wink-out east;
 
 chapter nigh swarm
 
@@ -719,6 +728,10 @@ the gauche hip go ship is scenery. printed name is "Gauche/Hip GO-Ship". "It's r
 chapter punt weaker
 
 the punt weaker is a thing. printed name is "punt (weaker)". "Your punt, weaker, floats here[punt-status].". description is "It seems pretty sturdy, actually. Perhaps its speed is weaker than something gas-powered or whatever[if sco-pry-more is true and sco-stark-raft is false]. The prime oar is attached to it[end if].". eyes-number of punt weaker is -1.
+
+report examining punt weaker when punt weaker is unexamined:
+	say "The pun tweaker has carved 'reel east, RELEASED.' Ah, so they DID have a pun for you, sort of.'";
+	continue the action;
 
 check taking punt: say "You can just go east or west as needed." instead;
 
