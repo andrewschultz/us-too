@@ -317,14 +317,6 @@ After choosing notable locale objects when player is in Mine Ooh:
 	if war pawn is in mine ooh, set locale priority of war pawn to 0;
 	if slice eyes are in mine ooh, set locale priority of slice eyes to 0;
 
-to note-mine (th - a thing):
-	if th is in location of player, say "A [th] juts out here. [if ledge is unexamined]Looks like it's not empty.[else]You see [the list of hintthings in mine ooh] on it.";
-
-after printing the locale description for My New Mine Ooh:
-	note-mine lucent row;
-	note-mine ledge;
-	continue the action;
-
 after examining lucent row:
 	now ledge is examined;
 	continue the action;
@@ -360,11 +352,9 @@ the beast wrong is a sentient. printed name is "beast (wrong)". "A beast (wrong)
 
 chapter hintthings in mine
 
-to say intro-hintthings: say "You see [the list of hintthings in mine ooh] on it"
-
 section lucent row
 
-the lucent row is a startprop in My New Mine Ooh. "[intro-hintthings].". eyes-number of lucent row is -55. eyes-rule of lucent row is pre-loose-intro rule.
+the lucent row is a startprop in My New Mine Ooh. eyes-number of lucent row is -55. eyes-rule of lucent row is pre-loose-intro rule.
 
 check examining lucent row when lucent row is examined and number of hintthings in My New Mine Ooh is 0:
 	say "There's nothing on the lucent row now that you took the eyes and pawn, but it seems to hold a small mystery.[paragraph break]What could that practice be? [if jot is unexamined]Perhaps the [er jot] would offer a clue. [end if]Lucent is a weird word -- but [ara] wouldn't have had you do something weird early." instead;
@@ -375,7 +365,7 @@ report examining lucent row:
 
 section goal edge go ledge
 
-the goal edge go ledge is a startprop. printed name is "Goal-Edge-Go Ledge". "[intro-hintthings].". eyes-number of Goal Edge Go Ledge is 1.
+the goal edge go ledge is a startprop. printed name is "Goal-Edge-Go Ledge". eyes-number of Goal Edge Go Ledge is 1.
 
 check taking a startprop:
 	if slice eyes are off-stage, say "You can't, but if you [b]EXAMINE[r] [the noun], you may find something on it." instead;

@@ -46,9 +46,15 @@ definition: a stewitem (called st) is discovered:
 	if st is carried, yes;
 	no;
 
-a startprop is a kind of thing. a startprop is usually scenery.
+a startprop is a kind of thing.
 
-a startthing is a kind of thing.
+After choosing notable locale objects when player is in mine ooh:
+	if lucent row is in mine ooh, set the locale priority of lucent row to 2;
+	if ledge is in mine ooh, set the locale priority of ledge to 2;
+
+a startthing is a kind of thing. description of a startthing is usually "You see [the list of hintthings in mine ooh] on [the item described].".
+
+initial appearance of a startthing is usually "A [item described] juts out here. [if the item described is unexamined]Looks like it's not empty.[else]You see [the list of hintthings in mine ooh] on it[end if].".
 
 volume rotroom and ordroom
 
