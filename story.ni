@@ -924,8 +924,6 @@ chapter great inn
 
 the great inn is scenery. "It's very impressive. [if sco-gray-tin is false]Maybe it has some cast-off items for you[else]But you doubt it holds and more freebies[end if].". eyes-number of great inn is 43. eyes-rule of great inn is pre-gray-tin rule.
 
-check entering great inn: say "You don't need a break, and you couldn't afford the rates." instead;
-
 chapter gray tin
 
 the gray tin is an uneatable stewitem. description is "The gray tin is curently [if sco-pie-crust is false]empty[else]full of pie crust.". understand "grey" and "grey tins" as gray tin. eyes-number of gray tin is -1.
@@ -1202,8 +1200,6 @@ chapter bar nopin
 
 the Bar Nopin is a thing in Far Miles. "A Bar, Nopin['], sits here trying to look elite. Perhaps you don't need to get there but somewhere else. It has a fine drinks ad attached to it.". description is "Unfortunately, with the fine drinks sign on it, it's probably out of your price range, so it won't help with the alcohol requirements in your list. [if booze-score is 2]No big deal. You found enough[else if booze-score is 1]But you've found some already, which is nice[else]Perhaps there is easier booze to find elsewhere[end if].". printed name of Bar Nopin is "Bar, Nopin[']". eyes-number of bar nopin is 44. eyes-rule of bar nopin is pre-barn-open rule.
 
-check entering bar: say "If you tried to get loaded, you'd soon feel low, dead." instead;
-
 chapter fine drinks
 
 the fine drinks ad is scenery in Far Miles. "It simply says FINE DRINKS as an advertisement for the bar. Which would contradict the nopin['], but I guess it is trying to be elite.". eyes-number of fine drinks ad is 45. eyes-rule of fine drinks is pre-find-rinks rule.
@@ -1381,6 +1377,32 @@ check going outside:
 		try going j instead;
 
 volume regular verbs
+
+book entering
+
+the find what to enter rule is not listed in any rulebook.
+
+check entering great inn: say "You don't need a break, and you couldn't afford the rates." instead;
+
+check entering bar: say "If you tried to get loaded, you'd soon feel low, dead." instead;
+
+check entering tube rod: say "Well, that might cause it to explode, if you could fit. But it might kill you, too. Maybe there's another less risky way..." instead;
+
+rule for supplying a missing noun when entering:
+	if great inn is touchable:
+		now noun is great inn;
+	else if bar nopin is touchable:
+		now noun is bar nopin;
+	else if tube rod is touchable:
+		now noun is tube rod;
+	else:
+		say "You can't see anything to enter.";
+		reject the player's command;
+	continue the action;
+
+check going inside when room gone to is nowhere:
+	say "Trying to enter, since no room is inside...";
+	try entering instead;
 
 book inventory
 
