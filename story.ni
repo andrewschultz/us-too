@@ -1158,7 +1158,7 @@ Groan Odes is a room in universal. printed name is "[if sco-grow-nodes is false]
 
 chapter numbered nodes
 
-the numb bursting number string is scenery. "It's a long string of numbered nodes: node one, node two, and up past a hundred. You feel helpless at the thought of disabling it all. Thus, a numb bursting number string. But maybe one of the nodes is especially vulnerable!". printed name is "numb bursting number string/numbered nodes". eyes-number of nodes is 24. eyes-rule of nodes is pre-no-date rule.
+the numb bursting number string is scenery. "It's a long string of numbered nodes: node one, node two, and up past a hundred. You feel helpless at the thought of disabling it all. Thus, a numb bursting number string. But maybe one of the nodes is especially vulnerable!". printed name is "numb bursting number string/numbered nodes". eyes-number of number string is 24. eyes-rule of number string is pre-no-date rule.
 
 understand "numbered/nodes" and "numbered nodes" as number string when number string is touchable.
 

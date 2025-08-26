@@ -972,13 +972,13 @@ a wordtwisting rule (this is the pre-grow-nodes rule):
 this is the post-grow-nodes rule:
 	now sco-grow-nodes is true;
 	say "The groan odes retract, as nodes grow out, creating a more menacing noise. Ah, so that's what you're up against!";
-	move nodes to odes;
+	move number string to odes;
 	declue-here;
 	print-the-loc;
 
 a wordtwisting rule (this is the pre-no-date rule):
 	if player is not in groan odes, unavailable;
-	if nodes are not in groan odes, unavailable;
+	if number string is not in groan odes, unavailable;
 	if player does not have pliers:
 		vcp "Yes ... that feels right, but you have no tool with which to tear apart node eight.";
 		not-yet;
