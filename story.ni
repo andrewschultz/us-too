@@ -255,7 +255,7 @@ chapter cheese
 
 the cheese is an eatworthy stewitem. description is "All sorts of cheese, really. Everyone is sure to like one of the types. They're probably sure to hate another, what with some types of cheese being really really polarizing, but that just leaves more for everyone else.". eyes-number of cheese is 1. indefinite article of cheese is "some".
 
-invtext of cheese is "some munchies ([if sco-summon-cheese is false]the kind is not specified. What's up with that?[run paragraph on][else]SUMMONED the CHEESE[end if])".
+invtext of cheese is "some munchies ([if sco-summon-cheese is false]the kind is not specified. What's up with that?[run paragraph on][else][b]SUMMON[r]ed the [b]CHEESE[r][end if])".
 
 chapter dense pecs / den specs
 
@@ -300,7 +300,7 @@ book introduction
 part my new mine ooh
 
 after printing the locale description for Mine Ooh when core-score is core-max - 1:
-	say "Okay, so what do you DO with all these ingredients? What can they make? Well, the ones that are still a bit raw...";
+	say "Okay, so what do you DO with all these ingredients? What can they make? Well, the ones that are still a bit raw... perhaps you have overlooked a clue somewhere in [ara]'s original documents. A common, innocuous phrase...";
 	continue the action;
 
 My New Mine Ooh is a room in intro. printed name is "My New Mine, Ooh!". description is "You're down in your new mine, with a passage up back to the great wide world[if sco-be-strong is true]. You've cleared the way--you can't be sure of the direction, as the path twists a bit[else if sco-try-quest is false]. Fortunately it's more 'Ooh' than 'Eew.' It could go either way, you realize. But you're still finding your bearings and purpose. You feel a bit blown away being given such a big mine, and you'd feel silly wandering purposelessly[end if].". eyes-number of Mine Ooh is 1.
@@ -429,7 +429,7 @@ the meh spot is a thing. "The meh spot you saw in the pro ball sits here. It mak
 
 chapter mess kit
 
-the mess kit is a stewitem. description is "It's a standard mess kit, not very flashy, but clean.". eyes-number of mess kit is -34. eyes-rule of mess kit is pre-meh-skit rule. invtext of mess kit is "cookware[if sco-mess-pot is true] (the mess kit)[end if]".
+the mess kit is a stewitem. description is "It's a standard mess kit, not very flashy, but clean.". eyes-number of mess kit is -34. eyes-rule of mess kit is pre-meh-skit rule. invtext of mess kit is "cookware[if sco-mess-pot is true] (the mess kit [here-in of mine ooh])[end if]".
 
 part ur branch
 
@@ -534,7 +534,7 @@ check going south in Ur Branch when sco-hike-up is true and extra-turns is 0 and
 
 chapter herbs
 
-some herbs are a proper-named eatworthy stewitems. description is "It's some herb, eh? [if sco-summer-bay is true]It helped you find a new place to visit, and it's still edible![else]Apparently it can give enlightenment to new life paths, but, uh, not THAT way.[end if]". printed name is "[if sco-summer-bay is true]those herbs[else]'some herb, eh?'". understand "herbs/herb eh" and "herb" as some herbs. eyes-number of some herbs is 63. eyes-rule of herbs is pre-summer-bay rule.
+some herbs are a proper-named eatworthy stewitems. description is "It's some herb, eh? [if sco-summer-bay is true]It helped you find a new place to visit, and it's still edible![else]Apparently it can give enlightenment to new life paths, but, uh, not THAT way.[end if]". printed name is "[if sco-summer-bay is true]those herbs[else]'some herb, eh?'". understand "herbs/herb eh" and "herb" and "some herb/herbs" and "some herb/herbs eh" as some herbs. eyes-number of some herbs is 63. eyes-rule of herbs is pre-summer-bay rule.
 
 invtext of herbs is "[if player does not have herbs]seasoning[else]you've got lots of herbs, now[end if]".
 
@@ -544,7 +544,7 @@ the black ops are a thing. "You also know black ops are lurking to the north, an
 
 chapter garden tree
 
-the garden tree is a thing. "[if sco-guard-entry is true]The garden tree stands here, passively[else]That garden tree the [forest] were whining about stands here[end if].". description of garden tree is "[if sco-guard-entry is false]It doesn't seem violent, but its branches are long enough it could pull you back if it doesn't trust you[else if garden-score is 2]It doesn't need to guard anything from you, now that you got what you wanted inside[else]It seems quiet enough to let you pass[end if].". eyes-number of garden tree is 55. eyes-rule of garden tree is pre-guard-entry rule.
+the garden tree is a thing. "[if sco-pea-pod is false and all stewitems are discovered]That garden tree is still there. You've got everything from the list, but you wonder if it holds one more secret that appeals to perfectionist types[else if sco-guard-entry is true]The garden tree stands here, passively[else]That garden tree the [forest] were whining about stands here[end if].". description of garden tree is "[if sco-guard-entry is false]It doesn't seem violent, but its branches are long enough it could pull you back if it doesn't trust you[else if garden-score is 2]It doesn't need to guard anything from you, now that you got what you wanted inside[else]It seems quiet enough to let you pass[end if].". eyes-number of garden tree is 55. eyes-rule of garden tree is pre-guard-entry rule.
 
 chapter sign and south area verbs
 
@@ -806,7 +806,7 @@ the sword ark is scenery. "The Terra Blade is suspended in the sword ark above. 
 
 chapter Terra Blade
 
-The Terra Blade is a scenery. indefinite article of terra blade is "the". "It looks very impressive, almost too impressive for you to use.". eyes-number of Terra Blade is 83. eyes-rule of Terra Blade is pre-terrible-aid rule.
+The Terra Blade is a scenery. indefinite article of terra blade is "the". "It looks very impressive, almost too impressive for you to use as swords are generally uses. [if sco-blast-ring is true]Also, it's suspended above in the sword ark, too high to reach[else if sco-terrible-aid is false]You're pretty sure you need to take possession of it, but you're worried an annoying voice will boom out something about your destiny when it does[else]Now that you have it, you really hope you don't have to defeat someone super-powerful with it[end if].". eyes-number of Terra Blade is 83. eyes-rule of Terra Blade is pre-terrible-aid rule.
 
 book north branch
 
@@ -855,7 +855,7 @@ understand "house" and "houses" as row plaider when row plaider is touchable.
 
 chapter rope ladder
 
-the rope ladder is a thing. description is "It seems sturdy enough, for places slightly out of reach. Even crumpled, it's big enough you're glad you have [ara]'s [lug].". eyes-number of rope ladder is -1.
+the rope ladder is a thing. description is "It seems sturdy enough, for places slightly out of reach. Though even crumpled, it's big enough you're glad you have [ara]'s [lug].". eyes-number of rope ladder is -1.
 
 report examining rope ladder:
 	if up is not branchcant, say "But you remember how it uncoiled to reveal a passage up from [here-in of ur branch].";
@@ -922,7 +922,7 @@ the base pikes are a plural-named thing. "Base pikes lie here as part of the bri
 
 section pike rust
 
-the pike rust is a thing. "Pike rust has piled up on the base pikes.". description is "It's on the pike, sort of a cover on the side. Perhaps it is better as something else.". eyes-number of pike rust is 35. eyes-rule of pike rust is pre-pie-crust rule.
+the pike rust is a thing. "Pike rust has piled up on the base pikes. They must've been here a while". description is "It's on the pikes, sort of a cover on the side. Perhaps it is better as something else.". eyes-number of pike rust is 35. eyes-rule of pike rust is pre-pie-crust rule.
 
 check taking pike rust: say "Oh, it might flake off uselessly if you just took it." instead;
 
@@ -971,7 +971,7 @@ chapter gray tin
 
 the gray tin is an uneatable stewitem. description is "The gray tin is curently [if sco-pie-crust is false]empty[else]full of pie crust.". understand "grey" and "grey tins" as gray tin. eyes-number of gray tin is -1.
 
-invtext of gray tin is "[if sco-gray-tin is false]crust[else if sco-pie-crust is false]some crust to put in the gray tin[else]pie crust in your gray tin (2 items from the list)[end if]"
+invtext of gray tin is "[if sco-gray-tin is false]crust[else if sco-pie-crust is false]a gray tin with nothing in it[else]pie crust in your gray tin (counts as two items)[end if]"
 
 chapter inscen
 
@@ -979,7 +979,7 @@ the inscen is privately-named scenery. printed name is "inner nest". description
 
 to say inscen-desc:
 	if inner nest is visited:
-		say "You've been to the inner nest and [if sco-pry-more is true]got[else]saw, but didn't get,[end if] the prime oar";
+		say "You've been to the inner nest and [if sco-pry-more is true]got[else]saw, but didn't get,[end if] the prime oar. There wasn't much else";
 	else:
 		say "What could lie there? [if sco-in-earnest is true]Just go [b]IN[r] to find out[else]It seems resistant to casual tourism, people who just want to see everything[end if]";
 
@@ -1070,7 +1070,7 @@ check examining fell trap:
 
 part Cell Urban
 
-Cell Urban is a room in universal. printed name is "Cell, Urban". "[one of]THUD! [if extra-turns > 0]You're so anxious about being trapped here, you keep pacing until your speed wears off. [end if]Ugh. You see no way out to start. Perhaps you can complain to the manager, somehow.[or]Still stuck. No fair! There must be a way out![stopping][line break]You're getting sick of the noises of the city all around you. You have no clue where they're coming from. You're not aware you were anywhere near a city. But what's more important is getting out of here.". eyes-number of Cell Urban is 63. eyes-rule of Cell Urban is pre-cellar-bin rule.
+Cell Urban is a room in universal. printed name is "Cell, Urban". "[one of]THUD! [if extra-turns > 0]You're so anxious about being trapped here, you keep pacing until your speed wears off. [end if]Ugh. You see no way out to start. Perhaps you can complain to the manager, somehow.[or]Still stuck. No fair! There must be a way out![stopping][paragraph break]You're getting sick of the noises of the city all around you. You have no clue where they're coming from. You're not aware you were anywhere near a city. But what's more important is getting out of here.". eyes-number of Cell Urban is 63. eyes-rule of Cell Urban is pre-cellar-bin rule.
 
 part Cellar Bin
 
@@ -1090,7 +1090,7 @@ part Bowl Ditch
 Bowl Ditch is a room in universal. "[if sco-bold-itch is true][ditch-full][else]Ouch. Oww. You're lying on the ground, embarrassed how you tripped and fell, worried and scared there's no way back. Your injury is probably more psychological than physical, but it's there, and you need to overcome it[end if].". eyes-number of Bowl Ditch is 44. eyes-rule of Bowl Ditch is pre-bold-itch rule.
 
 to say ditch-full:
-	say "Now you've got your bearings, you wonder why this place ever intimidated you. You see passages north[if acres is visited] to [sob acres][end if] and west[if tours is visited] to [tours][end if], as well as back east to Ur-Branch"
+	say "Now you've got your bearings, you wonder why this place ever intimidated you. You see passages north[if acres is visited] to [sob acres][else] (unvisited)[end if] and west[if tours is visited] to [tours][else] (unvisited)[end if], as well as back east to Ur-Branch"
 
 check going east in bowl ditch:
 	if sco-no-date is true and sco-barn-open is true:
@@ -1229,7 +1229,7 @@ check taking raft: say "You can just go south or north as needed." instead;
 
 chapter stark raft
 
-the stark raft is a thing. "The stark raft [if farm isles is unvisited]waits here for you to take it and see what's south[else if player is in farm isles]can take you back north to [tours][else if sco-barn-open is true]sits here. It served you well, but you don't need to go back across the water. You've toured where you need to[else]can lead you back south to the Farm Isles[end if].". description is "It's plain, but sturdy enough, you think, and your prime oar will help steer it[if far miles farm isles is visited] back south[end if].". eyes-number of stark raft is -1.
+the stark raft is a thing. "The stark raft [if farm isles is unvisited]here can take you across the water to the south to somewhere new[else if player is in farm isles]can take you back north to [tours][else if sco-barn-open is true]sits here. It served you well, but you don't need to go back across the water. You've toured where you need to[else]can lead you back south to the Farm Isles[end if].". description is "It's plain, but sturdy enough, you think, and your prime oar will help steer it[if far miles farm isles is visited] back south[end if].". eyes-number of stark raft is -1.
 
 part Far Miles Farm Isles
 
@@ -1265,7 +1265,7 @@ book south branch
 
 after printing the locale description when gs-nn-noted is false and (player is in a rotroom) and (player is not in an ordroom):
 	now gs-nn-noted is true;
-	say "[i][bracket][b]NOTE[r][i]: you can use [b]NN[r] to go back to the ur-branch from here or (spoiler alert) any other room like this. Also, you can use [b]R[r][i] to rotate between these rooms once you've found them all.[close bracket][i][line break]";
+	say "[i][bracket][b]NOTE[r][i]: you can use [b]NN[r][i] to go back to Ur-Branch from here or (spoiler alert) any other room in the south not directly connected to Ur-Branch. Also, you can use [b]R[r][i] or [b]RR[r][i] to rotate between these rooms once you've found them all.[close bracket][i][line break]";
 	continue the action;
 
 part Tube Rod
@@ -1477,7 +1477,7 @@ after printing the name of den specs when taking inventory: say " (from your den
 
 after printing the name of gas pouch when taking inventory: if sco-damp-ink is true, say "full of damp ink";
 
-to say x-aight: say "[b]X[if gs-using-known is false] AIGHT[r]"
+to say x-aight: say "[b]X[if gs-using-known is false] AIGHT[end if][r]"
 
 carry out taking inventory (this is the UT specific inventory rule):
 	now all things carried by player are marked for listing;
