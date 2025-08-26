@@ -243,6 +243,9 @@ to say hohs: say "[i]House O['] --- --[r]"
 volume command parsing
 
 rule for printing a parser error when the latest parser error is the not a verb I recognise error or the latest parser error is the didn't understand error (this is the catch bad verbs rule):
+	if player is in mine ooh and sco-try-quest is false:
+		say "You're not quite sure how to get started and get focused. There are almost too many possibilities. The help you see in the mine -- well, tha may be later. Perhaps examining yourself with [b]X ME[r] or recapping what you know with [b]THINK[r] would help.";
+		the rule succeeds;
 	say "[generic-parser-error].";
 	the rule succeeds;
 

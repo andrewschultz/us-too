@@ -64,7 +64,7 @@ when play begins:
 	say "[line break]You were one of the few to get [hohs]. It seemed like a terrible sign, but as the will was read, the [hwhs] people roared furiously as [ara]'s will labeled them 'too naggy' or 'too flattering.' She'd kept special track of charities people enjoyed, or said they enjoyed, and donated a lot to their charities. But nobody left empty-handed. All the living relatives there had already had travel expenses paid and would get $1000 more if they sarcastically said 'Well, how swell.' And promptly left. Most said it, with passion.";
 	say "[line break]You were ready to say so, for your own $1000. And it felt weird, being one of three people left, eventually.";
 	say "[line break]'You impressed her,' one of the lawyers tells you, waiting for the response. 'But you need to impress us, now. No babbling. She was never big on words. Especially big words. Fail, and you only get $10000. You have as long as you need. We have been comped well for our time.'";
-	say "You fumble nervously with your envelope. What [i]could[r] they be talking about?";
+	say "You fumble nervously with your envelope. What [i]could[r] they be talking about? What do you need to say, here?";
 	wfas;
 
 book you
@@ -318,11 +318,11 @@ after examining lucent row:
 	continue the action;
 
 check thinking in Mine Ooh when sco-try-quest is false:
-	say "You're a bit lost, but you track what you know:";
-	say "[line break]--you went to [hwhs], called [hohs], and your response 'How so?' impressed the lawyers.";
-	say "[line break]--[the jot] and [using], given to you at the start, are ... oddly named, to say the least.";
-	say "[line break]--the lawyers reacted positively to 'My new mine, ooh!'";
-	say "[line break]--your name is Trike West. [ara] said she REALLY liked that name.";
+	say "You're a bit lost, but you track what you know:[paragraph break]";
+	say "--you went to [hwhs], called [hohs], and your response 'How so?' impressed the lawyers.";
+	say "--[the jot] and [using], given to you at the start, are ... oddly named, to say the least.";
+	say "--the lawyers reacted positively to 'My new mine, ooh!'";
+	say "--your name is Trike West. [ara] said she REALLY liked that name.";
 	if doable-hinted is 1, say "[line break]--you also figured to need to make [b]A STEW[r] from the lawyers' 'Us too,' which is down the road, but it's good to have a goal in mind.";
 	if gs-taken-inventory is false:
 		say "[line break]Maybe you should take [b]INVENTORY[r] with [b]I[r]. That might give you an idea what to do in the future.";
