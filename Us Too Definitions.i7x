@@ -149,8 +149,22 @@ definition: a direction (called di) is branchunseen:
 	if the room di from branch is visited, no;
 	yes;
 
-after printing the name of a direction (called di) while pri-branch-reject is true:
+before printing the name of a direction (called di) while pri-bold-dirs is true:
+	say "[b]";
+
+after printing the name of inside while pri-inside-tree is true:
+	say "[r] behind the garden tree";
+
+after printing the name of a direction (called di) while pri-bold-dirs is true:
+	say "[r]";
+
+after printing the name of a direction (called di) while pri-branch-detail is true:
 	if di is north and sco-blah-copse is false, say " to some black ops";
+	if di is south:
+		if number of visited ordrooms is 1:
+			say " to [random visited ordroom]";
+		else:
+			say " to [number of visited ordrooms in words] different locations";
 	if the room di of location of player is visited, say " to [the room di of location of player]";
 	continue the action;
 

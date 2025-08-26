@@ -625,6 +625,7 @@ to inside-block-back:
 	say "[line break]";
 	if garden-score is 2:
 		say "You feel a moment of zen. You've done what you could here, and you sense you don't fully belong. You retreat to the Ur-Branch.";
+		now garden tree is scenery;
 		block-and-back;
 	else if sco-pea-pod is true:
 		say "You're pleased you found something out of the way, but perhaps there's something bigger to figure here.";

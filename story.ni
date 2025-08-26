@@ -422,23 +422,31 @@ the mess kit is a stewitem. description is "It's a standard mess kit, not very f
 
 part ur branch
 
-Ur Branch is a room in universal. It is above My New Mine Ooh. printed name is "Ur-Branch". "There are so many branches here! While you can go back [b]DOWN[r] to your mine, [if sco-summer-bay is false]you have no idea where else to go. You could spend too much time wandering around. You could lose focus[else if sco-probe-all is false]there's only east, but maybe you can find more concrete places to visit[else]the branches make more sense than they did at first[end if].". eyes-number of Ur Branch is 45. eyes-rule of Ur Branch is pre-herb-ranch rule.
+Ur Branch is a room in universal. It is above My New Mine Ooh. printed name is "Ur-Branch". "[if all stewitems are discovered]You seem to have nothing critical left to do. You've visited all the branches and done what you need. It's likely time to go back [b]DOWN[r] to the mine and finish what remains[else][urdesc][end if].". eyes-number of Ur Branch is 45. eyes-rule of Ur Branch is pre-herb-ranch rule.
+
+to say urdesc: say "There are so many branches here! While you can go back [b]DOWN[r] to your mine, [if sco-summer-bay is false]you have no idea where else to go. You could spend too much time wandering around. You could lose focus[else if sco-probe-all is false]there's only east, but maybe you can find more concrete places to visit[else]the branches make more sense than they did at first"
 
 rule for printing the locale description of ur branch:
+	if all stewitems are discovered, continue the action;
 	let numcan be number of branchcan directions;
+	now pri-bold-dirs is true;
+	now pri-inside-tree is true;
 	if sco-summer-bay is false:
 		say "Looks like you'll need to find something to do here to get started.";
 	else:
 		if number of branchseen directions > 0:
-			now pri-branch-reject is true;
+			now pri-branch-detail is true;
 			say "The [if number of branchseen directions > 1]branches you've been to include[else]only available branch you've visited leads[end if] [list of branchseen directions]. ";
-		now pri-branch-reject is false;
+		now pri-branch-detail is false;
 		if number of branchunseen directions > 0:
 			say "You've located [if number of branchunseen directions > 1]viable passages[else]a viable passage[end if] [list of branchunseen directions] without going there. ";
+	now pri-bold-dirs is false;
 	if number of branchdone directions > 0:
 		say "Also, you've done all you need back [list of branchdone directions].";
 	else if numcan > 0:
 		say "[line break]";
+	now pri-inside-tree is false;
+	if garden tree is scenery and sign ought is not in ur branch, say "[line break]";
 	continue the action;
 
 check going in ur branch (this is the branch blocker rule): if noun is branchdone, say "[donetext of noun][line break]" instead;

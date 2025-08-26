@@ -28,7 +28,9 @@ volume booleans
 
 chapter printing details
 
-pri-branch-reject is a truth state that varies.
+pri-branch-detail is a truth state that varies.
+pri-bold-dirs is a truth state that varies.
+pri-inside-tree is a truth state that varies.
 
 book game states
 
