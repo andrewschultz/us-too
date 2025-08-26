@@ -223,7 +223,8 @@ check examining aight for the first time:
 	say "On inspection, you realize [aight] is sort of a recipe, full of food and food preparation items.";
 
 check examining aight when sco-try-quest is false:
-	say "It seems to require you to go look for all manner of weird stuff. You're just not up to fetching stuff at the moment. You don't want to feel like a gofer. You want something more purposeful." instead;
+	now gs-too-soon-x-aight is true;
+	say "[aight] seems to require you to go look for all manner of weird stuff. You're just not up to fetching stuff at the moment. You don't want to feel like a gofer. You want something more purposeful.[paragraph break]You think you need to take a good look at yourself, what makes you unique, and so forth, to get started." instead;
 
 to default-x-to-aight:
 	say "For future reference, [b]X[r] will default to [using] in the future. It will be about as helpful to you as [b]I[r]/[b]INVENTORY[r].";
@@ -334,10 +335,10 @@ check thinking in Mine Ooh when sco-try-quest is false:
 	the rule succeeds;
 
 check going up in Mine Ooh:
-	if sco-try-quest is false, say "You don't want to go wandering outside after you just got here! You need to catch your bearings. Focus on yourself a bit. Maybe even a lot." instead;
-	if sco-be-strong is false, say "[The beast] blocks your way. How wrong of it! You try physically shifting around, but it's unmoved. Maybe adjusting your mental attitude will do the trick." instead;
+	if sco-try-quest is false, say "You'll probably want to go outside soon enough. But the problem is ... it's still weird, being dropped in this mine, even though you knew what was going to happen. You don't want to go wandering.[paragraph break]You need a purpose. Something unique to you. Perhaps focusing on yourself with [b]X ME[r] will help you get started." instead;
+	if sco-be-strong is false, say "[The beast] blocks your way. How wrong of it! You try shifting around, but it's unmoved. It seems to have a physical edge.[paragraph break]Maybe adjusting your mental attitude will shoo the beast (wrong)." instead;
 	if aight is not examined:
-		say "You're eager to rush out there, but perhaps you should peruse the ... documentation you were given, first. You haven't really looked at [item using] from your inventory, yet. Sure, you could go out there and find stuff scattershot, but why not have some direction?" instead;
+		say "You're eager to rush out there, but perhaps you should peruse the ... documentation you were given, first. You haven't really looked at [item using] from your inventory, yet[if gs-too-soon-x-aight is true]. Well, you did, but you weren't in the right headspace to concentrate then. You are now[end if].[paragraph break]And sure, you could go out there and find stuff scattershot, but why not have some direction?" instead;
 	if ur branch is unvisited, say "So you begin your quest...";
 	if test-mine-only is true:
 		say "Or you would, if this wasn't a test version. Thanks for getting through.";
