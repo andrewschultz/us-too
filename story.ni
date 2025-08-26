@@ -525,7 +525,7 @@ the black ops are a thing. "You also know black ops are lurking to the north, an
 
 chapter garden tree
 
-the garden tree is a thing. "[if sco-guard-entry is true]The garden tree stands here, passively[else]That garden tree the [forest] were whining about stands here[end if].". description of garden tree is "[if sco-guard-entry is false]It doesn't seem violent, but its branches are long enough it could pull you back if it doesn't trust you[else]It seems quiet enough to let you pass[end if].". eyes-number of garden tree is 55. eyes-rule of garden tree is pre-guard-entry rule.
+the garden tree is a thing. "[if sco-guard-entry is true]The garden tree stands here, passively[else]That garden tree the [forest] were whining about stands here[end if].". description of garden tree is "[if sco-guard-entry is false]It doesn't seem violent, but its branches are long enough it could pull you back if it doesn't trust you[else if garden-score is 2]It doesn't need to guard anything from you, now that you got what you wanted inside[else]It seems quiet enough to let you pass[end if].". eyes-number of garden tree is 55. eyes-rule of garden tree is pre-guard-entry rule.
 
 chapter sign and south area verbs
 
@@ -937,6 +937,10 @@ part Inner Nest
 Inner Nest is a room in universal. eyes-number of Inner Nest is -1. description is "Well, you made it. It's not very big, but then again, it is both inner and a nest. You can go back [b]OUT[r] from here.".
 
 the prime oar is a thing in Inner Nest. "A prime oar stands here, floating in space[one of]. You reach out for it lazily, and it floats away[or]Whenever you get too close, it slides away[stopping].". description is "Man! It looks really aerodynamic, and stuff. And it's lightweight, too.". eyes-number of prime oar is 34. eyes-rule of prime oar is pre-pry-more rule.
+
+report examining prime oar when pun tweaker is not moot:
+	say "You wonder briefly if the prime oar could help the pun tweaker steer the ship. No, it wouldn't reach the water. The pun tweaker needs something else.";
+	continue the action;
 
 check taking prime oar when prime oar is in Inner Nest: say "You can't get close enough." instead;
 

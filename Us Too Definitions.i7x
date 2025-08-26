@@ -184,6 +184,9 @@ to decide which number is first-command-points: [ boolval doesn't quite work her
 	if the player's command includes "so", increment temp;
 	decide on temp;
 
+to decide which number is garden-score:
+	decide on (boolval of sco-pea-pod) + (boolval of sco-peace-talks);
+
 to decide which number is dome-in-score:
 	decide on (boolval of sco-gray-tin) + (boolval of sco-in-earnest);
 

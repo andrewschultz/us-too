@@ -241,7 +241,7 @@ a wordtwisting rule (this is the pre-probe-all rule):
 this is the post-probe-all rule:
 	now sco-probe-all is true;
 	say "You reach out to the pro ball. It seems to sense what you want it for. You take it, then look at it from many different angles. Reflected in it, you see ... well, a meh spot [here-in of my new mine ooh] that could use sprucing up. But how?[paragraph break]Yet much of the pro ball remains cloudy. Perhaps it will reveal what you need, as you need it.";
-	say "[line break]It also reveals something near here. You notice some sort of ship. You wave, and its captain, so to speak, waves back. They introduce themselves as the Pun Tweaker. Their ship is the [gauche]. They immediately start in with some crunching puns.[paragraph break][i][bracket][b]NOTE[r][i]: you don't need to examine the pro ball from here on out for it to open new passages.[close bracket][i][line break]";
+	say "[line break]It also reveals something near here. You notice some sort of ship. You wave, and someone on it waves back. They introduce themselves as the Pun Tweaker. Their ship is the [gauche]. They explain it needs repairs and then immediately start in with some crunching puns. Unfortunately, given some of the stuff you had to envision to get here, and what you expect you'll need to do, you can't really retaliate, but nothing's TOO terrible.[paragraph break][i][bracket][b]NOTE[r][i]: the pro ball will open passages of its own accord for a while. You'll never need to examine it explicitly, but it will help you with a complex map near the end.[close bracket][i][line break]";
 	move meh spot to my new mine ooh;
 	now player has pro ball;
 	move pun tweaker to beach ill;
@@ -334,7 +334,7 @@ a wordtwisting rule (this is the pre-punt-weaker rule):
 		vcp "The pun tweaker whispers 'I'll give you it, if you just get rid of THIS GUY.'";
 		not-yet;
 	if sir freddie is not in beach ill and sir freddie is not moot:
-		vcp "The pun tweaker says 'You want transport, eh? Any sort of transport? [if sir freddie is in beach]Get rid of this guy, I'll give you it.'[else]But what can you do for me?'[end if]";
+		vcp "The pun tweaker says 'You want transport, eh? Any sort of transport? [if sir freddie is in beach]Get rid of this guy, I'll give you it.'[else]Well, I need to repair my ship, here. If you could help, But what can you do for me?'[end if]";
 		not-yet;
 	if sco-punt-weaker is true:
 		vcal "You already got the punt, weaker!";
@@ -605,7 +605,7 @@ this is the post-pea-pod rule:
 
 to inside-block-back:
 	say "[line break]";
-	if sco-pea-pod is true and sco-peace-talks is true:
+	if garden-score is 2:
 		say "You feel a moment of zen. You've done what you could here, and you sense you don't fully belong. You retreat to the Ur-Branch.";
 		block-and-back;
 	else if sco-pea-pod is true:
