@@ -1431,6 +1431,8 @@ definition: a thing (called th) is ughlistable:
 
 after printing the name of gas pouch when taking inventory: if sco-damp-ink is true, say "full of damp ink";
 
+to say x-aight: say "[b]X[if gs-using-known is false] AIGHT[r]"
+
 carry out taking inventory (this is the UT specific inventory rule):
 	now all things carried by player are marked for listing;
 	now all startthings are not marked for listing;
@@ -1449,9 +1451,8 @@ carry out taking inventory (this is the UT specific inventory rule):
 		say "You've got all the items in [aight]! Surely you must be almost done now.";
 	else if nds > 0:
 		say "[aight-count] from [aight].";
-		if nds > last-stewitem-inventory:
-			say "[line break]You got [if nds - last-stewitem-inventory > 1]some new ones[else]a new one[end if] since you last took inventory. To see [if nds - last-stewitem-inventory > 1]them[else]it[end if], [b]X[r][if gs-using-known is false][b] AIGHT[r][end if].";
-			now last-stewitem-inventory is nds;
+		if nds > last-stewitem-xaight:
+			say "[line break]You got [if nds - last-stewitem-xaight > 1]some new ones[else]a new one[end if] since you last checked them with [x-aight].";
 	else:
 		say "[aight], which you got to start, lists items [ara] asked for. You don't have any yet.";
 	tip-herb-use;
@@ -1690,7 +1691,7 @@ carry out verbsing:
 	say "[line break]Fo instance, [b]TAKE[r] isn't necessary. Items are implicitly taken as you need them and used up, though to help you avoid temptation, the game makes you [b]TAKE[r] hint items and lets you [b]DROP[r] them for good.";
 	say "[this-game] generally uses the four compass directions, but [if ur branch is unvisited]the hub room[else]Ur-Branch[end if] uses all four diagonal directions as well[if bore dread is unvisited and sore dark is unvisited]--don't worry, those are very small areas[end if]. [b]O[r] also goes outside, and if there's only one viable direction, it goes that way.";
 	say "[b]T[r]/[b]TALK[r]ing to NPCs (subject usually not necessary) or [b]LISTEN[r] may provide additional cues. Additionally, [b]EAT[r] and [b]CLIMB[r] may be marginally useful or amusing.";
-	say "[line break]Useful one-letter diagnostic commands: [b]I[r] inventories  what you're carrying, though it delegates items on [ara]'s list ([aight]) to [b]X[r][if gs-using-known is false] after the first time you use it[end if] so you don't have to read too much at once.";
+	say "[line break]Useful one-letter diagnostic commands: [b]I[r] inventories  what you're carrying, though it delegates items on [ara]'s list ([aight]) to [b]X[r][if gs-using-known is false] after the first time you use it[end if] so you don't have to read too much at once. [b]X THING[r] still examines in-game items.";
 	say "[line break]While [b]SCORE[r] gives your game-score (also listed in the upper right), [b]THINK[r] may be more useful looking forward, to track point-scoring commands that you found that will work later, or commands you got half-right.";
 
 report verbsing when south-sorted or gs-noted-r is true:
