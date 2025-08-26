@@ -1038,6 +1038,7 @@ a wordtwisting rule (this is the pre-damp-ink rule):
 this is the post-damp-ink rule:
 	now sco-damp-ink is true;
 	say "You use the gas pouch to drain out a good dose of damp ink that's dripping from the dam.";
+	now player has damp ink;
 	declue-here;
 
 chapter too dark tude ark scoring

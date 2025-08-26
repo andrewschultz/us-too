@@ -1253,7 +1253,7 @@ check going south in Sage Oaks when sco-gas-pouch is false and sco-say-jokes is 
 
 chapter gas pouch
 
-the gas pouch is a thing. description is "It's a pouch that once held gas, currently [if sco-damp-ink is true]full with damp ink[else]empty[end if].". eyes-number of gas pouch is -1.
+the gas pouch is a thing. description is "It's a translucent sturdy pouch that once held gas, currently [if sco-damp-ink is true]full with damp ink[else]empty[end if].". eyes-number of gas pouch is -1.
 
 part Dam Pink
 
@@ -1273,6 +1273,10 @@ the clay mitt is an uneatable stewitem in Dam Pink. "A clay mitt lies here. Perh
 invtext of clay mitt is "[if sco-claim-it is false]hand protection from the heat[else]you got the clay mitt for hand protection[end if]".
 
 check taking clay mitt when clay mitt is in Dam Pink: say "You don't feel bold enough to. Just taking isn't enough." instead;
+
+chapter damp ink
+
+the damp ink is a thing. description is "It's ink, dark and wet in the gas pouch. There's enough to write a lot, though you doubt you'll need to.". eyes-number of damp ink is -1. eyes-rule of damp ink is pre-damp-ink rule.
 
 part Scribe Room
 
@@ -1425,6 +1429,8 @@ definition: a thing (called th) is ughlistable:
 	if th is a hintthing, no;
 	yes;
 
+after printing the name of gas pouch when taking inventory: if sco-damp-ink is true, say "full of damp ink";
+
 carry out taking inventory (this is the UT specific inventory rule):
 	now all things carried by player are marked for listing;
 	now all startthings are not marked for listing;
@@ -1435,6 +1441,7 @@ carry out taking inventory (this is the UT specific inventory rule):
 		say "First, helpful stuff [ara] didn't explicitly ask for, in your [ugh]:[line break]";
 	now all stewitems are not marked for listing;
 	now dense pecs are unmarked for listing;
+	now damp ink is not marked for listing;
 	list the contents of the player, with newlines, indented, including contents, listing marked items only, giving inventory information, with extra indentation;
 	let cas be number of carried alcoholic stewitems;
 	say "[line break]";
