@@ -29,8 +29,8 @@ volume booleans
 
 chapter hinting and such
 
-gs-war-pawn-used is a truth state that varies.
 undo-okayed is a truth state that varies.
+gs-loose-intro-read is a truth state that varies.
 
 chapter printing details
 

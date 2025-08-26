@@ -277,9 +277,19 @@ part urgh ought er jot
 
 the urgh ought er jot is a startthing. eyes-number of er jot is 1.
 
-check drop2ing er jot:
+check drop2ing aight: say "[if sco-summon-cheese is true]You could still win [this-game] without [aight], now you summoned the cheese[else][aight] clues a specific item to find[end if]. But it's useful for general organization, so you need to keep it., but it'd be hard to keep track of what you need." instead;
+
+check drop2ing urgh ought er jot:
+	if er jot is not examined:
+		say "You haven't examined [the jot] yet, though you don't need to, to win the game. Drop it anyway?";
+		unless the player no-consents:
+			say "Next time, you'll drop it without this nag.";
+			the rule succeeds;
 	moot jot;
-	say "You actually just crumple it up and put it in your pocket, in case you need to start a fire later to, I don't know, cook stuff. Plus, littering isn't cool![paragraph break][The jot] is out of your conscious inventory, now." instead;
+	say "[crumple-it].";
+	the rule succeeds;
+
+to say crumple-it: say "You actually just crumple it up and put it in your pocket, in case you need to start a fire later to, I don't know, cook stuff. Plus, littering isn't cool![paragraph break][The noun] is out of your conscious inventory, now"
 
 Trike West carries the urgh ought er jot. printed name of er jot is "Urgh-Ought-[']Er Jot".
 
@@ -400,7 +410,7 @@ report taking a hintthing when gs-take-hintthing-note is true:
 
 chapter loose intro
 
-the loose intro is a hintthing. description is "[intro-table]". eyes-number of loose intro is -1.
+the loose intro is a hintthing. description is "[intro-table]". eyes-number of loose intro is -1. drop-poke of loose intro is "You've currently [if loose intro is unexamined]not examined it yet[else if gs-loose-intro-read is false]read [intro-row - 1 in words] of [number of rows in table of intro jabber in words] pages[else]read it all[end if].[paragraph break]Are you sure you want to drop the loose intro? It's not game-critical.". drop-notify-text of loose intro is "[crumple-it]."
 
 check examining loose intro when loose intro is unexamined:
 	say "It's an introduction to your world, not from [ara], but from one Hugh Morris AKA Mick Stupp. At the top is a note that while no puzzles are spoiled or hinted, the author does discuss his views on how [this-game] compares to [wp] (length, plot, etc.) and also mentions how two or three puzzles break the mold a bit.";
@@ -412,6 +422,7 @@ to say intro-table:
 	say "[my-jabber entry] ([intro-row]/[number of rows in table of intro jabber])";
 	increment intro-row;
 	if intro-row > number of rows in table of intro jabber:
+		now gs-loose-intro-read is true;
 		say "[line break][one of]Well, that's the last of the loose intro.[or]Was it really worth reading twice? Thank you![stopping][run paragraph on]";
 		now intro-row is 1;
 
