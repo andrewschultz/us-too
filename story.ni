@@ -353,10 +353,21 @@ section lucent row
 the lucent row is a startprop in My New Mine Ooh. eyes-number of lucent row is -55. eyes-rule of lucent row is pre-loose-intro rule.
 
 check examining lucent row when lucent row is examined and number of hintthings in My New Mine Ooh is 0:
-	say "There's nothing on the lucent row now that you took the eyes and pawn, but it seems to hold a small mystery.[paragraph break]What could that practice be? [if jot is unexamined]Perhaps the [er jot] would offer a clue. [end if]Lucent is a weird word -- but [ara] wouldn't have had you do something weird early." instead;
+	say "There's nothing on the lucent row now that you took the eyes and pawn, but it seems to hold a small mystery.";
+	say "[line break]";
+	if jot is unexamined:
+		if jot is moot:
+			say "It was there at the start. Maybe it could've helped you start, in a sense?";
+		else:
+			say "Perhaps the [er jot] would offer a clue." instead;
+	else:
+		say "Lucent is a weird word -- but you read [ara]'s jot, and it was for practice, but she wouldn't have had you do something weird early.";
 
 report examining lucent row:
-	say "Oh. The glare and brightness seem a bit unaesthetic, like [the noun] could even be hiding something, but it can't be a huge deal.";
+	if jot is unexamined:
+		say "Oh. The glare and brightness seem a bit unaesthetic, like [the noun] could even be hiding something, but it can't be a huge deal.";
+	else:
+		say "[The jot] noted it was for practice, if you wanted. But not critical. So it may hold a silly secret or two.";
 	continue the action;
 
 section goal edge go ledge
