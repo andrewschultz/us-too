@@ -1,0 +1,452 @@
+
+
+Walkthrough for Us Too by Andrew Schultz
+
+The trickiest part so far it seems is getting to the south. Look for south_notes but with a dash not an underscore to explain this.
+
+This is a quick walkthrough for Us Too. It neglects all bonus points.
+
+What is word #1? What is word #2?
+
+That is the mystery which drives the whole game's mechanic.
+
+> HOW SO (1)
+
+Okay, you're wondering why, etc. Am I just being ordered around?
+
+If you look at yourself, you realize you are "Trike" West.
+
+> X ME
+
+You can, at any time, also deal with the lucent row for a bonus point. You can take or leave the eyes and pawn.
+
+> TRY QUEST (2)
+
+Now a beast, wrong, blocks you.
+
+> BE STRONG (3)
+
+Now, if you want, you can start on Item Using and the items it wants.
+
+> I
+
+This creates a useful shortcut.
+
+> X
+
+This will tell you your progress for meaningful items found. You can find one out of the box -- it's the "weird, no instructions" one.
+
+Some munchies ...
+
+> SUMMON CHEESE (4)
+
+Now you can do something with the Lucent Row. It has hint items. But it has something else...
+
+> OUT
+
+At the ur-branch, you need to...
+
+> HERB RANCH (5)
+
+Some herb, eh?
+
+> SUMMER BAY (6)
+
+> E
+
+Now you can have a little rally at Beach, Ill.
+
+> BE CHILL (7)
+
+The nigh swarm.
+
+> NICE WARM (8)
+
+There's a pro ball here, too. It helps you see a bit more.
+
+> PROBE ALL (9)
+
+> W
+
+> D
+
+Ah, a meh spot you missed before.
+
+> MESS POT (10)
+
+> U
+
+Now things open up--there are three exits!
+
+> NE
+
+You can't deal with the tower yet. But the bore dread? Yes.
+
+> BOARD RED (11)
+
+> SW
+
+> N
+
+Oh no! How to avoid black ops? Somewhere else boring?
+
+> BLAH COPSE (12)
+
+This automatically moves you north.
+
+The Forest Team is annoying, with how they knock you verbally.
+
+> NAH QUEUE (13)
+
+Sir Freddie was hiding from them. Questing's not his thing.
+
+> SURF READY (14)
+
+Note if you didn't get the board, you couldn't help him.
+
+Now he said he sensed an orc lurk ...
+
+> OR CLERK (15)
+
+You can go north now.
+
+> N
+
+Morph lairs.
+
+> MORE FLARES (16)
+
+You're back at Ur-Branch.
+
+> N
+> N
+
+A row, plaider, has now appeared.
+
+> ROPE LADDER (17)
+
+Okay, that's the north area taken care of. There's a new area, inside, but get by that garden tree...
+
+> GUARD ENTRY (18)
+
+Chance for a bonus point, too.
+
+> PEACE TALKS (19)
+
+> OUT
+
+Let's try the southeast. We can actually take the northwest right now, but the southeast helps with more immediate puzzles.
+
+> SE
+
+A can't-ache blocks you from doing anything else! But once you do, a few things fall.
+
+> CAN TAKE (20)
+
+> GRAY TIN (21)
+
+> DOUGH MAKING (22)
+
+> IN EARNEST (23)
+
+> SE
+
+> IN
+
+> PRY MORE (24)
+
+> OUT
+
+> NW
+
+> E
+
+You've brokered a truce between Sir Freddie and the pun tweaker. Now, ask for payment...
+
+> PUNT WEAKER (25)
+
+> E
+
+There's stuff to be found on the isle. But first, make it around thise bay spikes!
+
+> BASE PIKES (26)
+
+Pike rust on the pikes!
+
+> PIE CRUST (27)
+
+Now about that high cup...
+
+> HIKE UP (28)
+
+> W
+> W
+
+East done.
+
+> NW
+
+Sore Dark?
+
+> SWORD ARK (29)
+
+The Terra Blade is trapped in the arc.
+
+> BLAST RING (30)
+
+Call on the blade.
+
+> TERRIBLE AID (31)
+
+That's the northwest down.
+
+> SW
+
+The oak lever has you stumped, until you exclaim Eureka, or...
+
+> OH CLEVER (32)
+
+Now examining the beak makes you faster. Fast enough to earn four turns. You can use them to visit different places.
+
+The Sign should appear and give everything you've figured out after you go south once.
+
+You can do a lot of things with the beak including going west.
+
+> X BEAK
+
+> NE
+
+> S
+
+(If you can't (re-)locate the Tube/Rod, see the end for how to get all 3 places.)
+
+> TOO BROAD (33)
+
+There's an easy point to the south, but it's more efficient to come back later, when you're ready to get the hard one.
+
+> N
+
+Perhaps there are more ways to go south. What if you waste two moves?
+
+> SW
+
+> X BEAK
+> NE
+> SW
+> NE
+> S
+
+(If you can't (re-)locate the Tude Ark, see the end for how to get all 3 places.)
+
+> HO LANGUOR (34)
+
+You can say langour, too. The difference is semantic. Again, wait to go further south.
+
+> N
+
+You've been south two ways. Maybe there is a third? But it's tricky ... you need to move around, to find it. And you can't lose just one move going back and forth. Or can you?
+
+> SW
+
+> X BEAK
+
+> FELL TRAP (35)
+
+> X TRAP
+
+> CELLAR BIN (36)
+
+You lost your speed first time around, but now you can try again.
+
+> U
+> X BEAK
+> X TRAP
+> U
+> NE
+> S
+
+This may be tricky -- you may have found things in a different order than the walkthrough before consulting it.
+
+Here is how the beak/fort work to get the locations in the south.
+
+(Tube/Rod) = X BEAK/NE/S e.g. with 3 turns of speed left.
+(Sage Oaks) = X BEAK/X TRAP (*after* you've already fallen through)/U/NE/S with 2 turns of speed left.
+(Tude Ark) = X BEAK/NE/SW/NE/S e.g. with 1 turn of speed left. You can of course go U/D as well, or other directions. Though I actually cut out X BEAK/X TRAP/U/X TRAP/U/NE/S, because I wanted the player to think a little differently.
+
+> SAY JOKES (37)
+
+> GAS POUCH (38)
+
+> N
+> N
+
+> SSS
+
+> S
+
+> CLAY MITT (39)
+
+With the pouch, you can get ...
+
+> DAMP INK (40)
+
+> N
+> N
+> S
+> S
+
+You can now trade with the scribes. They want the ink.
+
+> SCRY BROOM (41)
+
+> N
+> N
+
+> SS
+> S
+
+And now you can find a lot!
+
+> PRO SWEEPING (42)
+
+> COLD RUM (43)
+
+> TEA LEAVES (44)
+
+The scribes asked you to return the broom. Do so.
+
+> N
+> N
+> S
+> S
+
+> BELT RUSTED (45)
+
+You should be done now in the south.
+
+> N
+> N
+
+> N
+> SW
+> X BEAK
+> NE
+> W
+
+You've done what you need in the Fort.
+
+You feel frustrated in the Bowl/Ditch.
+
+> BOLD ITCH (46)
+
+> W
+
+The star craft is too expensive!!
+
+> STARK RAFT (47)
+
+> S
+
+> FIND RINKS (48)
+
+> BERRIES POND (49)
+
+> BARN OPEN (50)
+
+You're done here. Now to the north branch.
+
+> N
+
+> E
+> N
+
+You're lonely! You'd like to see someone, anyone.
+
+> SAW BAKERS (51)
+
+Ah, a deli to enter!
+
+> IN
+
+Let's make the surroundings cheerier. Well, less cheerless.
+
+> DELL EASTERN (52)
+
+You need to go out and back in. (I need to clue this better! Have the fey loners whine you can't do anything here.)
+
+> E
+> W
+
+You can finally trade the dough pail!
+
+> DOPE ALE (53)
+
+> E
+> W
+
+The toon has "after" on the right. What are the other two?
+
+Before, during.
+
+> BEEF ORDERING (54)
+
+> E
+> W
+
+> WHEAT RYE (55)
+
+> E
+
+You probably got dense pecs some time ago. Now, time to use them on...
+
+> DEN SPECS (56)
+
+> D
+
+> GROW NODES (57)
+
+There are numbered nodes: node one, node two ... which is vulnerable?
+
+> NO DATE (58)
+
+That's the west cleared! Now you can tackle the northeast completely. Well, you maybe could've midway through the west, but it'd have been inefficient.
+
+> S
+> E
+> NE
+
+> MALT HOUR (59)
+
+> E
+
+The joy nadir. What can it do for you?
+
+> JOIN AIDER (60)
+
+The dew pit. There's something you need more than one of.
+
+> DUPE IT (61)
+
+...the egg of a guv!
+
+You're kicked back to Ur-Branch again.
+
+> U
+
+The throne screams "You! Sit!"
+
+But of course you're not foolish enough.
+
+> USE IT (62)
+
+It being, of course, the orb and/or band.
+
+The life roots seem overdone in a different way.
+
+> LIE FRUITS (63)
+
+You have everything! Now ...
+
+> D
+
+> A STEW (64)
