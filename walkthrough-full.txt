@@ -4,7 +4,7 @@ This is a walkthrough based on the author's test scripts. While any one branch f
 
 The gimmick/basic mechanic is the same as Why Pout, though the setting is a bit different. You get NPC friends there. Here? No. But you have a list.
 
-This walkthrough neglects all bonus points.
+This walkthrough finds all bonus points except the one you get for getting rid of the war pawn right.
 
 In House Well-How-Swell, you hold an envelope saying "House O' --- --."
 
@@ -48,11 +48,15 @@ Oh, and you can't use the pawn on the first puzzle until you've examined yoursel
 
 You can get a bonus point for poking at the lucent row, too.
 
-> TRY QUEST (2)
+> LOOSE INTRO (2)
+
+You can read the intro if you want. It has more qualitative evaluations of Us Too.
+
+> TRY QUEST (3)
 
 Now a beast, wrong, blocks you.
 
-> BE STRONG (3)
+> BE STRONG (4)
 
 Now, if you want, you can start on Item Using and the items it wants.
 
@@ -66,33 +70,37 @@ This will tell you your progress for list items you've found. You can find one o
 
 "Some munchies" seems very vague, but in fact, it isn't...
 
-> SUMMON CHEESE (4)
+> SUMMON CHEESE (5)
 
 Now you can do something with the Lucent Row. It has hint items. But it has something else...
+
+You can change the Lucent Row. You can even use the eyes to clue it.
+
+> LOOSE INTRO (6)
 
 > OUT
 
 At the ur-branch, you need to...
 
-> HERB RANCH (5)
+> HERB RANCH (7)
 
 "Some herb, eh?" you hear.
 
-> SUMMER BAY (6)
+> SUMMER BAY (8)
 
 > E
 
 Now you can have a small points rally at Beach, Ill.
 
-> BE CHILL (7)
+> BE CHILL (9)
 
 The nigh swarm.
 
-> NICE WARM (8)
+> NICE WARM (10)
 
 There's a pro ball here, too. It helps you see a bit more.
 
-> PROBE ALL (9)
+> PROBE ALL (11)
 
 Later on you'll be able to examine it, but right now it just helps open new areas.
 
@@ -102,7 +110,11 @@ Later on you'll be able to examine it, but right now it just helps open new area
 
 Ah, a meh spot you missed before.
 
-> MESS POT (10)
+> MESS POT (12)
+
+There's another bonus point here. The mess kit allows...
+
+> MEH SKIT (13)
 
 > U
 
@@ -112,7 +124,7 @@ Now things really open up--there are three new exits!
 
 You can't deal with the tower yet. But the bore dread? Yes.
 
-> BOARD RED (11)
+> BOARD RED (14)
 
 > SW
 
@@ -122,23 +134,23 @@ You can't use the next point-scoring command without going north.
 
 Oh no! How to avoid black ops? Somewhere else boring, perhaps?
 
-> BLAH COPSE (12)
+> BLAH COPSE (15)
 
 This automatically moves you north to the Blah Copse itself.
 
 The Forest Team is annoying, with how they knock you verbally.
 
-> NAH QUEUE (13)
+> NAH QUEUE (16)
 
 Sir Freddie was hiding from them. Questing's not his thing.
 
-> SURF READY (14)
+> SURF READY (17)
 
 Note if you didn't get the board, you couldn't help him.
 
 Now he said he sensed an orc lurk ...
 
-> OR CLERK (15)
+> OR CLERK (18)
 
 You can go north now.
 
@@ -146,7 +158,7 @@ You can go north now.
 
 Morph lairs.
 
-> MORE FLARES (16)
+> MORE FLARES (19)
 
 You're back at Ur-Branch.
 
@@ -155,17 +167,19 @@ You're back at Ur-Branch.
 
 A row, plaider, has now appeared.
 
-> ROPE LADDER (17)
+> ROPE LADDER (20)
 
 Okay, that's the north area taken care of. There's a new area, inside, but you need to get by that garden tree.
 
-> GUARD ENTRY (18)
+> GUARD ENTRY (21)
 
 Chance for a bonus point, too.
 
-> PEACE TALKS (19)
+> PEACE TALKS (22)
 
-There's an odd phrase here in the room description which can net you a bonus point. It's the reason why the branch isn't closed off right away.
+If you look around again, you may notice something in the description. "Peep odd" may sound odd. It can indeed become more normal.
+
+> PEA POD (23)
 
 > OUT
 
@@ -175,19 +189,19 @@ Let's try the southeast. We can actually take the northwest right now, but the s
 
 A can't-ache blocks you from doing anything else! But once you do, a few things fall in a row.
 
-> CAN TAKE (20)
+> CAN TAKE (24)
 
-> GRAY TIN (21)
+> GRAY TIN (25)
 
-> DOUGH MAKING (22)
+> DOUGH MAKING (26)
 
-> IN EARNEST (23)
+> IN EARNEST (27)
 
 > SE
 
 > IN
 
-> PRY MORE (24)
+> PRY MORE (28)
 
 > OUT
 
@@ -199,21 +213,21 @@ You're done with the southeast, so it will be blocked off now.
 
 You've brokered a truce between Sir Freddie and the pun tweaker. Now, ask for payment...
 
-> PUNT WEAKER (25)
+> PUNT WEAKER (29)
 
 > E
 
 There's stuff to be found on the isle. But first, make it around those bay spikes!
 
-> BASE PIKES (26)
+> BASE PIKES (30)
 
 Pike rust on the pikes!
 
-> PIE CRUST (27)
+> PIE CRUST (31)
 
 Now about that high cup...
 
-> HIKE UP (28)
+> HIKE UP (32)
 
 > W
 > W
@@ -224,15 +238,15 @@ East done.
 
 Sore Dark?
 
-> SWORD ARK (29)
+> SWORD ARK (33)
 
 The Terra Blade is trapped high above in the arc.
 
-> BLAST RING (30)
+> BLAST RING (34)
 
 Call on the blade.
 
-> TERRIBLE AID (31)
+> TERRIBLE AID (35)
 
 You're kicked back to Ur-Branch, with nothing left to do in the northwest.
 
@@ -240,7 +254,7 @@ You're kicked back to Ur-Branch, with nothing left to do in the northwest.
 
 The oak lever has you stumped, until you exclaim Eureka, or...
 
-> OH CLEVER (32)
+> OH CLEVER (36)
 
 Now examining the beak makes you faster. Fast enough to earn four turns. You can use them to visit different places.
 
@@ -254,7 +268,7 @@ The easiest thing to do with the beak is go west. But we'll visit the south firs
 
 > S
 
-> TOO BROAD (33)
+> TOO BROAD (37)
 
 There's an easy point to the south, but it's more efficient to come back later, when you're ready to get the hard one which requires something else.
 
@@ -270,7 +284,7 @@ Ah, a sign appears. It tells you how to get back. And it looks like there are mo
 > NE
 > S
 
-> HO LANGUOR (34)
+> HO LANGUOR (38)
 
 You can say langour, too. The difference is semantic. Again, wait to go further south.
 
@@ -286,11 +300,11 @@ So you've been south two ways. Maybe there is a third? But it's tricky ... you n
 
 The felt wrap can be useful.
 
-> FELL TRAP (35)
+> FELL TRAP (39)
 
 > X TRAP
 
-> CELLAR BIN (36)
+> CELLAR BIN (40)
 
 You lost your speed first time around, but now you can try again.
 
@@ -307,9 +321,9 @@ Okay, you've seen all three near south rooms. To recap, here is how the beak in 
 (Sage Oaks) = X BEAK/X TRAP (*after* you've already fallen through)/U/NE/S with 2 turns of speed left.
 (Tude Ark) = X BEAK/NE/SW/NE/S e.g. with 1 turn of speed left. You can of course go U/D as well, or other directions. Though I actually cut out X BEAK/X TRAP/U/X TRAP/U/NE/S, because I wanted the player to think a little differently.
 
-> SAY JOKES (37)
+> SAY JOKES (41)
 
-> GAS POUCH (38)
+> GAS POUCH (42)
 
 We can use R or RR as well, but I'll just use the directional commands.
 
@@ -320,11 +334,11 @@ We can use R or RR as well, but I'll just use the directional commands.
 
 > S
 
-> CLAY MITT (39)
+> CLAY MITT (43)
 
 With the pouch, you can now get ...
 
-> DAMP INK (40)
+> DAMP INK (44)
 
 > N
 > N
@@ -333,7 +347,7 @@ With the pouch, you can now get ...
 
 You can now trade with the scribes. They want the ink.
 
-> SCRY BROOM (41)
+> SCRY BROOM (45)
 
 > N
 > N
@@ -343,11 +357,11 @@ You can now trade with the scribes. They want the ink.
 
 And now you can find a lot!
 
-> PRO SWEEPING (42)
+> PRO SWEEPING (46)
 
-> COLD RUM (43)
+> COLD RUM (47)
 
-> TEA LEAVES (44)
+> TEA LEAVES (48)
 
 The scribes asked you to return the broom. Do so.
 
@@ -356,7 +370,7 @@ The scribes asked you to return the broom. Do so.
 > S
 > S
 
-> BELT RUSTED (45)
+> BELT RUSTED (49)
 
 You have everything you need from the south.
 
@@ -373,23 +387,25 @@ The Fort should be closed off now. You've used its speed to open up every entry 
 
 You feel frustrated in the Bowl/Ditch.
 
-> BOLD ITCH (46)
+> BOLD ITCH (50)
 
 > W
 
 You can do something with Turbo Tours, but you don't have to.
 
+> TOUR BOATERS (51)
+
 You want to go somewhere, but the star craft is too expensive! Anyway, you're not equipped for space flight.
 
-> STARK RAFT (47)
+> STARK RAFT (52)
 
 > S
 
-> FIND RINKS (48)
+> FIND RINKS (53)
 
-> BERRIES POND (49)
+> BERRIES POND (54)
 
-> BARN OPEN (50)
+> BARN OPEN (55)
 
 The egg was your main goal here. You're done, and if you try to return, this side area is blocked off. So now let's explore the north branch of the west area.
 
@@ -400,7 +416,7 @@ The egg was your main goal here. You're done, and if you try to return, this sid
 
 You're lonely in Sob Acres! You'd like to see someone, anyone.
 
-> SAW BAKERS (51)
+> SAW BAKERS (56)
 
 Ah, a deli to enter!
 
@@ -408,7 +424,7 @@ Ah, a deli to enter!
 
 Let's make the surroundings cheerier. Well, less cheerless.
 
-> DELL EASTERN (52)
+> DELL EASTERN (57)
 
 You need to go out and back in. The fey loaners should consistently tell you, once you do something, to come back later.
 
@@ -417,7 +433,7 @@ You need to go out and back in. The fey loaners should consistently tell you, on
 
 Oh, hey! You can finally trade the dough pail!
 
-> DOPE ALE (53)
+> DOPE ALE (58)
 
 > E
 > W
@@ -428,26 +444,26 @@ Before, during.
 
 What can this become?
 
-> BEEF ORDERING (54)
+> BEEF ORDERING (59)
 
 > E
 > W
 
-> WHEAT RYE (55)
+> WHEAT RYE (60)
 
 > E
 
 You probably got dense pecs some time ago. You could have used them at any time, but it's most dramatic to use them here.
 
-> DEN SPECS (56)
+> DEN SPECS (61)
 
 > D
 
-> GROW NODES (57)
+> GROW NODES (62)
 
 There are numbered nodes: node one, node two ... which is vulnerable?
 
-> NO DATE (58)
+> NO DATE (63)
 
 That's the west cleared! Now you can tackle the northeast completely. Well, you maybe could've midway through the west, but it'd have been inefficient.
 
@@ -455,7 +471,7 @@ That's the west cleared! Now you can tackle the northeast completely. Well, you 
 > E
 > NE
 
-> MALT HOUR (59)
+> MALT HOUR (64)
 
 > E
 
@@ -463,11 +479,11 @@ The joy nadir. What can it do to make you happy?
 
 It can combine two items: the pro ball and belt (rusted).
 
-> JOIN AIDER (60)
+> JOIN AIDER (65)
 
 The surroundings change, and there's a dew pit. You needed more than one of a certain item...
 
-> DUPE IT (61)
+> DUPE IT (66)
 
 ...the egg of a guv!
 
@@ -479,18 +495,18 @@ The throne screams "You! Sit!"
 
 But of course you're not foolish enough.
 
-> USE IT (62)
+> USE IT (67)
 
 "It" being, of course, the orb and/or band.
 
 Now the life roots that appeared seem overdone in a different way.
 
-> LIE FRUITS (63)
+> LIE FRUITS (68)
 
 You have everything you need to entertain the lawyers and your friends! Now, what to do? This is hinted a few places. X has a note at the bottom.
 
 > D
 
-> A STEW (64)
+> A STEW (69)
 
 And that's everything! ...or is it?
