@@ -427,6 +427,11 @@ chapter meh spot
 
 the meh spot is a thing. "The meh spot you saw in the pro ball sits here. It makes your mine feel emptier. Perhaps something belongs there.". description is "Not much to say about it, now. Maybe something else is supposed to be there?". eyes-number of meh spot is 43. eyes-rule of meh spot is pre-mess-pot rule.
 
+after printing the locale description for when need-meh:
+	say "Oh! What's this? The spot indicated by the pro ball. It's a pretty meh spot, but the pro ball highlighted it, so it could be significant.";
+	move meh spot to mine ooh;
+	continue the action;
+
 chapter mess kit
 
 the mess kit is a stewitem. description is "It's a standard mess kit, not very flashy, but clean.". eyes-number of mess kit is -34. eyes-rule of mess kit is pre-meh-skit rule. invtext of mess kit is "cookware[if sco-mess-pot is true] (the mess kit [here-in of mine ooh])[end if]".
@@ -464,6 +469,9 @@ rule for printing the locale description of ur branch:
 
 check going in ur branch (this is the branch blocker rule): if noun is branchdone, say "[donetext of noun][line break]" instead;
 
+after printing the locale description of ur branch when need-meh:
+	say "You remember the pro ball showed you somehing below in your mine. Could  be worth a check.";
+	continue the action;
 after printing the locale description of ur branch when sco-hike-up is true and southwest is not branchcant and (not ordrooms-seen or bowl ditch is not visited) (this is the first proball southwestish rule):
 	say "The hike up to the high cup revealed passages south, west and southwest. ";
 	if fort is unvisited:

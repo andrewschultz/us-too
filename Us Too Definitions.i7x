@@ -213,6 +213,10 @@ to decide which number is toon-guess-score:
 
 book composite booleans
 
+to decide whether need-meh:
+	if meh spot is off-stage and sco-probe-all is true, yes;
+	no;
+
 to decide whether pile-done:
 	if sco-base-pikes is true and sco-hike-up is true and sco-pie-crust is true, yes;
 	no;
