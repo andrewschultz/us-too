@@ -1113,7 +1113,10 @@ part Bowl Ditch
 Bowl Ditch is a room in universal. "[if sco-bold-itch is true][ditch-full][else]Ouch. Oww. You're lying on the ground, embarrassed how you tripped and fell, worried and scared there's no way back. Your injury is probably more psychological than physical, but it's there, and you need to overcome it[end if].". eyes-number of Bowl Ditch is 44. eyes-rule of Bowl Ditch is pre-bold-itch rule.
 
 to say ditch-full:
-	say "Now you've got your bearings, you wonder why this place ever intimidated you. You see passages north[if acres is visited] to [sob acres][else] (unvisited)[end if] and west[if tours is visited] to [tours][else] (unvisited)[end if], as well as back east to Ur-Branch"
+	if sco-barn-open is true and sco-tour-boaters is true:
+		say "You only need to go north[if sob acres is visited] to [sob acres][end if]. You've taken care of things to the west, even improving Turbo Tours";
+		continue the action;
+	say "Now you've got your bearings, you wonder why this place ever intimidated you. You see passages north[if acres is visited] to [sob acres][else] (unvisited)[end if] and west[if tours is visited] to [tours][else] (unvisited)[end if], as well as back east to Ur-Branch";
 
 check going east in bowl ditch:
 	if sco-no-date is true and sco-barn-open is true:
@@ -1236,10 +1239,14 @@ the help in hell pin is a thing. printed name is "help-in-hell pin". description
 
 part Turbo Tours
 
+to say got-egg: say "You got the [egg] and berries from the Farm Isles[if player is in bowl ditch], and you tweaked Turbo Tours, too[end if]. Nothing is left back that way"
+
+check going west to Turbo Tours: if sco-barn-open is true and sco-tour-boaters is true, say "[got-egg]." instead;
+
 Turbo Tours is a room in universal. printed name is "Turbo Tours[if sco-tour-boaters is true] (now with tour boaters)[end if]". "You can go back east, but there are also tours that cross water to the south--or go far beyond.". eyes-number of Turbo Tours is -47. eyes-rule of Turbo Tours is pre-tour-boaters rule.
 
 check going south to Farm Isles:
-	if sco-barn-open is true, say "You got the [egg] and berries from the Farm Isles. That was a good enough haul." instead;
+	if sco-barn-open is true, say "[got-egg]." instead;
 	say "[one of]Your prime oar really is prime! You effortlessly navigate your way south[or]Your prime oar holds up nicely as you steer the stark raft back south[stopping].";
 	move stark raft to Farm Isles;
 	move prime oar to Farm Isles;
