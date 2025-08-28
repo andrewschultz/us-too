@@ -84,11 +84,11 @@ after reading a command when player is in House Well How Swell:
 	if debug-state is true:
 		if w1 is "test" or w1 is "gonear":
 			continue the action;
-	if w1 is "about" or w1 is "credits" or w1 is "verbs" or w1 is "versions" or w1 is "ext" or w1 is "exts" or w1 is "transcript":
+	if w1 is "about" or w1 is "credit" or w1 is "credits" or w1 is "verb" or w1 is "verbs" or w1 is "version" or w1 is "versions" or w1 is "ext" or w1 is "exts" or w1 is "transcript":
 		continue the action;
 	if the player's command exactly matches the text "look" or the player's command exactly matches the text "l" or the player's command exactly matches the text "quit" or the player's command exactly matches the text "restore":
 		continue the action;
-	if the player's command exactly matches the text "how so":
+	if w1 is "how" and word number 2 in the player's command is "so":
 		say "One lawyer stands up and snaps their fingers. 'There you go! I knew you'd get it.";
 		increment core-score;
 		follow the score and thinking changes rule;
@@ -204,7 +204,7 @@ report examining Aight Amusing:
 			next;
 		say "-- [invtext of SI][line break]";
 	tip-herb-use;
-	say "[line break]At the bottom, the lawyers have written 'There's one thing that's sort of missing from this list and sort of isn't. Don't forget to invite us too once you're ready to make it!'";
+	say "[line break]At the bottom, the lawyers have written 'There's a specific point to this list. Don't forget to invite [b]US TOO[r] once you've gotten all the items and figured that point!'";
 	now last-stewitem-xaight is nds;
 	continue the action;
 
@@ -215,7 +215,7 @@ check examining aight for the first time:
 
 check examining aight when sco-try-quest is false:
 	now gs-too-soon-x-aight is true;
-	say "[aight] seems to require you to go look for all manner of weird stuff. You're just not up to fetching stuff at the moment. You don't want to feel like a gofer. You want something more purposeful.[paragraph break]You think you need to take a good look at yourself, what makes you unique, and so forth, to get started." instead;
+	say "[aight] seems to require you to go look for all manner of weird stuff. You're just not up to fetching stuff at the moment. You don't want to feel like a gofer. You want something more purposeful. Something that at least in part relies on what makes you YOU.[paragraph break]You think you need to take a good look at yourself, what makes you unique, and so forth, to get started." instead;
 
 to default-x-to-aight:
 	say "For future reference, [b]X[r] will default to [using] in the future. It will be about as helpful to you as [b]I[r]/[b]INVENTORY[r].";
@@ -269,7 +269,7 @@ part urgh ought er jot
 
 the urgh ought er jot is a startthing. eyes-number of er jot is 1.
 
-check drop2ing aight: say "[if sco-summon-cheese is true]You could still win [this-game] without [aight], now you summoned the cheese[else][aight] clues a specific item to find[end if]. But it's useful for general organization, so you need to keep it., but it'd be hard to keep track of what you need." instead;
+check drop2ing aight: say "[if sco-summon-cheese is true]You could still win [this-game] without [aight], now you summoned the cheese. However[else][aight] clues a specific item to find. Also[end if], it's useful for general organization, so you need to keep it, or it'd be hard to keep track of what you need." instead;
 
 check drop2ing urgh ought er jot:
 	if er jot is not examined:
@@ -285,7 +285,7 @@ to say crumple-it: say "You actually just crumple it up and put it in your pocke
 
 Trike West carries the urgh ought er jot. printed name of er jot is "Urgh-Ought-[']Er Jot".
 
-description of Jot is "It's a note from [ara]: 'The row/ledge is for practice if you want, but you don't need to change it. Items on it may help when needed. No shame using them everywhere, and I won't be offended if you find them useless or even drop them.'". eyes-number of jot is 1.
+description of Jot is "[one of]It's a[or]You reread the[stopping] note from [ara]: 'The items on the row/ledge may help when needed. No shame using them everywhere, and I won't be offended if you find them useless or even drop them. Or drop this, now you've read it. One less thing to worry about in your inventory.[paragraph break]'You can change the row/ledge itself if you want, but you don't need to. Maybe with experience you'll have an a-ha moment, o maybe you'll have an a-ha moment.'". eyes-number of jot is 1.
 
 report examining jot:
 	if gs-jot-row-ledge is false and lucent row is in mine:
@@ -324,9 +324,9 @@ check thinking in Mine Ooh when sco-try-quest is false:
 	say "--the lawyers reacted positively to 'My new mine, ooh!'";
 	say "--your name is Trike West. [ara] said she REALLY liked that name.";
 	if doable-hinted is 1, say "[line break]--you also figured to need to make [b]A STEW[r] from the lawyers' 'Us too,' which is down the road, but it's good to have a goal in mind.";
+	process the partial-oronym-check rule;
 	if gs-taken-inventory is false:
 		say "[line break]Maybe you should take [b]INVENTORY[r] with [b]I[r]. That might give you an idea what to do in the future.";
-	process the partial-oronym-check rule;
 	the rule succeeds;
 
 check going up in Mine Ooh:
