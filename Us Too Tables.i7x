@@ -1058,10 +1058,11 @@ a wordtwisting rule (this is the pre-too-broad rule):
 
 this is the post-too-broad rule:
 	now sco-too-broad is true;
-	say "The tube/rod slowly cracks, then bursts. A passage now leads south. You pause a bit and hope it's not a tube leading to bleeding...";
+	say "The tube/rod slowly cracks, then bursts. You pause a bit and hope it's not a tube leading to bleeding... but in fact the area just behind is nice and green and nature-like and expansive. So expansive, you lose track of where the tube/rod was.";
 	reveal Dam Pink to south;
 	moot tuberodscen;
 	declue-here;
+	print-the-loc;
 
 chapter dam pink scoring
 

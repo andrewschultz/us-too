@@ -1286,7 +1286,7 @@ after printing the locale description when gs-nn-noted is false and (player is i
 
 part Tube Rod
 
-Tube Rod is an ordroom in r-south. rmord of Tube Rod is 3. eyes-number of Tube Rod is 35. printed name is "Tube/Rod". eyes-rule of Tube Rod is pre-too-broad rule. "[if sco-too-broad is false]Further passage south is blocked by a huge nondescript wall with a single tube/rod sticking out of it[else]With the tube/rod burst, you can now go south as well as back north[end if].". roomdirs of Tube Rod is "NE/S".
+Tube Rod is an ordroom in r-south. rmord of Tube Rod is 3. eyes-number of Tube Rod is 35. printed name is "[if sco-too-broad is false]Tube/Rod[else]'Grasp, Ace: Grass' Space[end if]". eyes-rule of Tube Rod is pre-too-broad rule. "[if sco-too-broad is false]Further passage south is blocked by a huge nondescript wall with a single tube/rod sticking out of it[else]With the tube/rod burst, it's much more green and relaxing and expansive here. You can now go south as well as back north[end if].". roomdirs of Tube Rod is "NE/S".
 
 chapter tuberodscen
 
