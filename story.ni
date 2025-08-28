@@ -548,7 +548,7 @@ the garden tree is a thing. "[if sco-pea-pod is false and all stewitems are disc
 
 chapter sign and south area verbs
 
-the sign ought sigh not is a thing. printed name is "Sign Ought-Sigh-Not". "[one of]A new sign titled SIGN OUGHT-SIGH-NOT stands here.[or]The SIGN OUGHT-SIGH-NOT stands here for reference.[stopping]". description of sign ought sigh not is "[if south-sorted]***SHORTCUT COMMANDS***[paragraph break]N2 or 2N or NN gets you all the way back north[else]WAYS SOUTH:[end if]". eyes-number of Sign Ought Sigh Not is 1.
+the sign ought sigh not is a thing. printed name is "Sign Ought-Sigh-Not". "[one of]A new sign titled SIGN OUGHT-SIGH-NOT stands here.[or]The SIGN OUGHT-SIGH-NOT stands here for reference.[stopping]". description of sign ought sigh not is "[if south-sorted][b]***SHORTCUT COMMANDS***[paragraph break]N2 or 2N or NN gets you all the way back north.[r][else]WAYS SOUTH:[end if]". eyes-number of Sign Ought Sigh Not is 1.
 
 report examining sign ought sigh not:
 	list-which-room;
@@ -580,8 +580,6 @@ this is the south-block rule:
 
 section r1ing
 
-chapter r1ing
-
 r1ing is an action out of world.
 
 understand the command "r" as something new.
@@ -589,10 +587,11 @@ understand the command "r" as something new.
 understand "r" as r1ing when gs-noted-r is true.
 
 carry out r1ing:
-	move player to nextroom of location of player;
+	abide by the check-south-rotation rule;
+	try-rotate false;
 	the rule succeeds;
 
-chapter r2ing
+section r2ing
 
 r2ing is an action out of world.
 
@@ -605,12 +604,29 @@ understand "rr" as r2ing when gs-noted-r is true.
 understand "22" as r2ing when gs-noted-r is true.
 
 this is the check-south-rotation rule:
-	if player is not in a rotroom, say "You need to be in the south to be able to rotate." instead;
-	if number of unvisited rotrooms > 0, say "But you haven't visited everywhere in the south. Once you have, you can rotate. You can probably just go north and rotate as a workaround until you have." instead;
+	if south is branchdone, say "The rotation shortcuts aren't useable now you've solved the south." instead;
+	if player is not in a rotroom, say "You need to be in the south to be able to use [r-rr]." instead;
 
 carry out r2ing:
-	move player to nextroom of (nextroom of location of player);
+	abide by the check-south-rotation rule;
+	try-rotate true;
 	the rule succeeds;
+
+to try-rotate (ts - a truth state):
+	let rm be nextroom of location of player;
+	if ts is true, now rm is nextroom of rm;
+	if rm is unvisited:
+		say "You're trying to rotate to somewhere unvisited. ";
+		if player is in an ordroom:
+			say "This is a small bug, since you shouldn't see [r-rr] until you've found all three ways south.";
+			continue the action;
+		say "So you may need to go north, then rotate, then go back south. Or you may want to [if ts is true][b]R[r] instead of [b]RR[r][else][b]RR[r] instead of [b]R[r][end if].";
+		continue the action;
+	if rm is not an ordroom and number of unvisited rotrooms > 0:
+		say "[b]NOTE[r]: you won't be able to [b][if ts is true]RR[else]R[end if][r] again, since you still have one far-south room to visit.";
+	move player to rm;
+
+to say r-rr: say "[b]R[r] or [b]RR[r]"
 
 section ssing
 
