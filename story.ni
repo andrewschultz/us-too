@@ -817,7 +817,7 @@ book northwest branch
 
 part Sore Dark
 
-Sore Dark is a room in universal. description is "[if sco-sword-ark is false]You can't see much here, but maybe if you fumble around for what you need, or make an educated guess, you'll find it[else if sco-blast-ring is false]The sword ark hangs above you, the Terra Blade intertwined in it, far too high to climb up to[else]The Terra Blade lies among the erstwhile rubble of the sword ark[end if].". eyes-number of Sore Dark is 53. eyes-rule of Sore Dark is pre-sword-ark rule.
+Sore Dark is a room in universal. printed name is "[if sco-sword-ark is false]Sore Dark[else]Sword Ark[end if]". description is "[if sco-sword-ark is false]You can't see much here, but maybe if you fumble around for what you need, or make an educated guess, you'll find it[else if sco-blast-ring is false]The sword ark hangs above you, the Terra Blade intertwined in it, far too high to climb up to[else]The Terra Blade lies among the erstwhile rubble of the sword ark[end if].". eyes-number of Sore Dark is 53. eyes-rule of Sore Dark is pre-sword-ark rule.
 
 chapter sword ark
 
@@ -825,7 +825,11 @@ the sword ark is scenery. "The Terra Blade is suspended in the sword ark above. 
 
 chapter Terra Blade
 
-The Terra Blade is a scenery. indefinite article of terra blade is "the". "It looks very impressive, almost too impressive for you to use as swords are generally uses. [if sco-blast-ring is true]Also, it's suspended above in the sword ark, too high to reach[else if sco-terrible-aid is false]You're pretty sure you need to take possession of it, but you're worried an annoying voice will boom out something about your destiny when it does[else]Now that you have it, you really hope you don't have to defeat someone super-powerful with it[end if].". eyes-number of Terra Blade is 83. eyes-rule of Terra Blade is pre-terrible-aid rule.
+The Terra Blade is scenery. indefinite article of terra blade is "the". "It looks very impressive, almost too impressive for you to use as swords are generally uses. [if sco-blast-ring is true]Also, it's suspended above in the sword ark, too high to reach[else if sco-terrible-aid is false]You're pretty sure you need to take possession of it, but you're worried an annoying voice will boom out something about your destiny when it does[else]Now that you have it, you really hope you don't have to defeat someone super-powerful with it[end if].". eyes-number of Terra Blade is 83. eyes-rule of Terra Blade is pre-terrible-aid rule.
+
+check taking terra blade when blade is in sore dark:
+	if sco-blast-ring is false, say "It's embedded too high up in the ark!" instead;
+	say "You usually need to say something kind of important sounding to take a blade as important as the Terra Blade." instead;
 
 book north branch
 
