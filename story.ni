@@ -431,6 +431,8 @@ chapter mess kit
 
 the mess kit is a stewitem. description is "It's a standard mess kit, not very flashy, but clean.". eyes-number of mess kit is -34. eyes-rule of mess kit is pre-meh-skit rule. invtext of mess kit is "cookware[if sco-mess-pot is true] (the mess kit [here-in of mine ooh])[end if]".
 
+understand "mess pot" and "pot" as mess kit.
+
 part ur branch
 
 Ur Branch is a room in universal. It is above My New Mine Ooh. printed name is "Ur-Branch". "[if all stewitems are discovered]You seem to have nothing critical left to do. You've visited all the branches and done what you need. It's likely time to go back [b]DOWN[r] to the mine and finish what remains[else][urdesc][end if].". eyes-number of Ur Branch is 45. eyes-rule of Ur Branch is pre-herb-ranch rule.
@@ -567,7 +569,6 @@ the sign ought sigh not is a thing. printed name is "Sign Ought-Sigh-Not". "[one
 report examining sign ought sigh not:
 	list-which-room;
 	continue the action;
-
 
 after printing the locale description of ur branch when player was in a rotroom:
 	if sign ought sigh not is off-stage:
@@ -840,7 +841,7 @@ Blah Copse is a room in universal. "[if sco-or-clerk is false]The only really cl
 check going to Blah Copse when sco-blah-copse is false:
 	now gs-tried-black-ops is true;
 	move black ops to Ur Branch;
-	say "[one of]You walk north, but somehow, you stumble by a black ops site, and you're flagged down. What are you doing here? How did you even get close? After some questioning, you're sent back to the Ur-Branch by people who 'suggest' you forget this ever happened. Returning is ... not advised. This does nothing to quell your curioaity about what's REALLY north[or]Oh, no, you can't risk going back to the black ops site. The pro ball indicated something north, but you're missing where you REALLY need to go. Once you know that, you know you can avoid the wrong turn. Until then, it's too risky[stopping]."  instead;
+	say "[one of]You walk north, but somehow, you stumble by a black ops site, and you're flagged down. What are you doing here? How did you even get close? After some questioning, you're sent back to the Ur-Branch by people who 'suggest' you forget this ever happened. Returning is ... not advised. This does nothing to quell your curiosity about what's REALLY north[or]Oh, no, you can't risk going back to the black ops site. The pro ball indicated something north, but you're missing where you REALLY need to go. Once you know that, you know you can avoid the wrong turn. Until then, it's too risky[stopping]."  instead;
 
 chapter Forest Team
 
@@ -984,7 +985,7 @@ chapter cant ache
 
 the cant ache is a thing in Dome Aching. "The can't-ache sweeps through the air, paralyzing you from doing anything constructive.". description is "Analyzing the ache will do no good. It can't be subdued physically. You just have to take that leap and neutralize it.". printed name of cant ache is "can't-ache". eyes-number of cant ache is 34. eyes-rule of cant ache is pre-can-take rule.
 
-check taking cant ache: say "Hmm, you may or may not have figured what to do, so I'm going to be pedantic and insist on you saying it absoutely tight." instead;
+check taking cant ache: say "Hmm, you may or may not have figured what to do, so I'm going to be pedantic and insist on you saying it absolutely tight." instead;
 
 chapter great inn
 
@@ -1765,10 +1766,10 @@ check verbsing when player is in house:
 
 carry out verbsing:
 	say "[this-game] uses a reduced parser. You mostly just need to move around and guess special two-word commands indicated by your surroundings.";
-	say "[line break]Fo instance, [b]TAKE[r] isn't necessary. Items are implicitly taken as you need them and used up, though to help you avoid temptation, the game makes you [b]TAKE[r] hint items and lets you [b]DROP[r] them for good.";
+	say "[line break]For instance, [b]TAKE[r] isn't necessary. Items are implicitly taken as you need them and used up, though to help you avoid temptation, the game makes you [b]TAKE[r] hint items and lets you [b]DROP[r] them for good.";
 	say "[this-game] generally uses the four compass directions, but [if ur branch is unvisited]the hub room[else]Ur-Branch[end if] uses all four diagonal directions as well[if bore dread is unvisited and sore dark is unvisited]--don't worry, those are very small areas[end if]. [b]O[r] also goes outside, and if there's only one viable direction, it goes that way.";
 	say "[b]T[r]/[b]TALK[r]ing to NPCs (subject usually not necessary) or [b]LISTEN[r] may provide additional cues. Additionally, [b]EAT[r] and [b]CLIMB[r] may be marginally useful or amusing.";
-	say "[line break]Useful one-letter diagnostic commands: [b]I[r] inventories  what you're carrying, though it delegates items on [ara]'s list ([aight]) to [b]X[r][if gs-using-known is false] after the first time you use it[end if] so you don't have to read too much at once. [b]X THING[r] still examines in-game items.";
+	say "[line break]Useful one-letter diagnostic commands: [b]I[r] inventories what you're carrying, though it delegates items on [ara]'s list ([aight]) to [b]X[r][if gs-using-known is false] after the first time you use it[end if] so you don't have to read too much at once. [b]X THING[r] still examines in-game items.";
 	say "[line break]While [b]SCORE[r] gives your game-score (also listed in the upper right), [b]THINK[r] may be more useful looking forward, to track point-scoring commands that you found that will work later, or commands you got half-right.";
 
 report verbsing when (south-sorted or gs-noted-r is true) and south is not branchdone:

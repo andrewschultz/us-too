@@ -10,7 +10,7 @@ volume the main table
 
 table of main oronyms
 w1 (text)	w2 (text)	first-hom (text)	second-hom	hom-txt-rule (rule)	first-exact	first-close	second-exact	second-close	part-explain	think-cue	okflip	core	idid	everfail	best-room	check-rule	run-rule	wfull (topic)	think-advice (text)
-"loose"	"intro"	"loose|loosened"	--	hom-loose-intro rule	false	false	false	false	"finding something hidden in the lucent row"	false	true	false	false	false	my new mine ooh	pre-loose-intro rule	post-loose-intro rule	--	--
+"loose"	"intro"	"loosed|loosened"	--	hom-loose-intro rule	false	false	false	false	"finding something hidden in the lucent row"	false	true	false	false	false	my new mine ooh	pre-loose-intro rule	post-loose-intro rule	--	--
 "try"	"quest"	--	--	--	false	false	false	false	"how to get started and what to do"	false	true	true	false	false	mine ooh	pre-try-quest rule	post-try-quest rule	--	--
 "be"	"strong"	"bee"	--	hom-be-strong rule	false	false	false	false	"getting rid of the beast"	false	true	true	false	false	mine ooh	pre-be-strong rule	post-be-strong rule	--	--
 "nice"	"warm"	--	--	--	false	false	false	false	"making the swarm less aggressive"	false	true	true	false	false	mine ooh	pre-nice-warm rule	post-nice-warm rule	--	--
@@ -340,7 +340,7 @@ a wordtwisting rule (this is the pre-punt-weaker rule):
 		vcp "The pun tweaker whispers 'I'll give you it, if you just get rid of THIS GUY.'";
 		not-yet;
 	if sir freddie is not in beach ill and sir freddie is not moot:
-		vcp "The pun tweaker says 'You want transport, eh? Any sort of transport? [if sir freddie is in beach]Get rid of this guy, I'll give you it.'[else]Well, I need to repair my ship, here. If you could help, But what can you do for me?'[end if]";
+		vcp "The pun tweaker says 'You want transport, eh? Any sort of transport? [if sir freddie is in beach]Get rid of this guy, I'll give you it.'[else]Well, I need to repair my ship, here. Maybe if you could help, it'd be a deal.'[end if]";
 		not-yet;
 	if sco-punt-weaker is true:
 		vcal "You already got the punt, weaker!";
@@ -970,7 +970,7 @@ this is the post-find-rinks rule:
 a wordtwisting rule (this is the pre-barn-open rule):
 	if player is not in far miles farm isles, unavailable;
 	if sco-bear-respond is false:
-		vcp "[farm-sense]You find a barn, open, hidden behind the bar. There are some truly glorious eggs in there, but you have nothing to barter for them yet. 'Food for food,' you're told. 'But only what you have extra of.'";
+		vcp "[farm-sense]You [one of]find a[or]revisit the[stopping] barn, open, hidden behind the bar. There are some truly glorious eggs in there, but you have nothing to barter for them yet. 'Food for food,' you're told. 'But only what you have extra of.'";
 		not-yet;
 	if sco-barn-open is true:
 		vcal "You already got an egg from the barn! [if sco-dupe-it is true]You figured where to get more, too[else]It was a one-time deal, so you'll need to find somewhere else to get more eggs, even if they're not as good as the one you've got[end if].";
