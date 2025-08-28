@@ -462,10 +462,24 @@ rule for printing the locale description of ur branch:
 
 check going in ur branch (this is the branch blocker rule): if noun is branchdone, say "[donetext of noun][line break]" instead;
 
-after printing the locale description for Ur Branch when sco-hike-up is true and southwest is branchcant:
-	say "You track down the southwest passage pretty easily, with the help of your pro ball.";
+after printing the locale description of ur branch when sco-hike-up is true and southwest is not branchcant and (not ordrooms-seen or bowl ditch is not visited) (this is the first proball southwestish rule):
+	say "The hike up to the high cup revealed passages south, west and southwest. ";
+	if fort is unvisited:
+		say "Southwest was the least treacherous.";
+	else if bowl ditch is visited:
+		say "[if number of visited ordrooms > 0]Maybe there's still some of the south left to explore[else]You've been west with a burst of speed, so that leaves the south. It looked rather twisty in the pro ball[end if].";
+	else if number of visited ordrooms > 0:
+		say "You've seen something to the south with a burst of speed but nothing to the west, yet.";
+	else:
+		say "The south and west both seemed to have treacherous terrain. How to minimize its risks?";
+	continue the action;
+
+after printing the locale description for Ur Branch when sco-hike-up is true and southwest is branchcant (this is the second proball southwestish rule):
+	say "You track down the southwest passage pretty easily, with the help of your pro ball. It's clearly the shortest and least treacherous.";
 	reveal Fort Earns Four Turns to southwest;
 	continue the action;
+
+the first proball southwestish rule is listed before the second proball southwestish rule in the after printing the locale description rules.
 
 after printing the locale description for Ur Branch when sco-nah-queue is true and inside is branchcant:
 	say "You hear a scuffle and see the [Forest] running away. They moan something about a garden tree getting in the way. You didn't see one before, but tracing the team's most recent footprints leads you to a garden tree.[paragraph break]It doesn't appear particularly aggressive, but it's in the way.";
@@ -554,17 +568,6 @@ report examining sign ought sigh not:
 	list-which-room;
 	continue the action;
 
-after printing the locale description of ur branch when sco-hike-up is true and (not ordrooms-seen or bowl ditch is not visited):
-	say "The hike up to the high cup revealed passages south, west and southwest. ";
-	if fort is unvisited:
-		say "Southwest was the least treacherous.";
-	else if bowl ditch is visited:
-		say "[if number of visited ordrooms > 0]Maybe there's still some of the south left to explore[else]You've been west with a burst of speed, so that leaves the south. It looked rather twisty in the pro ball[end if].";
-	else if number of visited ordrooms > 0:
-		say "You've seen something to the south with a burst of speed but nothing to the west, yet.";
-	else:
-		say "The south and west both seemed to have treacherous terrain. How to minimize its risks?";
-	continue the action;
 
 after printing the locale description of ur branch when player was in a rotroom:
 	if sign ought sigh not is off-stage:
