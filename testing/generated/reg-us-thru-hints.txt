@@ -16,6 +16,16 @@ by a point
 
 >x row
 
+>loose intro
+by a bonus point
+
+#testcase-values-eyes-number-of-goal-edge-go-ledge-is-1
+>eye goal edge go ledge
+The eyes show nothing. Probably don't need to change up anything with the Goal-Edge-Go Ledge.
+
+>undo
+>undo
+
 >get all
 slice eyes
 war pawn
@@ -41,7 +51,7 @@ by a point
 
 #+testcase-values-eyes-number-of-beast-wrong-is-26
 >eye beast wrong
-Nothing (significant) here like that. Note that room names are not usually worth examining and are often just for silly flavor, so you can just EYE without a subject for the room, or to see what needs changing in the room.
+Nothing (significant) here like that. Note that while you may need to act on room names, X/EYE (THIS ROOM'S NAME) is often not implemented because L/EYE without a subject takes less characters to type.
 
 >x
 
@@ -59,7 +69,7 @@ Nothing for the general area, though the sly size-slice eyes seem to wander betw
 
 #testcase-values-eyes-number-of-sly-size-slice-eyes-is-1
 >eye eyes
-The eyes will light up two sets of dots if there is something you still need to do in the area. (1/6)
+The eyes will light up two sets of dots if there is something you still need to do in the area. (1/6, EYE EYES again (or G repeats a command) to see more)
 
 >eye eyes
 The numbers of dots correspond to the number of letters in the first and second words to type, respectively. (2/6)
@@ -137,10 +147,6 @@ by a bonus point
 #testcase-values-eyes-number-of-loose-intro-is--1
 >eye loose intro
 The eyes show nothing. You've changed up everything you need with the loose intro.
-
-#testcase-values-eyes-number-of-goal-edge-go-ledge-is-1
->eye goal edge go ledge
-The eyes show nothing. Probably don't need to change up anything with the Goal-Edge-Go Ledge.
 
 #testcase-values-eyes-number-of-aight-amusing-item-using-is-66
 >eye aight amusing item using
@@ -365,7 +371,7 @@ by a point
 
 #+testcase-values-eyes-number-of-row-plaider-is-46
 >eye row plaider
-Nothing (significant) here like that. (Once-per-room reminder:) room names are not usually worth examining and are often just for silly flavor, so you can just EYE without a subject for the room, or to see what needs changing in the room.
+Nothing (significant) here like that. (Once-per-room reminder:) while you may need to act on room names, X/EYE (THIS ROOM'S NAME) is often not implemented because L/EYE without a subject takes less characters to type.
 
 #testcase-values-eyes-number-of-rope-ladder-is--1
 >eye rope ladder
@@ -421,7 +427,7 @@ The eyes light up green and show five dots, then six dots.
 
 #+testcase-values-eyes-number-of-cant-ache-is-34
 >eye cant ache
-Nothing (significant) here like that. (Once-per-room reminder:) room names are not usually worth examining and are often just for silly flavor, so you can just EYE without a subject for the room, or to see what needs changing in the room.
+Nothing (significant) here like that. (Once-per-room reminder:) while you may need to act on room names, X/EYE (THIS ROOM'S NAME) is often not implemented because L/EYE without a subject takes less characters to type.
 
 #testcase-values-eyes-number-of-great-inn-is-43
 >eye great inn
@@ -808,7 +814,7 @@ by a point
 
 #+testcase-values-eyes-number-of-bell-trusted-is-46
 >eye bell
-Nothing (significant) here like that. (Once-per-room reminder:) room names are not usually worth examining and are often just for silly flavor, so you can just EYE without a subject for the room, or to see what needs changing in the room.
+Nothing (significant) here like that. (Once-per-room reminder:) while you may need to act on room names, X/EYE (THIS ROOM'S NAME) is often not implemented because L/EYE without a subject takes less characters to type.
 
 #testcase-values-eyes-number-of-belt-rusted-is--1
 >eye belt rusted
@@ -1020,7 +1026,7 @@ by a point
 
 #+testcase-values-eyes-number-of-groan-odes-is-45
 >eye
-The eyes see nothing in the general area but seem to be wandering to the numbered nodes.
+The eyes see nothing in the general area but seem to be wandering to the numb bursting number string/numbered nodes.
 
 #testcase-values-eyes-number-of-nodes-is-24
 >eye nodes

@@ -16,6 +16,19 @@ by a point
 
 >z
 
+#testcase-check-pre-be-chill-rule-if-player-is-not-in-beach-ill
+#testcase-reject-start-table-of-main-oronyms-pre-be-chill-rule
+>be chill
+You're not quite sure how to get started and get focused. There are almost too many possibilities. The help you see in the mine -- well, tha may be later. Perhaps examining yourself with X ME or recapping what you know with THINK would help.
+
+#testcase-check-pre-be-strong-rule-if-beast-wrong-is-not-in-location-of-player
+#testcase-reject-start-table-of-main-oronyms-pre-be-strong-rule
+>be strong
+You're not quite sure how to get started and get focused. There are almost too many possibilities. The help you see in the mine -- well, tha may be later. Perhaps examining yourself with X ME or recapping what you know with THINK would help.
+
+>try quest
+by a point
+
 #testcase-reject-start-table-of-main-oronyms-pre-barn-open-rule
 #testcase-check-pre-barn-open-rule-if-player-is-not-in-far-miles-farm-isles
 >barn open
@@ -24,16 +37,6 @@ That thought/action/observation/request brings up nothing. Us Too has a limited 
 #testcase-reject-start-table-of-main-oronyms-pre-base-pikes-rule
 #testcase-check-pre-base-pikes-rule-if-player-is-not-in-a-pile-up-isle
 >base pikes
-That thought/action/observation/request brings up nothing. Us Too has a limited set of verbs, and the main thing is to guess a two-word phrase. To see what verbs are used, try VERBS.
-
-#testcase-check-pre-be-chill-rule-if-player-is-not-in-beach-ill
-#testcase-reject-start-table-of-main-oronyms-pre-be-chill-rule
->be chill
-That thought/action/observation/request brings up nothing. Us Too has a limited set of verbs, and the main thing is to guess a two-word phrase. To see what verbs are used, try VERBS.
-
-#testcase-check-pre-be-strong-rule-if-beast-wrong-is-not-in-location-of-player
-#testcase-reject-start-table-of-main-oronyms-pre-be-strong-rule
->be strong
 That thought/action/observation/request brings up nothing. Us Too has a limited set of verbs, and the main thing is to guess a two-word phrase. To see what verbs are used, try VERBS.
 
 #testcase-check-pre-bear-respond-rule-if-player-is-not-in-berries-pond
@@ -335,9 +338,6 @@ That thought/action/observation/request brings up nothing. Us Too has a limited 
 >wheat rye
 That thought/action/observation/request brings up nothing. Us Too has a limited set of verbs, and the main thing is to guess a two-word phrase. To see what verbs are used, try VERBS.
 
->try quest
-by a point
-
 #testcase-check-pre-board-red-rule-if-player-is-not-in-bore-dread
 >bore dread
 That thought/action/observation/request brings up nothing. Us Too has a limited set of verbs, and the main thing is to guess a two-word phrase. To see what verbs are used, try VERBS.
@@ -451,11 +451,11 @@ by a point
 
 #testcase-check-pre-punt-weaker-rule-if-sir-freddie-is-not-in-beach-ill-and-sir-freddie-is-not-moot
 >punt weaker
-The pun tweaker says "You want transport, eh? Any sort of transport? But what can you do for me?"
+The pun tweaker says "You want transport, eh? Any sort of transport? Well, I need to repair my ship, here. Maybe if you could help, it'd be a deal."
 
 #testcase-check-pre-probe-all-rule-if-sco-probe-all-is-true
 >probe all
-You already probed the pro ball enough to get a feel for hidden exits in your surroundings! More will appear as you need them.
+You already probed the pro ball enough to get a feel for hidden exits in your surroundings! More will appear as you need them, and later, you'll be able to use it to navigate slightly trickier area maps.
 
 #testcase-think-table-of-main-oronyms-pre-punt-weaker-rule
 >think
@@ -547,7 +547,7 @@ Why, you bet you could make that from the blah string, but you see nothing blast
 
 #testcase-think-table-of-main-oronyms-pre-blast-ring-rule
 >think
-You can BLAST RING once you have found something to blast.
+You can transform the blah string to a BLAST RING once you have found something to blast.
 
 >n
 
@@ -737,7 +737,7 @@ You can become the owner of a TERRIBLE AID once you can bring it down from the a
 
 #+testcase-think-table-of-main-oronyms-pre-blast-ring-rule
 >think
-You can BLAST RING now you have found something to blast.
+You can transform the blah string to a BLAST RING now you have found something to blast.
 
 >blast ring
 by a point
@@ -816,7 +816,7 @@ That thought/action/observation/request brings up nothing. Us Too has a limited 
 
 #testcase-check-pre-scry-broom-rule-if-sco-damp-ink-is-false
 >scry broom
-The scribes won't trade a broom for NOTHING...
+The scribes notice you looking at the broom. "Want it? Well, we won't trade it for NOTHING..." Now what could scribes use?
 
 #testcase-think-table-of-main-oronyms-pre-scry-broom-rule
 >think
@@ -1011,16 +1011,16 @@ You already build the stark raft!
 
 #testcase-check-pre-barn-open-rule-if-sco-bear-respond-is-false
 >barn open
-Of course it makes sense there'd be a barn on farm isles. You find a barn, open, hidden behind the bar. There are some truly glorious eggs in there, but you have nothing to trade for them yet.
+Of course it makes sense there'd be a barn on farm isles. You find a barn, open, hidden behind the bar. There are some truly glorious eggs in there, but you have nothing to barter for them yet. "Food for food," you're told. "But only what you have extra of."
 
 #+testcase-check-pre-barn-open-rule-if-sco-bear-respond-is-false
 >barn open
 !Of course it makes sense there'd be a barn on farm isles.
-You find a barn, open, hidden behind the bar. There are some truly glorious eggs in there, but you have nothing to trade for them yet.
+You revisit the barn, open, hidden behind the bar. There are some truly glorious eggs in there, but you have nothing to barter for them yet. "Food for food," you're told. "But only what you have extra of."
 
 #testcase-think-table-of-main-oronyms-pre-barn-open-rule
 >think
-You can transact with the BARN OPEN once you have something of value to trade.
+You can transact with the BARN OPEN once you have food to barter.
 
 >find rinks
 by a point
@@ -1043,7 +1043,7 @@ You already found them! You don't need to go back.
 
 #+testcase-think-table-of-main-oronyms-pre-barn-open-rule
 >think
-You can transact with the BARN OPEN now you have something of value to trade.
+You can transact with the BARN OPEN now you have food to barter.
 
 >barn open
 by a point
@@ -1178,7 +1178,7 @@ You already called out to share refreshments. You need to save some for the fina
 
 #testcase-check-pre-join-aider-rule-if-player-does-not-have-belt-rusted
 >join aider
-The pro ball crackles, but nothing else happens.
+The pro ball jumps an inch out of your hand and briefly crackles, but nothing else happens. You'll need to find what to join it to.
 
 #testcase-think-table-of-main-oronyms-pre-join-aider-rule
 >think

@@ -21,7 +21,7 @@ by a point
 A voice in your head encourages you: "Seem, or see, more!" You've got SOMETHING right, here.
 
 >think
-You must have one word right for how to get started and what to do.
+You're pretty sure you have one word right for how to get started and what to do.
 
 >undo
 >undo
@@ -31,7 +31,7 @@ You must have one word right for how to get started and what to do.
 A voice in your head encourages you: "Seem, or see, more!" You've got SOMETHING right, here.
 
 >think
-You must have one word right for how to get started and what to do.
+You're pretty sure you have one word right for how to get started and what to do.
 
 >undo
 >undo
@@ -44,7 +44,7 @@ by a point
 Not much happens, but you feel like that might help, at least halfway, some time later. Much later, or just a little, you can't tell.
 
 >think
-You must have one word right for achieving the game's objective.
+You're pretty sure you have one word right for achieving the game's objective.
 
 >undo
 >undo
@@ -54,7 +54,7 @@ You must have one word right for achieving the game's objective.
 Not much happens, but you feel like that might help, at least halfway, some time later. Much later, or just a little, you can't tell.
 
 >think
-You must have one word right for achieving the game's objective.
+You're pretty sure you have one word right for achieving the game's objective.
 
 >undo
 >undo
@@ -64,7 +64,7 @@ You must have one word right for achieving the game's objective.
 A voice in your head encourages you: "Seem, or see, more!" You've got SOMETHING right, here.
 
 >think
-You must have one word right for getting rid of the beast.
+You're pretty sure you have one word right for getting rid of the beast.
 
 >undo
 >undo
@@ -74,7 +74,7 @@ You must have one word right for getting rid of the beast.
 A voice in your head encourages you: "Seem, or see, more!" You've got SOMETHING right, here.
 
 >think
-You must have one word right for getting rid of the beast.
+You're pretty sure you have one word right for getting rid of the beast.
 
 >undo
 >undo
@@ -89,7 +89,7 @@ by a point
 A voice in your head encourages you: "Seem, or see, more!" You've got SOMETHING right, here.
 
 >think
-You must have one word right for finding something hidden in the lucent row.
+You're pretty sure you have one word right for finding something hidden in the lucent row.
 
 >undo
 >undo
@@ -99,7 +99,7 @@ You must have one word right for finding something hidden in the lucent row.
 A voice in your head encourages you: "Seem, or see, more!" You've got SOMETHING right, here.
 
 >think
-You must have one word right for finding something hidden in the lucent row.
+You're pretty sure you have one word right for finding something hidden in the lucent row.
 
 >undo
 >undo
@@ -112,7 +112,7 @@ by a bonus point
 A voice in your head encourages you: "Seem, or see, more!" You've got SOMETHING right, here.
 
 >think
-You must have one word right for figuring what some munchies are.
+You're pretty sure you have one word right for figuring what some munchies are.
 
 >undo
 >undo
@@ -122,7 +122,7 @@ You must have one word right for figuring what some munchies are.
 A voice in your head encourages you: "Seem, or see, more!" You've got SOMETHING right, here.
 
 >think
-You must have one word right for figuring what some munchies are.
+You're pretty sure you have one word right for figuring what some munchies are.
 
 >undo
 >undo
@@ -137,7 +137,7 @@ by a point
 A voice in your head encourages you: "Seem, or see, more!" You've got SOMETHING right, here.
 
 >think
-You must have one word right for finding the first place to visit from the Ur-Branch.
+You're pretty sure you have one word right for finding the first place to visit from the Ur-Branch.
 
 >undo
 >undo
@@ -147,7 +147,7 @@ You must have one word right for finding the first place to visit from the Ur-Br
 A voice in your head encourages you: "Seem, or see, more!" You've got SOMETHING right, here.
 
 >think
-You must have one word right for finding the first place to visit from the Ur-Branch.
+You're pretty sure you have one word right for finding the first place to visit from the Ur-Branch.
 
 >undo
 >undo
@@ -160,7 +160,7 @@ by a point
 A voice in your head encourages you: "Seem, or see, more!" You've got SOMETHING right, here.
 
 >think
-You must have one word right for letting the herb reveal a new location.
+You're pretty sure you have one word right for letting the herb reveal a new location.
 
 >undo
 >undo
@@ -170,7 +170,7 @@ You must have one word right for letting the herb reveal a new location.
 A voice in your head encourages you: "Seem, or see, more!" You've got SOMETHING right, here.
 
 >think
-You must have one word right for letting the herb reveal a new location.
+You're pretty sure you have one word right for letting the herb reveal a new location.
 
 >undo
 >undo
@@ -185,7 +185,7 @@ by a point
 A voice in your head encourages you: "Seem, or see, more!" You've got SOMETHING right, here.
 
 >think
-You must have one word right for dealing with the beach, ill.
+You're pretty sure you have one word right for dealing with the beach, ill.
 
 >undo
 >undo
@@ -195,7 +195,7 @@ You must have one word right for dealing with the beach, ill.
 A voice in your head encourages you: "Seem, or see, more!" You've got SOMETHING right, here.
 
 >think
-You must have one word right for dealing with the beach, ill.
+You're pretty sure you have one word right for dealing with the beach, ill.
 
 >undo
 >undo
@@ -208,7 +208,7 @@ by a point
 A voice in your head encourages you: "Seem, or see, more!" You've got SOMETHING right, here.
 
 >think
-You must have one word right for making the swarm less aggressive.
+You're pretty sure you have one word right for making the swarm less aggressive.
 
 >undo
 >undo
@@ -218,7 +218,7 @@ You must have one word right for making the swarm less aggressive.
 A voice in your head encourages you: "Seem, or see, more!" You've got SOMETHING right, here.
 
 >think
-You must have one word right for making the swarm less aggressive.
+You're pretty sure you have one word right for making the swarm less aggressive.
 
 >undo
 >undo
@@ -231,7 +231,7 @@ by a point
 A voice in your head encourages you: "Seem, or see, more!" You've got SOMETHING right, here.
 
 >think
-You must have one word right for finding a purpose for the pro ball.
+You're pretty sure you have one word right for finding a purpose for the pro ball.
 
 >undo
 >undo
@@ -241,7 +241,7 @@ You must have one word right for finding a purpose for the pro ball.
 A voice in your head encourages you: "Seem, or see, more!" You've got SOMETHING right, here.
 
 >think
-You must have one word right for finding a purpose for the pro ball.
+You're pretty sure you have one word right for finding a purpose for the pro ball.
 
 >undo
 >undo
@@ -257,7 +257,7 @@ by a point
 A voice in your head encourages you: "Seem, or see, more!" You've got SOMETHING right, here.
 
 >think
-You must have one word right for making the meh spot into something more useful.
+You're pretty sure you have one word right for making the meh spot into something more useful.
 
 >undo
 >undo
@@ -267,7 +267,7 @@ You must have one word right for making the meh spot into something more useful.
 A voice in your head encourages you: "Seem, or see, more!" You've got SOMETHING right, here.
 
 >think
-You must have one word right for making the meh spot into something more useful.
+You're pretty sure you have one word right for making the meh spot into something more useful.
 
 >undo
 >undo
@@ -280,7 +280,7 @@ by a point
 A voice in your head encourages you: "Seem, or see, more!" You've got SOMETHING right, here.
 
 >think
-You must have one word right for having harmless, useless fun with the mess kit.
+You're pretty sure you have one word right for having harmless, useless fun with the mess kit.
 
 >undo
 >undo
@@ -290,7 +290,7 @@ You must have one word right for having harmless, useless fun with the mess kit.
 A voice in your head encourages you: "Seem, or see, more!" You've got SOMETHING right, here.
 
 >think
-You must have one word right for having harmless, useless fun with the mess kit.
+You're pretty sure you have one word right for having harmless, useless fun with the mess kit.
 
 >undo
 >undo
@@ -306,7 +306,7 @@ by a bonus point
 A voice in your head encourages you: "Seem, or see, more!" You've got SOMETHING right, here.
 
 >think
-You must have one word right for finding something in the Bore Dread.
+You're pretty sure you have one word right for finding something in the Bore Dread.
 
 >undo
 >undo
@@ -316,7 +316,7 @@ You must have one word right for finding something in the Bore Dread.
 A voice in your head encourages you: "Seem, or see, more!" You've got SOMETHING right, here.
 
 >think
-You must have one word right for finding something in the Bore Dread.
+You're pretty sure you have one word right for finding something in the Bore Dread.
 
 >undo
 >undo
@@ -333,7 +333,7 @@ by a point
 A voice in your head encourages you: "Seem, or see, more!" You've got SOMETHING right, here.
 
 >think
-You must have one word right for avoiding the black ops.
+You're pretty sure you have one word right for avoiding the black ops.
 
 >undo
 >undo
@@ -343,7 +343,7 @@ You must have one word right for avoiding the black ops.
 A voice in your head encourages you: "Seem, or see, more!" You've got SOMETHING right, here.
 
 >think
-You must have one word right for avoiding the black ops.
+You're pretty sure you have one word right for avoiding the black ops.
 
 >undo
 >undo
@@ -356,7 +356,7 @@ by a point
 A voice in your head encourages you: "Seem, or see, more!" You've got SOMETHING right, here.
 
 >think
-You must have one word right for repelling the Forest Team for Esteem.
+You're pretty sure you have one word right for repelling the Forest Team for Esteem.
 
 >undo
 >undo
@@ -366,7 +366,7 @@ You must have one word right for repelling the Forest Team for Esteem.
 A voice in your head encourages you: "Seem, or see, more!" You've got SOMETHING right, here.
 
 >think
-You must have one word right for repelling the Forest Team for Esteem.
+You're pretty sure you have one word right for repelling the Forest Team for Esteem.
 
 >undo
 >undo
@@ -379,7 +379,7 @@ by a point
 A voice in your head encourages you: "Seem, or see, more!" You've got SOMETHING right, here.
 
 >think
-You must have one word right for giving Sir Freddie a new direction.
+You're pretty sure you have one word right for giving Sir Freddie a new direction.
 
 >undo
 >undo
@@ -389,7 +389,7 @@ You must have one word right for giving Sir Freddie a new direction.
 A voice in your head encourages you: "Seem, or see, more!" You've got SOMETHING right, here.
 
 >think
-You must have one word right for giving Sir Freddie a new direction.
+You're pretty sure you have one word right for giving Sir Freddie a new direction.
 
 >undo
 >undo
@@ -402,7 +402,7 @@ by a point
 A voice in your head encourages you: "Seem, or see, more!" You've got SOMETHING right, here.
 
 >think
-You must have one word right for figuring what Sir Freddie was scared of.
+You're pretty sure you have one word right for figuring what Sir Freddie was scared of.
 
 >undo
 >undo
@@ -412,7 +412,7 @@ You must have one word right for figuring what Sir Freddie was scared of.
 A voice in your head encourages you: "Seem, or see, more!" You've got SOMETHING right, here.
 
 >think
-You must have one word right for figuring what Sir Freddie was scared of.
+You're pretty sure you have one word right for figuring what Sir Freddie was scared of.
 
 >undo
 >undo
@@ -427,7 +427,7 @@ by a point
 A voice in your head encourages you: "Seem, or see, more!" You've got SOMETHING right, here.
 
 >think
-You must have one word right for activating the morph lairs.
+You're pretty sure you have one word right for activating the morph lairs.
 
 >undo
 >undo
@@ -437,7 +437,7 @@ You must have one word right for activating the morph lairs.
 A voice in your head encourages you: "Seem, or see, more!" You've got SOMETHING right, here.
 
 >think
-You must have one word right for activating the morph lairs.
+You're pretty sure you have one word right for activating the morph lairs.
 
 >undo
 >undo
@@ -454,7 +454,7 @@ by a point
 A voice in your head encourages you: "Seem, or see, more!" You've got SOMETHING right, here.
 
 >think
-You must have one word right for discovering what the row (plaider) holds.
+You're pretty sure you have one word right for discovering what the row (plaider) holds.
 
 >undo
 >undo
@@ -464,7 +464,7 @@ You must have one word right for discovering what the row (plaider) holds.
 A voice in your head encourages you: "Seem, or see, more!" You've got SOMETHING right, here.
 
 >think
-You must have one word right for discovering what the row (plaider) holds.
+You're pretty sure you have one word right for discovering what the row (plaider) holds.
 
 >undo
 >undo
@@ -477,7 +477,7 @@ by a point
 A voice in your head encourages you: "Seem, or see, more!" You've got SOMETHING right, here.
 
 >think
-You must have one word right for finding a way past the garden tree.
+You're pretty sure you have one word right for finding a way past the garden tree.
 
 >undo
 >undo
@@ -487,7 +487,7 @@ You must have one word right for finding a way past the garden tree.
 A voice in your head encourages you: "Seem, or see, more!" You've got SOMETHING right, here.
 
 >think
-You must have one word right for finding a way past the garden tree.
+You're pretty sure you have one word right for finding a way past the garden tree.
 
 >undo
 >undo
@@ -500,7 +500,7 @@ by a point
 A voice in your head encourages you: "Seem, or see, more!" You've got SOMETHING right, here.
 
 >think
-You must have one word right for finding something incorporeal within the Pea Stalks.
+You're pretty sure you have one word right for finding something incorporeal within the Pea Stalks.
 
 >undo
 >undo
@@ -510,7 +510,7 @@ You must have one word right for finding something incorporeal within the Pea St
 A voice in your head encourages you: "Seem, or see, more!" You've got SOMETHING right, here.
 
 >think
-You must have one word right for finding something incorporeal within the Pea Stalks.
+You're pretty sure you have one word right for finding something incorporeal within the Pea Stalks.
 
 >undo
 >undo
@@ -523,7 +523,7 @@ by a point
 A voice in your head encourages you: "Seem, or see, more!" You've got SOMETHING right, here.
 
 >think
-You must have one word right for finding something unusual within the Pea Stalks.
+You're pretty sure you have one word right for finding something unusual within the Pea Stalks.
 
 >undo
 >undo
@@ -533,7 +533,7 @@ You must have one word right for finding something unusual within the Pea Stalks
 A voice in your head encourages you: "Seem, or see, more!" You've got SOMETHING right, here.
 
 >think
-You must have one word right for finding something unusual within the Pea Stalks.
+You're pretty sure you have one word right for finding something unusual within the Pea Stalks.
 
 >undo
 >undo
@@ -550,7 +550,7 @@ by a bonus point
 A voice in your head encourages you: "Seem, or see, more!" You've got SOMETHING right, here.
 
 >think
-You must have one word right for dispelling the Can't-Ache.
+You're pretty sure you have one word right for dispelling the Can't-Ache.
 
 >undo
 >undo
@@ -560,7 +560,7 @@ You must have one word right for dispelling the Can't-Ache.
 A voice in your head encourages you: "Seem, or see, more!" You've got SOMETHING right, here.
 
 >think
-You must have one word right for dispelling the Can't-Ache.
+You're pretty sure you have one word right for dispelling the Can't-Ache.
 
 >undo
 >undo
@@ -573,7 +573,7 @@ by a point
 A voice in your head encourages you: "Seem, or see, more!" You've got SOMETHING right, here.
 
 >think
-You must have one word right for discover what the Great Inn holds.
+You're pretty sure you have one word right for discover what the Great Inn holds.
 
 >undo
 >undo
@@ -583,7 +583,7 @@ You must have one word right for discover what the Great Inn holds.
 A voice in your head encourages you: "Seem, or see, more!" You've got SOMETHING right, here.
 
 >think
-You must have one word right for discover what the Great Inn holds.
+You're pretty sure you have one word right for discover what the Great Inn holds.
 
 >undo
 >undo
@@ -596,7 +596,7 @@ by a point
 A voice in your head encourages you: "Seem, or see, more!" You've got SOMETHING right, here.
 
 >think
-You must have one word right for doing something positive in Dome, Aching.
+You're pretty sure you have one word right for doing something positive in Dome, Aching.
 
 >undo
 >undo
@@ -606,7 +606,7 @@ You must have one word right for doing something positive in Dome, Aching.
 A voice in your head encourages you: "Seem, or see, more!" You've got SOMETHING right, here.
 
 >think
-You must have one word right for doing something positive in Dome, Aching.
+You're pretty sure you have one word right for doing something positive in Dome, Aching.
 
 >undo
 >undo
@@ -619,7 +619,7 @@ by a point
 A voice in your head encourages you: "Seem, or see, more!" You've got SOMETHING right, here.
 
 >think
-You must have one word right for figure how to visit the inner nest.
+You're pretty sure you have one word right for figure how to visit the inner nest.
 
 >undo
 >undo
@@ -629,7 +629,7 @@ You must have one word right for figure how to visit the inner nest.
 A voice in your head encourages you: "Seem, or see, more!" You've got SOMETHING right, here.
 
 >think
-You must have one word right for figure how to visit the inner nest.
+You're pretty sure you have one word right for figure how to visit the inner nest.
 
 >undo
 >undo
@@ -644,7 +644,7 @@ by a point
 A voice in your head encourages you: "Seem, or see, more!" You've got SOMETHING right, here.
 
 >think
-You must have one word right for figuring how to take the prime oar.
+You're pretty sure you have one word right for figuring how to take the prime oar.
 
 >undo
 >undo
@@ -654,7 +654,7 @@ You must have one word right for figuring how to take the prime oar.
 A voice in your head encourages you: "Seem, or see, more!" You've got SOMETHING right, here.
 
 >think
-You must have one word right for figuring how to take the prime oar.
+You're pretty sure you have one word right for figuring how to take the prime oar.
 
 >undo
 >undo
@@ -672,7 +672,7 @@ by a point
 A voice in your head encourages you: "Seem, or see, more!" You've got SOMETHING right, here.
 
 >think
-You must have one word right for trading with the pun tweaker.
+You're pretty sure you have one word right for trading with the pun tweaker.
 
 >undo
 >undo
@@ -682,7 +682,7 @@ You must have one word right for trading with the pun tweaker.
 A voice in your head encourages you: "Seem, or see, more!" You've got SOMETHING right, here.
 
 >think
-You must have one word right for trading with the pun tweaker.
+You're pretty sure you have one word right for trading with the pun tweaker.
 
 >undo
 >undo
@@ -697,7 +697,7 @@ by a point
 A voice in your head encourages you: "Seem, or see, more!" You've got SOMETHING right, here.
 
 >think
-You must have one word right for figuring a way through the bay spikes.
+You're pretty sure you have one word right for figuring a way through the bay spikes.
 
 >undo
 >undo
@@ -707,7 +707,7 @@ You must have one word right for figuring a way through the bay spikes.
 A voice in your head encourages you: "Seem, or see, more!" You've got SOMETHING right, here.
 
 >think
-You must have one word right for figuring a way through the bay spikes.
+You're pretty sure you have one word right for figuring a way through the bay spikes.
 
 >undo
 >undo
@@ -720,7 +720,7 @@ by a point
 A voice in your head encourages you: "Seem, or see, more!" You've got SOMETHING right, here.
 
 >think
-You must have one word right for finding what's under the pike rust.
+You're pretty sure you have one word right for finding what's under the pike rust.
 
 >undo
 >undo
@@ -730,7 +730,7 @@ You must have one word right for finding what's under the pike rust.
 A voice in your head encourages you: "Seem, or see, more!" You've got SOMETHING right, here.
 
 >think
-You must have one word right for finding what's under the pike rust.
+You're pretty sure you have one word right for finding what's under the pike rust.
 
 >undo
 >undo
@@ -743,7 +743,7 @@ by a point
 A voice in your head encourages you: "Seem, or see, more!" You've got SOMETHING right, here.
 
 >think
-You must have one word right for reaching the high cup.
+You're pretty sure you have one word right for reaching the high cup.
 
 >undo
 >undo
@@ -753,7 +753,7 @@ You must have one word right for reaching the high cup.
 A voice in your head encourages you: "Seem, or see, more!" You've got SOMETHING right, here.
 
 >think
-You must have one word right for reaching the high cup.
+You're pretty sure you have one word right for reaching the high cup.
 
 >undo
 >undo
@@ -771,7 +771,7 @@ by a point
 A voice in your head encourages you: "Seem, or see, more!" You've got SOMETHING right, here.
 
 >think
-You must have one word right for finding something in the Sore Dark.
+You're pretty sure you have one word right for finding something in the Sore Dark.
 
 >undo
 >undo
@@ -781,7 +781,7 @@ You must have one word right for finding something in the Sore Dark.
 A voice in your head encourages you: "Seem, or see, more!" You've got SOMETHING right, here.
 
 >think
-You must have one word right for finding something in the Sore Dark.
+You're pretty sure you have one word right for finding something in the Sore Dark.
 
 >undo
 >undo
@@ -794,7 +794,7 @@ by a point
 A voice in your head encourages you: "Seem, or see, more!" You've got SOMETHING right, here.
 
 >think
-You must have one word right for finding the blah string's true purpose.
+You're pretty sure you have one word right for finding the blah string's true purpose.
 
 >undo
 >undo
@@ -804,7 +804,7 @@ You must have one word right for finding the blah string's true purpose.
 A voice in your head encourages you: "Seem, or see, more!" You've got SOMETHING right, here.
 
 >think
-You must have one word right for finding the blah string's true purpose.
+You're pretty sure you have one word right for finding the blah string's true purpose.
 
 >undo
 >undo
@@ -817,7 +817,7 @@ by a point
 A voice in your head encourages you: "Seem, or see, more!" You've got SOMETHING right, here.
 
 >think
-You must have one word right for becoming worthy of the Terra Blade.
+You're pretty sure you have one word right for becoming worthy of the Terra Blade.
 
 >undo
 >undo
@@ -827,7 +827,7 @@ You must have one word right for becoming worthy of the Terra Blade.
 A voice in your head encourages you: "Seem, or see, more!" You've got SOMETHING right, here.
 
 >think
-You must have one word right for becoming worthy of the Terra Blade.
+You're pretty sure you have one word right for becoming worthy of the Terra Blade.
 
 >undo
 >undo
@@ -842,7 +842,7 @@ by a point
 A voice in your head encourages you: "Seem, or see, more!" You've got SOMETHING right, here.
 
 >think
-You must have one word right for operating the oak lever.
+You're pretty sure you have one word right for operating the oak lever.
 
 >undo
 >undo
@@ -852,7 +852,7 @@ You must have one word right for operating the oak lever.
 A voice in your head encourages you: "Seem, or see, more!" You've got SOMETHING right, here.
 
 >think
-You must have one word right for operating the oak lever.
+You're pretty sure you have one word right for operating the oak lever.
 
 >undo
 >undo
@@ -871,7 +871,7 @@ by a point
 A voice in your head encourages you: "Seem, or see, more!" You've got SOMETHING right, here.
 
 >think
-You must have one word right for how to fracture the tube/rod.
+You're pretty sure you have one word right for how to fracture the tube/rod.
 
 >undo
 >undo
@@ -881,7 +881,7 @@ You must have one word right for how to fracture the tube/rod.
 A voice in your head encourages you: "Seem, or see, more!" You've got SOMETHING right, here.
 
 >think
-You must have one word right for how to fracture the tube/rod.
+You're pretty sure you have one word right for how to fracture the tube/rod.
 
 >undo
 >undo
@@ -908,7 +908,7 @@ by a point
 A voice in your head encourages you: "Seem, or see, more!" You've got SOMETHING right, here.
 
 >think
-You must have one word right for dealing with the paralyzing whole anger.
+You're pretty sure you have one word right for dealing with the paralyzing whole anger.
 
 >undo
 >undo
@@ -918,7 +918,7 @@ You must have one word right for dealing with the paralyzing whole anger.
 A voice in your head encourages you: "Seem, or see, more!" You've got SOMETHING right, here.
 
 >think
-You must have one word right for dealing with the paralyzing whole anger.
+You're pretty sure you have one word right for dealing with the paralyzing whole anger.
 
 >undo
 >undo
@@ -935,7 +935,7 @@ by a point
 A voice in your head encourages you: "Seem, or see, more!" You've got SOMETHING right, here.
 
 >think
-You must have one word right for revealing what's behind the felt wrap.
+You're pretty sure you have one word right for revealing what's behind the felt wrap.
 
 >undo
 >undo
@@ -945,7 +945,7 @@ You must have one word right for revealing what's behind the felt wrap.
 A voice in your head encourages you: "Seem, or see, more!" You've got SOMETHING right, here.
 
 >think
-You must have one word right for revealing what's behind the felt wrap.
+You're pretty sure you have one word right for revealing what's behind the felt wrap.
 
 >undo
 >undo
@@ -960,7 +960,7 @@ by a point
 A voice in your head encourages you: "Seem, or see, more!" You've got SOMETHING right, here.
 
 >think
-You must have one word right for escaping the Cell, Urban.
+You're pretty sure you have one word right for escaping the Cell, Urban.
 
 >undo
 >undo
@@ -970,7 +970,7 @@ You must have one word right for escaping the Cell, Urban.
 A voice in your head encourages you: "Seem, or see, more!" You've got SOMETHING right, here.
 
 >think
-You must have one word right for escaping the Cell, Urban.
+You're pretty sure you have one word right for escaping the Cell, Urban.
 
 >undo
 >undo
@@ -993,7 +993,7 @@ by a point
 A voice in your head encourages you: "Seem, or see, more!" You've got SOMETHING right, here.
 
 >think
-You must have one word right for get by the Sage Oaks.
+You're pretty sure you have one word right for get by the Sage Oaks.
 
 >undo
 >undo
@@ -1003,7 +1003,7 @@ You must have one word right for get by the Sage Oaks.
 A voice in your head encourages you: "Seem, or see, more!" You've got SOMETHING right, here.
 
 >think
-You must have one word right for get by the Sage Oaks.
+You're pretty sure you have one word right for get by the Sage Oaks.
 
 >undo
 >undo
@@ -1016,7 +1016,7 @@ by a point
 A voice in your head encourages you: "Seem, or see, more!" You've got SOMETHING right, here.
 
 >think
-You must have one word right for see how to stop gasping OUCH.
+You're pretty sure you have one word right for see how to stop gasping OUCH.
 
 >undo
 >undo
@@ -1026,7 +1026,7 @@ You must have one word right for see how to stop gasping OUCH.
 A voice in your head encourages you: "Seem, or see, more!" You've got SOMETHING right, here.
 
 >think
-You must have one word right for see how to stop gasping OUCH.
+You're pretty sure you have one word right for see how to stop gasping OUCH.
 
 >undo
 >undo
@@ -1045,7 +1045,7 @@ by a point
 A voice in your head encourages you: "Seem, or see, more!" You've got SOMETHING right, here.
 
 >think
-You must have one word right for gathering the clay mitt.
+You're pretty sure you have one word right for gathering the clay mitt.
 
 >undo
 >undo
@@ -1055,7 +1055,7 @@ You must have one word right for gathering the clay mitt.
 A voice in your head encourages you: "Seem, or see, more!" You've got SOMETHING right, here.
 
 >think
-You must have one word right for gathering the clay mitt.
+You're pretty sure you have one word right for gathering the clay mitt.
 
 >undo
 >undo
@@ -1068,7 +1068,7 @@ by a point
 A voice in your head encourages you: "Seem, or see, more!" You've got SOMETHING right, here.
 
 >think
-You must have one word right for getting something from the dam.
+You're pretty sure you have one word right for getting something from the dam.
 
 >undo
 >undo
@@ -1078,7 +1078,7 @@ You must have one word right for getting something from the dam.
 A voice in your head encourages you: "Seem, or see, more!" You've got SOMETHING right, here.
 
 >think
-You must have one word right for getting something from the dam.
+You're pretty sure you have one word right for getting something from the dam.
 
 >undo
 >undo
@@ -1097,7 +1097,7 @@ by a point
 A voice in your head encourages you: "Seem, or see, more!" You've got SOMETHING right, here.
 
 >think
-You must have one word right for getting something from the Scribe Room.
+You're pretty sure you have one word right for getting something from the Scribe Room.
 
 >undo
 >undo
@@ -1107,7 +1107,7 @@ You must have one word right for getting something from the Scribe Room.
 A voice in your head encourages you: "Seem, or see, more!" You've got SOMETHING right, here.
 
 >think
-You must have one word right for getting something from the Scribe Room.
+You're pretty sure you have one word right for getting something from the Scribe Room.
 
 >undo
 >undo
@@ -1125,7 +1125,7 @@ by a point
 A voice in your head encourages you: "Seem, or see, more!" You've got SOMETHING right, here.
 
 >think
-You must have one word right for figuring how to clear some dust a bit.
+You're pretty sure you have one word right for figuring how to clear some dust a bit.
 
 >undo
 >undo
@@ -1135,7 +1135,7 @@ You must have one word right for figuring how to clear some dust a bit.
 A voice in your head encourages you: "Seem, or see, more!" You've got SOMETHING right, here.
 
 >think
-You must have one word right for figuring how to clear some dust a bit.
+You're pretty sure you have one word right for figuring how to clear some dust a bit.
 
 >undo
 >undo
@@ -1148,7 +1148,7 @@ by a point
 A voice in your head encourages you: "Seem, or see, more!" You've got SOMETHING right, here.
 
 >think
-You must have one word right for knowing what to look for in the coal drum.
+You're pretty sure you have one word right for knowing what to look for in the coal drum.
 
 >undo
 >undo
@@ -1158,7 +1158,7 @@ You must have one word right for knowing what to look for in the coal drum.
 A voice in your head encourages you: "Seem, or see, more!" You've got SOMETHING right, here.
 
 >think
-You must have one word right for knowing what to look for in the coal drum.
+You're pretty sure you have one word right for knowing what to look for in the coal drum.
 
 >undo
 >undo
@@ -1171,7 +1171,7 @@ by a point
 A voice in your head encourages you: "Seem, or see, more!" You've got SOMETHING right, here.
 
 >think
-You must have one word right for divining what's beneath Teal Eaves.
+You're pretty sure you have one word right for divining what's beneath Teal Eaves.
 
 >undo
 >undo
@@ -1181,7 +1181,7 @@ You must have one word right for divining what's beneath Teal Eaves.
 A voice in your head encourages you: "Seem, or see, more!" You've got SOMETHING right, here.
 
 >think
-You must have one word right for divining what's beneath Teal Eaves.
+You're pretty sure you have one word right for divining what's beneath Teal Eaves.
 
 >undo
 >undo
@@ -1200,7 +1200,7 @@ by a point
 A voice in your head encourages you: "Seem, or see, more!" You've got SOMETHING right, here.
 
 >think
-You must have one word right for figuring how to "clean" the bell (trusted).
+You're pretty sure you have one word right for figuring how to "clean" the bell (trusted).
 
 >undo
 >undo
@@ -1210,7 +1210,7 @@ You must have one word right for figuring how to "clean" the bell (trusted).
 A voice in your head encourages you: "Seem, or see, more!" You've got SOMETHING right, here.
 
 >think
-You must have one word right for figuring how to "clean" the bell (trusted).
+You're pretty sure you have one word right for figuring how to "clean" the bell (trusted).
 
 >undo
 >undo
@@ -1231,7 +1231,7 @@ by a point
 A voice in your head encourages you: "Seem, or see, more!" You've got SOMETHING right, here.
 
 >think
-You must have one word right for figuring how to get back on your feet in Bowl/Ditch.
+You're pretty sure you have one word right for figuring how to get back on your feet in Bowl/Ditch.
 
 >undo
 >undo
@@ -1241,7 +1241,7 @@ You must have one word right for figuring how to get back on your feet in Bowl/D
 A voice in your head encourages you: "Seem, or see, more!" You've got SOMETHING right, here.
 
 >think
-You must have one word right for figuring how to get back on your feet in Bowl/Ditch.
+You're pretty sure you have one word right for figuring how to get back on your feet in Bowl/Ditch.
 
 >undo
 >undo
@@ -1256,7 +1256,7 @@ by a point
 A voice in your head encourages you: "Seem, or see, more!" You've got SOMETHING right, here.
 
 >think
-You must have one word right for bringing more business to Turbo Tours.
+You're pretty sure you have one word right for bringing more business to Turbo Tours.
 
 >undo
 >undo
@@ -1266,7 +1266,7 @@ You must have one word right for bringing more business to Turbo Tours.
 A voice in your head encourages you: "Seem, or see, more!" You've got SOMETHING right, here.
 
 >think
-You must have one word right for bringing more business to Turbo Tours.
+You're pretty sure you have one word right for bringing more business to Turbo Tours.
 
 >undo
 >undo
@@ -1279,7 +1279,7 @@ by a bonus point
 A voice in your head encourages you: "Seem, or see, more!" You've got SOMETHING right, here.
 
 >think
-You must have one word right for finding more appropriate transport than the star craft.
+You're pretty sure you have one word right for finding more appropriate transport than the star craft.
 
 >undo
 >undo
@@ -1289,7 +1289,7 @@ You must have one word right for finding more appropriate transport than the sta
 A voice in your head encourages you: "Seem, or see, more!" You've got SOMETHING right, here.
 
 >think
-You must have one word right for finding more appropriate transport than the star craft.
+You're pretty sure you have one word right for finding more appropriate transport than the star craft.
 
 >undo
 >undo
@@ -1304,7 +1304,7 @@ by a point
 A voice in your head encourages you: "Seem, or see, more!" You've got SOMETHING right, here.
 
 >think
-You must have one word right for seeing another place on the Farm Isles.
+You're pretty sure you have one word right for seeing another place on the Farm Isles.
 
 >undo
 >undo
@@ -1314,7 +1314,7 @@ You must have one word right for seeing another place on the Farm Isles.
 A voice in your head encourages you: "Seem, or see, more!" You've got SOMETHING right, here.
 
 >think
-You must have one word right for seeing another place on the Farm Isles.
+You're pretty sure you have one word right for seeing another place on the Farm Isles.
 
 >undo
 >undo
@@ -1327,7 +1327,7 @@ by a point
 A voice in your head encourages you: "Seem, or see, more!" You've got SOMETHING right, here.
 
 >think
-You must have one word right for getting the berries in Berries Pond.
+You're pretty sure you have one word right for getting the berries in Berries Pond.
 
 >undo
 >undo
@@ -1337,7 +1337,7 @@ You must have one word right for getting the berries in Berries Pond.
 A voice in your head encourages you: "Seem, or see, more!" You've got SOMETHING right, here.
 
 >think
-You must have one word right for getting the berries in Berries Pond.
+You're pretty sure you have one word right for getting the berries in Berries Pond.
 
 >undo
 >undo
@@ -1350,7 +1350,7 @@ by a point
 A voice in your head encourages you: "Seem, or see, more!" You've got SOMETHING right, here.
 
 >think
-You must have one word right for overcoming rejection from the bar.
+You're pretty sure you have one word right for overcoming rejection from the bar.
 
 >undo
 >undo
@@ -1360,7 +1360,7 @@ You must have one word right for overcoming rejection from the bar.
 A voice in your head encourages you: "Seem, or see, more!" You've got SOMETHING right, here.
 
 >think
-You must have one word right for overcoming rejection from the bar.
+You're pretty sure you have one word right for overcoming rejection from the bar.
 
 >undo
 >undo
@@ -1378,7 +1378,7 @@ by a point
 A voice in your head encourages you: "Seem, or see, more!" You've got SOMETHING right, here.
 
 >think
-You must have one word right for finding signs of life in Sob Acres.
+You're pretty sure you have one word right for finding signs of life in Sob Acres.
 
 >undo
 >undo
@@ -1388,7 +1388,7 @@ You must have one word right for finding signs of life in Sob Acres.
 A voice in your head encourages you: "Seem, or see, more!" You've got SOMETHING right, here.
 
 >think
-You must have one word right for finding signs of life in Sob Acres.
+You're pretty sure you have one word right for finding signs of life in Sob Acres.
 
 >undo
 >undo
@@ -1403,7 +1403,7 @@ by a point
 A voice in your head encourages you: "Seem, or see, more!" You've got SOMETHING right, here.
 
 >think
-You must have one word right for making Sob Acres less forbidding.
+You're pretty sure you have one word right for making Sob Acres less forbidding.
 
 >undo
 >undo
@@ -1413,7 +1413,7 @@ You must have one word right for making Sob Acres less forbidding.
 A voice in your head encourages you: "Seem, or see, more!" You've got SOMETHING right, here.
 
 >think
-You must have one word right for making Sob Acres less forbidding.
+You're pretty sure you have one word right for making Sob Acres less forbidding.
 
 >undo
 >undo
@@ -1430,7 +1430,7 @@ by a point
 A voice in your head encourages you: "Seem, or see, more!" You've got SOMETHING right, here.
 
 >think
-You must have one word right for finding something to trade your dough pail for.
+You're pretty sure you have one word right for finding something to trade your dough pail for.
 
 >undo
 >undo
@@ -1440,7 +1440,7 @@ You must have one word right for finding something to trade your dough pail for.
 A voice in your head encourages you: "Seem, or see, more!" You've got SOMETHING right, here.
 
 >think
-You must have one word right for finding something to trade your dough pail for.
+You're pretty sure you have one word right for finding something to trade your dough pail for.
 
 >undo
 >undo
@@ -1456,7 +1456,7 @@ by a point
 A voice in your head encourages you: "Seem, or see, more!" You've got SOMETHING right, here.
 
 >think
-You must have one word right for figuring what the Toon Eat-Too-Neat really means.
+You're pretty sure you have one word right for figuring what the Toon Eat-Too-Neat really means.
 
 >undo
 >undo
@@ -1466,7 +1466,7 @@ You must have one word right for figuring what the Toon Eat-Too-Neat really mean
 A voice in your head encourages you: "Seem, or see, more!" You've got SOMETHING right, here.
 
 >think
-You must have one word right for figuring what the Toon Eat-Too-Neat really means.
+You're pretty sure you have one word right for figuring what the Toon Eat-Too-Neat really means.
 
 >undo
 >undo
@@ -1483,7 +1483,7 @@ by a point
 A voice in your head encourages you: "Seem, or see, more!" You've got SOMETHING right, here.
 
 >think
-You must have one word right for guessing what free samples are on offer.
+You're pretty sure you have one word right for guessing what free samples are on offer.
 
 >undo
 >undo
@@ -1493,7 +1493,7 @@ You must have one word right for guessing what free samples are on offer.
 A voice in your head encourages you: "Seem, or see, more!" You've got SOMETHING right, here.
 
 >think
-You must have one word right for guessing what free samples are on offer.
+You're pretty sure you have one word right for guessing what free samples are on offer.
 
 >undo
 >undo
@@ -1508,7 +1508,7 @@ by a point
 A voice in your head encourages you: "Seem, or see, more!" You've got SOMETHING right, here.
 
 >think
-You must have one word right for finding something more useful than dense pecs.
+You're pretty sure you have one word right for finding something more useful than dense pecs.
 
 >undo
 >undo
@@ -1518,7 +1518,7 @@ You must have one word right for finding something more useful than dense pecs.
 A voice in your head encourages you: "Seem, or see, more!" You've got SOMETHING right, here.
 
 >think
-You must have one word right for finding something more useful than dense pecs.
+You're pretty sure you have one word right for finding something more useful than dense pecs.
 
 >undo
 >undo
@@ -1533,7 +1533,7 @@ by a point
 A voice in your head encourages you: "Seem, or see, more!" You've got SOMETHING right, here.
 
 >think
-You must have one word right for seeing what's behind the groan odes.
+You're pretty sure you have one word right for seeing what's behind the groan odes.
 
 >undo
 >undo
@@ -1543,7 +1543,7 @@ You must have one word right for seeing what's behind the groan odes.
 A voice in your head encourages you: "Seem, or see, more!" You've got SOMETHING right, here.
 
 >think
-You must have one word right for seeing what's behind the groan odes.
+You're pretty sure you have one word right for seeing what's behind the groan odes.
 
 >undo
 >undo
@@ -1556,7 +1556,7 @@ by a point
 A voice in your head encourages you: "Seem, or see, more!" You've got SOMETHING right, here.
 
 >think
-You must have one word right for figuring how to destroy the nodes, or the most important one.
+You're pretty sure you have one word right for figuring how to destroy the nodes, or the most important one.
 
 >undo
 >undo
@@ -1566,7 +1566,7 @@ You must have one word right for figuring how to destroy the nodes, or the most 
 A voice in your head encourages you: "Seem, or see, more!" You've got SOMETHING right, here.
 
 >think
-You must have one word right for figuring how to destroy the nodes, or the most important one.
+You're pretty sure you have one word right for figuring how to destroy the nodes, or the most important one.
 
 >undo
 >undo
@@ -1584,7 +1584,7 @@ by a point
 A voice in your head encourages you: "Seem, or see, more!" You've got SOMETHING right, here.
 
 >think
-You must have one word right for befriending the guardians in the maul tower.
+You're pretty sure you have one word right for befriending the guardians in the maul tower.
 
 >undo
 >undo
@@ -1594,7 +1594,7 @@ You must have one word right for befriending the guardians in the maul tower.
 A voice in your head encourages you: "Seem, or see, more!" You've got SOMETHING right, here.
 
 >think
-You must have one word right for befriending the guardians in the maul tower.
+You're pretty sure you have one word right for befriending the guardians in the maul tower.
 
 >undo
 >undo
@@ -1609,7 +1609,7 @@ by a point
 A voice in your head encourages you: "Seem, or see, more!" You've got SOMETHING right, here.
 
 >think
-You must have one word right for doing something worthwhile in the joy nadir.
+You're pretty sure you have one word right for doing something worthwhile in the joy nadir.
 
 >undo
 >undo
@@ -1619,7 +1619,7 @@ You must have one word right for doing something worthwhile in the joy nadir.
 A voice in your head encourages you: "Seem, or see, more!" You've got SOMETHING right, here.
 
 >think
-You must have one word right for doing something worthwhile in the joy nadir.
+You're pretty sure you have one word right for doing something worthwhile in the joy nadir.
 
 >undo
 >undo
@@ -1632,7 +1632,7 @@ by a point
 A voice in your head encourages you: "Seem, or see, more!" You've got SOMETHING right, here.
 
 >think
-You must have one word right for making the dew pit useful.
+You're pretty sure you have one word right for making the dew pit useful.
 
 >undo
 >undo
@@ -1642,7 +1642,7 @@ You must have one word right for making the dew pit useful.
 A voice in your head encourages you: "Seem, or see, more!" You've got SOMETHING right, here.
 
 >think
-You must have one word right for making the dew pit useful.
+You're pretty sure you have one word right for making the dew pit useful.
 
 >undo
 >undo
@@ -1657,7 +1657,7 @@ by a point
 A voice in your head encourages you: "Seem, or see, more!" You've got SOMETHING right, here.
 
 >think
-You must have one word right for disobeying the throne's orders.
+You're pretty sure you have one word right for disobeying the throne's orders.
 
 >undo
 >undo
@@ -1667,7 +1667,7 @@ You must have one word right for disobeying the throne's orders.
 A voice in your head encourages you: "Seem, or see, more!" You've got SOMETHING right, here.
 
 >think
-You must have one word right for disobeying the throne's orders.
+You're pretty sure you have one word right for disobeying the throne's orders.
 
 >undo
 >undo
@@ -1680,7 +1680,7 @@ by a point
 A voice in your head encourages you: "Seem, or see, more!" You've got SOMETHING right, here.
 
 >think
-You must have one word right for getting something useful from the life roots.
+You're pretty sure you have one word right for getting something useful from the life roots.
 
 >undo
 >undo
@@ -1690,7 +1690,7 @@ You must have one word right for getting something useful from the life roots.
 A voice in your head encourages you: "Seem, or see, more!" You've got SOMETHING right, here.
 
 >think
-You must have one word right for getting something useful from the life roots.
+You're pretty sure you have one word right for getting something useful from the life roots.
 
 >undo
 >undo

@@ -42,14 +42,17 @@ Next time, you'll drop it without this nag.
 >undo
 
 >x jot
-It's a note from Aunt Rickie-Anne: "The row/ledge is for practice if you want, but you don't need to change it. Items on it may help when needed. No shame using them everywhere, and I won't be offended if you find them useless or even drop them."
+It's a note from Aunt Rickie-Anne: "The items on the row/ledge may help when needed. No shame using them everywhere, and I won't be offended if you find them useless or even drop them. Or drop this, now you've read it. One less thing to worry about in your inventory.
+"You can change the row/ledge itself if you want, but you don't need to. Maybe with experience you'll have an a-ha moment, o maybe you'll have an a-ha moment."
 
 >drop jot
 You actually just crumple it up and put it in your pocket, in case you need to start a fire later to, I don't know, cook stuff. Plus, littering isn't cool!
 The Urgh-Ought-'Er Jot is out of your conscious inventory, now.
 
 >drop jot
-Nothing (significant) here like that. Note that while you may need to act on room names, X (THIS ROOM'S NAME) is often not implemented because L or LOOK takes less characters to type.
+Nothing (significant) here like that.
+!reminder
+
 >i
 !Jot
 
@@ -257,6 +260,9 @@ by a point
 
 >s
 
+>r
+That thought/action/observation/request brings up nothing. Us Too has a limited set of verbs, and the main thing is to guess a two-word phrase. To see what verbs are used, try VERBS.
+
 >too broad
 by a point
 
@@ -299,6 +305,9 @@ by a point
 >ne
 >s
 
+>r
+That thought/action/observation/request brings up nothing. Us Too has a limited set of verbs, and the main thing is to guess a two-word phrase. To see what verbs are used, try VERBS.
+
 >say jokes
 by a point
 
@@ -307,12 +316,44 @@ by a point
 
 >n
 
+>x sign
+***SHORTCUT COMMANDS***
+N2 or 2N or NN gets you all the way back north.
+"Ugh?! Lo, a Glow": S (command)
+Sage Oaks: SS (command)
+"Grasp, Ace: Grass" Space: SSS (command)
+There's also a note that R cycles/rotates between "Grasp, Ace: Grass" Space, "Ugh?! Lo, a Glow" and Sage Oaks, and RR does the reverse, with no penalty for forgetting the rotation order.
+
 >sss
+
+>r
+`"Ugh?! Lo, a Glow"
+
+>r
+`Sage Oaks
+
+>r
+`"Grasp, Ace: Grass" Space
+
+>rr
+`Sage Oaks
+
+>rr
+`"Ugh?! Lo, a Glow"
+
+>rr
+`"Grasp, Ace: Grass" Space
 
 >s
 
 >claim it
 by a point
+
+>r
+You're trying to rotate to somewhere unvisited. So you may need to go north, then rotate, then go back south. Or you may want to RR instead of R.
+
+>rr
+You're trying to rotate to somewhere unvisited. So you may need to go north, then rotate, then go back south. Or you may want to R instead of RR.
 
 >damp ink
 by a point
@@ -323,6 +364,16 @@ by a point
 
 >s
 
+>r
+You're trying to rotate to somewhere unvisited. So you may need to go north, then rotate, then go back south. Or you may want to RR instead of R.
+
+>undo
+
+>rr
+NOTE: you won't be able to RR again, since you still have one far-south room to visit.
+
+>undo
+
 >scry broom
 by a point
 
@@ -330,6 +381,24 @@ by a point
 >n
 >ss
 >s
+
+>r
+Dam, Pink
+
+>r
+Scribe Room
+
+>r
+Dust Which Does Twitch
+
+>rr
+Scribe Room
+
+>rr
+Dam, Pink
+
+>rr
+Dust Which Does Twitch
 
 >pro sweeping
 by a point

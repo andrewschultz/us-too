@@ -429,7 +429,7 @@ by a point
 
 #testcase-check-pre-dupe-it-rule-if-player-does-not-have-egg-of-a-guv
 >dupe it
-You have nothing that needs duplicating.
+You stand inside the dew pit and hold up everything in your inventory, but nothing is duplicated. Maybe you haven't found what you need, yet.
 !by a point
 
 #testcase-think-table-of-main-oronyms-pre-dupe-it-rule

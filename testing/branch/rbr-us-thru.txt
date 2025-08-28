@@ -30,12 +30,15 @@ file=reg-us-thru-lookinv.txt,abbr=li/look/inv,desc=walkthrough testing inventory
 }$EYEITMNO=The eyes show nothing. Probably don't need to change up anything with
 }$EYEITMDONE=The eyes show nothing. You've changed up everything you need with
 }$EYERMNO=The eyes show nothing. Probably don't need to do anything with the general area, though specific things may provide a clue.
-}$NOTHEREHINT=Nothing (significant) here like that. (Once-per-room reminder:) room names are not usually worth examining and are often just for silly flavor, so you can just EYE without a subject for the room, or to see what needs changing in the room.
-}$NOTHEREHINT2=Nothing (significant) here like that.\n!silly flavor
+}$NOTHEREHINT=Nothing (significant) here like that. (Once-per-room reminder:) while you may need to act on room names, X/EYE (THIS ROOM'S NAME) is often not implemented because L/EYE without a subject takes less characters to type.
+}$NOTHEREHINT2=Nothing (significant) here like that.\n!reminder
+Nothing (significant) here like that. Note that while you may need to act on room names, X (THIS ROOM'S NAME) is often not implemented because EYE without a subject for the room, or to see what needs changing in the room takes less characters to type.
 }$NOTHERE=Nothing (significant) here like that.
 }$EYESWANDER0=Nothing for the general area, and the sly size-slice eyes don't point to any individual item.
 }$EYESWANDER1=The eyes see nothing in the general area but seem to be wandering to 
 }$EYESWANDER2=Nothing for the general area, though the sly size-slice eyes seem to wander between
+}$RFAIL=You're trying to rotate to somewhere unvisited. So you may need to go north, then rotate, then go back south. Or you may want to RR instead of R.
+}$RRFAIL=You're trying to rotate to somewhere unvisited. So you may need to go north, then rotate, then go back south. Or you may want to R instead of RR.
 
 }}MAX=68
 }}CURMAX=68
@@ -80,7 +83,7 @@ The lucent row here contains, if you look at it right, something with more subje
 You could explore your mine, but you have no purpose, or errand, or ... there's another word, here.
 \\
 >u
-You don't want to go wandering outside after you just got here! You need to catch your bearings. Focus on yourself a bit. Maybe even a lot.
+You'll probably want to go outside soon enough. But the problem is ... it's still weird, being dropped in this mine, even though you knew what was going to happen. You don't want to go wandering.
 
 @verbs
 >au 0
@@ -96,11 +99,87 @@ For future reference, X will default to A'ight, Amusing Item Using in the future
 @hint
 >x row
 \\
+>loose intro
+by a bonus point
+\\
+#testcase-values-eyes-number-of-goal-edge-go-ledge-is-1
+>eye goal edge go ledge
+{$EYEITMNO} the Goal-Edge-Go Ledge.
+\\
+>undo
+>undo
+
+@hint+
 >get all
 slice eyes
 war pawn
 
 >z
+
+@rej
+#testcase-check-pre-be-chill-rule-if-player-is-not-in-beach-ill
+#testcase-reject-start-table-of-main-oronyms-pre-be-chill-rule
+>be chill
+You're not quite sure how to get started and get focused. There are almost too many possibilities. The help you see in the mine -- well, tha may be later. Perhaps examining yourself with X ME or recapping what you know with THINK would help.
+\\
+#testcase-check-pre-be-strong-rule-if-beast-wrong-is-not-in-location-of-player
+#testcase-reject-start-table-of-main-oronyms-pre-be-strong-rule
+>be strong
+You're not quite sure how to get started and get focused. There are almost too many possibilities. The help you see in the mine -- well, tha may be later. Perhaps examining yourself with X ME or recapping what you know with THINK would help.
+
+@mis
+#testcase-mistake-us-too-say-text-say
+>say text
+You don't need to prefix any important two-word command with SAY. Just say the two words.
+\\
+>say
+You don't need to prefix any important two-word command with SAY. Just say the two words.
+
+@gt
+#+testcase-goto-table-of-noways-my-new-mine-ooh
+>n
+You could explore your mine, but you have no purpose, or errand, or ... there's another word, here.
+\\
+>u
+You'll probably want to go outside soon enough. But the problem is ... it's still weird, being dropped in this mine, even though you knew what was going to happen. You don't want to go wandering.
+
+@part
+#testcase-one-right-table-of-main-oronyms-try-quest-1-try
+>try xxx
+{$ONEWORD}
+\\
+>think
+You're pretty sure you have one word right for how to get started and what to do.
+\\
+>undo
+>undo
+\\
+#testcase-one-right-table-of-main-oronyms-try-quest-2-quest
+>xxx quest
+{$ONEWORD}
+\\
+>think
+You're pretty sure you have one word right for how to get started and what to do.
+\\
+>undo
+>undo
+
+@hint
+#testcase-values-eyes-number-of-trike-west-is-35
+>eye me
+The eyes light up green and show three dots, then five dots.
+\\
+>eye trike west
+The eyes light up green and show three dots, then five dots.
+
+>try quest
+by a point
+
+@all
+#testcase-check-pre-try-quest-rule-fallthrough
+#testcase-run-post-try-quest-rule-default
+Yes, yes. That's what really matters. Your quest.
+You doze off, and when you awake, you find ... well, a beast, wrong, blocking your way.
 
 @rej
 #testcase-reject-start-table-of-main-oronyms-pre-barn-open-rule
@@ -111,16 +190,6 @@ war pawn
 #testcase-reject-start-table-of-main-oronyms-pre-base-pikes-rule
 #testcase-check-pre-base-pikes-rule-if-player-is-not-in-a-pile-up-isle
 >base pikes
-{$REJECT2}
-\\
-#testcase-check-pre-be-chill-rule-if-player-is-not-in-beach-ill
-#testcase-reject-start-table-of-main-oronyms-pre-be-chill-rule
->be chill
-{$REJECT2}
-\\
-#testcase-check-pre-be-strong-rule-if-beast-wrong-is-not-in-location-of-player
-#testcase-reject-start-table-of-main-oronyms-pre-be-strong-rule
->be strong
 {$REJECT2}
 \\
 #testcase-check-pre-bear-respond-rule-if-player-is-not-in-berries-pond
@@ -422,67 +491,13 @@ You don't need to prefix any important two-word command with SAY. Just say the t
 >wheat rye
 {$REJECT2}
 
-@mis
-#testcase-mistake-us-too-say-text-say
->say text
-You don't need to prefix any important two-word command with SAY. Just say the two words.
-\\
->say
-You don't need to prefix any important two-word command with SAY. Just say the two words.
-
-@gt
-#+testcase-goto-table-of-noways-my-new-mine-ooh
->n
-You could explore your mine, but you have no purpose, or errand, or ... there's another word, here.
-\\
->u
-You don't want to go wandering outside after you just got here! You need to catch your bearings. Focus on yourself a bit. Maybe even a lot.
-
-@part
-#testcase-one-right-table-of-main-oronyms-try-quest-1-try
->try xxx
-{$ONEWORD}
-\\
->think
-You must have one word right for how to get started and what to do.
-\\
->undo
->undo
-\\
-#testcase-one-right-table-of-main-oronyms-try-quest-2-quest
->xxx quest
-{$ONEWORD}
-\\
->think
-You must have one word right for how to get started and what to do.
-\\
->undo
->undo
-
-@hint
-#testcase-values-eyes-number-of-trike-west-is-35
->eye me
-The eyes light up green and show three dots, then five dots.
-\\
->eye trike west
-The eyes light up green and show three dots, then five dots.
-
->try quest
-by a point
-
-@all
-#testcase-check-pre-try-quest-rule-fallthrough
-#testcase-run-post-try-quest-rule-default
-Yes, yes. That's what really matters. Your quest.
-You doze off, and when you awake, you find ... well, a beast, wrong, blocking your way.
-
 @part
 #testcase-one-right-table-of-main-oronyms-a-stew-1-a
 >a xxx
 Not much happens, but you feel like that might help, at least halfway, some time later. Much later, or just a little, you can't tell.
 \\
 >think
-You must have one word right for achieving the game's objective.
+You're pretty sure you have one word right for achieving the game's objective.
 \\
 >undo
 >undo
@@ -492,7 +507,7 @@ You must have one word right for achieving the game's objective.
 Not much happens, but you feel like that might help, at least halfway, some time later. Much later, or just a little, you can't tell.
 \\
 >think
-You must have one word right for achieving the game's objective.
+You're pretty sure you have one word right for achieving the game's objective.
 \\
 >undo
 >undo
@@ -513,7 +528,7 @@ You already have an idea of your quest!
 You could explore your mine, but you really should get rid of that beast.
 \\
 >u
-The beast (wrong) blocks your way. How wrong of it! You try physically shifting around, but it's unmoved. Maybe adjusting your mental attitude will do the trick.
+The beast (wrong) blocks your way. How wrong of it! You try shifting around, but it's unmoved. It seems to have a physical edge.
 
 @rej
 #testcase-check-pre-a-stew-rule-if-aight-is-unexamined
@@ -527,7 +542,7 @@ You think far ahead to what you might need. You'd need to read an ingredient lis
 {$ONEWORD}
 \\
 >think
-You must have one word right for getting rid of the beast.
+You're pretty sure you have one word right for getting rid of the beast.
 \\
 >undo
 >undo
@@ -537,7 +552,7 @@ You must have one word right for getting rid of the beast.
 {$ONEWORD}
 \\
 >think
-You must have one word right for getting rid of the beast.
+You're pretty sure you have one word right for getting rid of the beast.
 \\
 >undo
 >undo
@@ -558,7 +573,7 @@ You manage to stand up to the beast a bit. It could beat you, sure, but you're n
 @hint
 #+testcase-values-eyes-number-of-beast-wrong-is-26
 >eye beast wrong
-Nothing (significant) here like that. Note that room names are not usually worth examining and are often just for silly flavor, so you can just EYE without a subject for the room, or to see what needs changing in the room.
+Nothing (significant) here like that. Note that while you may need to act on room names, X/EYE (THIS ROOM'S NAME) is often not implemented because L/EYE without a subject takes less characters to type.
 
 @gt
 #+testcase-goto-table-of-noways-my-new-mine-ooh
@@ -566,7 +581,8 @@ Nothing (significant) here like that. Note that room names are not usually worth
 You could explore your mine, but you sense the real adventure lies back above in the outdoors.
 \\
 >u
-You're eager to rush out there, but perhaps you should peruse the ... documentation you were given, first. You haven't really looked at A'ight, Amusing Item Using from your inventory, yet. Sure, you could go out there and find stuff scattershot, but why not have some direction?
+You're eager to rush out there, but perhaps you should peruse the ... documentation you were given, first. You haven't really looked at A'ight, Amusing Item Using from your inventory, yet.
+And sure, you could go out there and find stuff scattershot, but why not have some direction?
 
 >x
 
@@ -607,7 +623,7 @@ The eyes glow dimly green and show four dots, then two dots.
 @hint+
 #testcase-values-eyes-number-of-sly-size-slice-eyes-is-1
 >eye eyes
-The eyes will light up two sets of dots if there is something you still need to do in the area. (1/6)
+The eyes will light up two sets of dots if there is something you still need to do in the area. (1/6, EYE EYES again (or G repeats a command) to see more)
 \\
 >eye eyes
 The numbers of dots correspond to the number of letters in the first and second words to type, respectively. (2/6)
@@ -684,7 +700,7 @@ The eyes light up yellow and show four dots, then three dots.
 {$ONEWORD}
 \\
 >think
-You must have one word right for finding something hidden in the lucent row.
+You're pretty sure you have one word right for finding something hidden in the lucent row.
 \\
 >undo
 >undo
@@ -694,7 +710,7 @@ You must have one word right for finding something hidden in the lucent row.
 {$ONEWORD}
 \\
 >think
-You must have one word right for finding something hidden in the lucent row.
+You're pretty sure you have one word right for finding something hidden in the lucent row.
 \\
 >undo
 >undo
@@ -748,14 +764,16 @@ Next time, you'll drop it without this nag.
 >undo
 \\
 >x jot
-It's a note from Aunt Rickie-Anne: "The row/ledge is for practice if you want, but you don't need to change it. Items on it may help when needed. No shame using them everywhere, and I won't be offended if you find them useless or even drop them."
+It's a note from Aunt Rickie-Anne: "The items on the row/ledge may help when needed. No shame using them everywhere, and I won't be offended if you find them useless or even drop them. Or drop this, now you've read it. One less thing to worry about in your inventory.
+"You can change the row/ledge itself if you want, but you don't need to. Maybe with experience you'll have an a-ha moment, o maybe you'll have an a-ha moment."
 \\
 >drop jot
 You actually just crumple it up and put it in your pocket, in case you need to start a fire later to, I don't know, cook stuff. Plus, littering isn't cool!
 The Urgh-Ought-'Er Jot is out of your conscious inventory, now.
 \\
 >drop jot
-Nothing (significant) here like that. Note that while you may need to act on room names, X (THIS ROOM'S NAME) is often not implemented because L or LOOK takes less characters to type.
+{$NOTHEREHINT2}
+\\
 >i
 !Jot
 
@@ -763,10 +781,6 @@ Nothing (significant) here like that. Note that while you may need to act on roo
 #testcase-values-eyes-number-of-loose-intro-is--1
 >eye loose intro
 {$EYEITMDONE} the loose intro.
-\\
-#testcase-values-eyes-number-of-goal-edge-go-ledge-is-1
->eye goal edge go ledge
-{$EYEITMNO} the Goal-Edge-Go Ledge.
 
 @part
 ##balance undos
@@ -775,7 +789,7 @@ Nothing (significant) here like that. Note that while you may need to act on roo
 {$ONEWORD}
 \\
 >think
-You must have one word right for figuring what some munchies are.
+You're pretty sure you have one word right for figuring what some munchies are.
 \\
 >undo
 >undo
@@ -785,7 +799,7 @@ You must have one word right for figuring what some munchies are.
 {$ONEWORD}
 \\
 >think
-You must have one word right for figuring what some munchies are.
+You're pretty sure you have one word right for figuring what some munchies are.
 \\
 >undo
 >undo
@@ -937,7 +951,7 @@ You need to be back in your mine for this.
 {$ONEWORD}
 \\
 >think
-You must have one word right for finding the first place to visit from the Ur-Branch.
+You're pretty sure you have one word right for finding the first place to visit from the Ur-Branch.
 \\
 >undo
 >undo
@@ -947,7 +961,7 @@ You must have one word right for finding the first place to visit from the Ur-Br
 {$ONEWORD}
 \\
 >think
-You must have one word right for finding the first place to visit from the Ur-Branch.
+You're pretty sure you have one word right for finding the first place to visit from the Ur-Branch.
 \\
 >undo
 >undo
@@ -996,7 +1010,7 @@ You already found the herb ranch! One free sample should be enough.
 {$ONEWORD}
 \\
 >think
-You must have one word right for letting the herb reveal a new location.
+You're pretty sure you have one word right for letting the herb reveal a new location.
 \\
 >undo
 >undo
@@ -1006,7 +1020,7 @@ You must have one word right for letting the herb reveal a new location.
 {$ONEWORD}
 \\
 >think
-You must have one word right for letting the herb reveal a new location.
+You're pretty sure you have one word right for letting the herb reveal a new location.
 \\
 >undo
 >undo
@@ -1075,7 +1089,7 @@ The eyes light up green and show two dots, then five dots.
 {$ONEWORD}
 \\
 >think
-You must have one word right for dealing with the beach, ill.
+You're pretty sure you have one word right for dealing with the beach, ill.
 \\
 >undo
 >undo
@@ -1085,7 +1099,7 @@ You must have one word right for dealing with the beach, ill.
 {$ONEWORD}
 \\
 >think
-You must have one word right for dealing with the beach, ill.
+You're pretty sure you have one word right for dealing with the beach, ill.
 \\
 >undo
 >undo
@@ -1115,7 +1129,7 @@ The beach is already chill enough!
 {$ONEWORD}
 \\
 >think
-You must have one word right for making the swarm less aggressive.
+You're pretty sure you have one word right for making the swarm less aggressive.
 \\
 >undo
 >undo
@@ -1125,7 +1139,7 @@ You must have one word right for making the swarm less aggressive.
 {$ONEWORD}
 \\
 >think
-You must have one word right for making the swarm less aggressive.
+You're pretty sure you have one word right for making the swarm less aggressive.
 \\
 >undo
 >undo
@@ -1160,7 +1174,7 @@ Behind the nigh swarm is a pro ball.
 {$ONEWORD}
 \\
 >think
-You must have one word right for finding a purpose for the pro ball.
+You're pretty sure you have one word right for finding a purpose for the pro ball.
 \\
 >undo
 >undo
@@ -1170,7 +1184,7 @@ You must have one word right for finding a purpose for the pro ball.
 {$ONEWORD}
 \\
 >think
-You must have one word right for finding a purpose for the pro ball.
+You're pretty sure you have one word right for finding a purpose for the pro ball.
 \\
 >undo
 >undo
@@ -1194,11 +1208,11 @@ It also reveals something near here. You notice some sort of ship. You wave, and
 @rej
 #testcase-check-pre-punt-weaker-rule-if-sir-freddie-is-not-in-beach-ill-and-sir-freddie-is-not-moot
 >punt weaker
-The pun tweaker says "You want transport, eh? Any sort of transport? But what can you do for me?"
+The pun tweaker says "You want transport, eh? Any sort of transport? Well, I need to repair my ship, here. Maybe if you could help, it'd be a deal."
 \\
 #testcase-check-pre-probe-all-rule-if-sco-probe-all-is-true
 >probe all
-You already probed the pro ball enough to get a feel for hidden exits in your surroundings! More will appear as you need them.
+You already probed the pro ball enough to get a feel for hidden exits in your surroundings! More will appear as you need them, and later, you'll be able to use it to navigate slightly trickier area maps.
 
 @hint
 #+testcase-values-eyes-number-of-pro-ball-is-53
@@ -1228,7 +1242,7 @@ You can get a PUNT WEAKER once you are able to please the pun tweaker.
 {$ONEWORD}
 \\
 >think
-You must have one word right for making the meh spot into something more useful.
+You're pretty sure you have one word right for making the meh spot into something more useful.
 \\
 >undo
 >undo
@@ -1238,7 +1252,7 @@ You must have one word right for making the meh spot into something more useful.
 {$ONEWORD}
 \\
 >think
-You must have one word right for making the meh spot into something more useful.
+You're pretty sure you have one word right for making the meh spot into something more useful.
 \\
 >undo
 >undo
@@ -1273,7 +1287,7 @@ Ah. There it is. You, in fact, find a whole mess kit.
 {$ONEWORD}
 \\
 >think
-You must have one word right for having harmless, useless fun with the mess kit.
+You're pretty sure you have one word right for having harmless, useless fun with the mess kit.
 \\
 >undo
 >undo
@@ -1283,7 +1297,7 @@ You must have one word right for having harmless, useless fun with the mess kit.
 {$ONEWORD}
 \\
 >think
-You must have one word right for having harmless, useless fun with the mess kit.
+You're pretty sure you have one word right for having harmless, useless fun with the mess kit.
 \\
 >undo
 >undo
@@ -1331,7 +1345,7 @@ You can only go southwest or, maybe, east once you figure a way.
 {$ONEWORD}
 \\
 >think
-You must have one word right for finding something in the Bore Dread.
+You're pretty sure you have one word right for finding something in the Bore Dread.
 \\
 >undo
 >undo
@@ -1341,7 +1355,7 @@ You must have one word right for finding something in the Bore Dread.
 {$ONEWORD}
 \\
 >think
-You must have one word right for finding something in the Bore Dread.
+You're pretty sure you have one word right for finding something in the Bore Dread.
 \\
 >undo
 >undo
@@ -1432,7 +1446,7 @@ The eyes light up green and show four dots, then five dots.
 {$ONEWORD}
 \\
 >think
-You must have one word right for avoiding the black ops.
+You're pretty sure you have one word right for avoiding the black ops.
 \\
 >undo
 >undo
@@ -1442,7 +1456,7 @@ You must have one word right for avoiding the black ops.
 {$ONEWORD}
 \\
 >think
-You must have one word right for avoiding the black ops.
+You're pretty sure you have one word right for avoiding the black ops.
 \\
 >undo
 >undo
@@ -1486,7 +1500,7 @@ You can only leave the copse to the south.
 {$ONEWORD}
 \\
 >think
-You must have one word right for repelling the Forest Team for Esteem.
+You're pretty sure you have one word right for repelling the Forest Team for Esteem.
 \\
 >undo
 >undo
@@ -1496,7 +1510,7 @@ You must have one word right for repelling the Forest Team for Esteem.
 {$ONEWORD}
 \\
 >think
-You must have one word right for repelling the Forest Team for Esteem.
+You're pretty sure you have one word right for repelling the Forest Team for Esteem.
 \\
 >undo
 >undo
@@ -1527,7 +1541,7 @@ You hear the Forest Team for Esteem's taunts ring in your ears, and you brush th
 {$ONEWORD}
 \\
 >think
-You must have one word right for giving Sir Freddie a new direction.
+You're pretty sure you have one word right for giving Sir Freddie a new direction.
 \\
 >undo
 >undo
@@ -1537,7 +1551,7 @@ You must have one word right for giving Sir Freddie a new direction.
 {$ONEWORD}
 \\
 >think
-You must have one word right for giving Sir Freddie a new direction.
+You're pretty sure you have one word right for giving Sir Freddie a new direction.
 \\
 >undo
 >undo
@@ -1572,7 +1586,7 @@ Sir Freddie agrees with you, but he doesn't know how to get started. You have ju
 {$ONEWORD}
 \\
 >think
-You must have one word right for figuring what Sir Freddie was scared of.
+You're pretty sure you have one word right for figuring what Sir Freddie was scared of.
 \\
 >undo
 >undo
@@ -1582,7 +1596,7 @@ You must have one word right for figuring what Sir Freddie was scared of.
 {$ONEWORD}
 \\
 >think
-You must have one word right for figuring what Sir Freddie was scared of.
+You're pretty sure you have one word right for figuring what Sir Freddie was scared of.
 \\
 >undo
 >undo
@@ -1620,7 +1634,7 @@ Why, you bet you could make that from the blah string, but you see nothing blast
 \\
 #testcase-think-table-of-main-oronyms-pre-blast-ring-rule
 >think
-You can BLAST RING once you have found something to blast.
+You can transform the blah string to a BLAST RING once you have found something to blast.
 
 >n
 @all
@@ -1656,7 +1670,7 @@ You probably don't need flayers as allies, and you really don't need them as ene
 {$ONEWORD}
 \\
 >think
-You must have one word right for activating the morph lairs.
+You're pretty sure you have one word right for activating the morph lairs.
 \\
 >undo
 >undo
@@ -1666,7 +1680,7 @@ You must have one word right for activating the morph lairs.
 {$ONEWORD}
 \\
 >think
-You must have one word right for activating the morph lairs.
+You're pretty sure you have one word right for activating the morph lairs.
 \\
 >undo
 >undo
@@ -1738,7 +1752,7 @@ The eyes light up yellow and show four dots, then six dots.
 {$ONEWORD}
 \\
 >think
-You must have one word right for discovering what the row (plaider) holds.
+You're pretty sure you have one word right for discovering what the row (plaider) holds.
 \\
 >undo
 >undo
@@ -1748,7 +1762,7 @@ You must have one word right for discovering what the row (plaider) holds.
 {$ONEWORD}
 \\
 >think
-You must have one word right for discovering what the row (plaider) holds.
+You're pretty sure you have one word right for discovering what the row (plaider) holds.
 \\
 >undo
 >undo
@@ -1785,7 +1799,7 @@ Your eyes finally adjust to all the egregious plaid, and you discover a plain bu
 {$ONEWORD}
 \\
 >think
-You must have one word right for finding a way past the garden tree.
+You're pretty sure you have one word right for finding a way past the garden tree.
 \\
 >undo
 >undo
@@ -1795,7 +1809,7 @@ You must have one word right for finding a way past the garden tree.
 {$ONEWORD}
 \\
 >think
-You must have one word right for finding a way past the garden tree.
+You're pretty sure you have one word right for finding a way past the garden tree.
 \\
 >undo
 >undo
@@ -1844,7 +1858,7 @@ The eyes light up green and show five dots, then five dots.
 {$ONEWORD}
 \\
 >think
-You must have one word right for finding something incorporeal within the Pea Stalks.
+You're pretty sure you have one word right for finding something incorporeal within the Pea Stalks.
 \\
 >undo
 >undo
@@ -1854,7 +1868,7 @@ You must have one word right for finding something incorporeal within the Pea St
 {$ONEWORD}
 \\
 >think
-You must have one word right for finding something incorporeal within the Pea Stalks.
+You're pretty sure you have one word right for finding something incorporeal within the Pea Stalks.
 \\
 >undo
 >undo
@@ -1910,7 +1924,7 @@ You already fathomed peace talks!
 {$ONEWORD}
 \\
 >think
-You must have one word right for finding something unusual within the Pea Stalks.
+You're pretty sure you have one word right for finding something unusual within the Pea Stalks.
 \\
 >undo
 >undo
@@ -1920,7 +1934,7 @@ You must have one word right for finding something unusual within the Pea Stalks
 {$ONEWORD}
 \\
 >think
-You must have one word right for finding something unusual within the Pea Stalks.
+You're pretty sure you have one word right for finding something unusual within the Pea Stalks.
 \\
 >undo
 >undo
@@ -1981,7 +1995,7 @@ The eyes light up green and show three dots, then four dots.
 {$ONEWORD}
 \\
 >think
-You must have one word right for dispelling the Can't-Ache.
+You're pretty sure you have one word right for dispelling the Can't-Ache.
 \\
 >undo
 >undo
@@ -1991,7 +2005,7 @@ You must have one word right for dispelling the Can't-Ache.
 {$ONEWORD}
 \\
 >think
-You must have one word right for dispelling the Can't-Ache.
+You're pretty sure you have one word right for dispelling the Can't-Ache.
 \\
 >undo
 >undo
@@ -2038,7 +2052,7 @@ The eyes light up green and show five dots, then six dots.
 {$ONEWORD}
 \\
 >think
-You must have one word right for discover what the Great Inn holds.
+You're pretty sure you have one word right for discover what the Great Inn holds.
 \\
 >undo
 >undo
@@ -2048,7 +2062,7 @@ You must have one word right for discover what the Great Inn holds.
 {$ONEWORD}
 \\
 >think
-You must have one word right for discover what the Great Inn holds.
+You're pretty sure you have one word right for discover what the Great Inn holds.
 \\
 >undo
 >undo
@@ -2094,7 +2108,7 @@ You already got a gray tin from the Great Inn!
 {$ONEWORD}
 \\
 >think
-You must have one word right for doing something positive in Dome, Aching.
+You're pretty sure you have one word right for doing something positive in Dome, Aching.
 \\
 >undo
 >undo
@@ -2104,7 +2118,7 @@ You must have one word right for doing something positive in Dome, Aching.
 {$ONEWORD}
 \\
 >think
-You must have one word right for doing something positive in Dome, Aching.
+You're pretty sure you have one word right for doing something positive in Dome, Aching.
 \\
 >undo
 >undo
@@ -2142,7 +2156,7 @@ You can trade for some DOPE ALE once you've found find willing traders with a bi
 {$ONEWORD}
 \\
 >think
-You must have one word right for figure how to visit the inner nest.
+You're pretty sure you have one word right for figure how to visit the inner nest.
 \\
 >undo
 >undo
@@ -2152,7 +2166,7 @@ You must have one word right for figure how to visit the inner nest.
 {$ONEWORD}
 \\
 >think
-You must have one word right for figure how to visit the inner nest.
+You're pretty sure you have one word right for figure how to visit the inner nest.
 \\
 >undo
 >undo
@@ -2208,7 +2222,7 @@ No secret passages here. You just need to go back out.
 {$ONEWORD}
 \\
 >think
-You must have one word right for figuring how to take the prime oar.
+You're pretty sure you have one word right for figuring how to take the prime oar.
 \\
 >undo
 >undo
@@ -2218,7 +2232,7 @@ You must have one word right for figuring how to take the prime oar.
 {$ONEWORD}
 \\
 >think
-You must have one word right for figuring how to take the prime oar.
+You're pretty sure you have one word right for figuring how to take the prime oar.
 \\
 >undo
 >undo
@@ -2258,7 +2272,7 @@ You already pried and got the prime oar!
 {$ONEWORD}
 \\
 >think
-You must have one word right for trading with the pun tweaker.
+You're pretty sure you have one word right for trading with the pun tweaker.
 \\
 >undo
 >undo
@@ -2268,7 +2282,7 @@ You must have one word right for trading with the pun tweaker.
 {$ONEWORD}
 \\
 >think
-You must have one word right for trading with the pun tweaker.
+You're pretty sure you have one word right for trading with the pun tweaker.
 \\
 >undo
 >undo
@@ -2333,7 +2347,7 @@ You can't see land anywhere except back to the west.
 {$ONEWORD}
 \\
 >think
-You must have one word right for figuring a way through the bay spikes.
+You're pretty sure you have one word right for figuring a way through the bay spikes.
 \\
 >undo
 >undo
@@ -2343,7 +2357,7 @@ You must have one word right for figuring a way through the bay spikes.
 {$ONEWORD}
 \\
 >think
-You must have one word right for figuring a way through the bay spikes.
+You're pretty sure you have one word right for figuring a way through the bay spikes.
 \\
 >undo
 >undo
@@ -2383,7 +2397,7 @@ You already cleared a path through the bay spikes!
 {$ONEWORD}
 \\
 >think
-You must have one word right for finding what's under the pike rust.
+You're pretty sure you have one word right for finding what's under the pike rust.
 \\
 >undo
 >undo
@@ -2393,7 +2407,7 @@ You must have one word right for finding what's under the pike rust.
 {$ONEWORD}
 \\
 >think
-You must have one word right for finding what's under the pike rust.
+You're pretty sure you have one word right for finding what's under the pike rust.
 \\
 >undo
 >undo
@@ -2432,7 +2446,7 @@ Yup! Pie crust! It fits in your tin nicely.
 {$ONEWORD}
 \\
 >think
-You must have one word right for reaching the high cup.
+You're pretty sure you have one word right for reaching the high cup.
 \\
 >undo
 >undo
@@ -2442,7 +2456,7 @@ You must have one word right for reaching the high cup.
 {$ONEWORD}
 \\
 >think
-You must have one word right for reaching the high cup.
+You're pretty sure you have one word right for reaching the high cup.
 \\
 >undo
 >undo
@@ -2511,7 +2525,7 @@ The only exit from this cavern is southeast.
 {$ONEWORD}
 \\
 >think
-You must have one word right for finding something in the Sore Dark.
+You're pretty sure you have one word right for finding something in the Sore Dark.
 \\
 >undo
 >undo
@@ -2521,7 +2535,7 @@ You must have one word right for finding something in the Sore Dark.
 {$ONEWORD}
 \\
 >think
-You must have one word right for finding something in the Sore Dark.
+You're pretty sure you have one word right for finding something in the Sore Dark.
 \\
 >undo
 >undo
@@ -2555,7 +2569,7 @@ It takes a while of stumbling around, but you have confidence the sword ark is t
 {$ONEWORD}
 \\
 >think
-You must have one word right for finding the blah string's true purpose.
+You're pretty sure you have one word right for finding the blah string's true purpose.
 \\
 >undo
 >undo
@@ -2565,7 +2579,7 @@ You must have one word right for finding the blah string's true purpose.
 {$ONEWORD}
 \\
 >think
-You must have one word right for finding the blah string's true purpose.
+You're pretty sure you have one word right for finding the blah string's true purpose.
 \\
 >undo
 >undo
@@ -2592,7 +2606,7 @@ You can become the owner of a TERRIBLE AID once you can bring it down from the a
 \\
 #+testcase-think-table-of-main-oronyms-pre-blast-ring-rule
 >think
-You can BLAST RING now you have found something to blast.
+You can transform the blah string to a BLAST RING now you have found something to blast.
 
 >blast ring
 by a point
@@ -2614,7 +2628,7 @@ You aim the blah string at the sword ark. You feel a pull--yes, this must be whe
 {$ONEWORD}
 \\
 >think
-You must have one word right for becoming worthy of the Terra Blade.
+You're pretty sure you have one word right for becoming worthy of the Terra Blade.
 \\
 >undo
 >undo
@@ -2624,7 +2638,7 @@ You must have one word right for becoming worthy of the Terra Blade.
 {$ONEWORD}
 \\
 >think
-You must have one word right for becoming worthy of the Terra Blade.
+You're pretty sure you have one word right for becoming worthy of the Terra Blade.
 \\
 >undo
 >undo
@@ -2684,7 +2698,7 @@ You can leave the fort to the northeast.
 {$ONEWORD}
 \\
 >think
-You must have one word right for operating the oak lever.
+You're pretty sure you have one word right for operating the oak lever.
 \\
 >undo
 >undo
@@ -2694,7 +2708,7 @@ You must have one word right for operating the oak lever.
 {$ONEWORD}
 \\
 >think
-You must have one word right for operating the oak lever.
+You're pretty sure you have one word right for operating the oak lever.
 \\
 >undo
 >undo
@@ -2739,6 +2753,10 @@ You already pulled the oak lever and made it disappear! You just need to do some
 #testcase-room-names-tube-rod
 `Tube/Rod
 
+@verbs
+>r
+{$REJECT2}
+
 @gt
 #testcase-goto-table-of-noways-tube-rod
 >s
@@ -2760,7 +2778,7 @@ The eyes light up green and show three dots, then five dots.
 {$ONEWORD}
 \\
 >think
-You must have one word right for how to fracture the tube/rod.
+You're pretty sure you have one word right for how to fracture the tube/rod.
 \\
 >undo
 >undo
@@ -2770,7 +2788,7 @@ You must have one word right for how to fracture the tube/rod.
 {$ONEWORD}
 \\
 >think
-You must have one word right for how to fracture the tube/rod.
+You're pretty sure you have one word right for how to fracture the tube/rod.
 \\
 >undo
 >undo
@@ -2840,7 +2858,7 @@ The eyes light up green and show two dots, then seven dots.
 {$ONEWORD}
 \\
 >think
-You must have one word right for dealing with the paralyzing whole anger.
+You're pretty sure you have one word right for dealing with the paralyzing whole anger.
 \\
 >undo
 >undo
@@ -2850,7 +2868,7 @@ You must have one word right for dealing with the paralyzing whole anger.
 {$ONEWORD}
 \\
 >think
-You must have one word right for dealing with the paralyzing whole anger.
+You're pretty sure you have one word right for dealing with the paralyzing whole anger.
 \\
 >undo
 >undo
@@ -2886,7 +2904,7 @@ You already dealt with your anger! If you want more anger to have to deal with, 
 \\
 #testcase-check-pre-scry-broom-rule-if-sco-damp-ink-is-false
 >scry broom
-The scribes won't trade a broom for NOTHING...
+The scribes notice you looking at the broom. "Want it? Well, we won't trade it for NOTHING..." Now what could scribes use?
 \\
 #testcase-think-table-of-main-oronyms-pre-scry-broom-rule
 >think
@@ -2905,7 +2923,7 @@ You can SCRY BROOM and get it once you have something the scribes want.
 {$ONEWORD}
 \\
 >think
-You must have one word right for revealing what's behind the felt wrap.
+You're pretty sure you have one word right for revealing what's behind the felt wrap.
 \\
 >undo
 >undo
@@ -2915,7 +2933,7 @@ You must have one word right for revealing what's behind the felt wrap.
 {$ONEWORD}
 \\
 >think
-You must have one word right for revealing what's behind the felt wrap.
+You're pretty sure you have one word right for revealing what's behind the felt wrap.
 \\
 >undo
 >undo
@@ -2966,7 +2984,7 @@ The eyes light up green and show six dots, then three dots.
 {$ONEWORD}
 \\
 >think
-You must have one word right for escaping the Cell, Urban.
+You're pretty sure you have one word right for escaping the Cell, Urban.
 \\
 >undo
 >undo
@@ -2976,7 +2994,7 @@ You must have one word right for escaping the Cell, Urban.
 {$ONEWORD}
 \\
 >think
-You must have one word right for escaping the Cell, Urban.
+You're pretty sure you have one word right for escaping the Cell, Urban.
 \\
 >undo
 >undo
@@ -3037,6 +3055,10 @@ You can just X TRAP to return.
 #testcase-room-names-sage-oaks
 `Sage Oaks
 
+@verbs
+>r
+{$REJECT2}
+
 @rej
 #+testcase-check-pre-gas-pouch-rule-if-player-is-not-in-sage-oaks-or-sco-say-jokes-is-false-and-player-does-not-have-gas-pouch
 >gas pouch
@@ -3063,7 +3085,7 @@ The eyes light up green and show three dots, then five dots.
 {$ONEWORD}
 \\
 >think
-You must have one word right for get by the Sage Oaks.
+You're pretty sure you have one word right for get by the Sage Oaks.
 \\
 >undo
 >undo
@@ -3073,7 +3095,7 @@ You must have one word right for get by the Sage Oaks.
 {$ONEWORD}
 \\
 >think
-You must have one word right for get by the Sage Oaks.
+You're pretty sure you have one word right for get by the Sage Oaks.
 \\
 >undo
 >undo
@@ -3114,7 +3136,7 @@ Don't push it. The sage oaks might find such foolish risks stupid and change the
 {$ONEWORD}
 \\
 >think
-You must have one word right for see how to stop gasping OUCH.
+You're pretty sure you have one word right for see how to stop gasping OUCH.
 \\
 >undo
 >undo
@@ -3124,7 +3146,7 @@ You must have one word right for see how to stop gasping OUCH.
 {$ONEWORD}
 \\
 >think
-You must have one word right for see how to stop gasping OUCH.
+You're pretty sure you have one word right for see how to stop gasping OUCH.
 \\
 >undo
 >undo
@@ -3175,7 +3197,35 @@ You can get PRO SWEEPING once you have something to sweep with.
 >eye sign
 {$EYEITMNO} the Sign Ought-Sigh-Not.
 
+@verbs
+>x sign
+***SHORTCUT COMMANDS***
+N2 or 2N or NN gets you all the way back north.
+"Ugh?! Lo, a Glow": S (command)
+Sage Oaks: SS (command)
+"Grasp, Ace: Grass" Space: SSS (command)
+There's also a note that R cycles/rotates between "Grasp, Ace: Grass" Space, "Ugh?! Lo, a Glow" and Sage Oaks, and RR does the reverse, with no penalty for forgetting the rotation order.
+
 >sss
+
+@verbs
+>r
+`"Ugh?! Lo, a Glow"
+\\
+>r
+`Sage Oaks
+\\
+>r
+`"Grasp, Ace: Grass" Space
+\\
+>rr
+`Sage Oaks
+\\
+>rr
+`"Ugh?! Lo, a Glow"
+\\
+>rr
+`"Grasp, Ace: Grass" Space
 
 @gt
 #+testcase-goto-table-of-noways-tube-rod
@@ -3200,7 +3250,7 @@ You can't see any way but back north.
 {$ONEWORD}
 \\
 >think
-You must have one word right for gathering the clay mitt.
+You're pretty sure you have one word right for gathering the clay mitt.
 \\
 >undo
 >undo
@@ -3210,7 +3260,7 @@ You must have one word right for gathering the clay mitt.
 {$ONEWORD}
 \\
 >think
-You must have one word right for gathering the clay mitt.
+You're pretty sure you have one word right for gathering the clay mitt.
 \\
 >undo
 >undo
@@ -3231,6 +3281,13 @@ The eyes light up green and show five dots, then two dots.
 >claim it
 by a point
 
+@verbs
+>r
+{$RFAIL}
+\\
+>rr
+{$RRFAIL}
+
 @all
 #testcase-check-pre-claim-it-rule-fallthrough
 #testcase-run-post-claim-it-rule-default
@@ -3248,7 +3305,7 @@ You wonder if you should reclaim the mitt, but then, you think it might start to
 {$ONEWORD}
 \\
 >think
-You must have one word right for getting something from the dam.
+You're pretty sure you have one word right for getting something from the dam.
 \\
 >undo
 >undo
@@ -3258,7 +3315,7 @@ You must have one word right for getting something from the dam.
 {$ONEWORD}
 \\
 >think
-You must have one word right for getting something from the dam.
+You're pretty sure you have one word right for getting something from the dam.
 \\
 >undo
 >undo
@@ -3300,6 +3357,17 @@ You can only see passage north or south.
 #testcase-room-names-scribe-room
 `Scribe Room
 
+@verbs
+>r
+{$RFAIL}
+\\
+>undo
+\\
+>rr
+NOTE: you won't be able to RR again, since you still have one far-south room to visit.
+\\
+>undo
+
 @gt
 #testcase-goto-table-of-noways-scribe-room
 >w
@@ -3312,7 +3380,7 @@ You can't see any way but back north.
 {$ONEWORD}
 \\
 >think
-You must have one word right for getting something from the Scribe Room.
+You're pretty sure you have one word right for getting something from the Scribe Room.
 \\
 >undo
 >undo
@@ -3322,7 +3390,7 @@ You must have one word right for getting something from the Scribe Room.
 {$ONEWORD}
 \\
 >think
-You must have one word right for getting something from the Scribe Room.
+You're pretty sure you have one word right for getting something from the Scribe Room.
 \\
 >undo
 >undo
@@ -3395,7 +3463,7 @@ You can't see any way but back north.
 {$ONEWORD}
 \\
 >think
-You must have one word right for figuring how to clear some dust a bit.
+You're pretty sure you have one word right for figuring how to clear some dust a bit.
 \\
 >undo
 >undo
@@ -3405,7 +3473,7 @@ You must have one word right for figuring how to clear some dust a bit.
 {$ONEWORD}
 \\
 >think
-You must have one word right for figuring how to clear some dust a bit.
+You're pretty sure you have one word right for figuring how to clear some dust a bit.
 \\
 >undo
 >undo
@@ -3419,6 +3487,25 @@ The eyes light up green and show three dots, then eight dots.
 #+testcase-think-table-of-main-oronyms-pre-pro-sweeping-rule
 >think
 You can get PRO SWEEPING now you have something to sweep with.
+
+@verbs
+>r
+Dam, Pink
+\\
+>r
+Scribe Room
+\\
+>r
+Dust Which Does Twitch
+\\
+>rr
+Scribe Room
+\\
+>rr
+Dam, Pink
+\\
+>rr
+Dust Which Does Twitch
 
 >pro sweeping
 by a point
@@ -3448,7 +3535,7 @@ The eyes light up green and show three dots, then six dots.
 {$ONEWORD}
 \\
 >think
-You must have one word right for knowing what to look for in the coal drum.
+You're pretty sure you have one word right for knowing what to look for in the coal drum.
 \\
 >undo
 >undo
@@ -3458,7 +3545,7 @@ You must have one word right for knowing what to look for in the coal drum.
 {$ONEWORD}
 \\
 >think
-You must have one word right for knowing what to look for in the coal drum.
+You're pretty sure you have one word right for knowing what to look for in the coal drum.
 \\
 >undo
 >undo
@@ -3497,7 +3584,7 @@ The eyes show nothing. You've changed up everything you need with the coal drum.
 {$ONEWORD}
 \\
 >think
-You must have one word right for divining what's beneath Teal Eaves.
+You're pretty sure you have one word right for divining what's beneath Teal Eaves.
 \\
 >undo
 >undo
@@ -3507,7 +3594,7 @@ You must have one word right for divining what's beneath Teal Eaves.
 {$ONEWORD}
 \\
 >think
-You must have one word right for divining what's beneath Teal Eaves.
+You're pretty sure you have one word right for divining what's beneath Teal Eaves.
 \\
 >undo
 >undo
@@ -3552,7 +3639,7 @@ The cold rum isn't quite enough. A rumbling from the maul tower suggests they wa
 {$ONEWORD}
 \\
 >think
-You must have one word right for figuring how to "clean" the bell (trusted).
+You're pretty sure you have one word right for figuring how to "clean" the bell (trusted).
 \\
 >undo
 >undo
@@ -3562,7 +3649,7 @@ You must have one word right for figuring how to "clean" the bell (trusted).
 {$ONEWORD}
 \\
 >think
-You must have one word right for figuring how to "clean" the bell (trusted).
+You're pretty sure you have one word right for figuring how to "clean" the bell (trusted).
 \\
 >undo
 >undo
@@ -3617,7 +3704,7 @@ You can only go back east.
 {$ONEWORD}
 \\
 >think
-You must have one word right for figuring how to get back on your feet in Bowl/Ditch.
+You're pretty sure you have one word right for figuring how to get back on your feet in Bowl/Ditch.
 \\
 >undo
 >undo
@@ -3627,7 +3714,7 @@ You must have one word right for figuring how to get back on your feet in Bowl/D
 {$ONEWORD}
 \\
 >think
-You must have one word right for figuring how to get back on your feet in Bowl/Ditch.
+You're pretty sure you have one word right for figuring how to get back on your feet in Bowl/Ditch.
 \\
 >undo
 >undo
@@ -3677,7 +3764,7 @@ You can only go back east to the Bowl/Ditch.
 {$ONEWORD}
 \\
 >think
-You must have one word right for bringing more business to Turbo Tours.
+You're pretty sure you have one word right for bringing more business to Turbo Tours.
 \\
 >undo
 >undo
@@ -3687,7 +3774,7 @@ You must have one word right for bringing more business to Turbo Tours.
 {$ONEWORD}
 \\
 >think
-You must have one word right for bringing more business to Turbo Tours.
+You're pretty sure you have one word right for bringing more business to Turbo Tours.
 \\
 >undo
 >undo
@@ -3724,7 +3811,7 @@ You already brought in additional business to Turbo Tours!
 {$ONEWORD}
 \\
 >think
-You must have one word right for finding more appropriate transport than the star craft.
+You're pretty sure you have one word right for finding more appropriate transport than the star craft.
 \\
 >undo
 >undo
@@ -3734,7 +3821,7 @@ You must have one word right for finding more appropriate transport than the sta
 {$ONEWORD}
 \\
 >think
-You must have one word right for finding more appropriate transport than the star craft.
+You're pretty sure you have one word right for finding more appropriate transport than the star craft.
 \\
 >undo
 >undo
@@ -3782,16 +3869,16 @@ You can only go back north to Turbo Tours.
 @rej
 #testcase-check-pre-barn-open-rule-if-sco-bear-respond-is-false
 >barn open
-Of course it makes sense there'd be a barn on farm isles. You find a barn, open, hidden behind the bar. There are some truly glorious eggs in there, but you have nothing to trade for them yet.
+Of course it makes sense there'd be a barn on farm isles. You find a barn, open, hidden behind the bar. There are some truly glorious eggs in there, but you have nothing to barter for them yet. "Food for food," you're told. "But only what you have extra of."
 \\
 #+testcase-check-pre-barn-open-rule-if-sco-bear-respond-is-false
 >barn open
 !Of course it makes sense there'd be a barn on farm isles.
-You find a barn, open, hidden behind the bar. There are some truly glorious eggs in there, but you have nothing to trade for them yet.
+You revisit the barn, open, hidden behind the bar. There are some truly glorious eggs in there, but you have nothing to barter for them yet. "Food for food," you're told. "But only what you have extra of."
 \\
 #testcase-think-table-of-main-oronyms-pre-barn-open-rule
 >think
-You can transact with the BARN OPEN once you have something of value to trade.
+You can transact with the BARN OPEN once you have food to barter.
 
 @part
 ##balance undos
@@ -3800,7 +3887,7 @@ You can transact with the BARN OPEN once you have something of value to trade.
 {$ONEWORD}
 \\
 >think
-You must have one word right for seeing another place on the Farm Isles.
+You're pretty sure you have one word right for seeing another place on the Farm Isles.
 \\
 >undo
 >undo
@@ -3810,7 +3897,7 @@ You must have one word right for seeing another place on the Farm Isles.
 {$ONEWORD}
 \\
 >think
-You must have one word right for seeing another place on the Farm Isles.
+You're pretty sure you have one word right for seeing another place on the Farm Isles.
 \\
 >undo
 >undo
@@ -3855,7 +3942,7 @@ You can only go back north to Turbo Tours or south.
 {$ONEWORD}
 \\
 >think
-You must have one word right for getting the berries in Berries Pond.
+You're pretty sure you have one word right for getting the berries in Berries Pond.
 \\
 >undo
 >undo
@@ -3865,7 +3952,7 @@ You must have one word right for getting the berries in Berries Pond.
 {$ONEWORD}
 \\
 >think
-You must have one word right for getting the berries in Berries Pond.
+You're pretty sure you have one word right for getting the berries in Berries Pond.
 \\
 >undo
 >undo
@@ -3924,7 +4011,7 @@ You already found them! You don't need to go back.
 {$ONEWORD}
 \\
 >think
-You must have one word right for overcoming rejection from the bar.
+You're pretty sure you have one word right for overcoming rejection from the bar.
 \\
 >undo
 >undo
@@ -3934,7 +4021,7 @@ You must have one word right for overcoming rejection from the bar.
 {$ONEWORD}
 \\
 >think
-You must have one word right for overcoming rejection from the bar.
+You're pretty sure you have one word right for overcoming rejection from the bar.
 \\
 >undo
 >undo
@@ -3947,7 +4034,7 @@ The eyes light up green and show four dots, then four dots.
 @rej
 #+testcase-think-table-of-main-oronyms-pre-barn-open-rule
 >think
-You can transact with the BARN OPEN now you have something of value to trade.
+You can transact with the BARN OPEN now you have food to barter.
 
 >barn open
 by a point
@@ -3993,7 +4080,7 @@ While it's pretty open here, you only see safe passage to the south, for now.
 {$ONEWORD}
 \\
 >think
-You must have one word right for finding signs of life in Sob Acres.
+You're pretty sure you have one word right for finding signs of life in Sob Acres.
 \\
 >undo
 >undo
@@ -4003,7 +4090,7 @@ You must have one word right for finding signs of life in Sob Acres.
 {$ONEWORD}
 \\
 >think
-You must have one word right for finding signs of life in Sob Acres.
+You're pretty sure you have one word right for finding signs of life in Sob Acres.
 \\
 >undo
 >undo
@@ -4079,7 +4166,7 @@ Perhaps you need to change things around the fey loners/fail-owners, though.
 {$ONEWORD}
 \\
 >think
-You must have one word right for making Sob Acres less forbidding.
+You're pretty sure you have one word right for making Sob Acres less forbidding.
 \\
 >undo
 >undo
@@ -4089,7 +4176,7 @@ You must have one word right for making Sob Acres less forbidding.
 {$ONEWORD}
 \\
 >think
-You must have one word right for making Sob Acres less forbidding.
+You're pretty sure you have one word right for making Sob Acres less forbidding.
 \\
 >undo
 >undo
@@ -4148,7 +4235,7 @@ Perhaps you need to change more things around the fey loners/fail-owners, though
 {$ONEWORD}
 \\
 >think
-You must have one word right for finding something to trade your dough pail for.
+You're pretty sure you have one word right for finding something to trade your dough pail for.
 \\
 >undo
 >undo
@@ -4158,7 +4245,7 @@ You must have one word right for finding something to trade your dough pail for.
 {$ONEWORD}
 \\
 >think
-You must have one word right for finding something to trade your dough pail for.
+You're pretty sure you have one word right for finding something to trade your dough pail for.
 \\
 >undo
 >undo
@@ -4209,7 +4296,7 @@ You make the trade: dough pail for dope ale! The fey loners/fail-owners note the
 {$ONEWORD}
 \\
 >think
-You must have one word right for figuring what the Toon Eat-Too-Neat really means.
+You're pretty sure you have one word right for figuring what the Toon Eat-Too-Neat really means.
 \\
 >undo
 >undo
@@ -4219,7 +4306,7 @@ You must have one word right for figuring what the Toon Eat-Too-Neat really mean
 {$ONEWORD}
 \\
 >think
-You must have one word right for figuring what the Toon Eat-Too-Neat really means.
+You're pretty sure you have one word right for figuring what the Toon Eat-Too-Neat really means.
 \\
 >undo
 >undo
@@ -4259,7 +4346,7 @@ You already decoded the Toon Eat-Too-Neat and made a good swap for the beef!
 {$ONEWORD}
 \\
 >think
-You must have one word right for guessing what free samples are on offer.
+You're pretty sure you have one word right for guessing what free samples are on offer.
 \\
 >undo
 >undo
@@ -4269,7 +4356,7 @@ You must have one word right for guessing what free samples are on offer.
 {$ONEWORD}
 \\
 >think
-You must have one word right for guessing what free samples are on offer.
+You're pretty sure you have one word right for guessing what free samples are on offer.
 \\
 >undo
 >undo
@@ -4319,7 +4406,7 @@ You already got enough free bread!
 {$ONEWORD}
 \\
 >think
-You must have one word right for finding something more useful than dense pecs.
+You're pretty sure you have one word right for finding something more useful than dense pecs.
 \\
 >undo
 >undo
@@ -4329,7 +4416,7 @@ You must have one word right for finding something more useful than dense pecs.
 {$ONEWORD}
 \\
 >think
-You must have one word right for finding something more useful than dense pecs.
+You're pretty sure you have one word right for finding something more useful than dense pecs.
 \\
 >undo
 >undo
@@ -4394,7 +4481,7 @@ The eyes light up green and show four dots, then five dots.
 {$ONEWORD}
 \\
 >think
-You must have one word right for seeing what's behind the groan odes.
+You're pretty sure you have one word right for seeing what's behind the groan odes.
 \\
 >undo
 >undo
@@ -4404,7 +4491,7 @@ You must have one word right for seeing what's behind the groan odes.
 {$ONEWORD}
 \\
 >think
-You must have one word right for seeing what's behind the groan odes.
+You're pretty sure you have one word right for seeing what's behind the groan odes.
 \\
 >undo
 >undo
@@ -4423,7 +4510,7 @@ The groan odes retract, as nodes grow out, creating a more menacing noise. Ah, s
 @hint
 #+testcase-values-eyes-number-of-groan-odes-is-45
 >eye
-{$EYESWANDER1} the numbered nodes.
+{$EYESWANDER1} the numb bursting number string/numbered nodes.
 
 @rej
 #testcase-check-pre-grow-nodes-rule-if-sco-grow-nodes-is-true
@@ -4437,7 +4524,7 @@ The nodes have already grown and been revealed. How to destroy them?!
 {$ONEWORD}
 \\
 >think
-You must have one word right for figuring how to destroy the nodes, or the most important one.
+You're pretty sure you have one word right for figuring how to destroy the nodes, or the most important one.
 \\
 >undo
 >undo
@@ -4447,7 +4534,7 @@ You must have one word right for figuring how to destroy the nodes, or the most 
 {$ONEWORD}
 \\
 >think
-You must have one word right for figuring how to destroy the nodes, or the most important one.
+You're pretty sure you have one word right for figuring how to destroy the nodes, or the most important one.
 \\
 >undo
 >undo
@@ -4513,7 +4600,7 @@ You can USE IT once you have an item of power to use.
 {$ONEWORD}
 \\
 >think
-You must have one word right for befriending the guardians in the maul tower.
+You're pretty sure you have one word right for befriending the guardians in the maul tower.
 \\
 >undo
 >undo
@@ -4523,7 +4610,7 @@ You must have one word right for befriending the guardians in the maul tower.
 {$ONEWORD}
 \\
 >think
-You must have one word right for befriending the guardians in the maul tower.
+You're pretty sure you have one word right for befriending the guardians in the maul tower.
 \\
 >undo
 >undo
@@ -4570,7 +4657,7 @@ The only way out is back west.
 {$ONEWORD}
 \\
 >think
-You must have one word right for doing something worthwhile in the joy nadir.
+You're pretty sure you have one word right for doing something worthwhile in the joy nadir.
 \\
 >undo
 >undo
@@ -4580,7 +4667,7 @@ You must have one word right for doing something worthwhile in the joy nadir.
 {$ONEWORD}
 \\
 >think
-You must have one word right for doing something worthwhile in the joy nadir.
+You're pretty sure you have one word right for doing something worthwhile in the joy nadir.
 \\
 >undo
 >undo
@@ -4593,7 +4680,7 @@ The eyes light up green and show four dots, then five dots.
 @rej
 #testcase-check-pre-join-aider-rule-if-player-does-not-have-belt-rusted
 >join aider
-The pro ball crackles, but nothing else happens.
+The pro ball jumps an inch out of your hand and briefly crackles, but nothing else happens. You'll need to find what to join it to.
 \\
 #testcase-think-table-of-main-oronyms-pre-join-aider-rule
 >think
@@ -4656,7 +4743,7 @@ The eyes light up green and show four dots, then two dots.
 {$ONEWORD}
 \\
 >think
-You must have one word right for making the dew pit useful.
+You're pretty sure you have one word right for making the dew pit useful.
 \\
 >undo
 >undo
@@ -4666,7 +4753,7 @@ You must have one word right for making the dew pit useful.
 {$ONEWORD}
 \\
 >think
-You must have one word right for making the dew pit useful.
+You're pretty sure you have one word right for making the dew pit useful.
 \\
 >undo
 >undo
@@ -4739,7 +4826,7 @@ The eyes light up green and show three dots, then two dots.
 {$ONEWORD}
 \\
 >think
-You must have one word right for disobeying the throne's orders.
+You're pretty sure you have one word right for disobeying the throne's orders.
 \\
 >undo
 >undo
@@ -4749,7 +4836,7 @@ You must have one word right for disobeying the throne's orders.
 {$ONEWORD}
 \\
 >think
-You must have one word right for disobeying the throne's orders.
+You're pretty sure you have one word right for disobeying the throne's orders.
 \\
 >undo
 >undo
@@ -4784,7 +4871,7 @@ The orb and/or band crumbled away when you used it.
 {$ONEWORD}
 \\
 >think
-You must have one word right for getting something useful from the life roots.
+You're pretty sure you have one word right for getting something useful from the life roots.
 \\
 >undo
 >undo
@@ -4794,7 +4881,7 @@ You must have one word right for getting something useful from the life roots.
 {$ONEWORD}
 \\
 >think
-You must have one word right for getting something useful from the life roots.
+You're pretty sure you have one word right for getting something useful from the life roots.
 \\
 >undo
 >undo
