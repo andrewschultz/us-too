@@ -494,10 +494,13 @@ You don't need to prefix any important two-word command with SAY. Just say the t
 @part
 #testcase-one-right-table-of-main-oronyms-a-stew-1-a
 >a xxx
-Not much happens, but you feel like that might help, at least halfway, some time later. Much later, or just a little, you can't tell.
+Not much happens. Unfortunately, I got flummoxed a bit with this one: "a" is part of a puzzle solution, but on the other hand, the generic response for one word right wreaks havoc with cluing other puzzles. TLDR: one puzzle down the road includes the word "a."
+\\
+>a xxx
+(DEBUG: pre-a-stew rule tripped) Not much happens. That thing with the word "a," again.
 \\
 >think
-You're pretty sure you have one word right for achieving the game's objective.
+You're pretty sure you have one word right for something down the road with the word A.
 \\
 >undo
 >undo
@@ -507,7 +510,7 @@ You're pretty sure you have one word right for achieving the game's objective.
 Not much happens, but you feel like that might help, at least halfway, some time later. Much later, or just a little, you can't tell.
 \\
 >think
-You're pretty sure you have one word right for achieving the game's objective.
+You feel you've got the words right on separate occasions for something down the road with the word A.
 \\
 >undo
 >undo
@@ -635,7 +638,7 @@ The dots also have two different types of appearances that clue you to the puzzl
 Green dots mean the suggested action can score a point right now. (4/6)
 \\
 >eye eyes
-Yellow dots mean you have something to guess, but you won't get a point, as you haven't found the right items or assistance from other puzzles to make things work. It will be kept in THINK. (5/6)
+Yellow dots mean you have something to guess, but you won't get a point, as you haven't found the right items or assistance from other puzzles to make things work. A successful guess will be kept in THINK. (5/6)
 \\
 >eye eyes
 Finally, a dimly glowing reading indicates something you can change for a bonus point. It's not critical to complete Us Too. (End of hints. Next EYE EYES starts the hint cycle again) (6/6)
@@ -653,7 +656,7 @@ The dots also have two different types of appearances that clue you to the puzzl
 Green dots mean the suggested action can score a point right now. (4/6)
 \\
 >eye eyes
-Yellow dots mean you have something to guess, but you won't get a point, as you haven't found the right items or assistance from other puzzles to make things work. It will be kept in THINK. (5/6)
+Yellow dots mean you have something to guess, but you won't get a point, as you haven't found the right items or assistance from other puzzles to make things work. A successful guess will be kept in THINK. (5/6)
 \\
 >eye eyes
 Finally, a dimly glowing reading indicates something you can change for a bonus point. It's not critical to complete Us Too. (6/6)
@@ -765,7 +768,8 @@ Next time, you'll drop it without this nag.
 \\
 >x jot
 It's a note from Aunt Rickie-Anne: "The items on the row/ledge may help when needed. No shame using them everywhere, and I won't be offended if you find them useless or even drop them. Or drop this, now you've read it. One less thing to worry about in your inventory.
-"You can change the row/ledge itself if you want, but you don't need to. Maybe with experience you'll have an a-ha moment, o maybe you'll have an a-ha moment."
+"You can change the row/ledge itself if you want, but you don't need to. Some subjective information about your surroudings. Maybe with experience you'll have an a-ha moment, and you'll see this whole area in a new light.
+"You could say it's a welcome of sorts."
 \\
 >drop jot
 You actually just crumple it up and put it in your pocket, in case you need to start a fire later to, I don't know, cook stuff. Plus, littering isn't cool!
@@ -819,7 +823,7 @@ Okay, there will be no nag next time you try to drop the loose intro.
 
 @all,verbs
 >x intro
-It's an introduction to your world, not from Aunt Rickie-Anne, but from one Hugh Morris AKA Mick Stupp. At the top is a note that while no puzzles are spoiled or hinted, the author does discuss his views on how Us Too compares to Why Pout (length, plot, etc.) and also mentions how two or three puzzles break the mold a bit.
+It's an introduction to your world, not from Aunt Rickie-Anne, but from one Hugh Morris AKA Mick Stupp. Before reading the intro proper, you note a small warning that while no puzzles are spoiled or hinted, the author does discuss his views on how Us Too compares to Why Pout (length, plot, etc.) and also mentions how two or three puzzles break the mold a bit.
 \\
 #testcase-x-intro-table-of-intro-jabber-1
 >x intro
@@ -1156,7 +1160,7 @@ by a point
 #testcase-check-pre-nice-warm-rule-fallthrough
 #testcase-run-post-nice-warm-rule-default
 The nigh swarm grows less volatile and, yes, more nice, warm. It rises in the air, then buzzes off to somewhere to maybe be nice, cool, too. Perhaps there is a nigh school!
-Behind the nigh swarm is a pro ball.
+Behind where the swarm was, a pro ball has rolled into view. You're not sure what sport it could be for, but it's marked PRO.
 
 @hint
 #+testcase-values-eyes-number-of-nigh-swarm-is-44
@@ -1200,10 +1204,10 @@ by a point
 @all
 #testcase-check-pre-probe-all-rule-fallthrough
 #testcase-run-post-probe-all-rule-default
-You reach out to the pro ball. It seems to sense what you want it for. You take it, then look at it from many different angles. Reflected in it, you see ... well, a meh spot in My New Mine, Ooh! that could use sprucing up. But how?
-Yet much of the pro ball remains cloudy. Perhaps it will reveal what you need, as you need it.
-It also reveals something near here. You notice some sort of ship. You wave, and its captain, so to speak, waves back. They introduce themselves as the Pun Tweaker. Their ship is the Gauche/Hip GO-Ship. They immediately start in with some crunching puns.
-[NOTE: you don't need to examine the pro ball from here on out for it to open new passages.]
+You reach out to the pro ball. The PRO painted on it slowly dissolves. You take it, then look at it from many different angles. It's still very cloudy, but you start to see a map of where you are and where you've been. Reflected in one shiny corner, corresponding to in My New Mine, Ooh!, you see ... well, a meh spot that could use sprucing up. But how?
+That seems useful, though. Perhaps it will become less cloudy as you need it.
+As you stare a bit more, you think you see an isle to the east of here, too. You spend time wondering how to get there, and when you look up, you notice some sort of ship. You wave, and someone on it waves back. They introduce themselves as the Pun Tweaker. Their ship is the Gauche/Hip GO-Ship. They explain it needs repairs and then immediately start in with some crunching puns involving "ship-shape" and other phrases that I won't repeat, because man, they are distressing. Unfortunately, given some of the stuff you had to envision to get here, and what you expect you'll need to do, you can't really retaliate, but nothing's TOO terrible.
+[NOTE: the pro ball will open passages of its own accord for a while. You'll never need to examine it explicitly to open new ones, but it will help you with a complex map near the end.]
 
 @rej
 #testcase-check-pre-punt-weaker-rule-if-sir-freddie-is-not-in-beach-ill-and-sir-freddie-is-not-moot
@@ -1273,7 +1277,8 @@ You already found the mess pot/kit!
 @all
 #testcase-check-pre-mess-pot-rule-fallthrough
 #testcase-run-post-mess-pot-rule-default
-Ah. There it is. You, in fact, find a whole mess kit.
+Consulting with the pro ball, you eventually learn to understand how it displays things and, yes, you find that mess pot! And not just a mess pot, but a whole mess kit!
+But it's not just about finding a mess kit. It's about the process! You feel like you could use it better now aboveground.
 
 @hint
 #+testcase-values-eyes-number-of-meh-spot-is-43
@@ -1778,7 +1783,7 @@ by a point
 @all
 #testcase-check-pre-rope-ladder-rule-fallthrough
 #testcase-run-post-rope-ladder-rule-default
-Your eyes finally adjust to all the egregious plaid, and you discover a plain but sturdy rope ladder. You wonder if there is anything else to do here, but shortly you hear an electronic "HOW?! SCAM!!!!!!" You look up and see a house cam! You run, just in case there's more security ... surely you must be done here, though ...
+Your eyes finally adjust to all the egregious plaid, and you discover a plain but sturdy rope ladder. You wonder if there is anything else to do here, but shortly you hear an electronic "HOW?! SCAM!!!!!!" You look up and see a house cam! You run, just in case there's more security. Surely you must be done to the north, you think, once you make it back to ...
 
 @hint
 #+testcase-values-eyes-number-of-row-plaider-is-46
@@ -2307,8 +2312,9 @@ by a point
 @all+
 #testcase-check-pre-punt-weaker-rule-fallthrough
 #testcase-run-post-punt-weaker-rule-default
-"Ah, yes, that's it. A small gift for a small favor." The pun tweaker goes to the back of the Gauche/Hip GO-Ship, and you hear a splash. The pun tweaker reappears, clothes wet, pushing a pretty scrawny punt. "It won't get very far, but there's something to the east. Oh, and I hope you have a way to steer it, too. Anyway, here you go. My repairs are complete, without the distraction!"
+"Ah, yes, that's it. It's the least I can do as thanks. Not the very least, heh heh." The pun tweaker goes to the back of the Gauche/Hip GO-Ship, and you hear a splash. The pun tweaker reappears, clothes wet, pushing a pretty scrawny punt. "It won't get very far, but there's something to the east. Oh, and I hope you have a way to steer it, too."
 You hook the prime oar up to the punt.
+
 @rej
 #testcase-check-pre-punt-weaker-rule-if-sco-punt-weaker-is-true
 >punt weaker
@@ -2799,7 +2805,7 @@ by a point
 @all
 #testcase-check-pre-too-broad-rule-fallthrough
 #testcase-run-post-too-broad-rule-default
-The tube/rod slowly cracks, then bursts. A passage now leads south. You pause a bit and hope it's not a tube leading to bleeding...
+The tube/rod slowly cracks, then bursts. You pause a bit and hope it's not a tube leading to bleeding... but in fact the area just behind is nice and green and nature-like and expansive. So expansive, you lose track of where the tube/rod was.
 
 @rej
 #testcase-check-pre-too-broad-rule-if-sco-too-broad-is-true
@@ -3106,8 +3112,8 @@ by a point
 @all
 #testcase-check-pre-say-jokes-rule-fallthrough
 #testcase-run-post-say-jokes-rule-default
-"Eh, jokes age oaks," they mutter at first. But they get into it more. They warn you of the trouble you'll get in if you keep telling corny jokes. It doesn't show you're smart. But then you explain you carefully crafted said jokes to peeve them. You've had experience all game with wordplay, too.
-They're pretty impressed with your presentation. Their branches and leaves blow in the wind, beckoning you south. You start, then gasp "ouch." What the heck?! They were fibbing.
+"Eh, jokes age oaks," they mutter at first. But they get into it more. They warn you of the trouble you'll get in if you keep telling corny jokes. It doesn't show you're smart. But then you explain you carefully crafted said jokes to peeve them so they give up and let you by because dealing with you isn't worth it. You've had experience all game with wordplay, too. You mention you've just chatted with the pun tweaker.
+That does it. They realize you are not to be trifled with, and some of your puns were actually pretty good. Their branches and leaves blow in the wind, beckoning you south. You start, then gasp "ouch." What the heck?! They were fibbing.
 The sage oaks laugh a bit. "Just a bit of revenge for those painful jokes," they say, "nothing permanent. We never said we'd give painless passage south. It will be for your own good in the long term. Just a bit of hazing."
 
 @gt
@@ -3182,7 +3188,7 @@ You don't need two gas pouches.
 \\
 #testcase-check-pre-pro-sweeping-rule-if-sco-scry-broom-is-false
 >pro sweeping
-You have nothing that could sweep!
+A very good idea, but you have nothing that could sweep at the moment!
 \\
 >think
 \\
@@ -3415,7 +3421,8 @@ by a point
 @all
 #testcase-check-pre-scry-broom-rule-fallthrough
 #testcase-run-post-scry-broom-rule-default
-You realize a broom must be here. You trade the damp ink in the gas pouch for it. The scribes are impressed with the ink ... so much, they show you an artifact few get to see. "It is our BELL, TRUSTED. Yet it has some hidden purpose we could not find. Perhaps it will help you. And -- oh, yes -- that broom? Do return it when you're done."
+You realize a broom must be here. You trade the damp ink in the gas pouch for it. The scribes are impressed with the ink ... so much, they tell you they have something special to show you ... if you return the broom once you're done.
+Boy! All this carrying and dropping items and using your oar to get through the water has been good for your physical conditioning. You've grown some dense pecs.
 
 @rej
 #testcase-check-pre-scry-broom-rule-if-sco-scry-broom-is-true
@@ -3730,7 +3737,7 @@ by a point
 @all
 #testcase-check-pre-bold-itch-rule-fallthrough
 #testcase-run-post-bold-itch-rule-default
-You have a think. It's not terrible. You've gotten here. You can get back. You really did trample through whatever was to the east. You walk off the ankle sprain you get from falling down. As you do, you notice passages west and north -- a bit hidden, but actually a bit more obvious than the way back east. You're glad you were able to take a deep breath and get some perspective.
+You have a think. It's not terrible. You've gotten here. You can get back. You really did trample through whatever was to the east. You walk off the ankle sprain you get from falling down. As you do, you notice passages west and north -- a bit hidden, but actually a bit more obvious than the way back east. Wow! The things you notice once you take a deep breath and try to gain perspective!
 
 @rej
 #testcase-check-pre-bold-itch-rule-if-sco-bold-itch-is-true
@@ -4373,7 +4380,8 @@ by a point
 #testcase-check-pre-wheat-rye-rule-fallthrough
 #testcase-run-post-wheat-rye-rule-default
 #APOSTROPHE-OK
-The fey loners/fail-owners applaud you. "Yes ... that's just the thing ..." they chop up the wheat and rye with the erstwhile Terra Blade. They give you a good chunk.
+The fey loners/fail-owners applaud you. "Yes! That's just the thing!"
+They chop up the wheat and rye with the erstwhile Terra Blade. They give you a good chunk. Of the bread, not the blade.
 
 @hint
 #+testcase-values-eyes-number-of-whee-try-is-53
@@ -4502,7 +4510,8 @@ by a point
 @all
 #testcase-check-pre-grow-nodes-rule-fallthrough
 #testcase-run-post-grow-nodes-rule-default
-The groan odes retract, as nodes grow out, creating a more menacing noise. Ah, so that's what you're up against!
+The groan odes retract, as nodes grow out, creating a more menacing noise. The nodes are numbered, too, from one on quite a while. There are a lot to poke at!
+So, yeah, there's something to LISTEN to and a bunch of numbered nodes. One must be a weak link.
 \\
 #+testcase-room-names-groan-odes
 `Numb Bursting Number String
@@ -4551,7 +4560,7 @@ by a point
 #testcase-check-pre-no-date-rule-fallthrough
 #testcase-run-post-no-date-rule-default
 You realize which node to hack up. You realise what to say. The "Mope, Liars, Mo'" Pliers do their work on node eight. "Imminent destruction?" you scoff. "NO DATE!"
-You hear a FIZZ, then a BOOM ... the explosion knocks you back. Boy! It's a good thing you were still wearing those den specs! Thr pliers fly from your hand and into the specs, which they twist and shatter and blow off your face into a corner. A corner which disappears as the roof starts to collapse. You figure it's a good time to go back to the dell.
+You hear a FIZZ, then a BOOM ... the explosion knocks you back. Boy! It's a good thing you were still wearing those den specs! The pliers fly from your hand and into the specs, which they twist and shatter and blow off your face into a corner. A corner which disappears as the roof starts to collapse. You figure it's a good time to go back to the dell.
 There, people start streaming towards you. They lift you up in the air, which is fun for the first fifteen seconds, but you know they mean well. They prove they mean well by handing you a valuable item.
 "THE HELP-IN-HELL PIN," one of them booms. You note you haven't come across anything close to hell, so maybe ... well ...
 You are cut off again. It will help you in anywhere unusually uncomfortable. Well, it sure can't hurt.
@@ -5183,7 +5192,7 @@ by a point
 Place-to-Play Stew
 You look at A'ight, Amusing Item Using. You have everything you need, but you don't have, well, a cohesive dish. You remember the lawyers needling you with "us too." Yes, that's what it has to be. You call them and your friends. They're prepared -- the mine is only an hour's drive from the city.
 So you make the stew to pass the time until then. You try to avoid thinking of it as my stew, because eww, that'd be a me-ill meal. Our stew might be, too.
-You're no natural cook, but you do your best. (You make other random seeming stews over there years, and people always seem to appreciate them, but none quite has the flavor of this one.) After the meal, the announcement -- the mine is yours, and you can sell it now. You wonder if there's anything else, but you don't want to be greedy.
+You're no natural cook, but you do your best. (You make other random seeming stews over the years, and people always seem to appreciate them, but none quite has the flavor of this one.) After the meal, the announcement -- the mine is yours, and you can sell it now. You wonder if there's anything else, but you don't want to be greedy.
 Everyone winds down by playing poker. The lawyers are, unsurprisingly, all quite good at it. Well, you're not playing with real money, so you don't mind losing. You got enough today, right? Someone asks you offhand what you call the stew. Aunt Rickie-Anne surprisingly didn't specify it. You give your answer, and you wonder if maybe there is one more subtle odd test. The lawyers seem to have an inside joke going as they finish the remains of your...
 by a point
 

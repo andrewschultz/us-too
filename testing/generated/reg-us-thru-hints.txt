@@ -81,7 +81,7 @@ The dots also have two different types of appearances that clue you to the puzzl
 Green dots mean the suggested action can score a point right now. (4/6)
 
 >eye eyes
-Yellow dots mean you have something to guess, but you won't get a point, as you haven't found the right items or assistance from other puzzles to make things work. It will be kept in THINK. (5/6)
+Yellow dots mean you have something to guess, but you won't get a point, as you haven't found the right items or assistance from other puzzles to make things work. A successful guess will be kept in THINK. (5/6)
 
 >eye eyes
 Finally, a dimly glowing reading indicates something you can change for a bonus point. It's not critical to complete Us Too. (End of hints. Next EYE EYES starts the hint cycle again) (6/6)
@@ -99,7 +99,7 @@ The dots also have two different types of appearances that clue you to the puzzl
 Green dots mean the suggested action can score a point right now. (4/6)
 
 >eye eyes
-Yellow dots mean you have something to guess, but you won't get a point, as you haven't found the right items or assistance from other puzzles to make things work. It will be kept in THINK. (5/6)
+Yellow dots mean you have something to guess, but you won't get a point, as you haven't found the right items or assistance from other puzzles to make things work. A successful guess will be kept in THINK. (5/6)
 
 >eye eyes
 Finally, a dimly glowing reading indicates something you can change for a bonus point. It's not critical to complete Us Too. (6/6)

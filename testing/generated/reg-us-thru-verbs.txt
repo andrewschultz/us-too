@@ -43,7 +43,8 @@ Next time, you'll drop it without this nag.
 
 >x jot
 It's a note from Aunt Rickie-Anne: "The items on the row/ledge may help when needed. No shame using them everywhere, and I won't be offended if you find them useless or even drop them. Or drop this, now you've read it. One less thing to worry about in your inventory.
-"You can change the row/ledge itself if you want, but you don't need to. Maybe with experience you'll have an a-ha moment, o maybe you'll have an a-ha moment."
+"You can change the row/ledge itself if you want, but you don't need to. Some subjective information about your surroudings. Maybe with experience you'll have an a-ha moment, and you'll see this whole area in a new light.
+"You could say it's a welcome of sorts."
 
 >drop jot
 You actually just crumple it up and put it in your pocket, in case you need to start a fire later to, I don't know, cook stuff. Plus, littering isn't cool!
@@ -64,7 +65,7 @@ Okay, there will be no nag next time you try to drop the loose intro.
 >undo
 
 >x intro
-It's an introduction to your world, not from Aunt Rickie-Anne, but from one Hugh Morris AKA Mick Stupp. At the top is a note that while no puzzles are spoiled or hinted, the author does discuss his views on how Us Too compares to Why Pout (length, plot, etc.) and also mentions how two or three puzzles break the mold a bit.
+It's an introduction to your world, not from Aunt Rickie-Anne, but from one Hugh Morris AKA Mick Stupp. Before reading the intro proper, you note a small warning that while no puzzles are spoiled or hinted, the author does discuss his views on how Us Too compares to Why Pout (length, plot, etc.) and also mentions how two or three puzzles break the mold a bit.
 
 #testcase-x-intro-table-of-intro-jabber-1
 >x intro

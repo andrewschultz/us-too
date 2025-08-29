@@ -41,10 +41,13 @@ by a point
 
 #testcase-one-right-table-of-main-oronyms-a-stew-1-a
 >a xxx
-Not much happens, but you feel like that might help, at least halfway, some time later. Much later, or just a little, you can't tell.
+Not much happens. Unfortunately, I got flummoxed a bit with this one: "a" is part of a puzzle solution, but on the other hand, the generic response for one word right wreaks havoc with cluing other puzzles. TLDR: one puzzle down the road includes the word "a."
+
+>a xxx
+(DEBUG: pre-a-stew rule tripped) Not much happens. That thing with the word "a," again.
 
 >think
-You're pretty sure you have one word right for achieving the game's objective.
+You're pretty sure you have one word right for something down the road with the word A.
 
 >undo
 >undo
@@ -54,7 +57,7 @@ You're pretty sure you have one word right for achieving the game's objective.
 Not much happens, but you feel like that might help, at least halfway, some time later. Much later, or just a little, you can't tell.
 
 >think
-You're pretty sure you have one word right for achieving the game's objective.
+You feel you've got the words right on separate occasions for something down the road with the word A.
 
 >undo
 >undo

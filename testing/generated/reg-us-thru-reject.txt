@@ -884,7 +884,7 @@ You don't need two gas pouches.
 
 #testcase-check-pre-pro-sweeping-rule-if-sco-scry-broom-is-false
 >pro sweeping
-You have nothing that could sweep!
+A very good idea, but you have nothing that could sweep at the moment!
 
 >think
 
