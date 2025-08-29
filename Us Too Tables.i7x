@@ -99,7 +99,7 @@ a wordtwisting rule (this is the pre-nice-warm rule):
 
 this is the post-nice-warm rule:
 	now sco-nice-warm is true;
-	say "The nigh swarm grows less volatile and, yes, more nice, warm. It rises in the air, then buzzes off to somewhere to maybe be nice, cool, too. Perhaps there is a nigh school![paragraph break]As the nigh swarm buzzes off, a pro ball has rolled into view. You're not sure what sport it could be for, but it's marked PRO.";
+	say "The nigh swarm grows less volatile and, yes, more nice, warm. It rises in the air, then buzzes off to somewhere to maybe be nice, cool, too. Perhaps there is a nigh school![paragraph break]Behind where the swarm was, a pro ball has rolled into view. You're not sure what sport it could be for, but it's marked PRO.";
 	moot nigh swarm;
 	move pro ball to beach ill;
 	print-the-loc;
@@ -125,7 +125,7 @@ a wordtwisting rule (this is the pre-mess-pot rule):
 
 this is the post-mess-pot rule:
 	now sco-mess-pot is true;
-	say "Ah. There it is. You, in fact, find a whole mess kit."; [??mess kit as synonym]
+	say "Consulting with the pro ball, you eventually learn to understand how it displays things and, yes, you find that mess pot! And not just a mess pot, but a whole mess kit![paragraph break]But it's not just about finding a mess kit. It's about the process! You feel like you could use it better now aboveground.";
 	move mess kit to mine ooh;
 	moot meh spot;
 
@@ -138,7 +138,7 @@ a wordtwisting rule (this is the pre-meh-skit rule):
 
 this is the post-meh-skit rule:
 	now sco-meh-skit is true;
-	say "Perhaps it's too obvious, but you decide to have fun, and you do.";
+	say "Perhaps it's too obvious, but you decide to have fun, and you do. You mime where you've been and where you might go, and you also imitate the relatives with the funniest reactions to getting only $1000.";
 	declue mess kit;
 
 this is the hom-a-stew rule:
@@ -355,7 +355,8 @@ a wordtwisting rule (this is the pre-punt-weaker rule):
 this is the post-punt-weaker rule:
 	now sco-punt-weaker is true;
 	say "'Ah, yes, that's it. It's the least I can do as thanks. Not the very least, heh heh.' The pun tweaker goes to the back of [the ship], and you hear a splash. The pun tweaker reappears, clothes wet, pushing a pretty scrawny punt. 'It won't get very far, but there's something to the east. Oh, and I hope you have a way to steer it, too.'";
-	if sco-pry-more is false, say "[line break]Well, you don't have a way to steer the punt, yet.";
+	say "[line break]";
+	if sco-pry-more is false, say "Well, you don't have a way to steer the punt, yet.";
 	move punt weaker to beach ill;
 	moot pun tweaker;
 	move dune to beach ill;
@@ -1064,7 +1065,7 @@ a wordtwisting rule (this is the pre-no-date rule):
 
 this is the post-no-date rule:
 	now sco-no-date is true;
-	say "You realize which node to hack up. You realise what to say. The [pliers] do their work on node eight. 'Imminent destruction?' you scoff. 'NO DATE!'[paragraph break]You hear a FIZZ, then a BOOM ... the explosion knocks you back. Boy! It's a good thing you were still wearing those den specs! Thr pliers fly from your hand and into the specs, which they twist and shatter and blow off your face into a corner. A corner which disappears as the roof starts to collapse. You figure it's a good time to go back to the dell.";
+	say "You realize which node to hack up. You realise what to say. The [pliers] do their work on node eight. 'Imminent destruction?' you scoff. 'NO DATE!'[paragraph break]You hear a FIZZ, then a BOOM ... the explosion knocks you back. Boy! It's a good thing you were still wearing those den specs! The pliers fly from your hand and into the specs, which they twist and shatter and blow off your face into a corner. A corner which disappears as the roof starts to collapse. You figure it's a good time to go back to the dell.";
 	wfas;
 	say "There, people start streaming towards you. They lift you up in the air, which is fun for the first fifteen seconds, but you know they mean well. They prove they mean well by handing you a valuable item.";
 	wfas;
@@ -1156,7 +1157,7 @@ a wordtwisting rule (this is the pre-scry-broom rule):
 
 this is the post-scry-broom rule:
 	now sco-scry-broom is true;
-	say "You realize a broom must be here. You trade the damp ink in the gas pouch for it. The scribes are impressed with the ink ... so much, they show you an artifact few get to see. 'It is our BELL, TRUSTED. Yet it has some hidden purpose we could not find. Perhaps it will help you. And -- oh, yes -- that broom? Do return it when you're done.'";
+	say "You realize a broom must be here. You trade the damp ink in the gas pouch for it. The scribes are impressed with the ink ... so much, they tell you they have something special to show you ... if you return the broom once you're done.";
 	now player has broom;
 	moot gas pouch;
 	declue-here;
@@ -1189,7 +1190,7 @@ a wordtwisting rule (this is the pre-say-jokes rule):
 
 this is the post-say-jokes rule:
 	now sco-say-jokes is true;
-	say "'Eh, jokes age oaks,' they mutter at first. But they get into it more. They warn you of the trouble you'll get in if you keep telling corny jokes. It doesn't show you're smart. But then you explain you carefully crafted said jokes to peeve them. You've had experience all game with wordplay, too.[paragraph break]They're pretty impressed with your presentation. Their branches and leaves blow in the wind, beckoning you south. You start, then gasp 'ouch.' What the heck?! They were fibbing.";
+	say "'Eh, jokes age oaks,' they mutter at first. But they get into it more. They warn you of the trouble you'll get in if you keep telling corny jokes. It doesn't show you're smart. But then you explain you carefully crafted said jokes to peeve them so they give up and let you by because dealing with you isn't worth it. You've had experience all game with wordplay, too. You mention you've just chatted with the pun tweaker.[paragraph break]That does it. They realize you are not to be trifled with, and some of your puns were actually pretty good. Their branches and leaves blow in the wind, beckoning you south. You start, then gasp 'ouch.' What the heck?! They were fibbing.";
 	say "[line break]The sage oaks laugh a bit. 'Just a bit of revenge for those painful jokes,' they say, 'nothing permanent. We never said we'd give painless passage south. It will be for your own good in the long term. Just a bit of hazing.'";
 	reveal dust which does twitch to south;
 	declue-here;
@@ -1212,7 +1213,7 @@ chapter dust which does twitch scoring
 a wordtwisting rule (this is the pre-pro-sweeping rule):
 	if player is not in dust which, unavailable;
 	if sco-scry-broom is false:
-		vcp "You have nothing that could sweep!";
+		vcp "A very good idea, but you have nothing that could sweep at the moment!";
 		not-yet;
 	if sco-pro-sweeping is true:
 		vcal "It's clean enough here. You swept this place like a pro! Go, you!";
