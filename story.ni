@@ -285,7 +285,7 @@ to say crumple-it: say "You actually just crumple it up and put it in your pocke
 
 Trike West carries the urgh ought er jot. printed name of er jot is "Urgh-Ought-[']Er Jot".
 
-description of Jot is "[one of]It's a[or]You reread the[stopping] note from [ara]: 'The items on the row/ledge may help when needed. No shame using them everywhere, and I won't be offended if you find them useless or even drop them. Or drop this, now you've read it. One less thing to worry about in your inventory.[paragraph break]'You can change the row/ledge itself if you want, but you don't need to. Maybe with experience you'll have an a-ha moment, o maybe you'll have an a-ha moment.'". eyes-number of jot is 1.
+description of Jot is "[one of]It's a[or]You reread the[stopping] note from [ara]: 'The items on the row/ledge may help when needed. No shame using them everywhere, and I won't be offended if you find them useless or even drop them. Or drop this, now you've read it. One less thing to worry about in your inventory.[paragraph break]'You can change the row/ledge itself if you want, but you don't need to. Some subjective information about your surroudings. Maybe with experience you'll have an a-ha moment, and you'll see this whole area in a new light.[paragraph break]'You could say it's a welcome of sorts.'". eyes-number of jot is 1.
 
 report examining jot:
 	if gs-jot-row-ledge is false and lucent row is in mine:
@@ -372,7 +372,7 @@ report examining lucent row:
 
 section goal edge go ledge
 
-the goal edge go ledge is a startprop. printed name is "Goal-Edge-Go Ledge". eyes-number of Goal Edge Go Ledge is 1.
+the goal edge go ledge is a startprop. printed name is "Goal-Edge-Go Ledge". eyes-number of Goal Edge Go Ledge is 1. description is "It's just there to hold hint items for you. It's less noticeable than the lucent row it replaced."
 
 check taking a startprop:
 	if slice eyes are off-stage, say "You can't, but if you [b]EXAMINE[r] [the noun], you may find something on it." instead;
@@ -789,7 +789,7 @@ the pie crust is an eatworthy stewitem. description is "Not very fancy, but it's
 
 chapter pun tweaker
 
-The pun tweaker is a sentient. "The pun tweaker continues to stay here, [if sir freddie is in beach ill]annoyed with their 'new' 'friend.'[else]looking to swap jokes or whatever.[end if]". description is "[pun-tweaker-desc].". eyes-number of pun tweaker is 46. eyes-rule of pun tweaker is pre-punt-weaker rule.
+The pun tweaker is a sentient. "The pun tweaker continues to stay here, [if sir freddie is in beach ill]annoyed with their 'new' 'friend.'[else if sir freddie is not moot]throwing out desultory puns while grumbling they don't want to fix [the ship].[else]waiting for you to ask for your reward.[end if]". description is "[pun-tweaker-desc].". eyes-number of pun tweaker is 46. eyes-rule of pun tweaker is pre-punt-weaker rule.
 
 to say pun-tweaker-desc:
 	if sir freddie is in beach ill:
@@ -834,11 +834,11 @@ Sore Dark is a room in universal. printed name is "[if sco-sword-ark is false]So
 
 chapter sword ark
 
-the sword ark is scenery. "The Terra Blade is suspended in the sword ark above. How to get it down?". eyes-number of sword ark is -1.
+the sword ark is scenery. "The Terra Blade is suspended in the sword ark above. How to get the blade down? Is there any item you have that could weaken or destroy the ark?". eyes-number of sword ark is -1.
 
 chapter Terra Blade
 
-The Terra Blade is scenery. indefinite article of terra blade is "the". "It looks very impressive, almost too impressive for you to use as swords are generally uses. [if sco-blast-ring is true]Also, it's suspended above in the sword ark, too high to reach[else if sco-terrible-aid is false]You're pretty sure you need to take possession of it, but you're worried an annoying voice will boom out something about your destiny when it does[else]Now that you have it, you really hope you don't have to defeat someone super-powerful with it[end if].". eyes-number of Terra Blade is 83. eyes-rule of Terra Blade is pre-terrible-aid rule.
+The Terra Blade is scenery. indefinite article of terra blade is "the". "It looks very impressive, almost too impressive for you to use as swords are generally uses. [if sco-blast-ring is true]Also, it's suspended above in the sword ark, too high to reach, but--well, maybe you can damage the ark so the blade falls[else if sco-terrible-aid is false]You're pretty sure you need to take possession of it, but you're worried an annoying voice will boom out something about your destiny when it does[else]Now that you have it, you really hope you don't have to defeat someone super-powerful with it[end if].". eyes-number of Terra Blade is 83. eyes-rule of Terra Blade is pre-terrible-aid rule.
 
 check taking terra blade when blade is in sore dark:
 	if sco-blast-ring is false, say "It's embedded too high up in the ark!" instead;
@@ -885,7 +885,7 @@ after printing the locale description for Morph Lairs when sco-more-flares is tr
 
 chapter row plaider
 
-the row plaider is scenery in Morph Lairs. "Boy, it's plaider than anything you've ever seen[if sco-rope-ladder is false]. All that plaid does a number on your eyes. Maybe it's hiding something in plain sight[else]. You're not all that interested in it, now that you've gotten the rope ladder[end if].". eyes-number of row plaider is 46. eyes-rule of row plaider is pre-rope-ladder rule.
+the row plaider is scenery in Morph Lairs. "Boy, it's plaider than anything you've ever seen, a whole platter of plaider[if sco-rope-ladder is false]. All that plaid does a number on your eyes. Maybe it's hiding something in plain sight[else]. You're not all that interested in it, now that you've gotten the rope ladder[end if].". eyes-number of row plaider is 46. eyes-rule of row plaider is pre-rope-ladder rule.
 
 understand "house" and "houses" as row plaider when row plaider is touchable.
 
@@ -954,17 +954,17 @@ After choosing notable locale objects when player is in Pile Up Isle:
 
 chapter pike
 
-the base pikes are a plural-named thing. "Base pikes lie here as part of the bric-a-brac.". description is "[if sco-pie-crust is false]And, oh boy, do they have some rust on them.  Pike rust![else]The pikes are shiny and new now you repurposed their rust. Still potentially kinda base and evil, though. You don't need weapons like these. In fact, you doubt you need any.[end if]". eyes-number of base pikes is -1.
+the base pikes are a plural-named thing. "Base pikes lie here as part of the bric-a-brac[if sco-pie-crust is false]. Pike rust has piled up on them. They must've been here a while[end if].". description is "[if sco-pie-crust is false]And, oh boy, do they have some rust on them.  Pike rust![else]The pikes are shiny and new now you repurposed their rust. Still potentially kinda base and evil, though. You don't need weapons like these. In fact, you doubt you need any.[end if]". eyes-number of base pikes is -1.
 
 section pike rust
 
-the pike rust is a thing. "Pike rust has piled up on the base pikes. They must've been here a while". description is "It's on the pikes, sort of a cover on the side. Perhaps it is better as something else.". eyes-number of pike rust is 35. eyes-rule of pike rust is pre-pie-crust rule.
+the pike rust is scenery. description is "It's on the pikes, sort of a cover on the side. Perhaps it is better as something else.". eyes-number of pike rust is 35. eyes-rule of pike rust is pre-pie-crust rule.
 
 check taking pike rust: say "Oh, it might flake off uselessly if you just took it." instead;
 
 chapter high cup
 
-The high cup is a thing. "A high cup is at the top of the pile.". description is "[if sco-hike-up is true]It wasn't such a big deal once you saw it[else]It looks quite impressive--from a distance. But you haven't figured how to reach it[end if].". eyes-number of high cup is 42. eyes-rule of high cup is pre-hike-up rule.
+The high cup is a thing. "[if sco-hike-up is true]That high cup sits at the top of the pile, unachievable, but the journey sure was rewarding![else]A high cup is at the top of the pile.[end if]". description is "[if sco-hike-up is true]It wasn't such a big deal once you saw it[else]It looks quite impressive--from a distance. But you haven't figured how to reach it[end if].". eyes-number of high cup is 42. eyes-rule of high cup is pre-hike-up rule.
 
 check taking the high cup when high cup is in Pile Up Isle: say "You take a direct path, but it's too steep." instead;
 
@@ -1176,7 +1176,7 @@ after printing the locale description for Deli Stern when player was in Sob Acre
 
 chapter Fey Loners Fail Owners
 
-the Fey Loners Fail Owners are a plural-named sentient in Deli Stern. Printed name is "fey loners/fail-owners". eyes-number of owners is 1. description is "They look pretty unsocial, which is pretty bad for business owners. Maybe you can TALK to them for what they need.". "Some [owners] [if gs-deli-dell-left is false]trudge around miserably here[else if gs-deli-ale-left is false][one of]look less miserable now[or]stand around, muttering about finding decent bread[stopping][else if sco-beef-ordering is false]point to the [toon][else if whee try is in deli and sco-wheat-rye is false]point at the WHEE TRY sign[else]beam with pride at their burgeoning business[end if]."
+the Fey Loners Fail Owners are a plural-named sentient in Deli Stern. Printed name is "fey loners/fail-owners". eyes-number of owners is 1. description is "They look pretty unsocial, which is pretty bad for business owners. Maybe you can TALK to them for what they need.". "[if gs-deli-dell-left is false]Some[else]Those[end if] [owners] [if gs-deli-dell-left is false]trudge around miserably here[else if gs-deli-ale-left is false][one of]look less miserable now[or]stand around, muttering about finding decent bread[stopping][else if sco-beef-ordering is false]point to the [toon][else if whee try is in deli and sco-wheat-rye is false]point at the WHEE TRY sign[else]beam with pride at their burgeoning business[end if]."
 
 check going in Deli Stern when room gone to is not nowhere:
 	if sco-dell-eastern is true, now gs-deli-dell-left is true;
@@ -1272,7 +1272,7 @@ check taking raft: say "You can just go south or north as needed." instead;
 
 chapter stark raft
 
-the stark raft is a thing. "The stark raft [if farm isles is unvisited]here can take you across the water to the south to somewhere new[else if player is in farm isles]can take you back north to [tours][else if sco-barn-open is true]sits here. It served you well, but you don't need to go back across the water. You've toured where you need to[else]can lead you back south to the Farm Isles[end if].". description is "It's plain, but sturdy enough, you think, and your prime oar will help steer it[if far miles farm isles is visited] back south[end if].". eyes-number of stark raft is -1.
+the stark raft is a thing. "The stark raft [if player is in farm isles]here can take you back north to [tours][else if farm isles is unvisited]here can take you across the water to the south to somewhere new[else if sco-barn-open is true]sits here. It served you well, but you don't need to go back across the water. You've toured where you need to[else]here can lead you back south to the Farm Isles[end if].". description is "It's plain, but sturdy enough, you think, and your prime oar will help steer it[if far miles farm isles is visited] back south[end if].". eyes-number of stark raft is -1.
 
 part Far Miles Farm Isles
 
@@ -1400,7 +1400,7 @@ the prose weeping is a thing in Dust Which Does Twitch. "The sound of prose, wee
 
 chapter coal drum
 
-the coal drum is a thing. description is "Plenty dirty. [if sco-cold-rum is true]You don't want to go digging for more than the cold rum you found[else]Perhaps there is something beneath the coal, but you might have to figure what, before digging[end if].". eyes-number of coal drum is 43. eyes-rule of coal drum is pre-cold-rum rule.
+the coal drum is a thing. "[if sco-cold-rum is true]You've found what you needed from the coal drum here.[else]A coal drum sits here. What could be inside it?". description is "Plenty dirty. [if sco-cold-rum is true]You don't want to go digging for more than the cold rum you found[else]Perhaps there is something beneath the coal, but you might have to figure what, before digging[end if].". eyes-number of coal drum is 43. eyes-rule of coal drum is pre-cold-rum rule.
 
 chapter cold rum
 
