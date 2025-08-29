@@ -218,6 +218,9 @@ to decide which number is dome-in-score:
 to decide which number is booze-score:
 	decide on (boolval of sco-cold-rum) + (boolval of sco-dope-ale);
 
+to decide which number is booze-listed-yet-score:
+	decide on (boolval of whether or not cold rum is listed-yet) + (boolval of whether or not dope ale is listed-yet);
+
 to decide which number is toon-guess-score:
 	decide on (boolval of gs-toon-guess-1) + (boolval of gs-toon-guess-2);
 

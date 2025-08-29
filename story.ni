@@ -181,23 +181,27 @@ report examining Aight Amusing:
 		if SI is pie crust, next;
 		if SI is not listed-yet, say "[b]";
 		if SI is alcoholic:
-			if mentioned-alcohol is false:
-				say "-- [if sco-malt-hour is true]enough alcohol left over ([the list of alcoholic stewitems])[else if number of discovered alcoholic stewitems is 2]two types of alcohol, almost too much quantity ([the list of alcoholic stewitems])[else]some alcohol, but not enough variety: [the list of discovered alcoholic stewitems][end if]";
+			if mentioned-alcohol is true, next;
+			say "-- [if sco-malt-hour is true]enough alcohol left over ([the list of alcoholic stewitems])[else if number of discovered alcoholic stewitems is 2]two types of alcohol, almost too much quantity ([the list of alcoholic stewitems])[else]some alcohol, but not enough variety: [the list of discovered alcoholic stewitems][end if]";
 			now mentioned-alcohol is true;
 		else:
 			say "-- [invtext of SI]";
-		say "[if SI is not listed-yet] (new)[end if][r]";
+		if SI is alcoholic:
+			say "[if booze-score > booze-listed-yet-score] (new)[end if][r]";
+		else:
+			say "[if SI is not listed-yet] (new)[end if][r]";
 		if SI is not listed-yet:
 			if SI is alcoholic and booze-score is 2:
 				now cold rum is listed-yet;
 				now dope ale is listed-yet;
-		now SI is listed-yet;
+			else:
+				now SI is listed-yet;
 		say "[line break]";
 	now mentioned-alcohol is false;
 	if gotany is true and missedany is true, say "[line break]";
 	repeat with SI running through not discovered stewitems:
 		if SI is pie crust, next;
-		if SI is alcoholic:
+		if SI is alcoholic and booze-score is 0:
 			if mentioned-alcohol is false:
 				say  "-- a variety of alcoholic drinks[line break]";
 			now mentioned-alcohol is true;
