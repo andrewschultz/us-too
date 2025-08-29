@@ -1141,6 +1141,7 @@ to say ditch-full:
 	say "Now you've got your bearings, you wonder why this place ever intimidated you. You see passages north[if acres is visited] to [sob acres][else] (unvisited)[end if] and west[if tours is visited] to [tours][else] (unvisited)[end if], as well as back east to Ur-Branch";
 
 check going east in bowl ditch:
+	if sco-bold-itch is false, say "You're wallowing too hard at the moment to retrace your steps. You've lost anything resembling moxie." instead;
 	if sco-no-date is true and sco-barn-open is true:
 		say "You got that egg, and you destroyed the nodes. You're pretty sure the area behind you, to the west of Ur-Branch, is clear now.";
 		if sco-tour-boaters is false, max-down;
@@ -1502,6 +1503,8 @@ book entering
 
 the find what to enter rule is not listed in any rulebook.
 
+check entering ship: say "It's the pun tweaker's. You're not invited." instead;
+
 check entering great inn: say "You don't need a break, and you couldn't afford the rates." instead;
 
 check entering bar: say "If you tried to get loaded, you'd soon feel low, dead." instead;
@@ -1547,6 +1550,7 @@ to say x-aight: say "[b]X[if gs-using-known is false] AIGHT[end if][r]"
 carry out taking inventory (this is the UT specific inventory rule):
 	now all things carried by player are marked for listing;
 	now all startthings are not marked for listing;
+	now all hintthings are not marked for listing;
 	now Aw Lug All Ugh is not marked for listing;
 	if number of ughlistable things is 0:
 		say "Your Aw-Lug-All-Ugh has nothing special in it[if number of carried stewitems > 0], except what you've found for [aight][end if].";
