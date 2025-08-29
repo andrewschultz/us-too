@@ -829,8 +829,16 @@ report examining punt weaker when punt weaker is unexamined:
 
 check taking punt: say "You can just go east or west as needed." instead;
 
+after printing the locale description for beach ill when punt is in beach ill and player has prime oar:
+	say "You attach the prime oar to the punt.";
+	continue the action;
+
 to say punt-status:
-	if pile-done:
+	if sco-pry-more is false:
+		say ". It has no steering mechanism, yet";
+	else if sco-stark-raft is true:
+		say ". The prime oar, of course, is back in [turbo tours]. You're not lugging it back. You've gotten what you need from the isle";
+	else if pile-done:
 		say ". It served you well, [if player is in isle]and you think you've seen what you needed here[else]but you can't think of a reason to go back to the isle[end if]";
 	else:
 		say ", ready to take you [if player is in isle or isle is visited]back [end if][if player is in isle]west[else]east[end if]"
@@ -848,7 +856,7 @@ book northwest branch
 
 part Sore Dark
 
-Sore Dark is a room in universal. printed name is "[if sco-sword-ark is false]Sore Dark[else]Sword Ark[end if]". description is "[if sco-sword-ark is false]You can't see much here, but maybe if you fumble around for what you need, or make an educated guess, you'll find it[else if sco-blast-ring is false]The sword ark hangs above you, the Terra Blade intertwined in it, far too high to climb up to[else]The Terra Blade lies among the erstwhile rubble of the sword ark[end if].". eyes-number of Sore Dark is 53. eyes-rule of Sore Dark is pre-sword-ark rule.
+Sore Dark is a room in universal. printed name is "[if sco-sword-ark is false]Sore Dark[else]Sword Ark[end if]". description is "[if sco-sword-ark is false]You can't see much here, but maybe if you fumble around for what you need, or make an educated guess, you'll find it[else if sco-blast-ring is false]The sword ark hangs above you, the Terra Blade intertwined in it, far too high to climb up to[else if sco-terrible-aid is false]The Terra Blade lies among the erstwhile rubble of the sword ark[else]The sword ark lies in ruins here. There was nothing other than the Terra Blade inside[end if].". eyes-number of Sore Dark is 53. eyes-rule of Sore Dark is pre-sword-ark rule.
 
 chapter sword ark
 
@@ -990,7 +998,7 @@ book southeast branch
 
 part Dome Aching
 
-Dome Aching is a room in universal. printed name is "Dome, Aching". "[if sco-can-take is false]Ugh. You're not physically uncomfortable, you just feel ... oh, how can I describe it? A can't-ache. You're so focused on the pain, you're not really looking for anything useful here[else]You're a bit more aware of your surroundings now[end if]. Of course, you can always go back northwest to the Ur-Branch.". eyes-number of Dome Aching is 56. eyes-rule of Dome Aching is pre-dough-making rule.
+Dome Aching is a room in universal. printed name is "Dome, Aching". "[if sco-can-take is false]Ugh. You're not physically uncomfortable, you just feel ... oh, how can I describe it? A can't-ache. You're so focused on the pain, you're not really looking for anything useful here[else if dome-in-score > 0]The dome is less intimidating than when you first entered now[else]You're a bit more aware of your surroundings now with your ache gone[end if]. Of course, you can always go back northwest to the Ur-Branch.". eyes-number of Dome Aching is 56. eyes-rule of Dome Aching is pre-dough-making rule.
 
 after printing the locale description for dome aching when sco-can-take is true:
 	say "[if sco-gray-tin is true]The Great Inn probably gave everything it had to offer.[else]A Great Inn is located off to the side here. What could they hold?[end if]";
@@ -1010,6 +1018,8 @@ to say dome-scen:
 check going inside in Dome Aching when sco-in-earnest is false:
 	if sco-can-take is false, say "The can't-ache kicks in, leaving you feeling like you couldn't possibly deserve to visit such a private place!" instead;
 	say "The inner nest repels you. Your motives aren't pure. Quester see, quester visit, quester score points. So cold and calculating!" instead;
+
+check going inside in Dome Aching when sco-pry-more is true: say "You've pried enough in the inner nest." instead;
 
 chapter cant ache
 

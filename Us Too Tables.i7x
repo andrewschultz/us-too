@@ -589,6 +589,10 @@ chapter morph lairs scoring
 
 a wordtwisting rule (this is the pre-rope-ladder rule):
 	if player is not in morph lairs, unavailable;
+	if sco-more-flares is false, unavailable;
+	if sco-rope-ladder is true:
+		vcp "You already got a rope ladder. There's nothing left here.";
+		already-done;
 	ready;
 
 this is the post-rope-ladder rule:
