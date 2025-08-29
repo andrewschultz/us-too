@@ -1646,6 +1646,15 @@ check listening (this is the game specific ambient sound rule):
 	if player is in throne ow, say "[if thronescen is in throne ow]'YOU! SIT! YOU! SIT!'[else]Quiet now.[end if]" instead;
 	if location of player is pea stalks, say "Quiet and serene." instead;
 
+book drinking
+
+the block drinking rule is not listed in any rulebook.
+
+check drinking:
+	if noun is tea leaves, say "But they aren't properly prepared! And they don't need to be, in this game." instead;
+	if noun is an alcoholic stewitem, say "Get yourself together, man! Now is not the time![paragraph break]Anyway, uh, ... I hope I didn't drive you to drink with an unfair puzzle." instead;
+	say "You don't need to drink anything in this game." instead;
+
 book eating
 
 check noteating:
