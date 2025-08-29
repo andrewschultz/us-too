@@ -71,7 +71,7 @@ Sir Freddie finds that interesting, but ... he doesn't have the right gear to ge
 
 #testcase-think-table-of-main-oronyms-pre-surf-ready-rule
 >think
-You can SURF READY once you have surfing materials for Sir Freddie.
+You can SURF READY here once you have surfing materials for Sir Freddie.
 
 >s
 >ne
@@ -85,7 +85,7 @@ by a point
 
 #+testcase-think-table-of-main-oronyms-pre-surf-ready-rule
 >think
-You can SURF READY now you have surfing materials for Sir Freddie.
+You can SURF READY here now you have surfing materials for Sir Freddie.
 
 >surf ready
 by a point
@@ -142,7 +142,7 @@ You unfortunately have nothing that can contain pie crust, yet.
 
 #testcase-think-table-of-main-oronyms-pre-pie-crust-rule
 >think
-You can get the PIE CRUST once you have a container for it.
+You can get the PIE CRUST here once you have a suitable container.
 
 >w
 >w
@@ -158,7 +158,7 @@ by a point
 
 #+testcase-think-table-of-main-oronyms-pre-pie-crust-rule
 >think
-You can get the PIE CRUST now you have a container for it.
+You can get the PIE CRUST here now you have a suitable container.
 
 >pie crust
 by a point
@@ -228,8 +228,8 @@ You try to bull through with jokes, but you're forcing it. You haven't naturally
 #testcase-think-table-of-main-oronyms-pre-ho-langour-rule
 #testcase-think-table-of-main-oronyms-pre-say-jokes-rule
 >think
-You can SAY JOKES once you're cheerier for having done a bit more.
-You can yell HO LANGUOR once you have done something, anything, else in the south.
+You can SAY JOKES here once you're cheerier for having done a bit more.
+You can yell HO LANGUOR in Too-Dark 'Tude Ark once you have done something, anything, else in the south.
 
 >n
 
@@ -247,6 +247,10 @@ by a point
 >n
 
 >s
+
+#testcase-think-table-of-main-oronyms-pre-ho-langour-rule
+>think
+You can yell HO LANGUOR here now you have done something, anything, else in the south.
 
 >ho langour
 by a point
@@ -300,7 +304,7 @@ You suspect you might find tea leaves on, or in, the teal eaves above, but you h
 
 #testcase-think-table-of-main-oronyms-pre-tea-leaves-rule
 >think
-You can get the TEA LEAVES once you have something that can get you to the top of the eaves.
+You can get the TEA LEAVES here once you have something that can get you to the top of the eaves.
 
 >n
 >n
@@ -315,7 +319,7 @@ by a point
 
 #+testcase-think-table-of-main-oronyms-pre-tea-leaves-rule
 >think
-You can get the TEA LEAVES now you have something that can get you to the top of the eaves.
+You can get the TEA LEAVES here now you have something that can get you to the top of the eaves.
 
 >tea leaves
 by a point
@@ -395,7 +399,7 @@ Yes ... that feels right, but you have no tool with which to tear apart node eig
 
 #testcase-think-table-of-main-oronyms-pre-no-date-rule
 >think
-You can claim NO DATE once you have a tool that can destroy the nodes.
+You can claim NO DATE here once you have a tool that can destroy the nodes.
 
 >u
 >w
@@ -409,7 +413,7 @@ by a point
 
 #+testcase-think-table-of-main-oronyms-pre-no-date-rule
 >think
-You can claim NO DATE now you have a tool that can destroy the nodes.
+You can claim NO DATE here now you have a tool that can destroy the nodes.
 
 >no date
 by a point
@@ -434,7 +438,7 @@ You stand inside the dew pit and hold up everything in your inventory, but nothi
 
 #testcase-think-table-of-main-oronyms-pre-dupe-it-rule
 >think
-You can DUPE IT once you have something unique and worth duplicating.
+You can DUPE IT here once you have something unique and worth duplicating.
 
 >w
 >sw
@@ -452,7 +456,7 @@ by a point
 
 #+testcase-think-table-of-main-oronyms-pre-dupe-it-rule
 >think
-You can DUPE IT now you have something unique and worth duplicating.
+You can DUPE IT here now you have something unique and worth duplicating.
 
 >dupe it
 by a point

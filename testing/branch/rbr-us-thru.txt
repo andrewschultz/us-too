@@ -1234,7 +1234,7 @@ The eyes light up yellow and show four dots, then six dots.
 @rej
 #testcase-think-table-of-main-oronyms-pre-punt-weaker-rule
 >think
-You can get a PUNT WEAKER once you are able to please the pun tweaker.
+You can get a PUNT WEAKER once you are able to help the pun tweaker fix the ship here.
 
 >w
 >d
@@ -1394,7 +1394,7 @@ You would like to call out that there are alcoholic refreshments, but you don't 
 \\
 #testcase-think-table-of-main-oronyms-pre-malt-hour-rule
 >think
-You can call MALT HOUR once you have a variety of alcohol to share.
+You can call MALT HOUR here once you have a variety of alcohol to share.
 
 @hint
 #+testcase-values-eyes-number-of-bore-dread-is-53
@@ -2022,7 +2022,7 @@ The can't-ache prevents you from doing anything constructive!
 \\
 #testcase-think-table-of-main-oronyms-pre-dough-making-rule
 >think
-You can commence DOUGH MAKING once you have overcome the can't-ache.
+You can commence DOUGH MAKING here once you have overcome the can't-ache.
 \\
 #testcase-check-pre-in-earnest-rule-if-inscen-is-not-in-dome-aching
 >in earnest
@@ -2131,7 +2131,7 @@ You're pretty sure you have one word right for doing something positive in Dome,
 @rej
 #+testcase-think-table-of-main-oronyms-pre-dough-making-rule
 >think
-You can commence DOUGH MAKING now you have overcome the can't-ache.
+You can commence DOUGH MAKING here now you have overcome the can't-ache.
 
 >dough making
 by a point
@@ -2295,7 +2295,7 @@ You're pretty sure you have one word right for trading with the pun tweaker.
 @rej
 #+testcase-think-table-of-main-oronyms-pre-punt-weaker-rule
 >think
-You can get a PUNT WEAKER now you are able to please the pun tweaker.
+You can get a PUNT WEAKER now you are able to help the pun tweaker fix the ship here.
 
 @hint
 #+testcase-values-eyes-number-of-pun-tweaker-is-46
@@ -2608,7 +2608,7 @@ Hmm, yes, it doesn't matter if it's terrible while it's unattainable.
 \\
 #testcase-think-table-of-main-oronyms-pre-terrible-aid-rule
 >think
-You can become the owner of a TERRIBLE AID once you can bring it down from the ark.
+You can become the owner of a TERRIBLE AID here once it has fallen to where you can reach it.
 \\
 #+testcase-think-table-of-main-oronyms-pre-blast-ring-rule
 >think
@@ -2657,7 +2657,7 @@ The eyes light up green and show eight dots, then three dots.
 @rej
 #+testcase-think-table-of-main-oronyms-pre-terrible-aid-rule
 >think
-You can become the owner of a TERRIBLE AID now you can bring it down from the ark.
+You can become the owner of a TERRIBLE AID here now it has fallen to where you can reach it.
 
 >terrible aid
 by a point
@@ -2821,7 +2821,7 @@ But you have nothing that can hold the ink without leaking!
 \\
 #testcase-think-table-of-main-oronyms-pre-damp-ink-rule
 >think
-You can pick up DAMP INK once you have a proper container.
+You can pick up DAMP INK here once you have a proper container.
 \\
 >n
 
@@ -2914,7 +2914,7 @@ The scribes notice you looking at the broom. "Want it? Well, we won't trade it f
 \\
 #testcase-think-table-of-main-oronyms-pre-scry-broom-rule
 >think
-You can SCRY BROOM and get it once you have something the scribes want.
+You can SCRY BROOM and get it here once you have something the scribes want.
 \\
 >n
 
@@ -3194,7 +3194,7 @@ A very good idea, but you have nothing that could sweep at the moment!
 \\
 #testcase-think-table-of-main-oronyms-pre-pro-sweeping-rule
 >think
-You can get PRO SWEEPING once you have something to sweep with.
+You can get PRO SWEEPING here once you have something to sweep with.
 
 >n
 
@@ -3333,7 +3333,7 @@ The eyes light up green and show four dots, then three dots.
 
 @rej
 >think
-You can pick up DAMP INK now you have a proper container.
+You can pick up DAMP INK here now you have a proper container.
 
 >damp ink
 by a point
@@ -3413,7 +3413,7 @@ The eyes show nothing. Probably don't need to change up anything to get somethin
 @rej
 #+testcase-think-table-of-main-oronyms-pre-scry-broom-rule
 >think
-You can SCRY BROOM and get it now you have something the scribes want.
+You can SCRY BROOM and get it here now you have something the scribes want.
 
 >scry broom
 by a point
@@ -3493,7 +3493,7 @@ The eyes light up green and show three dots, then eight dots.
 @rej
 #+testcase-think-table-of-main-oronyms-pre-pro-sweeping-rule
 >think
-You can get PRO SWEEPING now you have something to sweep with.
+You can get PRO SWEEPING here now you have something to sweep with.
 
 @verbs
 >r
@@ -3885,7 +3885,7 @@ You revisit the barn, open, hidden behind the bar. There are some truly glorious
 \\
 #testcase-think-table-of-main-oronyms-pre-barn-open-rule
 >think
-You can transact with the BARN OPEN once you have food to barter.
+You can transact with the BARN OPEN here once you have food to barter.
 
 @part
 ##balance undos
@@ -4041,7 +4041,7 @@ The eyes light up green and show four dots, then four dots.
 @rej
 #+testcase-think-table-of-main-oronyms-pre-barn-open-rule
 >think
-You can transact with the BARN OPEN now you have food to barter.
+You can transact with the BARN OPEN here now you have food to barter.
 
 >barn open
 by a point
@@ -4596,7 +4596,7 @@ It would be useful to have an item of power, but alas, you do not, at the moment
 \\
 #testcase-think-table-of-main-oronyms-pre-use-it-rule
 >think
-You can USE IT once you have an item of power to use.
+You can USE IT here once you have an item of power to use.
 \\
 >d
 
@@ -4693,7 +4693,7 @@ The pro ball jumps an inch out of your hand and briefly crackles, but nothing el
 \\
 #testcase-think-table-of-main-oronyms-pre-join-aider-rule
 >think
-You can call a JOIN AIDER once you have two items of power to join.
+You can call a JOIN AIDER here once you have two items of power to join.
 \\
 >w
 >sw
@@ -4714,7 +4714,7 @@ by a point
 \\
 #+testcase-think-table-of-main-oronyms-pre-join-aider-rule
 >think
-You can call a JOIN AIDER now you have two items of power to join.
+You can call a JOIN AIDER here now you have two items of power to join.
 
 >join aider
 by a point
@@ -4853,7 +4853,7 @@ You're pretty sure you have one word right for disobeying the throne's orders.
 @rej
 #+testcase-think-table-of-main-oronyms-pre-use-it-rule
 >think
-You can USE IT now you have an item of power to use.
+You can USE IT here now you have an item of power to use.
 
 >use it
 by a point
@@ -5178,7 +5178,7 @@ You already used the herb to expand your mind! It is only good for seasoning now
 @rej+
 #testcase-think-table-of-main-oronyms-pre-a-stew-rule
 >think
-You can make A STEW now you have all the ingredients you need. X should list them.
+You can make A STEW here now you have all the ingredients you need. X should list them.
 
 >a stew
 by a point
