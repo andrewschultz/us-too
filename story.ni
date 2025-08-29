@@ -1500,12 +1500,6 @@ volume going out
 
 understand the command "o" as something new. understand "o" as outside.
 
-definition: a direction (called v) is viable:
-	if the room v of location of player is nowhere, no;
-	if player is in ur branch and v is branchdone, no;
-	if player is in ur branch and v is down, no;
-	yes;
-
 understand the command "leave" as something new.
 understand the command "out" as something new.
 understand the command "exit" as something new.
@@ -1553,16 +1547,6 @@ check going inside when room gone to is nowhere:
 book inventory
 
 the UT specific inventory rule is listed instead of the print standard inventory rule in the carry out taking inventory rulebook.
-
-definition: a thing (called th) is ughlistable:
-	unless th is carried, no;
-	if th is ugh, no;
-	if th is aight, no;
-	if th is er jot, no;
-	if th is dense pecs, no;
-	if th is a stewitem, no;
-	if th is a hintthing, no;
-	yes;
 
 after printing the name of den specs when taking inventory: say " (from your dense pecs)";
 

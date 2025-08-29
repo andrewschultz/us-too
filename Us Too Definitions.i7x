@@ -128,9 +128,27 @@ check going south in ur branch when extra-turns > 0 and number of visited ordroo
 		now extra-turns is 0;
 	the rule succeeds;
 
+book potentially type-based definitions
+
+definition: a thing (called th) is ughlistable:
+	unless th is carried, no;
+	if th is ugh, no;
+	if th is aight, no;
+	if th is er jot, no;
+	if th is dense pecs, no;
+	if th is a stewitem, no;
+	if th is a hintthing, no;
+	yes;
+
 volume directions
 
 a direction can be branchdone. a direction is usually not branchdone.
+
+definition: a direction (called v) is viable:
+	if the room v of location of player is nowhere, no;
+	if player is in ur branch and v is branchdone, no;
+	if player is in ur branch and v is down, no;
+	yes;
 
 definition: a direction (called di) is eventual:
 	if di is outside, no;
