@@ -20,6 +20,16 @@ to game-specific-cleanup:
 	if gs-den-seen is false and player is in sob acres and player has dense pecs:
 		reveal-den;
 
+to decide whether at-last-point:
+	if core-score is core-max - 1, yes;
+	no;
+
+to give-partial-later-encouragement:
+	if the player's command includes "a" and not at-last-point:
+		say "Not much happens. [one of]Unfortunately, I got flummoxed a bit with this one: 'a' is part of a puzzle solution, but on the other hand, the generic response for one word right wreaks havoc with cluing other puzzles. TLDR: one puzzle down the road includes the word 'a.'[or]That thing with the word 'a,' again.[stopping]";
+	else:
+		say "Not much happens, but you feel like that might help, at least halfway, some time later. Much later, or just a little, you can't tell."
+
 definition: a thing (called th) is eyeable:
 	if th is not touchable, no;
 	if ur branch is visited:

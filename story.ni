@@ -434,7 +434,9 @@ after printing the locale description for mine ooh when need-meh:
 
 chapter mess kit
 
-the mess kit is a stewitem. description is "It's a standard mess kit, not very flashy, but clean.". eyes-number of mess kit is -34. eyes-rule of mess kit is pre-meh-skit rule. invtext of mess kit is "cookware[if sco-mess-pot is true] (the mess kit [here-in of mine ooh])[end if]".
+check taking mess kit: say "You don't need to haul the kit around. It's for later." instead;
+
+the mess kit is a stewitem. "The mess kit you found lies here. [if at-last-point]Surely now is the time to give it some use[else]You probably won't need to mess with it for a while[end if].". description is "It's a standard mess kit, not very flashy, but clean. What could go in it?". eyes-number of mess kit is -34. eyes-rule of mess kit is pre-meh-skit rule. invtext of mess kit is "cookware[if sco-mess-pot is true] (the mess kit [here-in of mine ooh])[end if]".
 
 understand "mess pot" and "pot" as mess kit.
 
