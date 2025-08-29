@@ -383,8 +383,6 @@ check taking a startprop:
 	if number of hintthings in Mine Ooh is 0, say "You already took what was on [the noun]." instead;
 	say "You can just take [the list of hintthings in Mine Ooh] if you want." instead;
 
-understand "them" as all when player is in mine ooh
-
 check examining startprop when the noun is unexamined:
 	say "The items on [the noun] look weird at first, but after having a thought, you see they are [eyes] and [a war pawn]. You're free to take them with [b]TAKE ALL[r], if you want.";
 	move slice eyes to mine ooh;
@@ -704,7 +702,6 @@ carry out nning:
 check going north when room gone to is ur branch: abide by the possibly wink out south rule;
 
 this is the possibly wink out south rule:
-	say "1. [sco-claim-it] [sco-cold-rum] [sco-tea-leaves] [sco-belt-rusted].";
 	if south-covered:
 		say "You retrace your steps. You're pretty sure you've cleared everything to the south. As you reach Ur-Branch, the [sign ought] crumbles into the ground.";
 		moot sign ought;
@@ -1798,7 +1795,7 @@ report abouting:
 book credits
 
 carry out creditsing:
-	say "Thanks to my testers, Onno Brouwer, Wade Clarke, Olaf Nowacki, Daniel Stelzer and Tabitha. With my development schedule, I put them in a time crunch, and they found a lot--enough for me to add a few features that hopefully have no bugs.";
+	say "Thanks to my testers, Onno Brouwer, Wade Clarke, Olaf Nowacki, Melvin Rangasamy, Daniel Stelzer and Tabitha. With my development schedule, I put them in a time crunch, and they found a lot--enough for me to add a few features that hopefully have no bugs.";
 	say "[line break]The cover art is my fault, and my fault alone.";
 	say "[line break][b]GENERAL THANKS[r]:[paragraph break]";
 	say "Thanks to everyone past and future involved in the administration of IFComp.";
