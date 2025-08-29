@@ -915,7 +915,7 @@ The board red is a thing. printed name is "board (red)". description is "It's ab
 
 part Joy Nadir
 
-Joy Nadir is a room in universal. it is east of Bore Dread. printed name is "[if sco-join-aider is true]Dew Pit[else]Joy Nadir[end if]". "[if sco-join-aider is false]Maybe the maul tower was guarding you for your own good. It seems that way on first impression[else]It's less cheerless now. But you still hope you can do something here[end if].". eyes-number of joy nadir is 45. eyes-rule of joy nadir is pre-join-aider rule.
+Joy Nadir is a room in universal. it is east of Bore Dread. printed name is "[if sco-join-aider is true]Dew Pit[else]Joy Nadir[end if]". "[if sco-join-aider is false]Maybe the maul tower was guarding you for your own good. It seems that way on first impression. Nothing anywhere gives any indication that this place could help bring people together. Though maybe if you could think of a way to change that...[else]It's less cheerless now. But you still hope you can do something here.[end if]". eyes-number of joy nadir is 45. eyes-rule of joy nadir is pre-join-aider rule.
 
 chapter dew pit
 
@@ -1329,7 +1329,13 @@ the whole anger is a thing in Tude Ark. "Whole anger swirls around here, consumi
 
 part Sage Oaks
 
-Sage Oaks is an ordroom in r-south. rmord of Sage Oaks is 2. "Sage oaks stand here, [if sco-say-jokes is false]glaring at your unworthy self[else]almost nodding with respect for you. There seems to be passage south, too[end if]. You can always just go back north.". eyes-number of Sage Oaks is 35. eyes-rule of Sage Oaks is pre-say-jokes rule. roomdirs of Sage Oaks is "X TRAP/U/NE/S".
+Sage Oaks is an ordroom in r-south. rmord of Sage Oaks is 2. "Sage oaks stand here, [if sco-say-jokes is false]glaring at your unworthy self. [else]almost nodding with respect for you. [oaks-south][end if]You can always just go back north[if sco-say-jokes is false], too[end if].". eyes-number of Sage Oaks is 35. eyes-rule of Sage Oaks is pre-say-jokes rule. roomdirs of Sage Oaks is "X TRAP/U/NE/S".
+
+to say oaks-south:
+	if sco-gas-pouch is false:
+		say "You tried to go past the oaks to the south before, but something in the air made you gasp 'ouch.' ";
+	else:
+		say "The way south is clear now you proved yourself twice to the oaks. ";
 
 sageoakscen is a plural-named privately-named impressable sentient in Sage Oaks. they are scenery. description of sageoakscen is "The sage oaks offer [if sco-say-jokes is false]no great hint as to how to impress them or weaken their will to block you[else if sco-gas-pouch is false]no indication they do, or don't, actually want you to go south[else]something almost nearing respect for you[end if].". printed name is "the sage oaks". eyes-number of sageoakscen is 35. eyes-rule of sageoakscen is pre-say-jokes rule.
 
