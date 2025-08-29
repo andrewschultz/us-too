@@ -53,6 +53,7 @@ chapter after prologue, optional and unlikely, mostly to funnel player to the ri
 undo-okayed is a truth state that varies.
 gs-loose-intro-read is a truth state that varies.
 gs-too-soon-x-aight is a truth state that varies.
+gs-warn-mine-pawn is a truth state that varies.
 
 chapter game-critical, or definitely seen in the course of the game
 

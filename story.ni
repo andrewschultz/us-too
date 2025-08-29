@@ -1447,6 +1447,12 @@ check warponing when player is not examined and sco-try-quest is false:
 	if word number 1 in the player's command is not "wp":
 		say "[one of]The war pawn wags its finger, then points its finger at you, at its eyes, and at you again. Sounds like a suggestion to [b]X ME[r] before using the pawn. Well, it's good to know where to start[or]The war pawn isn't going to help until you [b]X ME[r] or figure the first point. The two are related[stopping]." instead;
 
+check warponing when lucent row is in mine and player is in mine and gs-warn-mine-pawn is false:
+	now gs-warn-mine-pawn is true;
+	say "[b]NOTE[r]: if you are trying to figure out the lucent row, it's an optional puzzle, which the war pawn ignores. Continue anyway?";
+	unless the player yes-consents:
+		say "Okay, next time you use the war pawn in the mine, will not get this nag." instead;
+
 volume going out
 
 understand the command "o" as something new. understand "o" as outside.
