@@ -331,6 +331,8 @@ check thinking in Mine Ooh when sco-try-quest is false:
 	process the partial-oronym-check rule;
 	if gs-taken-inventory is false:
 		say "[line break]Maybe you should take [b]INVENTORY[r] with [b]I[r]. That might give you an idea what to do in the future.";
+	now got-think is true;
+	follow the summarize thinkings rule;
 	the rule succeeds;
 
 check going up in Mine Ooh:
@@ -1838,15 +1840,12 @@ understand "option" as optionsing.
 understand "opts" as optionsing.
 understand "opt" as optionsing.
 
-to decide whether any-options:
-	if gs-warn-blah-cough is true, yes;
-	no;
-
-check optionsing when not any-options:
-	say "There are no options you've discovered yet. Well, if you know them from another playthrough, you can use them." instead;
+check optionsing when options-found is 0: say "There are no options you've discovered yet. Well, if you know them from another playthrough, you can use them." instead;
 
 carry out optionsing:
-	if gs-warn-blah-cough is true, say "[b]BLAH COUGH[r] disables the automatic block-off for completed branches. [b]BLOCK OFF[r] enables it.";
+	say "You have found/learned of [options-found in words] of two total options:[paragraph break]";
+	if gs-warn-blah-cough is true, say "[b]BLAH COUGH[r] disables the automatic block-off for completed branches. [b]BLOCK OFF[r] enables it. Allowing free movement is currently [on-off of gs-warn-blah-cough].";
+	if gs-warn-think-well is true, say "[b]THINK WELL[r] shows a full point-scoring command if you've guessed each part. [b]THIN QUELL[r] (default) turns it off. This option is currently [on-off of gs-warn-think-well].";
 
 chapter blahcoughing
 

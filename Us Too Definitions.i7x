@@ -209,6 +209,9 @@ to decide which number is first-command-points: [ boolval doesn't quite work her
 	if the player's command includes "so", increment temp;
 	decide on temp;
 
+to decide which number is options-found:
+	decide on (boolval of gs-warn-blah-cough) + (boolval of gs-warn-think-well);
+
 to decide which number is garden-score:
 	decide on (boolval of sco-pea-pod) + (boolval of sco-peace-talks);
 
