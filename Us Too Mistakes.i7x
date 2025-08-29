@@ -8,13 +8,15 @@ understand "say [text]" and "say" as a mistake ("You don't need to prefix any im
 
 understand "say [text]" and "say" as a mistake ("You found the only important command to start with [b]SAY[r].") when sco-say-jokes is true and player is not in sage oaks.
 
+understand "humor us" and "humorous" as a mistake ("Hi there! Glad you find me funny. Well, I'm going to pretend you do, even if you were just figuring what my pen name 'really' meant.")
+
 volume weird parser stuff
 
 volume puzzle-specific mistakes
 
 book lucent row
 
-understand "loosen trou" as a mistake ("Goodness no this isn't that sort of game, but goodness yes that's a really close guess.") when lucent row is touchable.
+understand "loosen trou" and "loosen trow" as a mistake ("Goodness no this isn't that sort of game, but goodness yes that's a really close guess.") when lucent row is touchable.
 
 book forest team
 
@@ -25,14 +27,27 @@ chapter stuff that needs the parser
 after reading a command:
 	if forest team is touchable:
 		if the player's command includes "steam":
-			say "You need to get less steamed up. And you need to kill [the team]'s head of steam.";
+			say "You need to get less steamed up. And you need to kill [the team]'s head of steam. Focus on how they're talking to you, not their name.";
+			reject the player's command;
+		if the player's command includes "fora":
+			say "You need to give them less of a forum. Focus on how they're talking to you, not their name.";
 			reject the player's command;
 
-book stuff that doesn't
+chapter stuff that doesn't
 
 understand "fora steam" as a mistake ("No, [the team] doesn't need a big stage with steam to spread their banter.") when forest team is touchable.
 
 understand "fora" and "fora [text]" as a mistake ("No, [the team] doesn't need fora to talk more.") when forest team is touchable.
+
+book oak lever
+
+understand "leave her" as a mistake ("No, it's important what the lever's made of.") when oak lever is touchable.
+
+book cellar bin
+
+understand "bah cup" as a mistake ("You take time to clean up litter and excoriate litterbugs before going, umm, back up.") when player is in cellar bin.
+
+understand "trapped oar" as a mistake ("You already have a prime oar. Plus, the trap door is useful for something[if sage oaks is visited], as you found out.[else], honest it is![end if]") when player is in cellar bin.
 
 book clay mitt
 
