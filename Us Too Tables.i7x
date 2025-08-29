@@ -57,7 +57,7 @@ w1 (text)	w2 (text)	first-hom (text)	second-hom	hom-txt-rule (rule)	first-exact	
 "dell"	"eastern"	"delist"	"urn|turn|tern"	hom-dell-eastern rule	false	false	false	false	"making Sob Acres less forbidding"	false	true	true	false	false	deli stern	pre-dell-eastern rule	post-dell-eastern rule	--	--
 "dope"	"ale"	--	"ail"	hom-dope-ale rule	false	false	false	false	"finding something to trade your dough pail for"	false	true	true	false	false	deli stern	pre-dope-ale rule	post-dope-ale rule	--	"You can trade for some [b]DOPE ALE[r] [once-now of pre-dope-ale rule] you've found find willing traders with a bit extra."
 "beef"	"ordering"	--	--	--	false	false	false	false	"figuring what the [toon] really means"	false	true	true	false	false	deli stern	pre-beef-ordering rule	post-beef-ordering rule	--	--
-"wheat"	"rye"	--	--	--	false	false	false	false	"guessing what free samples are on offer"	false	true	true	false	false	deli stern	pre-wheat-rye rule	post-wheat-rye rule	--	--
+"wheat"	"rye"	--	--	--	false	false	false	false	"guessing what free samples are on offer"	false	true	true	false	false	deli stern	pre-wheat-rye rule	post-wheat-rye rule	--	"You can ask for [b]WHEAT RYE[r] [once-now of pre-wheat-rye rule] you have something [the owners] can cut bread with."
 "grow"	"nodes"	--	--	--	false	false	false	false	"seeing what's behind the groan odes"	false	true	true	false	false	groan odes	pre-grow-nodes rule	post-grow-nodes rule	--	--
 "no"	"date"	"know"	--	--	false	false	false	false	"figuring how to destroy the nodes, or the most important one"	false	true	true	false	false	groan odes	pre-no-date rule	post-no-date rule	--	"You can claim [b]NO DATE[r] [once-now of pre-no-date rule] you have a tool that can destroy the nodes."
 "fell"	"trap"	--	--	--	false	false	false	false	"revealing what's behind the felt wrap"	false	true	true	false	false	fort earns	pre-fell-trap rule	post-fell-trap rule	--	--
@@ -931,6 +931,9 @@ this is the post-beef-ordering rule:
 
 a wordtwisting rule (this is the pre-wheat-rye rule):
 	if player is not in deli stern, unavailable;
+	if sco-terrible-aid is false:
+		vcp "'Oh, no! We feel dumb. WE'd like to cut off some bread for you, but ... our knives are too dull to keep it up. If you could find a replacement, maybe?'";
+		not-yet;
 	if whee try sign is not in Deli Stern, unavailable;
 	if sco-wheat-rye is true:
 		vcal "You already got enough free bread!";
