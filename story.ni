@@ -589,8 +589,7 @@ after printing the locale description of ur branch when player was in a rotroom:
 		say "Ooh! There's something new on the sign. A new command, to make traversing easier.";
 	continue the action;
 
-this is the south-block rule:
-	if south-covered, say "You don't need to go back." instead;
+this is the south-block rule: if south-covered, try going south instead;
 
 section r1ing
 
@@ -644,6 +643,8 @@ to say r-rr: say "[b]R[r] or [b]RR[r]"
 
 section ssing
 
+this is the check-ss-sss rule: if south is branchcant, try going south instead;
+
 ssing is an action out of world.
 
 understand the command "ss" as something new.
@@ -672,6 +673,7 @@ understand "3s" as sssing when south-sorted.
 understand "s3" as sssing when south-sorted.
 
 carry out sssing:
+	abide by the south-block rule;
 	move player to Tube Rod;
 	the rule succeeds;
 

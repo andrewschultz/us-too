@@ -119,8 +119,8 @@ check going south in ur branch when extra-turns > 0 and number of visited ordroo
 	let is-seen be whether or not rm is visited;
 	move player to rm;
 	if is-seen is false:
-		say "You take a look around your new surroundings. Hey, somewhere new!";
-		say "[line break][one of]You ran past a lot to get here. Maybe you missed something you can find later.[or]You wonder if there was a bit more to look for.[or]You think you've discovered everywhere.[stopping]";
+		say "You take a look around your new surroundings. [if player is in tude ark]Well, it's somewhere new, you guess.[else]Yup, somewhere new. Nice![end if]";
+		say "[line break][one of]You ran past a lot to get here. Maybe you missed something you can find later.[or]You wonder if there was a bit more to look for.[or]You take a break to look inside the pro ball. Three passages lit up to the south. You look for a fourth. Nothing. Looks like you've navigated things well and found everything south of Ur-Branch! Well, each initial passage.[stopping]";
 	else:
 		say "You've been here before. It's nice not to get lost, but you wonder where else there is.";
 	if extra-turns > 0:
