@@ -696,11 +696,14 @@ understand "n2" as nning when player is in Dust Which or player is in Scribe Roo
 understand "2n" as nning when player is in Dust Which or player is in Scribe Room or player is in Dam Pink.
 
 carry out nning:
-	follow the possibly wink out south rule;
+	abide by the possibly wink out south rule;
 	move player to Ur Branch;
 	the rule succeeds;
 
-check going north when room gone to is ur branch (this is the possibly wink out south rule):
+check going north when room gone to is ur branch: abide by the possibly wink out south rule;
+
+this is the possibly wink out south rule:
+	say "1. [sco-claim-it] [sco-cold-rum] [sco-tea-leaves] [sco-belt-rusted].";
 	if south-covered:
 		say "You retrace your steps. You're pretty sure you've cleared everything to the south. As you reach Ur-Branch, the [sign ought] crumbles into the ground.";
 		moot sign ought;
