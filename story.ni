@@ -427,7 +427,7 @@ chapter meh spot
 
 the meh spot is a thing. "The meh spot you saw in the pro ball sits here. It makes your mine feel emptier. Perhaps something belongs there.". description is "Not much to say about it, now. Maybe something else is supposed to be there?". eyes-number of meh spot is 43. eyes-rule of meh spot is pre-mess-pot rule.
 
-after printing the locale description for when need-meh:
+after printing the locale description for mine ooh when need-meh:
 	say "Oh! What's this? The spot indicated by the pro ball. It's a pretty meh spot, but the pro ball highlighted it, so it could be significant.";
 	move meh spot to mine ooh;
 	continue the action;
