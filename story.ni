@@ -478,8 +478,9 @@ rule for printing the locale description of ur branch:
 check going in ur branch (this is the branch blocker rule): if noun is branchdone, say "[donetext of noun][line break]" instead;
 
 after printing the locale description of ur branch when need-meh:
-	say "You remember the pro ball showed you somehing below in your mine. Could  be worth a check.";
+	say "[line break]You remember the pro ball showed you somehing below in your mine. Could be worth a check.";
 	continue the action;
+
 after printing the locale description of ur branch when sco-hike-up is true and southwest is not branchcant and (not ordrooms-seen or bowl ditch is not visited) (this is the first proball southwestish rule):
 	say "The hike up to the high cup revealed passages south, west and southwest. ";
 	if fort is unvisited:
@@ -804,7 +805,7 @@ to say pun-tweaker-desc:
 	if sir freddie is in beach ill:
 		say "The pun tweaker glances with annoyance at Sir Freddie's surfing antics";
 	else:
-		say "Relatively jokey and carefree. This does not extend to their ";
+		say "Relatively jokey and carefree. This carefree attitude does not extend to flat-out generosity[if sir freddie is moot]--well, they'll give you a little something for helping with Sir Freddie[end if]";
 
 chapter gauche hip go ship
 
@@ -889,7 +890,7 @@ Morph Lairs is a room in universal. "[if sco-more-flares is false]You're pretty 
 after printing the locale description for Morph Lairs when sco-more-flares is true and gs-row-plaider is false:
 	now gs-row-plaider is true;
 	move row plaider to Morph Lairs;
-	say "The morph lairs have certainly morphed. There is now a whole row of houses. They seem lifeless, but they're all -- well, plaid. More plaid than anything you've seen. Why, you could call them a row, plaider.";
+	say "The morph lairs have certainly morphed. There is now a whole row of houses. They seem lifeless, but they're all -- well, plaid. More plaid than anything you've seen. Why, you could call them a row, plaider. There's a whole platter full of them!";
 	continue the action;
 
 chapter row plaider
@@ -938,7 +939,7 @@ chapter ten dregs tender eggs
 
 there is a proper-named stewitem called Ten Dregs Tender Eggs. printed name is "Ten Dregs['] Tender Eggs". description is "It's a carton of ten eggs, each slightly smaller than the original Egg of a Guv, but still plenty big and, you hope, tasty. It should be enough to whip out whatever you need to, when the time comes.[paragraph break]You have to admit the brand name worried you until you read this elsewhere on the carton: 'We strenuously fallow all tend-regs.'". eyes-number of tender eggs is -1.
 
-invtext of Tender Eggs is "[if sco-dupe-it is false]eggs[else]the [Eggs][end if]".
+invtext of Tender Eggs is "[if sco-barn-open is false]eggs[else if sco-dupe-it is false]eggs (you only have [the Egg]--you need more)[else]the [Eggs][end if]".
 
 book inside
 
@@ -1159,7 +1160,9 @@ to say deli-post-nodes:
 		say "You've had your fun in the deli to the west, so you don't see much to do here";
 
 after printing the locale description for Sob Acres when sco-den-specs is true and gs-den-seen is false:
+	say "[line break]";
 	reveal-den;
+	continue the action;
 
 to reveal-den:
 	say "Your den specs reveal something you missed before, here. A passage leading down to what must be a den.";
@@ -1168,7 +1171,7 @@ to reveal-den:
 
 check going to deli stern when sco-no-date is true:
 	if gs-deli-party is false:
-		say "You stop by and recognize a few of the people who cheered you setting them free from the groan odes and number-sting. It's a great few hours, but you need to get on with your quest. They thank you, and the [owners] thank you for your business.";
+		say "You stop by and recognize a few of the people who cheered you setting them free from the groan odes and number-sting. It's a great few hours, but you need to get on with your quest. They thank you for your bravery, and the [owners] thank you for helping their business grow so fast before grumbling about all the taxes they'll need to pay on their new profits.";
 		now gs-deli-party is true;
 	else:
 		say "Everything is great in the deli. You don't need a detour from your adventure.";
@@ -1200,7 +1203,7 @@ check going in Deli Stern when room gone to is not nowhere:
 after printing the locale description for deli stern:
 	if gs-deli-dell-left is true and gs-deli-dell-return is false:
 		now gs-deli-dell-return is true;
-		say "The [owners] perk up on seeing you. 'We had a few customers. We might even have prospective repeat customers! But we're running short of bread. Even some of the cheap white generic stuff would do.'";
+		say "The [owners] perk up on seeing you. 'We had a few customers. We might even have prospective repeat customers! But we're running short of bread. Even some of the cheap white generic stuff would do. We'll trade for it. Just ask for the right thing.'";
 	if gs-deli-ale-left is true and gs-deli-ale-return is false:
 		now gs-deli-ale-return is true;
 		say "The [owners] look a bit happier than before. 'We've had a few more customers. We even rebranded our business! And created some ambiance! Even got a promotion for new meals! No-one's figured it out yet, but maybe you can ... well, [i]we[r] think it's sort of cute...' They point to something they drew on the wall. 'A [toon]! Pretty spiffy, eh?'";
