@@ -1750,8 +1750,8 @@ book about
 carry out abouting:
 	say "[this-game] was released for IFComp 2025. It reuses a lot of code from [wp], my IFComp 2024 entry. It uses the same sort of progress mechanic, but the two are different in nature and story.";
 	say "[line break]As in 2024, I had bigger projects that didn't make it, but fortunately (well, for me,) I found the title early on and built from there.";
-	say "[line break]Like most of my games, [this-game] rates merciful on the Zarfian cruelty scale, which only means it can't get in an unwinnable state. However, in this case, I want the puzzles to be more merciful in terms of general difficulty on the player's psyche than usual.";
-	say "[line break][email] is my email if you wish to send transcripts or whatever, or you can report bugs there or at the GitHub site mentioned above, [ghbase]/us-too. I can't see myself releasing a new version unless there are a few useful bugs or features.";
+	say "[line break]Like most of my games, [this-game] rates merciful on the Zarfian cruelty scale, which only means it's not intended to get in an unwinnable state. There are also no deaths, not even joke deaths. However, in this case, I want the puzzles to be more merciful in terms of general difficulty on the player's psyche than usual.";
+	say "[line break][email] is my email if you wish to send transcripts or whatever, or you can report bugs there or at the GitHub site mentioned above, [ghbase]/us-too. I plan to release a post-comp version, and if enough bugs pile up after that, I may release another one.";
 
 report abouting:
 	if player is in house well:
@@ -1783,12 +1783,11 @@ check verbsing when player is in house:
 	the rule succeeds;
 
 carry out verbsing:
-	say "[this-game] uses a reduced parser. You mostly just need to move around and guess special two-word commands indicated by your surroundings.";
-	say "[line break]For instance, [b]TAKE[r] isn't necessary. Items are implicitly taken as you need them and used up, though to help you avoid temptation, the game makes you [b]TAKE[r] hint items and lets you [b]DROP[r] them for good.";
-	say "[this-game] generally uses the four compass directions, but [if ur branch is unvisited]the hub room[else]Ur-Branch[end if] uses all four diagonal directions as well[if bore dread is unvisited and sore dark is unvisited]--don't worry, those are very small areas[end if]. [b]O[r] also goes outside, and if there's only one viable direction, it goes that way.";
+	say "[this-game] uses a reduced parser, though you need to guess point-scoring commands. You move in standard directions, with diagonals only in [if ur branch is visited][ur branch][else]a hub room just above[end if]. While [b]X (something)[r] is useful for insight for what you need to do with an item, [b]X[r] on its own lets you see a list of what you need and have, for general progress, though [b]I[r] still inventories helper items not requested by [ara].";
+	say "[line break]Many standard parser verbs also are unnecessary, though they may give hints and flavor. [b]TAKE[r] is one example: items are implicitly taken as you need them and used up, though to help you avoid temptation, the game makes you [b]TAKE[r] hint items and lets you [b]DROP[r] them for good.";
+	say "[b]O[r] is a shortcut to go outside, and if there's only one viable direction to leave the current room, it goes that way.";
 	say "[b]T[r]/[b]TALK[r]ing to NPCs (subject usually not necessary) or [b]LISTEN[r] may provide additional cues. Additionally, [b]EAT[r] and [b]CLIMB[r] may be marginally useful or amusing.";
-	say "[line break]Useful one-letter diagnostic commands: [b]I[r] inventories what you're carrying, though it delegates items on [ara]'s list ([aight]) to [b]X[r][if gs-using-known is false] after the first time you use it[end if] so you don't have to read too much at once. [b]X THING[r] still examines in-game items.";
-	say "[line break]While [b]SCORE[r] gives your game-score (also listed in the upper right), [b]THINK[r] may be more useful looking forward, to track point-scoring commands that you found that will work later, or commands you got half-right.";
+	say "[line break]While [b]SCORE[r] gives your game-score (also listed in the upper right), [b]THINK[r] may be more useful to track point-scoring commands that you found that will work later, or commands you got half-right.";
 
 report verbsing when (south-sorted or gs-noted-r is true) and south is not branchdone:
 	say "[if south-sorted]N2/NN/2N kicks you back to Ur-Branch from very south locations[end if][if south-sorted or gs-noted-r is true], and [end if][if gs-noted-r is true]R/RR can rotate among the three near [or-far]south locations[end if].";
@@ -1799,7 +1798,7 @@ to say or-far: if number of unvisited rotrooms is 0, say "or far "
 book versions
 
 carry out versioning:
-	say "Release 1 is targeted for August 28, 2025, for IFComp.";
+	say "Release 1 was sent to IFComp.org on August 28, 2025, for publishing on the 31st.";
 
 volume ending tweak(s)
 
