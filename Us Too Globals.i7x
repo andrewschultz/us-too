@@ -26,6 +26,11 @@ last-stewitem-xaight is a number that varies.
 
 volume booleans
 
+chapter options + have we got this yet?
+
+gs-warn-blah-cough is a truth state that varies.
+opt-blah-cough is a truth state that varies.
+
 chapter printing details
 
 pri-branch-detail is a truth state that varies.

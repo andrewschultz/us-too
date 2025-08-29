@@ -473,7 +473,14 @@ rule for printing the locale description of ur branch:
 	if garden tree is scenery and sign ought is not in ur branch, say "[line break]";
 	continue the action;
 
-check going in ur branch (this is the branch blocker rule): if noun is branchdone, say "[donetext of noun][line break]" instead;
+check going in ur branch when noun is branchdone (this is the branch blocker rule):
+	if opt-blah-cough is true:
+		say "You hear someone say blah, then cough. You're probably done here, but nobody stops you from going back.";
+		continue the action;
+	say "[donetext of noun][line break]";
+	if gs-warn-blah-cough is false:
+		say "[line break]You can disable this with [b]BLAH COUGH[r], or you can block it again with [b]BLOCK OFF[r]. This will be in [b]VERBS[r].";
+	the rule succeeds;
 
 after printing the locale description of ur branch when need-meh:
 	say "[line break]You remember the pro ball showed you somehing below in your mine. Could be worth a check.";
@@ -1802,6 +1809,58 @@ carry out creditsing:
 	say "Thanks to the I7 board on Intfiction.org for their help, as well as the people in the general topics and the spoilers topic as we discussed our plans.";
 	say "The [if sign ought is off-stage]additional branch directions (sort of) late in the game[else]S/SS/SSS[end if] were inspired by a game which, if I told you the name, would spoil it. I hate it when things like that happen, because I'd like to give them credit.";
 	general-thanks;
+
+book options
+
+optionsing is an action out of world.
+
+understand the command "options" as something new.
+understand the command "option" as something new.
+understand the command "opts" as something new.
+understand the command "opt" as something new.
+
+understand "options" as optionsing.
+understand "option" as optionsing.
+understand "opts" as optionsing.
+understand "opt" as optionsing.
+
+to decide whether any-options:
+	if gs-warn-blah-cough is true, yes;
+	no;
+
+check optionsing when not any-options:
+	say "There are no options you've discovered yet. Well, if you know them from another playthrough, you can use them." instead;
+
+carry out optionsing:
+	if gs-warn-blah-cough is true, say "[b]BLAH COUGH[r] disables the automatic block-off for completed branches. [b]BLOCK OFF[r] enables it.";
+
+chapter blahcoughing
+
+blahcoughing is an action out of world.
+
+understand the command "blah cough" as something new.
+
+understand "blah cough" as blahcoughing.
+
+carry out blahcoughing:
+	say "You can [if opt-blah-cough is true]already[else]now[end if] revisit completed branches.";
+	now opt-blah-cough is true;
+	now gs-warn-blah-cough is true;
+	the rule succeeds;
+
+chapter blockoffing
+
+blockoffing is an action out of world.
+
+understand the command "block off" as something new.
+
+understand "block off" as blahcoughing.
+
+carry out blockoffing:
+	say "You have [if opt-blah-cough is false]already[else]now[end if] blocked off revisit completed branches.";
+	now opt-blah-cough is true;
+	now gs-warn-blah-cough is true;
+	the rule succeeds;
 
 book verbs
 
