@@ -105,10 +105,10 @@ after reading a command when player is in House Well How Swell:
 		wfas;
 		move player to My New Mine Ooh;
 		reject the player's command;
-	if the player's command includes "envelope" or the player's command includes "think" or the player's command includes "hint" or the player's command includes "help" or w1 is "i" or w1 is "inventory":
+	if the player's command includes "envelope" or the player's command includes "think" or the player's command includes "hint" or the player's command includes "help" or w1 is "read" or w1 is "i" or w1 is "inventory":
 		say "You glance at your envelope, pretty much all you have on you, [one of][or]once again [stopping]worried you might be cheating. But you can't imagine what other clue you have.[paragraph break]The lawyers [one of]still [or][stopping]look nonchalant, fortunately. It says [hohs], contrasting [hwhs] on most of other guests['] invites.";
 		now gs-envelope is true;
-		now starter-counter is 1;
+		if starter-counter > 3, now starter-counter is 3;
 		reject the player's command;
 	if number of words in the player's command > 2:
 		say "The lawyers yawn. All those words! You really are talking too much[if first-command-points > 0], though there MAY have been something in what you said...[else]![end if]";
@@ -116,11 +116,11 @@ after reading a command when player is in House Well How Swell:
 		if first-command-points is 2:
 			say "The lawyers make little flip-it-around motions with their hands.";
 		else:
-			say "The lawyers['] ears seem to perk up for a second.";
+			say "The lawyers['] ears seem to perk up for a second. You must be on the right track!";
 	else if the number of characters in the player's command > 8:
 		say "One of the lawyers casually remarks [ara] was never big on unnecessarily long words.";
 	else if number of words in the player's command < 2:
-		say "One of the lawyers tells you to speak up a little, there, and don't cut yourself off so soon.";
+		say "One of the lawyers tells you to speak up a little, there, and don't cut yourself off after just one word.";
 	else if the player's command includes "lawyers" or the player's command includes "lawyer":
 		say "The lawyers sit, stone-faced. You will get no clues from them.";
 	else if the player's command includes "me" or the player's command includes "myself" or the player's command includes "trike" or the player's command includes "west":
@@ -352,6 +352,10 @@ section lucent row
 
 the lucent row is a startprop in My New Mine Ooh. eyes-number of lucent row is -55. eyes-rule of lucent row is pre-loose-intro rule.
 
+rule for deciding whether all includes startprop when taking: if lucent row is examined, it does not.
+
+check taking startprop: say "It's part of the mine. [if war pawn is off-stage][b]EXAMINE[r] it, though, for some hint items[else]Its main purpose is to display hint items, and it's probably too unwieldy for your [ugh][end if]." instead;
+
 check examining lucent row when lucent row is examined and number of hintthings in My New Mine Ooh is 0:
 	say "There's nothing on the lucent row now that you took the eyes and pawn, but it seems to hold a small mystery.";
 	say "[line break]";
@@ -361,7 +365,7 @@ check examining lucent row when lucent row is examined and number of hintthings 
 		else:
 			say "Perhaps the [er jot] would offer a clue." instead;
 	else:
-		say "Lucent is a weird word -- but you read [ara]'s jot, and it was for practice, but she wouldn't have had you do something weird early.";
+		say "Lucent is a weird word -- but you read [ara]'s jot, and it was for practice, but she wouldn't have had you do something weird early." instead;
 
 report examining lucent row:
 	if jot is unexamined:
@@ -379,12 +383,14 @@ check taking a startprop:
 	if number of hintthings in Mine Ooh is 0, say "You already took what was on [the noun]." instead;
 	say "You can just take [the list of hintthings in Mine Ooh] if you want." instead;
 
+understand "them" as all when player is in mine ooh
+
 check examining startprop when the noun is unexamined:
-	say "The items on [the noun] look weird at first, but after having a thought, you see they are [eyes] and [a war pawn]. You're free to [b]TAKE[r] them, if you want.";
+	say "The items on [the noun] look weird at first, but after having a thought, you see they are [eyes] and [a war pawn]. You're free to take them with [b]TAKE ALL[r], if you want.";
 	move slice eyes to mine ooh;
 	move war pawn to mine ooh;
-	now the noun is examined;
 	now ledge is examined;
+	now lucent row is examined;
 	the rule succeeds;
 
 chapter taking hintthings
@@ -410,7 +416,7 @@ chapter loose intro
 the loose intro is a hintthing. description is "[intro-table]". eyes-number of loose intro is -1. drop-poke of loose intro is "You've currently [if loose intro is unexamined]not examined it yet[else if gs-loose-intro-read is false]read [intro-row - 1 in words] of [number of rows in table of intro jabber in words] pages[else]read it all[end if].[paragraph break]Are you sure you want to drop the loose intro? It's not game-critical.". drop-notify-text of loose intro is "[crumple-it]."
 
 check examining loose intro when loose intro is unexamined:
-	say "It's an introduction to your world, not from [ara], but from one Hugh Morris AKA Mick Stupp. At the top is a note that while no puzzles are spoiled or hinted, the author does discuss his views on how [this-game] compares to [wp] (length, plot, etc.) and also mentions how two or three puzzles break the mold a bit.";
+	say "It's an introduction to your world, not from [ara], but from one Hugh Morris AKA Mick Stupp. Before reading the intro proper, you note a small warning that while no puzzles are spoiled or hinted, the author does discuss his views on how [this-game] compares to [wp] (length, plot, etc.) and also mentions how two or three puzzles break the mold a bit.";
 	now loose intro is examined;
 	the rule succeeds;
 
