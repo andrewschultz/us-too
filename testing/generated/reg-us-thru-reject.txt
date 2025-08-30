@@ -1496,6 +1496,9 @@ That thought/action/observation/request brings up nothing. Us Too has a limited 
 >think
 You can make A STEW here now you have all the ingredients you need. X should list them.
 
+>nope on
+by a bonus point
+
 >a stew
 by a point
 

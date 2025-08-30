@@ -1024,6 +1024,9 @@ Mapping outside to down, since it is the only worthwhile direction to go.
 >undo
 >undo
 
+>nope on
+by a bonus point
+
 >a stew
 by a point
 

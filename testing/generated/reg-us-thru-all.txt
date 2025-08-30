@@ -689,7 +689,7 @@ You feel belittled, but hey, a free raft is a free raft. Your prime oar should w
 >s
 
 #testcase-room-names-far-miles-farm-isles
-Far Miles Farm Isles
+`Far-Miles Farm Isles
 
 >find rinks
 by a point
@@ -709,7 +709,7 @@ by a point
 You have no idea whether to call a bear or even if it's a good idea. But you find a honeycomb high up in a tree. It's too high up for you, even when you return with the prime oar, which will maybe be useful if things get violent.
 You wave the oar around the tree, hoping to catch a bear's attention. The bear nods at you as if to say "Huh, Neatest Honey Test!" You hand it the prime oar, and it swats down the honeycomb, which it takes. But it provides you with a variety of berries in payment for saving it the effort with the oar. Then it lifts up a paw. You are on its territory. It would not do to stay. You have gotten what you want, and it is time to go. So you do.
 
-`Far Miles Farm Isles
+`Far-Miles Farm Isles
 
 >barn open
 by a point
@@ -892,6 +892,9 @@ Your Aw-Lug-All-Ugh feels like it may burst from the additional weight! Good thi
 "But now, this space needs to heal, free of human interference. Even worthy humans." You nod and leave. There can't be much left to do, now.
 
 >d
+
+>nope on
+by a bonus point
 
 >a stew
 by a point

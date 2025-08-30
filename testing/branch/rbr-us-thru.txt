@@ -66,7 +66,7 @@ House Well-How-Swell
 >about
 Once you figure what to say to the lawyers (a short phrase with short words,) you will have the opportunity to uncover a small in-game document with my general relatively non-spoilery thoughts on Us Too's design. It's not necessary, of course, but attaining the bonus point may help gear you up for the other puzzles.
 
->how so
+>>how so
 by a point
 
 @all
@@ -172,7 +172,7 @@ The eyes light up green and show three dots, then five dots.
 >eye trike west
 The eyes light up green and show three dots, then five dots.
 
->try quest
+>>try quest
 by a point
 
 @all
@@ -565,7 +565,7 @@ You're pretty sure you have one word right for getting rid of the beast.
 >eye beast wrong
 The eyes light up green and show two dots, then six dots.
 
->be strong
+>>be strong
 by a point
 
 @all
@@ -749,7 +749,7 @@ But then the Goal-Edge-Go Ledge, containing nothing, retracts after a bit. Well,
 >undo
 
 @!min
->loose intro
+>>loose intro
 by a bonus point
 
 @all
@@ -889,7 +889,7 @@ You already discarded the loose intro that discusses design and such for Us Too,
 The eyes light up green and show six dots, then six dots.
 Hmm, can't be the whole document. Must be one thing in particular you can pick off at any time.
 
->summon cheese
+>>summon cheese
 by a point
 
 @all
@@ -997,7 +997,7 @@ You can discover an HERB RANCH once you are back in the Ur-Branch.
 \\
 >u
 
->herb ranch
+>>herb ranch
 by a point
 
 @all
@@ -1060,7 +1060,7 @@ You can discover a SUMMER BAY once you are back in the Ur-Branch.
 >think
 You can discover a SUMMER BAY now you are back in the Ur-Branch.
 
->summer bay
+>>summer bay
 by a point
 
 @all
@@ -1135,7 +1135,7 @@ Mapping outside to west, since it is the only worthwhile direction to go.
 \\
 >undo
 
->be chill
+>>be chill
 by a point
 
 @all
@@ -1180,7 +1180,7 @@ You're pretty sure you have one word right for making the swarm less aggressive.
 >eye nigh swarm
 The eyes light up green and show four dots, then four dots.
 
->nice warm
+>>nice warm
 by a point
 
 @all
@@ -1225,7 +1225,7 @@ You're pretty sure you have one word right for finding a purpose for the pro bal
 >eye pro ball
 The eyes light up green and show five dots, then three dots.
 
->probe all
+>>probe all
 by a point
 
 @all
@@ -1293,7 +1293,7 @@ You're pretty sure you have one word right for making the meh spot into somethin
 >eye meh spot
 The eyes light up green and show four dots, then three dots.
 
->mess pot
+>>mess pot
 by a point
 
 @rej
@@ -1340,7 +1340,7 @@ You're pretty sure you have one word right for having harmless, useless fun with
 The eyes glow dimly green and show three dots, then four dots.
 
 @!min
->meh skit
+>>meh skit
 by a bonus point
 
 @all
@@ -1419,7 +1419,7 @@ The eyes light up green and show five dots, then three dots.
 >bored xxx
 No, becoming bored would be giving in. But you must be close, here.
 
->board red
+>>board red
 by a point
 
 @all
@@ -1510,7 +1510,7 @@ You're pretty sure you have one word right for avoiding the black ops.
 >undo
 >undo
 
->blah copse
+>>blah copse
 by a point
 
 @all
@@ -1577,7 +1577,7 @@ You're pretty sure you have one word right for repelling the Forest Team for Est
 >eye forest team
 The eyes light up green and show three dots, then five dots.
 
->nah queue
+>>nah queue
 by a point
 
 @all
@@ -1623,7 +1623,7 @@ The eyes light up green and show four dots, then five dots.
 >or clerk
 {$REJECT2}
 
->surf ready
+>>surf ready
 by a point
 
 @all
@@ -1658,7 +1658,7 @@ You're pretty sure you have one word right for figuring what Sir Freddie was sca
 >undo
 >undo
 
->or clerk
+>>or clerk
 by a point
 
 @all
@@ -1771,7 +1771,7 @@ by a point
 >eye
 The eyes light up green and show four dots, then six dots.
 
->more flares
+>>more flares
 by a point
 
 @all
@@ -1854,7 +1854,7 @@ You're pretty sure you have one word right for discovering what the row (plaider
 >eye row plaider
 The eyes light up green and show four dots, then six dots.
 
->rope ladder
+>>rope ladder
 by a point
 
 @all
@@ -1915,7 +1915,7 @@ You looted the Morph Lairs well enough.
 \\
 >undo
 
->guard entry
+>>guard entry
 by a point
 
 @all
@@ -2011,7 +2011,7 @@ You retreat to the Ur-Branch.
 >undo
 >undo
 
->peace talks
+>>peace talks
 by a point
 
 @all
@@ -2054,7 +2054,7 @@ The eyes glow dimly green and show three dots, then three dots.
 Hmm. Looks like some detail about this place to explore, if you're curious.
 
 @!min
->pea pod
+>>pea pod
 by a bonus point
 
 @all
@@ -2157,7 +2157,7 @@ You can commence DOUGH MAKING here once you have overcome the can't-ache.
 >in earnest
 {$XTRA}
 
->can take
+>>can take
 by a point
 
 @all
@@ -2213,7 +2213,7 @@ by a point
 >eye great inn
 The eyes light up green and show four dots, then three dots.
 
->gray tin
+>>gray tin
 by a point
 
 @all
@@ -2262,7 +2262,7 @@ You're pretty sure you have one word right for doing something positive in Dome,
 >think
 You can commence DOUGH MAKING here now you have overcome the can't-ache.
 
->dough making
+>>dough making
 by a point
 
 @all
@@ -2310,7 +2310,7 @@ You're pretty sure you have one word right for figure how to visit the inner nes
 >eye inner nest
 The eyes light up green and show two dots, then seven dots.
 
->in earnest
+>>in earnest
 by a point
 
 @all
@@ -2392,7 +2392,7 @@ You're pretty sure you have one word right for figuring how to take the prime oa
 >eye prime oar
 The eyes light up green and show three dots, then four dots.
 
->pry more
+>>pry more
 by a point
 
 @all
@@ -2469,7 +2469,7 @@ You can get a PUNT WEAKER now you are able to help the pun tweaker fix the ship 
 >eye pun tweaker
 The eyes light up green and show four dots, then six dots.
 
->punt weaker
+>>punt weaker
 by a point
 
 @all
@@ -2556,7 +2556,7 @@ You're pretty sure you have one word right for figuring a way through the bay sp
 >eye bay spikes
 The eyes light up green and show four dots, then five dots.
 
->base pikes
+>>base pikes
 by a point
 
 @all
@@ -2611,7 +2611,7 @@ The eyes light up green and show three dots, then five dots.
 >pi xxx
 Hmm. That SOUNDED like it should work at least part way, but it didn't.
 
->pie crust
+>>pie crust
 by a point
 
 @all
@@ -2655,7 +2655,7 @@ You're pretty sure you have one word right for reaching the high cup.
 >eye high cup
 The eyes light up green and show four dots, then two dots.
 
->hike up
+>>hike up
 by a point
 
 @all
@@ -2755,7 +2755,7 @@ You're pretty sure you have one word right for finding something in the Sore Dar
 >eye
 The eyes light up green and show five dots, then three dots.
 
->sword ark
+>>sword ark
 by a point
 
 @all
@@ -2818,7 +2818,7 @@ You can become the owner of a TERRIBLE AID here once it has fallen to where you 
 >think
 You can transform the blah string to a BLAST RING now you have found something to blast.
 
->blast ring
+>>blast ring
 by a point
 
 @all
@@ -2863,7 +2863,7 @@ The eyes light up green and show eight dots, then three dots.
 >think
 You can become the owner of a TERRIBLE AID here now it has fallen to where you can reach it.
 
->terrible aid
+>>terrible aid
 by a point
 
 @all
@@ -2950,7 +2950,7 @@ You're pretty sure you have one word right for operating the oak lever.
 >eye oak lever
 The eyes light up green and show two dots, then six dots.
 
->oh clever
+>>oh clever
 by a point
 
 @all
@@ -3041,7 +3041,7 @@ You're pretty sure you have one word right for how to fracture the tube/rod.
 >undo
 >undo
 
->too broad
+>>too broad
 by a point
 
 @all
@@ -3151,7 +3151,7 @@ by a point
 \\
 >undo
 
->ho langour
+>>ho langour
 by a point
 
 @all
@@ -3222,7 +3222,7 @@ You're pretty sure you have one word right for revealing what's behind the felt 
 >eye felt wrap
 The eyes light up green and show four dots, then four dots.
 
->fell trap
+>>fell trap
 by a point
 
 @all
@@ -3286,7 +3286,7 @@ You're pretty sure you have one word right for escaping the Cell, Urban.
 >undo
 >undo
 
->cellar bin
+>>cellar bin
 by a point
 
 @all
@@ -3403,7 +3403,7 @@ You're pretty sure you have one word right for get by the Sage Oaks.
 >undo
 >undo
 
->say jokes
+>>say jokes
 by a point
 
 @all
@@ -3454,7 +3454,7 @@ You're pretty sure you have one word right for see how to stop gasping OUCH.
 >undo
 >undo
 
->gas pouch
+>>gas pouch
 by a point
 
 @all
@@ -3597,7 +3597,7 @@ You found the only important command to start with SAY.
 >eye clay mitt
 The eyes light up green and show five dots, then two dots.
 
->claim it
+>>claim it
 by a point
 
 @verbs
@@ -3648,7 +3648,7 @@ The eyes light up green and show four dots, then three dots.
 >think
 You can pick up DAMP INK here now you have a proper container.
 
->damp ink
+>>damp ink
 by a point
 
 @all
@@ -3735,7 +3735,7 @@ The eyes show nothing. Probably don't need to change up anything to get somethin
 >think
 You can SCRY BROOM and get it here now you have something the scribes want.
 
->scry broom
+>>scry broom
 by a point
 
 @all
@@ -3842,7 +3842,7 @@ Dam, Pink
 >rr
 Dust Which Does Twitch
 
->pro sweeping
+>>pro sweeping
 by a point
 
 @all
@@ -3890,7 +3890,7 @@ You're pretty sure you have one word right for knowing what to look for in the c
 >eye coal drum
 The eyes light up green and show four dots, then three dots.
 
->cold rum
+>>cold rum
 by a point
 
 @all
@@ -3934,7 +3934,7 @@ You're pretty sure you have one word right for divining what's beneath Teal Eave
 >undo
 >undo
 
->tea leaves
+>>tea leaves
 by a point
 
 @all
@@ -3995,7 +3995,7 @@ You're pretty sure you have one word right for figuring how to "clean" the bell 
 The eyes light up green and show four dots, then six dots.
 
 @!rej
->belt rusted
+>>belt rusted
 by a point
 
 @all
@@ -4059,7 +4059,7 @@ You're pretty sure you have one word right for figuring how to get back on your 
 >eye
 The eyes light up green and show four dots, then four dots.
 
->bold itch
+>>bold itch
 by a point
 
 @all
@@ -4149,7 +4149,7 @@ You're pretty sure you have one word right for bringing more business to Turbo T
 The eyes glow dimly green and show four dots, then seven dots.
 
 @!min
->tour boaters
+>>tour boaters
 by a bonus point
 
 @all
@@ -4199,7 +4199,7 @@ You're pretty sure you have one word right for finding more appropriate transpor
 >eye star craft
 The eyes light up green and show five dots, then four dots.
 
->stark raft
+>>stark raft
 by a point
 
 @all
@@ -4227,7 +4227,7 @@ You can only go back east to the Bowl/Ditch or south via the raft.
 
 @all
 #testcase-room-names-far-miles-farm-isles
-Far Miles Farm Isles
+`Far-Miles Farm Isles
 
 @gt
 #testcase-goto-table-of-noways-farm-isles
@@ -4279,7 +4279,7 @@ The eyes light up yellow and show four dots, then four dots.
 >eye fine drinks
 The eyes light up green and show four dots, then five dots.
 
->find rinks
+>>find rinks
 by a point
 
 @all
@@ -4354,7 +4354,7 @@ You already found them! You just need to figure what to do to the south.
 >eye
 The eyes light up green and show four dots, then seven dots.
 
->bear respond
+>>bear respond
 by a point
 
 @all
@@ -4364,7 +4364,7 @@ You have no idea whether to call a bear or even if it's a good idea. But you fin
 You wave the oar around the tree, hoping to catch a bear's attention. The bear nods at you as if to say "Huh, Neatest Honey Test!" You hand it the prime oar, and it swats down the honeycomb, which it takes. But it provides you with a variety of berries in payment for saving it the effort with the oar. Then it lifts up a paw. You are on its territory. It would not do to stay. You have gotten what you want, and it is time to go. So you do.
 
 @all+
-`Far Miles Farm Isles
+`Far-Miles Farm Isles
 
 @gt
 #+testcase-goto-table-of-noways-farm-isles
@@ -4425,7 +4425,7 @@ The eyes light up green and show four dots, then four dots.
 >think
 You can transact with the BARN OPEN here now you have food to barter.
 
->barn open
+>>barn open
 by a point
 
 @all
@@ -4506,7 +4506,7 @@ You're pretty sure you have one word right for finding signs of life in Sob Acre
 >eye
 The eyes light up green and show three dots, then six dots.
 
->saw bakers
+>>saw bakers
 by a point
 
 @all
@@ -4611,7 +4611,7 @@ The eyes light up green and show four dots, then seven dots.
 \\
 >undo
 
->dell eastern
+>>dell eastern
 by a point
 
 @all
@@ -4690,7 +4690,7 @@ Not that way. Out or east.
 >think
 You can trade for some DOPE ALE now you've found find willing traders with a bit extra.
 
->dope ale
+>>dope ale
 by a point
 
 @all
@@ -4741,7 +4741,7 @@ You're pretty sure you have one word right for figuring what the Toon Eat-Too-Ne
 >eye toon
 The eyes light up green and show four dots, then eight dots.
 
->beef ordering
+>>beef ordering
 by a point
 
 @all
@@ -4791,7 +4791,7 @@ You're pretty sure you have one word right for guessing what free samples are on
 >eye sign
 The eyes light up green and show five dots, then three dots.
 
->wheat rye
+>>wheat rye
 by a point
 
 @all
@@ -4856,7 +4856,7 @@ The eyes light up green and show three dots, then five dots.
 >eye pliers
 {$EYEITMNO} the "Mope, Liars, Mo'" Pliers.
 
->den specs
+>>den specs
 by a point
 
 @all
@@ -4938,7 +4938,7 @@ You're pretty sure you have one word right for seeing what's behind the groan od
 >undo
 >undo
 
->grow nodes
+>>grow nodes
 by a point
 
 @all
@@ -4987,7 +4987,7 @@ You're pretty sure you have one word right for figuring how to destroy the nodes
 >eye nodes
 The eyes light up green and show two dots, then four dots.
 
->no date
+>>no date
 by a point
 
 @all
@@ -5102,7 +5102,7 @@ You're pretty sure you have one word right for befriending the guardians in the 
 >eye maul tower
 The eyes light up green and show four dots, then four dots.
 
->malt hour
+>>malt hour
 by a point
 
 @all
@@ -5205,7 +5205,7 @@ by a point
 >think
 You can call a JOIN AIDER here now you have two items of power to join.
 
->join aider
+>>join aider
 by a point
 
 @all
@@ -5256,7 +5256,7 @@ You're pretty sure you have one word right for making the dew pit useful.
 >undo
 >undo
 
->dupe it
+>>dupe it
 by a point
 
 @all
@@ -5371,7 +5371,7 @@ You're pretty sure you have one word right for disobeying the throne's orders.
 >think
 You can USE IT here now you have an item of power to use.
 
->use it
+>>use it
 by a point
 
 @all
@@ -5416,7 +5416,7 @@ You're pretty sure you have one word right for getting something useful from the
 >eye life roots
 The eyes light up green and show three dots, then six dots.
 
->lie fruits
+>>lie fruits
 by a point
 
 @all
@@ -5714,7 +5714,11 @@ You can make A STEW here now you have all the ingredients you need. X should lis
 >undo
 >undo
 
->a stew
+@!min
+>>nope on
+by a bonus point
+
+>>a stew
 by a point
 
 @all
