@@ -1,0 +1,9 @@
+9/1/2025:
+--forgot to add Melvin Rangasamy to credits (he found a lot of stuff, and I said oh I'll add him after. Yikes.)
+--fixed X (main list) bug with extraneous line space
+--THINK now has "here" or "in room X" for when you know what to do but didn't have the right items
+--eliminated debug code
+--you open the passage up in the hub earlier (rule misfire)
+--added option to unblock/block areas once done
+--added option to make THINK help more detailed e.g. guessing word1 xxx / xxx word2 will now say "word1 word2 is it" if you set an option
+--also, when you have guessed both word right, it says "just" versus "already"
