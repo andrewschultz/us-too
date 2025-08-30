@@ -247,7 +247,7 @@ to decide which number is first-command-points: [ boolval doesn't quite work her
 	decide on temp;
 
 to decide which number is options-found:
-	decide on (boolval of gs-warn-blah-cough) + (boolval of gs-warn-think-well);
+	decide on (boolval of gs-know-blah-cough) + (boolval of gs-know-think-well);
 
 to decide which number is garden-score:
 	decide on (boolval of sco-pea-pod) + (boolval of sco-peace-talks);
@@ -316,7 +316,7 @@ volume command parsing
 
 rule for printing a parser error when the latest parser error is the not a verb I recognise error or the latest parser error is the didn't understand error (this is the catch bad verbs rule):
 	if player is in mine ooh and sco-try-quest is false:
-		say "You're not quite sure how to get started and get focused. There are almost too many possibilities. The help you see in the mine -- well, tha may be later. Perhaps examining yourself with [b]X ME[r] or recapping what you know with [b]THINK[r] would help.";
+		say "You're not quite sure how to get started and get focused. There are almost too many possibilities. The help you see in the mine -- well, that may be later. Perhaps examining yourself with [b]X ME[r] or recapping what you know with [b]THINK[r] would help.";
 		the rule succeeds;
 	say "[generic-parser-error].";
 	the rule succeeds;

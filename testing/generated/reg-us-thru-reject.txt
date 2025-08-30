@@ -19,12 +19,12 @@ by a point
 #testcase-check-pre-be-chill-rule-if-player-is-not-in-beach-ill
 #testcase-reject-start-table-of-main-oronyms-pre-be-chill-rule
 >be chill
-You're not quite sure how to get started and get focused. There are almost too many possibilities. The help you see in the mine -- well, tha may be later. Perhaps examining yourself with X ME or recapping what you know with THINK would help.
+You're not quite sure how to get started and get focused. There are almost too many possibilities. The help you see in the mine -- well, that may be later. Perhaps examining yourself with X ME or recapping what you know with THINK would help.
 
 #testcase-check-pre-be-strong-rule-if-beast-wrong-is-not-in-location-of-player
 #testcase-reject-start-table-of-main-oronyms-pre-be-strong-rule
 >be strong
-You're not quite sure how to get started and get focused. There are almost too many possibilities. The help you see in the mine -- well, tha may be later. Perhaps examining yourself with X ME or recapping what you know with THINK would help.
+You're not quite sure how to get started and get focused. There are almost too many possibilities. The help you see in the mine -- well, that may be later. Perhaps examining yourself with X ME or recapping what you know with THINK would help.
 
 >try quest
 by a point

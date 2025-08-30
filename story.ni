@@ -484,8 +484,9 @@ check going in ur branch when noun is branchdone (this is the branch blocker rul
 		say "You hear someone say blah, then cough. You're probably done here, but nobody stops you from going back.";
 		continue the action;
 	say "[donetext of noun][line break]";
-	if gs-warn-blah-cough is false:
+	if gs-know-blah-cough is false:
 		say "[line break]You can disable this with [b]BLAH COUGH[r], or you can block it again with [b]BLOCK OFF[r]. This will be in [b]VERBS[r].";
+		now gs-know-blah-cough is true;
 	the rule succeeds;
 
 after printing the locale description of ur branch when need-meh:
@@ -1843,12 +1844,12 @@ understand "option" as optionsing.
 understand "opts" as optionsing.
 understand "opt" as optionsing.
 
-check optionsing when options-found is 0: say "There are no options you've discovered yet. Well, if you know them from another playthrough, you can use them." instead;
+check optionsing when options-found is 0: say "You haven't found either option that affects gameplay. One appears when you try to visit blocked-off areas, and one appears when you get each half of a solution right on different occasions[one of]. They don't appear at the start because I didn't want to overload you with potentially useless options early on[or][stopping].[paragraph break]However, if you know them from another playthrough, you can use them." instead;
 
 carry out optionsing:
-	say "You have found/learned of [options-found in words] of two total options:[paragraph break]";
-	if gs-warn-blah-cough is true, say "[b]BLAH COUGH[r] disables the automatic block-off for completed branches. [b]BLOCK OFF[r] enables it. Allowing free movement is currently [on-off of gs-warn-blah-cough].";
-	if gs-warn-think-well is true, say "[b]THINK WELL[r] shows a full point-scoring command if you've guessed each part. [b]THIN QUELL[r] (default) turns it off. This option is currently [on-off of gs-warn-think-well].";
+	say "You have found/learned of [if options-found is two]both[else][options-found in words] of two total[end if] options:[paragraph break]";
+	if gs-know-blah-cough is true, say "[b]BLAH COUGH[r] disables the automatic block-off for completed branches. [b]BLOCK OFF[r] enables it. Allowing completely free movement is currently [on-off of opt-blah-cough].";
+	if gs-know-think-well is true, say "[b]THINK WELL[r] shows a full point-scoring command if you've guessed each part. [b]THIN QUELL[r] (default) turns it off. This option is currently [on-off of opt-think-well].";
 
 chapter blahcoughing
 
@@ -1861,7 +1862,7 @@ understand "blah cough" as blahcoughing.
 carry out blahcoughing:
 	say "You can [if opt-blah-cough is true]already[else]now[end if] revisit completed branches.";
 	now opt-blah-cough is true;
-	now gs-warn-blah-cough is true;
+	now gs-know-blah-cough is true;
 	the rule succeeds;
 
 chapter blockoffing
@@ -1870,12 +1871,12 @@ blockoffing is an action out of world.
 
 understand the command "block off" as something new.
 
-understand "block off" as blahcoughing.
+understand "block off" as blockoffing.
 
 carry out blockoffing:
-	say "You have [if opt-blah-cough is false]already[else]now[end if] blocked off revisit completed branches.";
-	now opt-blah-cough is true;
-	now gs-warn-blah-cough is true;
+	say "You have [if opt-blah-cough is false]already[else]now[end if] blocked off revisiting completed branches.";
+	now opt-blah-cough is false;
+	now gs-know-blah-cough is true;
 	the rule succeeds;
 
 book verbs

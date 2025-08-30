@@ -28,7 +28,7 @@ volume booleans
 
 chapter options + have we got this yet?
 
-gs-warn-blah-cough is a truth state that varies.
+gs-know-blah-cough is a truth state that varies.
 opt-blah-cough is a truth state that varies.
 
 chapter printing details
