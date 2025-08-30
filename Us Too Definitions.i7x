@@ -146,10 +146,27 @@ volume directions
 
 a direction can be branchdone. a direction is usually not branchdone.
 
-definition: a direction (called v) is viable:
-	if the room v of location of player is nowhere, no;
-	if player is in ur branch and v is branchdone, no;
-	if player is in ur branch and v is down, no;
+definition: a direction (called di) is worthwhile:
+	if the room di of location of player is nowhere, no;
+	if player is in ur branch:
+		if di is branchdone, no;
+		if di is down:
+			if sco-probe-all is true and meh spot is not moot, yes;
+			if at-last-point, yes;
+			no; [most of the time we don't need to go down, but these are the special cases where something new has happened]
+	if player is in bore dread and sco-malt-hour is false and di is east, no;
+	if player is in beach ill and sco-hike-up is true and di is east, no;
+	if player is in blah copse and di is north and sco-rope-ladder is true, no;
+	if player is in dome aching and sco-pry-more is true and di is inside, no;
+	if player is in turbo tours and sco-barn-open is true and di is south, no;
+	if player is in far miles farm isles and sco-bear-respond is true and di is south, no;
+	if player is in sob acres:
+		if di is west, no; [west is worthwhile, but since west = inside it will create faux ambiguity ]
+		if sco-no-date is true and di is down, no;
+		if gs-deli-party is true and di is inside, no;
+	if player is in bowl ditch:
+		if di is west and sco-barn-open is true and sco-tour-boaters is true, no;
+		if di is north and gs-deli-party is true and sco-no-date is true, no;
 	yes;
 
 definition: a direction (called di) is eventual:

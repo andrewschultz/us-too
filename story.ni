@@ -1524,13 +1524,13 @@ check going outside when player is in an ordroom:
 
 check going outside:
 	unless the room gone to is nowhere, continue the action;
-	let v be number of viable directions;
-	if v > 1, say "Out is ambiguous here. There are [v in words] ways to leave: [list of viable directions]." instead;
-	if v < 1, continue the action;
-	let j be a random viable direction;
-	if j is not outside:
-		say "Mapping outside to [j], since it is the only direction you can go.";
-		try going j instead;
+	let wd be number of worthwhile directions;
+	if wd > 1, say "Out is ambiguous here. There are [wd in words] worthwhile ways to leave: [list of worthwhile directions]." instead;
+	if wd < 1, continue the action;
+	let myd be a random worthwhile direction;
+	if myd is not outside:
+		say "Mapping outside to [myd], since it is the only worthwhile direction to go.";
+		try going myd instead;
 
 volume regular verbs
 
@@ -1887,7 +1887,7 @@ check verbsing when player is in house:
 carry out verbsing:
 	say "[this-game] uses a reduced parser, though you need to guess point-scoring commands. You move in standard directions, with diagonals only in [if ur branch is visited][ur branch][else]a hub room just above[end if]. While [b]X (something)[r] is useful for insight for what you need to do with an item, [b]X[r] on its own lets you see a list of what you need and have, for general progress, though [b]I[r] still inventories helper items not requested by [ara].";
 	say "[line break]Many standard parser verbs also are unnecessary, though they may give hints and flavor. [b]TAKE[r] is one example: items are implicitly taken as you need them and used up, though to help you avoid temptation, the game makes you [b]TAKE[r] hint items and lets you [b]DROP[r] them for good.";
-	say "[b]O[r] is a shortcut to go outside, and if there's only one viable direction to leave the current room, it goes that way.";
+	say "[b]O[r] is a shortcut for the outside direction. If there's only one worthwhile direction to leave the current room, it goes that way, though if there are more than one, it just lists exits.";
 	say "[b]T[r]/[b]TALK[r]ing to NPCs (subject usually not necessary) or [b]LISTEN[r] may provide additional cues. Additionally, [b]EAT[r] and [b]CLIMB[r] may be marginally useful or amusing.";
 	say "[line break]While [b]SCORE[r] gives your game-score (also listed in the upper right), [b]THINK[r] may be more useful to track point-scoring commands that you found that will work later, or commands you got half-right.";
 
