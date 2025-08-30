@@ -72,6 +72,8 @@ a rotroom is a kind of room. a rotroom has a rotroom called nextroom.
 
 an ordroom is a kind of rotroom. an ordroom has a number called rmord. rmord of an ordroom is usually 0. an ordroom has text called roomdirs.
 
+an ordroom has a rule called south-useful-rule.
+
 to decide whether ordrooms-seen:
 	if number of visited ordrooms is 3, yes;
 	no;

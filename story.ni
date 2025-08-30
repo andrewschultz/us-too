@@ -1346,7 +1346,11 @@ after printing the locale description when gs-nn-noted is false and (player is i
 
 part Tube Rod
 
-Tube Rod is an ordroom in r-south. rmord of Tube Rod is 3. eyes-number of Tube Rod is 35. printed name is "[if sco-too-broad is false]Tube/Rod[else]'Grasp, Ace: Grass' Space[end if]". eyes-rule of Tube Rod is pre-too-broad rule. "[if sco-too-broad is false]Further passage south is blocked by a huge nondescript wall with a single tube/rod sticking out of it[else]With the tube/rod burst, it's much more green and relaxing and expansive here. You can now go south as well as back north[end if].". roomdirs of Tube Rod is "NE/S".
+Tube Rod is an ordroom in r-south. rmord of Tube Rod is 3. eyes-number of Tube Rod is 35. printed name is "[if sco-too-broad is false]Tube/Rod[else]'Grasp, Ace: Grass' Space[end if]". eyes-rule of Tube Rod is pre-too-broad rule. "[if sco-too-broad is false]Further passage south is blocked by a huge nondescript wall with a single tube/rod sticking out of it[else]With the tube/rod burst, it's much more green and relaxing and expansive here. You can now go south as well as back north[end if].". roomdirs of Tube Rod is "NE/S". south-useful-rule of tube rod is south-tube-rod rule.
+
+this is the south-tube-rod rule:
+	if sco-damp-ink is true and sco-claim-it is true, the rule fails;
+	the rule succeeds;
 
 chapter tuberodscen
 
@@ -1356,13 +1360,21 @@ understand "wall" and "tube/rod" and "tube rod" as tuberodscen when tuberodscen 
 
 part Too Dark Tude Ark
 
-Too Dark Tude Ark is an ordroom in r-south. rmord of Too Dark is 1. printed name of tude ark is "[if sco-ho-langour is true]'Ugh?! Lo, a Glow'[else]Too-Dark [']Tude Ark[end if]". "[if sco-ho-langour is false]Your attitude can't help grow dark as you wonder if it was really worth running all the way here from the north. A brief look shows nothing ahead. You found some shortcuts and hideouts so you can go back north safely, but that's no fun[else]It's no longer too dark here. There's not much here, but at least it's not too dark. Oh, there's a passage south as well as one back north[end if].". eyes-number of Too Dark Tude Ark is 1. roomdirs of Tude Ark is "NE/D/U/S".
+Too Dark Tude Ark is an ordroom in r-south. rmord of Too Dark is 1. printed name of tude ark is "[if sco-ho-langour is true]'Ugh?! Lo, a Glow'[else]Too-Dark [']Tude Ark[end if]". "[if sco-ho-langour is false]Your attitude can't help grow dark as you wonder if it was really worth running all the way here from the north. A brief look shows nothing ahead. You found some shortcuts and hideouts so you can go back north safely, but that's no fun[else]It's no longer too dark here. There's not much here, but at least it's not too dark. Oh, there's a passage south as well as one back north[end if].". eyes-number of Too Dark Tude Ark is 1. roomdirs of Tude Ark is "NE/D/U/S". south-useful-rule of tude ark is south-tude-ark rule.
+
+this is the south-tude-ark rule:
+	if sco-belt-rusted is true, the rule fails;
+	the rule succeeds;
 
 the whole anger is a thing in Tude Ark. "Whole anger swirls around here, consuming your every thought.". description is "How can one describe anger? It's there, and it's tough to shake.". eyes-number of whole anger is 27. eyes-rule of whole anger is pre-ho-langour rule.
 
 part Sage Oaks
 
-Sage Oaks is an ordroom in r-south. rmord of Sage Oaks is 2. "Sage oaks stand here, [if sco-say-jokes is false]glaring at your unworthy self. [else]almost nodding with respect for you. [oaks-south][end if]You can always just go back north[if sco-say-jokes is false], too[end if].". eyes-number of Sage Oaks is 35. eyes-rule of Sage Oaks is pre-say-jokes rule. roomdirs of Sage Oaks is "X TRAP/U/NE/S".
+Sage Oaks is an ordroom in r-south. rmord of Sage Oaks is 2. "Sage oaks stand here, [if sco-say-jokes is false]glaring at your unworthy self. [else]almost nodding with respect for you. [oaks-south][end if]You can always just go back north[if sco-say-jokes is false], too[end if].". eyes-number of Sage Oaks is 35. eyes-rule of Sage Oaks is pre-say-jokes rule. roomdirs of Sage Oaks is "X TRAP/U/NE/S". south-useful-rule of Sage Oaks is south-sage-oaks rule.
+
+this is the south-sage-oaks rule:
+	if sco-tea-leaves is true and sco-cold-rum is true, the rule fails;
+	the rule succeeds;
 
 to say oaks-south:
 	if sco-gas-pouch is false:
@@ -1503,6 +1515,12 @@ understand the command "o" as something new. understand "o" as outside.
 understand the command "leave" as something new.
 understand the command "out" as something new.
 understand the command "exit" as something new.
+
+check going outside when player is in an ordroom:
+	if the room south of location of player is not nowhere:
+		consider the south-useful-rule of location of player;
+		if the rule succeeded, say "Ambiguous. You can go north or south." instead;
+	move player to ur branch instead;
 
 check going outside:
 	unless the room gone to is nowhere, continue the action;
