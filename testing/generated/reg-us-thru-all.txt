@@ -203,6 +203,7 @@ by a bonus point
 Perhaps it's too obvious, but you decide to have fun, and you do.
 
 >u
+
 >ne
 
 #testcase-room-names-bore-dread
@@ -323,8 +324,6 @@ by a bonus point
 #testcase-run-post-pea-pod-rule-default
 Oh wait! There is something that will add a bit of flavor! Actually, it's a weird giant pea pod!
 
->out
-
 >se
 
 #testcase-room-names-dome-aching
@@ -371,6 +370,7 @@ by a point
 Surely there must be some way to get the oar, you think. And you pry constructively. After an hour's work, you have an oar, lightweight and powerful.
 
 >out
+
 >nw
 
 >e
@@ -415,6 +415,7 @@ You decide the direct way of climbing the pile at a steep angle just won't work.
 It makes you almost forget about the high cup. Well, it turns out the high cup is glued to other trash. Dang it! You're not sure if you needed it, anyway. It looks a bit too fancy for whatever you want to prepare.
 
 >w
+
 >w
 
 >nw
@@ -720,6 +721,7 @@ Of course it makes sense there'd be a barn on farm isles. You visit the barn. In
 >n
 
 >e
+
 >n
 
 #testcase-room-names-sob-acres

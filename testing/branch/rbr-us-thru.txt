@@ -917,6 +917,15 @@ You could explore your mine, but you sense the real adventure lies back above in
 >summon cheese
 You already got some munchies! No need to be greedy.
 
+@gt
+##balance undos
+#testcase-room-out-my-new-mine-ooh
+>out
+Mapping outside to up, since it is the only worthwhile direction to go.
+`Ur-Branch
+\\
+>undo
+
 >u
 
 @all
@@ -1070,6 +1079,15 @@ Your newly opened mind discerns a safe passage east. Hey, that's a start!
 >summer bay
 You already used the herb to expand your mind! It is only good for seasoning now.
 
+@gt
+##balance undos
+#testcase-room-out-ur-branch
+>out
+Mapping outside to east, since it is the only worthwhile direction to go.
+`Beach, Ill
+\\
+>undo
+
 >e
 
 @all
@@ -1106,6 +1124,15 @@ You're pretty sure you have one word right for dealing with the beach, ill.
 You're pretty sure you have one word right for dealing with the beach, ill.
 \\
 >undo
+>undo
+
+@gt
+##balance undos
+#testcase-room-out-beach-ill
+>out
+Mapping outside to west, since it is the only worthwhile direction to go.
+`Ur-Branch
+\\
 >undo
 
 >be chill
@@ -1332,6 +1359,15 @@ Perhaps it's too obvious, but you decide to have fun, and you do.
 The skit would go from meh to cringe if you did it again.
 
 >u
+
+@gt
+##balance undos
+#+testcase-room-out-ur-branch # 1 -- first 3 open
+>out
+Out is ambiguous here. There are four worthwhile ways to leave: north, northeast, northwest and east.
+\\
+>undo
+
 >ne
 
 @all
@@ -1342,6 +1378,14 @@ The skit would go from meh to cringe if you did it again.
 #testcase-goto-table-of-noways-bore-dread
 >n
 You can only go southwest or, maybe, east once you figure a way.
+
+@gt+
+##balance undos
+#testcase-room-out-bore-dread
+>out
+`Ur-Branch
+\\
+>undo
 
 @part
 ##balance undos
@@ -1428,7 +1472,7 @@ The eyes light up yellow and show eight dots, then three dots.
 @rej
 #testcase-check-pre-blah-copse-rule-if-black-ops-are-not-in-ur-branch
 >blah copse
-!by one point
+!by a point
 \\
 #testcase-check-pre-guard-entry-rule-if-garden-tree-is-not-in-ur-branch
 >guard entry
@@ -1492,6 +1536,14 @@ You already figured how to evade the black ops! You can just go back north if yo
 #testcase-goto-table-of-noways-blah-copse
 >n
 You can only leave the copse to the south.
+
+@gt+
+##balance undos
+#testcase-room-out-blah-copse
+>out
+`Ur-Branch
+\\
+>undo
 
 @hint
 #testcase-values-eyes-number-of-blah-copse-is-1
@@ -1632,6 +1684,15 @@ You already figured nothing awful was lurking to the north.
 >e
 You can only leave the copse to the south or north.
 
+@gt+
+##balance undos
+#+testcase-room-out-blah-copse
+# after OR CLERK
+>out
+Out is ambiguous here. There are two worthwhile ways to leave: north and south.
+\\
+>undo
+
 @rej
 #testcase-check-pre-blast-ring-rule-if-player-is-not-in-sore-dark-or-sword-ark-is-not-in-sore-dark
 >blast ring
@@ -1650,6 +1711,14 @@ You can transform the blah string to a BLAST RING once you have found something 
 #testcase-goto-table-of-noways-morph-lairs
 >n
 Since you can't dare the morph lairs, the only way to leave is back south.
+
+@gt+
+##balance undos
+#testcase-room-out-morph-lairs
+>out
+`Blah Copse
+\\
+>undo
 
 @hom
 #testcase-homonym-reject-table-of-main-oronyms-flayers-flayer-flair-flairs-hom-flairs-flayers-rule
@@ -1741,6 +1810,14 @@ The eyes light up yellow and show four dots, then six dots.
 >undo
 >undo
 
+@gt
+##balance undos
+#+testcase-room-out-ur-branch #2 = southeast open
+>out
+Out is ambiguous here. There are six worthwhile ways to leave: north, northeast, northwest, southeast, east and inside.
+\\
+>undo
+
 >n
 
 >n
@@ -1824,6 +1901,20 @@ You're pretty sure you have one word right for finding a way past the garden tre
 >eye garden tree
 The eyes light up green and show five dots, then five dots.
 
+@gt
+##balance undos
+#+testcase-room-out-ur-branch # no more north
+>out
+Out is ambiguous here. There are six worthwhile ways to leave: northeast, northwest, southeast, east, up and inside.
+\\
+>undo
+\\
+#+testcase-branch-block-n
+>n
+You looted the Morph Lairs well enough.
+\\
+>undo
+
 >guard entry
 by a point
 
@@ -1850,6 +1941,19 @@ You already snuck past the garden tree so you could go IN!
 #testcase-goto-table-of-noways-pea-stalks
 >n
 Compass directions befuddle you at the moment. You can only go back out.
+
+@gt+
+##balance undos
+#testcase-room-out-pea-stalks
+>out
+`Ur-Branch
+\\
+#+testcase-room-out-ur-branch # inside available
+>out
+Out is ambiguous here. There are six worthwhile ways to leave: northeast, northwest, southeast, east, up and inside.
+\\
+>undo
+>undo
 
 @hint
 #testcase-values-eyes-number-of-pea-stalks-is-55
@@ -1963,7 +2067,24 @@ Oh wait! There is something that will add a bit of flavor! Actually, it's a weir
 >eye pea pod
 {$EYEITMDONE} the pea pod.
 
+@min
 >out
+
+@gt
+##balance undos
+`Ur-Branch
+\\
+#testcase-branch-block-in
+>in
+You got peace talks and an extra vegetable from behind the garden tree.
+You can disable this with BLAH COUGH, or you can block it again with BLOCK OFF. This will be in VERBS.
+\\
+#testcase-room-out-ur-branch
+>out
+Out is ambiguous here. There are five worthwhile ways to leave: northeast, northwest, southeast, east and up.
+\\
+>undo
+>undo
 
 @hint
 #+testcase-values-eyes-number-of-garden-tree-is-55
@@ -1983,6 +2104,14 @@ The only compass direction you can go is back northwest. However, you may also f
 \\
 >in
 The can't-ache kicks in, leaving you feeling like you couldn't possibly deserve to visit such a private place!
+
+@gt+
+##balance undos
+#testcase-room-out-dome-aching
+>out
+`Ur-Branch
+\\
+>undo
 
 @hint
 #testcase-values-eyes-number-of-dome-aching-is-56
@@ -2199,6 +2328,14 @@ Don't want to get too earnest, here.
 >e
 The only compass direction you can go is back northwest. However, you may also go in to the inner nest.
 
+@gt+
+##balance undos
+#+testcase-room-out-dome-aching
+>out
+Out is ambiguous here. There are two worthwhile ways to leave: northwest and inside.
+\\
+>undo
+
 @hint
 #+testcase-values-eyes-number-of-inscen-is-27
 >eye inner nest
@@ -2214,6 +2351,14 @@ The only compass direction you can go is back northwest. However, you may also g
 #testcase-goto-table-of-noways-inner-nest
 >n
 No secret passages here. You just need to go back out.
+
+@gt+
+##balance undos
+#testcase-room-out-inner-nest
+>out
+`Dome, Aching
+\\
+>undo
 
 @hint
 #testcase-values-eyes-number-of-inner-nest-is--1
@@ -2266,7 +2411,29 @@ You already pried and got the prime oar!
 {$EYEITMDONE} the prime oar.
 
 >out
+
+@gt
+##balance undos
+#testcase-room-out-dome-aching
+>out
+`Ur-Branch
+\\
+>undo
+
 >nw
+
+@gt
+##balance undos
+#testcase-room-out-ur-branch
+>out
+Out is ambiguous here. There are four worthwhile ways to leave: northeast, northwest, east and up.
+\\
+#+testcase-branch-block-se
+>se
+You looted the dome and the inner nest nicely.
+\\
+>undo
+>undo
 
 >e
 
@@ -2330,6 +2497,14 @@ You already got the punt, weaker!
 >n
 You can only walk back west or take the punt east.
 
+@gt+
+##balance undos
+#testcase-room-out-beach-ill
+>out
+Out is ambiguous here. There are two worthwhile ways to leave: east and west.
+\\
+>undo
+
 >e
 
 @all
@@ -2340,6 +2515,14 @@ You can only walk back west or take the punt east.
 #testcase-goto-table-of-noways-pile-up-isle
 >n
 You can't see land anywhere except back to the west.
+
+@gt+
+##balance undos
+#testcase-room-out-a-pile-up-isle
+>out
+`Dune Ever-Do-Never
+\\
+>undo
 
 @hint
 #testcase-values-eyes-number-of-a-pile-up-isle-is-1
@@ -2492,7 +2675,28 @@ There's nothing else to be found from another hike up. You're not getting the hi
 {$EYEITMDONE} the high cup.
 
 >w
+
+@gt
+##balance undos
+#+testcase-room-out-beach-ill #after punt
+>out
+`Ur-Branch
+\\
+>undo
+
 >w
+
+@gt
+#balance undos
+#+testcase-branch-block-e
+>e
+You got everything you needed to the east, which helped you discover passages to the south, west and southwest.
+\\
+>out
+Out is ambiguous here. There are four worthwhile ways to leave: northeast, northwest, southwest and up.
+\\
+>undo
+>undo
 
 >nw
 
@@ -2681,6 +2885,20 @@ You hear rumbling. You can't imagine there are any bigger secret here, so it see
 >terrible aid
 You probably shouldn't actively diss the Terra Blade, now you're carrying it.
 
+@gt
+##balance undos
+#+testcase-room-out-ur-branch # no more terrible aid
+>out
+Out is ambiguous here. There are three worthwhile ways to leave: northeast, southwest and up.
+\\
+>undo
+\\
+#+testcase-branch-block-nw
+>nw
+You can't imagine anything is in the dark other than the Terra Blade.
+\\
+>undo
+
 >sw
 
 @all
@@ -2691,6 +2909,14 @@ You probably shouldn't actively diss the Terra Blade, now you're carrying it.
 #testcase-goto-table-of-noways-fort-earns
 >w
 You can leave the fort to the northeast.
+
+@gt+
+##balance undos
+#testcase-room-out-fort-earns-four-turns
+>out
+`Ur-Branch
+\\
+>undo
 
 @hint
 #testcase-values-eyes-number-of-fort-earns-is-1
@@ -2753,6 +2979,14 @@ You already pulled the oak lever and made it disappear! You just need to do some
 
 >ne
 
+@gt
+##balance undos
+#+testcase-room-out-ur-branch # have speed, can go south/west?
+>out
+Out is ambiguous here. There are three worthwhile ways to leave: northeast, southwest and up.
+\\
+>undo
+
 >s
 
 @all
@@ -2767,6 +3001,14 @@ You already pulled the oak lever and made it disappear! You just need to do some
 #testcase-goto-table-of-noways-tube-rod
 >s
 You can only go back north to Ur-Branch right now, but maybe there's something beyond the tube/rod.
+
+@gt+
+##balance undos
+#testcase-room-out-tube-rod
+>out
+`Ur-Branch
+\\
+>undo
 
 @hint
 #testcase-values-eyes-number-of-tube-rod-is-35
@@ -2825,6 +3067,14 @@ You can pick up DAMP INK here once you have a proper container.
 \\
 >n
 
+@gt
+##balance undos
+#+testcase-room-out-tube-rod
+>out
+Ambiguous. You can go north or south.
+\\
+>undo
+
 >n
 
 >sw
@@ -2847,6 +3097,13 @@ You can pick up DAMP INK here once you have a proper container.
 #testcase-goto-table-of-noways-too-dark-tude-ark
 >s
 It feels hopeless to go any way but back north. Well, for now.
+
+@gt+
+##balance undos
+>out
+`Ur-Branch
+\\
+>undo
 
 @hint
 #testcase-values-eyes-number-of-too-dark-tude-ark-is-1
@@ -2886,6 +3143,14 @@ by a point
 \\
 >undo
 
+@gt
+##balance undos
+#+testcase-room-out-too-dark-tude-ark
+>out
+`Ur-Branch
+\\
+>undo
+
 >ho langour
 by a point
 
@@ -2917,6 +3182,14 @@ The scribes notice you looking at the broom. "Want it? Well, we won't trade it f
 You can SCRY BROOM and get it here once you have something the scribes want.
 \\
 >n
+
+@gt
+##balance undos
+#+testcase-room-out-too-dark-tude-ark
+>out
+Ambiguous. You can go north or south.
+\\
+>undo
 
 >n
 
@@ -2978,6 +3251,14 @@ You can just X TRAP to see what it might do.
 >n
 You'll have to use your wits to leave.
 
+@gt+
+##balance undos
+#testcase-room-out-cell-urban
+>out
+You'll have to use your wits to leave.
+\\
+>undo
+
 @hint
 #testcase-values-eyes-number-of-cell-urban-is-63
 >eye
@@ -3032,6 +3313,14 @@ Whenever you want to revisit the cellar bin, you can just X TRAP.
 >n
 Just go up to leave.
 
+@gt+
+##balance undos
+#testcase-room-out-cellar-bin
+>out
+`Fort Earns-Four-Turns
+\\
+>undo
+
 >u
 
 @gt
@@ -3074,6 +3363,14 @@ You can just X TRAP to return.
 #testcase-goto-table-of-noways-sage-oaks
 >s
 You can only go back north until you can deal with the Sage Oaks.
+
+@gt+
+##balance undos
+#testcase-room-out-sage-oaks
+>out
+`Ur-Branch
+\\
+>undo
 
 @hint
 #+testcase-values-eyes-number-of-sage-oaks-is-35
@@ -3174,6 +3471,14 @@ Well, you had to figure they had one or two zingers left.
 >w
 You can only go back north or south beyond the Sage Oaks.
 
+@gt+
+##balance undos
+#+testcase-room-out-sage-oaks
+>out
+Ambiguous. You can go north or south.
+\\
+>undo
+
 @hint
 #testcase-values-eyes-number-of-gas-pouch-is--1
 >eye gas pouch
@@ -3248,6 +3553,14 @@ You can only go back north to Ur-Branch or south past the remnants of the tube/r
 #testcase-goto-table-of-noways-dam-pink
 >s
 You can't see any way but back north.
+
+@gt+
+##balance undos
+#testcase-room-out-dam-pink
+>out
+`"Grasp, Ace: Grass" Space
+\\
+>undo
 
 @part
 ##balance undos
@@ -3379,6 +3692,13 @@ NOTE: you won't be able to RR again, since you still have one far-south room to 
 >w
 You can't see any way but back north.
 
+@gt+
+##balance undos
+#testcase-room-out-scribe-room
+>out
+"Ugh?! Lo, a Glow"
+>undo
+
 @part
 ##balance undos
 #testcase-one-right-table-of-main-oronyms-scry-broom-1-scry
@@ -3452,6 +3772,14 @@ The eyes show nothing. Perhaps it's better the broom isn't magical. You saw Fant
 #testcase-goto-table-of-noways-dust-which-does-twitch
 >w
 You can't see any way but back north.
+
+@gt+
+##balance undos
+#testcase-room-out-dust-which-does-twitch
+>out
+`Sage Oaks
+\\
+>undo
 
 @rej
 #testcase-check-pre-cold-rum-rule-if-coal-drum-is-not-in-dust-which
@@ -3754,6 +4082,35 @@ You already shook off your initial embarrassment and fears. Too much itch, and y
 >s
 You can only go north, west or back east.
 
+@gt+
+##balance undos
+#+testcase-room-out-ur-branch # inside available
+>out
+Out is ambiguous here. There are three worthwhile ways to leave: north, east and west.
+\\
+>e
+\\
+#+testcase-branch-block-s
+>s
+You found all three southish passages and everything useful in them, so there's no reason to go back. Nice work!
+\\
+>undo
+>undo
+\\
+>e
+\\
+#+testcase-branch-block-s
+>sw
+You are done with the southwest and using the beak to speed through to new places.
+\\
+>out
+Out is ambiguous here. There are three worthwhile ways to leave: northeast, west and up.
+\\
+>undo
+>undo
+>undo
+>undo
+
 >w
 
 @all
@@ -3800,6 +4157,10 @@ by a bonus point
 #testcase-run-post-tour-boaters-rule-default
 You have a business idea! You explain it to the folks at Turbo Tours. They play it down, but of course, after a bit they implement it and it works well and they take credit for it.
 That's sort of a bummer, but you are glad to have made the area a bit more accessible to less aggressive tourists.
+
+@gt
+>l
+`Turbo Tours (now with tour boaters)
 
 @rej
 #testcase-check-pre-tour-boaters-rule-if-sco-tour-boaters-is-true
@@ -3930,6 +4291,19 @@ It's too warm out for ice rinks, but then, you didn't expect any clues to be obv
 `Berries Pond
 
 @gt
+##balance undos
+#testcase-room-out-berries-pond
+>out
+`Far-Miles Farm Isles
+\\
+#+testcase-room-out-far-miles-farm-isles
+>out
+Out is ambiguous here. There are two worthwhile ways to leave: north and south.
+\\
+>undo
+>undo
+
+@gt+
 #testcase-goto-table-of-noways-berries-pond
 >e
 You can't see any way but back north.
@@ -3996,6 +4370,14 @@ You wave the oar around the tree, hoping to catch a bear's attention. The bear n
 #+testcase-goto-table-of-noways-farm-isles
 >s
 Berries Pond is off limits now. You got enough there.
+
+@gt+
+##balance undos
+#+testcase-room-out-far-miles-farm-isles
+>out
+`Turbo Tours (now with tour boaters)
+\\
+>undo
 
 @hint
 #testcase-values-eyes-number-of-farm-isles-is-1
@@ -4069,6 +4451,15 @@ You already got an egg from the barn! It was a one-time deal, so you'll need to 
 You can only go back east to the Bowl/Ditch. South, you got what you needed.
 
 >e
+
+@gt
+##balance undos
+#+testcase-room-out-bowl-ditch
+>out
+Out is ambiguous here. There are two worthwhile ways to leave: north and east.
+\\
+>undo
+
 >n
 
 @all
@@ -4079,6 +4470,14 @@ You can only go back east to the Bowl/Ditch. South, you got what you needed.
 #testcase-goto-table-of-noways-sob-acres
 >e
 While it's pretty open here, you only see safe passage to the south, for now.
+
+@gt+
+##balance undos
+#testcase-room-out-sob-acres
+>out
+`Bowl Ditch
+\\
+>undo
 
 @part
 ##balance undos
@@ -4131,10 +4530,21 @@ You already discovered the deli!
 {$EYESWANDER1} your dense pecs.
 
 @gt
+##balance undos
 #+testcase-goto-table-of-noways-sob-acres
 >e
 While it's pretty open here, the only passages that lead anywhere definitive are south or inside.
 !That den
+\\
+>undo
+
+@gt+
+##balance undos
+#+testcase-room-out-sob-acres #deli open(1)
+>out
+Out is ambiguous here. There are three worthwhile ways to leave: south, down and inside.
+\\
+>undo
 
 >in
 
@@ -4192,6 +4602,14 @@ You're pretty sure you have one word right for making Sob Acres less forbidding.
 #testcase-values-eyes-number-of-deli-stern-is-47
 >eye
 The eyes light up green and show four dots, then seven dots.
+
+@gt
+##balance undos
+#testcase-room-out-deli-stern
+>out
+`Sob Acres
+\\
+>undo
 
 >dell eastern
 by a point
@@ -4461,6 +4879,14 @@ You don't need two pairs.
 >e
 While it's pretty open here, the only passages that lead anywhere definitive are south or west/inside. That den below is a possibility, as well.
 
+@gt+
+##balance undos
+#+testcase-room-out-sob-acres #open den (2)
+>out
+Out is ambiguous here. There are three worthwhile ways to leave: south, down and inside.
+\\
+>undo
+
 >d
 
 @all
@@ -4471,6 +4897,14 @@ While it's pretty open here, the only passages that lead anywhere definitive are
 #testcase-goto-table-of-noways-groan-odes
 >n
 It's too scary any way except back up.
+
+@gt+
+##balance undos
+#testcase-room-out-groan-odes
+>out
+`Dell, Eastern
+\\
+>undo
 
 @rej
 #testcase-check-pre-no-date-rule-if-nodes-are-not-in-groan-odes
@@ -4576,6 +5010,22 @@ There's not much else to say. You feel a bit awkward. All you can do is tell the
 {$EYEITMNO} the help-in-hell pin.
 
 @gt
+##balance undos
+#+testcase-room-out-sob-acres
+>out
+Out is ambiguous here. There are two worthwhile ways to leave: south and inside.
+\\
+>s
+\\
+#+testcase-room-out-bowl-ditch
+>out
+Out is ambiguous here. There are two worthwhile ways to leave: north and east.
+\\
+>undo
+>undo
+>undo
+
+@gt+
 >e
 While it's pretty open here, the only passages that lead anywhere definitive are south or west/inside.
 \\
@@ -4584,8 +5034,31 @@ While it's pretty open here, the only passages that lead anywhere definitive are
 >e
 You can only go south. The den is destroyed, and the deli is busy.
 
+@gt+
+##balance undos
+#+testcase-room-out-bowl-ditch
+>s
+>out
+`Ur-Branch
+\\
+>undo
+>undo
+
 >s
 >e
+
+@gt
+##balance undos
+#+testcase-room-out-ur-branch # west gone
+>out
+Out is ambiguous here. There are two worthwhile ways to leave: northeast and up.
+\\
+#+testcase-branch-block-w
+>w
+You fixed up the deli AND destroyed the nodes. Well done! There's no need to go back.
+\\
+>undo
+>undo
 
 @rej
 >u
@@ -4644,9 +5117,17 @@ You have a good old talk about ... well, everything. You explain your quest, whi
 You already called out to share refreshments. You need to save some for the final meet-up.
 
 @gt
+##balance undos
 #+testcase-goto-table-of-noways-bore-dread
 >n
 You can only go southwest or east.
+\\
+>undo
+
+@gt+
+#+testcase-room-out-bore-dread #after malt hour
+>out
+Out is ambiguous here. There are two worthwhile ways to leave: southwest and east.
 
 >e
 
@@ -4658,6 +5139,14 @@ You can only go southwest or east.
 #testcase-goto-table-of-noways-joy-nadir
 >n
 The only way out is back west.
+
+@gt+
+##balance undos
+#testcase-room-out-joy-nadir
+>out
+`Bore Dread
+\\
+>undo
 
 @part
 ##balance undos
@@ -4794,6 +5283,19 @@ You already got an egg from the barn! You figured where to get more, too.
 >undo
 >undo
 
+@gt
+##balance undos
+#+testcase-room-out-ur-branch # no more northast
+>out
+Mapping outside to up, since it is the only worthwhile direction to go.
+\\
+>undo
+\\
+#+testcase-branch-block-ne #
+>ne
+\\
+>undo
+
 >u
 
 @all
@@ -4813,6 +5315,20 @@ You were smart enough to get this far. I'm gonna go out on a limb and say you're
 #testcase-goto-table-of-noways-throne-ow-throw-now
 >n
 You can only go back down here.
+
+@gt+
+##balance undos
+#testcase-room-out-throne-ow-throw-now
+>out
+`Ur-Branch
+\\
+>undo
+\\
+#+testcase-branch-block-u #
+>u
+You can only go back down here.
+\\
+>undo
 
 @rej
 #testcase-check-pre-lie-fruits-rule-if-life-roots-are-not-in-throne
@@ -4929,9 +5445,13 @@ Your Aw-Lug-All-Ugh feels like it may burst from the additional weight! Good thi
 {$REJECT2}
 
 @gt
+##balance undos
 #+testcase-goto-table-of-noways-ur-branch
 >out
-You can't go outside. There are no new ways to go.
+Mapping outside to down, since it is the only worthwhile direction to go.
+`My New Mine, Ooh!
+\\
+>undo
 
 >d
 
@@ -5179,6 +5699,20 @@ You already used the herb to expand your mind! It is only good for seasoning now
 #testcase-think-table-of-main-oronyms-pre-a-stew-rule
 >think
 You can make A STEW here now you have all the ingredients you need. X should list them.
+
+@gt
+##balance undos
+>blah cough
+\\
+#+testcase-room-out-blah-copse
+>n
+\\
+>out
+`Ur-Branch
+\\
+>undo
+>undo
+>undo
 
 >a stew
 by a point

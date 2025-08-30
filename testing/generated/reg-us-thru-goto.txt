@@ -63,6 +63,13 @@ by a point
 >n
 You could explore your mine, but you sense the real adventure lies back above in the outdoors.
 
+#testcase-room-out-my-new-mine-ooh
+>out
+Mapping outside to up, since it is the only worthwhile direction to go.
+`Ur-Branch
+
+>undo
+
 >u
 
 #testcase-goto-table-of-noways-ur-branch
@@ -75,11 +82,25 @@ by a point
 >summer bay
 by a point
 
+#testcase-room-out-ur-branch
+>out
+Mapping outside to east, since it is the only worthwhile direction to go.
+`Beach, Ill
+
+>undo
+
 >e
 
 #testcase-goto-table-of-noways-beach-ill
 >e
 You can only walk back west.
+
+#testcase-room-out-beach-ill
+>out
+Mapping outside to west, since it is the only worthwhile direction to go.
+`Ur-Branch
+
+>undo
 
 >be chill
 by a point
@@ -100,11 +121,24 @@ by a point
 by a bonus point
 
 >u
+
+#+testcase-room-out-ur-branch # 1 -- first 3 open
+>out
+Out is ambiguous here. There are four worthwhile ways to leave: north, northeast, northwest and east.
+
+>undo
+
 >ne
 
 #testcase-goto-table-of-noways-bore-dread
 >n
 You can only go southwest or, maybe, east once you figure a way.
+
+#testcase-room-out-bore-dread
+>out
+`Ur-Branch
+
+>undo
 
 >board red
 by a point
@@ -120,6 +154,12 @@ by a point
 >n
 You can only leave the copse to the south.
 
+#testcase-room-out-blah-copse
+>out
+`Ur-Branch
+
+>undo
+
 >nah queue
 by a point
 
@@ -133,14 +173,33 @@ by a point
 >e
 You can only leave the copse to the south or north.
 
+#+testcase-room-out-blah-copse
+# after OR CLERK
+>out
+Out is ambiguous here. There are two worthwhile ways to leave: north and south.
+
+>undo
+
 >n
 
 #testcase-goto-table-of-noways-morph-lairs
 >n
 Since you can't dare the morph lairs, the only way to leave is back south.
 
+#testcase-room-out-morph-lairs
+>out
+`Blah Copse
+
+>undo
+
 >more flares
 by a point
+
+#+testcase-room-out-ur-branch #2 = southeast open
+>out
+Out is ambiguous here. There are six worthwhile ways to leave: north, northeast, northwest, southeast, east and inside.
+
+>undo
 
 >n
 
@@ -149,6 +208,18 @@ by a point
 >rope ladder
 by a point
 
+#+testcase-room-out-ur-branch # no more north
+>out
+Out is ambiguous here. There are six worthwhile ways to leave: northeast, northwest, southeast, east, up and inside.
+
+>undo
+
+#+testcase-branch-block-n
+>n
+You looted the Morph Lairs well enough.
+
+>undo
+
 >guard entry
 by a point
 
@@ -156,13 +227,36 @@ by a point
 >n
 Compass directions befuddle you at the moment. You can only go back out.
 
+#testcase-room-out-pea-stalks
+>out
+`Ur-Branch
+
+#+testcase-room-out-ur-branch # inside available
+>out
+Out is ambiguous here. There are six worthwhile ways to leave: northeast, northwest, southeast, east, up and inside.
+
+>undo
+>undo
+
 >peace talks
 by a point
 
 >pea pod
 by a bonus point
 
+`Ur-Branch
+
+#testcase-branch-block-in
+>in
+You got peace talks and an extra vegetable from behind the garden tree.
+You can disable this with BLAH COUGH, or you can block it again with BLOCK OFF. This will be in VERBS.
+
+#testcase-room-out-ur-branch
 >out
+Out is ambiguous here. There are five worthwhile ways to leave: northeast, northwest, southeast, east and up.
+
+>undo
+>undo
 
 >se
 
@@ -172,6 +266,12 @@ The only compass direction you can go is back northwest. However, you may also f
 
 >in
 The can't-ache kicks in, leaving you feeling like you couldn't possibly deserve to visit such a private place!
+
+#testcase-room-out-dome-aching
+>out
+`Ur-Branch
+
+>undo
 
 >can take
 by a point
@@ -189,17 +289,47 @@ by a point
 >e
 The only compass direction you can go is back northwest. However, you may also go in to the inner nest.
 
+#+testcase-room-out-dome-aching
+>out
+Out is ambiguous here. There are two worthwhile ways to leave: northwest and inside.
+
+>undo
+
 >in
 
 #testcase-goto-table-of-noways-inner-nest
 >n
 No secret passages here. You just need to go back out.
 
+#testcase-room-out-inner-nest
+>out
+`Dome, Aching
+
+>undo
+
 >pry more
 by a point
 
 >out
+
+#testcase-room-out-dome-aching
+>out
+`Ur-Branch
+
+>undo
+
 >nw
+
+#testcase-room-out-ur-branch
+>out
+Out is ambiguous here. There are four worthwhile ways to leave: northeast, northwest, east and up.
+
+#+testcase-branch-block-se
+>se
+You looted the dome and the inner nest nicely.
+
+>undo
+>undo
 
 >e
 
@@ -210,11 +340,23 @@ by a point
 >n
 You can only walk back west or take the punt east.
 
+#testcase-room-out-beach-ill
+>out
+Out is ambiguous here. There are two worthwhile ways to leave: east and west.
+
+>undo
+
 >e
 
 #testcase-goto-table-of-noways-pile-up-isle
 >n
 You can't see land anywhere except back to the west.
+
+#testcase-room-out-a-pile-up-isle
+>out
+`Dune Ever-Do-Never
+
+>undo
 
 >base pikes
 by a point
@@ -226,7 +368,25 @@ by a point
 by a point
 
 >w
+
+#+testcase-room-out-beach-ill #after punt
+>out
+`Ur-Branch
+
+>undo
+
 >w
+
+#balance undos
+#+testcase-branch-block-e
+>e
+You got everything you needed to the east, which helped you discover passages to the south, west and southwest.
+
+>out
+Out is ambiguous here. There are four worthwhile ways to leave: northeast, northwest, southwest and up.
+
+>undo
+>undo
 
 >nw
 
@@ -243,11 +403,29 @@ by a point
 >terrible aid
 by a point
 
+#+testcase-room-out-ur-branch # no more terrible aid
+>out
+Out is ambiguous here. There are three worthwhile ways to leave: northeast, southwest and up.
+
+>undo
+
+#+testcase-branch-block-nw
+>nw
+You can't imagine anything is in the dark other than the Terra Blade.
+
+>undo
+
 >sw
 
 #testcase-goto-table-of-noways-fort-earns
 >w
 You can leave the fort to the northeast.
+
+#testcase-room-out-fort-earns-four-turns
+>out
+`Ur-Branch
+
+>undo
 
 >oh clever
 by a point
@@ -256,14 +434,32 @@ by a point
 
 >ne
 
+#+testcase-room-out-ur-branch # have speed, can go south/west?
+>out
+Out is ambiguous here. There are three worthwhile ways to leave: northeast, southwest and up.
+
+>undo
+
 >s
 
 #testcase-goto-table-of-noways-tube-rod
 >s
 You can only go back north to Ur-Branch right now, but maybe there's something beyond the tube/rod.
 
+#testcase-room-out-tube-rod
+>out
+`Ur-Branch
+
+>undo
+
 >too broad
 by a point
+
+#+testcase-room-out-tube-rod
+>out
+Ambiguous. You can go north or south.
+
+>undo
 
 >n
 
@@ -283,8 +479,25 @@ by a point
 >s
 It feels hopeless to go any way but back north. Well, for now.
 
+>out
+`Ur-Branch
+
+>undo
+
+#+testcase-room-out-too-dark-tude-ark
+>out
+`Ur-Branch
+
+>undo
+
 >ho langour
 by a point
+
+#+testcase-room-out-too-dark-tude-ark
+>out
+Ambiguous. You can go north or south.
+
+>undo
 
 >n
 
@@ -299,12 +512,24 @@ by a point
 >n
 You'll have to use your wits to leave.
 
+#testcase-room-out-cell-urban
+>out
+You'll have to use your wits to leave.
+
+>undo
+
 >cellar bin
 by a point
 
 #testcase-goto-table-of-noways-cellar-bin
 >n
 Just go up to leave.
+
+#testcase-room-out-cellar-bin
+>out
+`Fort Earns-Four-Turns
+
+>undo
 
 >u
 
@@ -324,6 +549,12 @@ You can leave the fort to the northeast or X TRAP to fall to the cellar bin.
 >s
 You can only go back north until you can deal with the Sage Oaks.
 
+#testcase-room-out-sage-oaks
+>out
+`Ur-Branch
+
+>undo
+
 >say jokes
 by a point
 
@@ -338,6 +569,12 @@ by a point
 >w
 You can only go back north or south beyond the Sage Oaks.
 
+#+testcase-room-out-sage-oaks
+>out
+Ambiguous. You can go north or south.
+
+>undo
+
 >n
 
 >sss
@@ -351,6 +588,12 @@ You can only go back north to Ur-Branch or south past the remnants of the tube/r
 #testcase-goto-table-of-noways-dam-pink
 >s
 You can't see any way but back north.
+
+#testcase-room-out-dam-pink
+>out
+`"Grasp, Ace: Grass" Space
+
+>undo
 
 >claim it
 by a point
@@ -372,6 +615,11 @@ You can only see passage north or south.
 >w
 You can't see any way but back north.
 
+#testcase-room-out-scribe-room
+>out
+"Ugh?! Lo, a Glow"
+>undo
+
 >scry broom
 by a point
 
@@ -383,6 +631,12 @@ by a point
 #testcase-goto-table-of-noways-dust-which-does-twitch
 >w
 You can't see any way but back north.
+
+#testcase-room-out-dust-which-does-twitch
+>out
+`Sage Oaks
+
+>undo
 
 >pro sweeping
 by a point
@@ -424,6 +678,33 @@ by a point
 >s
 You can only go north, west or back east.
 
+#+testcase-room-out-ur-branch # inside available
+>out
+Out is ambiguous here. There are three worthwhile ways to leave: north, east and west.
+
+>e
+
+#+testcase-branch-block-s
+>s
+You found all three southish passages and everything useful in them, so there's no reason to go back. Nice work!
+
+>undo
+>undo
+
+>e
+
+#+testcase-branch-block-s
+>sw
+You are done with the southwest and using the beak to speed through to new places.
+
+>out
+Out is ambiguous here. There are three worthwhile ways to leave: northeast, west and up.
+
+>undo
+>undo
+>undo
+>undo
+
 >w
 
 #testcase-goto-table-of-noways-turbo-tours
@@ -432,6 +713,9 @@ You can only go back east to the Bowl/Ditch.
 
 >tour boaters
 by a bonus point
+
+>l
+`Turbo Tours (now with tour boaters)
 
 >stark raft
 by a point
@@ -448,6 +732,17 @@ You can only go back north to Turbo Tours.
 
 >find rinks
 by a point
+
+#testcase-room-out-berries-pond
+>out
+`Far-Miles Farm Isles
+
+#+testcase-room-out-far-miles-farm-isles
+>out
+Out is ambiguous here. There are two worthwhile ways to leave: north and south.
+
+>undo
+>undo
 
 #testcase-goto-table-of-noways-berries-pond
 >e
@@ -468,6 +763,12 @@ by a point
 >s
 Berries Pond is off limits now. You got enough there.
 
+#+testcase-room-out-far-miles-farm-isles
+>out
+`Turbo Tours (now with tour boaters)
+
+>undo
+
 >barn open
 by a point
 
@@ -478,11 +779,24 @@ by a point
 You can only go back east to the Bowl/Ditch. South, you got what you needed.
 
 >e
+
+#+testcase-room-out-bowl-ditch
+>out
+Out is ambiguous here. There are two worthwhile ways to leave: north and east.
+
+>undo
+
 >n
 
 #testcase-goto-table-of-noways-sob-acres
 >e
 While it's pretty open here, you only see safe passage to the south, for now.
+
+#testcase-room-out-sob-acres
+>out
+`Bowl Ditch
+
+>undo
 
 >saw bakers
 by a point
@@ -492,11 +806,25 @@ by a point
 While it's pretty open here, the only passages that lead anywhere definitive are south or inside.
 !That den
 
+>undo
+
+#+testcase-room-out-sob-acres #deli open(1)
+>out
+Out is ambiguous here. There are three worthwhile ways to leave: south, down and inside.
+
+>undo
+
 >in
 
 #testcase-goto-table-of-noways-deli-stern
 >e
 Not that way. Out.
+
+#testcase-room-out-deli-stern
+>out
+`Sob Acres
+
+>undo
 
 >dell eastern
 by a point
@@ -539,17 +867,43 @@ by a point
 >e
 While it's pretty open here, the only passages that lead anywhere definitive are south or west/inside. That den below is a possibility, as well.
 
+#+testcase-room-out-sob-acres #open den (2)
+>out
+Out is ambiguous here. There are three worthwhile ways to leave: south, down and inside.
+
+>undo
+
 >d
 
 #testcase-goto-table-of-noways-groan-odes
 >n
 It's too scary any way except back up.
 
+#testcase-room-out-groan-odes
+>out
+`Dell, Eastern
+
+>undo
+
 >grow nodes
 by a point
 
 >no date
 by a point
+
+#+testcase-room-out-sob-acres
+>out
+Out is ambiguous here. There are two worthwhile ways to leave: south and inside.
+
+>s
+
+#+testcase-room-out-bowl-ditch
+>out
+Out is ambiguous here. There are two worthwhile ways to leave: north and east.
+
+>undo
+>undo
+>undo
 
 >e
 While it's pretty open here, the only passages that lead anywhere definitive are south or west/inside.
@@ -559,8 +913,27 @@ While it's pretty open here, the only passages that lead anywhere definitive are
 >e
 You can only go south. The den is destroyed, and the deli is busy.
 
+#+testcase-room-out-bowl-ditch
+>s
+>out
+`Ur-Branch
+
+>undo
+>undo
+
 >s
 >e
+
+#+testcase-room-out-ur-branch # west gone
+>out
+Out is ambiguous here. There are two worthwhile ways to leave: northeast and up.
+
+#+testcase-branch-block-w
+>w
+You fixed up the deli AND destroyed the nodes. Well done! There's no need to go back.
+
+>undo
+>undo
 
 >ne
 
@@ -571,11 +944,23 @@ by a point
 >n
 You can only go southwest or east.
 
+>undo
+
+#+testcase-room-out-bore-dread #after malt hour
+>out
+Out is ambiguous here. There are two worthwhile ways to leave: southwest and east.
+
 >e
 
 #testcase-goto-table-of-noways-joy-nadir
 >n
 The only way out is back west.
+
+#testcase-room-out-joy-nadir
+>out
+`Bore Dread
+
+>undo
 
 >join aider
 by a point
@@ -583,11 +968,34 @@ by a point
 >dupe it
 by a point
 
+#+testcase-room-out-ur-branch # no more northast
+>out
+Mapping outside to up, since it is the only worthwhile direction to go.
+
+>undo
+
+#+testcase-branch-block-ne #
+>ne
+
+>undo
+
 >u
 
 #testcase-goto-table-of-noways-throne-ow-throw-now
 >n
 You can only go back down here.
+
+#testcase-room-out-throne-ow-throw-now
+>out
+`Ur-Branch
+
+>undo
+
+#+testcase-branch-block-u #
+>u
+You can only go back down here.
+
+>undo
 
 >use it
 by a point
@@ -597,9 +1005,24 @@ by a point
 
 #+testcase-goto-table-of-noways-ur-branch
 >out
-You can't go outside. There are no new ways to go.
+Mapping outside to down, since it is the only worthwhile direction to go.
+`My New Mine, Ooh!
+
+>undo
 
 >d
+
+>blah cough
+
+#+testcase-room-out-blah-copse
+>n
+
+>out
+`Ur-Branch
+
+>undo
+>undo
+>undo
 
 >a stew
 by a point

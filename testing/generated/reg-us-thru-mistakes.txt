@@ -66,6 +66,7 @@ by a point
 by a bonus point
 
 >u
+
 >ne
 
 >board red
@@ -108,8 +109,6 @@ by a point
 >pea pod
 by a bonus point
 
->out
-
 >se
 
 >can take
@@ -130,6 +129,7 @@ by a point
 by a point
 
 >out
+
 >nw
 
 >e
@@ -149,6 +149,7 @@ by a point
 by a point
 
 >w
+
 >w
 
 >nw
@@ -309,6 +310,7 @@ by a point
 >n
 
 >e
+
 >n
 
 >saw bakers

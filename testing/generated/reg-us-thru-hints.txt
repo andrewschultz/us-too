@@ -258,6 +258,7 @@ by a bonus point
 The eyes show nothing. You've changed up everything you need with the mess kit.
 
 >u
+
 >ne
 
 #testcase-values-eyes-number-of-bore-dread-is-53
@@ -402,8 +403,6 @@ by a bonus point
 >eye pea pod
 The eyes show nothing. You've changed up everything you need with the pea pod.
 
->out
-
 #+testcase-values-eyes-number-of-garden-tree-is-55
 >eye garden tree
 The eyes show nothing. You've changed up everything you need with the garden tree.
@@ -476,6 +475,7 @@ by a point
 The eyes show nothing. You've changed up everything you need with the prime oar.
 
 >out
+
 >nw
 
 >e
@@ -539,6 +539,7 @@ by a point
 The eyes show nothing. You've changed up everything you need with the high cup.
 
 >w
+
 >w
 
 >nw
@@ -905,6 +906,7 @@ The eyes show nothing. Probably don't need to change up anything with the Egg of
 >n
 
 >e
+
 >n
 
 #testcase-values-eyes-number-of-sob-acres-is-36

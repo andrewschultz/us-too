@@ -302,6 +302,7 @@ You're pretty sure you have one word right for having harmless, useless fun with
 by a bonus point
 
 >u
+
 >ne
 
 #testcase-one-right-table-of-main-oronyms-board-red-1-board
@@ -544,8 +545,6 @@ You're pretty sure you have one word right for finding something unusual within 
 >pea pod
 by a bonus point
 
->out
-
 >se
 
 #testcase-one-right-table-of-main-oronyms-can-take-1-can
@@ -666,6 +665,7 @@ You're pretty sure you have one word right for figuring how to take the prime oa
 by a point
 
 >out
+
 >nw
 
 >e
@@ -765,6 +765,7 @@ You're pretty sure you have one word right for reaching the high cup.
 by a point
 
 >w
+
 >w
 
 >nw
@@ -1374,6 +1375,7 @@ by a point
 >n
 
 >e
+
 >n
 
 #testcase-one-right-table-of-main-oronyms-saw-bakers-1-saw

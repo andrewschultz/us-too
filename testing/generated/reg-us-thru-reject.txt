@@ -479,6 +479,7 @@ by a bonus point
 The skit would go from meh to cringe if you did it again.
 
 >u
+
 >ne
 
 >board red
@@ -500,7 +501,7 @@ You can call MALT HOUR here once you have a variety of alcohol to share.
 
 #testcase-check-pre-blah-copse-rule-if-black-ops-are-not-in-ur-branch
 >blah copse
-!by one point
+!by a point
 
 #testcase-check-pre-guard-entry-rule-if-garden-tree-is-not-in-ur-branch
 >guard entry
@@ -605,8 +606,6 @@ You already fathomed peace talks!
 >pea pod
 by a bonus point
 
->out
-
 >se
 
 #testcase-check-pre-dough-making-rule-if-sco-can-take-is-false
@@ -671,6 +670,7 @@ by a point
 You already pried and got the prime oar!
 
 >out
+
 >nw
 
 >e
@@ -706,6 +706,7 @@ by a point
 There's nothing else to be found from another hike up. You're not getting the high cup, and you don't need it.
 
 >w
+
 >w
 
 >nw
@@ -1055,6 +1056,7 @@ You already got an egg from the barn! It was a one-time deal, so you'll need to 
 >n
 
 >e
+
 >n
 
 >saw bakers

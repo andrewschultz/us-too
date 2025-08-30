@@ -53,6 +53,7 @@ by a point
 by a point
 
 >u
+
 >ne
 
 >board red
@@ -114,6 +115,7 @@ by a point
 by a point
 
 >out
+
 >nw
 
 >e
@@ -133,6 +135,7 @@ by a point
 by a point
 
 >w
+
 >w
 
 >nw
@@ -279,6 +282,7 @@ by a point
 >n
 
 >e
+
 >n
 
 >saw bakers
