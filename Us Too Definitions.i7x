@@ -223,7 +223,7 @@ donetext of north is "You looted the Morph Lairs well enough.".
 donetext of northwest is "You can't imagine anything is in the dark other than the Terra Blade.".
 donetext of northeast is "Between getting lots of eggs, the [orb] and, oh yeah, that board (red,) you think you've made out well enough to the northeast.".
 donetext of west is "You fixed up the deli AND destroyed the nodes. Well done! There's no need to go back.".
-donetext of south is "You found all three southish passages and what was in them. Nice going.".
+donetext of south is "You found all three southish passages and everything useful in them, so there's no reason to go back. Nice work!".
 donetext of up is "You destroyed the evil throne and got what you needed from the life roots.".
 donetext of east is "You got everything you needed to the east, which helped you discover passages to the south, west and southwest.".
 donetext of southwest is "You are done with the southwest and using the beak to speed through to new places.".

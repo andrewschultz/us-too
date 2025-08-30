@@ -726,7 +726,13 @@ book east branch
 
 part Beach Ill
 
-Beach Ill is a room in universal. printed name is "[if sco-be-chill is false]Beach, Ill[else if sco-punt-weaker is false]Bless-and-Bleah Sand[else]Dune Ever-Do-Never[end if]". "[if sco-be-chill is false]While the environs aren't totally illun['], you do have a general sense of malaise here, and not being able to get rid of it despite beaches usually being cheery is simply is causing more malaise. You're overthinking things a bit, maybe, and you're feeling slightly agitated. You can go back west[else]It's nice here. The only way out on foot is back west, since you can't swim the other ways[end if][if sco-probe-all is true]. [isle-from-beach][end if].". eyes-number of Beach Ill is 25. eyes-rule of Beach Ill is pre-be-chill rule.
+Beach Ill is a room in universal. printed name is "[if sco-be-chill is false]Beach, Ill[else if sco-punt-weaker is false]Bless-and-Bleah Sand[else]Dune Ever-Do-Never[end if]". "[if sco-be-chill is false]While the environs aren't totally illun['], you do have a general sense of malaise here, and not being able to get rid of it despite beaches usually being cheery is simply is causing more malaise. You're overthinking things a bit, maybe, and you're feeling slightly agitated. You can go back west[else][sand-desc]. The only way out on foot is back west, since you can't swim the other ways[end if][if sco-probe-all is true]. [isle-from-beach][end if].". eyes-number of Beach Ill is 25. eyes-rule of Beach Ill is pre-be-chill rule.
+
+to say sand-desc:
+	if sco-punt-weaker is true:
+		say "Things feel nice and lazy here now the pun tweakers finished work on the ship";
+	else:
+		say "While you've found stuff to do here, it's not the most exciting place. You can't help but feel there should be more beyond"
 
 to say isle-from-beach:
 	if pile up isle is visited:
@@ -1304,7 +1310,7 @@ the stark raft is a thing. "The stark raft [if player is in farm isles]here can 
 
 part Far Miles Farm Isles
 
-Far Miles Farm Isles is a room in universal. eyes-number of Farm Isles is 1. "Well, maybe not that far. Perhaps it's just named that way to seem more exotic."
+Far Miles Farm Isles is a room in universal. eyes-number of Farm Isles is 1. "Well, maybe not that far. Perhaps it's just named that way to seem more exotic.". printed name is "Far-Miles Farm Isles".
 
 after printing the locale description for Far Miles Farm Isles when sco-find-rinks is true and sco-bear-respond is false:
 	say "You can go back south to Berries Pond, too.";
