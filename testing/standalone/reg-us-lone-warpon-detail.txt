@@ -1,0 +1,443 @@
+## reg-us-thru-min.txt
+## GENERATOR FILE: rbr-us-thru.txt
+
+## minimum walkthrough
+
+** game: /home/andrew/prt/debug-us-too.z8
+** interpreter: /home/andrew/prt/dfrotz -m -w5000 -h25
+** checkclass: /home/andrew/prt/runtime.py
+
+* each-thru
+
+>{include}_part1
+>warp on
+The war pawn wags its finger, then points its finger at you, at its eyes, and at you again. Sounds like a suggestion to X ME before using the pawn. Well, it's good to know where to start.
+
+>{include}_part2
+
+>x pawn
+It's a grey chess pawn. It's currently alert, with a frown and mean glare carved in the rounded top. Unlike most pawns, it has fists, doubled up in a fighting posture.
+Looking at it from many different angles gets you all sorts of weird ideas. Perhaps it could help you when you run out of them on your quest. You may wish to wait until you really need to use it, though of course, you don't want to wait too late.
+If you want to resist the temptation of this cheat item, DROP it. There is no penalty for using it.
+If you wish to understand the mechanics of the war pawn, KNOW PAWN. (This command will be in VERBS if you forget.)
+Oh, yes, you can't just USE the war pawn. You need a specific command, one in the spirit of Us Too.
+
+>undo
+>undo
+>warp on
+After some thought, the war pawn vibrates and gestures wildly! You suddenly have insight into a good way forward: SUMMER BAY...
+The herb gives off a weird ... well, not quite a smell. But it opens your mind to new passages, passages that might actually lead somewhere, without having to light it or do anything adults who drank a lot told you was very, very dangerous.
+
+Your newly opened mind discerns a safe passage east. Hey, that's a start!
+
+The war pawn curls up and goes to sleep after all that excitement. It needs some time to recover.
+
+>undo
+Allowing you to undo using the war pawn is a bit too much of a loophole. There's a walkthrough. Or you can save and restore a lot before warping.
+
+>x pawn
+It's a grey chess pawn. It's currently sleeping from previous use.
+Looking at it from many different angles gets you all sorts of weird ideas. Perhaps it could help you when you run out of them on your quest. You may wish to wait until you really need to use it, though of course, you don't want to wait too late.
+If you want to resist the temptation of this cheat item, DROP it. There is no penalty for using it.
+If you wish to understand the mechanics of the war pawn, KNOW PAWN. (This command will be in VERBS if you forget.)
+You've used it one time.
+
+>{include}_part3
+
+>x pawn
+It's a grey chess pawn. It's currently alert, with a frown and mean glare carved in the rounded top. Unlike most pawns, it has fists, doubled up in a fighting posture.
+Looking at it from many different angles gets you all sorts of weird ideas. Perhaps it could help you when you run out of them on your quest. You may wish to wait until you really need to use it, though of course, you don't want to wait too late.
+You've used it one time.
+
+>undo
+>undo
+>warp on
+After some thought, the war pawn vibrates and gestures wildly! You suddenly have insight into a good way forward: PRY MORE...
+
+>undo
+Allowing you to undo using the war pawn is a bit too much of a loophole. There's a walkthrough. Or you can save and restore a lot before warping.
+
+>x pawn
+It's a grey chess pawn. It's currently sleeping from previous use.
+Looking at it from many different angles gets you all sorts of weird ideas. Perhaps it could help you when you run out of them on your quest. You may wish to wait until you really need to use it, though of course, you don't want to wait too late.
+!If you want to resist the temptation
+!If you wish to understand the mechanics
+You've used it two times.
+
+>{include}_part4
+
+>x pawn
+It's a grey chess pawn. It's currently alert, with a frown and mean glare carved in the rounded top. Unlike most pawns, it has fists, doubled up in a fighting posture.
+Looking at it from many different angles gets you all sorts of weird ideas. Perhaps it could help you when you run out of them on your quest. You may wish to wait until you really need to use it, though of course, you don't want to wait too late.
+You've used it two times.
+
+>undo
+>undo
+>warp on
+After some thought, the war pawn vibrates and gestures wildly! You suddenly have insight into a good way forward: BARN OPEN...
+The war pawn shrugs its shoulders, holds up the number three, waves, and runs off, making occasional diagonal jumps at unseen prey.
+
+>undo
+Allowing you to undo using the war pawn is a bit too much of a loophole. There's a walkthrough. Or you can save and restore a lot before warping.
+
+>x pawn
+Nothing (significant) here like that. Note that while you may need to act on room names, X/EYE (THIS ROOM'S NAME) is often not implemented because L or LOOK takes less characters to type.
+
+>{include}_part5
+
+* _part1
+
+>how so
+by a point
+
+>z
+
+>i
+
+>x row
+>get all
+
+* _part2
+
+>try quest
+by a point
+
+>be strong
+by a point
+
+>x
+
+>summon cheese
+by a point
+
+>u
+
+>herb ranch
+by a point
+
+>summer bay
+by a point
+
+* _part3
+
+>e
+
+>be chill
+by a point
+
+>nice warm
+by a point
+
+>probe all
+by a point
+
+>w
+>d
+
+>mess pot
+by a point
+
+>u
+>ne
+
+>board red
+by a point
+
+>sw
+
+>n
+
+>blah copse
+by a point
+
+>nah queue
+by a point
+
+>surf ready
+by a point
+
+>or clerk
+by a point
+
+>n
+
+>more flares
+by a point
+
+>n
+
+>n
+
+>rope ladder
+by a point
+
+>guard entry
+by a point
+
+>peace talks
+by a point
+
+>out
+
+>se
+
+>can take
+by a point
+
+>gray tin
+by a point
+
+>dough making
+by a point
+
+>in earnest
+by a point
+
+>in
+
+>pry more
+by a point
+
+* _part4
+
+>out
+>nw
+
+>e
+
+>punt weaker
+by a point
+
+>e
+
+>base pikes
+by a point
+
+>pie crust
+by a point
+
+>hike up
+by a point
+
+>w
+>w
+
+>nw
+
+>sword ark
+by a point
+
+>blast ring
+by a point
+
+>terrible aid
+by a point
+
+>sw
+
+>oh clever
+by a point
+
+>x beak
+
+>ne
+
+>s
+
+>too broad
+by a point
+
+>n
+
+>sw
+
+>x beak
+
+>ne
+
+>sw
+
+>ne
+
+>s
+
+>ho langour
+by a point
+
+>n
+
+>sw
+
+>fell trap
+by a point
+
+>x trap
+
+>cellar bin
+by a point
+
+>u
+
+>x beak
+
+>x trap
+
+>u
+>ne
+>s
+
+>say jokes
+by a point
+
+>gas pouch
+by a point
+
+>n
+
+>sss
+
+>s
+
+>claim it
+by a point
+
+>damp ink
+by a point
+
+>n
+>n
+>s
+
+>s
+
+>scry broom
+by a point
+
+>n
+>n
+>ss
+>s
+
+>pro sweeping
+by a point
+
+>cold rum
+by a point
+
+>tea leaves
+by a point
+
+>n
+>n
+
+>s
+>s
+
+>belt rusted
+by a point
+
+>n
+>n
+
+>sw
+>x beak
+>ne
+>w
+
+>bold itch
+by a point
+
+>w
+
+>stark raft
+by a point
+
+>s
+
+>find rinks
+by a point
+
+>bear respond
+by a point
+
+>barn open
+by a point
+
+* _part5
+
+>n
+
+>e
+>n
+
+>saw bakers
+by a point
+
+>in
+
+>dell eastern
+by a point
+
+>e
+
+>w
+
+>dope ale
+by a point
+
+>e
+>w
+
+>beef ordering
+by a point
+
+>e
+
+>w
+
+>wheat rye
+by a point
+
+>e
+
+>den specs
+by a point
+
+>d
+
+>grow nodes
+by a point
+
+>no date
+by a point
+
+>s
+>e
+
+>ne
+
+>malt hour
+by a point
+
+>e
+
+>join aider
+by a point
+
+>dupe it
+by a point
+
+>u
+
+>use it
+by a point
+
+>lie fruits
+by a point
+
+>d
+
+>a stew
+by a point
+
+Would you like to
