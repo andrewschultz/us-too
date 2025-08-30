@@ -1,0 +1,227 @@
+## reg-us-lone-options.txt
+## STANDALONE FILE
+
+## tests the 2 options, when they appear, etc.
+
+** game: /home/andrew/prt/debug-us-too.z8
+** interpreter: /home/andrew/prt/dfrotz -m -w5000 -h25
+
+* natural-occurrence-or-not
+
+>how so
+>z
+>x me
+
+>options
+You haven't found either option that affects gameplay. One appears when you try to visit blocked-off areas, and one appears when you get each half of a solution right on different occasions. They don't appear at the start because I didn't want to overload you with potentially useless options early on.
+However, if you know them from another playthrough, you can use them.
+
+>think well
+Revealing commands half-thought two different ways is now on.
+
+>options
+You have found/learned of one of two total options:
+THINK WELL shows a full point-scoring command if you've guessed each part. THIN QUELL (default) turns it off. This option is currently on.
+
+>be zzz
+You're not quite sure how to get started and get focused. There are almost too many possibilities. The help you see in the mine -- well, that may be later. Perhaps examining yourself with X ME or recapping what you know with THINK would help.
+
+>zzz strong
+You're not quite sure how to get started and get focused. There are almost too many possibilities. The help you see in the mine -- well, that may be later. Perhaps examining yourself with X ME or recapping what you know with THINK would help.
+
+>think
+!THINK WELL
+
+>undo
+>undo
+>undo
+>undo
+>undo
+
+>thin quell
+Revealing commands half-thought two different ways is already off.
+
+>options
+You have found/learned of one of two total options:
+THINK WELL shows a full point-scoring command if you've guessed each part. THIN QUELL (default) turns it off. This option is currently off.
+
+>be zzz
+You're not quite sure how to get started and get focused. There are almost too many possibilities. The help you see in the mine -- well, that may be later. Perhaps examining yourself with X ME or recapping what you know with THINK would help.
+
+>zzz strong
+You're not quite sure how to get started and get focused. There are almost too many possibilities. The help you see in the mine -- well, that may be later. Perhaps examining yourself with X ME or recapping what you know with THINK would help.
+
+>think
+!THINK WELL
+
+>undo
+>undo
+>undo
+>undo
+>undo
+
+#########now for the block off
+
+>blah cough
+You can now revisit completed branches.
+
+>options
+You have found/learned of one of two total options:
+BLAH COUGH disables the automatic block-off for completed branches. BLOCK OFF enables it. Allowing completely free movement is currently on.
+
+>undo
+>undo
+
+>block off
+You have already blocked off revisiting completed branches.
+
+>options
+You have found/learned of one of two total options:
+BLAH COUGH disables the automatic block-off for completed branches. BLOCK OFF enables it. Allowing completely free movement is currently off.
+
+>undo
+>undo
+
+>try quest
+by a point
+
+>be zzz
+A voice in your head encourages you: "Seem, or see, more!" You've got SOMETHING right, here.
+[NOTE: this and other half-right guesses will be tracked in THINK until you figure the right phrase.]
+
+>zzz strong
+[NOTE: you've just figured a two-word solution by parts. THINK may refresh your memory.]
+
+>be zzz
+[NOTE: you've actually already figured both words before. THINK may refresh your memory.]
+
+>think
+You feel you've got the words right on separate occasions for getting rid of the beast.
+You can have THINK verify the identity of the separate words with THINK WELL. THIN QUELL turns the option off.
+
+>think
+You feel you've got the words right on separate occasions for getting rid of the beast.
+!THINK WELL
+
+>options
+You have found/learned of one of two total options:
+THINK WELL shows a full point-scoring command if you've guessed each part. THIN QUELL (default) turns it off. This option is currently off.
+
+>think well
+Revealing commands half-thought two different ways is now on.
+
+>think well
+Revealing commands half-thought two different ways is already on.
+
+>options
+You have found/learned of one of two total options:
+THINK WELL shows a full point-scoring command if you've guessed each part. THIN QUELL (default) turns it off. This option is currently on.
+
+>think
+You feel you've got the words right on separate occasions for getting rid of the beast: BE STRONG.
+
+>thin quell
+Revealing commands half-thought two different ways is now off.
+
+>thin quell
+Revealing commands half-thought two different ways is already off.
+
+>think
+You try and think of stuff you tried, but the time wasn't quite right, or maybe you only figured it half-way.
+You feel you've got the words right on separate occasions for getting rid of the beast.
+
+>be strong
+by a point
+
+>i
+>x
+>out
+
+>herb ranch
+by a point
+
+>summer bay
+by a point
+
+>e
+
+>be chill
+by a point
+
+>nice warm
+by a point
+
+>probe all
+by a point
+
+>w
+>d
+
+>mess pot
+by a point
+
+>u
+
+>ne
+
+>board red
+by a point
+
+>sw
+>n
+
+>blah copse
+by a point
+
+>nah queue
+by a point
+
+>surf ready
+by a point
+
+>or clerk
+by a point
+
+>n
+
+>more flares
+by a point
+
+>n
+>n
+
+>rope ladder
+by a point
+
+>n
+You can disable this with BLAH COUGH, or you can block it again with BLOCK OFF. This will be in VERBS.
+
+>n
+!BLAH COUGH
+
+>options
+You have found/learned of both options:
+BLAH COUGH disables the automatic block-off for completed branches. BLOCK OFF enables it. Allowing completely free movement is currently off.
+THINK WELL shows a full point-scoring command if you've guessed each part. THIN QUELL (default) turns it off. This option is currently off.
+
+>blah cough
+You can now revisit completed branches.
+
+>blah cough
+You can already revisit completed branches.
+
+>options
+You have found/learned of both options:
+BLAH COUGH disables the automatic block-off for completed branches. BLOCK OFF enables it. Allowing completely free movement is currently on.
+THINK WELL shows a full point-scoring command if you've guessed each part. THIN QUELL (default) turns it off. This option is currently off.
+
+>block off
+You have now blocked off revisiting completed branches.
+
+>block off
+You have already blocked off revisiting completed branches.
+
+>options
+You have found/learned of both options:
+BLAH COUGH disables the automatic block-off for completed branches. BLOCK OFF enables it. Allowing completely free movement is currently off.
+THINK WELL shows a full point-scoring command if you've guessed each part. THIN QUELL (default) turns it off. This option is currently off.
