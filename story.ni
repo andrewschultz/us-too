@@ -539,11 +539,6 @@ to wink-out (di - a direction):
 	say "[line break]You consult the pro ball to make sure. It shows a large map of where you've been, and after a couple seconds, [the di] area grows dim.";
 	now di is branchdone;
 
-after printing the locale description for Ur Branch when player has rope ladder and up is branchcant:
-	say "You feel [the ladder] tug you off in an odd direction. There you find a steep cliff face. The rope ladder seems to uncoil and go upwards. Hmm, you'd have missed that, but you know it now.";
-	reveal Throne Ow Throw Now to up;
-	continue the action;
-
 after printing the locale description for Ur Branch when southeast is not branchdone and sco-pry-more is true and sco-gray-tin is true and sco-dough-making is true:
 	say "You look back at the dome. Inns, inner nest, dough. There's nothing left to do there.";
 	wink-out southeast;

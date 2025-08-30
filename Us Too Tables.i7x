@@ -600,6 +600,9 @@ this is the post-rope-ladder rule:
 	say "Your eyes finally adjust to all the egregious plaid, and you discover a plain but sturdy rope ladder. You wonder if there is anything else to do here, but shortly you hear an electronic 'HOW?! SCAM!!!!!!' You look up and see a house cam! You run, just in case there's more security. Surely you must be done to the north, you think, once you make it back to ...";
 	now player has rope ladder;
 	block-and-back;
+	say "[line break]And when you do, you feel [the ladder] tug you off in an odd direction. There you find a very steep ascent you'd have missed otherwise. The rope ladder seems to uncoil and go upwards briefly before returning. So now you know a way up!";
+	reveal Throne Ow Throw Now to up;
+
 
 book inside scoring
 
