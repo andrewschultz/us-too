@@ -12,6 +12,8 @@ release along with cover art.
 
 release along with the "Parchment" interpreter.
 
+use memory economy.
+
 section outside stuff
 
 include Conditional Undo by Jesse McGrew.
@@ -603,7 +605,11 @@ after printing the locale description of ur branch when player was in a rotroom:
 		say "Ooh! There's something new on the sign. A new command, to make traversing easier.";
 	continue the action;
 
-this is the south-block rule: if south-covered, try going south instead;
+this is the south-block rule:
+	if south-covered:
+		if player is in Ur Branch, try going south instead;
+		say "This command isn't necessary any more, and when it was, it was only useful in [branch]." instead;
+	if player is not in Ur Branch, say "You need to be in [branch] for this command to work." instead;
 
 section r1ing
 
