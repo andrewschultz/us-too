@@ -71,7 +71,7 @@ Sir Freddie finds that interesting, but ... he doesn't have the right gear to ge
 
 #testcase-think-once-table-of-main-oronyms-pre-surf-ready-rule
 >think
-You can SURF READY here once you have surfing materials for Sir Freddie.
+You can make Sir Freddie SURF READY here once you have surfing equipment for him.
 
 >s
 >ne
@@ -79,9 +79,9 @@ You can SURF READY here once you have surfing materials for Sir Freddie.
 >board red
 by a point
 
-#testcase-think-nowfar-once-table-of-main-oronyms-pre-surf-ready-rule
+#testcase-think-nowfar-table-of-main-oronyms-pre-surf-ready-rule
 >think
-You can SURF READY in Blah Copse now you have surfing materials for Sir Freddie.
+You can make Sir Freddie SURF READY in Blah Copse now you have surfing equipment for him.
 
 >sw
 
@@ -89,7 +89,7 @@ You can SURF READY in Blah Copse now you have surfing materials for Sir Freddie.
 
 #+testcase-think-nownear-table-of-main-oronyms-pre-surf-ready-rule
 >think
-You can SURF READY here now you have surfing materials for Sir Freddie.
+You can make Sir Freddie SURF READY here now you have surfing equipment for him.
 
 >surf ready
 by a point
@@ -185,8 +185,7 @@ by a point
 >blast ring
 by a point
 
->terrible aid
-by a point
+>se
 
 >sw
 
@@ -269,9 +268,17 @@ You can yell HO LANGUOR here now you have done something, anything, else in the 
 >ho langour
 by a point
 
+#testcase-think-nowfar-table-of-main-oronyms-pre-say-jokes-rule
+>think
+You can SAY JOKES in Sage Oaks now you're cheerier for having done a bit more.
+
 >n
 
 >ss
+
+#testcase-think-nownear-table-of-main-oronyms-pre-say-jokes-rule
+>think
+You can SAY JOKES here now you're cheerier for having done a bit more.
 
 >say jokes
 by a point
@@ -421,6 +428,33 @@ You can claim NO DATE here once you have a tool that can destroy the nodes.
 
 >u
 >w
+
+>wheat rye
+!by a point
+
+#testcase-think-once-table-of-main-oronyms-pre-wheat-rye-rule
+>think
+You can ask for WHEAT RYE here once you have something the fey loners/fail-owners can cut bread with.
+
+>e
+>s
+>e
+>nw
+
+>terrible aid
+by a point
+
+#testcase-think-nowfar-table-of-main-oronyms-pre-wheat-rye-rule
+>think
+You can ask for WHEAT RYE in "Die, Nerviness" Diner Venus now you have something the fey loners/fail-owners can cut bread with.
+
+>w
+>n
+>w
+
+#testcase-think-nownear-table-of-main-oronyms-pre-wheat-rye-rule
+>think
+You can ask for WHEAT RYE here now you have something the fey loners/fail-owners can cut bread with.
 
 >wheat rye
 by a point

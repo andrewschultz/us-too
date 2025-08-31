@@ -991,11 +991,15 @@ The eyes light up green and show four dots, then five dots.
 >herb ranch
 Yes, yes, a bit of time away from Ur-Branch made it clear where to go first. You should go back there and try again.
 \\
-#testcase-think-table-of-main-oronyms-pre-herb-ranch-rule
+#testcase-think-once-table-of-main-oronyms-pre-herb-ranch-rule
 >think
 You can discover an HERB RANCH once you are back in the Ur-Branch.
 \\
 >u
+\\
+#testcase-think-nownear-table-of-main-oronyms-pre-herb-ranch-rule
+>think
+You can discover an HERB RANCH now you are back in the Ur-Branch.
 
 >>herb ranch
 by a point
@@ -1050,13 +1054,13 @@ The eyes light up green and show six dots, then three dots.
 >summer bay
 Perhaps you should use the herb in a more wide-open place. Like the Ur-Branch where you got it.
 \\
-#testcase-think-table-of-main-oronyms-pre-summer-bay-rule
+#testcase-think-once-table-of-main-oronyms-pre-summer-bay-rule
 >think
 You can discover a SUMMER BAY once you are back in the Ur-Branch.
 \\
 >u
 \\
-#+testcase-think-table-of-main-oronyms-pre-summer-bay-rule
+#testcase-think-nownear-table-of-main-oronyms-pre-summer-bay-rule
 >think
 You can discover a SUMMER BAY now you are back in the Ur-Branch.
 
@@ -1259,7 +1263,7 @@ You already probed the pro ball enough to get a feel for hidden exits in your su
 The eyes light up yellow and show four dots, then six dots.
 
 @rej
-#testcase-think-table-of-main-oronyms-pre-punt-weaker-rule
+#testcase-think-once-table-of-main-oronyms-pre-punt-weaker-rule
 >think
 You can get a PUNT WEAKER once you are able to help the pun tweaker fix the ship here.
 
@@ -1436,7 +1440,7 @@ You shouldn't need another board!
 >malt hour
 You would like to call out that there are alcoholic refreshments, but you don't have any.
 \\
-#testcase-think-table-of-main-oronyms-pre-malt-hour-rule
+#testcase-think-once-table-of-main-oronyms-pre-malt-hour-rule
 >think
 You can call MALT HOUR here once you have a variety of alcohol to share.
 
@@ -1696,11 +1700,11 @@ Out is ambiguous here. There are two worthwhile ways to leave: north and south.
 @rej
 #testcase-check-pre-blast-ring-rule-if-player-is-not-in-sore-dark-or-sword-ark-is-not-in-sore-dark
 >blast ring
-Why, you bet you could make that from the blah string, but you see nothing blastable. Or that needs to be blasted, to help you progress. And it wouldn't do to carry around something that volatile. Accidents might happen.
+The blah string writhes and turns and points above, then nothing. You see nothing blastable or that needs to be blasted above. Neither does it. It goes limp. It wouldn't do to carry around something as volatile as a blast ring. Accidents might happen. But something may turn up.
 \\
-#testcase-think-table-of-main-oronyms-pre-blast-ring-rule
+#testcase-think-once-table-of-main-oronyms-pre-blast-ring-rule
 >think
-You can transform the blah string to a BLAST RING once you have found something to blast.
+You can transform the blah string to a BLAST RING to blast something somewhere high up.
 
 >n
 @all
@@ -2149,7 +2153,7 @@ You're pretty sure you have one word right for dispelling the Can't-Ache.
 >dough making
 The can't-ache prevents you from doing anything constructive!
 \\
-#testcase-think-table-of-main-oronyms-pre-dough-making-rule
+#testcase-think-once-table-of-main-oronyms-pre-dough-making-rule
 >think
 You can commence DOUGH MAKING here once you have overcome the can't-ache.
 \\
@@ -2258,9 +2262,17 @@ You're pretty sure you have one word right for doing something positive in Dome,
 >undo
 
 @rej
-#+testcase-think-table-of-main-oronyms-pre-dough-making-rule
+#testcase-think-nownear-table-of-main-oronyms-pre-dough-making-rule
 >think
 You can commence DOUGH MAKING here now you have overcome the can't-ache.
+\\
+>nw
+\\
+#testcase-think-nowfar-table-of-main-oronyms-pre-dough-making-rule
+>think
+You can commence DOUGH MAKING in Dome, Aching now you have overcome the can't-ache.
+\\
+>se
 
 >>dough making
 by a point
@@ -2279,7 +2291,7 @@ Hmm, you could exchange the dough pail for dope ale, but ... nobody here wants d
 >dough making
 You already made enough dough!
 \\
-#testcase-think-table-of-main-oronyms-pre-dope-ale-rule
+#testcase-think-once-table-of-main-oronyms-pre-dope-ale-rule
 >think
 You can trade for some DOPE ALE once you've found find willing traders with a bit extra.
 
@@ -2435,6 +2447,11 @@ You looted the dome and the inner nest nicely.
 >undo
 >undo
 
+@rej
+#testcase-think-nowfar-table-of-main-oronyms-pre-punt-weaker-rule
+>think
+You can get a PUNT WEAKER now you are able to help the pun tweaker fix the ship in Bless-and-Bleah Sand.
+
 >e
 
 @part
@@ -2460,7 +2477,7 @@ You're pretty sure you have one word right for trading with the pun tweaker.
 >undo
 
 @rej
-#+testcase-think-table-of-main-oronyms-pre-punt-weaker-rule
+#testcase-think-nownear-table-of-main-oronyms-pre-punt-weaker-rule
 >think
 You can get a PUNT WEAKER now you are able to help the pun tweaker fix the ship here.
 
@@ -2717,7 +2734,7 @@ No, that would put something way too high up out of reach, even if the light wer
 @rej
 #+testcase-check-pre-blast-ring-rule-if-player-is-not-in-sore-dark-or-sword-ark-is-not-in-sore-dark
 >blast ring
-Why, you bet you could make that from the blah string, but you see nothing blastable. Or that needs to be blasted, to help you progress. And it wouldn't do to carry around something that volatile. Accidents might happen.
+The blah string writhes and turns and points above, then nothing. You see nothing blastable or that needs to be blasted above. Neither does it. It goes limp. It wouldn't do to carry around something as volatile as a blast ring. Accidents might happen. But something may turn up.
 \\
 #+testcase-check-pre-terrible-aid-rule-if-player-is-not-in-sore-dark-and-player-does-not-have-terra-blade
 >terra blade
@@ -2808,15 +2825,19 @@ There doesn't need to be another sword ark!
 >terrible aid
 Hmm, yes, it doesn't matter if it's terrible while it's unattainable.
 \\
->think
-\\
-#testcase-think-table-of-main-oronyms-pre-terrible-aid-rule
+#testcase-think-once-table-of-main-oronyms-pre-terrible-aid-rule
+#testcase-think-nownear-table-of-main-oronyms-pre-blast-ring-rule
 >think
 You can become the owner of a TERRIBLE AID here once it has fallen to where you can reach it.
+You can transform the blah string to a BLAST RING to blast something somewhere high up.
 \\
-#+testcase-think-table-of-main-oronyms-pre-blast-ring-rule
+>se
+\\
+#testcase-think-nowfar-table-of-main-oronyms-pre-blast-ring-rule
 >think
-You can transform the blah string to a BLAST RING now you have found something to blast.
+You can transform the blah string to a BLAST RING to blast something somewhere high up.
+\\
+>nw
 
 >>blast ring
 by a point
@@ -2859,9 +2880,17 @@ You're pretty sure you have one word right for becoming worthy of the Terra Blad
 The eyes light up green and show eight dots, then three dots.
 
 @rej
-#+testcase-think-table-of-main-oronyms-pre-terrible-aid-rule
+#testcase-think-nownear-table-of-main-oronyms-pre-terrible-aid-rule
 >think
 You can become the owner of a TERRIBLE AID here now it has fallen to where you can reach it.
+\\
+>se
+\\
+#testcase-think-nowfar-table-of-main-oronyms-pre-terrible-aid-rule
+>think
+You can become the owner of a TERRIBLE AID in Sword Ark now it has fallen to where you can reach it.
+\\
+>nw
 
 >>terrible aid
 by a point
@@ -3061,7 +3090,7 @@ You already burst the tube/rod!
 >damp ink
 But you have nothing that can hold the ink without leaking!
 \\
-#testcase-think-table-of-main-oronyms-pre-damp-ink-rule
+#testcase-think-once-table-of-main-oronyms-pre-damp-ink-rule
 >think
 You can pick up DAMP INK here once you have a proper container.
 \\
@@ -3177,9 +3206,9 @@ You already dealt with your anger! If you want more anger to have to deal with, 
 >scry broom
 The scribes notice you looking at the broom. "Want it? Well, we won't trade it for NOTHING..." Now what could scribes use?
 \\
-#testcase-think-table-of-main-oronyms-pre-scry-broom-rule
+#testcase-think-once-table-of-main-oronyms-pre-scry-broom-rule
 >think
-You can SCRY BROOM and get it here once you have something the scribes want.
+You can SCRY BROOM and trade for it here once you have something the scribes want.
 \\
 >n
 
@@ -3485,6 +3514,10 @@ Ambiguous. You can go north or south.
 {$EYEITMDONE} the gas pouch.
 
 @rej
+#testcase-think-nowfar-table-of-main-oronyms-pre-damp-ink-rule
+>think
+You can pick up DAMP INK in Dam, Pink now you have a proper container.
+\\
 #testcase-check-pre-gas-pouch-rule-if-sco-gas-pouch-is-true
 >gas pouch
 You don't need two gas pouches.
@@ -3497,9 +3530,11 @@ A very good idea, but you have nothing that could sweep at the moment!
 \\
 >think
 \\
-#testcase-think-table-of-main-oronyms-pre-pro-sweeping-rule
+#testcase-think-once-table-of-main-oronyms-pre-pro-sweeping-rule
 >think
-You can get PRO SWEEPING here once you have something to sweep with.
+You can start PRO SWEEPING here once you have something to sweep with.
+\\
+>n
 
 >n
 
@@ -3645,6 +3680,7 @@ You're pretty sure you have one word right for getting something from the dam.
 The eyes light up green and show four dots, then three dots.
 
 @rej
+#testcase-think-nownear-table-of-main-oronyms-pre-damp-ink-rule
 >think
 You can pick up DAMP INK here now you have a proper container.
 
@@ -3660,6 +3696,10 @@ You use the gas pouch to drain out a good dose of damp ink that's dripping from 
 #testcase-check-pre-damp-ink-rule-if-sco-damp-ink-is-true
 >damp ink
 You got enough ink.
+\\
+#testcase-think-nowfar-table-of-main-oronyms-pre-scry-broom-rule
+>think
+You can SCRY BROOM and trade for it in Scribe Room now you have something the scribes want.
 
 >n
 >n
@@ -3731,9 +3771,9 @@ The eyes light up green and show four dots, then five dots.
 The eyes show nothing. Probably don't need to change up anything to get something from the scribes directly.
 
 @rej
-#+testcase-think-table-of-main-oronyms-pre-scry-broom-rule
+#testcase-think-nownear-table-of-main-oronyms-pre-scry-broom-rule
 >think
-You can SCRY BROOM and get it here now you have something the scribes want.
+You can SCRY BROOM and trade for it here now you have something the scribes want.
 
 >>scry broom
 by a point
@@ -3748,6 +3788,10 @@ Boy! All this carrying and dropping items and using your oar to get through the 
 #testcase-check-pre-scry-broom-rule-if-sco-scry-broom-is-true
 >scry broom
 You neither want nor need two brooms.
+\\
+#testcase-think-nowfar-table-of-main-oronyms-pre-pro-sweeping-rule
+>think
+You can start PRO SWEEPING in Dust Which Does Twitch now you have something to sweep with.
 
 @hint
 #testcase-values-eyes-number-of-broom-is-1
@@ -3819,9 +3863,9 @@ You're pretty sure you have one word right for figuring how to clear some dust a
 The eyes light up green and show three dots, then eight dots.
 
 @rej
-#+testcase-think-table-of-main-oronyms-pre-pro-sweeping-rule
+#testcase-think-nownear-table-of-main-oronyms-pre-pro-sweeping-rule
 >think
-You can get PRO SWEEPING here now you have something to sweep with.
+You can start PRO SWEEPING here now you have something to sweep with.
 
 @verbs
 >r
@@ -3841,6 +3885,11 @@ Dam, Pink
 \\
 >rr
 Dust Which Does Twitch
+
+@rej
+#testcase-think-nowfar-table-of-main-oronyms-pre-pro-sweeping-rule
+>think
+You can start PRO SWEEPING here now you have something to sweep with.
 
 >>pro sweeping
 by a point
@@ -4090,7 +4139,7 @@ Out is ambiguous here. There are three worthwhile ways to leave: north, east and
 \\
 >e
 \\
-#+testcase-branch-block-s
+#testcase-branch-block-s
 >s
 You found all three southish passages and everything useful in them, so there's no reason to go back. Nice work!
 \\
@@ -4099,7 +4148,7 @@ You found all three southish passages and everything useful in them, so there's 
 \\
 >e
 \\
-#+testcase-branch-block-s
+#testcase-branch-block-sw
 >sw
 You are done with the southwest and using the beak to speed through to new places.
 \\
@@ -4244,7 +4293,7 @@ Of course it makes sense there'd be a barn on farm isles. You find a barn, open,
 !Of course it makes sense there'd be a barn on farm isles.
 You revisit the barn, open, hidden behind the bar. There are some truly glorious eggs in there, but you have nothing to barter for them yet. "Food for food," you're told. "But only what you have extra of."
 \\
-#testcase-think-table-of-main-oronyms-pre-barn-open-rule
+#testcase-think-once-table-of-main-oronyms-pre-barn-open-rule
 >think
 You can transact with the BARN OPEN here once you have food to barter.
 
@@ -4421,9 +4470,16 @@ You're pretty sure you have one word right for overcoming rejection from the bar
 The eyes light up green and show four dots, then four dots.
 
 @rej
-#+testcase-think-table-of-main-oronyms-pre-barn-open-rule
+#testcase-think-nownear-table-of-main-oronyms-pre-barn-open-rule
 >think
 You can transact with the BARN OPEN here now you have food to barter.
+\\
+>n
+#testcase-think-nowfar-table-of-main-oronyms-pre-barn-open-rule
+>think
+You can transact with the BARN OPEN in Far-Miles Farm Isles now you have food to barter.
+\\
+>s
 
 >>barn open
 by a point
@@ -4686,9 +4742,16 @@ The eyes light up green and show four dots, then three dots.
 Not that way. Out or east.
 
 @rej
-#+testcase-think-table-of-main-oronyms-pre-dope-ale-rule
+#testcase-think-nownear-table-of-main-oronyms-pre-dope-ale-rule
 >think
 You can trade for some DOPE ALE now you've found find willing traders with a bit extra.
+\\
+>e
+#testcase-think-nowfar-table-of-main-oronyms-pre-dope-ale-rule
+>think
+You can trade for some DOPE ALE now you've found find willing traders with a bit extra.
+\\
+>w
 
 >>dope ale
 by a point
@@ -4706,6 +4769,11 @@ You make the trade: dough pail for dope ale! The fey loners/fail-owners note the
 #testcase-values-eyes-number-of-dope-ale-is--1
 >eye dope ale
 {$EYEITMDONE} the dope ale.
+
+@rej
+#testcase-think-nowfar-table-of-main-oronyms-pre-malt-hour-rule
+>think
+You can call MALT HOUR in Bore Dread now you have a variety of alcohol to share.
 
 >e
 >w
@@ -5067,7 +5135,7 @@ You fixed up the deli AND destroyed the nodes. Well done! There's no need to go 
 >use it
 It would be useful to have an item of power, but alas, you do not, at the moment.
 \\
-#testcase-think-table-of-main-oronyms-pre-use-it-rule
+#testcase-think-once-table-of-main-oronyms-pre-use-it-rule
 >think
 You can USE IT here once you have an item of power to use.
 \\
@@ -5101,6 +5169,11 @@ You're pretty sure you have one word right for befriending the guardians in the 
 #+testcase-values-eyes-number-of-maul-tower-is-44
 >eye maul tower
 The eyes light up green and show four dots, then four dots.
+
+@rej
+#testcase-think-nownear-table-of-main-oronyms-pre-malt-hour-rule
+>think
+You can call MALT HOUR here now you have a variety of alcohol to share.
 
 >>malt hour
 by a point
@@ -5180,7 +5253,7 @@ The eyes light up green and show four dots, then five dots.
 >join aider
 The pro ball jumps an inch out of your hand and briefly crackles, but nothing else happens. You'll need to find what to join it to.
 \\
-#testcase-think-table-of-main-oronyms-pre-join-aider-rule
+#testcase-think-once-table-of-main-oronyms-pre-join-aider-rule
 >think
 You can call a JOIN AIDER here once you have two items of power to join.
 \\
@@ -5192,6 +5265,10 @@ You can call a JOIN AIDER here once you have two items of power to join.
 >belt rusted
 by a point
 \\
+#testcase-think-nowfar-table-of-main-oronyms-pre-join-aider-rule
+>think
+You can call a JOIN AIDER in Joy Nadir now you have two items of power to join.
+\\
 #+testcase-check-pre-belt-rusted-rule-if-bell-trusted-is-not-in-scribe-room
 >belt rusted
 {$REJECT2}
@@ -5201,7 +5278,7 @@ by a point
 >ne
 >e
 \\
-#+testcase-think-table-of-main-oronyms-pre-join-aider-rule
+#testcase-think-nownear-table-of-main-oronyms-pre-join-aider-rule
 >think
 You can call a JOIN AIDER here now you have two items of power to join.
 
@@ -5296,6 +5373,11 @@ Mapping outside to up, since it is the only worthwhile direction to go.
 \\
 >undo
 
+@rej
+#testcase-think-nowfar-table-of-main-oronyms-pre-use-it-rule
+>think
+You can USE IT in Throne Ow-Throw-Now now you have an item of power to use.
+
 >u
 
 @all
@@ -5367,7 +5449,7 @@ You're pretty sure you have one word right for disobeying the throne's orders.
 >undo
 
 @rej
-#+testcase-think-table-of-main-oronyms-pre-use-it-rule
+#testcase-think-nownear-table-of-main-oronyms-pre-use-it-rule
 >think
 You can USE IT here now you have an item of power to use.
 
@@ -5452,6 +5534,11 @@ Mapping outside to down, since it is the only worthwhile direction to go.
 `My New Mine, Ooh!
 \\
 >undo
+
+@rej
+#testcase-think-nowfar-table-of-main-oronyms-pre-a-stew-rule
+>think
+You can make A STEW in My New Mine, Ooh! now you have all the ingredients you need. X should list them.
 
 >d
 
@@ -5696,7 +5783,7 @@ You already used the herb to expand your mind! It is only good for seasoning now
 {$REJECT2}
 
 @rej+
-#testcase-think-table-of-main-oronyms-pre-a-stew-rule
+#testcase-think-once-table-of-main-oronyms-pre-a-stew-rule
 >think
 You can make A STEW here now you have all the ingredients you need. X should list them.
 
@@ -5717,6 +5804,11 @@ You can make A STEW here now you have all the ingredients you need. X should lis
 @!min
 >>nope on
 by a bonus point
+
+@rej
+#testcase-think-nownear-table-of-main-oronyms-pre-a-stew-rule
+>think
+You can make A STEW here now you have all the ingredients you need. X should list them.
 
 >>a stew
 by a point

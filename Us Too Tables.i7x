@@ -27,14 +27,14 @@ w1 (text)	w2 (text)	first-hom (text)	second-hom	hom-txt-rule (rule)	first-exact	
 "pie"	"crust"	"pi"	--	--	false	false	false	false	"finding what's under the pike rust"	false	true	true	false	false	A Pile Up Isle	pre-pie-crust rule	post-pie-crust rule	--	"You can get the [b]PIE CRUST[r] [here-in of pile up isle] [once-now of pre-pie-crust rule] you have a suitable container."
 "hike"	"up"	--	--	--	false	false	false	false	"reaching the high cup"	false	true	true	false	false	a pile up isle	pre-hike-up rule	post-hike-up rule	--	--
 "sword"	"ark"	"soared"	"arc"	hom-sword-ark rule	false	false	false	false	"finding something in the Sore Dark"	false	true	true	false	false	sore dark	pre-sword-ark rule	post-sword-ark rule	--	--
-"blast"	"ring"	--	--	--	false	false	false	false	"finding the blah string's true purpose"	false	true	true	false	false	sore dark	pre-blast-ring rule	post-blast-ring rule	--	"You can transform the blah string to a [b]BLAST RING[r] [once-now of pre-blast-ring rule] you have found something to blast."
+"blast"	"ring"	--	--	--	false	false	false	false	"finding the blah string's true purpose"	false	true	true	false	false	sore dark	pre-blast-ring rule	post-blast-ring rule	--	"You can transform the blah string to a [b]BLAST RING[r] to blast something somewhere high up."
 "terrible"	"aid"	--	--	--	false	false	false	false	"becoming worthy of the Terra Blade"	false	true	true	false	false	sore dark	pre-terrible-aid rule	post-terrible-aid rule	--	"You can become the owner of a [b]TERRIBLE AID[r] [here-in of Sore Dark] [once-now of pre-terrible-aid rule] it has fallen to where you can reach it."
 "board"	"red"	"bored"	"read"	hom-board-red rule	false	false	false	false	"finding something in the Bore Dread"	false	true	true	false	false	bore dread	pre-board-red rule	post-board-red rule	--	--
 "malt"	"hour"	"mall"	--	hom-malt-hour rule	false	false	false	false	"befriending the guardians in the maul tower"	false	true	true	false	false	bore dread	pre-malt-hour rule	post-malt-hour rule	--	"You can call [b]MALT HOUR[r] [here-in of bore dread] [once-now of pre-malt-hour rule] you have a variety of alcohol to share."
 "join"	"aider|adder"	--	--	hom-join-aider rule	false	false	false	false	"doing something worthwhile in the joy nadir"	false	true	true	false	false	joy nadir	pre-join-aider rule	post-join-aider rule	--	"You can call a [b]JOIN AIDER[r] [here-in of joy nadir] [once-now of pre-join-aider rule] you have two items of power to join."
 "dupe"	"it"	--	--	--	false	false	false	false	"making the dew pit useful"	false	true	true	false	false	joy nadir	pre-dupe-it rule	post-dupe-it rule	--	"You can [b]DUPE IT[r] [here-in of joy nadir] [once-now of pre-dupe-it rule] you have something unique and worth duplicating."
 "nah|naw"	"queue"	"gnaw"	"cue"	hom-nah-queue rule	false	false	false	false	"repelling the [team]"	false	true	true	false	false	blah copse	pre-nah-queue rule	post-nah-queue rule	--	--
-"surf"	"ready"	--	--	--	false	false	false	false	"giving Sir Freddie a new direction"	false	true	true	false	false	blah copse	pre-surf-ready rule	post-surf-ready rule	--	"You can [b]SURF READY[r] [here-in of Blah Copse] [once-now of pre-surf-ready rule] you have surfing materials for Sir Freddie."
+"surf"	"ready"	--	--	--	false	false	false	false	"giving Sir Freddie a new direction"	false	true	true	false	false	blah copse	pre-surf-ready rule	post-surf-ready rule	--	"You can make Sir Freddie [b]SURF READY[r] [here-in of Blah Copse] [once-now of pre-surf-ready rule] you have surfing equipment for him."
 "or"	"clerk"	"ore|oar"	--	--	false	false	false	false	"figuring what Sir Freddie was scared of"	false	true	true	false	false	blah copse	pre-or-clerk rule	post-or-clerk rule	--	--
 "more"	"flares|flare"	--	"flayers|flayer|flair|flairs"	hom-flairs-flayers rule	false	false	false	false	"activating the morph lairs"	false	true	true	false	false	morph lairs	pre-more-flares rule	post-more-flares rule	--	--
 "rope"	"ladder"	--	--	--	false	false	false	false	"discovering what the row (plaider) holds"	false	true	true	false	false	morph lairs	pre-rope-ladder rule	post-rope-ladder rule	--	--
@@ -68,9 +68,9 @@ w1 (text)	w2 (text)	first-hom (text)	second-hom	hom-txt-rule (rule)	first-exact	
 "gas"	"pouch"	--	--	--	false	false	false	false	"see how to stop gasping OUCH"	false	true	true	false	false	sage oaks	pre-gas-pouch rule	post-gas-pouch rule	--	--
 "claim"	"it"	--	--	--	false	false	false	false	"gathering the clay mitt"	false	true	true	false	false	Dam Pink	pre-claim-it rule	post-claim-it rule	--	--
 "damp"	"ink"	--	"inc"	--	false	false	false	false	"getting something from the dam"	false	true	true	false	false	dam pink	pre-damp-ink rule	post-damp-ink rule	--	"You can pick up [b]DAMP INK[r] [here-in of Dam Pink] [once-now of pre-damp-ink rule] you have a proper container."
-"scry"	"broom"	--	--	--	false	false	false	false	"getting something from the Scribe Room"	false	true	true	false	false	scribe room	pre-scry-broom rule	post-scry-broom rule	--	"You can [b]SCRY BROOM[r] and get it [here-in of Scribe Room] [once-now of pre-scry-broom rule] you have something the scribes want."
+"scry"	"broom"	--	--	--	false	false	false	false	"getting something from the Scribe Room"	false	true	true	false	false	scribe room	pre-scry-broom rule	post-scry-broom rule	--	"You can [b]SCRY BROOM[r] and trade for it [here-in of Scribe Room] [once-now of pre-scry-broom rule] you have something the scribes want."
 "belt"	"rusted"	--	--	--	false	false	false	false	"figuring how to 'clean' the bell (trusted)"	false	true	true	false	false	scribe room	pre-belt-rusted rule	post-belt-rusted rule	--	--
-"pro"	"sweeping"	--	--	--	false	false	false	false	"figuring how to clear some dust a bit"	false	true	true	false	false	dust which	pre-pro-sweeping rule	post-pro-sweeping rule	--	"You can get [b]PRO SWEEPING[r] [here-in of Dust Which] [once-now of pre-pro-sweeping rule] you have something to sweep with."
+"pro"	"sweeping"	--	--	--	false	false	false	false	"figuring how to clear some dust a bit"	false	true	true	false	false	dust which	pre-pro-sweeping rule	post-pro-sweeping rule	--	"You can start [b]PRO SWEEPING[r] [here-in of Dust Which] [once-now of pre-pro-sweeping rule] you have something to sweep with."
 "cold"	"rum"	--	--	--	false	false	false	false	"knowing what to look for in the coal drum"	false	true	true	false	false	dust which	pre-cold-rum rule	post-cold-rum rule	--	--
 "tea"	"leaves"	"tee"	--	--	false	false	false	false	"divining what's beneath Teal Eaves"	false	true	true	false	false	dust which	pre-tea-leaves rule	post-tea-leaves rule	--	"You can get the [b]TEA LEAVES[r] [here-in of Dust Which] [once-now of pre-tea-leaves rule] you have something that can get you to the top of the eaves."
 "summon"	"cheese"	--	--	--	false	false	false	false	"figuring what some munchies are"	false	true	true	false	false	--	pre-summon-cheese rule	post-summon-cheese rule	--	--
@@ -395,13 +395,13 @@ this is the post-sword-ark rule:
 a wordtwisting rule (this is the pre-blast-ring rule):
 	if player does not have blah string, unavailable;
 	if (player is not in sore dark and once-now-hunt is false) or sword ark is not in sore dark:
-		vcp "Why, you bet you could make that from the blah string, but you see nothing blastable. Or that needs to be blasted, to help you progress. And it wouldn't do to carry around something that volatile. Accidents might happen.";
+		vcp "The blah string writhes and turns and points above, then nothing. You see nothing blastable or that needs to be blasted above. Neither does it. It goes limp. It wouldn't do to carry around something as volatile as a blast ring. Accidents might happen. But something may turn up.";
 		not-yet;
 	ready;
 
 this is the post-blast-ring rule:
 	now sco-blast-ring is true;
-	say "You aim the blah string at the sword ark. You feel a pull--yes, this must be when to transform the blah string. And boom! The sword ark shatters, and the Terra Blade falls to the ground.";
+	say "You aim the blah string at the sword ark. You feel a pull--yes, this must be when to transform the blah string. It coalesces into a string that points high in the air. And boom! The sword ark shatters, and the Terra Blade falls to the ground.";
 	moot blah string;
 	moot sword ark;
 

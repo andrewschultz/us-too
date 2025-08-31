@@ -398,11 +398,15 @@ You need to be back in your mine for this.
 >herb ranch
 Yes, yes, a bit of time away from Ur-Branch made it clear where to go first. You should go back there and try again.
 
-#testcase-think-table-of-main-oronyms-pre-herb-ranch-rule
+#testcase-think-once-table-of-main-oronyms-pre-herb-ranch-rule
 >think
 You can discover an HERB RANCH once you are back in the Ur-Branch.
 
 >u
+
+#testcase-think-nownear-table-of-main-oronyms-pre-herb-ranch-rule
+>think
+You can discover an HERB RANCH now you are back in the Ur-Branch.
 
 >herb ranch
 by a point
@@ -417,13 +421,13 @@ You already found the herb ranch! One free sample should be enough.
 >summer bay
 Perhaps you should use the herb in a more wide-open place. Like the Ur-Branch where you got it.
 
-#testcase-think-table-of-main-oronyms-pre-summer-bay-rule
+#testcase-think-once-table-of-main-oronyms-pre-summer-bay-rule
 >think
 You can discover a SUMMER BAY once you are back in the Ur-Branch.
 
 >u
 
-#+testcase-think-table-of-main-oronyms-pre-summer-bay-rule
+#testcase-think-nownear-table-of-main-oronyms-pre-summer-bay-rule
 >think
 You can discover a SUMMER BAY now you are back in the Ur-Branch.
 
@@ -457,7 +461,7 @@ The pun tweaker says "You want transport, eh? Any sort of transport? Well, I nee
 >probe all
 You already probed the pro ball enough to get a feel for hidden exits in your surroundings! More will appear as you need them, and later, you'll be able to use it to navigate slightly trickier area maps.
 
-#testcase-think-table-of-main-oronyms-pre-punt-weaker-rule
+#testcase-think-once-table-of-main-oronyms-pre-punt-weaker-rule
 >think
 You can get a PUNT WEAKER once you are able to help the pun tweaker fix the ship here.
 
@@ -493,7 +497,7 @@ You shouldn't need another board!
 >malt hour
 You would like to call out that there are alcoholic refreshments, but you don't have any.
 
-#testcase-think-table-of-main-oronyms-pre-malt-hour-rule
+#testcase-think-once-table-of-main-oronyms-pre-malt-hour-rule
 >think
 You can call MALT HOUR here once you have a variety of alcohol to share.
 
@@ -544,11 +548,11 @@ You already figured nothing awful was lurking to the north.
 
 #testcase-check-pre-blast-ring-rule-if-player-is-not-in-sore-dark-or-sword-ark-is-not-in-sore-dark
 >blast ring
-Why, you bet you could make that from the blah string, but you see nothing blastable. Or that needs to be blasted, to help you progress. And it wouldn't do to carry around something that volatile. Accidents might happen.
+The blah string writhes and turns and points above, then nothing. You see nothing blastable or that needs to be blasted above. Neither does it. It goes limp. It wouldn't do to carry around something as volatile as a blast ring. Accidents might happen. But something may turn up.
 
-#testcase-think-table-of-main-oronyms-pre-blast-ring-rule
+#testcase-think-once-table-of-main-oronyms-pre-blast-ring-rule
 >think
-You can transform the blah string to a BLAST RING once you have found something to blast.
+You can transform the blah string to a BLAST RING to blast something somewhere high up.
 
 >n
 
@@ -612,7 +616,7 @@ by a bonus point
 >dough making
 The can't-ache prevents you from doing anything constructive!
 
-#testcase-think-table-of-main-oronyms-pre-dough-making-rule
+#testcase-think-once-table-of-main-oronyms-pre-dough-making-rule
 >think
 You can commence DOUGH MAKING here once you have overcome the can't-ache.
 
@@ -634,9 +638,17 @@ by a point
 >gray tin
 You already got a gray tin from the Great Inn!
 
-#+testcase-think-table-of-main-oronyms-pre-dough-making-rule
+#testcase-think-nownear-table-of-main-oronyms-pre-dough-making-rule
 >think
 You can commence DOUGH MAKING here now you have overcome the can't-ache.
+
+>nw
+
+#testcase-think-nowfar-table-of-main-oronyms-pre-dough-making-rule
+>think
+You can commence DOUGH MAKING in Dome, Aching now you have overcome the can't-ache.
+
+>se
 
 >dough making
 by a point
@@ -649,7 +661,7 @@ Hmm, you could exchange the dough pail for dope ale, but ... nobody here wants d
 >dough making
 You already made enough dough!
 
-#testcase-think-table-of-main-oronyms-pre-dope-ale-rule
+#testcase-think-once-table-of-main-oronyms-pre-dope-ale-rule
 >think
 You can trade for some DOPE ALE once you've found find willing traders with a bit extra.
 
@@ -673,9 +685,13 @@ You already pried and got the prime oar!
 
 >nw
 
+#testcase-think-nowfar-table-of-main-oronyms-pre-punt-weaker-rule
+>think
+You can get a PUNT WEAKER now you are able to help the pun tweaker fix the ship in Bless-and-Bleah Sand.
+
 >e
 
-#+testcase-think-table-of-main-oronyms-pre-punt-weaker-rule
+#testcase-think-nownear-table-of-main-oronyms-pre-punt-weaker-rule
 >think
 You can get a PUNT WEAKER now you are able to help the pun tweaker fix the ship here.
 
@@ -713,7 +729,7 @@ There's nothing else to be found from another hike up. You're not getting the hi
 
 #+testcase-check-pre-blast-ring-rule-if-player-is-not-in-sore-dark-or-sword-ark-is-not-in-sore-dark
 >blast ring
-Why, you bet you could make that from the blah string, but you see nothing blastable. Or that needs to be blasted, to help you progress. And it wouldn't do to carry around something that volatile. Accidents might happen.
+The blah string writhes and turns and points above, then nothing. You see nothing blastable or that needs to be blasted above. Neither does it. It goes limp. It wouldn't do to carry around something as volatile as a blast ring. Accidents might happen. But something may turn up.
 
 #+testcase-check-pre-terrible-aid-rule-if-player-is-not-in-sore-dark-and-player-does-not-have-terra-blade
 >terra blade
@@ -730,22 +746,34 @@ There doesn't need to be another sword ark!
 >terrible aid
 Hmm, yes, it doesn't matter if it's terrible while it's unattainable.
 
->think
-
-#testcase-think-table-of-main-oronyms-pre-terrible-aid-rule
+#testcase-think-once-table-of-main-oronyms-pre-terrible-aid-rule
+#testcase-think-nownear-table-of-main-oronyms-pre-blast-ring-rule
 >think
 You can become the owner of a TERRIBLE AID here once it has fallen to where you can reach it.
+You can transform the blah string to a BLAST RING to blast something somewhere high up.
 
-#+testcase-think-table-of-main-oronyms-pre-blast-ring-rule
+>se
+
+#testcase-think-nowfar-table-of-main-oronyms-pre-blast-ring-rule
 >think
-You can transform the blah string to a BLAST RING now you have found something to blast.
+You can transform the blah string to a BLAST RING to blast something somewhere high up.
+
+>nw
 
 >blast ring
 by a point
 
-#+testcase-think-table-of-main-oronyms-pre-terrible-aid-rule
+#testcase-think-nownear-table-of-main-oronyms-pre-terrible-aid-rule
 >think
 You can become the owner of a TERRIBLE AID here now it has fallen to where you can reach it.
+
+>se
+
+#testcase-think-nowfar-table-of-main-oronyms-pre-terrible-aid-rule
+>think
+You can become the owner of a TERRIBLE AID in Sword Ark now it has fallen to where you can reach it.
+
+>nw
 
 >terrible aid
 by a point
@@ -782,7 +810,7 @@ You already burst the tube/rod!
 >damp ink
 But you have nothing that can hold the ink without leaking!
 
-#testcase-think-table-of-main-oronyms-pre-damp-ink-rule
+#testcase-think-once-table-of-main-oronyms-pre-damp-ink-rule
 >think
 You can pick up DAMP INK here once you have a proper container.
 
@@ -819,9 +847,9 @@ That thought/action/observation/request brings up nothing. Us Too has a limited 
 >scry broom
 The scribes notice you looking at the broom. "Want it? Well, we won't trade it for NOTHING..." Now what could scribes use?
 
-#testcase-think-table-of-main-oronyms-pre-scry-broom-rule
+#testcase-think-once-table-of-main-oronyms-pre-scry-broom-rule
 >think
-You can SCRY BROOM and get it here once you have something the scribes want.
+You can SCRY BROOM and trade for it here once you have something the scribes want.
 
 >n
 
@@ -877,6 +905,10 @@ Don't push it. The sage oaks might find such foolish risks stupid and change the
 >gas pouch
 by a point
 
+#testcase-think-nowfar-table-of-main-oronyms-pre-damp-ink-rule
+>think
+You can pick up DAMP INK in Dam, Pink now you have a proper container.
+
 #testcase-check-pre-gas-pouch-rule-if-sco-gas-pouch-is-true
 >gas pouch
 You don't need two gas pouches.
@@ -889,9 +921,11 @@ A very good idea, but you have nothing that could sweep at the moment!
 
 >think
 
-#testcase-think-table-of-main-oronyms-pre-pro-sweeping-rule
+#testcase-think-once-table-of-main-oronyms-pre-pro-sweeping-rule
 >think
-You can get PRO SWEEPING here once you have something to sweep with.
+You can start PRO SWEEPING here once you have something to sweep with.
+
+>n
 
 >n
 
@@ -902,6 +936,7 @@ You can get PRO SWEEPING here once you have something to sweep with.
 >claim it
 by a point
 
+#testcase-think-nownear-table-of-main-oronyms-pre-damp-ink-rule
 >think
 You can pick up DAMP INK here now you have a proper container.
 
@@ -912,15 +947,19 @@ by a point
 >damp ink
 You got enough ink.
 
->n
->n
->s
-
->s
-
-#+testcase-think-table-of-main-oronyms-pre-scry-broom-rule
+#testcase-think-nowfar-table-of-main-oronyms-pre-scry-broom-rule
 >think
-You can SCRY BROOM and get it here now you have something the scribes want.
+You can SCRY BROOM and trade for it in Scribe Room now you have something the scribes want.
+
+>n
+>n
+>s
+
+>s
+
+#testcase-think-nownear-table-of-main-oronyms-pre-scry-broom-rule
+>think
+You can SCRY BROOM and trade for it here now you have something the scribes want.
 
 >scry broom
 by a point
@@ -928,6 +967,10 @@ by a point
 #testcase-check-pre-scry-broom-rule-if-sco-scry-broom-is-true
 >scry broom
 You neither want nor need two brooms.
+
+#testcase-think-nowfar-table-of-main-oronyms-pre-pro-sweeping-rule
+>think
+You can start PRO SWEEPING in Dust Which Does Twitch now you have something to sweep with.
 
 >n
 >n
@@ -938,9 +981,13 @@ You neither want nor need two brooms.
 >cold rum
 That thought/action/observation/request brings up nothing. Us Too has a limited set of verbs, and the main thing is to guess a two-word phrase. To see what verbs are used, try VERBS.
 
-#+testcase-think-table-of-main-oronyms-pre-pro-sweeping-rule
+#testcase-think-nownear-table-of-main-oronyms-pre-pro-sweeping-rule
 >think
-You can get PRO SWEEPING here now you have something to sweep with.
+You can start PRO SWEEPING here now you have something to sweep with.
+
+#testcase-think-nowfar-table-of-main-oronyms-pre-pro-sweeping-rule
+>think
+You can start PRO SWEEPING here now you have something to sweep with.
 
 >pro sweeping
 by a point
@@ -1019,7 +1066,7 @@ Of course it makes sense there'd be a barn on farm isles. You find a barn, open,
 !Of course it makes sense there'd be a barn on farm isles.
 You revisit the barn, open, hidden behind the bar. There are some truly glorious eggs in there, but you have nothing to barter for them yet. "Food for food," you're told. "But only what you have extra of."
 
-#testcase-think-table-of-main-oronyms-pre-barn-open-rule
+#testcase-think-once-table-of-main-oronyms-pre-barn-open-rule
 >think
 You can transact with the BARN OPEN here once you have food to barter.
 
@@ -1042,9 +1089,16 @@ by a point
 >find rinks
 You already found them! You don't need to go back.
 
-#+testcase-think-table-of-main-oronyms-pre-barn-open-rule
+#testcase-think-nownear-table-of-main-oronyms-pre-barn-open-rule
 >think
 You can transact with the BARN OPEN here now you have food to barter.
+
+>n
+#testcase-think-nowfar-table-of-main-oronyms-pre-barn-open-rule
+>think
+You can transact with the BARN OPEN in Far-Miles Farm Isles now you have food to barter.
+
+>s
 
 >barn open
 by a point
@@ -1099,12 +1153,23 @@ The fey loners/fail-owners almost look bright for a minute. "Hey, we could pull 
 
 >w
 
-#+testcase-think-table-of-main-oronyms-pre-dope-ale-rule
+#testcase-think-nownear-table-of-main-oronyms-pre-dope-ale-rule
 >think
 You can trade for some DOPE ALE now you've found find willing traders with a bit extra.
 
+>e
+#testcase-think-nowfar-table-of-main-oronyms-pre-dope-ale-rule
+>think
+You can trade for some DOPE ALE now you've found find willing traders with a bit extra.
+
+>w
+
 >dope ale
 by a point
+
+#testcase-think-nowfar-table-of-main-oronyms-pre-malt-hour-rule
+>think
+You can call MALT HOUR in Bore Dread now you have a variety of alcohol to share.
 
 >e
 >w
@@ -1161,13 +1226,17 @@ by a point
 >use it
 It would be useful to have an item of power, but alas, you do not, at the moment.
 
-#testcase-think-table-of-main-oronyms-pre-use-it-rule
+#testcase-think-once-table-of-main-oronyms-pre-use-it-rule
 >think
 You can USE IT here once you have an item of power to use.
 
 >d
 
 >ne
+
+#testcase-think-nownear-table-of-main-oronyms-pre-malt-hour-rule
+>think
+You can call MALT HOUR here now you have a variety of alcohol to share.
 
 >malt hour
 by a point
@@ -1182,7 +1251,7 @@ You already called out to share refreshments. You need to save some for the fina
 >join aider
 The pro ball jumps an inch out of your hand and briefly crackles, but nothing else happens. You'll need to find what to join it to.
 
-#testcase-think-table-of-main-oronyms-pre-join-aider-rule
+#testcase-think-once-table-of-main-oronyms-pre-join-aider-rule
 >think
 You can call a JOIN AIDER here once you have two items of power to join.
 
@@ -1194,6 +1263,10 @@ You can call a JOIN AIDER here once you have two items of power to join.
 >belt rusted
 by a point
 
+#testcase-think-nowfar-table-of-main-oronyms-pre-join-aider-rule
+>think
+You can call a JOIN AIDER in Joy Nadir now you have two items of power to join.
+
 #+testcase-check-pre-belt-rusted-rule-if-bell-trusted-is-not-in-scribe-room
 >belt rusted
 That thought/action/observation/request brings up nothing. Us Too has a limited set of verbs, and the main thing is to guess a two-word phrase. To see what verbs are used, try VERBS.
@@ -1203,7 +1276,7 @@ That thought/action/observation/request brings up nothing. Us Too has a limited 
 >ne
 >e
 
-#+testcase-think-table-of-main-oronyms-pre-join-aider-rule
+#testcase-think-nownear-table-of-main-oronyms-pre-join-aider-rule
 >think
 You can call a JOIN AIDER here now you have two items of power to join.
 
@@ -1226,13 +1299,17 @@ You already got an egg from the barn! You figured where to get more, too.
 >undo
 >undo
 
+#testcase-think-nowfar-table-of-main-oronyms-pre-use-it-rule
+>think
+You can USE IT in Throne Ow-Throw-Now now you have an item of power to use.
+
 >u
 
 #testcase-check-pre-lie-fruits-rule-if-life-roots-are-not-in-throne
 >lie fruits
 That thought/action/observation/request brings up nothing. Us Too has a limited set of verbs, and the main thing is to guess a two-word phrase. To see what verbs are used, try VERBS.
 
-#+testcase-think-table-of-main-oronyms-pre-use-it-rule
+#testcase-think-nownear-table-of-main-oronyms-pre-use-it-rule
 >think
 You can USE IT here now you have an item of power to use.
 
@@ -1253,6 +1330,10 @@ That thought/action/observation/request brings up nothing. Us Too has a limited 
 #testcase-reject-end-table-of-main-oronyms-pre-mess-pot-rule
 >mess pot
 That thought/action/observation/request brings up nothing. Us Too has a limited set of verbs, and the main thing is to guess a two-word phrase. To see what verbs are used, try VERBS.
+
+#testcase-think-nowfar-table-of-main-oronyms-pre-a-stew-rule
+>think
+You can make A STEW in My New Mine, Ooh! now you have all the ingredients you need. X should list them.
 
 >d
 
@@ -1492,12 +1573,16 @@ That thought/action/observation/request brings up nothing. Us Too has a limited 
 >wheat rye
 That thought/action/observation/request brings up nothing. Us Too has a limited set of verbs, and the main thing is to guess a two-word phrase. To see what verbs are used, try VERBS.
 
-#testcase-think-table-of-main-oronyms-pre-a-stew-rule
+#testcase-think-once-table-of-main-oronyms-pre-a-stew-rule
 >think
 You can make A STEW here now you have all the ingredients you need. X should list them.
 
 >nope on
 by a bonus point
+
+#testcase-think-nownear-table-of-main-oronyms-pre-a-stew-rule
+>think
+You can make A STEW here now you have all the ingredients you need. X should list them.
 
 >a stew
 by a point

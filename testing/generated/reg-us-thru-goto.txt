@@ -684,7 +684,7 @@ Out is ambiguous here. There are three worthwhile ways to leave: north, east and
 
 >e
 
-#+testcase-branch-block-s
+#testcase-branch-block-s
 >s
 You found all three southish passages and everything useful in them, so there's no reason to go back. Nice work!
 
@@ -693,7 +693,7 @@ You found all three southish passages and everything useful in them, so there's 
 
 >e
 
-#+testcase-branch-block-s
+#testcase-branch-block-sw
 >sw
 You are done with the southwest and using the beak to speed through to new places.
 
