@@ -261,10 +261,6 @@
 			<dock index="1" id="114" port="nw" />
 		</line>
 		<room id="117" name="Bold Itch" subtitle="" x="-64" y="416" w="96" h="64" region="NoRegion" handDrawn="yes" allcornersequal="yes" ellipse="no" roundedCorners="no" octagonal="no" cornerTopLeft="15" cornerTopRight="15" cornerBottomLeft="15" cornerBottomRight="15" borderstyle="Solid" description="" roomFill="" secondFill="" secondFillLocation="Bottom" roomBorder="" roomLargeText="" roomSubtitleColor="" roomSmallText="" ZOrder="0" />
-		<line id="118" name="" description="" flow="oneWay">
-			<dock index="0" id="28" port="n" />
-			<dock index="1" id="117" port="s" />
-		</line>
 		<room id="119" name="Stark Raft" subtitle="" x="-384" y="-96" w="96" h="64" region="NoRegion" handDrawn="yes" allcornersequal="yes" ellipse="no" roundedCorners="no" octagonal="no" cornerTopLeft="15" cornerTopRight="15" cornerBottomLeft="15" cornerBottomRight="15" borderstyle="Solid" description="" roomFill="" secondFill="" secondFillLocation="Bottom" roomBorder="" roomLargeText="" roomSubtitleColor="" roomSmallText="" ZOrder="0" />
 		<line id="120" name="" description="" flow="oneWay">
 			<dock index="0" id="117" port="nw" />
