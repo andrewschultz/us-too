@@ -69,7 +69,7 @@ by a point
 >surf ready
 Sir Freddie finds that interesting, but ... he doesn't have the right gear to get started on him, and neither do you, for the moment.
 
-#testcase-think-table-of-main-oronyms-pre-surf-ready-rule
+#testcase-think-once-table-of-main-oronyms-pre-surf-ready-rule
 >think
 You can SURF READY here once you have surfing materials for Sir Freddie.
 
@@ -79,11 +79,15 @@ You can SURF READY here once you have surfing materials for Sir Freddie.
 >board red
 by a point
 
+#testcase-think-nowfar-once-table-of-main-oronyms-pre-surf-ready-rule
+>think
+You can SURF READY in Blah Copse now you have surfing materials for Sir Freddie.
+
 >sw
 
 >n
 
-#+testcase-think-table-of-main-oronyms-pre-surf-ready-rule
+#+testcase-think-nownear-table-of-main-oronyms-pre-surf-ready-rule
 >think
 You can SURF READY here now you have surfing materials for Sir Freddie.
 
@@ -140,7 +144,7 @@ by a point
 !by a point
 You unfortunately have nothing that can contain pie crust, yet.
 
-#testcase-think-table-of-main-oronyms-pre-pie-crust-rule
+#testcase-think-once-table-of-main-oronyms-pre-pie-crust-rule
 >think
 You can get the PIE CRUST here once you have a suitable container.
 
@@ -152,11 +156,15 @@ You can get the PIE CRUST here once you have a suitable container.
 >gray tin
 by a point
 
+#testcase-think-nowfar-table-of-main-oronyms-pre-pie-crust-rule
+>think
+You can get the PIE CRUST in A Pile-Up Isle now you have a suitable container.
+
 >nw
 >e
 >e
 
-#+testcase-think-table-of-main-oronyms-pre-pie-crust-rule
+#testcase-think-nownear-table-of-main-oronyms-pre-pie-crust-rule
 >think
 You can get the PIE CRUST here now you have a suitable container.
 
@@ -199,6 +207,10 @@ by a point
 >ho langour
 But it doesn't quite work yet, calling for languor ... you haven't done anything down this way.
 
+#testcase-think-once-table-of-main-oronyms-pre-ho-langour-rule
+>think
+You can yell HO LANGUOR here once you have done something, anything, else in the south.
+
 >n
 
 >sw
@@ -225,11 +237,9 @@ by a point
 >say jokes
 You try to bull through with jokes, but you're forcing it. You haven't naturally boosted yourself.
 
-#testcase-think-table-of-main-oronyms-pre-ho-langour-rule
-#testcase-think-table-of-main-oronyms-pre-say-jokes-rule
+#testcase-think-once-table-of-main-oronyms-pre-say-jokes-rule
 >think
 You can SAY JOKES here once you're cheerier for having done a bit more.
-You can yell HO LANGUOR in Too-Dark 'Tude Ark once you have done something, anything, else in the south.
 
 >n
 
@@ -244,11 +254,15 @@ You can yell HO LANGUOR in Too-Dark 'Tude Ark once you have done something, anyt
 >too broad
 by a point
 
+#testcase-think-nowfar-table-of-main-oronyms-pre-ho-langour-rule
+>think
+You can yell HO LANGUOR in Too-Dark 'Tude Ark now you have done something, anything, else in the south.
+
 >n
 
 >s
 
-#testcase-think-table-of-main-oronyms-pre-ho-langour-rule
+#testcase-think-nownear-table-of-main-oronyms-pre-ho-langour-rule
 >think
 You can yell HO LANGUOR here now you have done something, anything, else in the south.
 
@@ -302,7 +316,7 @@ by a point
 You suspect you might find tea leaves on, or in, the teal eaves above, but you have no way to climb up.
 !by a point
 
-#testcase-think-table-of-main-oronyms-pre-tea-leaves-rule
+#testcase-think-once-table-of-main-oronyms-pre-tea-leaves-rule
 >think
 You can get the TEA LEAVES here once you have something that can get you to the top of the eaves.
 
@@ -314,10 +328,14 @@ You can get the TEA LEAVES here once you have something that can get you to the 
 >rope ladder
 by a point
 
+#testcase-think-nowfar-table-of-main-oronyms-pre-tea-leaves-rule
+>think
+You can get the TEA LEAVES in Teal Eaves now you have something that can get you to the top of the eaves.
+
 >ss
 >s
 
-#+testcase-think-table-of-main-oronyms-pre-tea-leaves-rule
+#+testcase-think-nownear-table-of-main-oronyms-pre-tea-leaves-rule
 >think
 You can get the TEA LEAVES here now you have something that can get you to the top of the eaves.
 
@@ -397,7 +415,7 @@ by a point
 >no date
 Yes ... that feels right, but you have no tool with which to tear apart node eight.
 
-#testcase-think-table-of-main-oronyms-pre-no-date-rule
+#testcase-think-once-table-of-main-oronyms-pre-no-date-rule
 >think
 You can claim NO DATE here once you have a tool that can destroy the nodes.
 
@@ -409,9 +427,13 @@ by a point
 
 >e
 
+#testcase-think-nowfar-table-of-main-oronyms-pre-no-date-rule
+>think
+You can claim NO DATE in Numb Bursting Number String now you have a tool that can destroy the nodes.
+
 >d
 
-#+testcase-think-table-of-main-oronyms-pre-no-date-rule
+#+testcase-think-nownear-table-of-main-oronyms-pre-no-date-rule
 >think
 You can claim NO DATE here now you have a tool that can destroy the nodes.
 
@@ -436,7 +458,7 @@ by a point
 You stand inside the dew pit and hold up everything in your inventory, but nothing is duplicated. Maybe you haven't found what you need, yet.
 !by a point
 
-#testcase-think-table-of-main-oronyms-pre-dupe-it-rule
+#testcase-think-once-table-of-main-oronyms-pre-dupe-it-rule
 >think
 You can DUPE IT here once you have something unique and worth duplicating.
 
@@ -448,13 +470,18 @@ You can DUPE IT here once you have something unique and worth duplicating.
 
 >barn open
 by a point
+
+#testcase-think-nowfar-table-of-main-oronyms-pre-dupe-it-rule
+>think
+You can DUPE IT in Dew Pit now you have something unique and worth duplicating.
+
 >n
 >e
 >e
 >ne
 >e
 
-#+testcase-think-table-of-main-oronyms-pre-dupe-it-rule
+#+testcase-think-nownear-table-of-main-oronyms-pre-dupe-it-rule
 >think
 You can DUPE IT here now you have something unique and worth duplicating.
 
