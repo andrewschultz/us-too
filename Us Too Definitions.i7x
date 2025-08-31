@@ -4,14 +4,22 @@ Version 1/241005 of Us Too Definitions by Andrew Schultz begins here.
 
 volume core code relies on this
 
+[every room must have a region, because Spoonerism Core tallies scores by region. But Us Too does not.]
+
 intro is a region.
 
 r-south is a region.
 
 universal is a region.
 
+to decide which region is mrlp: decide on map region of location of player.
+
+book game specific (re)definitions
+
 definition: a rule (called ru) is thinknoteblocking:
 	no;
+
+to say eye-loc-notes: if eyes are in mine, say ". The eye is [if player is in mine]here[else]back[end if] in the mine"
 
 to game-specific-cleanup:
 	if core-score > 40 and dense pecs are off-stage:
@@ -39,8 +47,6 @@ definition: a thing (called th) is eyeable:
 		if th is eyes, no;
 		if th is cheese or th is loose intro, no;
 	yes;
-
-to decide which region is mrlp: decide on map region of location of player.
 
 volume types
 
