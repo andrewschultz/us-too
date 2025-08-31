@@ -332,7 +332,7 @@ by a point
 
 >n
 
-#testcase-one-right-table-of-main-oronyms-blah-copse-1-blah
+#testcase-one-right-table-of-main-oronyms-blah-bleh-bleah-bla-blaa-blaah-copse-1-blah-bleh-bleah-bla-blaa-blaah
 >blah xxx
 A voice in your head encourages you: "Seem, or see, more!" You've got SOMETHING right, here.
 
@@ -342,7 +342,52 @@ You're pretty sure you have one word right for avoiding the black ops.
 >undo
 >undo
 
-#testcase-one-right-table-of-main-oronyms-blah-copse-2-copse
+>bleh xxx
+A voice in your head encourages you: "Seem, or see, more!" You've got SOMETHING right, here.
+
+>think
+You're pretty sure you have one word right for avoiding the black ops.
+
+>undo
+>undo
+
+>bleah xxx
+A voice in your head encourages you: "Seem, or see, more!" You've got SOMETHING right, here.
+
+>think
+You're pretty sure you have one word right for avoiding the black ops.
+
+>undo
+>undo
+
+>bla xxx
+A voice in your head encourages you: "Seem, or see, more!" You've got SOMETHING right, here.
+
+>think
+You're pretty sure you have one word right for avoiding the black ops.
+
+>undo
+>undo
+
+>blaa xxx
+A voice in your head encourages you: "Seem, or see, more!" You've got SOMETHING right, here.
+
+>think
+You're pretty sure you have one word right for avoiding the black ops.
+
+>undo
+>undo
+
+>blaah xxx
+A voice in your head encourages you: "Seem, or see, more!" You've got SOMETHING right, here.
+
+>think
+You're pretty sure you have one word right for avoiding the black ops.
+
+>undo
+>undo
+
+#testcase-one-right-table-of-main-oronyms-blah-bleh-bleah-bla-blaa-blaah-copse-2-copse
 >xxx copse
 A voice in your head encourages you: "Seem, or see, more!" You've got SOMETHING right, here.
 
@@ -355,7 +400,7 @@ You're pretty sure you have one word right for avoiding the black ops.
 >blah copse
 by a point
 
-#testcase-one-right-table-of-main-oronyms-nah-naw-queue-1-nah
+#testcase-one-right-table-of-main-oronyms-nah-naw-queue-1-nah-naw
 >nah xxx
 A voice in your head encourages you: "Seem, or see, more!" You've got SOMETHING right, here.
 
@@ -365,7 +410,7 @@ You're pretty sure you have one word right for repelling the Forest Team for Est
 >undo
 >undo
 
-#+testcase-one-right-table-of-main-oronyms-nah-naw-queue-1-nah
+#+testcase-one-right-table-of-main-oronyms-nah-naw-queue-1-nah-naw
 >naw xxx
 A voice in your head encourages you: "Seem, or see, more!" You've got SOMETHING right, here.
 
@@ -851,7 +896,7 @@ by a point
 
 >sw
 
-#testcase-one-right-table-of-main-oronyms-oh-o-clever-1-oh
+#testcase-one-right-table-of-main-oronyms-oh-o-clever-1-oh-o
 >oh xxx
 A voice in your head encourages you: "Seem, or see, more!" You've got SOMETHING right, here.
 
@@ -861,7 +906,7 @@ You're pretty sure you have one word right for operating the oak lever.
 >undo
 >undo
 
-#+testcase-one-right-table-of-main-oronyms-oh-o-clever-1-oh
+#+testcase-one-right-table-of-main-oronyms-oh-o-clever-1-oh-o
 >o xxx
 A voice in your head encourages you: "Seem, or see, more!" You've got SOMETHING right, here.
 

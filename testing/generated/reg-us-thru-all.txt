@@ -324,6 +324,17 @@ by a bonus point
 #testcase-run-post-pea-pod-rule-default
 Oh wait! There is something that will add a bit of flavor! Actually, it's a weird giant pea pod!
 
+>e
+
+#testcase-run-post-punt-weaker-rule-if-sco-pry-more-is-false
+>punt weaker
+by a point
+However, you don't have a way to steer the punt, yet.
+!You hook the prime oar up to the punt.
+
+>undo
+>undo
+
 >se
 
 #testcase-room-names-dome-aching
@@ -383,8 +394,10 @@ by a point
 
 #testcase-check-pre-punt-weaker-rule-fallthrough
 #testcase-run-post-punt-weaker-rule-default
+#testcase-run-post-punt-weaker-rule-fallthrough
 "Ah, yes, that's it. It's the least I can do as thanks. Not the very least, heh heh." The pun tweaker goes to the back of the Gauche/Hip GO-Ship, and you hear a splash. The pun tweaker reappears, clothes wet, pushing a pretty scrawny punt. "It won't get very far, but there's something to the east. Oh, and I hope you have a way to steer it, too."
 You hook the prime oar up to the punt.
+!However, you don't have a way to steer the punt, yet.
 
 >e
 
@@ -434,7 +447,7 @@ by a point
 
 #testcase-check-pre-blast-ring-rule-fallthrough
 #testcase-run-post-blast-ring-rule-default
-You aim the blah string at the sword ark. You feel a pull--yes, this must be when to transform the blah string. And boom! The sword ark shatters, and the Terra Blade falls to the ground.
+You aim the blah string at the sword ark. You feel a pull--yes, this must be when to transform the blah string. It coalesces into a string that points high in the air. And boom! The sword ark shatters, and the Terra Blade falls to the ground.
 
 >terrible aid
 by a point

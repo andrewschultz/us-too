@@ -188,7 +188,7 @@ You doze off, and when you awake, you find ... well, a beast, wrong, blocking yo
 
 @rej
 #testcase-reject-start-table-of-main-oronyms-pre-barn-open-rule
-#testcase-check-pre-barn-open-rule-if-player-is-not-in-far-miles-farm-isles
+#testcase-check-pre-barn-open-rule-if-player-is-not-in-far-miles-farm-isles-and-once-now-hunt-is-false
 >barn open
 {$REJECT2}
 \\
@@ -251,7 +251,7 @@ You doze off, and when you awake, you find ... well, a beast, wrong, blocking yo
 >cold rum
 {$REJECT2}
 \\
-#testcase-check-pre-damp-ink-rule-if-player-is-not-in-dam-pink
+#testcase-check-pre-damp-ink-rule-if-player-is-not-in-dam-pink-and-once-now-hunt-is-false
 #testcase-reject-start-table-of-main-oronyms-pre-damp-ink-rule
 >damp ink
 {$REJECT2}
@@ -271,12 +271,12 @@ You doze off, and when you awake, you find ... well, a beast, wrong, blocking yo
 >dope ale
 {$REJECT2}
 \\
-#testcase-check-pre-dough-making-rule-if-player-is-not-in-dome-aching
+#testcase-check-pre-dough-making-rule-if-player-is-not-in-dome-aching-and-once-now-hunt-is-false
 #testcase-reject-start-table-of-main-oronyms-pre-dough-making-rule
 >dough making
 {$REJECT2}
 \\
-#testcase-check-pre-dupe-it-rule-if-player-is-not-in-joy-nadir
+#testcase-check-pre-dupe-it-rule-if-player-is-not-in-joy-nadir-and-once-now-hunt-is-false
 #testcase-reject-start-table-of-main-oronyms-pre-dupe-it-rule
 >dupe it
 {$REJECT2}
@@ -321,7 +321,7 @@ You doze off, and when you awake, you find ... well, a beast, wrong, blocking yo
 >hike up
 {$REJECT2}
 \\
-#testcase-check-pre-ho-langour-rule-if-player-is-not-in-tude-ark
+#testcase-check-pre-ho-langour-rule-if-player-is-not-in-tude-ark-and-once-now-hunt-is-false
 #testcase-reject-start-table-of-main-oronyms-pre-ho-langour-rule
 >ho languor
 {$REJECT2}
@@ -331,7 +331,7 @@ You doze off, and when you awake, you find ... well, a beast, wrong, blocking yo
 >in earnest
 {$XTRA}
 \\
-#testcase-check-pre-join-aider-rule-if-player-is-not-in-joy-nadir
+#testcase-check-pre-join-aider-rule-if-player-is-not-in-joy-nadir-and-once-now-hunt-is-false
 #testcase-reject-start-table-of-main-oronyms-pre-join-aider-rule
 >join aider
 {$REJECT2}
@@ -341,7 +341,7 @@ You doze off, and when you awake, you find ... well, a beast, wrong, blocking yo
 >lie fruits
 {$REJECT2}
 \\
-#testcase-check-pre-malt-hour-rule-if-player-is-not-in-bore-dread
+#testcase-check-pre-malt-hour-rule-if-player-is-not-in-bore-dread-and-once-now-hunt-is-false
 #testcase-reject-start-table-of-main-oronyms-pre-malt-hour-rule
 >malt hour
 {$REJECT2}
@@ -371,7 +371,7 @@ You doze off, and when you awake, you find ... well, a beast, wrong, blocking yo
 >nice warm
 {$REJECT2}
 \\
-#testcase-check-pre-no-date-rule-if-player-is-not-in-groan-odes
+#testcase-check-pre-no-date-rule-if-player-is-not-in-groan-odes-and-once-now-hunt-is-false
 #testcase-reject-start-table-of-main-oronyms-pre-no-date-rule
 >no date
 {$XTRA}
@@ -396,12 +396,12 @@ You doze off, and when you awake, you find ... well, a beast, wrong, blocking yo
 >peace talks
 {$REJECT2}
 \\
-#testcase-check-pre-pie-crust-rule-if-player-is-not-in-pile-up-isle-or-pike-rust-is-not-in-location-of-player
+#testcase-check-pre-pie-crust-rule-if-player-is-not-in-pile-up-isle-or-pike-rust-is-not-in-location-of-player-and-once-now-hunt-is-false
 #testcase-reject-start-table-of-main-oronyms-pre-pie-crust-rule
 >pie crust
 {$REJECT2}
 \\
-#testcase-check-pre-pro-sweeping-rule-if-player-is-not-in-dust-which
+#testcase-check-pre-pro-sweeping-rule-if-player-is-not-in-dust-which-and-once-now-hunt-is-false
 #testcase-reject-start-table-of-main-oronyms-pre-pro-sweeping-rule
 >pro sweeping
 {$REJECT2}
@@ -416,7 +416,7 @@ You doze off, and when you awake, you find ... well, a beast, wrong, blocking yo
 >pry more
 {$REJECT2}
 \\
-#testcase-check-pre-punt-weaker-rule-if-player-is-not-in-beach-ill
+#testcase-check-pre-punt-weaker-rule-if-player-is-not-in-beach-ill-and-once-now-hunt-is-false
 #testcase-reject-start-table-of-main-oronyms-pre-punt-weaker-rule
 >punt weaker
 {$REJECT2}
@@ -431,12 +431,12 @@ You doze off, and when you awake, you find ... well, a beast, wrong, blocking yo
 >saw bakers
 {$REJECT2}
 \\
-#testcase-check-pre-say-jokes-rule-if-player-is-not-in-sage-oaks
+#testcase-check-pre-say-jokes-rule-if-player-is-not-in-sage-oaks-and-once-now-hunt-is-false
 #testcase-reject-start-table-of-main-oronyms-pre-say-jokes-rule
 >say jokes
 You don't need to prefix any important two-word command with SAY. Just say the two words.
 \\
-#testcase-check-pre-scry-broom-rule-if-player-is-not-in-scribe-room
+#testcase-check-pre-scry-broom-rule-if-player-is-not-in-scribe-room-and-once-now-hunt-is-false
 #testcase-reject-start-table-of-main-oronyms-pre-scry-broom-rule
 >scry broom
 {$REJECT2}
@@ -456,7 +456,7 @@ You don't need to prefix any important two-word command with SAY. Just say the t
 >summon cheese
 {$REJECT2}
 \\
-#testcase-check-pre-surf-ready-rule-if-sir-freddie-is-not-in-location-of-player
+#testcase-check-pre-surf-ready-rule-if-sir-freddie-is-not-in-location-of-player-and-once-now-hunt-is-false
 #testcase-reject-start-table-of-main-oronyms-pre-surf-ready-rule
 >surf ready
 {$REJECT2}
@@ -466,12 +466,12 @@ You don't need to prefix any important two-word command with SAY. Just say the t
 >sword ark
 {$REJECT2}
 \\
-#testcase-check-pre-tea-leaves-rule-if-player-is-not-in-dust-which
+#testcase-check-pre-tea-leaves-rule-if-player-is-not-in-dust-which-and-once-now-hunt-is-false
 #testcase-reject-start-table-of-main-oronyms-pre-tea-leaves-rule
 >tea leaves
 {$REJECT2}
 \\
-#testcase-check-pre-terrible-aid-rule-if-player-is-not-in-sore-dark-and-player-does-not-have-terra-blade
+#testcase-check-pre-terrible-aid-rule-if-player-is-not-in-sore-dark-and-once-now-hunt-is-false-and-player-does-not-have-terra-blade
 #testcase-reject-start-table-of-main-oronyms-pre-terrible-aid-rule
 >terrible aid
 {$REJECT2}
@@ -486,12 +486,12 @@ You don't need to prefix any important two-word command with SAY. Just say the t
 >tour boaters
 {$REJECT2}
 \\
-#testcase-check-pre-use-it-rule-if-player-is-not-in-throne
+#testcase-check-pre-use-it-rule-if-player-is-not-in-throne-and-once-now-hunt-is-false
 #testcase-reject-start-table-of-main-oronyms-pre-use-it-rule
 >use it
 {$REJECT2}
 \\
-#testcase-check-pre-wheat-rye-rule-if-player-is-not-in-deli-stern
+#testcase-check-pre-wheat-rye-rule-if-player-is-not-in-deli-stern-and-once-now-hunt-is-false
 #testcase-reject-start-table-of-main-oronyms-pre-wheat-rye-rule
 >wheat rye
 {$REJECT2}
@@ -958,7 +958,7 @@ You can't go west yet.
 {$REJECT2}
 
 @rej+
-#testcase-check-pre-a-stew-rule-if-player-is-not-in-mine-ooh
+#testcase-check-pre-a-stew-rule-if-player-is-not-in-mine-ooh-and-once-now-hunt-is-false
 >a stew
 You need to be back in your mine for this.
 
@@ -1499,7 +1499,7 @@ The eyes light up green and show four dots, then five dots.
 
 @part
 ##balance undos
-#testcase-one-right-table-of-main-oronyms-blah-copse-1-blah
+#testcase-one-right-table-of-main-oronyms-blah-bleh-bleah-bla-blaa-blaah-copse-1-blah-bleh-bleah-bla-blaa-blaah
 >blah xxx
 {$ONEWORD}
 \\
@@ -1509,7 +1509,52 @@ You're pretty sure you have one word right for avoiding the black ops.
 >undo
 >undo
 \\
-#testcase-one-right-table-of-main-oronyms-blah-copse-2-copse
+>bleh xxx
+{$ONEWORD}
+\\
+>think
+You're pretty sure you have one word right for avoiding the black ops.
+\\
+>undo
+>undo
+\\
+>bleah xxx
+{$ONEWORD}
+\\
+>think
+You're pretty sure you have one word right for avoiding the black ops.
+\\
+>undo
+>undo
+\\
+>bla xxx
+{$ONEWORD}
+\\
+>think
+You're pretty sure you have one word right for avoiding the black ops.
+\\
+>undo
+>undo
+\\
+>blaa xxx
+{$ONEWORD}
+\\
+>think
+You're pretty sure you have one word right for avoiding the black ops.
+\\
+>undo
+>undo
+\\
+>blaah xxx
+{$ONEWORD}
+\\
+>think
+You're pretty sure you have one word right for avoiding the black ops.
+\\
+>undo
+>undo
+\\
+#testcase-one-right-table-of-main-oronyms-blah-bleh-bleah-bla-blaa-blaah-copse-2-copse
 >xxx copse
 {$ONEWORD}
 \\
@@ -1561,7 +1606,7 @@ You can only leave the copse to the south.
 
 @part
 ##balance undos
-#testcase-one-right-table-of-main-oronyms-nah-naw-queue-1-nah
+#testcase-one-right-table-of-main-oronyms-nah-naw-queue-1-nah-naw
 >nah xxx
 {$ONEWORD}
 \\
@@ -1571,7 +1616,7 @@ You're pretty sure you have one word right for repelling the Forest Team for Est
 >undo
 >undo
 \\
-#+testcase-one-right-table-of-main-oronyms-nah-naw-queue-1-nah
+#+testcase-one-right-table-of-main-oronyms-nah-naw-queue-1-nah-naw
 >naw xxx
 {$ONEWORD}
 \\
@@ -1720,7 +1765,7 @@ Out is ambiguous here. There are two worthwhile ways to leave: north and south.
 >undo
 
 @rej
-#testcase-check-pre-blast-ring-rule-if-player-is-not-in-sore-dark-or-sword-ark-is-not-in-sore-dark
+#testcase-check-pre-blast-ring-rule-if-player-is-not-in-sore-dark-and-once-now-hunt-is-false-or-sword-ark-is-not-in-sore-dark
 >blast ring
 The blah string writhes and turns and points above, then nothing. You see nothing blastable or that needs to be blasted above. Neither does it. It goes limp. It wouldn't do to carry around something as volatile as a blast ring. Accidents might happen. But something may turn up.
 \\
@@ -2117,6 +2162,19 @@ Out is ambiguous here. There are five worthwhile ways to leave: northeast, north
 >eye garden tree
 {$EYEITMDONE} the garden tree.
 
+@all
+##balance undos
+>e
+\\
+#testcase-run-post-punt-weaker-rule-if-sco-pry-more-is-false
+>punt weaker
+by a point
+However, you don't have a way to steer the punt, yet.
+!You hook the prime oar up to the punt.
+\\
+>undo
+>undo
+
 >se
 
 @all
@@ -2305,7 +2363,7 @@ by a point
 Excellent! Not only do you make the dough, but the great inn offers you somewhere to keep it. You wind up with a dough pail.
 
 @rej
-#testcase-check-pre-dope-ale-rule-if-player-is-not-in-deli-stern
+#testcase-check-pre-dope-ale-rule-if-player-is-not-in-deli-stern-and-once-now-hunt-is-false
 >dope ale
 Hmm, you could exchange the dough pail for dope ale, but ... nobody here wants dough, and nobody here might have dope ale.
 \\
@@ -2518,8 +2576,10 @@ by a point
 @all+
 #testcase-check-pre-punt-weaker-rule-fallthrough
 #testcase-run-post-punt-weaker-rule-default
+#testcase-run-post-punt-weaker-rule-fallthrough
 "Ah, yes, that's it. It's the least I can do as thanks. Not the very least, heh heh." The pun tweaker goes to the back of the Gauche/Hip GO-Ship, and you hear a splash. The pun tweaker reappears, clothes wet, pushing a pretty scrawny punt. "It won't get very far, but there's something to the east. Oh, and I hope you have a way to steer it, too."
 You hook the prime oar up to the punt.
+!However, you don't have a way to steer the punt, yet.
 
 @rej
 #testcase-check-pre-punt-weaker-rule-if-sco-punt-weaker-is-true
@@ -2762,11 +2822,11 @@ No, that would put something way too high up out of reach, even if the light wer
 No, that would put something way too high up out of reach, even if the light were perfect. But you must be close!
 
 @rej
-#+testcase-check-pre-blast-ring-rule-if-player-is-not-in-sore-dark-or-sword-ark-is-not-in-sore-dark
+#+testcase-check-pre-blast-ring-rule-if-player-is-not-in-sore-dark-and-once-now-hunt-is-false-or-sword-ark-is-not-in-sore-dark
 >blast ring
 The blah string writhes and turns and points above, then nothing. You see nothing blastable or that needs to be blasted above. Neither does it. It goes limp. It wouldn't do to carry around something as volatile as a blast ring. Accidents might happen. But something may turn up.
 \\
-#+testcase-check-pre-terrible-aid-rule-if-player-is-not-in-sore-dark-and-player-does-not-have-terra-blade
+#+testcase-check-pre-terrible-aid-rule-if-player-is-not-in-sore-dark-and-once-now-hunt-is-false-and-player-does-not-have-terra-blade
 >terra blade
 {$REJECT2}
 
@@ -2875,7 +2935,7 @@ by a point
 @all
 #testcase-check-pre-blast-ring-rule-fallthrough
 #testcase-run-post-blast-ring-rule-default
-You aim the blah string at the sword ark. You feel a pull--yes, this must be when to transform the blah string. And boom! The sword ark shatters, and the Terra Blade falls to the ground.
+You aim the blah string at the sword ark. You feel a pull--yes, this must be when to transform the blah string. It coalesces into a string that points high in the air. And boom! The sword ark shatters, and the Terra Blade falls to the ground.
 
 @hint
 #+testcase-values-eyes-number-of-blah-string-is-54
@@ -2984,7 +3044,7 @@ You can leave the fort to the northeast.
 
 @part
 ##balance undos
-#testcase-one-right-table-of-main-oronyms-oh-o-clever-1-oh
+#testcase-one-right-table-of-main-oronyms-oh-o-clever-1-oh-o
 >oh xxx
 {$ONEWORD}
 \\
@@ -2994,7 +3054,7 @@ You're pretty sure you have one word right for operating the oak lever.
 >undo
 >undo
 \\
-#+testcase-one-right-table-of-main-oronyms-oh-o-clever-1-oh
+#+testcase-one-right-table-of-main-oronyms-oh-o-clever-1-oh-o
 >o xxx
 {$ONEWORD}
 \\
@@ -5019,7 +5079,7 @@ It's too scary any way except back up.
 >undo
 
 @rej
-#testcase-check-pre-no-date-rule-if-nodes-are-not-in-groan-odes
+#testcase-check-pre-no-date-rule-if-number-string-is-not-in-groan-odes
 >no date
 {$XTRA}
 
@@ -5176,7 +5236,7 @@ You fixed up the deli AND destroyed the nodes. Well done! There's no need to go 
 @rej
 >u
 \\
-#testcase-check-pre-use-it-rule-if-sco-dupe-it-is-false
+#testcase-check-pre-use-it-rule-if-sco-join-aider-is-false
 >use it
 It would be useful to have an item of power, but alas, you do not, at the moment.
 \\
@@ -5304,7 +5364,7 @@ You're pretty sure you have one word right for doing something worthwhile in the
 The eyes light up green and show four dots, then five dots.
 
 @rej
-#testcase-check-pre-join-aider-rule-if-player-does-not-have-belt-rusted
+#+testcase-check-pre-join-aider-rule-if-player-is-not-in-joy-nadir-and-once-now-hunt-is-false
 >join aider
 The pro ball jumps an inch out of your hand and briefly crackles, but nothing else happens. You'll need to find what to join it to.
 \\

@@ -356,7 +356,7 @@ this is the post-punt-weaker rule:
 	now sco-punt-weaker is true;
 	say "'Ah, yes, that's it. It's the least I can do as thanks. Not the very least, heh heh.' The pun tweaker goes to the back of [the ship], and you hear a splash. The pun tweaker reappears, clothes wet, pushing a pretty scrawny punt. 'It won't get very far, but there's something to the east. Oh, and I hope you have a way to steer it, too.'";
 	say "[line break]";
-	if sco-pry-more is false, say "Well, you don't have a way to steer the punt, yet.";
+	if sco-pry-more is false, say "However, you don't have a way to steer the punt, yet.";
 	move punt weaker to beach ill;
 	moot pun tweaker;
 	move dune to beach ill;
