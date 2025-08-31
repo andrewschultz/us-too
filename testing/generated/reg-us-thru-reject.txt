@@ -985,10 +985,6 @@ That thought/action/observation/request brings up nothing. Us Too has a limited 
 >think
 You can start PRO SWEEPING here now you have something to sweep with.
 
-#testcase-think-nowfar-table-of-main-oronyms-pre-pro-sweeping-rule
->think
-You can start PRO SWEEPING here now you have something to sweep with.
-
 >pro sweeping
 by a point
 
@@ -1094,6 +1090,7 @@ You already found them! You don't need to go back.
 You can transact with the BARN OPEN here now you have food to barter.
 
 >n
+
 #testcase-think-nowfar-table-of-main-oronyms-pre-barn-open-rule
 >think
 You can transact with the BARN OPEN in Far-Miles Farm Isles now you have food to barter.
@@ -1158,6 +1155,7 @@ The fey loners/fail-owners almost look bright for a minute. "Hey, we could pull 
 You can trade for some DOPE ALE now you've found find willing traders with a bit extra.
 
 >e
+
 #testcase-think-nowfar-table-of-main-oronyms-pre-dope-ale-rule
 >think
 You can trade for some DOPE ALE now you've found find willing traders with a bit extra.

@@ -548,6 +548,7 @@ this is the post-surf-ready rule:
 	say "Sir Freddie agrees with you, but he doesn't know how to get started. You have just the thing! Your red board is kind of bulky but not heavy. It'd be nice not to have to carry it around. He waves. 'See you later. Oh, one other thing... I think I heard an orc lurk to the north. Another reason to give up this questing.'";
 	moot board red;
 	move Sir Freddie to Beach Ill;
+	move foreboding to Blah Copse;
 	declue Sir Freddie;
 
 a wordtwisting rule (this is the pre-or-clerk rule):

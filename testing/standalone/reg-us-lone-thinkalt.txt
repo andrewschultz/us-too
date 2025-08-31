@@ -87,7 +87,7 @@ You can make Sir Freddie SURF READY in Blah Copse now you have surfing equipment
 
 >n
 
-#+testcase-think-nownear-table-of-main-oronyms-pre-surf-ready-rule
+#testcase-think-nownear-table-of-main-oronyms-pre-surf-ready-rule
 >think
 You can make Sir Freddie SURF READY here now you have surfing equipment for him.
 
@@ -342,7 +342,7 @@ You can get the TEA LEAVES in Teal Eaves now you have something that can get you
 >ss
 >s
 
-#+testcase-think-nownear-table-of-main-oronyms-pre-tea-leaves-rule
+#testcase-think-nownear-table-of-main-oronyms-pre-tea-leaves-rule
 >think
 You can get the TEA LEAVES here now you have something that can get you to the top of the eaves.
 
@@ -467,7 +467,7 @@ You can claim NO DATE in Numb Bursting Number String now you have a tool that ca
 
 >d
 
-#+testcase-think-nownear-table-of-main-oronyms-pre-no-date-rule
+#testcase-think-nownear-table-of-main-oronyms-pre-no-date-rule
 >think
 You can claim NO DATE here now you have a tool that can destroy the nodes.
 
@@ -515,7 +515,7 @@ You can DUPE IT in Dew Pit now you have something unique and worth duplicating.
 >ne
 >e
 
-#+testcase-think-nownear-table-of-main-oronyms-pre-dupe-it-rule
+#testcase-think-nownear-table-of-main-oronyms-pre-dupe-it-rule
 >think
 You can DUPE IT here now you have something unique and worth duplicating.
 

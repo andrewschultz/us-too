@@ -23,6 +23,11 @@ by a bonus point
 >eye goal edge go ledge
 The eyes show nothing. Probably don't need to change up anything with the Goal-Edge-Go Ledge.
 
+#testcase-values-eyes-number-of-er-jot-is-1
+>eye er jot
+The eyes show nothing. Probably don't need to change up anything with the Urgh-Ought-'Er Jot.
+
+>undo
 >undo
 >undo
 
@@ -310,6 +315,7 @@ The eyes see nothing in the general area but seem to be wandering to the Forest 
 #testcase-values-eyes-number-of-forest-team-is-35
 >eye forest team
 The eyes light up green and show three dots, then five dots.
+Hmm, that seems a bit short. Can't be them. Maybe what they're saying.
 
 >nah queue
 by a point
@@ -324,6 +330,11 @@ by a point
 #+testcase-values-eyes-number-of-sir-freddie-is-45
 >eye sir freddie
 Nothing (significant) here like that.
+
+#testcase-values-eyes-number-of-foreboding-is-25
+>eye foreboding
+The eyes light up green and show two dots, then five dots.
+Just to check, it's not "foreboding" to focus on, here. That's too general.
 
 >or clerk
 by a point
@@ -491,6 +502,14 @@ by a point
 >eye punt weaker
 The eyes show nothing. You've changed up everything you need with the punt (weaker).
 
+#testcase-values-eyes-number-of-dune-is-1
+>eye dune
+The eyes show nothing. Probably don't need to change up anything with Dune Ever-Do-Never.
+
+#testcase-values-eyes-number-of-sand-is-1
+>eye sand
+The eyes show nothing. Probably don't need to change up anything with the bless-and-bleah sand.
+
 >e
 
 #testcase-values-eyes-number-of-a-pile-up-isle-is-1
@@ -614,6 +633,7 @@ The eyes light up green and show three dots, then five dots.
 
 #testcase-values-eyes-number-of-tuberodscen-is-35
 >eye tube rod
+You get no readout until the eyes focus on the tube/rod.
 The eyes light up green and show three dots, then five dots.
 
 >too broad
@@ -731,6 +751,10 @@ The eyes light up green and show four dots, then three dots.
 
 >damp ink
 by a point
+
+#testcase-values-eyes-number-of-damp-ink-is--1
+>eye damp ink
+The eyes show nothing. You've changed up everything you need with the damp ink.
 
 >n
 >n
@@ -968,6 +992,7 @@ The eyes show nothing. You've changed up everything you need with the dope ale.
 #testcase-values-eyes-number-of-toon-is-48
 >eye toon
 The eyes light up green and show four dots, then eight dots.
+Hmm. Seems a bit long for "too neat." Whatever's on the toon, you'll need to decipher it.
 
 >beef ordering
 by a point
@@ -1030,14 +1055,15 @@ by a point
 >eye
 The eyes see nothing in the general area but seem to be wandering to the numb bursting number string/numbered nodes.
 
-#testcase-values-eyes-number-of-nodes-is-24
+#testcase-values-eyes-number-of-number-string-is-24
 >eye nodes
 The eyes light up green and show two dots, then four dots.
+Well! That's a low reading for a numbered string, or numbered nodes. Perhaps one node is particularly weak, and that's the one to work on.
 
 >no date
 by a point
 
-#+testcase-values-eyes-number-of-nodes-is-24
+#+testcase-values-eyes-number-of-number-string-is-24
 >eye nodes
 Nothing (significant) here like that.
 
@@ -1090,10 +1116,12 @@ The eyes show nothing. You've changed up everything you need with Ten Dregs' Ten
 #testcase-values-eyes-number-of-throne-ow-throw-now-is-32
 >eye
 The eyes light up green and show three dots, then two dots.
+Wow! That's a short reading. Maybe it's not the throne but what it's saying.
 
 #testcase-values-eyes-number-of-thronescen-is-32
 >eye throne
 The eyes light up green and show three dots, then two dots.
+Wow! That's a short reading. Maybe it's not the throne but what it's saying.
 
 >use it
 by a point

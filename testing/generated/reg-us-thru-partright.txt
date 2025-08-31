@@ -355,7 +355,7 @@ You're pretty sure you have one word right for avoiding the black ops.
 >blah copse
 by a point
 
-#testcase-one-right-table-of-main-oronyms-nah-queue-1-nah
+#testcase-one-right-table-of-main-oronyms-nah-naw-queue-1-nah
 >nah xxx
 A voice in your head encourages you: "Seem, or see, more!" You've got SOMETHING right, here.
 
@@ -365,7 +365,17 @@ You're pretty sure you have one word right for repelling the Forest Team for Est
 >undo
 >undo
 
-#testcase-one-right-table-of-main-oronyms-nah-queue-2-queue
+#+testcase-one-right-table-of-main-oronyms-nah-naw-queue-1-nah
+>naw xxx
+A voice in your head encourages you: "Seem, or see, more!" You've got SOMETHING right, here.
+
+>think
+You're pretty sure you have one word right for repelling the Forest Team for Esteem.
+
+>undo
+>undo
+
+#testcase-one-right-table-of-main-oronyms-nah-naw-queue-2-queue
 >xxx queue
 A voice in your head encourages you: "Seem, or see, more!" You've got SOMETHING right, here.
 
@@ -841,7 +851,7 @@ by a point
 
 >sw
 
-#testcase-one-right-table-of-main-oronyms-oh-clever-1-oh
+#testcase-one-right-table-of-main-oronyms-oh-o-clever-1-oh
 >oh xxx
 A voice in your head encourages you: "Seem, or see, more!" You've got SOMETHING right, here.
 
@@ -851,7 +861,17 @@ You're pretty sure you have one word right for operating the oak lever.
 >undo
 >undo
 
-#testcase-one-right-table-of-main-oronyms-oh-clever-2-clever
+#+testcase-one-right-table-of-main-oronyms-oh-o-clever-1-oh
+>o xxx
+A voice in your head encourages you: "Seem, or see, more!" You've got SOMETHING right, here.
+
+>think
+You're pretty sure you have one word right for operating the oak lever.
+
+>undo
+>undo
+
+#testcase-one-right-table-of-main-oronyms-oh-o-clever-2-clever
 >xxx clever
 A voice in your head encourages you: "Seem, or see, more!" You've got SOMETHING right, here.
 
@@ -1609,7 +1629,7 @@ by a point
 
 >e
 
-#testcase-one-right-table-of-main-oronyms-join-aider-1-join
+#testcase-one-right-table-of-main-oronyms-join-aider-adder-1-join
 >join xxx
 A voice in your head encourages you: "Seem, or see, more!" You've got SOMETHING right, here.
 
@@ -1619,8 +1639,18 @@ You're pretty sure you have one word right for doing something worthwhile in the
 >undo
 >undo
 
-#testcase-one-right-table-of-main-oronyms-join-aider-2-aider
+#testcase-one-right-table-of-main-oronyms-join-aider-adder-2-aider-adder
 >xxx aider
+A voice in your head encourages you: "Seem, or see, more!" You've got SOMETHING right, here.
+
+>think
+You're pretty sure you have one word right for doing something worthwhile in the joy nadir.
+
+>undo
+>undo
+
+#+testcase-one-right-table-of-main-oronyms-join-aider-adder-2-aider-adder
+>xxx adder
 A voice in your head encourages you: "Seem, or see, more!" You've got SOMETHING right, here.
 
 >think

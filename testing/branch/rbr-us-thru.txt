@@ -106,6 +106,11 @@ by a bonus point
 >eye goal edge go ledge
 {$EYEITMNO} the Goal-Edge-Go Ledge.
 \\
+#testcase-values-eyes-number-of-er-jot-is-1
+>eye er jot
+The eyes show nothing. Probably don't need to change up anything with the Urgh-Ought-'Er Jot.
+\\
+>undo
 >undo
 >undo
 
@@ -1556,7 +1561,7 @@ You can only leave the copse to the south.
 
 @part
 ##balance undos
-#testcase-one-right-table-of-main-oronyms-nah-queue-1-nah
+#testcase-one-right-table-of-main-oronyms-nah-naw-queue-1-nah
 >nah xxx
 {$ONEWORD}
 \\
@@ -1566,7 +1571,17 @@ You're pretty sure you have one word right for repelling the Forest Team for Est
 >undo
 >undo
 \\
-#testcase-one-right-table-of-main-oronyms-nah-queue-2-queue
+#+testcase-one-right-table-of-main-oronyms-nah-naw-queue-1-nah
+>naw xxx
+{$ONEWORD}
+\\
+>think
+You're pretty sure you have one word right for repelling the Forest Team for Esteem.
+\\
+>undo
+>undo
+\\
+#testcase-one-right-table-of-main-oronyms-nah-naw-queue-2-queue
 >xxx queue
 {$ONEWORD}
 \\
@@ -1580,6 +1595,7 @@ You're pretty sure you have one word right for repelling the Forest Team for Est
 #testcase-values-eyes-number-of-forest-team-is-35
 >eye forest team
 The eyes light up green and show three dots, then five dots.
+Hmm, that seems a bit short. Can't be them. Maybe what they're saying.
 
 >>nah queue
 by a point
@@ -1661,6 +1677,12 @@ You're pretty sure you have one word right for figuring what Sir Freddie was sca
 \\
 >undo
 >undo
+
+@hint
+#testcase-values-eyes-number-of-foreboding-is-25
+>eye foreboding
+The eyes light up green and show two dots, then five dots.
+Just to check, it's not "foreboding" to focus on, here. That's too general.
 
 >>or clerk
 by a point
@@ -1913,7 +1935,7 @@ Out is ambiguous here. There are six worthwhile ways to leave: northeast, northw
 \\
 >undo
 \\
-#+testcase-branch-block-n
+#testcase-branch-block-n
 >n
 You looted the Morph Lairs well enough.
 \\
@@ -2083,7 +2105,7 @@ Oh wait! There is something that will add a bit of flavor! Actually, it's a weir
 You got peace talks and an extra vegetable from behind the garden tree.
 You can disable this with BLAH COUGH, or you can block it again with BLOCK OFF. This will be in VERBS.
 \\
-#testcase-room-out-ur-branch
+#+testcase-room-out-ur-branch
 >out
 Out is ambiguous here. There are five worthwhile ways to leave: northeast, northwest, southeast, east and up.
 \\
@@ -2426,7 +2448,7 @@ You already pried and got the prime oar!
 
 @gt
 ##balance undos
-#testcase-room-out-dome-aching
+#+testcase-room-out-dome-aching
 >out
 `Ur-Branch
 \\
@@ -2436,11 +2458,11 @@ You already pried and got the prime oar!
 
 @gt
 ##balance undos
-#testcase-room-out-ur-branch
+#+testcase-room-out-ur-branch
 >out
 Out is ambiguous here. There are four worthwhile ways to leave: northeast, northwest, east and up.
 \\
-#+testcase-branch-block-se
+#testcase-branch-block-se
 >se
 You looted the dome and the inner nest nicely.
 \\
@@ -2508,6 +2530,14 @@ You already got the punt, weaker!
 #testcase-values-eyes-number-of-punt-weaker-is--1
 >eye punt weaker
 {$EYEITMDONE} the punt (weaker).
+\\
+#testcase-values-eyes-number-of-dune-is-1
+>eye dune
+{$EYEITMNO} Dune Ever-Do-Never.
+\\
+#testcase-values-eyes-number-of-sand-is-1
+>eye sand
+{$EYEITMNO} the bless-and-bleah sand.
 
 @gt
 #+testcase-goto-table-of-noways-beach-ill
@@ -2516,7 +2546,7 @@ You can only walk back west or take the punt east.
 
 @gt+
 ##balance undos
-#testcase-room-out-beach-ill
+#+testcase-room-out-beach-ill
 >out
 Out is ambiguous here. There are two worthwhile ways to leave: east and west.
 \\
@@ -2705,7 +2735,7 @@ There's nothing else to be found from another hike up. You're not getting the hi
 
 @gt
 #balance undos
-#+testcase-branch-block-e
+#testcase-branch-block-e
 >e
 You got everything you needed to the east, which helped you discover passages to the south, west and southwest.
 \\
@@ -2922,7 +2952,7 @@ Out is ambiguous here. There are three worthwhile ways to leave: northeast, sout
 \\
 >undo
 \\
-#+testcase-branch-block-nw
+#testcase-branch-block-nw
 >nw
 You can't imagine anything is in the dark other than the Terra Blade.
 \\
@@ -2954,7 +2984,7 @@ You can leave the fort to the northeast.
 
 @part
 ##balance undos
-#testcase-one-right-table-of-main-oronyms-oh-clever-1-oh
+#testcase-one-right-table-of-main-oronyms-oh-o-clever-1-oh
 >oh xxx
 {$ONEWORD}
 \\
@@ -2964,7 +2994,17 @@ You're pretty sure you have one word right for operating the oak lever.
 >undo
 >undo
 \\
-#testcase-one-right-table-of-main-oronyms-oh-clever-2-clever
+#+testcase-one-right-table-of-main-oronyms-oh-o-clever-1-oh
+>o xxx
+{$ONEWORD}
+\\
+>think
+You're pretty sure you have one word right for operating the oak lever.
+\\
+>undo
+>undo
+\\
+#testcase-one-right-table-of-main-oronyms-oh-o-clever-2-clever
 >xxx clever
 {$ONEWORD}
 \\
@@ -3046,6 +3086,7 @@ The eyes light up green and show three dots, then five dots.
 \\
 #testcase-values-eyes-number-of-tuberodscen-is-35
 >eye tube rod
+You get no readout until the eyes focus on the tube/rod.
 The eyes light up green and show three dots, then five dots.
 
 @part
@@ -3174,7 +3215,7 @@ by a point
 
 @gt
 ##balance undos
-#+testcase-room-out-too-dark-tude-ark
+#testcase-room-out-too-dark-tude-ark
 >out
 `Ur-Branch
 \\
@@ -3692,6 +3733,11 @@ by a point
 #testcase-run-post-damp-ink-rule-default
 You use the gas pouch to drain out a good dose of damp ink that's dripping from the dam.
 
+@hint
+#testcase-values-eyes-number-of-damp-ink-is--1
+>eye damp ink
+{$EYEITMDONE} the damp ink.
+
 @rej
 #testcase-check-pre-damp-ink-rule-if-sco-damp-ink-is-true
 >damp ink
@@ -3862,11 +3908,6 @@ You're pretty sure you have one word right for figuring how to clear some dust a
 >eye prose weeping
 The eyes light up green and show three dots, then eight dots.
 
-@rej
-#testcase-think-nownear-table-of-main-oronyms-pre-pro-sweeping-rule
->think
-You can start PRO SWEEPING here now you have something to sweep with.
-
 @verbs
 >r
 Dam, Pink
@@ -3887,7 +3928,7 @@ Dam, Pink
 Dust Which Does Twitch
 
 @rej
-#testcase-think-nowfar-table-of-main-oronyms-pre-pro-sweeping-rule
+#testcase-think-nownear-table-of-main-oronyms-pre-pro-sweeping-rule
 >think
 You can start PRO SWEEPING here now you have something to sweep with.
 
@@ -4345,7 +4386,7 @@ It's too warm out for ice rinks, but then, you didn't expect any clues to be obv
 >out
 `Far-Miles Farm Isles
 \\
-#+testcase-room-out-far-miles-farm-isles
+#testcase-room-out-far-miles-farm-isles
 >out
 Out is ambiguous here. There are two worthwhile ways to leave: north and south.
 \\
@@ -4475,6 +4516,7 @@ The eyes light up green and show four dots, then four dots.
 You can transact with the BARN OPEN here now you have food to barter.
 \\
 >n
+\\
 #testcase-think-nowfar-table-of-main-oronyms-pre-barn-open-rule
 >think
 You can transact with the BARN OPEN in Far-Miles Farm Isles now you have food to barter.
@@ -4510,7 +4552,7 @@ You can only go back east to the Bowl/Ditch. South, you got what you needed.
 
 @gt
 ##balance undos
-#+testcase-room-out-bowl-ditch
+#testcase-room-out-bowl-ditch
 >out
 Out is ambiguous here. There are two worthwhile ways to leave: north and east.
 \\
@@ -4747,6 +4789,7 @@ Not that way. Out or east.
 You can trade for some DOPE ALE now you've found find willing traders with a bit extra.
 \\
 >e
+\\
 #testcase-think-nowfar-table-of-main-oronyms-pre-dope-ale-rule
 >think
 You can trade for some DOPE ALE now you've found find willing traders with a bit extra.
@@ -4808,6 +4851,7 @@ You're pretty sure you have one word right for figuring what the Toon Eat-Too-Ne
 #testcase-values-eyes-number-of-toon-is-48
 >eye toon
 The eyes light up green and show four dots, then eight dots.
+Hmm. Seems a bit long for "too neat." Whatever's on the toon, you'll need to decipher it.
 
 >>beef ordering
 by a point
@@ -5051,9 +5095,10 @@ You're pretty sure you have one word right for figuring how to destroy the nodes
 >undo
 
 @hint
-#testcase-values-eyes-number-of-nodes-is-24
+#testcase-values-eyes-number-of-number-string-is-24
 >eye nodes
 The eyes light up green and show two dots, then four dots.
+Well! That's a low reading for a numbered string, or numbered nodes. Perhaps one node is particularly weak, and that's the one to work on.
 
 >>no date
 by a point
@@ -5069,7 +5114,7 @@ You are cut off again. It will help you in anywhere unusually uncomfortable. Wel
 There's not much else to say. You feel a bit awkward. All you can do is tell them to visit the nice cheery new deli just off to the west! That, they do. Hooray, bringing people together!
 
 @hint
-#+testcase-values-eyes-number-of-nodes-is-24
+#+testcase-values-eyes-number-of-number-string-is-24
 >eye nodes
 {$NOTHERE}
 \\
@@ -5121,7 +5166,7 @@ You can only go south. The den is destroyed, and the deli is busy.
 >out
 Out is ambiguous here. There are two worthwhile ways to leave: northeast and up.
 \\
-#+testcase-branch-block-w
+#testcase-branch-block-w
 >w
 You fixed up the deli AND destroyed the nodes. Well done! There's no need to go back.
 \\
@@ -5223,7 +5268,7 @@ The only way out is back west.
 
 @part
 ##balance undos
-#testcase-one-right-table-of-main-oronyms-join-aider-1-join
+#testcase-one-right-table-of-main-oronyms-join-aider-adder-1-join
 >join xxx
 {$ONEWORD}
 \\
@@ -5233,8 +5278,18 @@ You're pretty sure you have one word right for doing something worthwhile in the
 >undo
 >undo
 \\
-#testcase-one-right-table-of-main-oronyms-join-aider-2-aider
+#testcase-one-right-table-of-main-oronyms-join-aider-adder-2-aider-adder
 >xxx aider
+{$ONEWORD}
+\\
+>think
+You're pretty sure you have one word right for doing something worthwhile in the joy nadir.
+\\
+>undo
+>undo
+\\
+#+testcase-one-right-table-of-main-oronyms-join-aider-adder-2-aider-adder
+>xxx adder
 {$ONEWORD}
 \\
 >think
@@ -5362,13 +5417,13 @@ You already got an egg from the barn! You figured where to get more, too.
 
 @gt
 ##balance undos
-#+testcase-room-out-ur-branch # no more northast
+#+testcase-room-out-ur-branch # no more northeast
 >out
 Mapping outside to up, since it is the only worthwhile direction to go.
 \\
 >undo
 \\
-#+testcase-branch-block-ne #
+#testcase-branch-block-ne #
 >ne
 \\
 >undo
@@ -5406,7 +5461,7 @@ You can only go back down here.
 \\
 >undo
 \\
-#+testcase-branch-block-u #
+#testcase-branch-block-u #
 >u
 You can only go back down here.
 \\
@@ -5421,10 +5476,12 @@ You can only go back down here.
 #testcase-values-eyes-number-of-throne-ow-throw-now-is-32
 >eye
 The eyes light up green and show three dots, then two dots.
+Wow! That's a short reading. Maybe it's not the throne but what it's saying.
 \\
 #testcase-values-eyes-number-of-thronescen-is-32
 >eye throne
 The eyes light up green and show three dots, then two dots.
+Wow! That's a short reading. Maybe it's not the throne but what it's saying.
 
 @part
 ##balance undos

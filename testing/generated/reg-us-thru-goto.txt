@@ -214,7 +214,7 @@ Out is ambiguous here. There are six worthwhile ways to leave: northeast, northw
 
 >undo
 
-#+testcase-branch-block-n
+#testcase-branch-block-n
 >n
 You looted the Morph Lairs well enough.
 
@@ -251,7 +251,7 @@ by a bonus point
 You got peace talks and an extra vegetable from behind the garden tree.
 You can disable this with BLAH COUGH, or you can block it again with BLOCK OFF. This will be in VERBS.
 
-#testcase-room-out-ur-branch
+#+testcase-room-out-ur-branch
 >out
 Out is ambiguous here. There are five worthwhile ways to leave: northeast, northwest, southeast, east and up.
 
@@ -312,7 +312,7 @@ by a point
 
 >out
 
-#testcase-room-out-dome-aching
+#+testcase-room-out-dome-aching
 >out
 `Ur-Branch
 
@@ -320,11 +320,11 @@ by a point
 
 >nw
 
-#testcase-room-out-ur-branch
+#+testcase-room-out-ur-branch
 >out
 Out is ambiguous here. There are four worthwhile ways to leave: northeast, northwest, east and up.
 
-#+testcase-branch-block-se
+#testcase-branch-block-se
 >se
 You looted the dome and the inner nest nicely.
 
@@ -340,7 +340,7 @@ by a point
 >n
 You can only walk back west or take the punt east.
 
-#testcase-room-out-beach-ill
+#+testcase-room-out-beach-ill
 >out
 Out is ambiguous here. There are two worthwhile ways to leave: east and west.
 
@@ -378,7 +378,7 @@ by a point
 >w
 
 #balance undos
-#+testcase-branch-block-e
+#testcase-branch-block-e
 >e
 You got everything you needed to the east, which helped you discover passages to the south, west and southwest.
 
@@ -409,7 +409,7 @@ Out is ambiguous here. There are three worthwhile ways to leave: northeast, sout
 
 >undo
 
-#+testcase-branch-block-nw
+#testcase-branch-block-nw
 >nw
 You can't imagine anything is in the dark other than the Terra Blade.
 
@@ -484,7 +484,7 @@ It feels hopeless to go any way but back north. Well, for now.
 
 >undo
 
-#+testcase-room-out-too-dark-tude-ark
+#testcase-room-out-too-dark-tude-ark
 >out
 `Ur-Branch
 
@@ -737,7 +737,7 @@ by a point
 >out
 `Far-Miles Farm Isles
 
-#+testcase-room-out-far-miles-farm-isles
+#testcase-room-out-far-miles-farm-isles
 >out
 Out is ambiguous here. There are two worthwhile ways to leave: north and south.
 
@@ -780,7 +780,7 @@ You can only go back east to the Bowl/Ditch. South, you got what you needed.
 
 >e
 
-#+testcase-room-out-bowl-ditch
+#testcase-room-out-bowl-ditch
 >out
 Out is ambiguous here. There are two worthwhile ways to leave: north and east.
 
@@ -928,7 +928,7 @@ You can only go south. The den is destroyed, and the deli is busy.
 >out
 Out is ambiguous here. There are two worthwhile ways to leave: northeast and up.
 
-#+testcase-branch-block-w
+#testcase-branch-block-w
 >w
 You fixed up the deli AND destroyed the nodes. Well done! There's no need to go back.
 
@@ -968,13 +968,13 @@ by a point
 >dupe it
 by a point
 
-#+testcase-room-out-ur-branch # no more northast
+#+testcase-room-out-ur-branch # no more northeast
 >out
 Mapping outside to up, since it is the only worthwhile direction to go.
 
 >undo
 
-#+testcase-branch-block-ne #
+#testcase-branch-block-ne #
 >ne
 
 >undo
@@ -991,7 +991,7 @@ You can only go back down here.
 
 >undo
 
-#+testcase-branch-block-u #
+#testcase-branch-block-u #
 >u
 You can only go back down here.
 

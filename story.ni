@@ -777,7 +777,7 @@ to say swarm-buzz: say "The nigh swarm buzzes aggressively, which leaves you fee
 
 chapter sand
 
-there is a thing called bless and bleah sand. it is scenery. eyes-number of sand is 1. "There's nothing special about the sand, but there is a lot of it. It wouldn't be much of a beach without sand."
+there is a thing called the bless and bleah sand. it is scenery. eyes-number of sand is 1. "There's nothing special about the sand, but there is a lot of it. It wouldn't be much of a beach without sand.". printed name is "bless-and-bleah sand".
 
 chapter pro ball
 
@@ -1646,7 +1646,7 @@ report eyeing team:
 	continue the action;
 
 report eyeing orc lurk foreboding:
-	say "Just to check, it's not 'foreboding' to focus on, here.";
+	say "Just to check, it's not 'foreboding' to focus on, here. That's too general.";
 	continue the action;
 
 check eyeing owners when sco-wheat-rye is true: say "You've done everything you can here for [the owners]." instead;
@@ -1656,7 +1656,7 @@ report eyeing owners:
 	continue the action;
 
 report eyeing toon:
-	say "Hmm. Seems a bit long. Whatever's on the toon, you'll need to decipher it.";
+	say "Hmm. Seems a bit long for 'too neat.' Whatever's on the toon, you'll need to decipher it.";
 	continue the action;
 
 check eyeing broom: say "The eyes show nothing. Perhaps it's better the broom isn't magical. You saw [i]Fantasia[r]. It could probably help you clean up somewhere, though." instead;
