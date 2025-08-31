@@ -556,6 +556,10 @@ You can transform the blah string to a BLAST RING to blast something somewhere h
 
 >n
 
+#testcase-check-pre-rope-ladder-rule-if-sco-more-flares-is-false
+>rope ladder
+That thought/action/observation/request brings up nothing. Us Too has a limited set of verbs, and the main thing is to guess a two-word phrase. To see what verbs are used, try VERBS.
+
 >more flares
 by a point
 
@@ -1245,7 +1249,7 @@ You already called out to share refreshments. You need to save some for the fina
 
 >e
 
-#+testcase-check-pre-join-aider-rule-if-player-is-not-in-joy-nadir-and-once-now-hunt-is-false
+#testcase-check-pre-join-aider-rule-if-sco-belt-rusted-is-false
 >join aider
 The pro ball jumps an inch out of your hand and briefly crackles, but nothing else happens. You'll need to find what to join it to.
 
@@ -1436,6 +1440,7 @@ That thought/action/observation/request brings up nothing. Us Too has a limited 
 That thought/action/observation/request brings up nothing. Us Too has a limited set of verbs, and the main thing is to guess a two-word phrase. To see what verbs are used, try VERBS.
 
 #testcase-reject-end-table-of-main-oronyms-pre-herb-ranch-rule
+#testcase-check-pre-herb-ranch-rule-if-beach-ill-is-visited-and-player-is-not-in-ur-branch
 >herb ranch
 That thought/action/observation/request brings up nothing. Us Too has a limited set of verbs, and the main thing is to guess a two-word phrase. To see what verbs are used, try VERBS.
 
@@ -1581,6 +1586,33 @@ by a bonus point
 #testcase-think-nownear-table-of-main-oronyms-pre-a-stew-rule
 >think
 You can make A STEW here now you have all the ingredients you need. X should list them.
+
+>blah cough
+now
+
+>u
+>n
+>n
+
+#testcase-check-pre-rope-ladder-rule-if-sco-rope-ladder-is-true
+>rope ladder
+You already got a rope ladder. There's nothing left here.
+
+>undo
+>undo
+>undo
+
+>ne
+>e
+
+#testcase-check-pre-dupe-it-rule-if-sco-dupe-it-is-true
+>dupe it
+Nothing left to duplicate.
+>undo
+>undo
+>undo
+>undo
+>undo
 
 >a stew
 by a point

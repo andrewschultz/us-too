@@ -495,8 +495,11 @@ this is the post-join-aider rule:
 	now eyes-rule of joy nadir is pre-dupe-it rule;
 	print-the-loc;
 
-a wordtwisting rule (this is the pre-dupe-it rule): [no need to check dupe-it since we block-and-back right after]
+a wordtwisting rule (this is the pre-dupe-it rule):
 	if player is not in joy nadir and once-now-hunt is false, unavailable;
+	if sco-dupe-it is true:
+		vcp "Nothing left to duplicate.";
+		already-done;
 	if player does not have egg of a guv:
 		vcp "You stand inside the dew pit and hold up everything in your inventory, but nothing is duplicated. Maybe you haven't found what you need, yet.";
 		not-yet;

@@ -44,7 +44,7 @@ by a point
 Not much happens. Unfortunately, I got flummoxed a bit with this one: "a" is part of a puzzle solution, but on the other hand, the generic response for one word right wreaks havoc with cluing other puzzles. TLDR: one puzzle down the road includes the word "a."
 
 >a xxx
-(DEBUG: pre-a-stew rule tripped) Not much happens. That thing with the word "a," again.
+Not much happens. That thing with the word "a," again.
 
 >think
 You're pretty sure you have one word right for something down the road with the word A.

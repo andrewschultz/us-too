@@ -69,8 +69,44 @@ by a point
 
 >n
 
+#testcase-alt-words-table-of-main-oronyms-10-blah-bleh-bleah-bla-blaa-blaah-copse
+>bleh copse
+by a point
+
+>undo
+
+#+testcase-alt-words-table-of-main-oronyms-10-blah-bleh-bleah-bla-blaa-blaah-copse
+>bleah copse
+by a point
+
+>undo
+
+#+testcase-alt-words-table-of-main-oronyms-10-blah-bleh-bleah-bla-blaa-blaah-copse
+>bla copse
+by a point
+
+>undo
+
+#+testcase-alt-words-table-of-main-oronyms-10-blah-bleh-bleah-bla-blaa-blaah-copse
+>blaa copse
+by a point
+
+>undo
+
+#+testcase-alt-words-table-of-main-oronyms-10-blah-bleh-bleah-bla-blaa-blaah-copse
+>blaah copse
+by a point
+
+>undo
+
 >blah copse
 by a point
+
+#testcase-alt-words-table-of-main-oronyms-24-nah-naw-queue
+>naw queue
+by a point
+
+>undo
 
 >nah queue
 by a point
@@ -169,6 +205,12 @@ by a point
 by a point
 
 >sw
+
+#testcase-alt-words-table-of-main-oronyms-37-oh-o-clever
+>o clever
+by a point
+
+>undo
 
 >oh clever
 by a point
@@ -363,6 +405,12 @@ by a point
 by a point
 
 >e
+
+#testcase-alt-words-table-of-main-oronyms-22-join-aider-adder
+>join adder
+by a point
+
+>undo
 
 >join aider
 by a point

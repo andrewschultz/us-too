@@ -502,7 +502,7 @@ You don't need to prefix any important two-word command with SAY. Just say the t
 Not much happens. Unfortunately, I got flummoxed a bit with this one: "a" is part of a puzzle solution, but on the other hand, the generic response for one word right wreaks havoc with cluing other puzzles. TLDR: one puzzle down the road includes the word "a."
 \\
 >a xxx
-(DEBUG: pre-a-stew rule tripped) Not much happens. That thing with the word "a," again.
+Not much happens. That thing with the word "a," again.
 \\
 >think
 You're pretty sure you have one word right for something down the road with the word A.
@@ -1564,6 +1564,37 @@ You're pretty sure you have one word right for avoiding the black ops.
 >undo
 >undo
 
+@alt
+#testcase-alt-words-table-of-main-oronyms-10-blah-bleh-bleah-bla-blaa-blaah-copse
+>bleh copse
+by a point
+\\
+>undo
+\\
+#+testcase-alt-words-table-of-main-oronyms-10-blah-bleh-bleah-bla-blaa-blaah-copse
+>bleah copse
+by a point
+\\
+>undo
+\\
+#+testcase-alt-words-table-of-main-oronyms-10-blah-bleh-bleah-bla-blaa-blaah-copse
+>bla copse
+by a point
+\\
+>undo
+\\
+#+testcase-alt-words-table-of-main-oronyms-10-blah-bleh-bleah-bla-blaa-blaah-copse
+>blaa copse
+by a point
+\\
+>undo
+\\
+#+testcase-alt-words-table-of-main-oronyms-10-blah-bleh-bleah-bla-blaa-blaah-copse
+>blaah copse
+by a point
+\\
+>undo
+
 >>blah copse
 by a point
 
@@ -1641,6 +1672,13 @@ You're pretty sure you have one word right for repelling the Forest Team for Est
 >eye forest team
 The eyes light up green and show three dots, then five dots.
 Hmm, that seems a bit short. Can't be them. Maybe what they're saying.
+
+@alt
+#testcase-alt-words-table-of-main-oronyms-24-nah-naw-queue
+>naw queue
+by a point
+\\
+>undo
 
 >>nah queue
 by a point
@@ -1841,6 +1879,11 @@ by a point
 #testcase-values-eyes-number-of-morph-lairs-is-46
 >eye
 The eyes light up green and show four dots, then six dots.
+
+@rej
+#testcase-check-pre-rope-ladder-rule-if-sco-more-flares-is-false
+>rope ladder
+{$REJECT2}
 
 >>more flares
 by a point
@@ -3078,6 +3121,13 @@ You're pretty sure you have one word right for operating the oak lever.
 #testcase-values-eyes-number-of-oak-lever-is-26
 >eye oak lever
 The eyes light up green and show two dots, then six dots.
+
+@alt
+#testcase-alt-words-table-of-main-oronyms-37-oh-o-clever
+>o clever
+by a point
+\\
+>undo
 
 >>oh clever
 by a point
@@ -5364,7 +5414,7 @@ You're pretty sure you have one word right for doing something worthwhile in the
 The eyes light up green and show four dots, then five dots.
 
 @rej
-#+testcase-check-pre-join-aider-rule-if-player-is-not-in-joy-nadir-and-once-now-hunt-is-false
+#testcase-check-pre-join-aider-rule-if-sco-belt-rusted-is-false
 >join aider
 The pro ball jumps an inch out of your hand and briefly crackles, but nothing else happens. You'll need to find what to join it to.
 \\
@@ -5396,6 +5446,13 @@ You can call a JOIN AIDER in Joy Nadir now you have two items of power to join.
 #testcase-think-nownear-table-of-main-oronyms-pre-join-aider-rule
 >think
 You can call a JOIN AIDER here now you have two items of power to join.
+
+@alt
+#testcase-alt-words-table-of-main-oronyms-22-join-aider-adder
+>join adder
+by a point
+\\
+>undo
 
 >>join aider
 by a point
@@ -5764,6 +5821,7 @@ You can make A STEW in My New Mine, Ooh! now you have all the ingredients you ne
 {$REJECT2}
 \\
 #testcase-reject-end-table-of-main-oronyms-pre-herb-ranch-rule
+#testcase-check-pre-herb-ranch-rule-if-beach-ill-is-visited-and-player-is-not-in-ur-branch
 >herb ranch
 {$REJECT2}
 \\
@@ -5908,12 +5966,15 @@ You can make A STEW here now you have all the ingredients you need. X should lis
 ##balance undos
 >blah cough
 \\
+>u
+\\
 #+testcase-room-out-blah-copse
 >n
 \\
 >out
 `Ur-Branch
 \\
+>undo
 >undo
 >undo
 >undo
@@ -5926,6 +5987,36 @@ by a bonus point
 #testcase-think-nownear-table-of-main-oronyms-pre-a-stew-rule
 >think
 You can make A STEW here now you have all the ingredients you need. X should list them.
+
+@rej+
+####################this is stuff where blah cough is used
+##balance undos
+>blah cough
+now
+\\
+>u
+>n
+>n
+\\
+#testcase-check-pre-rope-ladder-rule-if-sco-rope-ladder-is-true
+>rope ladder
+You already got a rope ladder. There's nothing left here.
+\\
+>undo
+>undo
+>undo
+\\
+>ne
+>e
+\\
+#testcase-check-pre-dupe-it-rule-if-sco-dupe-it-is-true
+>dupe it
+Nothing left to duplicate.
+>undo
+>undo
+>undo
+>undo
+>undo
 
 >>a stew
 by a point

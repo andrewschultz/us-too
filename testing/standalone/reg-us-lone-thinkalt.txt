@@ -429,8 +429,11 @@ You can claim NO DATE here once you have a tool that can destroy the nodes.
 >u
 >w
 
+#testcase-check-pre-wheat-rye-rule-if-sco-terrible-aid-is-false
 >wheat rye
 !by a point
+"Oh, no! We feel dumb. WE'd like to cut off some bread for you, but ... our knives are too dull to keep it up. If you could find a replacement, maybe?"
+
 
 #testcase-think-once-table-of-main-oronyms-pre-wheat-rye-rule
 >think

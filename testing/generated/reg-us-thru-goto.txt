@@ -1014,12 +1014,15 @@ Mapping outside to down, since it is the only worthwhile direction to go.
 
 >blah cough
 
+>u
+
 #+testcase-room-out-blah-copse
 >n
 
 >out
 `Ur-Branch
 
+>undo
 >undo
 >undo
 >undo
