@@ -145,7 +145,7 @@ this is the hom-a-stew rule:
 	say "Oddly, your uhh-ing leaves you feeling you close to knowing what to do [if at-last-point]here at the end[else]down the road[end if]."
 
 a wordtwisting rule (this is the pre-a-stew rule):
-	if player is not in mine ooh:
+	if player is not in mine ooh and once-now-hunt is false:
 		vcp "You need to be back in your mine for this.";
 		not-yet;
 	if aight is unexamined:
@@ -326,7 +326,7 @@ this is the post-be-chill rule:
 	declue-here;
 
 a wordtwisting rule (this is the pre-pie-crust rule):
-	if player is not in Pile Up Isle or pike rust is not in location of player, unavailable;
+	if (player is not in Pile Up Isle or pike rust is not in location of player) and once-now-hunt is false, unavailable;
 	if sco-gray-tin is false:
 		vcp "You unfortunately have nothing that can contain pie crust, yet.";
 		not-yet;
@@ -340,7 +340,7 @@ this is the post-pie-crust rule:
 	moot pike rust;
 
 a wordtwisting rule (this is the pre-punt-weaker rule):
-	if player is not in beach ill, unavailable;
+	if player is not in beach ill and once-now-hunt is false, unavailable;
 	if sir freddie is in beach ill and sco-peace-talks is false:
 		vcp "The pun tweaker whispers 'I'll give you it, if you just get rid of THIS GUY.'";
 		not-yet;
@@ -394,7 +394,7 @@ this is the post-sword-ark rule:
 
 a wordtwisting rule (this is the pre-blast-ring rule):
 	if player does not have blah string, unavailable;
-	if player is not in sore dark or sword ark is not in sore dark:
+	if (player is not in sore dark and once-now-hunt is false) or sword ark is not in sore dark:
 		vcp "Why, you bet you could make that from the blah string, but you see nothing blastable. Or that needs to be blasted, to help you progress. And it wouldn't do to carry around something that volatile. Accidents might happen.";
 		not-yet;
 	ready;
@@ -409,7 +409,7 @@ this is the hom-terrible-aid rule:
 	say "No, you want the blade, but keep intact[if sco-blast-ring is false]. You need another way to, um, tear it from the sword ark[end if]."
 
 a wordtwisting rule (this is the pre-terrible-aid rule):
-	if player is not in sore dark and player does not have terra blade, unavailable;
+	if player is not in sore dark and once-now-hunt is false and player does not have terra blade, unavailable;
 	if sco-terrible-aid is true:
 		vcal "You probably shouldn't actively diss the Terra Blade, now you're carrying it.";
 		already-done;
@@ -452,7 +452,7 @@ this is the hom-malt-hour rule:
 	say "No, you need to change the word's sound. And you don't have money to shop, either.";
 
 a wordtwisting rule (this is the pre-malt-hour rule):
-	if player is not in bore dread, unavailable;
+	if player is not in bore dread and once-now-hunt is false, unavailable;
 	if booze-score is 0:
 		vcp "You would like to call out that there are alcoholic refreshments, but you don't have any.";
 		not-yet;
@@ -475,7 +475,7 @@ this is the hom-join-aider rule:
 	say "Animals might not be welcome here. It's a place for something else."
 
 a wordtwisting rule (this is the pre-join-aider rule):
-	if player is not in joy nadir, unavailable;
+	if player is not in joy nadir and once-now-hunt is false, unavailable;
 	if sco-join-aider is true:
 		vcal "You already formed the [orb]!";
 		already-done;
@@ -496,7 +496,7 @@ this is the post-join-aider rule:
 	print-the-loc;
 
 a wordtwisting rule (this is the pre-dupe-it rule): [no need to check dupe-it since we block-and-back right after]
-	if player is not in joy nadir, unavailable;
+	if player is not in joy nadir and once-now-hunt is false, unavailable;
 	if player does not have egg of a guv:
 		vcp "You stand inside the dew pit and hold up everything in your inventory, but nothing is duplicated. Maybe you haven't found what you need, yet.";
 		not-yet;
@@ -534,7 +534,7 @@ this is the post-nah-queue rule:
 	move Sir Freddie to Blah Copse;
 
 a wordtwisting rule (this is the pre-surf-ready rule):
-	if Sir Freddie is not in location of player, unavailable;
+	if Sir Freddie is not in location of player and once-now-hunt is false, unavailable;
 	if sco-board-red is false:
 		vcp "Sir Freddie finds that interesting, but ... he doesn't have the right gear to get started on him, and neither do you, for the moment.";
 		not-yet;
@@ -591,7 +591,7 @@ a wordtwisting rule (this is the pre-rope-ladder rule):
 	if player is not in morph lairs, unavailable;
 	if sco-more-flares is false, unavailable;
 	if sco-rope-ladder is true:
-		vcp "You already got a rope ladder. There's nothing left here.";
+		vcal "You already got a rope ladder. There's nothing left here.";
 		already-done;
 	ready;
 
@@ -722,7 +722,7 @@ this is the hom-dough-making rule:
 	say "You don't need to see a king, but that's the right idea."
 
 a wordtwisting rule (this is the pre-dough-making rule):
-	if player is not in dome aching, unavailable;
+	if player is not in dome aching and once-now-hunt is false, unavailable;
 	if sco-can-take is false:
 		vcp "The can't-ache prevents you from doing anything constructive!";
 		not-yet;
@@ -904,7 +904,7 @@ this is the hom-dope-ale rule:
 
 a wordtwisting rule (this is the pre-dope-ale rule):
 	if player does not have dough pail, unavailable;
-	if player is not in deli stern:
+	if player is not in deli stern and once-now-hunt is false:
 		vcp "[if player is in bore dread]Your promises of future alcohol fall on deaf ears. The maul tower's guardians are a cynical, untrusting bunch[else]Hmm, you could exchange the dough pail for dope ale, but ... nobody here wants dough, and nobody here might have dope ale.";
 		not-yet;
 	if sco-dell-eastern is false:
@@ -937,7 +937,7 @@ this is the post-beef-ordering rule:
 	now player has meat rack;
 
 a wordtwisting rule (this is the pre-wheat-rye rule):
-	if player is not in deli stern, unavailable;
+	if player is not in deli stern and once-now-hunt is false, unavailable;
 	if sco-terrible-aid is false:
 		vcp "'Oh, no! We feel dumb. WE'd like to cut off some bread for you, but ... our knives are too dull to keep it up. If you could find a replacement, maybe?'";
 		not-yet;
@@ -1008,7 +1008,7 @@ this is the hom-barn-open rule:
 	say "You can do more than hopin['] to get in the barn!"
 
 a wordtwisting rule (this is the pre-barn-open rule):
-	if player is not in far miles farm isles, unavailable;
+	if player is not in far miles farm isles and once-now-hunt is false, unavailable;
 	if sco-bear-respond is false:
 		vcp "[farm-sense]You [one of]find a[or]revisit the[stopping] barn, open, hidden behind the bar. There are some truly glorious eggs in there, but you have nothing to barter for them yet. 'Food for food,' you're told. 'But only what you have extra of.'";
 		not-yet;
@@ -1063,7 +1063,7 @@ this is the post-grow-nodes rule:
 	say "[line break]So, yeah, there's something to [b]LISTEN[r] to and a bunch of numbered nodes. One must be a weak link.";
 
 a wordtwisting rule (this is the pre-no-date rule):
-	if player is not in groan odes, unavailable;
+	if player is not in groan odes and once-now-hunt is false, unavailable;
 	if number string is not in groan odes, unavailable;
 	if player does not have pliers:
 		vcp "Yes ... that feels right, but you have no tool with which to tear apart node eight.";
@@ -1113,7 +1113,7 @@ this is the post-too-broad rule:
 chapter dam pink scoring
 
 a wordtwisting rule (this is the pre-damp-ink rule):
-	if player is not in dam pink, unavailable;
+	if player is not in dam pink and once-now-hunt is false, unavailable;
 	if sco-gas-pouch is false:
 		vcp "But you have nothing that can hold the ink without leaking!";
 		not-yet;
@@ -1134,7 +1134,7 @@ this is the hom-ho-langour rule:
 	say "Close, but in the dark, you might keep stepping on them, until even Sideshow Bob would have to laugh at you."
 
 a wordtwisting rule (this is the pre-ho-langour rule):
-	if player is not in tude ark, unavailable;
+	if player is not in tude ark and once-now-hunt is false, unavailable;
 	if sco-too-broad is false:
 		vcp "But it doesn't quite work yet, calling for languor ... you haven't done anything down this way.";
 		not-yet;
@@ -1153,7 +1153,7 @@ this is the post-ho-langour rule:
 chapter scribe room scoring
 
 a wordtwisting rule (this is the pre-scry-broom rule):
-	if player is not in scribe room, unavailable;
+	if player is not in scribe room and once-now-hunt is false, unavailable;
 	if sco-damp-ink is false:
 		vcp "The scribes notice you looking at the broom. 'Want it? Well, we won't trade it for NOTHING...' Now what could scribes use?";
 		not-yet;
@@ -1186,7 +1186,7 @@ this is the hom-say-jokes rule:
 	say "No, maybe something less violent..."
 
 a wordtwisting rule (this is the pre-say-jokes rule):
-	if player is not in sage oaks, unavailable;
+	if player is not in sage oaks and once-now-hunt is false, unavailable;
 	if sco-ho-langour is false:
 		vcp "You try to bull through with jokes, but you're forcing it. You haven't naturally boosted yourself.";
 		not-yet;
@@ -1218,7 +1218,7 @@ this is the post-gas-pouch rule:
 chapter dust which does twitch scoring
 
 a wordtwisting rule (this is the pre-pro-sweeping rule):
-	if player is not in dust which, unavailable;
+	if player is not in dust which and once-now-hunt is false, unavailable;
 	if sco-scry-broom is false:
 		vcp "A very good idea, but you have nothing that could sweep at the moment!";
 		not-yet;
@@ -1254,7 +1254,7 @@ this is the post-cold-rum rule:
 	now eyes-rule of dust which is pre-tea-leaves rule;
 
 a wordtwisting rule (this is the pre-tea-leaves rule):
-	if player is not in dust which, unavailable;
+	if player is not in dust which and once-now-hunt is false, unavailable;
 	if sco-rope-ladder is false:
 		vcp "You suspect you might find tea leaves on, or in, the teal eaves above, but you have no way to climb up.";
 		not-yet;
@@ -1274,7 +1274,7 @@ book up branch scoring
 chapter Throne Ow Throw Now scoring
 
 a wordtwisting rule (this is the pre-use-it rule):
-	if player is not in throne, unavailable;
+	if player is not in throne and once-now-hunt is false, unavailable;
 	if sco-join-aider is false:
 		vcp "It would be useful to have an item of power, but alas, you do not, at the moment.";
 		not-yet;
