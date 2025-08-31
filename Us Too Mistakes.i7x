@@ -26,18 +26,19 @@ chapter stuff that needs the parser
 
 after reading a command:
 	if forest team is touchable:
-		if the player's command includes "steam":
+		let temp be 0;
+		if the player's command includes "steam", increase temp by 2;
+		if the player's command includes "fora", increase temp by 1;
+		if temp is 2:
 			say "You need to get less steamed up. And you need to kill [the team]'s head of steam. Focus on how they're talking to you, not their name.";
 			reject the player's command;
-		if the player's command includes "fora":
+		if temp is 1:
 			say "You need to give them less of a forum. Focus on how they're talking to you, not their name.";
 			reject the player's command;
 
 chapter stuff that doesn't
 
 understand "fora steam" as a mistake ("No, [the team] doesn't need a big stage with steam to spread their banter.") when forest team is touchable.
-
-understand "fora" and "fora [text]" as a mistake ("No, [the team] doesn't need fora to talk more.") when forest team is touchable.
 
 book oak lever
 
@@ -59,9 +60,9 @@ book deli
 
 understand "before during" as a mistake ("Yes, this interpretation seems right[toon-1][toon-2].") when beef-ready.
 
-understand "before" and "before [text]" as a mistake ("[toon-half][toon-1].") when beef-ready.
+understand "before" and "before [text]" and "[text] before" as a mistake ("[toon-half][toon-1].") when beef-ready.
 
-understand "during" and "[text] during" as a mistake ("[toon-half][toon-2].") when beef-ready.
+understand "during" and "during [text]" and "[text] during" as a mistake ("[toon-half][toon-2].") when beef-ready.
 
 to say toon-half: say "Yes, that feels like one part of what's on [the toon] you need to change"
 
@@ -85,7 +86,11 @@ understand "i scream" and "aye scream" as a mistake ("No, there's no ice cream a
 
 book nodes
 
-understand "no done" as a mistake ("Being able to riffing on node one would be nice, but ... it might be TOO easy or obvious, and you can't quite make the pronunciation work, anyway[first-syl-nodes]. Still, that felt at least half right--maybe look a little farther ahead.") when number string is touchable.
+understand the command "no" as something new. [this would normally be in story.ni but it would overwrite the mistake here]
+
+understand "no" as saying no when number string is not touchable.
+
+understand "no done" as a mistake ("Being able to riff on node one would be nice, but ... it might be TOO easy or obvious, and you can't quite make the pronunciation work, anyway[first-syl-nodes]. Still, that felt at least half right--maybe look a little farther ahead.") when number string is touchable.
 
 to say first-syl-nodes:
 	choose row with check-rule of pre-no-date rule in table of main oronyms;

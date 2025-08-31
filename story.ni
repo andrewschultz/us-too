@@ -1224,7 +1224,7 @@ check going in Deli Stern when room gone to is not nowhere:
 	if sco-dope-ale is true, now gs-deli-ale-left is true;
 	if sco-beef-ordering is true, now gs-deli-beef-left is true;
 	if sco-wheat-rye is true and player does not have pliers:
-		say "'Oh! We almost forgot! Business is booming so much, maybe this will come in handy for you. We don't need any repairs at the moment, and if we did, we'd need a different tool.' They hand you some [pliers].";
+		say "'Oh! We almost forgot! Business is booming so much, we might even start selling ice cream. You've earned a little something. Maybe this will come in handy for you. We don't need any repairs at the moment, and if we did, we'd need a different tool.' They hand you some [pliers].";
 		now player has pliers;
 		wfas;
 

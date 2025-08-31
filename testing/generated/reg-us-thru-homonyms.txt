@@ -19,6 +19,14 @@ by a point
 >try quest
 by a point
 
+#testcase-homonym-detail-hom-be-strong-rule-default
+>bee xxx
+You fail to summon bees. Maybe you got two-thirds of the way there. Or three-fourths.
+
+#testcase-homonym-detail-hom-a-stew-rule-default
+>uh stoo
+Oddly, your uhh-ing leaves you feeling you close to knowing what to do down the road.
+
 >be strong
 by a point
 
@@ -62,7 +70,7 @@ by a bonus point
 
 >ne
 
-#testcase-homonym-reject-table-of-main-oronyms-bored
+#testcase-homonym-reject-table-of-main-oronyms-bored-read-hom-board-red-rule
 >bored xxx
 No, becoming bored would be giving in. But you must be close, here.
 
@@ -72,6 +80,10 @@ by a point
 >sw
 
 >n
+
+#testcase-homonym-detail-hom-blah-copse-rule-default
+>xxx cops
+You really don't need to bait cops to start patrolling the black ops. You'd like to find something more peaceful and back to nature, and stuff.
 
 >blah copse
 by a point
@@ -243,6 +255,10 @@ by a point
 >ne
 >s
 
+#testcase-homonym-detail-hom-say-jokes-rule-default
+>say chokes
+No, maybe something less violent...
+
 >say jokes
 by a point
 
@@ -319,6 +335,10 @@ by a point
 
 >bear respond
 by a point
+
+#testcase-homonym-detail-hom-barn-open-rule-default
+>xxx hopin
+You can do more than hopin' to get in the barn!
 
 >barn open
 by a point
@@ -398,6 +418,10 @@ by a point
 
 >nope on
 by a bonus point
+
+#+testcase-homonym-detail-hom-a-stew-rule-default
+>uh stoo
+Oddly, your uhh-ing leaves you feeling you close to knowing what to do here at the end.
 
 >a stew
 by a point

@@ -12,7 +12,23 @@
 >how so
 by a point
 
+#testcase-mistake-us-too-humor-us-humorous
+>humor us
+Hi there! Glad you find me funny. Well, I'm going to pretend you do, even if you were just figuring what my pen name "really" meant.
+
+#+testcase-mistake-us-too-humor-us-humorous
+>humor us
+Hi there! Glad you find me funny. Well, I'm going to pretend you do, even if you were just figuring what my pen name "really" meant.
+
 >i
+
+#testcase-mistake-us-too-loosen-trou-loosen-trow
+>loosen trou
+Goodness no this isn't that sort of game, but goodness yes that's a really close guess.
+
+#+testcase-mistake-us-too-loosen-trou-loosen-trow
+>loosen trow
+Goodness no this isn't that sort of game, but goodness yes that's a really close guess.
 
 >z
 
@@ -78,6 +94,22 @@ by a point
 
 >blah copse
 by a point
+
+>fora xxx
+You need to give them less of a forum. Focus on how they're talking to you, not their name.
+
+>xxx fora
+You need to give them less of a forum. Focus on how they're talking to you, not their name.
+
+>steam xxx
+You need to get less steamed up. And you need to kill the Forest Team for Esteem's head of steam. Focus on how they're talking to you, not their name.
+
+>xxx steam
+You need to get less steamed up. And you need to kill the Forest Team for Esteem's head of steam. Focus on how they're talking to you, not their name.
+
+#testcase-mistake-us-too-fora-steam
+>fora steam
+No, the Forest Team for Esteem doesn't need a big stage with steam to spread their banter.
 
 >nah queue
 by a point
@@ -165,6 +197,10 @@ by a point
 
 >sw
 
+#testcase-mistake-us-too-leave-her
+>leave her
+No, it's important what the lever's made of. Also, it's an American lever.
+
 >oh clever
 by a point
 
@@ -206,6 +242,14 @@ by a point
 >cellar bin
 by a point
 
+#testcase-mistake-us-too-bah-cup
+>bah cup
+You take time to clean up litter and excoriate litterbugs before going, umm, back up.
+
+#testcase-mistake-us-too-trapped-oar
+>trapped oar
+You already have a prime oar. Plus, the trap door is useful for something, honest it is!
+
 >u
 
 >x beak
@@ -215,6 +259,15 @@ by a point
 >u
 >ne
 >s
+
+>gonear cellar bin
+
+#+testcase-mistake-us-too-trapped-oar
+>trapped oar
+You already have a prime oar. Plus, the trap door is useful for something, as you found out.
+
+>undo
+>undo
 
 >say jokes
 by a point
@@ -331,6 +384,80 @@ by a point
 >e
 >w
 
+#testcase-mistake-us-too-before-before-text-text-before
+>before
+Yes, that feels like one part of what's on the Toon Eat-Too-Neat you need to change. The fey loners/fail-owners probably wouldn't object to you talking your way through what the words should be. Also, this information will be in THINK until you figure exactly what to do.
+
+>think
+!Nothing comes to mind.
+You've deciphered the toon partway but haven't guessed what to do with it. Right now, you know BEFORE ------.
+
+>undo
+>undo
+
+#+testcase-mistake-us-too-before-before-text-text-before
+>before text
+Yes, that feels like one part of what's on the Toon Eat-Too-Neat you need to change. The fey loners/fail-owners probably wouldn't object to you talking your way through what the words should be. Also, this information will be in THINK until you figure exactly what to do.
+
+>think
+!Nothing comes to mind.
+You've deciphered the toon partway but haven't guessed what to do with it. Right now, you know BEFORE ------.
+
+>undo
+>undo
+
+#+testcase-mistake-us-too-before-before-text-text-before
+>text before
+Yes, that feels like one part of what's on the Toon Eat-Too-Neat you need to change. The fey loners/fail-owners probably wouldn't object to you talking your way through what the words should be. Also, this information will be in THINK until you figure exactly what to do.
+
+>think
+!Nothing comes to mind.
+You've deciphered the toon partway but haven't guessed what to do with it. Right now, you know BEFORE ------.
+
+>undo
+>undo
+
+#testcase-mistake-us-too-before-during
+>before during
+Yes, this interpretation seems right. The fey loners/fail-owners probably wouldn't object to you talking your way through what the words should be. Also, this information will be in THINK until you figure exactly what to do.
+
+>think
+!Nothing comes to mind.
+You've deciphered the toon completely but haven't guessed what to do with it. Right now, you know BEFORE DURING.
+
+>undo
+>undo
+
+#testcase-mistake-us-too-during-during-text-text-during
+>during
+Yes, that feels like one part of what's on the Toon Eat-Too-Neat you need to change. The fey loners/fail-owners probably wouldn't object to you talking your way through what the words should be. Also, this information will be in THINK until you figure exactly what to do.
+
+>think
+You've deciphered the toon partway but haven't guessed what to do with it. Right now, you know ------ DURING.
+
+>undo
+>undo
+
+#+testcase-mistake-us-too-during-during-text-text-during
+>during text
+Yes, that feels like one part of what's on the Toon Eat-Too-Neat you need to change. The fey loners/fail-owners probably wouldn't object to you talking your way through what the words should be. Also, this information will be in THINK until you figure exactly what to do.
+
+>think
+You've deciphered the toon partway but haven't guessed what to do with it. Right now, you know ------ DURING.
+
+>undo
+>undo
+
+#+testcase-mistake-us-too-during-during-text-text-during
+>text during
+Yes, that feels like one part of what's on the Toon Eat-Too-Neat you need to change. The fey loners/fail-owners probably wouldn't object to you talking your way through what the words should be. Also, this information will be in THINK until you figure exactly what to do.
+
+>think
+You've deciphered the toon partway but haven't guessed what to do with it. Right now, you know ------ DURING.
+
+>undo
+>undo
+
 >beef ordering
 by a point
 
@@ -343,6 +470,20 @@ by a point
 
 >e
 
+>w
+
+#testcase-mistake-us-too-i-scream-aye-scream
+>i scream
+No, there's no ice cream available yet. And you won't need to scream for free samples when it is. You'll get them for free, for all your help.
+
+#+testcase-mistake-us-too-i-scream-aye-scream
+>aye scream
+No, there's no ice cream available yet. And you won't need to scream for free samples when it is. You'll get them for free, for all your help.
+
+>undo
+>undo
+>undo
+
 >den specs
 by a point
 
@@ -350,6 +491,13 @@ by a point
 
 >grow nodes
 by a point
+
+#testcase-mistake-us-too-no-done
+>no done
+Being able to riff on node one would be nice, but ... it might be TOO easy or obvious, and you can't quite make the pronunciation work, anyway. Still, that felt at least half right--maybe look a little farther ahead.
+
+>think
+You're pretty sure you have one word right for figuring how to destroy the nodes, or the most important one.
 
 >no date
 by a point
@@ -363,6 +511,10 @@ by a point
 by a point
 
 >e
+
+#testcase-mistake-us-too-joiner-dear
+>joiner dear
+Seems right, but no need for cutesy names.
 
 >join aider
 by a point

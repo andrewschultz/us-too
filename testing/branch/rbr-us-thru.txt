@@ -73,6 +73,15 @@ by a point
 #testcase-room-names-my-new-mine-ooh
 `My New Mine, Ooh!
 
+@mis
+#testcase-mistake-us-too-humor-us-humorous
+>humor us
+Hi there! Glad you find me funny. Well, I'm going to pretend you do, even if you were just figuring what my pen name "really" meant.
+\\
+#+testcase-mistake-us-too-humor-us-humorous
+>humor us
+Hi there! Glad you find me funny. Well, I'm going to pretend you do, even if you were just figuring what my pen name "really" meant.
+
 @verbs
 >about
 The lucent row here contains, if you look at it right, something with more subjective details and opinions. It's a bonus point, but it might help prepare you for the rest of the game.
@@ -95,6 +104,15 @@ A'ight, Amusing Item Using, which you got to start, lists items Aunt Rickie-Anne
 #OK-APOSTROPHE
 You have that Urgh-Ought-'Er Jot flopping about, too. It probably only had stuff to help you get started, which might help you figure how to get going.
 For future reference, X will default to A'ight, Amusing Item Using in the future. It will be about as helpful to you as I/INVENTORY.
+
+@mis
+#testcase-mistake-us-too-loosen-trou-loosen-trow
+>loosen trou
+Goodness no this isn't that sort of game, but goodness yes that's a really close guess.
+\\
+#+testcase-mistake-us-too-loosen-trou-loosen-trow
+>loosen trow
+Goodness no this isn't that sort of game, but goodness yes that's a really close guess.
 
 @hint
 >x row
@@ -569,6 +587,15 @@ You're pretty sure you have one word right for getting rid of the beast.
 #testcase-values-eyes-number-of-beast-wrong-is-26
 >eye beast wrong
 The eyes light up green and show two dots, then six dots.
+
+@hom
+#testcase-homonym-detail-hom-be-strong-rule-default
+>bee xxx
+You fail to summon bees. Maybe you got two-thirds of the way there. Or three-fourths.
+\\
+#testcase-homonym-detail-hom-a-stew-rule-default
+>uh stoo
+Oddly, your uhh-ing leaves you feeling you close to knowing what to do down the road.
 
 >>be strong
 by a point
@@ -1424,7 +1451,7 @@ You're pretty sure you have one word right for finding something in the Bore Dre
 The eyes light up green and show five dots, then three dots.
 
 @hom
-#testcase-homonym-reject-table-of-main-oronyms-bored
+#testcase-homonym-reject-table-of-main-oronyms-bored-read-hom-board-red-rule
 >bored xxx
 No, becoming bored would be giving in. But you must be close, here.
 
@@ -1595,6 +1622,11 @@ by a point
 \\
 >undo
 
+@hom
+#testcase-homonym-detail-hom-blah-copse-rule-default
+>xxx cops
+You really don't need to bait cops to start patrolling the black ops. You'd like to find something more peaceful and back to nature, and stuff.
+
 >>blah copse
 by a point
 
@@ -1629,6 +1661,23 @@ You can only leave the copse to the south.
 `Ur-Branch
 \\
 >undo
+
+@mis
+>fora xxx
+You need to give them less of a forum. Focus on how they're talking to you, not their name.
+\\
+>xxx fora
+You need to give them less of a forum. Focus on how they're talking to you, not their name.
+\\
+>steam xxx
+You need to get less steamed up. And you need to kill the Forest Team for Esteem's head of steam. Focus on how they're talking to you, not their name.
+\\
+>xxx steam
+You need to get less steamed up. And you need to kill the Forest Team for Esteem's head of steam. Focus on how they're talking to you, not their name.
+\\
+#testcase-mistake-us-too-fora-steam
+>fora steam
+No, the Forest Team for Esteem doesn't need a big stage with steam to spread their banter.
 
 @hint
 #testcase-values-eyes-number-of-blah-copse-is-1
@@ -3129,6 +3178,11 @@ by a point
 \\
 >undo
 
+@mis
+#testcase-mistake-us-too-leave-her
+>leave her
+No, it's important what the lever's made of. Also, it's an American lever.
+
 >>oh clever
 by a point
 
@@ -3478,6 +3532,15 @@ You bang on the cell door, claiming you've been sent to the wrong place. To your
 #testcase-room-names-cellar-bin
 `Cellar Bin
 
+@mis
+#testcase-mistake-us-too-bah-cup
+>bah cup
+You take time to clean up litter and excoriate litterbugs before going, umm, back up.
+\\
+#testcase-mistake-us-too-trapped-oar
+>trapped oar
+You already have a prime oar. Plus, the trap door is useful for something, honest it is!
+
 @hint
 #testcase-values-eyes-number-of-cellar-bin-is--1
 >eye
@@ -3529,6 +3592,17 @@ You can just X TRAP to return.
 @all
 #testcase-room-names-sage-oaks
 `Sage Oaks
+
+@mis
+##balance undos
+>gonear cellar bin
+\\
+#+testcase-mistake-us-too-trapped-oar
+>trapped oar
+You already have a prime oar. Plus, the trap door is useful for something, as you found out.
+\\
+>undo
+>undo
 
 @verbs
 >r
@@ -3582,6 +3656,11 @@ You're pretty sure you have one word right for get by the Sage Oaks.
 \\
 >undo
 >undo
+
+@hom
+#testcase-homonym-detail-hom-say-jokes-rule-default
+>say chokes
+No, maybe something less violent...
 
 >>say jokes
 by a point
@@ -4633,6 +4712,11 @@ You can transact with the BARN OPEN in Far-Miles Farm Isles now you have food to
 \\
 >s
 
+@hom
+#testcase-homonym-detail-hom-barn-open-rule-default
+>xxx hopin
+You can do more than hopin' to get in the barn!
+
 >>barn open
 by a point
 
@@ -4963,6 +5047,82 @@ You're pretty sure you have one word right for figuring what the Toon Eat-Too-Ne
 The eyes light up green and show four dots, then eight dots.
 Hmm. Seems a bit long for "too neat." Whatever's on the toon, you'll need to decipher it.
 
+@mis
+##balance undos
+#testcase-mistake-us-too-before-before-text-text-before
+>before
+Yes, that feels like one part of what's on the Toon Eat-Too-Neat you need to change. The fey loners/fail-owners probably wouldn't object to you talking your way through what the words should be. Also, this information will be in THINK until you figure exactly what to do.
+\\
+>think
+!Nothing comes to mind.
+You've deciphered the toon partway but haven't guessed what to do with it. Right now, you know BEFORE ------.
+\\
+>undo
+>undo
+\\
+#+testcase-mistake-us-too-before-before-text-text-before
+>before text
+Yes, that feels like one part of what's on the Toon Eat-Too-Neat you need to change. The fey loners/fail-owners probably wouldn't object to you talking your way through what the words should be. Also, this information will be in THINK until you figure exactly what to do.
+\\
+>think
+!Nothing comes to mind.
+You've deciphered the toon partway but haven't guessed what to do with it. Right now, you know BEFORE ------.
+\\
+>undo
+>undo
+\\
+#+testcase-mistake-us-too-before-before-text-text-before
+>text before
+Yes, that feels like one part of what's on the Toon Eat-Too-Neat you need to change. The fey loners/fail-owners probably wouldn't object to you talking your way through what the words should be. Also, this information will be in THINK until you figure exactly what to do.
+\\
+>think
+!Nothing comes to mind.
+You've deciphered the toon partway but haven't guessed what to do with it. Right now, you know BEFORE ------.
+\\
+>undo
+>undo
+\\
+#testcase-mistake-us-too-before-during
+>before during
+Yes, this interpretation seems right. The fey loners/fail-owners probably wouldn't object to you talking your way through what the words should be. Also, this information will be in THINK until you figure exactly what to do.
+\\
+>think
+!Nothing comes to mind.
+You've deciphered the toon completely but haven't guessed what to do with it. Right now, you know BEFORE DURING.
+\\
+>undo
+>undo
+\\
+#testcase-mistake-us-too-during-during-text-text-during
+>during
+Yes, that feels like one part of what's on the Toon Eat-Too-Neat you need to change. The fey loners/fail-owners probably wouldn't object to you talking your way through what the words should be. Also, this information will be in THINK until you figure exactly what to do.
+\\
+>think
+You've deciphered the toon partway but haven't guessed what to do with it. Right now, you know ------ DURING.
+\\
+>undo
+>undo
+\\
+#+testcase-mistake-us-too-during-during-text-text-during
+>during text
+Yes, that feels like one part of what's on the Toon Eat-Too-Neat you need to change. The fey loners/fail-owners probably wouldn't object to you talking your way through what the words should be. Also, this information will be in THINK until you figure exactly what to do.
+\\
+>think
+You've deciphered the toon partway but haven't guessed what to do with it. Right now, you know ------ DURING.
+\\
+>undo
+>undo
+\\
+#+testcase-mistake-us-too-during-during-text-text-during
+>text during
+Yes, that feels like one part of what's on the Toon Eat-Too-Neat you need to change. The fey loners/fail-owners probably wouldn't object to you talking your way through what the words should be. Also, this information will be in THINK until you figure exactly what to do.
+\\
+>think
+You've deciphered the toon partway but haven't guessed what to do with it. Right now, you know ------ DURING.
+\\
+>undo
+>undo
+
 >>beef ordering
 by a point
 
@@ -5046,6 +5206,22 @@ You already got enough free bread!
 
 @all
 "Oh! We almost forgot! Business is booming so much, maybe this will come in handy for you. We don't need any repairs at the moment, and if we did, we'd need a different tool." They hand you some "Mope, Liars, Mo'" Pliers.
+
+@mis
+##balance undos
+>w
+\\
+#testcase-mistake-us-too-i-scream-aye-scream
+>i scream
+No, there's no ice cream available yet. And you won't need to scream for free samples when it is. You'll get them for free, for all your help.
+\\
+#+testcase-mistake-us-too-i-scream-aye-scream
+>aye scream
+No, there's no ice cream available yet. And you won't need to scream for free samples when it is. You'll get them for free, for all your help.
+\\
+>undo
+>undo
+>undo
 
 @part
 ##balance undos
@@ -5209,6 +5385,14 @@ You're pretty sure you have one word right for figuring how to destroy the nodes
 >eye nodes
 The eyes light up green and show two dots, then four dots.
 Well! That's a low reading for a numbered string, or numbered nodes. Perhaps one node is particularly weak, and that's the one to work on.
+
+@mis
+#testcase-mistake-us-too-no-done
+>no done
+Being able to riff on node one would be nice, but ... it might be TOO easy or obvious, and you can't quite make the pronunciation work, anyway. Still, that felt at least half right--maybe look a little farther ahead.
+\\
+>think
+You're pretty sure you have one word right for figuring how to destroy the nodes, or the most important one.
 
 >>no date
 by a point
@@ -5453,6 +5637,11 @@ You can call a JOIN AIDER here now you have two items of power to join.
 by a point
 \\
 >undo
+
+@mis
+#testcase-mistake-us-too-joiner-dear
+>joiner dear
+Seems right, but no need for cutesy names.
 
 >>join aider
 by a point
@@ -6017,6 +6206,11 @@ Nothing left to duplicate.
 >undo
 >undo
 >undo
+
+@hom
+#+testcase-homonym-detail-hom-a-stew-rule-default
+>uh stoo
+Oddly, your uhh-ing leaves you feeling you close to knowing what to do here at the end.
 
 >>a stew
 by a point
