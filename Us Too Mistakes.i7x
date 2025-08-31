@@ -41,7 +41,9 @@ understand "fora" and "fora [text]" as a mistake ("No, [the team] doesn't need f
 
 book oak lever
 
-understand "leave her" as a mistake ("No, it's important what the lever's made of.") when oak lever is touchable.
+understand the command "leave" as something new. [would overwrite the below if in story.ni]
+
+understand "leave her" as a mistake ("No, it's important what the lever's made of. Also, it's an American lever.") when lever is touchable.
 
 book cellar bin
 

@@ -1257,6 +1257,8 @@ report thinking (this is the toon partial thinking rule):
 		now got-think is true;
 	continue the action;
 
+the toon partial thinking rule is listed before the summarize thinkings rule in the report thinking rules.
+
 chapter meat
 
 the Me Track Meat Rack is an edible stewitem. description is "It's a sample of all different sorts of meats, prepared different ways, all organized for tracking like a good rack should be.". printed name is "me-track-meat rack". eyes-number of meat rack is -1.
@@ -1520,7 +1522,6 @@ volume going out
 
 understand the command "o" as something new. understand "o" as outside.
 
-understand the command "leave" as something new.
 understand the command "out" as something new.
 understand the command "exit" as something new.
 
@@ -1787,12 +1788,6 @@ this is the climb-teal-eaves rule:
 	if sco-pro-sweeping is false, continue the action;
 	if sco-tea-leaves is true, say "You already climbed for tea leaves." instead;
 	say "There's something to climb for here, but you need to say what it is[if sco-rope-ladder is false] and have something to climb on[end if]." instead;
-
-book workaround for no
-
-understand the command "no" as something new.
-
-understand "no" as saying no when number string is not touchable.
 
 book swearing
 
