@@ -1805,8 +1805,8 @@ book about
 
 carry out abouting:
 	say "[this-game] was released for IFComp 2025. It reuses a lot of code from [wp], my IFComp 2024 entry. It uses the same sort of progress mechanic, but the two are different in nature and story.";
-	say "[line break]As in 2024, I had bigger projects that didn't make it, but fortunately (well, for me,) I found the title early on and built from there.";
-	say "[line break]Like most of my games, [this-game] rates merciful on the Zarfian cruelty scale, which only means it's not intended to get in an unwinnable state. There are also no deaths, not even joke deaths. However, in this case, I want the puzzles to be more merciful in terms of general difficulty on the player's psyche than usual.";
+	say "[line break]As in 2024, I had bigger projects that didn't make it. This time, I found the title during IFComp, and hings built slowly.";
+	say "[line break]Like most of my games, [this-game] rates merciful on the Zarfian cruelty scale, which only means it's not intended to get in an unwinnable state. There are also no deaths, not even joke deaths.";
 	say "[line break][email] is my email if you wish to send transcripts or whatever, or you can report bugs there or at the GitHub site mentioned above, [ghbase]/us-too. I plan to release a post-comp version, and if enough bugs pile up after that, I may release another one.";
 
 report abouting:
@@ -1823,13 +1823,19 @@ report abouting:
 book credits
 
 carry out creditsing:
-	say "Thanks to my testers, Onno Brouwer, Wade Clarke, Olaf Nowacki, Melvin Rangasamy, Daniel Stelzer and Tabitha. With my development schedule, I put them in a time crunch, and they found a lot--enough for me to add a few features that hopefully have no bugs.";
+	say "Thanks to my testers, Onno Brouwer, Wade Clarke, Olaf Nowacki, Melvin Rangasamy, Daniel Stelzer and Tabitha. With my development schedule, I put them in a time crunch, and they found a lot. This let me add some niceties, though I also made mistakes implementing some of their suggestions.";
 	say "[line break]The cover art is my fault, and my fault alone.";
 	say "[line break][b]GENERAL THANKS[r]:[paragraph break]";
 	say "Thanks to everyone past and future involved in the administration of IFComp.";
 	say "Thanks to the I7 board on Intfiction.org for their help, as well as the people in the general topics and the spoilers topic as we discussed our plans.";
-	say "The [if sign ought is off-stage]additional branch directions (sort of) late in the game[else]S/SS/SSS[end if] were inspired by a game which, if I told you the name, would spoil it. I hate it when things like that happen, because I'd like to give them credit.";
+	say "The [south-dirs] were likely inspired by a game which, if I told you the name, would spoil [i]that[r] game. I hate it when things like that happen, because I'd like to give them direct credit. It's in the 'best short games' poll on IFDB, and rightly so.";
 	general-thanks;
+
+to say south-dirs:
+	if sign ought is off-stage:
+		say "additional branch directions (sort of) late in the game";
+	else:
+		say "directions S/SS/SSS[if dust which is visited or dam pink is visited or scribe room is visited] and NN[end if]"
 
 book options
 
@@ -1903,7 +1909,7 @@ to say or-far: if number of unvisited rotrooms is 0, say "or far "
 book versions
 
 carry out versioning:
-	say "Release 1 was sent to IFComp.org on August 28, 2025, for publishing on the 31st.";
+	say "Release 1 was sent to IFComp.org on August 28, 2025, for publishing on September 1st.";
 
 volume ending tweak(s)
 

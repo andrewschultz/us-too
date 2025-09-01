@@ -1,9 +1,12 @@
 9/1/2025:
 --forgot to add Melvin Rangasamy to credits (he found a lot of stuff, and I said oh I'll add him after. Yikes.)
+--forgot to place item cuing a certain puzzle in certain room once it was time
 --fixed X (main list) bug with extraneous line space
 --THINK now has "here" or "in room X" for when you know what to do but didn't have the right items
 --eliminated debug code
---you open the passage up in the hub earlier (rule misfire)
+--you now open the upwards passage in the hub earlier (rule misfire)
 --added option to unblock/block areas once done
---added option to make THINK help more detailed e.g. guessing word1 xxx / xxx word2 will now say "word1 word2 is it" if you set an option
---also, when you have guessed both word right, it says "just" versus "already"
+--added option to make THINK help more detailed e.g. it can show what you've guessed right, not just how much
+--also, the first time you have guessed both words right, it says "just" versus "already"
+--some good guesses are given more detail and encouragement
+--general flavor text upgrades

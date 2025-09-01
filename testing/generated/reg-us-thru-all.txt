@@ -801,7 +801,7 @@ They chop up the wheat and rye with the erstwhile Terra Blade. They give you a g
 
 >e
 
-"Oh! We almost forgot! Business is booming so much, maybe this will come in handy for you. We don't need any repairs at the moment, and if we did, we'd need a different tool." They hand you some "Mope, Liars, Mo'" Pliers.
+"Oh! We almost forgot! Business is booming so much, we might even start selling ice cream. You've earned a little something. Maybe this will come in handy for you. We don't need any repairs at the moment, and if we did, we'd need a different tool." They hand you some "Mope, Liars, Mo'" Pliers.
 
 >den specs
 by a point

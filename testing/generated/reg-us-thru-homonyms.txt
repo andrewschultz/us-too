@@ -316,7 +316,7 @@ by a point
 
 #testcase-homonym-reject-table-of-main-oronyms-to-two-hom-too-broad-rule
 >to xxx
-$HOMONYM TEXT HERE
+Hmm. That SOUNDED like it should work at least part way, but it didn't.
 
 #+testcase-homonym-reject-table-of-main-oronyms-to-two-hom-too-broad-rule
 #testcase-homonym-detail-hom-too-broad-rule-if-the-player's-command-includes-two
