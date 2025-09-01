@@ -14,16 +14,34 @@ by a point
 
 >i
 
+#testcase-homonym-reject-table-of-main-oronyms-loosed-loosened-hom-loose-intro-rule
+#testcase-homonym-detail-hom-loose-intro-rule-default
+>loosened xxx
+Loosened, loosed ... hmm, a word like that might be too complex to start. And you need to change the row, too. But you must be on the right track.
+
+>loosed xxx
+Loosened, loosed ... hmm, a word like that might be too complex to start. And you need to change the row, too. But you must be on the right track.
+
+>x row
+take them with TAKE ALL
+
+>get all
+slice eyes
+war pawn
+
 >z
 
 >try quest
 by a point
 
+#testcase-homonym-reject-table-of-main-oronyms-bee
+#testcase-homonym-reject-table-of-main-oronyms-bee-hom-be-strong-rule
 #testcase-homonym-detail-hom-be-strong-rule-default
 >bee xxx
 You fail to summon bees. Maybe you got two-thirds of the way there. Or three-fourths.
 
 #testcase-homonym-detail-hom-a-stew-rule-default
+#testcase-homonym-reject-table-of-main-oronyms-uh-uhh-uhhh-hom-a-stew-rule
 >uh stoo
 Oddly, your uhh-ing leaves you feeling you close to knowing what to do down the road.
 
@@ -71,8 +89,13 @@ by a bonus point
 >ne
 
 #testcase-homonym-reject-table-of-main-oronyms-bored-read-hom-board-red-rule
+#testcase-homonym-detail-hom-board-red-rule-if-player's-command-includes-bored
 >bored xxx
 No, becoming bored would be giving in. But you must be close, here.
+
+#+testcase-homonym-detail-hom-board-red-rule-if-player's-command-includes-bored
+>xxx read
+It's tough to write on a board. Another adjective must be it.
 
 >board red
 by a point
@@ -82,17 +105,38 @@ by a point
 >n
 
 #testcase-homonym-detail-hom-blah-copse-rule-default
+#testcase-homonym-reject-table-of-main-oronyms-cops-hom-blah-copse-rule
 >xxx cops
 You really don't need to bait cops to start patrolling the black ops. You'd like to find something more peaceful and back to nature, and stuff.
 
 >blah copse
 by a point
 
+#testcase-homonym-detail-hom-nah-queue-rule-else-if-the-player's-command-includes-gnaw
+#testcase-homonym-reject-table-of-main-oronyms-gnaw-cue-hom-nah-queue-rule
+>gnaw xxx
+Alas, you can think of nothing to follow up with "Chew on THAT." Perhaps there's a more emphatic word.
+
+#testcase-homonym-detail-hom-nah-queue-rule-if-the-player's-command-includes-cue
+#+testcase-homonym-reject-table-of-main-oronyms-gnaw-cue-hom-nah-queue-rule
+>xxx cue
+A cue would work with more emotionally intelligent types, but The Forest Team for Esteem won't take a hint from subtlety. They need something direct and continuous to let them know you won't take their nonsense.
+
 >nah queue
 by a point
 
 >surf ready
 by a point
+
+#testcase-homonym-detail-hom-or-clerk-rule-if-the-player's-command-includes-ore
+#testcase-homonym-reject-table-of-main-oronyms-ore-oar-hom-or-clerk-rule
+>ore xxx
+Deforestation isn't the way, here. There's another option.
+
+#+testcase-homonym-reject-table-of-main-oronyms-ore-oar-hom-or-clerk-rule
+#+testcase-homonym-detail-hom-or-clerk-rule-if-the-player's-command-includes-ore
+>oar xxx
+Yes, the wood could make an oar, but you won't need to "repurpose" a tree to make one. You'll find one later. And use it a lot.
 
 >or clerk
 by a point
@@ -125,8 +169,27 @@ by a point
 >rope ladder
 by a point
 
+#testcase-homonym-detail-hom-guard-entry-rule-default
+#testcase-homonym-reject-table-of-main-oronyms-entree-hom-guard-entry-rule
+>xxx entree
+Close, but the new tree is not there to greet passers-by with a meal.
+
 >guard entry
 by a point
+
+#testcase-homonym-reject-table-of-main-oronyms-piece-pieced-peaced-hom-peace-talks-rule
+>piece xxx
+No, we don't want pieces. We want to bring people together.
+
+#+testcase-homonym-reject-table-of-main-oronyms-piece-pieced-peaced-hom-peace-talks-rule
+#testcase-homonym-detail-hom-peace-talks-rule-if-the-player's-command-includes-peaced
+>pieced xxx
+No, we don't want pieces. We want to bring people together.
+
+#+testcase-homonym-reject-table-of-main-oronyms-piece-pieced-peaced-hom-peace-talks-rule
+#+testcase-homonym-detail-hom-peace-talks-rule-if-the-player's-command-includes-peaced
+>peaced xxx
+Present tense.
 
 >peace talks
 by a point
@@ -136,14 +199,37 @@ by a bonus point
 
 >se
 
+#testcase-homonym-reject-table-of-main-oronyms-cannes-hom-can-take-rule
+#testcase-homonym-detail-hom-can-take-rule-default
+>cannes xxx
+You will not need to go to France or watch any films. It's simpler than that.
+You also swear the sly size-slice eyes stared at you, as if to say, we could've told you that was well off the mark. (They're not big on creativity, alas.)
+
 >can take
 by a point
 
 >gray tin
 by a point
 
+#testcase-homonym-reject-table-of-main-oronyms-doe-king-hom-dough-making-rule
+#testcase-homonym-detail-hom-dough-making-rule-if-the-player's-command-includes-king
+>xxx king
+You don't need to see a king, but that's the right idea.
+
+#+testcase-homonym-detail-hom-dough-making-rule-if-the-player's-command-includes-king
+>doe xxx
+It would be neat to see wildlife, but this dome wouldn't be very welcoming.
+
 >dough making
 by a point
+
+#testcase-homonym-reject-table-of-main-oronyms-inn-ernest-hom-in-earnest-rule
+#testcase-homonym-detail-hom-in-earnest-rule-if-the-player's-command-includes-ernest
+>inn xxx
+There's only room for one inn in this here dome.
+
+>xxx ernest
+That long word sounds right, but it ain't quite what's needed here. Knowwhutimean, Vern?
 
 >in earnest
 by a point
@@ -196,13 +282,28 @@ No, that would put something way too high up out of reach, even if the light wer
 >sword ark
 by a point
 
+#testcase-homonym-detail-hom-terrible-aid-rule-default
+#testcase-homonym-reject-table-of-main-oronyms-tear-hom-terrible-aid-rule
+>tear xxx
+No, you want the blade, but kept intact. You need another way to, um, tear it from the sword ark.
+
 >blast ring
 by a point
+
+#+testcase-homonym-detail-hom-terrible-aid-rule-default
+>tear xxx
+No, you want the blade, but kept intact. You did the hard part. Now name it.
 
 >terrible aid
 by a point
 
 >sw
+
+#testcase-homonym-reject-table-of-main-oronyms-cleaver-hom-oh-clever-rule
+#testcase-homonym-detail-hom-oh-clever-rule-default
+>xxx cleaver
+A very American voice, heavy as lead, booms "didn't mean to lead you that way."
+Besides, you don't need a cleaver. This isn't that sort of adventure.
 
 >oh clever
 by a point
@@ -212,6 +313,15 @@ by a point
 >ne
 
 >s
+
+#testcase-homonym-reject-table-of-main-oronyms-to-two-hom-too-broad-rule
+>to xxx
+$HOMONYM TEXT HERE
+
+#+testcase-homonym-reject-table-of-main-oronyms-to-two-hom-too-broad-rule
+#testcase-homonym-detail-hom-too-broad-rule-if-the-player's-command-includes-two
+>two xxx
+No, you don't need to multiply the obstacles here. But you don't need to REDUCE them, per se. You're close.
 
 >too broad
 by a point
@@ -230,6 +340,11 @@ by a point
 
 >s
 
+#testcase-homonym-reject-table-of-main-oronyms-hoe-hom-ho-langour-rule
+#testcase-homonym-detail-hom-ho-langour-rule-default
+>hoe xxx
+Close, but in the dark, you might keep stepping on them, until even Sideshow Bob would have to laugh at you.
+
 >ho langour
 by a point
 
@@ -241,6 +356,22 @@ by a point
 by a point
 
 >x trap
+
+#testcase-homonym-detail-hom-cellar-bin-rule-default
+#testcase-homonym-detail-hom-cellar-bin-rule-if-temp->=-2
+#testcase-homonym-reject-table-of-main-oronyms-seller-ban-hom-cellar-bin-rule
+>seller ban
+You're on the right track, though I don't think merchants would be appalled by a ban. Another setting, perhaps?
+
+#testcase-homonym-detail-hom-cellar-bin-rule-else-if-temp-is-1
+#testcase-homonym-detail-hom-cellar-bin-rule-if-the-player's-command-includes-seller
+>seller xxx
+You're not in a position to be making laws, here. But that sounded somewhat right. Maybe you can make a change of scenery.
+
+#+testcase-homonym-detail-hom-cellar-bin-rule-if-temp->=-2
+#testcase-homonym-detail-hom-cellar-bin-rule-if-the-player's-command-includes-ban
+>xxx ban
+You're on the right track, though I don't think merchants would want to come down here. Another setting, perhaps?
 
 >cellar bin
 by a point
@@ -256,7 +387,8 @@ by a point
 >s
 
 #testcase-homonym-detail-hom-say-jokes-rule-default
->say chokes
+#testcase-homonym-reject-table-of-main-oronyms-chokes-hom-say-jokes-rule
+>xxx chokes
 No, maybe something less violent...
 
 >say jokes
@@ -273,6 +405,10 @@ by a point
 
 >claim it
 by a point
+
+#testcase-homonym-reject-table-of-main-oronyms-inc
+>xxx inc
+That SOUNDED like it should work at least part way, but it didn't.
 
 >damp ink
 by a point
@@ -297,6 +433,11 @@ by a point
 >cold rum
 by a point
 
+#testcase-homonym-detail-hom-tea-leaves-rule-default
+#testcase-homonym-reject-table-of-main-oronyms-tee-hom-tea-leaves-rule
+>tee xxx
+No room for a golf course for, uh, tee time.
+
 >tea leaves
 by a point
 
@@ -317,6 +458,11 @@ by a point
 >ne
 >w
 
+#testcase-homonym-detail-hom-bold-itch-rule-default
+#testcase-homonym-reject-table-of-main-oronyms-bowled-hom-bold-itch-rule
+>bowled xxx
+You're already feeling bowled over, but that sounds right.
+
 >bold itch
 by a point
 
@@ -330,12 +476,26 @@ by a point
 
 >s
 
+#testcase-homonym-reject-table-of-main-oronyms-fined-hom-find-rinks-rule
+#testcase-homonym-detail-hom-find-rinks-rule-default
+>fined xxx
+Not quite -- don't need to look for people who've been forced to pay.
+
 >find rinks
 by a point
+
+#testcase-homonym-reject-table-of-main-oronyms-bare-spawned-hom-bear-respond-rule
+>bare xxx
+Well, yes and no, your help doesn't need to wear clothes...
+
+#testcase-homonym-detail-hom-bear-respond-rule-if-the-player's-command-includes-spawned
+>xxx spawned
+But if something were spawned, it would only mean one measly berry. You need someone or something that can help you find a bunch.
 
 >bear respond
 by a point
 
+#testcase-homonym-reject-table-of-main-oronyms-hopin-hom-barn-open-rule
 #testcase-homonym-detail-hom-barn-open-rule-default
 >xxx hopin
 You can do more than hopin' to get in the barn!
@@ -354,12 +514,48 @@ by a point
 
 >in
 
+#testcase-homonym-detail-hom-dell-eastern-rule-else-if-the-player's-command-includes-tern
+>xxx tern
+Hmm, perhaps Sob Acres could be more welcoming to wildlife...
+
+#testcase-homonym-detail-hom-dell-eastern-rule-else-if-the-player's-command-includes-turn
+>xxx turn
+Possible, but it's facing the right direction. Perhaps you could find what it's facing.
+
+#testcase-homonym-detail-hom-dell-eastern-rule-if-the-player's-command-includes-urn
+>xxx urn
+If this were an antique store, you might need to delist an urn their rivals are selling. But it's a deli.
+
+#testcase-homonym-detail-hom-dell-eastern-rule-else-if-the-player's-command-includes-delist
+#testcase-homonym-reject-table-of-main-oronyms-delist-urn-turn-tern-hom-dell-eastern-rule
+>delist xxx
+No, you need to drum up business.
+
+#testcase-homonym-detail-hom-dell-eastern-rule-if-the-player's-command-includes-urn-if-the-player's-command-includes-delist
+>delist urn
+If this were an antique store, you might need to delist an urn their rivals are selling. But it's a deli.
+
+#+testcase-homonym-reject-table-of-main-oronyms-delist-urn-turn-tern-hom-dell-eastern-rule
+#+testcase-homonym-detail-hom-dell-eastern-rule-if-the-player's-command-includes-urn-if-the-player's-command-includes-delist
+>xxx turn
+Possible, but it's facing the right direction. Perhaps you could find what it's facing.
+
+#+testcase-homonym-reject-table-of-main-oronyms-delist-urn-turn-tern-hom-dell-eastern-rule
+#+testcase-homonym-detail-hom-dell-eastern-rule-if-the-player's-command-includes-urn-if-the-player's-command-includes-delist
+>xxx tern
+Hmm, perhaps Sob Acres could be more welcoming to wildlife...
+
 >dell eastern
 by a point
 
 >e
 
 >w
+
+#testcase-homonym-reject-table-of-main-oronyms-ail-hom-dope-ale-rule
+#testcase-homonym-detail-hom-dope-ale-rule-default
+>xxx ail
+Making people sick would be wack.
 
 >dope ale
 by a point
@@ -387,6 +583,11 @@ by a point
 >grow nodes
 by a point
 
+#testcase-homonym-detail-hom-no-date-rule-default
+#testcase-homonym-reject-table-of-main-oronyms-know-hom-no-date-rule
+>know xxx
+Ah yes. That's the key. To know which number is the weakness.
+
 >no date
 by a point
 
@@ -394,6 +595,11 @@ by a point
 >e
 
 >ne
+
+#testcase-homonym-reject-table-of-main-oronyms-mall-hom-malt-hour-rule
+#testcase-homonym-detail-hom-malt-hour-rule-default
+>mall xxx
+No, you need to change the word's sound. And you don't have money to shop, either.
 
 >malt hour
 by a point
@@ -408,8 +614,20 @@ by a point
 
 >u
 
+#testcase-homonym-reject-table-of-main-oronyms-yews-yew
+>yews xxx
+Hmm. That SOUNDED like it should work at least part way, but it didn't.
+
+>yew xxx
+Hmm. That SOUNDED like it should work at least part way, but it didn't.
+
 >use it
 by a point
+
+#testcase-homonym-detail-hom-lie-fruits-rule-default
+#testcase-homonym-reject-table-of-main-oronyms-lye-hom-lie-fruits-rule
+>lye xxx
+You've already mostly cleaned up. Lye won't help.
 
 >lie fruits
 by a point
@@ -421,6 +639,14 @@ by a bonus point
 
 #+testcase-homonym-detail-hom-a-stew-rule-default
 >uh stoo
+Oddly, your uhh-ing leaves you feeling you close to knowing what to do here at the end.
+
+#+testcase-homonym-reject-table-of-main-oronyms-uh-uhh-uhhh-hom-a-stew-rule
+>uhh stoo
+Oddly, your uhh-ing leaves you feeling you close to knowing what to do here at the end.
+
+#+testcase-homonym-reject-table-of-main-oronyms-uh-uhh-uhhh-hom-a-stew-rule
+>uhhh stoo
 Oddly, your uhh-ing leaves you feeling you close to knowing what to do here at the end.
 
 >a stew

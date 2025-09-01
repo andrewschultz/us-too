@@ -16,7 +16,7 @@ w1 (text)	w2 (text)	first-hom (text)	second-hom	hom-txt-rule (rule)	first-exact	
 "nice"	"warm"	--	--	--	false	false	false	false	"making the swarm less aggressive"	false	true	true	false	false	mine ooh	pre-nice-warm rule	post-nice-warm rule	--	--
 "mess"	"pot"	--	--	--	false	false	false	false	"making the meh spot into something more useful"	false	true	true	false	false	mine ooh	pre-mess-pot rule	post-mess-pot rule	--	--
 "meh"	"skit"	--	--	--	false	false	false	false	"having harmless, useless fun with the mess kit"	false	true	false	false	false	mine ooh	pre-meh-skit rule	post-meh-skit rule	--	--
-"a"	"stew"	"uh|uhh|uhh"	--	hom-a-stew rule	false	false	false	false	"[if at-last-point]achieving the game's objective[else]something down the road with the word A[end if]"	false	true	true	false	false	mine ooh	pre-a-stew rule	post-a-stew rule	--	"You can make [b]A STEW[r] [here-in of mine ooh] [once-now of pre-a-stew rule] you have all the ingredients you need. [b]X[r] should list them."
+"a"	"stew"	"uh|uhh|uhhh"	--	hom-a-stew rule	false	false	false	false	"[if at-last-point]achieving the game's objective[else]something down the road with the word A[end if]"	false	true	true	false	false	mine ooh	pre-a-stew rule	post-a-stew rule	--	"You can make [b]A STEW[r] [here-in of mine ooh] [once-now of pre-a-stew rule] you have all the ingredients you need. [b]X[r] should list them."
 "herb"	"ranch"	--	--	--	false	false	false	false	"finding the first place to visit from the Ur-Branch"	false	true	true	false	false	ur branch	pre-herb-ranch rule	post-herb-ranch rule	--	"You can discover an [b]HERB RANCH[r] [once-now of pre-herb-ranch rule] you are back in the Ur-Branch."
 "summer"	"bay"	--	--	--	false	false	false	false	"letting the herb reveal a new location"	false	true	true	false	false	ur branch	pre-summer-bay rule	post-summer-bay rule	--	"You can discover a [b]SUMMER BAY[r] [once-now of pre-summer-bay rule] you are back in the Ur-Branch."
 "blah|bleh|bleah|bla|blaa|blaah"	"copse"	"cops"	--	hom-blah-copse rule	false	false	false	false	"avoiding the black ops"	false	true	true	false	false	ur branch	pre-blah-copse rule	post-blah-copse rule	--	--
@@ -28,14 +28,14 @@ w1 (text)	w2 (text)	first-hom (text)	second-hom	hom-txt-rule (rule)	first-exact	
 "hike"	"up"	--	--	--	false	false	false	false	"reaching the high cup"	false	true	true	false	false	a pile up isle	pre-hike-up rule	post-hike-up rule	--	--
 "sword"	"ark"	"soared"	"arc"	hom-sword-ark rule	false	false	false	false	"finding something in the Sore Dark"	false	true	true	false	false	sore dark	pre-sword-ark rule	post-sword-ark rule	--	--
 "blast"	"ring"	--	--	--	false	false	false	false	"finding the blah string's true purpose"	false	true	true	false	false	sore dark	pre-blast-ring rule	post-blast-ring rule	--	"You can transform the blah string to a [b]BLAST RING[r] to blast something somewhere high up."
-"terrible"	"aid"	--	--	--	false	false	false	false	"becoming worthy of the Terra Blade"	false	true	true	false	false	sore dark	pre-terrible-aid rule	post-terrible-aid rule	--	"You can become the owner of a [b]TERRIBLE AID[r] [here-in of Sore Dark] [once-now of pre-terrible-aid rule] it has fallen to where you can reach it."
+"terrible"	"aid"	"tear"	--	hom-terrible-aid rule	false	false	false	false	"becoming worthy of the Terra Blade"	false	true	true	false	false	sore dark	pre-terrible-aid rule	post-terrible-aid rule	--	"You can become the owner of a [b]TERRIBLE AID[r] [here-in of Sore Dark] [once-now of pre-terrible-aid rule] it has fallen to where you can reach it."
 "board"	"red"	"bored"	"read"	hom-board-red rule	false	false	false	false	"finding something in the Bore Dread"	false	true	true	false	false	bore dread	pre-board-red rule	post-board-red rule	--	--
 "malt"	"hour"	"mall"	--	hom-malt-hour rule	false	false	false	false	"befriending the guardians in the maul tower"	false	true	true	false	false	bore dread	pre-malt-hour rule	post-malt-hour rule	--	"You can call [b]MALT HOUR[r] [here-in of bore dread] [once-now of pre-malt-hour rule] you have a variety of alcohol to share."
-"join"	"aider|adder"	--	--	hom-join-aider rule	false	false	false	false	"doing something worthwhile in the joy nadir"	false	true	true	false	false	joy nadir	pre-join-aider rule	post-join-aider rule	--	"You can call a [b]JOIN AIDER[r] [here-in of joy nadir] [once-now of pre-join-aider rule] you have two items of power to join."
+"join"	"aider|adder"	--	--	--	false	false	false	false	"doing something worthwhile in the joy nadir"	false	true	true	false	false	joy nadir	pre-join-aider rule	post-join-aider rule	--	"You can call a [b]JOIN AIDER[r] [here-in of joy nadir] [once-now of pre-join-aider rule] you have two items of power to join."
 "dupe"	"it"	--	--	--	false	false	false	false	"making the dew pit useful"	false	true	true	false	false	joy nadir	pre-dupe-it rule	post-dupe-it rule	--	"You can [b]DUPE IT[r] [here-in of joy nadir] [once-now of pre-dupe-it rule] you have something unique and worth duplicating."
 "nah|naw"	"queue"	"gnaw"	"cue"	hom-nah-queue rule	false	false	false	false	"repelling the [team]"	false	true	true	false	false	blah copse	pre-nah-queue rule	post-nah-queue rule	--	--
 "surf"	"ready"	--	--	--	false	false	false	false	"giving Sir Freddie a new direction"	false	true	true	false	false	blah copse	pre-surf-ready rule	post-surf-ready rule	--	"You can make Sir Freddie [b]SURF READY[r] [here-in of Blah Copse] [once-now of pre-surf-ready rule] you have surfing equipment for him."
-"or"	"clerk"	"ore|oar"	--	--	false	false	false	false	"figuring what Sir Freddie was scared of"	false	true	true	false	false	blah copse	pre-or-clerk rule	post-or-clerk rule	--	--
+"or"	"clerk"	"ore|oar"	--	hom-or-clerk rule	false	false	false	false	"figuring what Sir Freddie was scared of"	false	true	true	false	false	blah copse	pre-or-clerk rule	post-or-clerk rule	--	--
 "more"	"flares|flare"	--	"flayers|flayer|flair|flairs"	hom-flairs-flayers rule	false	false	false	false	"activating the morph lairs"	false	true	true	false	false	morph lairs	pre-more-flares rule	post-more-flares rule	--	--
 "rope"	"ladder"	--	--	--	false	false	false	false	"discovering what the row (plaider) holds"	false	true	true	false	false	morph lairs	pre-rope-ladder rule	post-rope-ladder rule	--	--
 "probe"	"all"	--	--	--	false	false	false	false	"finding a purpose for the pro ball"	false	true	true	false	false	ur branch	pre-probe-all rule	post-probe-all rule	--	--
@@ -47,7 +47,7 @@ w1 (text)	w2 (text)	first-hom (text)	second-hom	hom-txt-rule (rule)	first-exact	
 "in"	"earnest"	"inn"	"ernest"	hom-in-earnest rule	false	false	false	false	"figure how to visit the inner nest"	false	true	true	false	false	dome aching	pre-in-earnest rule	post-in-earnest rule	--	--
 "pry"	"more"	--	--	--	false	false	false	false	"figuring how to take the prime oar"	false	true	true	false	false	inner nest	pre-pry-more rule	post-pry-more rule	--	--
 "oh|o"	"clever"	--	"cleaver"	hom-oh-clever rule	false	false	false	false	"operating the oak lever"	false	true	true	false	false	fort earns four turns	pre-oh-clever rule	post-oh-clever rule	--	--
-"bold"	"itch"	"bowled"	--	--	false	false	false	false	"figuring how to get back on your feet in Bowl/Ditch"	false	true	true	false	false	bowl ditch	pre-bold-itch rule	post-bold-itch rule	--	--
+"bold"	"itch"	"bowled"	--	hom-bold-itch rule	false	false	false	false	"figuring how to get back on your feet in Bowl/Ditch"	false	true	true	false	false	bowl ditch	pre-bold-itch rule	post-bold-itch rule	--	--
 "stark"	"raft"	--	--	--	false	false	false	false	"finding more appropriate transport than the star craft"	false	true	true	false	false	turbo tours	pre-stark-raft rule	post-stark-raft rule	--	--
 "tour"	"boaters"	--	--	--	false	false	false	false	"bringing more business to Turbo Tours"	false	true	false	false	false	turbo tours	pre-tour-boaters rule	post-tour-boaters rule	--	--
 "find"	"rinks"	"fined"	--	hom-find-rinks rule	false	false	false	false	"seeing another place on the Farm Isles"	false	true	true	false	false	far miles farm isles	pre-find-rinks rule	post-find-rinks rule	--	--
@@ -59,7 +59,7 @@ w1 (text)	w2 (text)	first-hom (text)	second-hom	hom-txt-rule (rule)	first-exact	
 "beef"	"ordering"	--	--	--	false	false	false	false	"figuring what the [toon] really means"	false	true	true	false	false	deli stern	pre-beef-ordering rule	post-beef-ordering rule	--	--
 "wheat"	"rye"	--	--	--	false	false	false	false	"guessing what free samples are on offer"	false	true	true	false	false	deli stern	pre-wheat-rye rule	post-wheat-rye rule	--	"You can ask for [b]WHEAT RYE[r] [here-in of Deli Stern] [once-now of pre-wheat-rye rule] you have something [the owners] can cut bread with."
 "grow"	"nodes"	--	--	--	false	false	false	false	"seeing what's behind the groan odes"	false	true	true	false	false	groan odes	pre-grow-nodes rule	post-grow-nodes rule	--	--
-"no"	"date"	"know"	--	--	false	false	false	false	"figuring how to destroy the nodes, or the most important one"	false	true	true	false	false	groan odes	pre-no-date rule	post-no-date rule	--	"You can claim [b]NO DATE[r] [here-in of Groan Odes] [once-now of pre-no-date rule] you have a tool that can destroy the nodes."
+"no"	"date"	"know"	--	hom-no-date rule	false	false	false	false	"figuring how to destroy the nodes, or the most important one"	false	true	true	false	false	groan odes	pre-no-date rule	post-no-date rule	--	"You can claim [b]NO DATE[r] [here-in of Groan Odes] [once-now of pre-no-date rule] you have a tool that can destroy the nodes."
 "fell"	"trap"	--	--	--	false	false	false	false	"revealing what's behind the felt wrap"	false	true	true	false	false	fort earns	pre-fell-trap rule	post-fell-trap rule	--	--
 "cellar"	"bin"	"seller"	"ban"	hom-cellar-bin rule	false	false	false	false	"escaping the Cell, Urban"	false	true	true	false	false	cell urban	pre-cellar-bin rule	post-cellar-bin rule	--	--
 "too"	"broad"	"to|two"	--	hom-too-broad rule	false	false	false	false	"how to fracture the tube/rod"	false	true	true	false	false	tube rod	pre-too-broad rule	post-too-broad rule	--	--
@@ -72,7 +72,7 @@ w1 (text)	w2 (text)	first-hom (text)	second-hom	hom-txt-rule (rule)	first-exact	
 "belt"	"rusted"	--	--	--	false	false	false	false	"figuring how to 'clean' the bell (trusted)"	false	true	true	false	false	scribe room	pre-belt-rusted rule	post-belt-rusted rule	--	--
 "pro"	"sweeping"	--	--	--	false	false	false	false	"figuring how to clear some dust a bit"	false	true	true	false	false	dust which	pre-pro-sweeping rule	post-pro-sweeping rule	--	"You can start [b]PRO SWEEPING[r] [here-in of Dust Which] [once-now of pre-pro-sweeping rule] you have something to sweep with."
 "cold"	"rum"	--	--	--	false	false	false	false	"knowing what to look for in the coal drum"	false	true	true	false	false	dust which	pre-cold-rum rule	post-cold-rum rule	--	--
-"tea"	"leaves"	"tee"	--	--	false	false	false	false	"divining what's beneath Teal Eaves"	false	true	true	false	false	dust which	pre-tea-leaves rule	post-tea-leaves rule	--	"You can get the [b]TEA LEAVES[r] [here-in of Dust Which] [once-now of pre-tea-leaves rule] you have something that can get you to the top of the eaves."
+"tea"	"leaves"	"tee"	--	hom-tea-leaves rule	false	false	false	false	"divining what's beneath Teal Eaves"	false	true	true	false	false	dust which	pre-tea-leaves rule	post-tea-leaves rule	--	"You can get the [b]TEA LEAVES[r] [here-in of Dust Which] [once-now of pre-tea-leaves rule] you have something that can get you to the top of the eaves."
 "summon"	"cheese"	--	--	--	false	false	false	false	"figuring what some munchies are"	false	true	true	false	false	--	pre-summon-cheese rule	post-summon-cheese rule	--	--
 "den"	"specs"	--	--	--	false	false	false	false	"finding something more useful than dense pecs"	false	true	true	false	false	--	pre-den-specs rule	post-den-specs rule	--	--
 "use"	"it"	"yews|yew"	--	--	false	false	false	false	"disobeying the throne's orders"	false	true	true	false	false	throne	pre-use-it rule	post-use-it rule	--	"You can [b]USE IT[r] [here-in of Throne Ow] [once-now of pre-use-it rule] you have an item of power to use."
@@ -168,7 +168,7 @@ this is the post-a-stew rule:
 	follow the shutdown rules;
 
 this is the hom-loose-intro rule:
-	say "Loosened ... hmm, that might be too complex to start. And you need to change the row, too. But you must be on the right track."
+	say "Loosened, loosed ... hmm, a word like that might be too complex to start. And you need to change the row, too. But you must be on the right track."
 
 a wordtwisting rule (this is the pre-loose-intro rule):
 	if player is not in my new mine ooh, unavailable;
@@ -274,7 +274,7 @@ this is the post-summer-bay rule:
 	declue herbs;
 
 this is the hom-guard-entry rule:
-	say "Close, but the trees are not there to greet newcomers with a meal."
+	say "Close, but the new tree is not there to greet passers-by with a meal."
 
 a wordtwisting rule (this is the pre-guard-entry rule):
 	if player is not in ur branch, unavailable;
@@ -406,7 +406,7 @@ this is the post-blast-ring rule:
 	moot sword ark;
 
 this is the hom-terrible-aid rule:
-	say "No, you want the blade, but keep intact[if sco-blast-ring is false]. You need another way to, um, tear it from the sword ark[end if]."
+	say "No, you want the blade, but kept intact. [if sco-blast-ring is true]You did the hard part. Now name it[else]You need another way to, um, tear it from the sword ark[end if]."
 
 a wordtwisting rule (this is the pre-terrible-aid rule):
 	if player is not in sore dark and once-now-hunt is false and player does not have terra blade, unavailable;
@@ -470,9 +470,6 @@ this is the post-malt-hour rule:
 	reveal Joy Nadir to east;
 
 chapter joy nadir scoring
-
-this is the hom-join-aider rule:
-	say "Animals might not be welcome here. It's a place for something else."
 
 a wordtwisting rule (this is the pre-join-aider rule):
 	if player is not in joy nadir and once-now-hunt is false, unavailable;
@@ -553,6 +550,12 @@ this is the post-surf-ready rule:
 	move Sir Freddie to Beach Ill;
 	move foreboding to Blah Copse;
 	declue Sir Freddie;
+
+this is the hom-or-clerk rule:
+	if the player's command includes "ore":
+		say "Deforestation isn't the way, here. There's another option.";
+	else:
+		say "Yes, the wood could make an oar, but you won't need to 'repurpose' a tree to make one. You'll find one later. And use it a lot."
 
 a wordtwisting rule (this is the pre-or-clerk rule):
 	if player is not in blah copse, unavailable;
@@ -723,7 +726,10 @@ this is the post-gray-tin rule:
 	declue great inn;
 
 this is the hom-dough-making rule:
-	say "You don't need to see a king, but that's the right idea."
+	if the player's command includes "king":
+		say "You don't need to see a king, but that's the right idea.";
+	else:
+		say "It would be neat to see wildlife, but this dome wouldn't be very welcoming."
 
 a wordtwisting rule (this is the pre-dough-making rule):
 	if player is not in dome aching and once-now-hunt is false, unavailable;
@@ -839,6 +845,9 @@ book west branch sorting
 
 chapter Bowl Ditch scoring
 
+this is the hom-bold-itch rule:
+	say "You're already feeling bowled over, but that sounds right."
+
 a wordtwisting rule (this is the pre-bold-itch rule):
 	if player is not in bowl ditch, unavailable;
 	if sco-bold-itch is true:
@@ -884,10 +893,14 @@ this is the hom-dell-eastern rule:
 	if the player's command includes "urn":
 		say "If this were an antique store, you might need to delist an urn their rivals are selling. But it's a deli.";
 		if the player's command includes "delist", say "[line break]And anyway, delist doesn't sound quite right, even if the spelling fits.";
+	else if the player's command includes "delist":
+		say "No, you need to drum up business.";
 	else if the player's command includes "tern":
 		say "Hmm, perhaps Sob Acres could be more welcoming to wildlife...";
 	else if the player's command includes "turn":
 		say "Possible, but it's facing the right direction. Perhaps you could find what it's facing.";
+	else:
+		say "Right letters, mostly, but iffy pronunciation."
 
 a wordtwisting rule (this is the pre-dell-eastern rule):
 	if player is not in deli stern, unavailable;
@@ -1065,6 +1078,9 @@ this is the post-grow-nodes rule:
 	declue-here;
 	print-the-loc;
 	say "[line break]So, yeah, there's something to [b]LISTEN[r] to and a bunch of numbered nodes. One must be a weak link.";
+
+this is the hom-no-date rule:
+	say "Ah yes. That's the key. To know which number is the weakness."
 
 a wordtwisting rule (this is the pre-no-date rule):
 	if player is not in groan odes and once-now-hunt is false, unavailable;
@@ -1256,6 +1272,9 @@ this is the post-cold-rum rule:
 	declue coal drum;
 	now eyes-number of dust which is 36;
 	now eyes-rule of dust which is pre-tea-leaves rule;
+
+this is the hom-tea-leaves rule:
+	say "No room for a golf course for, uh, tee time."
 
 a wordtwisting rule (this is the pre-tea-leaves rule):
 	if player is not in dust which and once-now-hunt is false, unavailable;
