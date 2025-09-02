@@ -905,6 +905,13 @@ chapter blah string
 
 the blah string is a thing. description is "You look at it, and it doesn't seem like it could become anything powerful. Then it rearranges itself briefly, into the semblance of an arrow pointing up, before collapsing.". indefinite article of blah string is "some". eyes-number of blah string is 54. eyes-rule of blah string is pre-blast-ring rule.
 
+report examining blah string:
+	if pre-blast-ring rule is guessed-yet:
+		say "But you know it can be a blast ring. The question is, where?";
+	else:
+		say "It hides its power well. But where to use it, and how?";
+	continue the action;
+
 chapter orc lurk foreboding
 
 the orc lurk foreboding is a thing. "Sir Freddie's orc lurk foreboding was caused by something to the north. How to face it or prove it wasn't serious?". description is "You can't tell the exact source of Sir Freddie's orc lurk foreboding. Somewhere to the north[if player has eyes]. If you needed them to, your [eyes] could probably get a read on it[end if].". eyes-number of foreboding is 25. eyes-rule of foreboding is pre-or-clerk rule.
@@ -1826,6 +1833,7 @@ book credits
 
 carry out creditsing:
 	say "Thanks to my testers, Onno Brouwer, Wade Clarke, Olaf Nowacki, Melvin Rangasamy, Daniel Stelzer and Tabitha. With my development schedule, I put them in a time crunch, and they found a lot. This let me add some niceties, though I also made mistakes implementing some of their suggestions.";
+	say "A DiBianca, a longtime IFComp co-competitor, sent (not for the first time) a nice useful transcript on day 1 of IFComp. (Psst! If you like my stuff, you may love his.)";
 	say "[line break]The cover art is my fault, and my fault alone.";
 	say "[line break][b]GENERAL THANKS[r]:[paragraph break]";
 	say "Thanks to everyone past and future involved in the administration of IFComp.";
@@ -1857,8 +1865,14 @@ check optionsing when options-found is 0: say "You haven't found either option t
 
 carry out optionsing:
 	say "You have found/learned of [if options-found is two]both[else][options-found in words] of two total[end if] options:[paragraph break]";
-	if gs-know-blah-cough is true, say "[b]BLAH COUGH[r] disables the automatic block-off for completed branches. [b]BLOCK OFF[r] enables it. Allowing completely free movement is currently [on-off of opt-blah-cough].";
-	if gs-know-think-well is true, say "[b]THINK WELL[r] shows a full point-scoring command if you've guessed each part. [b]THIN QUELL[r] (default) turns it off. This option is currently [on-off of opt-think-well].";
+	if gs-know-blah-cough is true:
+		say "[b]BLAH COUGH[r] disables the automatic block-off for completed branches. [b]BLOCK OFF[r] enables it. Allowing completely free movement is currently [on-off of opt-blah-cough].";
+	else:
+		say "You haven't found how to toggle revisiting blocked areas.";
+	if gs-know-think-well is true:
+		say "[b]THINK WELL[r] shows a full point-scoring command if you've guessed each part. [b]THIN QUELL[r] (default) turns it off. This option is currently [on-off of opt-think-well].";
+	else:
+		say "You haven't found how to toggle revealing a point-scoring command you got by halves.";
 
 chapter blahcoughing
 
@@ -1901,6 +1915,10 @@ carry out verbsing:
 	say "[b]O[r] is a shortcut for the outside direction. If there's only one worthwhile direction to leave the current room, it goes that way, though if there are more than one, it just lists exits.";
 	say "[b]T[r]/[b]TALK[r]ing to NPCs (subject usually not necessary) or [b]LISTEN[r] may provide additional cues. Additionally, [b]EAT[r] and [b]CLIMB[r] may be marginally useful or amusing.";
 	say "[line break]While [b]SCORE[r] gives your game-score (also listed in the upper right), [b]THINK[r] may be more useful to track point-scoring commands that you found that will work later, or commands you got half-right.";
+
+report verbsing when options-found > 0:
+	say "You can use [b]OPTIONS[r] to refresh the game option[options-found in words][if options-found > 1]s[end if] you found.";
+	continue the action;
 
 report verbsing when (south-sorted or gs-noted-r is true) and south is not branchdone:
 	say "[if south-sorted]N2/NN/2N kicks you back to Ur-Branch from very south locations[end if][if south-sorted or gs-noted-r is true], and [end if][if gs-noted-r is true]R/RR can rotate among the three near [or-far]south locations[end if].";
