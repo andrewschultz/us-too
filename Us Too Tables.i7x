@@ -31,7 +31,7 @@ w1 (text)	w2 (text)	first-hom (text)	second-hom	hom-txt-rule (rule)	first-exact	
 "terrible"	"aid"	"tear"	--	hom-terrible-aid rule	false	false	false	false	"becoming worthy of the Terra Blade"	false	true	true	false	false	sore dark	pre-terrible-aid rule	post-terrible-aid rule	--	"You can become the owner of a [b]TERRIBLE AID[r] [here-in of Sore Dark] [once-now of pre-terrible-aid rule] it has fallen to where you can reach it."
 "board"	"red"	"bored"	"read"	hom-board-red rule	false	false	false	false	"finding something in the Bore Dread"	false	true	true	false	false	bore dread	pre-board-red rule	post-board-red rule	--	--
 "malt"	"hour"	"mall"	--	hom-malt-hour rule	false	false	false	false	"befriending the guardians in the maul tower"	false	true	true	false	false	bore dread	pre-malt-hour rule	post-malt-hour rule	--	"You can call [b]MALT HOUR[r] [here-in of bore dread] [once-now of pre-malt-hour rule] you have a variety of alcohol to share."
-"join"	"aider|adder"	--	--	--	false	false	false	false	"doing something worthwhile in the joy nadir"	false	true	true	false	false	joy nadir	pre-join-aider rule	post-join-aider rule	--	"You can call a [b]JOIN AIDER[r] [here-in of joy nadir] [once-now of pre-join-aider rule] you have two items of power to join."
+"join"	"aider|adder"	"joined"	"ear|dear|deer"	hom-join-aider rule	false	false	false	false	"doing something worthwhile in the joy nadir"	false	true	true	false	false	joy nadir	pre-join-aider rule	post-join-aider rule	--	"You can call a [b]JOIN AIDER[r] [here-in of joy nadir] [once-now of pre-join-aider rule] you have two items of power to join."
 "dupe"	"it"	--	--	--	false	false	false	false	"making the dew pit useful"	false	true	true	false	false	joy nadir	pre-dupe-it rule	post-dupe-it rule	--	"You can [b]DUPE IT[r] [here-in of joy nadir] [once-now of pre-dupe-it rule] you have something unique and worth duplicating."
 "nah|naw"	"queue"	"gnaw"	"cue"	hom-nah-queue rule	false	false	false	false	"repelling the [team]"	false	true	true	false	false	blah copse	pre-nah-queue rule	post-nah-queue rule	--	--
 "surf"	"ready"	--	--	--	false	false	false	false	"giving Sir Freddie a new direction"	false	true	true	false	false	blah copse	pre-surf-ready rule	post-surf-ready rule	--	"You can make Sir Freddie [b]SURF READY[r] [here-in of Blah Copse] [once-now of pre-surf-ready rule] you have surfing equipment for him."
@@ -470,6 +470,14 @@ this is the post-malt-hour rule:
 	reveal Joy Nadir to east;
 
 chapter joy nadir scoring
+
+this is the hom-join-aider rule:
+	if the player's command includes "joined":
+		say "You're not going to find anything joined. You need to join something actively.";
+	else if the player's command includes "ear":
+		say "A bit too grisly. You're looking for something more general.";
+	else:
+		say "Cute animals joining might make you feel happy, but they might not be happy here. It's two items you need to join, and you just need to ask for help the right way."
 
 a wordtwisting rule (this is the pre-join-aider rule):
 	if player is not in joy nadir and once-now-hunt is false, unavailable;
@@ -1050,6 +1058,8 @@ chapter berries pond scoring
 this is the hom-bear-respond rule:
 	if the player's command includes "spawned":
 		say "But if something were spawned, it would only mean one measly berry. You need someone or something that can help you find a bunch.";
+	else if the player's command includes "pawned":
+		say "No, this is far from such shops.";
 	else:
 		say "Well, yes and no, your help doesn't need to wear clothes..."
 
