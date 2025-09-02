@@ -750,7 +750,7 @@ to say isle-from-beach:
 After choosing notable locale objects when player is in Beach Ill:
 	if Freddie is in beach, set the locale priority of Freddie to 9;
 
-after printing the locale description of Beach Ill when sco-peace-talks is true and Sir Freddie is not moot:
+after printing the locale description of Beach Ill when sco-peace-talks is true and Sir Freddie is in Beach Ill:
 	say "With the lessons learned from the Pea Stalks, you broker a tentative truce between the pun tweaker and Sir Freddie. You even have a dialogue, discussing nearby isles. Surprisingly, the pun tweaker notes one that Sir Freddie knows.[paragraph break]'Nay-Vile-Knave Isle?'[paragraph break]'No, the large waves scared me ... but they'd be a challenge now. I ... I can picture myself saying Nay, Vile Knave, to those who think they can out-surf me! What an idea! How could I help you back?'[paragraph break]The pun tweaker points to [the ship], which still need repairs. Sir Freddie blushes. 'I ... I never noticed! I was so busy with my new hobbies. But I can trade in all my questing stuff to help you repair things.'[paragraph break]The pun tweaker and Sir Freddie work together to repair [the ship]. They both shake your hand then sail off. You worry the pun tweaker might ditch you if they find you involuntarily inflicted Sir Freddie on them in the first place, but then you realize\: no Sir Freddie, no fixed ship. As you do, you see the ship coming back into view.[paragraph break]'Now. What can I offer you?' 'Oh, nothing much,' you say. The pun tweaker says 'oh of course' a bit too quickly.";
 	moot Sir Freddie;
 	continue the action;

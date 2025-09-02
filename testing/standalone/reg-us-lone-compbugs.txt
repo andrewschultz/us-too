@@ -1,0 +1,95 @@
+## reg-us-lone-compbugs.txt
+## STANDALONE FILE
+
+## tests bug found in-comp, when they appear, etc.
+
+** game: /home/andrew/prt/debug-us-too.z8
+** interpreter: /home/andrew/prt/dfrotz -m -w5000 -h25
+
+* di_bianca_freddie
+
+>how so
+>z
+>x me
+
+>try quest
+by a point
+
+>be strong
+by a point
+
+>i
+>x
+
+>out
+
+>herb ranch
+by a point
+
+>summer bay
+by a point
+
+>e
+
+>be chill
+by a point
+
+>nice warm
+by a point
+
+>probe all
+by a point
+
+>w
+>d
+
+>mess pot
+by a point
+
+>u
+
+>n
+
+>blah copse
+by a point
+
+>nah queue
+by a point
+
+>surf ready
+!by a point
+
+>s
+
+>guard entry
+by a point
+
+>in
+
+>peace talks
+by a point
+
+>out
+
+>e
+!Sir Freddie
+
+>w
+>ne
+
+>board red
+by a point
+
+>sw
+>n
+
+>surf ready
+by a point
+
+>s
+
+>e
+Sir Freddie
+
+>l
+!Sir Freddie
