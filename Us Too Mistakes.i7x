@@ -58,6 +58,10 @@ understand "claim it" as a mistake ("You wonder if you should reclaim the mitt, 
 
 book deli
 
+understand "beef ore" and "beef oar" as a mistake ("Yes, that first part of the toon's interpretation seems right. But there's more[toon-1].") when beef-ready.
+
+understand "beef or" as a mistake ("This feels right for the first part of the toon, but seems too indecisive. Maybe the second part can give some action[toon-1].") when beef-ready.
+
 understand "before during" as a mistake ("Yes, this interpretation seems right[toon-1][toon-2].") when beef-ready.
 
 understand "before" and "before [text]" and "[text] before" as a mistake ("[toon-half][toon-1].") when beef-ready.
