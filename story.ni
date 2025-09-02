@@ -178,6 +178,7 @@ report examining Aight Amusing:
 		say "[aight-count]. ";
 		say "[one of]While things won't magically switch order in the list, I've organized them into what you have at the top and what you don't at the bottom[new-aight-bold].[or]Sorted into have/have not[new-aight-bold]:[line break][stopping]";
 	say "[line break]";
+	if number of discovered stewitems > 0, say "HAVE:[line break]";
 	let mentioned-alcohol be false;
 	repeat with SI running through discovered stewitems:
 		if SI is pie crust, next;
@@ -201,11 +202,12 @@ report examining Aight Amusing:
 		say "[line break]";
 	now mentioned-alcohol is false;
 	if gotany is true and missedany is true, say "[line break]";
+	if number of not discovered stewitems > 0, say "NEED:[line break]";
 	repeat with SI running through not discovered stewitems:
 		if SI is pie crust, next;
-		if SI is alcoholic and booze-score is 0:
+		if SI is alcoholic and booze-score < 2:
 			if mentioned-alcohol is false:
-				say  "-- a variety of alcoholic drinks[line break]";
+				say  "-- [if booze-score is 0]a variety of alcoholic drinks[else]another type of alcohol[end if][line break]";
 			now mentioned-alcohol is true;
 			next;
 		say "-- [invtext of SI][line break]";
@@ -246,7 +248,7 @@ report taking inventory when gs-using-known is false:
 	continue the action;
 
 to tip-herb-use:
-	if player has herbs and sco-summer-bay is false, say "[line break]The herbs still seem like they could open passage somewhere, if you're careful.";
+	if player has herbs and sco-summer-bay is false, say "[line break]The herbs ('some herb, eh?') still seem like they could open passage somewhere, if you're careful.";
 
 chapter Aw Lug All Ugh
 
@@ -261,7 +263,7 @@ chapter cheese
 
 the cheese is an eatworthy stewitem. description is "All sorts of cheese, really. Everyone is sure to like one of the types. They're probably sure to hate another, what with some types of cheese being really really polarizing, but that just leaves more for everyone else.". eyes-number of cheese is 1. indefinite article of cheese is "some".
 
-invtext of cheese is "some munchies ([if sco-summon-cheese is false]the kind is not specified. What's up with that?[run paragraph on][else][b]SUMMON[r]ed the [b]CHEESE[r][end if])".
+invtext of cheese is "some munchies ([if sco-summon-cheese is false]the kind is not specified. What's up with that?[run paragraph on][else][b]SUMMON[r]ed the [b]CHEESE[end if][if cheese is listed-yet][r][end if])".
 
 chapter dense pecs / den specs
 
@@ -487,7 +489,7 @@ check going in ur branch when noun is branchdone (this is the branch blocker rul
 		continue the action;
 	say "[donetext of noun][line break]";
 	if gs-know-blah-cough is false:
-		say "[line break]While it's not recommended, [b]BLAH COUGH[r] allows you through, and [b]BLOCK OFF[r] blocks you again. These two commands will be listed in [b]OPTIONS[r].";
+		say "[line break]You've tried to go back somewhere you don't need to, so it's blocked by default. [b]BLAH COUGH[r] allows you to ignore such barriers here, and [b]BLOCK OFF[r] blocks you again. These two commands will be listed in [b]OPTIONS[r].";
 		now gs-know-blah-cough is true;
 	the rule succeeds;
 
@@ -578,7 +580,13 @@ chapter herbs
 
 some herbs are a proper-named eatworthy stewitems. description is "It's some herb, eh? [if sco-summer-bay is true]It helped you find a new place to visit, and it's still edible![else]Apparently it can give enlightenment to new life paths, but, uh, not THAT way.[end if]". printed name is "[if sco-summer-bay is true]those herbs[else]'some herb, eh?'". understand "herbs/herb eh" and "herb" and "some herb/herbs" and "some herb/herbs eh" as some herbs. eyes-number of some herbs is 63. eyes-rule of herbs is pre-summer-bay rule.
 
-invtext of herbs is "[if player does not have herbs]seasoning[else]you've got lots of herbs, now[end if]".
+invtext of herbs is "[if player does not have herbs]seasoning[else]you've got lots of herbs[herb-add] now[end if]".
+
+to say herb-add:
+	if sco-summer-bay is true:
+		say ",";
+	else:
+		say " ('some herb, eh?')";
 
 chapter black ops
 
@@ -1866,7 +1874,7 @@ check optionsing when options-found is 0: say "You haven't found either option t
 carry out optionsing:
 	say "You have found/learned of [if options-found is two]both[else][options-found in words] of two total[end if] options:[paragraph break]";
 	if gs-know-blah-cough is true:
-		say "[b]BLAH COUGH[r] disables the automatic block-off for completed branches. [b]BLOCK OFF[r] enables it. Allowing completely free movement is currently [on-off of opt-blah-cough].";
+		say "[b]BLAH COUGH[r] disables the automatic block-off for completed hub branches. [b]BLOCK OFF[r] enables it. Allowing completely free movement is currently [on-off of opt-blah-cough].";
 	else:
 		say "You haven't found how to toggle revisiting blocked areas.";
 	if gs-know-think-well is true:

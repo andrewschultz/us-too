@@ -156,12 +156,12 @@ war pawn
 #testcase-check-pre-be-chill-rule-if-player-is-not-in-beach-ill
 #testcase-reject-start-table-of-main-oronyms-pre-be-chill-rule
 >be chill
-You're not quite sure how to get started and get focused. There are almost too many possibilities. The help you see in the mine -- well, that may be later. Perhaps examining yourself with X ME or recapping what you know with THINK would help.
+You're not quite sure how to get started and get focused. There are almost too many possibilities. The help left for you in the mine -- well, that may help make sense of things later. Perhaps examining yourself with X ME or recapping what you know with THINK should come first.
 \\
 #testcase-check-pre-be-strong-rule-if-beast-wrong-is-not-in-location-of-player
 #testcase-reject-start-table-of-main-oronyms-pre-be-strong-rule
 >be strong
-You're not quite sure how to get started and get focused. There are almost too many possibilities. The help you see in the mine -- well, that may be later. Perhaps examining yourself with X ME or recapping what you know with THINK would help.
+You're not quite sure how to get started and get focused. There are almost too many possibilities. The help left for you in the mine -- well, that may help make sense of things later. Perhaps examining yourself with X ME or recapping what you know with THINK should come first.
 
 @mis
 #testcase-mistake-us-too-say-text-say
@@ -656,7 +656,7 @@ You haven't found any yet, so I didn't sort them into have and don't have.
 @rej
 #testcase-check-pre-a-stew-rule-if-number-of-not-discovered-stewitems->-0-and-debug-win-is-false
 >a stew
-You don't have all the stew ingredients you need! Currently, you have zero out of thirteen.
+You don't have all the stew ingredients you need! Currently, you have zero out of fourteen.
 
 @hint
 #testcase-values-eyes-number-of-war-pawn-is--42
@@ -1898,7 +1898,7 @@ Out is ambiguous here. There are two worthwhile ways to leave: north and south.
 @rej
 #testcase-check-pre-blast-ring-rule-if-player-is-not-in-sore-dark-and-once-now-hunt-is-false-or-sword-ark-is-not-in-sore-dark
 >blast ring
-The blah string writhes and turns and points above, then nothing. You see nothing blastable or that needs to be blasted above. Neither does it. It goes limp. It wouldn't do to carry around something as volatile as a blast ring. Accidents might happen. But something may turn up.
+The blah string writhes and turns and points above, then nothing. It then goes limp. Perhaps there's nothing worth blasting, and since accidents might happen with such an item of power, you'll wait to change the string until it's more clearly worth transforming.
 \\
 #testcase-think-once-table-of-main-oronyms-pre-blast-ring-rule
 >think
@@ -2305,7 +2305,7 @@ Oh wait! There is something that will add a bit of flavor! Actually, it's a weir
 #testcase-branch-block-in
 >in
 You got peace talks and an extra vegetable from behind the garden tree.
-You can disable this with BLAH COUGH, or you can block it again with BLOCK OFF. This will be in VERBS.
+You've tried to go back somewhere you don't need to, so it's blocked by default. BLAH COUGH allows you to ignore such barriers here, and BLOCK OFF blocks you again. These two commands will be listed in OPTIONS.
 \\
 #+testcase-room-out-ur-branch
 >out
@@ -3007,7 +3007,7 @@ No, that would put something way too high up out of reach, even if the light wer
 @rej
 #+testcase-check-pre-blast-ring-rule-if-player-is-not-in-sore-dark-and-once-now-hunt-is-false-or-sword-ark-is-not-in-sore-dark
 >blast ring
-The blah string writhes and turns and points above, then nothing. You see nothing blastable or that needs to be blasted above. Neither does it. It goes limp. It wouldn't do to carry around something as volatile as a blast ring. Accidents might happen. But something may turn up.
+The blah string writhes and turns and points above, then nothing. It then goes limp. Perhaps there's nothing worth blasting, and since accidents might happen with such an item of power, you'll wait to change the string until it's more clearly worth transforming.
 \\
 #+testcase-check-pre-terrible-aid-rule-if-player-is-not-in-sore-dark-and-once-now-hunt-is-false-and-player-does-not-have-terra-blade
 >terra blade
@@ -3096,7 +3096,7 @@ There doesn't need to be another sword ark!
 \\
 #testcase-check-pre-terrible-aid-rule-if-sco-blast-ring-is-false
 >terrible aid
-Hmm, yes, it doesn't matter if it's terrible while it's unattainable.
+That feels right, but it doesn't matter if the blade is terrible while it's unattainable.
 \\
 #testcase-think-once-table-of-main-oronyms-pre-terrible-aid-rule
 #testcase-think-nownear-table-of-main-oronyms-pre-blast-ring-rule
@@ -3183,7 +3183,7 @@ by a point
 #testcase-check-pre-terrible-aid-rule-fallthrough
 #testcase-run-post-terrible-aid-rule-default
 You make the point that the Terra Blade would be a terrible aid for your humble goals, whatever they may be. That proves you are worthy!
-You hear rumbling. You can't imagine there are any bigger secret here, so it seems like it's time to leave.
+You hear rumbling. You look out to a large plain. You can't imagine it holds any bigger secrets, so: time to leave.
 
 @hint
 #+testcase-values-eyes-number-of-terra-blade-is-83
@@ -3208,7 +3208,7 @@ Out is ambiguous here. There are three worthwhile ways to leave: northeast, sout
 \\
 #testcase-branch-block-nw
 >nw
-You can't imagine anything is in the dark other than the Terra Blade.
+You can't imagine anything is off northwest other than the Terra Blade.
 \\
 >undo
 
@@ -4317,6 +4317,35 @@ You're pretty sure you have one word right for knowing what to look for in the c
 >eye coal drum
 The eyes light up green and show four dots, then three dots.
 
+@look
+##balance undos
+>gonear sob acres
+>saw bakers
+by a point
+\\
+>in
+>dell eastern
+by a point
+\\
+>e
+>w
+\\
+>dope ale
+by a point
+\\
+>x
+-- some alcohol, but not enough variety: the dope ale (new)
+-- another type of alcohol
+\\
+>undo
+>undo
+>undo
+>undo
+>undo
+>undo
+>undo
+>undo
+
 >>cold rum
 by a point
 
@@ -4324,6 +4353,11 @@ by a point
 #testcase-check-pre-cold-rum-rule-fallthrough
 #testcase-run-post-cold-rum-rule-default
 It's a pretty big coal drum. You rummage around, and sure enough ... you find some cold rum. Way too much to drink on your own.
+
+@inv
+>x
+-- some alcohol, but not enough variety: the cold rum (new)
+-- another type of alcohol
 
 @rej
 #testcase-check-pre-cold-rum-rule-if-sco-cold-rum-is-true
@@ -5557,7 +5591,7 @@ by a point
 #testcase-check-pre-grow-nodes-rule-fallthrough
 #testcase-run-post-grow-nodes-rule-default
 The groan odes retract, as nodes grow out, creating a more menacing noise. The nodes are numbered, too, from one on quite a while. There are a lot to poke at!
-So, yeah, there's something to LISTEN to and a bunch of numbered nodes. One must be a weak link.
+So, yeah, there's something to LISTEN to and a bunch of numbered nodes. Maybe one is vulnerable.
 \\
 #+testcase-room-names-groan-odes
 `Numb Bursting Number String

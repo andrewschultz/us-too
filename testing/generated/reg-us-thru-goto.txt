@@ -249,7 +249,7 @@ by a bonus point
 #testcase-branch-block-in
 >in
 You got peace talks and an extra vegetable from behind the garden tree.
-You can disable this with BLAH COUGH, or you can block it again with BLOCK OFF. This will be in VERBS.
+You've tried to go back somewhere you don't need to, so it's blocked by default. BLAH COUGH allows you to ignore such barriers here, and BLOCK OFF blocks you again. These two commands will be listed in OPTIONS.
 
 #+testcase-room-out-ur-branch
 >out
@@ -411,7 +411,7 @@ Out is ambiguous here. There are three worthwhile ways to leave: northeast, sout
 
 #testcase-branch-block-nw
 >nw
-You can't imagine anything is in the dark other than the Terra Blade.
+You can't imagine anything is off northwest other than the Terra Blade.
 
 >undo
 

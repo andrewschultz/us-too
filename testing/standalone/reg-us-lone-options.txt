@@ -24,10 +24,10 @@ You have found/learned of one of two total options:
 THINK WELL shows a full point-scoring command if you've guessed each part. THIN QUELL (default) turns it off. This option is currently on.
 
 >be zzz
-You're not quite sure how to get started and get focused. There are almost too many possibilities. The help you see in the mine -- well, that may be later. Perhaps examining yourself with X ME or recapping what you know with THINK would help.
+You're not quite sure how to get started and get focused. There are almost too many possibilities. The help left for you in the mine -- well, that may help make sense of things later. Perhaps examining yourself with X ME or recapping what you know with THINK should come first.
 
 >zzz strong
-You're not quite sure how to get started and get focused. There are almost too many possibilities. The help you see in the mine -- well, that may be later. Perhaps examining yourself with X ME or recapping what you know with THINK would help.
+You're not quite sure how to get started and get focused. There are almost too many possibilities. The help left for you in the mine -- well, that may help make sense of things later. Perhaps examining yourself with X ME or recapping what you know with THINK should come first.
 
 >think
 !THINK WELL
@@ -46,10 +46,10 @@ You have found/learned of one of two total options:
 THINK WELL shows a full point-scoring command if you've guessed each part. THIN QUELL (default) turns it off. This option is currently off.
 
 >be zzz
-You're not quite sure how to get started and get focused. There are almost too many possibilities. The help you see in the mine -- well, that may be later. Perhaps examining yourself with X ME or recapping what you know with THINK would help.
+You're not quite sure how to get started and get focused. There are almost too many possibilities. The help left for you in the mine -- well, that may help make sense of things later. Perhaps examining yourself with X ME or recapping what you know with THINK should come first.
 
 >zzz strong
-You're not quite sure how to get started and get focused. There are almost too many possibilities. The help you see in the mine -- well, that may be later. Perhaps examining yourself with X ME or recapping what you know with THINK would help.
+You're not quite sure how to get started and get focused. There are almost too many possibilities. The help left for you in the mine -- well, that may help make sense of things later. Perhaps examining yourself with X ME or recapping what you know with THINK should come first.
 
 >think
 !THINK WELL
@@ -67,7 +67,7 @@ You can now revisit completed branches.
 
 >options
 You have found/learned of one of two total options:
-BLAH COUGH disables the automatic block-off for completed branches. BLOCK OFF enables it. Allowing completely free movement is currently on.
+BLAH COUGH disables the automatic block-off for completed hub branches. BLOCK OFF enables it. Allowing completely free movement is currently on.
 
 >undo
 >undo
@@ -77,7 +77,7 @@ You have already blocked off revisiting completed branches.
 
 >options
 You have found/learned of one of two total options:
-BLAH COUGH disables the automatic block-off for completed branches. BLOCK OFF enables it. Allowing completely free movement is currently off.
+BLAH COUGH disables the automatic block-off for completed hub branches. BLOCK OFF enables it. Allowing completely free movement is currently off.
 
 >undo
 >undo
@@ -194,14 +194,14 @@ by a point
 by a point
 
 >n
-You can disable this with BLAH COUGH, or you can block it again with BLOCK OFF. This will be in VERBS.
+You've tried to go back somewhere you don't need to, so it's blocked by default. BLAH COUGH allows you to ignore such barriers here, and BLOCK OFF blocks you again. These two commands will be listed in OPTIONS.
 
 >n
 !BLAH COUGH
 
 >options
 You have found/learned of both options:
-BLAH COUGH disables the automatic block-off for completed branches. BLOCK OFF enables it. Allowing completely free movement is currently off.
+BLAH COUGH disables the automatic block-off for completed hub branches. BLOCK OFF enables it. Allowing completely free movement is currently off.
 THINK WELL shows a full point-scoring command if you've guessed each part. THIN QUELL (default) turns it off. This option is currently off.
 
 >blah cough
@@ -212,7 +212,7 @@ You can already revisit completed branches.
 
 >options
 You have found/learned of both options:
-BLAH COUGH disables the automatic block-off for completed branches. BLOCK OFF enables it. Allowing completely free movement is currently on.
+BLAH COUGH disables the automatic block-off for completed hub branches. BLOCK OFF enables it. Allowing completely free movement is currently on.
 THINK WELL shows a full point-scoring command if you've guessed each part. THIN QUELL (default) turns it off. This option is currently off.
 
 >block off
@@ -223,5 +223,5 @@ You have already blocked off revisiting completed branches.
 
 >options
 You have found/learned of both options:
-BLAH COUGH disables the automatic block-off for completed branches. BLOCK OFF enables it. Allowing completely free movement is currently off.
+BLAH COUGH disables the automatic block-off for completed hub branches. BLOCK OFF enables it. Allowing completely free movement is currently off.
 THINK WELL shows a full point-scoring command if you've guessed each part. THIN QUELL (default) turns it off. This option is currently off.

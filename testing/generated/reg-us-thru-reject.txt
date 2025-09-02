@@ -19,12 +19,12 @@ by a point
 #testcase-check-pre-be-chill-rule-if-player-is-not-in-beach-ill
 #testcase-reject-start-table-of-main-oronyms-pre-be-chill-rule
 >be chill
-You're not quite sure how to get started and get focused. There are almost too many possibilities. The help you see in the mine -- well, that may be later. Perhaps examining yourself with X ME or recapping what you know with THINK would help.
+You're not quite sure how to get started and get focused. There are almost too many possibilities. The help left for you in the mine -- well, that may help make sense of things later. Perhaps examining yourself with X ME or recapping what you know with THINK should come first.
 
 #testcase-check-pre-be-strong-rule-if-beast-wrong-is-not-in-location-of-player
 #testcase-reject-start-table-of-main-oronyms-pre-be-strong-rule
 >be strong
-You're not quite sure how to get started and get focused. There are almost too many possibilities. The help you see in the mine -- well, that may be later. Perhaps examining yourself with X ME or recapping what you know with THINK would help.
+You're not quite sure how to get started and get focused. There are almost too many possibilities. The help left for you in the mine -- well, that may help make sense of things later. Perhaps examining yourself with X ME or recapping what you know with THINK should come first.
 
 >try quest
 by a point
@@ -357,7 +357,7 @@ by a point
 
 #testcase-check-pre-a-stew-rule-if-number-of-not-discovered-stewitems->-0-and-debug-win-is-false
 >a stew
-You don't have all the stew ingredients you need! Currently, you have zero out of thirteen.
+You don't have all the stew ingredients you need! Currently, you have zero out of fourteen.
 
 >out
 
@@ -548,7 +548,7 @@ You already figured nothing awful was lurking to the north.
 
 #testcase-check-pre-blast-ring-rule-if-player-is-not-in-sore-dark-and-once-now-hunt-is-false-or-sword-ark-is-not-in-sore-dark
 >blast ring
-The blah string writhes and turns and points above, then nothing. You see nothing blastable or that needs to be blasted above. Neither does it. It goes limp. It wouldn't do to carry around something as volatile as a blast ring. Accidents might happen. But something may turn up.
+The blah string writhes and turns and points above, then nothing. It then goes limp. Perhaps there's nothing worth blasting, and since accidents might happen with such an item of power, you'll wait to change the string until it's more clearly worth transforming.
 
 #testcase-think-once-table-of-main-oronyms-pre-blast-ring-rule
 >think
@@ -733,7 +733,7 @@ There's nothing else to be found from another hike up. You're not getting the hi
 
 #+testcase-check-pre-blast-ring-rule-if-player-is-not-in-sore-dark-and-once-now-hunt-is-false-or-sword-ark-is-not-in-sore-dark
 >blast ring
-The blah string writhes and turns and points above, then nothing. You see nothing blastable or that needs to be blasted above. Neither does it. It goes limp. It wouldn't do to carry around something as volatile as a blast ring. Accidents might happen. But something may turn up.
+The blah string writhes and turns and points above, then nothing. It then goes limp. Perhaps there's nothing worth blasting, and since accidents might happen with such an item of power, you'll wait to change the string until it's more clearly worth transforming.
 
 #+testcase-check-pre-terrible-aid-rule-if-player-is-not-in-sore-dark-and-once-now-hunt-is-false-and-player-does-not-have-terra-blade
 >terra blade
@@ -748,7 +748,7 @@ There doesn't need to be another sword ark!
 
 #testcase-check-pre-terrible-aid-rule-if-sco-blast-ring-is-false
 >terrible aid
-Hmm, yes, it doesn't matter if it's terrible while it's unattainable.
+That feels right, but it doesn't matter if the blade is terrible while it's unattainable.
 
 #testcase-think-once-table-of-main-oronyms-pre-terrible-aid-rule
 #testcase-think-nownear-table-of-main-oronyms-pre-blast-ring-rule

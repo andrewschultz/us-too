@@ -244,8 +244,39 @@ by a point
 >pro sweeping
 by a point
 
+>gonear sob acres
+>saw bakers
+by a point
+
+>in
+>dell eastern
+by a point
+
+>e
+>w
+
+>dope ale
+by a point
+
+>x
+-- some alcohol, but not enough variety: the dope ale (new)
+-- another type of alcohol
+
+>undo
+>undo
+>undo
+>undo
+>undo
+>undo
+>undo
+>undo
+
 >cold rum
 by a point
+
+>x
+-- some alcohol, but not enough variety: the cold rum (new)
+-- another type of alcohol
 
 >tea leaves
 by a point

@@ -395,7 +395,7 @@ this is the post-sword-ark rule:
 a wordtwisting rule (this is the pre-blast-ring rule):
 	if player does not have blah string, unavailable;
 	if (player is not in sore dark and once-now-hunt is false) or sword ark is not in sore dark:
-		vcp "The blah string writhes and turns and points above, then nothing. It then goes limp. There must be nothing blastable. It wouldn't do to carry around something as volatile as a blast ring. Accidents might happen. But something may turn up.";
+		vcp "The blah string writhes and turns and points above, then nothing. It then goes limp. Perhaps there's nothing worth blasting, and since accidents might happen with such an item of power, you'll wait to change the string until it's more clearly worth transforming.";
 		not-yet;
 	ready;
 
@@ -414,7 +414,7 @@ a wordtwisting rule (this is the pre-terrible-aid rule):
 		vcal "You probably shouldn't actively diss the Terra Blade, [if blade is moot]after you traded it usefully[else]now you're carrying it[end if].";
 		already-done;
 	if sco-blast-ring is false:
-		vcp "That feels right, but it doesn't matter if it's terrible while it's unattainable.";
+		vcp "That feels right, but it doesn't matter if the blade is terrible while it's unattainable.";
 		not-yet;
 	ready;
 

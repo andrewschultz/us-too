@@ -1,4 +1,12 @@
-9/1/2025:
+1.0.2 (9/2/2025):
+--fixed (non-game-breaking) bug where you could solve a puzzle too early & skip another one. Thanks to fellow competitor ADiBianca for the heads-up!
+--berries are now a stew item
+--fixed another line break in X BIG LIST
+--more/better flavor/cluing text
+--added puzzle flow chart, along with redacted version, for fun
+--trivial map fix (1st passage is not immediately accessible)
+
+1.0.1 (9/1/2025):
 --forgot to add Melvin Rangasamy to credits (he found a lot of stuff, and I said oh I'll add him after. Yikes.)
 --forgot to place item cuing a certain puzzle in certain room once it was time
 --fixed X (main list) bug with extraneous line space

@@ -455,7 +455,7 @@ by a point
 #testcase-check-pre-terrible-aid-rule-fallthrough
 #testcase-run-post-terrible-aid-rule-default
 You make the point that the Terra Blade would be a terrible aid for your humble goals, whatever they may be. That proves you are worthy!
-You hear rumbling. You can't imagine there are any bigger secret here, so it seems like it's time to leave.
+You hear rumbling. You look out to a large plain. You can't imagine it holds any bigger secrets, so: time to leave.
 
 `Ur-Branch
 
@@ -821,7 +821,7 @@ by a point
 #testcase-check-pre-grow-nodes-rule-fallthrough
 #testcase-run-post-grow-nodes-rule-default
 The groan odes retract, as nodes grow out, creating a more menacing noise. The nodes are numbered, too, from one on quite a while. There are a lot to poke at!
-So, yeah, there's something to LISTEN to and a bunch of numbered nodes. One must be a weak link.
+So, yeah, there's something to LISTEN to and a bunch of numbered nodes. Maybe one is vulnerable.
 
 #+testcase-room-names-groan-odes
 `Numb Bursting Number String
