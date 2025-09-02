@@ -1347,6 +1347,8 @@ Berries Pond is a room in universal. eyes-number of Berries Pond is 47. eyes-rul
 
 check going to berries pond when sco-bear-respond is true: say "That would be greedy." instead;
 
+there is a stewitem called a variety of berries. description of variety is "A bunch of berries you know and a bunch you don't. [if sco-barn-open is false]You could give some away and still have enough for a big gathering[else]There's still lots left, even after transacting with the barn[end if].". eyes-number of variety is -1. invtext of variety is "red and blue and purple food".
+
 book south branch
 
 after printing the locale description when gs-nn-noted is false and (player is in a rotroom) and (player is not in an ordroom):

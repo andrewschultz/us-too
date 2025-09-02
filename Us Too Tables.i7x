@@ -1063,6 +1063,7 @@ this is the post-bear-respond rule:
 	say "[line break]You wave the oar around the tree, hoping to catch a bear's attention. The bear nods at you as if to say 'Huh, Neatest Honey Test!' You hand it the prime oar, and it swats down the honeycomb, which it takes. But it provides you with a variety of berries in payment for saving it the effort with the oar. Then it lifts up a paw. You are on its territory. It would not do to stay. You have gotten what you want, and it is time to go. So you do.";
 	declue-here;
 	raft-tours;
+	now player has variety of berries;
 	drop-player-at farm isles;
 
 chapter groan odes scoring
