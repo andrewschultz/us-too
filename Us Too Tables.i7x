@@ -334,7 +334,7 @@ a wordtwisting rule (this is the pre-pie-crust rule):
 
 this is the post-pie-crust rule:
 	now sco-pie-crust is true;
-	say "Yup! Pie crust! It fits in your tin nicely.";
+	say "Yup! Pie crust! It fits in your tin nicely. It's just the right amount of flaky, too.";
 	now player has pie crust;
 	now gray tin is not listed-yet;
 	moot pike rust;
@@ -395,7 +395,7 @@ this is the post-sword-ark rule:
 a wordtwisting rule (this is the pre-blast-ring rule):
 	if player does not have blah string, unavailable;
 	if (player is not in sore dark and once-now-hunt is false) or sword ark is not in sore dark:
-		vcp "The blah string writhes and turns and points above, then nothing. You see nothing blastable or that needs to be blasted above. Neither does it. It goes limp. It wouldn't do to carry around something as volatile as a blast ring. Accidents might happen. But something may turn up.";
+		vcp "The blah string writhes and turns and points above, then nothing. It then goes limp. There must be nothing blastable. It wouldn't do to carry around something as volatile as a blast ring. Accidents might happen. But something may turn up.";
 		not-yet;
 	ready;
 
@@ -411,16 +411,16 @@ this is the hom-terrible-aid rule:
 a wordtwisting rule (this is the pre-terrible-aid rule):
 	if player is not in sore dark and once-now-hunt is false and player does not have terra blade, unavailable;
 	if sco-terrible-aid is true:
-		vcal "You probably shouldn't actively diss the Terra Blade, now you're carrying it.";
+		vcal "You probably shouldn't actively diss the Terra Blade, [if blade is moot]after you traded it usefully[else]now you're carrying it[end if].";
 		already-done;
 	if sco-blast-ring is false:
-		vcp "Hmm, yes, it doesn't matter if it's terrible while it's unattainable.";
+		vcp "That feels right, but it doesn't matter if it's terrible while it's unattainable.";
 		not-yet;
 	ready;
 
 this is the post-terrible-aid rule:
 	now sco-terrible-aid is true;
-	say "You make the point that the Terra Blade would be a terrible aid for your humble goals, whatever they may be. That proves you are worthy![paragraph break]You hear rumbling. You can't imagine there are any bigger secret here, so it seems like it's time to leave.";
+	say "You make the point that the Terra Blade would be a terrible aid for your humble goals, whatever they may be. That proves you are worthy![paragraph break]You hear rumbling. You look out to a large plain. You can't imagine it holds any bigger secrets, so: time to leave.";
 	declue terra blade;
 	now player has terra blade;
 	block-and-back;
@@ -653,7 +653,7 @@ this is the post-pea-pod rule:
 to inside-block-back:
 	say "[line break]";
 	if garden-score is 2:
-		say "You feel a moment of zen. You've done what you could here, and you sense you don't fully belong. You retreat to the Ur-Branch.";
+		say "The garden grows unusually quiet for a moment. You'd like to stay here, but you also know you're on a mission, and you feel out of place. Nothing here is pushing you out, but you sense there's nothing to do. Perhaps it will be a nice hideaway to show friends once you're settled in. But you won't be, until you complete [ara]'s list. You retreat to the Ur-Branch.";
 		now garden tree is scenery;
 		block-and-back;
 	else if sco-pea-pod is true:
@@ -922,7 +922,10 @@ this is the hom-dope-ale rule:
 a wordtwisting rule (this is the pre-dope-ale rule):
 	if player does not have dough pail, unavailable;
 	if player is not in deli stern and once-now-hunt is false:
-		vcp "[if player is in bore dread]Your promises of future alcohol fall on deaf ears. The maul tower's guardians are a cynical, untrusting bunch[else]Hmm, you could exchange the dough pail for dope ale, but ... nobody here wants dough, and nobody here might have dope ale.";
+		if gs-deli-dell-left is true:
+			vcp "Just go back inside the deli. They're ready to swap.";
+		else:
+			vcp "[if player is in bore dread]Your promises of future alcohol fall on deaf ears. The maul tower's guardians are a cynical, untrusting bunch[else]Hmm, you could exchange the dough pail for dope ale, but ... nobody here wants dough, and nobody here might have dope ale[end if].";
 		not-yet;
 	if sco-dell-eastern is false:
 		vcp "The [owners] whine that the location here is terrible. It's so dreary outside. Nobody would come here for alcohol with things as they are.";
@@ -1077,7 +1080,7 @@ this is the post-grow-nodes rule:
 	move number string to odes;
 	declue-here;
 	print-the-loc;
-	say "[line break]So, yeah, there's something to [b]LISTEN[r] to and a bunch of numbered nodes. One must be a weak link.";
+	say "[line break]So, yeah, there's something to [b]LISTEN[r] to and a bunch of numbered nodes. Maybe one is vulnerable.";
 
 this is the hom-no-date rule:
 	say "Ah yes. That's the key. To know which number is the weakness."

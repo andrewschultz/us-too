@@ -448,7 +448,7 @@ chapter mess kit
 
 check taking mess kit: say "You don't need to haul the kit around. It's for later." instead;
 
-the mess kit is a stewitem. "The mess kit you found lies here. [if at-last-point]Surely now is the time to give it some use[else]You probably won't need to mess with it for a while[end if].". description is "It's a standard mess kit, not very flashy, but clean. What could go in it?". eyes-number of mess kit is -34. eyes-rule of mess kit is pre-meh-skit rule. invtext of mess kit is "cookware[if sco-mess-pot is true] (the mess kit [here-in of mine ooh])[end if]".
+the mess kit is a stewitem. "The mess kit you found lies here. [if at-last-point]Surely now is the time to give it some use[else]You probably won't need to mess with it for a while[end if].". description is "It's a standard mess kit, not very flashy, but clean. [if at-last-point]You're ready to use it. You just need to decide what to make of it[else]It'll be handy once you have everything on [ara]'s list[end if].". eyes-number of mess kit is -34. eyes-rule of mess kit is pre-meh-skit rule. invtext of mess kit is "cookware[if sco-mess-pot is true] (the mess kit [here-in of mine ooh])[end if]".
 
 understand "mess pot" and "pot" as mess kit.
 
@@ -487,12 +487,12 @@ check going in ur branch when noun is branchdone (this is the branch blocker rul
 		continue the action;
 	say "[donetext of noun][line break]";
 	if gs-know-blah-cough is false:
-		say "[line break]You can disable this with [b]BLAH COUGH[r], or you can block it again with [b]BLOCK OFF[r]. This will be in [b]VERBS[r].";
+		say "[line break]While it's not recommended, [b]BLAH COUGH[r] allows you through, and [b]BLOCK OFF[r] blocks you again. These two commands will be listed in [b]OPTIONS[r].";
 		now gs-know-blah-cough is true;
 	the rule succeeds;
 
 after printing the locale description of ur branch when need-meh:
-	say "[line break]You remember the pro ball showed you somehing below in your mine. Could be worth a check.";
+	say "[line break]You remember the pro ball showed you something below in your mine. Could be worth a check.";
 	continue the action;
 
 after printing the locale description of ur branch when sco-hike-up is true and southwest is not branchcant and (not ordrooms-seen or bowl ditch is not visited) (this is the first proball southwestish rule):
@@ -751,7 +751,7 @@ After choosing notable locale objects when player is in Beach Ill:
 	if Freddie is in beach, set the locale priority of Freddie to 9;
 
 after printing the locale description of Beach Ill when sco-peace-talks is true and Sir Freddie is in Beach Ill:
-	say "With the lessons learned from the Pea Stalks, you broker a tentative truce between the pun tweaker and Sir Freddie. You even have a dialogue, discussing nearby isles. Surprisingly, the pun tweaker notes one that Sir Freddie knows.[paragraph break]'Nay-Vile-Knave Isle?'[paragraph break]'No, the large waves scared me ... but they'd be a challenge now. I ... I can picture myself saying Nay, Vile Knave, to those who think they can out-surf me! What an idea! How could I help you back?'[paragraph break]The pun tweaker points to [the ship], which still need repairs. Sir Freddie blushes. 'I ... I never noticed! I was so busy with my new hobbies. But I can trade in all my questing stuff to help you repair things.'[paragraph break]The pun tweaker and Sir Freddie work together to repair [the ship]. They both shake your hand then sail off. You worry the pun tweaker might ditch you if they find you involuntarily inflicted Sir Freddie on them in the first place, but then you realize\: no Sir Freddie, no fixed ship. As you do, you see the ship coming back into view.[paragraph break]'Now. What can I offer you?' 'Oh, nothing much,' you say. The pun tweaker says 'oh of course' a bit too quickly.";
+	say "With the lessons learned from the Pea Stalks, you broker a tentative truce between the pun tweaker and Sir Freddie. You even have a dialogue, discussing nearby isles. Surprisingly, the pun tweaker notes one that Sir Freddie knows.[paragraph break]'Nay-Vile-Knave Isle?'[paragraph break]'No, the large waves scared me ... but they'd be a challenge now. I ... I can picture myself saying Nay, Vile Knave, to those who think they can out-surf me! What an idea! How could I help you back?'[paragraph break]The pun tweaker points to [the ship], which still need repairs. Sir Freddie blushes. 'I ... I never noticed! I was so busy with my new hobbies. But I can trade in all my questing stuff to help you repair things.'[paragraph break]The pun tweaker and Sir Freddie work together to repair [the ship]. They both shake your hand then sail off. You worry the pun tweaker might ditch you if they find you involuntarily inflicted Sir Freddie on them in the first place, but then you realize: no Sir Freddie, no fixed ship. As you do, you see the ship coming back into view.[paragraph break]'Now. What can I offer you?' 'Oh, nothing much,' you say. The pun tweaker says 'oh of course' a bit too quickly.";
 	moot Sir Freddie;
 	continue the action;
 
@@ -781,9 +781,9 @@ there is a thing called the bless and bleah sand. it is scenery. eyes-number of 
 
 chapter pro ball
 
-the pro ball is a thing. description is "[if sco-probe-all is false]If you look at it right, you may be able to see a bit more, but you haven't, yet[else]You stare a bit at the pro ball.[end if].". eyes-number of pro ball is 53. eyes-rule of pro ball is pre-probe-all rule.
+the pro ball is a thing. description is "[if sco-probe-all is false]If you look at it right, you may be able to see a bit more, but you haven't, yet[else]You stare a bit at the pro ball[end if].". eyes-number of pro ball is 53. eyes-rule of pro ball is pre-probe-all rule.
 
-check examining pro ball when pro ball is unexamined: say "[if sco-probe-all is false]It's marked PRO, but really, [else]It's[end if]it's more like an orb than a ball. It's certainly polished enough to be an orb. But if it were an orb, well, you just don't see how you could change it. I trust you understand by now.";
+check examining pro ball when pro ball is unexamined: say "[if sco-probe-all is false]It's marked PRO, but really, it's[else]It's[end if] more like an orb than a ball. It's certainly polished enough to be an orb. But if it were an orb, well, you just don't see how you could change it. I trust you understand by now.";
 
 check taking pro ball when sco-probe-all is false: say "It won't budge. At least, not right now." instead;
 
@@ -798,7 +798,7 @@ report examining pro ball:
 			say "It is dark again, just as it was before you found the high cup. Perhaps you've used it all you can in its current form.";
 		continue the action;
 	say "The orb maps out roughly where you've been. [one of]You recognize the southeast and north and east pretty easily. [or][stopping]You see a long passage dragging through the west, and you also see three branches to the south: short, medium and long. Between them is the southwest, which has the shortest path, no branch.";
-	say "[line break]Looking closer at the west, you see it has";
+	say "[line break]Looking closer at the south, you see it has ";
 	if west is branchdone:
 		say "dimmed out.";
 	else:
@@ -834,7 +834,7 @@ chapter punt weaker
 the punt weaker is a thing. printed name is "punt (weaker)". "Your punt, weaker, floats here[punt-status].". description is "It seems pretty sturdy, actually. Perhaps its speed is weaker than something gas-powered or whatever[if sco-pry-more is true and sco-stark-raft is false]. The prime oar is attached to it[end if].". eyes-number of punt weaker is -1.
 
 report examining punt weaker when punt weaker is unexamined:
-	say "The pun tweaker has carved 'reel east, RELEASED.' Ah, so they DID have a pun for you, sort of.'";
+	say "The pun tweaker has carved 'reel east, RELEASED.' Ah, so they DID have a pun for you, sort of. Not a helpful one, of course.";
 	continue the action;
 
 check taking punt: say "You can just go east or west as needed." instead;
@@ -874,7 +874,7 @@ the sword ark is scenery. "The Terra Blade is suspended in the sword ark above. 
 
 chapter Terra Blade
 
-The Terra Blade is scenery. indefinite article of terra blade is "the". "It looks very impressive, almost too impressive for you to use as swords are generally uses. [if sco-blast-ring is true]Also, it's suspended above in the sword ark, too high to reach, but--well, maybe you can damage the ark so the blade falls[else if sco-terrible-aid is false]You're pretty sure you need to take possession of it, but you're worried an annoying voice will boom out something about your destiny when it does[else]Now that you have it, you really hope you don't have to defeat someone super-powerful with it[end if].". eyes-number of Terra Blade is 83. eyes-rule of Terra Blade is pre-terrible-aid rule.
+The Terra Blade is scenery. indefinite article of terra blade is "the". "It looks very impressive, almost too impressive for you to use as swords are generally uses. [if sco-blast-ring is false]Also, it's suspended above in the sword ark, too high to reach, but--well, maybe you can damage the ark so the blade falls[else if sco-terrible-aid is false]You're pretty sure you need to take possession of it, but you're worried an annoying voice will boom out something about your destiny when it does[else]Now that you have it, you really hope you don't have to defeat someone super-powerful with it[end if].". eyes-number of Terra Blade is 83. eyes-rule of Terra Blade is pre-terrible-aid rule.
 
 check taking terra blade when blade is in sore dark:
 	if sco-blast-ring is false, say "It's embedded too high up in the ark!" instead;
@@ -903,7 +903,7 @@ understand "f/fred/freddy" and "sir f/fred/freddy" as Sir Freddie when Sir Fredd
 
 chapter blah string
 
-the blah string is a thing. description is "Looking at it, it doesn't seem like it could become anything powerful. Could it?". indefinite article of blah string is "some". eyes-number of blah string is 54. eyes-rule of blah string is pre-blast-ring rule.
+the blah string is a thing. description is "You look at it, and it doesn't seem like it could become anything powerful. Then it rearranges itself briefly, into the semblance of an arrow pointing up, before collapsing.". indefinite article of blah string is "some". eyes-number of blah string is 54. eyes-rule of blah string is pre-blast-ring rule.
 
 chapter orc lurk foreboding
 
@@ -1065,7 +1065,7 @@ the dope ale is an alcoholic stewitem. indefinite article of dope ale is "some".
 
 part Inner Nest
 
-Inner Nest is a room in universal. eyes-number of Inner Nest is -1. description is "Well, you made it. It's not very big, but then again, it is both inner and a nest. You can go back [b]OUT[r] from here.".
+Inner Nest is a room in universal. eyes-number of Inner Nest is -1. description is "[if sco-pry-more is true]All that prying didn't just find you that oar. It left you sure there was nothing else[else]Well, you made it. It's not very big, but then again, it is both inner and a nest[end if]. You can go back [b]OUT[r] from here.".
 
 the prime oar is a thing in Inner Nest. "A prime oar stands here, floating in space[one of]. You reach out for it lazily, and it floats away[or]Whenever you get too close, it slides away[stopping].". description is "Man! It looks really aerodynamic, and stuff. And it's lightweight, too.". eyes-number of prime oar is 34. eyes-rule of prime oar is pre-pry-more rule.
 
@@ -1315,7 +1315,7 @@ check taking raft: say "You can just go south or north as needed." instead;
 
 chapter stark raft
 
-the stark raft is a thing. "The stark raft [if player is in farm isles]here can take you back north to [tours][else if farm isles is unvisited]here can take you across the water to the south to somewhere new[else if sco-barn-open is true]sits here. It served you well, but you don't need to go back across the water. You've toured where you need to[else]here can lead you back south to the Farm Isles[end if].". description is "It's plain, but sturdy enough, you think, and your prime oar will help steer it[if far miles farm isles is visited] back south[end if].". eyes-number of stark raft is -1.
+the stark raft is a thing. "The stark raft, fitted with the prime oar, [if player is in farm isles]here can take you back north to [tours][else if farm isles is unvisited]here can take you across the water to the south to somewhere new[else if sco-barn-open is true]sits here. It served you well, but you don't need to go back across the water. You've toured where you need to[else]here can lead you back south to the Farm Isles[end if].". description is "It's plain, but sturdy enough, you think, and your prime oar will help steer it[if far miles farm isles is visited] back south[end if].". eyes-number of stark raft is -1.
 
 part Far Miles Farm Isles
 
@@ -1577,7 +1577,7 @@ the UT specific inventory rule is listed instead of the print standard inventory
 
 after printing the name of den specs when taking inventory: say " (from your dense pecs)";
 
-after printing the name of gas pouch when taking inventory: if sco-damp-ink is true, say "full of damp ink";
+after printing the name of gas pouch when taking inventory: if sco-damp-ink is true, say " (full of damp ink)";
 
 to say x-aight: say "[b]X[if gs-using-known is false] AIGHT[end if][r]"
 
