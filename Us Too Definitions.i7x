@@ -50,11 +50,13 @@ definition: a thing (called th) is eyeable:
 
 volume types
 
-a stewitem is a kind of thing. a stewitem has text called invtext. a stewitem can be alcoholic, eatworthy, ingredient or uneatable. a stewitem is usually eatworthy.
+a stewitem is a kind of thing. a stewitem has text called invtext. a stewitem can be alcoholic, eatworthy, ingredient, or uneatable. a stewitem is usually eatworthy.
+
+a stewitem can be necessary or unnecessary. a stewitem is usually necessary.
 
 a stewitem can be listed-yet. a stewitem is usually not listed-yet.
 
-to decide which number is nds: decide on number of discovered stewitems;
+to decide which number is nds: decide on number of discovered necessary stewitems;
 
 definition: a stewitem (called st) is discovered:
 	if st is mess kit:

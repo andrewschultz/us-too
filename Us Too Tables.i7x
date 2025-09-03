@@ -151,8 +151,8 @@ a wordtwisting rule (this is the pre-a-stew rule):
 	if aight is unexamined:
 		vcp "You think far ahead to what you might need. You'd need to read an ingredient list for that. Maybe you have one on you to start.";
 		not-yet;
-	if number of not discovered stewitems > 0 and debug-win is false:
-		vcp "You don't have all the stew ingredients you need! Currently, you have [number of discovered stewitems in words] out of [number of stewitems in words].";
+	if nds < number of necessary stewitems and debug-win is false:
+		vcp "You don't have all the stew ingredients you need! Currently, you have [nds in words] out of [number of necessary stewitems in words].";
 		not-yet;
 	ready;
 

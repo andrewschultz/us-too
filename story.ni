@@ -163,13 +163,13 @@ part "item using"
 
 Aight Amusing Item Using is a proper-named startthing. description of Aight is "It's a list of all the things [ara] said you need to provide a feast.". printed name of Aight is "[i]A'ight, Amusing Item Using[r]". eyes-number of Aight Amusing Item Using is 66. eyes-rule of aight is pre-summon-cheese rule.
 
-to say aight-count: say "You have [number of discovered stewitems in words] of [number of stewitems in words] items"
+to say aight-count: say "You have [nds in words] of [number of necessary stewitems in words] items"
 
-to say new-aight-bold: if nds > last-stewitem-xaight, say " ([b]BOLD[r]ing stuff found since last time)";
+to say new-aight-bold: if nds > last-nds-x, say " ([b]BOLD[r]ing stuff found since last time)";
 
 report examining Aight Amusing:
-	let gotany be whether or not number of discovered stewitems > 0;
-	let missedany be whether or not number of discovered stewitems < number of stewitems;
+	let gotany be whether or not nds > 0;
+	let missedany be whether or not nds < number of necessary stewitems;
 	if gotany is false:
 		say "You haven't found any yet, so I didn't sort them into have and don't have.[line break]";
 	else if missedany is false:
@@ -178,9 +178,9 @@ report examining Aight Amusing:
 		say "[aight-count]. ";
 		say "[one of]While things won't magically switch order in the list, I've organized them into what you have at the top and what you don't at the bottom[new-aight-bold].[or]Sorted into have/have not[new-aight-bold]:[line break][stopping]";
 	say "[line break]";
-	if number of discovered stewitems > 0, say "HAVE:[line break]";
+	if nds > 0, say "HAVE:[line break]";
 	let mentioned-alcohol be false;
-	repeat with SI running through discovered stewitems:
+	repeat with SI running through discovered necessary stewitems:
 		if SI is pie crust, next;
 		if SI is not listed-yet, say "[b]";
 		if SI is alcoholic:
@@ -202,8 +202,8 @@ report examining Aight Amusing:
 		say "[line break]";
 	now mentioned-alcohol is false;
 	if gotany is true and missedany is true, say "[line break]";
-	if number of not discovered stewitems > 0, say "NEED:[line break]";
-	repeat with SI running through not discovered stewitems:
+	if number of necessary not discovered stewitems > 0, say "NEED:[line break]";
+	repeat with SI running through necessary not discovered stewitems:
 		if SI is pie crust, next;
 		if SI is alcoholic and booze-score < 2:
 			if mentioned-alcohol is false:
@@ -212,8 +212,9 @@ report examining Aight Amusing:
 			next;
 		say "-- [invtext of SI][line break]";
 	tip-herb-use;
+	if number of discovered not necessary stewitems > 0, say "[line break]You went above and beyond and found [the list of discovered not necessary stewitems].";
 	say "[line break]At the bottom, the lawyers have written 'There's a specific point to this list. Don't forget to invite [b]US TOO[r] once you've gotten all the items and figured that point!'";
-	now last-stewitem-xaight is nds;
+	now last-nds-x is nds;
 	continue the action;
 
 Trike West carries Aight Amusing Item Using.
@@ -990,7 +991,7 @@ Pea Stalks is a room in universal. "Pea stalks grow here. But they're nothing yo
 
 chapter pea pod
 
-the pea pod is a thing. description is "It's an unusual pea pod. It'll go well with the meal.". eyes-number of pea pod is -1.
+the pea pod is an unnecessary stewitem. description is "It's an unusual pea pod. It'll go well with the meal.". eyes-number of pea pod is -1.
 
 book east branch
 
@@ -1517,7 +1518,7 @@ chapter assortment
 
 there is a stewitem called the fruit and veggie assortment. description is "Just about everything you could want.". eyes-number of assortment is -1.
 
-invtext of assortment is "[if sco-lie-fruits is false]well, just all sorts of fruits and vegetables[else]the assortment from [here-in of Throne Ow][end if]".
+invtext of assortment is "[if sco-lie-fruits is false]well, just all sorts of fruits and vegetables[else]the assortment of fruits and vegetables from [here-in of Throne Ow][end if]".
 
 volume unsorted
 
@@ -1616,9 +1617,10 @@ carry out taking inventory (this is the UT specific inventory rule):
 	if all stewitems are discovered:
 		say "You've got all the items in [aight]! Surely you must be almost done now.";
 	else if nds > 0:
-		say "[aight-count] from [aight].";
-		if nds > last-stewitem-xaight:
-			say "[line break]You got [if nds - last-stewitem-xaight > 1]some new ones[else]a new one[end if] since you last checked them with [x-aight].";
+		say "[aight-count] listed in [aight]";
+		if nds > last-nds-x:
+			say ". That's [nds - last-nds-x in words] more than the last time you checked with [x-aight]";
+		say ".";
 	else:
 		say "[aight], which you got to start, lists items [ara] asked for. You don't have any yet.";
 	tip-herb-use;

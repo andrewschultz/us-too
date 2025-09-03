@@ -22,7 +22,7 @@ intro-row is a number that varies. intro-row is 1.
 
 starter-counter is a number that varies.
 
-last-stewitem-xaight is a number that varies.
+last-nds-x is a number that varies.
 
 volume booleans
 
