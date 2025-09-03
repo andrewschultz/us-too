@@ -275,7 +275,7 @@
 			<dock index="0" id="119" port="n" />
 			<dock index="1" id="122" port="s" />
 		</line>
-		<room id="124" name="Berries Pond" subtitle="" x="-384" y="-352" w="96" h="64" region="NoRegion" handDrawn="yes" allcornersequal="yes" ellipse="no" roundedCorners="no" octagonal="no" cornerTopLeft="15" cornerTopRight="15" cornerBottomLeft="15" cornerBottomRight="15" borderstyle="Solid" description="" roomFill="" secondFill="" secondFillLocation="Bottom" roomBorder="" roomLargeText="" roomSubtitleColor="" roomSmallText="" ZOrder="0" />
+		<room id="124" name="Berries Pond" subtitle="" x="-384" y="-352" w="96" h="64" region="Stew Items" handDrawn="yes" allcornersequal="yes" ellipse="no" roundedCorners="no" octagonal="no" cornerTopLeft="15" cornerTopRight="15" cornerBottomLeft="15" cornerBottomRight="15" borderstyle="Solid" description="" roomFill="" secondFill="" secondFillLocation="Bottom" roomBorder="" roomLargeText="" roomSubtitleColor="" roomSmallText="" ZOrder="0" />
 		<line id="125" name="" description="" flow="oneWay">
 			<dock index="0" id="122" port="n" />
 			<dock index="1" id="124" port="s" />
