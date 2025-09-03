@@ -1,6 +1,12 @@
+1.0.3 (9/3/2025):
+--bonus point eatable is now included in X, not in I
+--no longer deducted max bonus point for if you solved the west without it, due to un-blocking option
+--more accurate "can't go that way" in mine based on game state
+--colorized main map
+
 1.0.2 (9/2/2025):
 --fixed (non-game-breaking) bug where you could solve a puzzle too early & skip another one. Thanks to fellow competitor ADiBianca for the heads-up!
---berries are now a stew item
+--berries are now an item and recorded in X BIG LIST
 --fixed another line break in X BIG LIST
 --more/better flavor/cluing text
 --added puzzle flow chart, along with redacted version, for fun

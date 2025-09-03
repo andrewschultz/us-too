@@ -14,7 +14,7 @@ by a point
 
 #testcase-goto-table-of-noways-my-new-mine-ooh
 >n
-You could explore your mine, but you have no purpose, or errand, or ... there's another word, here.
+There are no secret passages in the mine. The only way out is up. Right now, you need to find a purpose, or errand, or ... there's another word, here.
 
 >u
 You'll probably want to go outside soon enough. But the problem is ... it's still weird, being dropped in this mine, even though you knew what was going to happen. You don't want to go wandering.
@@ -25,7 +25,7 @@ You'll probably want to go outside soon enough. But the problem is ... it's stil
 
 #+testcase-goto-table-of-noways-my-new-mine-ooh
 >n
-You could explore your mine, but you have no purpose, or errand, or ... there's another word, here.
+There are no secret passages in the mine. The only way out is up. Right now, you need to find a purpose, or errand, or ... there's another word, here.
 
 >u
 You'll probably want to go outside soon enough. But the problem is ... it's still weird, being dropped in this mine, even though you knew what was going to happen. You don't want to go wandering.
@@ -35,7 +35,7 @@ by a point
 
 #+testcase-goto-table-of-noways-my-new-mine-ooh
 >n
-You could explore your mine, but you really should get rid of that beast.
+There are no secret passages in the mine. The only way out is up. Right now, you really should get rid of that beast, so you can actually go up.
 
 >u
 The beast (wrong) blocks your way. How wrong of it! You try shifting around, but it's unmoved. It seems to have a physical edge.
@@ -45,7 +45,7 @@ by a point
 
 #+testcase-goto-table-of-noways-my-new-mine-ooh
 >n
-You could explore your mine, but you sense the real adventure lies back above in the outdoors.
+There are no secret passages in the mine. The only way out is up. Right now, you should probably just go that way.
 
 >u
 You're eager to rush out there, but perhaps you should peruse the ... documentation you were given, first. You haven't really looked at A'ight, Amusing Item Using from your inventory, yet.
@@ -61,7 +61,7 @@ by a point
 
 #+testcase-goto-table-of-noways-my-new-mine-ooh
 >n
-You could explore your mine, but you sense the real adventure lies back above in the outdoors.
+There are no secret passages in the mine. The only way out is up. Right now, you should probably just go that way.
 
 #testcase-room-out-my-new-mine-ooh
 >out
@@ -116,6 +116,10 @@ by a point
 
 >mess pot
 by a point
+
+#+testcase-goto-table-of-noways-my-new-mine-ooh
+>n
+There are no secret passages in the mine. The only way out is up. Right now, you probably want to return aboveground.
 
 >meh skit
 by a bonus point
@@ -1029,6 +1033,10 @@ Mapping outside to down, since it is the only worthwhile direction to go.
 
 >nope on
 by a bonus point
+
+#+testcase-goto-table-of-noways-my-new-mine-ooh
+>n
+There are no secret passages in the mine. The only way out is up. Right now, you don't need to go back, since you're close to done.
 
 >a stew
 by a point

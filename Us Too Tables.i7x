@@ -1378,7 +1378,7 @@ volume directions
 
 table of noways
 noway-rm	noway-txt
-My New Mine Ooh	"You [if sco-try-quest is false]have no purpose, or errand, or ... there's another word, here[else if sco-be-strong is false]really should get rid of that beast[else if branch is unvisited]sense the real adventure lies above in the outdoors[else if at-last-point]should just get things done, here[else]should probably just go back aboveground[end if]."
+My New Mine Ooh	"There are no secret passages in the mine. The only way out is up. Right now, you [if sco-try-quest is false]need to find a purpose, or errand, or ... there's another word, here[else if sco-be-strong is false]really should get rid of that beast, so you can actually go up[else if branch is unvisited]should probably just go that way[else if at-last-point]don't need to go back, since you're close to done[else]probably want to return aboveground[end if]."
 Ur Branch	"You can't go [noun][if noun is eventual] yet[end if][if south is branchdone and west is branchdone]. There are no new ways to go[end if]."
 Beach Ill	"You can only walk back west[if sco-punt-weaker is true] or take the punt east[end if]."
 Pile Up Isle	"You can't see land anywhere except back to the west."
