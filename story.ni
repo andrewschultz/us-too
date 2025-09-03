@@ -1189,7 +1189,6 @@ check going east in bowl ditch:
 	if sco-bold-itch is false, say "You're wallowing too hard at the moment to retrace your steps. You've lost anything resembling moxie." instead;
 	if sco-no-date is true and sco-barn-open is true:
 		say "You got that egg, and you destroyed the nodes. You're pretty sure the area behind you, to the west of Ur-Branch, is clear now.";
-		if sco-tour-boaters is false, max-down;
 		wink-out west;
 		wfas;
 
@@ -1948,10 +1947,14 @@ final question wording	only if victorious	topic	final response rule	final respon
 "see points [b]MISSED[r]" 	true	"missed"	track missed points rule	--
 
 this is the track missed points rule:
-	if sco-loose-intro is false, say "You could've made a [b]LOOSE INTRO[r] fall from the lucent row in [mine].";
-	if sco-meh-skit is false, say "You could've performed a [b]MEH SKIT[r] once you uncovered the mess pot/kit.";
-	if sco-pea-pod is false, say "You could've discovered a [b]PEA POD[r] in Pea Stalks when you wondered if you could peep odd things, for a bit more food.";
-	if sco-tour-boaters is false, say "You could've made Turbo Tours more relaxed by renaming it [b]TOUR BOATERS[r].";
+	say "[one of]This list will spell out the solutions (except for the pawn) if you type [b]MISSED[r] again[or]Here are the specific commands you missed[stopping]:[paragraph break]";
+	if sco-loose-intro is false, say "--[one of]The lucent row could be changed[or]You could've made a [b]LOOSE INTRO[r] fall from the lucent row in [mine][stopping].";
+	if sco-meh-skit is false, say "--[one of]The mess kit let you do something silly[or]You could've performed a [b]MEH SKIT[r] once you uncovered the mess pot/kit[stopping].";
+	if sco-pea-pod is false, say "--[one of]There was an optional food item in Pea Stalks[or]You could've discovered a [b]PEA POD[r] in Pea Stalks when you wondered if you could peep odd things, for a bit more food[stopping].";
+	if sco-tour-boaters is false, say "--[one of]Turbo Tours could've used a rebrand[or]You could've made Turbo Tours more relaxed by renaming it [b]TOUR BOATERS[r][stopping].";
+	if opt-blah-cough is false:
+		if blocked-bonus > 0:
+			say "    ([b]BLAH COUGH[r] will open [if blocked-bonus is 1]the[else]any[end if] blocked-off area you need to visit.)";
 	nope-check;
 
 chapter final real ending
