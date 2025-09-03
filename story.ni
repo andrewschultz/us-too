@@ -457,12 +457,12 @@ understand "mess pot" and "pot" as mess kit.
 
 part ur branch
 
-Ur Branch is a room in universal. It is above My New Mine Ooh. printed name is "Ur-Branch". "[if all stewitems are discovered]You seem to have nothing critical left to do. You've visited all the branches and done what you need. It's likely time to go back [b]DOWN[r] to the mine and finish what remains[else][urdesc][end if].". eyes-number of Ur Branch is 45. eyes-rule of Ur Branch is pre-herb-ranch rule.
+Ur Branch is a room in universal. It is above My New Mine Ooh. printed name is "Ur-Branch". "[if all necessary stewitems are discovered]You seem to have nothing critical left to do. You've visited all the branches and done what you need. It's likely time to go back [b]DOWN[r] to the mine and finish what remains[else][urdesc][end if].". eyes-number of Ur Branch is 45. eyes-rule of Ur Branch is pre-herb-ranch rule.
 
 to say urdesc: say "There are so many branches here! While you can go back [b]DOWN[r] to your mine, [if sco-summer-bay is false]you have no idea where else to go. You could spend too much time wandering around. You could lose focus[else if sco-probe-all is false]there's only east, but maybe you can find more concrete places to visit[else]the branches make more sense than they did at first"
 
 rule for printing the locale description of ur branch:
-	if all stewitems are discovered, continue the action;
+	if all stewitems are discovered, continue the action; [this is right. The case of INSIDE must be considered since peas are a stewitem]
 	let numcan be number of branchcan directions;
 	now pri-bold-dirs is true;
 	now pri-inside-tree is true;
@@ -595,7 +595,7 @@ the black ops are a thing. "You also know black ops are lurking to the north, an
 
 chapter garden tree
 
-the garden tree is a thing. "[if sco-pea-pod is false and all stewitems are discovered]That garden tree is still there. You've got everything from the list, but you wonder if it holds one more secret that appeals to perfectionist types[else if sco-guard-entry is true]The garden tree stands here, passively[else]That garden tree the [forest] were whining about stands here[end if].". description of garden tree is "[if sco-guard-entry is false]It doesn't seem violent, but its branches are long enough it could pull you back if it doesn't trust you[else if garden-score is 2]It doesn't need to guard anything from you, now that you got what you wanted inside[else]It seems quiet enough to let you pass[end if].". eyes-number of garden tree is 55. eyes-rule of garden tree is pre-guard-entry rule.
+the garden tree is a thing. "[if sco-pea-pod is false and all necessary stewitems are discovered]That garden tree is still there. You've got everything from the list, but you wonder if it holds one more secret that appeals to perfectionist types[else if sco-guard-entry is true]The garden tree stands here, passively[else]That garden tree the [forest] were whining about stands here[end if].". description of garden tree is "[if sco-guard-entry is false]It doesn't seem violent, but its branches are long enough it could pull you back if it doesn't trust you[else if garden-score is 2]It doesn't need to guard anything from you, now that you got what you wanted inside[else]It seems quiet enough to let you pass[end if].". eyes-number of garden tree is 55. eyes-rule of garden tree is pre-guard-entry rule.
 
 chapter sign and south area verbs
 
@@ -1614,7 +1614,7 @@ carry out taking inventory (this is the UT specific inventory rule):
 	list the contents of the player, with newlines, indented, including contents, listing marked items only, giving inventory information, with extra indentation;
 	let cas be number of carried alcoholic stewitems;
 	say "[line break]";
-	if all stewitems are discovered:
+	if all necessary stewitems are discovered:
 		say "You've got all the items in [aight]! Surely you must be almost done now.";
 	else if nds > 0:
 		say "[aight-count] listed in [aight]";
