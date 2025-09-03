@@ -272,6 +272,9 @@ to decide which number is booze-listed-yet-score:
 to decide which number is toon-guess-score:
 	decide on (boolval of gs-toon-guess-1) + (boolval of gs-toon-guess-2);
 
+to decide which number is blocked-bonus:
+	decide on (boolval of sco-pea-pod) + (boolval of sco-tour-boaters);
+
 book composite booleans
 
 to decide whether need-meh:

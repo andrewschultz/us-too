@@ -52,6 +52,7 @@ gs-taken-inventory is a truth state that varies.
 gs-take-hintthing-note is a truth state that varies.
 gs-noted-r is a truth state that varies.
 gs-pecs-forget-note is a truth state that varies.
+gs-optional-food-noted is a truth state that varies.
 
 chapter after prologue, optional and unlikely, mostly to funnel player to the right place
 

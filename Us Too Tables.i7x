@@ -657,6 +657,13 @@ this is the post-pea-pod rule:
 	say "Oh wait! There is something that will add a bit of flavor! Actually, it's a weird giant pea pod!";
 	now player has pea pod;
 	inside-block-back;
+	if gs-optional-food-noted is false and sco-peace-talks is false, say "[line break]"; [this is an ugly hack for line spacing]
+	note-optional-food;
+
+to note-optional-food:
+	if gs-optional-food-noted is false:
+		say "[i][bracket][b]NOTE[r][i]: this bonus meal item will appear at the end when you type [b]X[r][i], but it wasn't on the main list because it was a bit obscure. Well done.[close bracket][line break]";
+		now gs-optional-food-noted is true;
 
 to inside-block-back:
 	say "[line break]";
