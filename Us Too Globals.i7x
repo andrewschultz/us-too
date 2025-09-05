@@ -10,9 +10,9 @@ chapter scoring
 
 core-max is a number that varies. core-max is 64.
 
-cur-max-bonus is a number that varies. cur-max-bonus is 5.
+cur-max-bonus is a number that varies. cur-max-bonus is 6.
 
-max-bonus is a number that varies. max-bonus is 5.
+max-bonus is a number that varies. max-bonus is 6.
 
 chapter game states
 
@@ -280,6 +280,8 @@ sco-use-it is a truth state that varies.
 sco-lie-fruits is a truth state that varies.
 
 sco-tea-leaves is a truth state that varies.
+
+sco-punch-urn is a truth state that varies.
 
 book unsorted
 

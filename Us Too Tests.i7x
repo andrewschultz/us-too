@@ -100,9 +100,9 @@ every turn when extra-turns > 0: say "(DEBUG GAUGE) [extra-turns] extra turns, [
 
 volume test commands
 
-test wa with "test w1/test w2/meh skit/loose intro/test w3/pea pod/test w4/test w5/test w61/test w7/test w8/tour boaters/test w9/test w10/test w11".
-test w with "test w1/test w2/test w3/test w4/test w5/test w61/test w7/test w8/test w9/test w10/test w11".
-test deli with "test w1/test w2/test w3/test w4/test w5/test w61/test w7/test w8/test w9".
+test wa with "test w1/test w2/meh skit/loose intro/x ledge/get all/nope on/test w3/pea pod/test w4a/punch urn/test w4b/test w5/test w61/test w7/test w8/tour boaters/test w9/test w10/test w11".
+test w with "test w1/test w2/test w3//test w4a/test w4b/test w5/test w61/test w7/test w8/test w9/test w10/test w11".
+test deli with "test w1/test w2/test w3/test w4a/test w4b/test w5/test w61/test w7/test w8/test w9".
 
 chapter eyes
 
@@ -116,7 +116,9 @@ test w2 with "be chill/nice warm/probe all/w/d/mess pot".
 
 test w3 with "u/ne/board red/sw/n/blah copse/nah queue/surf ready/or clerk/n/more flares/n/n/rope ladder/guard entry/in/peace talks".
 
-test w4 with "out/se/can take/grey tin/dough making/in earnest/in/pry more/out/nw/e/punt weaker/e/base pikes/pie crust/hike up/w/w".
+test w4a with "out/se/can take/grey tin/dough making/in earnest/in/pry more/out/nw/e".
+
+test w4b with "punt weaker/e/base pikes/pie crust/hike up/w/w".
 
 test w5 with "nw/sword ark/blast ring/terrible aid/sw/oh clever".
 
@@ -195,7 +197,7 @@ carry out lfting:
 chapter invtext
 
 when play begins:
-	repeat with X running through stewitems:
+	repeat with X running through necessary stewitems:
 		if invtext of X is empty and X is not alcoholic, say "Give [x] invtext.";
 
 volume test code that may be reusable later

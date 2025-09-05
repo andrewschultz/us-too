@@ -23,6 +23,7 @@ w1 (text)	w2 (text)	first-hom (text)	second-hom	hom-txt-rule (rule)	first-exact	
 "guard"	"entry"	--	"entree"	hom-guard-entry rule	false	false	false	false	"finding a way past the garden tree"	false	true	true	false	false	ur branch	pre-guard-entry rule	post-guard-entry rule	--	--
 "be"	"chill"	"bee"	--	--	false	false	false	false	"dealing with the beach, ill"	false	true	true	false	false	Beach Ill	pre-be-chill rule	post-be-chill rule	--	--
 "punt"	"weaker"	--	--	--	false	false	false	false	"trading with the pun tweaker"	false	true	true	false	false	Beach Ill	pre-punt-weaker rule	post-punt-weaker rule	--	"You can get a [b]PUNT WEAKER[r] [once-now of pre-punt-weaker rule] you are able to help the pun tweaker fix the ship [here-in of Beach Ill]."
+"punch"	"urn"	--	--	--	false	false	false	false	"deciphering something fun behind the pun-churn"	false	true	false	false	false	Beach Ill	pre-punch-urn rule	post-punch-urn rule	--	--
 "base"	"pikes"	--	--	--	false	false	false	false	"figuring a way through the bay spikes"	false	true	true	false	false	a pile up isle	pre-base-pikes rule	post-base-pikes rule	--	--
 "pie"	"crust"	"pi"	--	--	false	false	false	false	"finding what's under the pike rust"	false	true	true	false	false	A Pile Up Isle	pre-pie-crust rule	post-pie-crust rule	--	"You can get the [b]PIE CRUST[r] [here-in of pile up isle] [once-now of pre-pie-crust rule] you have a suitable container."
 "hike"	"up"	--	--	--	false	false	false	false	"reaching the high cup"	false	true	true	false	false	a pile up isle	pre-hike-up rule	post-hike-up rule	--	--
@@ -325,6 +326,22 @@ this is the post-be-chill rule:
 	move sand to Beach Ill;
 	declue-here;
 
+a wordtwisting rule (this is the pre-punch-urn rule):
+	if player is not in Beach Ill, unavailable;
+	if Sir Freddie is not moot, unavailable;
+	if sco-punch-urn is true:
+		vcal "You already have more powdered punch than you could possible use in the near future!";
+		already-done;
+	ready;
+
+this is the post-punch-urn rule:
+	now sco-punch-urn is true;
+	say "You listen to the pun churn. You add to it, with your experience so far. You wonder if it was fueled by a punch urn ... alcoholic, or fruit punch. Not that you're judging. The pun tweaker nods. 'You know, I have something for you.' A minute later, they come back out, holding an urn full of ... powdered punch packets in all sorts of colors.[paragraph break]'I got these in a trade. From someone who said they'd always wanted to buy one of each at the grocery store as a kid. So they finally bought them in bulk. And it was great until they got sick of it. So I took it, and I saw what they meant. I'd like to pass it on to you, to replicate that experience. Not the getting sick of stuff. But achieving an odd childhood dream and being able to pass it on and help the next person.[paragraph break]Wow! What a touching moment! A relatively cheap, yet priceless gift.[paragraph break]'What was the person's name?' you ask.[paragraph break]The pun tweaker snickers. 'Before he went on the straight and narrow, he was bad at his illegal job.'[paragraph break]'C'mon, out with it.'[paragraph break]'Behind his back we called him The Farty Thief, Artie.'[paragraph break]Well, so much for soulful connection. But the pun-churn returns, a bit cleverer than before.";
+	now player has punch urn;
+	declue pun churn;
+
+chapter Pile Up Isle scoring
+
 a wordtwisting rule (this is the pre-pie-crust rule):
 	if (player is not in Pile Up Isle or pike rust is not in location of player) and once-now-hunt is false, unavailable;
 	if sco-gray-tin is false:
@@ -361,6 +378,7 @@ this is the post-punt-weaker rule:
 	moot pun tweaker;
 	move dune to beach ill;
 	moot ship;
+	if sco-punch-urn is false, max-down;
 	check-oar-punt;
 	reveal Pile Up Isle to east;
 	print-the-loc;

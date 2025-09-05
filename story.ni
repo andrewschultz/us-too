@@ -761,7 +761,8 @@ After choosing notable locale objects when player is in Beach Ill:
 	if Freddie is in beach, set the locale priority of Freddie to 9;
 
 after printing the locale description of Beach Ill when sco-peace-talks is true and Sir Freddie is in Beach Ill:
-	say "With the lessons learned from the Pea Stalks, you broker a tentative truce between the pun tweaker and Sir Freddie. You even have a dialogue, discussing nearby isles. Surprisingly, the pun tweaker notes one that Sir Freddie knows.[paragraph break]'Nay-Vile-Knave Isle?'[paragraph break]'No, the large waves scared me ... but they'd be a challenge now. I ... I can picture myself saying Nay, Vile Knave, to those who think they can out-surf me! What an idea! How could I help you back?'[paragraph break]The pun tweaker points to [the ship], which still need repairs. Sir Freddie blushes. 'I ... I never noticed! I was so busy with my new hobbies. But I can trade in all my questing stuff to help you repair things.'[paragraph break]The pun tweaker and Sir Freddie work together to repair [the ship]. They both shake your hand then sail off. You worry the pun tweaker might ditch you if they find you involuntarily inflicted Sir Freddie on them in the first place, but then you realize: no Sir Freddie, no fixed ship. As you do, you see the ship coming back into view.[paragraph break]'Now. What can I offer you?' 'Oh, nothing much,' you say. The pun tweaker says 'oh of course' a bit too quickly.";
+	say "With the lessons learned from the Pea Stalks, you broker a tentative truce between the pun tweaker and Sir Freddie. You even have a dialogue, discussing nearby isles. Surprisingly, the pun tweaker notes one that Sir Freddie knows.[paragraph break]'Nay-Vile-Knave Isle?'[paragraph break]'No, the large waves scared me ... but they'd be a challenge now. I ... I can picture myself saying Nay, Vile Knave, to those who think they can out-surf me! What an idea! How could I help you back?'[paragraph break]The pun tweaker points to [the ship], which still need repairs. Sir Freddie blushes. 'I ... I never noticed! I was so busy with my new hobbies. But I can trade in all my questing stuff to help you repair things.'[paragraph break]The pun tweaker and Sir Freddie work together to repair [the ship]. They both shake your hand then sail off. You worry the pun tweaker might ditch you if they find you involuntarily inflicted Sir Freddie on them in the first place, but then you realize: no Sir Freddie, no fixed ship. As you do, you see the ship coming back into view.[paragraph break]'Now. What can I offer you?' 'Oh, nothing much,' you say. The pun tweaker says 'oh of course' a bit too quickly. They seem in a much better mood now, enough to start a bit of a pun-churn.";
+	move pun churn to beach ill;
 	moot Sir Freddie;
 	continue the action;
 
@@ -827,7 +828,7 @@ the pie crust is an eatworthy stewitem. description is "Not very fancy, but it's
 
 chapter pun tweaker
 
-The pun tweaker is a sentient. "The pun tweaker continues to stay here, [if sir freddie is in beach ill]annoyed with their 'new' 'friend.'[else if sir freddie is not moot]throwing out desultory puns while grumbling they don't want to fix [the ship].[else]waiting for you to ask for your reward.[end if]". description is "[pun-tweaker-desc].". eyes-number of pun tweaker is 46. eyes-rule of pun tweaker is pre-punt-weaker rule.
+The pun tweaker is a sentient. "The pun tweaker continues to stay here, [if sir freddie is in beach ill]annoyed with their 'new' 'friend.'[else if sir freddie is not moot]throwing out desultory puns while grumbling they don't want to fix [the ship].[else]making a pun-churn while you decide on your reward.[end if]". description is "[pun-tweaker-desc].". eyes-number of pun tweaker is 46. eyes-rule of pun tweaker is pre-punt-weaker rule.
 
 to say pun-tweaker-desc:
 	if sir freddie is in beach ill:
@@ -867,6 +868,12 @@ check going west in Pile Up Isle:
 	say "You have no problem steering the punt back now you've got the hang of things. It seems surprisingly sturdy.";
 	move punt to beach;
 	move oar to beach;
+
+chapter punch urn
+
+the pun churn is scenery. printed name is "pun-churn". "The pun-churn is quite enjoyable. The pun tweaker's reallly good at this punny stuff, especially now they're in a better mood.". eyes-number of pun churn is -53. eyes-rule of pun churn is pre-punch-urn rule.
+
+the punch urn is an unnecessary stewitem. "An urn full of all the powdered drinks you imagined and then some. A total rainbow of artificial colors and garish cartoons and logos and the occasional ZERO CALORIES note.". eyes-number of punch urn is -1.
 
 chapter dune ever do never
 
