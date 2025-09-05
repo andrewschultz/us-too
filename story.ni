@@ -88,7 +88,7 @@ after reading a command when player is in House Well How Swell:
 	if debug-state is true:
 		if w1 is "test" or w1 is "gonear":
 			continue the action;
-	if w1 is "about" or w1 is "credit" or w1 is "credits" or w1 is "verb" or w1 is "verbs" or w1 is "version" or w1 is "versions" or w1 is "ext" or w1 is "exts" or w1 is "transcript":
+	if w1 is "about" or w1 is "credit" or w1 is "credits" or w1 is "verb" or w1 is "verbs" or w1 is "version" or w1 is "versions" or w1 is "ext" or w1 is "exts" or w1 is "transcript" or w1 is "quit" or w1 is "restart" or w1 is "save":
 		continue the action;
 	if the player's command exactly matches the text "look" or the player's command exactly matches the text "l" or the player's command exactly matches the text "quit" or the player's command exactly matches the text "restore":
 		continue the action;
@@ -1996,8 +1996,13 @@ This is the hack to say one word right rule:
 			say "There is/was no other way to cheat.";
 		the rule succeeds;
 
-rule for deciding whether all includes slice eyes when player is in mine ooh: it does;
-rule for deciding whether all includes war pawn when player is in mine ooh: it does;
+rule for deciding whether all includes slice eyes when player is in mine ooh:
+	if eyes are in mine ooh, it does;
+	it does not;
+
+rule for deciding whether all includes war pawn when player is in mine ooh:
+	if pawn is in mine ooh, it does;
+	it does not;
 
 volume misc map
 

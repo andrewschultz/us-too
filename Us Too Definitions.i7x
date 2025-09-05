@@ -66,7 +66,7 @@ definition: a stewitem (called st) is discovered:
 
 a startprop is a kind of thing.
 
-initial appearance of a startprop is usually "A [item described] juts out here. [if the item described is unexamined]Looks like it's not empty[else]You see [the list of hintthings in mine ooh] on it[end if].".
+initial appearance of a startprop is usually "A [item described] juts out here. [if the item described is unexamined]Looks like it's not empty[else]You see [the list of hintthings in mine ooh] on it[end if].". description of a startprop is usually "You see [the list of hintthings in mine ooh] on it.".
 
 After choosing notable locale objects when player is in mine ooh:
 	if lucent row is in mine ooh, set the locale priority of lucent row to 2;
