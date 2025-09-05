@@ -163,6 +163,7 @@ part "item using"
 
 Aight Amusing Item Using is a proper-named startthing. description of Aight is "It's a list of all the things [ara] said you need to provide a feast.". printed name of Aight is "[i]A'ight, Amusing Item Using[r]". eyes-number of Aight Amusing Item Using is 66. eyes-rule of aight is pre-summon-cheese rule.
 
+check drop2ing aight: say "[if sco-summon-cheese is true]You could still win [this-game] without [aight], now you summoned the cheese. However[else][aight] clues a specific item to find. Also[end if], it's useful for general organization, so you need to keep it, or it'd be hard to keep track of what you need." instead;
 to say aight-count: say "You have [nds in words] of [number of necessary stewitems in words] items"
 
 to say new-aight-bold: if nds > last-nds-x, say " ([b]BOLD[r]ing stuff found since last time)";
@@ -251,7 +252,7 @@ report taking inventory when gs-using-known is false:
 to tip-herb-use:
 	if player has herbs and sco-summer-bay is false, say "[line break]The herbs ('some herb, eh?') still seem like they could open passage somewhere, if you're careful.";
 
-chapter Aw Lug All Ugh
+part Aw Lug All Ugh
 
 the Aw Lug All Ugh is a thing. printed name is "Aw-Lug-All-Ugh". description is "It's a thing your aunt gave you--well, willed you--which you don't know where it's from[one of]. It reminds you of that 'Hey, we're going to eat pizza' song[or][stopping].".
 
@@ -274,13 +275,11 @@ the den specs are a plural-named thing. description is "You have no idea how coo
 
 check wearing den specs: say "[if gs-den-seen is true]No need. You found where the den was.[else][one of]Whoah! They make everything look a bit weird. [or][stopping]You'll use them to have a look around when you visit somewhere new.[end if]" instead;
 
-part urgh ought er jot
+part urge ought er jot
 
-the urgh ought er jot is a startthing. eyes-number of er jot is 1.
+the urge ought er jot is a startthing. eyes-number of er jot is 1.
 
-check drop2ing aight: say "[if sco-summon-cheese is true]You could still win [this-game] without [aight], now you summoned the cheese. However[else][aight] clues a specific item to find. Also[end if], it's useful for general organization, so you need to keep it, or it'd be hard to keep track of what you need." instead;
-
-check drop2ing urgh ought er jot:
+check drop2ing urge ought er jot:
 	if er jot is not examined:
 		say "You haven't examined [the jot] yet, though you don't need to, to win the game. Drop it anyway?";
 		unless the player no-consents:
@@ -292,7 +291,7 @@ check drop2ing urgh ought er jot:
 
 to say crumple-it: say "You actually just crumple it up and put it in your pocket, in case you need to start a fire later to, I don't know, cook stuff. Plus, littering isn't cool![paragraph break][The noun] is out of your conscious inventory, now"
 
-Trike West carries the urgh ought er jot. printed name of er jot is "Urgh-Ought-[']Er Jot".
+Trike West carries the urge ought er jot. printed name of er jot is "Urge-Ought-[']Er Jot".
 
 description of Jot is "[one of]It's a[or]You reread the[stopping] note from [ara]: 'The items on the row/ledge may help when needed. No shame using them everywhere, and I won't be offended if you find them useless or even drop them. Or drop this, now you've read it. One less thing to worry about in your inventory.[paragraph break]'You can change the row/ledge itself if you want, but you don't need to. Some subjective information about your surroudings. Maybe with experience you'll have an a-ha moment, and you'll see this whole area in a new light.[paragraph break]'You could say it's a welcome of sorts.'". eyes-number of jot is 1.
 
