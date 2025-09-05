@@ -1852,12 +1852,11 @@ report abouting:
 book credits
 
 carry out creditsing:
+	say "[b]GAME-SPECIFIC THANKS[r]:[paragraph break]";
 	say "Thanks to my testers, Onno Brouwer, Wade Clarke, Olaf Nowacki, Melvin Rangasamy, Daniel Stelzer and Tabitha. With my development schedule, I put them in a time crunch, and they found a lot. This let me add some niceties, though I also made mistakes implementing some of their suggestions.";
 	say "A DiBianca, a longtime IFComp co-competitor, sent (not for the first time) a nice useful transcript on day 1 of IFComp. (Psst! If you like my stuff, you may love his.)";
+	say "Anyone who helped with [wp] probably helped here indirectly, because I reused a lot of the code or ideas. Like the hint item several suggested.";
 	say "[line break]The cover art is my fault, and my fault alone.";
-	say "[line break][b]GENERAL THANKS[r]:[paragraph break]";
-	say "Thanks to everyone past and future involved in the administration of IFComp.";
-	say "Thanks to the I7 board on Intfiction.org for their help, as well as the people in the general topics and the spoilers topic as we discussed our plans.";
 	say "The [south-dirs] were likely inspired by a game which, if I told you the name, would spoil [i]that[r] game. I hate it when things like that happen, because I'd like to give them direct credit. It's in the 'best short games' poll on IFDB, and rightly so.";
 	general-thanks;
 
@@ -1950,6 +1949,7 @@ book versions
 
 carry out versioning:
 	say "Release 1 was sent to IFComp.org on August 28, 2025, for publishing on September 1st.";
+	say "Release 2 is slated for (hopefully) very soon after IFComp. It will include a holdall where you can drop off the list items, as well as specific cluing rejects for some of the trickier puzzles.";
 
 volume ending tweak(s)
 
