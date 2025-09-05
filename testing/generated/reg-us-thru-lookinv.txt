@@ -14,6 +14,9 @@ by a point
 
 >i
 
+>x row
+take them with TAKE ALL
+
 >z
 
 >try quest
@@ -29,6 +32,11 @@ by a bonus point
 
 >summon cheese
 by a point
+
+>x row
+
+>get all
+war pawn
 
 >u
 
@@ -126,6 +134,9 @@ by a point
 >nw
 
 >e
+
+>punch urn
+by a bonus point
 
 >punt weaker
 by a point
@@ -399,4 +410,9 @@ by a bonus point
 >a stew
 by a point
 
+# test ending stuff everywhere
 Would you like to
+by a point
+
+Would you like to RESTART, RESTORE a saved game, QUIT or UNDO the last command?
+

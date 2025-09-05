@@ -25,10 +25,6 @@ Loosened, loosed ... hmm, a word like that might be too complex to start. And yo
 >x row
 take them with TAKE ALL
 
->get all
-slice eyes
-war pawn
-
 >z
 
 >try quest
@@ -55,6 +51,11 @@ by a bonus point
 
 >summon cheese
 by a point
+
+>x row
+
+>get all
+war pawn
 
 >u
 
@@ -244,6 +245,9 @@ by a point
 >nw
 
 >e
+
+>punch urn
+by a bonus point
 
 >punt weaker
 by a point
@@ -652,4 +656,9 @@ Oddly, your uhh-ing leaves you feeling you close to knowing what to do here at t
 >a stew
 by a point
 
+# test ending stuff everywhere
 Would you like to
+by a point
+
+Would you like to RESTART, RESTORE a saved game, QUIT or UNDO the last command?
+

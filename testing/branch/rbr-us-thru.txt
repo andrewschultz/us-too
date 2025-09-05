@@ -102,7 +102,7 @@ You'll probably want to go outside soon enough. But the problem is ... it's stil
 Your Aw-Lug-All-Ugh has nothing special in it.
 A'ight, Amusing Item Using, which you got to start, lists items Aunt Rickie-Anne asked for. You don't have any yet.
 #OK-APOSTROPHE
-You have that Urgh-Ought-'Er Jot flopping about, too. It probably only had stuff to help you get started, which might help you figure how to get going.
+You have that Urge-Ought-'Er Jot flopping about, too. It probably only had stuff to help you get started, which might help you figure how to get going.
 For future reference, X will default to A'ight, Amusing Item Using in the future. It will be about as helpful to you as I/INVENTORY.
 
 @mis
@@ -125,7 +125,9 @@ Loosened, loosed ... hmm, a word like that might be too complex to start. And yo
 
 @hint
 >x row
-\\
+eyes
+
+@hint+
 >loose intro
 by a bonus point
 \\
@@ -135,20 +137,15 @@ by a bonus point
 \\
 #testcase-values-eyes-number-of-er-jot-is-1
 >eye er jot
-The eyes show nothing. Probably don't need to change up anything with the Urgh-Ought-'Er Jot.
+The eyes show nothing. Probably don't need to change up anything with the Urge-Ought-'Er Jot.
 \\
 >undo
 >undo
 >undo
 
-@hom
+@!min,hint
 >x row
 take them with TAKE ALL
-
-@hint,hom
->get all
-slice eyes
-war pawn
 
 >z
 
@@ -447,6 +444,11 @@ You doze off, and when you awake, you find ... well, a beast, wrong, blocking yo
 >pry more
 {$REJECT2}
 \\
+#testcase-check-pre-punch-urn-rule-if-player-is-not-in-beach-ill
+#testcase-reject-end-table-of-main-oronyms-pre-punch-urn-rule
+>punch urn
+{$REJECT2}
+\\
 #testcase-check-pre-punt-weaker-rule-if-player-is-not-in-beach-ill-and-once-now-hunt-is-false
 #testcase-reject-start-table-of-main-oronyms-pre-punt-weaker-rule
 >punt weaker
@@ -525,6 +527,9 @@ You don't need to prefix any important two-word command with SAY. Just say the t
 #testcase-check-pre-wheat-rye-rule-if-player-is-not-in-deli-stern-and-once-now-hunt-is-false
 #testcase-reject-start-table-of-main-oronyms-pre-wheat-rye-rule
 >wheat rye
+{$REJECT2}
+\\
+>nope on
 {$REJECT2}
 
 @part
@@ -654,7 +659,7 @@ You haven't found any yet, so I didn't sort them into have and don't have.
 -- well, just all sorts of fruits and vegetables
 
 @rej
-#testcase-check-pre-a-stew-rule-if-number-of-not-discovered-stewitems->-0-and-debug-win-is-false
+#testcase-check-pre-a-stew-rule-if-nds-<-number-of-necessary-stewitems-and-debug-win-is-false
 >a stew
 You don't have all the stew ingredients you need! Currently, you have zero out of fourteen.
 
@@ -665,7 +670,7 @@ The eyes glow dimly green and show four dots, then two dots.
 \\
 #testcase-values-eyes-number-of-jot-is-1
 >eye jot
-{$EYEITMNO} the Urgh-Ought-'Er Jot.
+{$EYEITMNO} the Urge-Ought-'Er Jot.
 \\
 #testcase-values-eyes-number-of-mine-ooh-is-1
 >eye
@@ -809,7 +814,7 @@ A loose intro flutters down from the lucent row. You pick it up. As you do, the 
 
 @verbs
 >drop jot
-You haven't examined the Urgh-Ought-'Er Jot yet, though you don't need to, to win the game. Drop it anyway?
+You haven't examined the Urge-Ought-'Er Jot yet, though you don't need to, to win the game. Drop it anyway?
 Next time, you'll drop it without this nag.
 \\
 >undo
@@ -821,7 +826,7 @@ It's a note from Aunt Rickie-Anne: "The items on the row/ledge may help when nee
 \\
 >drop jot
 You actually just crumple it up and put it in your pocket, in case you need to start a fire later to, I don't know, cook stuff. Plus, littering isn't cool!
-The Urgh-Ought-'Er Jot is out of your conscious inventory, now.
+The Urge-Ought-'Er Jot is out of your conscious inventory, now.
 \\
 >drop jot
 {$NOTHEREHINT2}
@@ -973,6 +978,15 @@ Mapping outside to up, since it is the only worthwhile direction to go.
 `Ur-Branch
 \\
 >undo
+
+@!min
+>x row
+\\
+>get all
+war pawn
+
+@hint
+!eyes
 
 >u
 
@@ -1356,7 +1370,7 @@ You already found the mess pot/kit!
 @all
 #testcase-check-pre-mess-pot-rule-fallthrough
 #testcase-run-post-mess-pot-rule-default
-Consulting with the pro ball, you eventually learn to understand how it displays things and, yes, you find that mess pot! And not just a mess pot, but a whole mess kit!
+Consulting with the pro ball, you eventually learn to understand how it displays things and, yes, you find that mess pot! You're a bit worried it might be THAT kind of mess pot, but no. It's cookware. Not just a mess pot, in fact, but a whole mess kit!
 But it's not just about finding a mess kit. It's about the process! You feel like you could use it better now aboveground.
 
 @gt
@@ -1750,7 +1764,7 @@ The eyes light up green and show three dots, then five dots.
 Hmm, that seems a bit short. Can't be them. Maybe what they're saying.
 
 @alt
-#testcase-alt-words-table-of-main-oronyms-24-nah-naw-queue
+#testcase-alt-words-table-of-main-oronyms-25-nah-naw-queue
 >naw queue
 by a point
 \\
@@ -1967,7 +1981,7 @@ You're pretty sure you have one word right for activating the morph lairs.
 >undo
 
 @alt
-#testcase-alt-words-table-of-main-oronyms-27-more-flares-flare
+#testcase-alt-words-table-of-main-oronyms-28-more-flares-flare
 >more flare
 by a point
 \\
@@ -2455,7 +2469,7 @@ You're pretty sure you have one word right for discover what the Great Inn holds
 >undo
 
 @alt
-#testcase-alt-words-table-of-main-oronyms-33-gray-grey-tin
+#testcase-alt-words-table-of-main-oronyms-34-gray-grey-tin
 >grey tin
 by a point
 \\
@@ -2753,6 +2767,31 @@ You can get a PUNT WEAKER now you are able to help the pun tweaker fix the ship 
 #+testcase-values-eyes-number-of-pun-tweaker-is-46
 >eye pun tweaker
 The eyes light up green and show four dots, then six dots.
+\\
+#testcase-values-eyes-number-of-pun-churn-is--53
+>eye pun churn
+The eyes glow dimly green and show five dots, then three dots.
+\\
+>eye
+Nothing for the general area, though the sly size-slice eyes seem to wander between the pun-churn and the pun tweaker.
+
+@!min
+>>punch urn
+by a bonus point
+
+@hint
+#testcase-values-eyes-number-of-pun-churn-is--53
+>eye pun churn
+The eyes show nothing. You've changed up everything you need with the pun-churn.
+\\
+#testcase-values-eyes-number-of-punch-urn-is--1
+>eye punch urn
+The eyes show nothing. You've changed up everything you need with the punch urn.
+
+@rej
+#testcase-check-pre-punch-urn-rule-if-sco-punch-urn-is-true
+>punch urn
+You already have more powdered punch than you could possible use in the near future!
 
 >>punt weaker
 by a point
@@ -3279,7 +3318,7 @@ You're pretty sure you have one word right for operating the oak lever.
 The eyes light up green and show two dots, then six dots.
 
 @alt
-#testcase-alt-words-table-of-main-oronyms-37-oh-o-clever
+#testcase-alt-words-table-of-main-oronyms-38-oh-o-clever
 >o clever
 by a point
 \\
@@ -3495,7 +3534,7 @@ You're pretty sure you have one word right for dealing with the paralyzing whole
 >undo
 
 @alt
-#testcase-alt-words-table-of-main-oronyms-54-ho-languor-langour
+#testcase-alt-words-table-of-main-oronyms-55-ho-languor-langour
 >ho languor
 by a point
 \\
@@ -3925,9 +3964,9 @@ You can start PRO SWEEPING here once you have something to sweep with.
 >x sign
 ***SHORTCUT COMMANDS***
 N2 or 2N or NN gets you all the way back north.
-"Ugh?! Lo, a Glow": S (command)
-Sage Oaks: SS (command)
-"Grasp, Ace: Grass" Space: SSS (command)
+"Ugh?! Lo, a Glow": S
+Sage Oaks: SS
+"Grasp, Ace: Grass" Space: SSS
 There's also a note that R cycles/rotates between "Grasp, Ace: Grass" Space, "Ugh?! Lo, a Glow" and Sage Oaks, and RR does the reverse, with no penalty for forgetting the rotation order.
 
 >sss
@@ -5897,7 +5936,7 @@ You can call a JOIN AIDER in Joy Nadir now you have two items of power to join.
 You can call a JOIN AIDER here now you have two items of power to join.
 
 @alt
-#testcase-alt-words-table-of-main-oronyms-22-join-aider-adder
+#testcase-alt-words-table-of-main-oronyms-23-join-aider-adder
 >join adder
 by a point
 \\
@@ -6365,6 +6404,10 @@ You can make A STEW in My New Mine, Ooh! now you have all the ingredients you ne
 >pry more
 {$REJECT2}
 \\
+#testcase-reject-start-table-of-main-oronyms-pre-punch-urn-rule
+>punch urn
+{$REJECT2}
+\\
 #testcase-reject-end-table-of-main-oronyms-pre-punt-weaker-rule
 >punt weaker
 {$REJECT2}
@@ -6447,6 +6490,18 @@ You can make A STEW here now you have all the ingredients you need. X should lis
 >undo
 >undo
 
+@all
+>a stew
+by a point
+Would you like to RESTART, RESTORE a saved game, QUIT, UNDO the last command or see points MISSED?
+\\
+>missed
+!This list will spell out the solutions (except for the pawn) if you type 
+There's a way besides DROP to dismiss the war pawn, when unused, to get a bonus point, if you observe and understand it carefully.
+!blocked-off area you need
+\\
+>undo
+
 @!min
 >>nope on
 by a bonus point
@@ -6455,6 +6510,9 @@ by a bonus point
 #testcase-think-nownear-table-of-main-oronyms-pre-a-stew-rule
 >think
 You can make A STEW here now you have all the ingredients you need. X should list them.
+\\
+>nope on
+{$REJECT2}
 
 @rej+
 ####################this is stuff where blah cough is used
@@ -6513,11 +6571,66 @@ by a point
 #testcase-run-post-a-stew-rule-default
 #testcase-run-post-a-stew-rule-follow-the-score-and-thinking-changes-rule
 #testcase-run-post-a-stew-rule-follow-the-shutdown-rules
-Place-to-Play Stew
 You look at A'ight, Amusing Item Using. You have everything you need, but you don't have, well, a cohesive dish. You remember the lawyers needling you with "us too." Yes, that's what it has to be. You call them and your friends. They're prepared -- the mine is only an hour's drive from the city.
 So you make the stew to pass the time until then. You try to avoid thinking of it as my stew, because eww, that'd be a me-ill meal. Our stew might be, too.
 You're no natural cook, but you do your best. (You make other random seeming stews over the years, and people always seem to appreciate them, but none quite has the flavor of this one.) After the meal, the announcement -- the mine is yours, and you can sell it now. You wonder if there's anything else, but you don't want to be greedy.
-Everyone winds down by playing poker. The lawyers are, unsurprisingly, all quite good at it. Well, you're not playing with real money, so you don't mind losing. You got enough today, right? Someone asks you offhand what you call the stew. Aunt Rickie-Anne surprisingly didn't specify it. You give your answer, and you wonder if maybe there is one more subtle odd test. The lawyers seem to have an inside joke going as they finish the remains of your...
+Everyone winds down by playing poker. The lawyers are, unsurprisingly, all quite good at it. Well, you're not playing with real money, so you don't mind losing. The lawyers needle you a bit about losing.
+You respond you got enough today, right? I wouldn't want to get greedy.
+One of the lawyers chuckles and asks you offhand what you call the stew. Aunt Rickie-Anne surprisingly didn't specify it. You give your answer, and you wonder if maybe there is one more subtle odd test. The lawyers seem to have an inside joke going as your chips dwindle slowly. You need a miracle this hand to survive as they finish the remains of your...
+Place-to-Play Stew
+
+# test ending stuff everywhere
+Would you like to
 by a point
 
-Would you like to
+@min
+Would you like to RESTART, RESTORE a saved game, QUIT, UNDO the last command or see points MISSED?
+@!
+Would you like to RESTART, RESTORE a saved game, QUIT or UNDO the last command?
+
+@min
+>missed
+This list will spell out the solutions (except for the pawn) if you type MISSED again:
+--The lucent row could be changed.
+--The mess kit let you do something silly.
+--There was an optional food item in Pea Stalks.
+--You could've acted on the pun tweaker's pun churn after getting rid of Sir Freddie (must restart to achieve).
+--Turbo Tours could've used a rebrand.
+    (BLAH COUGH will open any blocked-off area you need to visit.)
+There's a way besides DROP to dismiss the war pawn, when unused, to get a bonus point, if you observe and understand it carefully.
+\\
+>missed
+Here are the specific commands you missed:
+--You could've made a LOOSE INTRO fall from the lucent row in My New Mine, Ooh!.
+--You could've performed a MEH SKIT once you uncovered the mess pot/kit.
+--You could've discovered a PEA POD in Pea Stalks when you wondered if you could peep odd things, for a bit more food.
+--You could've asked for a PUNCH URN around the pun tweaker's pun churn (must restart to achieve).
+--You could've made Turbo Tours more relaxed by renaming it TOUR BOATERS.
+    (BLAH COUGH will open any blocked-off area you need to visit.)
+There's a way besides DROP to dismiss the war pawn, when unused, to get a bonus point, if you observe and understand it carefully.
+
+@all
+>missed
+Before you can try something too outside the box, one of the lawyers says "Boy! this is STEW, EH?" The others agree.
+\\
+>ace xxx
+An interesting idea forms halfway in your mind.
+\\
+>xxx two
+An interesting idea forms halfway in your mind.
+\\
+>ace two
+You manage to discover a few aces and twos that weren't there, when you need them. You're not sure where they go, or where they came from. But the lawyers catch on, smiling. You start winning, and before it's over, they say "Well done. A little extra for you. Aunt Rickie-Anne had a magic gem, one passed down only to those who were fully worthy. It provided insight into people's hearts."
+You ask what it could be.
+They show you. You nod politely, saying it's very nice.
+"It is a whinge-you'll-win jewel. It causes greedy people to overreact. Some will say they must have it. Some will say they own better jewels. Some will say they deserve it more than So-and-So. Even if they can't see it or ar near it, they will show their seedy side. Some may manage to keep the mask up for a while."
+You mention you're not sure you want that kind of power, and they say--well, yes, it's no fun to carry around. But it will be there when you need it. Why, Aunt Rickie-Anne used it to help sort out ... certain family members. Not exclusively. But to confirm her suspicions. For better or worse. You shake hands with the lawyers again, and they leave. You receive the jewel a week later.
+\\
+>ace xxx
+There is/was no other way to cheat.
+\\
+>xxx two
+There is/was no other way to cheat.
+\\
+>ace two
+You already cheated to win, but you did so because it was the right thing to do. You have everything you want. Don't get greedy. What would Aunt Rickie-Anne say?

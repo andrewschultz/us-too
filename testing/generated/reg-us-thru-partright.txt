@@ -14,6 +14,9 @@ by a point
 
 >i
 
+>x row
+take them with TAKE ALL
+
 >z
 
 #testcase-one-right-table-of-main-oronyms-try-quest-1-try
@@ -132,6 +135,11 @@ You're pretty sure you have one word right for figuring what some munchies are.
 
 >summon cheese
 by a point
+
+>x row
+
+>get all
+war pawn
 
 >u
 
@@ -744,6 +752,9 @@ You're pretty sure you have one word right for trading with the pun tweaker.
 
 >undo
 >undo
+
+>punch urn
+by a bonus point
 
 >punt weaker
 by a point
@@ -1786,4 +1797,9 @@ by a bonus point
 >a stew
 by a point
 
+# test ending stuff everywhere
 Would you like to
+by a point
+
+Would you like to RESTART, RESTORE a saved game, QUIT or UNDO the last command?
+

@@ -20,8 +20,11 @@ by a point
 >i
 Your Aw-Lug-All-Ugh has nothing special in it.
 A'ight, Amusing Item Using, which you got to start, lists items Aunt Rickie-Anne asked for. You don't have any yet.
-You have that Urgh-Ought-'Er Jot flopping about, too. It probably only had stuff to help you get started, which might help you figure how to get going.
+You have that Urge-Ought-'Er Jot flopping about, too. It probably only had stuff to help you get started, which might help you figure how to get going.
 For future reference, X will default to A'ight, Amusing Item Using in the future. It will be about as helpful to you as I/INVENTORY.
+
+>x row
+take them with TAKE ALL
 
 >z
 
@@ -121,6 +124,11 @@ by a point
 #testcase-run-post-summon-cheese-rule-default
 You're confident you've figured what the munchies are. And you know what? You're right! You have all sorts of cheese now.
 
+>x row
+
+>get all
+war pawn
+
 >u
 
 #testcase-room-names-ur-branch
@@ -192,7 +200,7 @@ by a point
 
 #testcase-check-pre-mess-pot-rule-fallthrough
 #testcase-run-post-mess-pot-rule-default
-Consulting with the pro ball, you eventually learn to understand how it displays things and, yes, you find that mess pot! And not just a mess pot, but a whole mess kit!
+Consulting with the pro ball, you eventually learn to understand how it displays things and, yes, you find that mess pot! You're a bit worried it might be THAT kind of mess pot, but no. It's cookware. Not just a mess pot, in fact, but a whole mess kit!
 But it's not just about finding a mess kit. It's about the process! You feel like you could use it better now aboveground.
 
 >meh skit
@@ -385,6 +393,9 @@ Surely there must be some way to get the oar, you think. And you pry constructiv
 >nw
 
 >e
+
+>punch urn
+by a bonus point
 
 >punt weaker
 by a point
@@ -906,6 +917,17 @@ Your Aw-Lug-All-Ugh feels like it may burst from the additional weight! Good thi
 
 >d
 
+>a stew
+by a point
+Would you like to RESTART, RESTORE a saved game, QUIT, UNDO the last command or see points MISSED?
+
+>missed
+!This list will spell out the solutions (except for the pawn) if you type 
+There's a way besides DROP to dismiss the war pawn, when unused, to get a bonus point, if you observe and understand it carefully.
+!blocked-off area you need
+
+>undo
+
 >nope on
 by a bonus point
 
@@ -917,11 +939,41 @@ by a point
 #testcase-run-post-a-stew-rule-default
 #testcase-run-post-a-stew-rule-follow-the-score-and-thinking-changes-rule
 #testcase-run-post-a-stew-rule-follow-the-shutdown-rules
-Place-to-Play Stew
 You look at A'ight, Amusing Item Using. You have everything you need, but you don't have, well, a cohesive dish. You remember the lawyers needling you with "us too." Yes, that's what it has to be. You call them and your friends. They're prepared -- the mine is only an hour's drive from the city.
 So you make the stew to pass the time until then. You try to avoid thinking of it as my stew, because eww, that'd be a me-ill meal. Our stew might be, too.
 You're no natural cook, but you do your best. (You make other random seeming stews over the years, and people always seem to appreciate them, but none quite has the flavor of this one.) After the meal, the announcement -- the mine is yours, and you can sell it now. You wonder if there's anything else, but you don't want to be greedy.
-Everyone winds down by playing poker. The lawyers are, unsurprisingly, all quite good at it. Well, you're not playing with real money, so you don't mind losing. You got enough today, right? Someone asks you offhand what you call the stew. Aunt Rickie-Anne surprisingly didn't specify it. You give your answer, and you wonder if maybe there is one more subtle odd test. The lawyers seem to have an inside joke going as they finish the remains of your...
+Everyone winds down by playing poker. The lawyers are, unsurprisingly, all quite good at it. Well, you're not playing with real money, so you don't mind losing. The lawyers needle you a bit about losing.
+You respond you got enough today, right? I wouldn't want to get greedy.
+One of the lawyers chuckles and asks you offhand what you call the stew. Aunt Rickie-Anne surprisingly didn't specify it. You give your answer, and you wonder if maybe there is one more subtle odd test. The lawyers seem to have an inside joke going as your chips dwindle slowly. You need a miracle this hand to survive as they finish the remains of your...
+Place-to-Play Stew
+
+# test ending stuff everywhere
+Would you like to
 by a point
 
-Would you like to
+Would you like to RESTART, RESTORE a saved game, QUIT or UNDO the last command?
+
+>missed
+Before you can try something too outside the box, one of the lawyers says "Boy! this is STEW, EH?" The others agree.
+
+>ace xxx
+An interesting idea forms halfway in your mind.
+
+>xxx two
+An interesting idea forms halfway in your mind.
+
+>ace two
+You manage to discover a few aces and twos that weren't there, when you need them. You're not sure where they go, or where they came from. But the lawyers catch on, smiling. You start winning, and before it's over, they say "Well done. A little extra for you. Aunt Rickie-Anne had a magic gem, one passed down only to those who were fully worthy. It provided insight into people's hearts."
+You ask what it could be.
+They show you. You nod politely, saying it's very nice.
+"It is a whinge-you'll-win jewel. It causes greedy people to overreact. Some will say they must have it. Some will say they own better jewels. Some will say they deserve it more than So-and-So. Even if they can't see it or ar near it, they will show their seedy side. Some may manage to keep the mask up for a while."
+You mention you're not sure you want that kind of power, and they say--well, yes, it's no fun to carry around. But it will be there when you need it. Why, Aunt Rickie-Anne used it to help sort out ... certain family members. Not exclusively. But to confirm her suspicions. For better or worse. You shake hands with the lawyers again, and they leave. You receive the jewel a week later.
+
+>ace xxx
+There is/was no other way to cheat.
+
+>xxx two
+There is/was no other way to cheat.
+
+>ace two
+You already cheated to win, but you did so because it was the right thing to do. You have everything you want. Don't get greedy. What would Aunt Rickie-Anne say?

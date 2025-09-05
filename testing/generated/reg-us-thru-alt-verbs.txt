@@ -14,6 +14,9 @@ by a point
 
 >i
 
+>x row
+take them with TAKE ALL
+
 >z
 
 >try quest
@@ -29,6 +32,11 @@ by a bonus point
 
 >summon cheese
 by a point
+
+>x row
+
+>get all
+war pawn
 
 >u
 
@@ -102,7 +110,7 @@ by a point
 >blah copse
 by a point
 
-#testcase-alt-words-table-of-main-oronyms-24-nah-naw-queue
+#testcase-alt-words-table-of-main-oronyms-25-nah-naw-queue
 >naw queue
 by a point
 
@@ -119,7 +127,7 @@ by a point
 
 >n
 
-#testcase-alt-words-table-of-main-oronyms-27-more-flares-flare
+#testcase-alt-words-table-of-main-oronyms-28-more-flares-flare
 >more flare
 by a point
 
@@ -149,7 +157,7 @@ by a bonus point
 >can take
 by a point
 
-#testcase-alt-words-table-of-main-oronyms-33-gray-grey-tin
+#testcase-alt-words-table-of-main-oronyms-34-gray-grey-tin
 >grey tin
 by a point
 
@@ -174,6 +182,9 @@ by a point
 >nw
 
 >e
+
+>punch urn
+by a bonus point
 
 >punt weaker
 by a point
@@ -206,7 +217,7 @@ by a point
 
 >sw
 
-#testcase-alt-words-table-of-main-oronyms-37-oh-o-clever
+#testcase-alt-words-table-of-main-oronyms-38-oh-o-clever
 >o clever
 by a point
 
@@ -238,7 +249,7 @@ by a point
 
 >s
 
-#testcase-alt-words-table-of-main-oronyms-54-ho-languor-langour
+#testcase-alt-words-table-of-main-oronyms-55-ho-languor-langour
 >ho languor
 by a point
 
@@ -406,7 +417,7 @@ by a point
 
 >e
 
-#testcase-alt-words-table-of-main-oronyms-22-join-aider-adder
+#testcase-alt-words-table-of-main-oronyms-23-join-aider-adder
 >join adder
 by a point
 
@@ -434,4 +445,9 @@ by a bonus point
 >a stew
 by a point
 
+# test ending stuff everywhere
 Would you like to
+by a point
+
+Would you like to RESTART, RESTORE a saved game, QUIT or UNDO the last command?
+

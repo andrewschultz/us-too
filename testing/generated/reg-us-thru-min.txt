@@ -355,4 +355,29 @@ by a point
 >a stew
 by a point
 
+# test ending stuff everywhere
 Would you like to
+by a point
+
+Would you like to RESTART, RESTORE a saved game, QUIT, UNDO the last command or see points MISSED?
+
+>missed
+This list will spell out the solutions (except for the pawn) if you type MISSED again:
+--The lucent row could be changed.
+--The mess kit let you do something silly.
+--There was an optional food item in Pea Stalks.
+--You could've acted on the pun tweaker's pun churn after getting rid of Sir Freddie (must restart to achieve).
+--Turbo Tours could've used a rebrand.
+    (BLAH COUGH will open any blocked-off area you need to visit.)
+There's a way besides DROP to dismiss the war pawn, when unused, to get a bonus point, if you observe and understand it carefully.
+
+>missed
+Here are the specific commands you missed:
+--You could've made a LOOSE INTRO fall from the lucent row in My New Mine, Ooh!.
+--You could've performed a MEH SKIT once you uncovered the mess pot/kit.
+--You could've discovered a PEA POD in Pea Stalks when you wondered if you could peep odd things, for a bit more food.
+--You could've asked for a PUNCH URN around the pun tweaker's pun churn (must restart to achieve).
+--You could've made Turbo Tours more relaxed by renaming it TOUR BOATERS.
+    (BLAH COUGH will open any blocked-off area you need to visit.)
+There's a way besides DROP to dismiss the war pawn, when unused, to get a bonus point, if you observe and understand it carefully.
+

@@ -1,3 +1,12 @@
+1.0.4 (9/5/2025):
+--RESTART and QUIT are now available in first room
+--The Jot was misspelled/mispronounced
+--S/SS/SSS are now directly available for each southern room you figure out
+--fixes to ending text/narrative
+--fixes to MISSED command (vanishes if you have everything, some logic errors in what was displayed where)
+--silly bonus point added
+--added very silly joke to post-cell room description
+
 1.0.3 (9/3/2025):
 --bonus point eatable is now included in X, not in I
 --no longer deducted max bonus point for if you solved the west without it, due to un-blocking option

@@ -15,6 +15,7 @@ by a point
 >i
 
 >x row
+eyes
 
 >loose intro
 by a bonus point
@@ -25,15 +26,11 @@ The eyes show nothing. Probably don't need to change up anything with the Goal-E
 
 #testcase-values-eyes-number-of-er-jot-is-1
 >eye er jot
-The eyes show nothing. Probably don't need to change up anything with the Urgh-Ought-'Er Jot.
+The eyes show nothing. Probably don't need to change up anything with the Urge-Ought-'Er Jot.
 
 >undo
 >undo
 >undo
-
->get all
-slice eyes
-war pawn
 
 >z
 
@@ -66,7 +63,7 @@ The eyes glow dimly green and show four dots, then two dots.
 
 #testcase-values-eyes-number-of-jot-is-1
 >eye jot
-The eyes show nothing. Probably don't need to change up anything with the Urgh-Ought-'Er Jot.
+The eyes show nothing. Probably don't need to change up anything with the Urge-Ought-'Er Jot.
 
 #testcase-values-eyes-number-of-mine-ooh-is-1
 >eye
@@ -169,6 +166,13 @@ The eyes show nothing. You've changed up everything you need with A'ight
 #testcase-values-eyes-number-of-cheese-is-1
 >eye cheese
 The eyes show nothing. Probably don't need to change up anything with the cheese.
+
+>x row
+
+>get all
+war pawn
+
+!eyes
 
 >u
 
@@ -494,6 +498,24 @@ The eyes show nothing. You've changed up everything you need with the prime oar.
 #+testcase-values-eyes-number-of-pun-tweaker-is-46
 >eye pun tweaker
 The eyes light up green and show four dots, then six dots.
+
+#testcase-values-eyes-number-of-pun-churn-is--53
+>eye pun churn
+The eyes glow dimly green and show five dots, then three dots.
+
+>eye
+Nothing for the general area, though the sly size-slice eyes seem to wander between the pun-churn and the pun tweaker.
+
+>punch urn
+by a bonus point
+
+#testcase-values-eyes-number-of-pun-churn-is--53
+>eye pun churn
+The eyes show nothing. You've changed up everything you need with the pun-churn.
+
+#testcase-values-eyes-number-of-punch-urn-is--1
+>eye punch urn
+The eyes show nothing. You've changed up everything you need with the punch urn.
 
 >punt weaker
 by a point
@@ -1145,4 +1167,9 @@ by a bonus point
 >a stew
 by a point
 
+# test ending stuff everywhere
 Would you like to
+by a point
+
+Would you like to RESTART, RESTORE a saved game, QUIT or UNDO the last command?
+

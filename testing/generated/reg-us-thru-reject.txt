@@ -14,6 +14,9 @@ by a point
 
 >i
 
+>x row
+take them with TAKE ALL
+
 >z
 
 #testcase-check-pre-be-chill-rule-if-player-is-not-in-beach-ill
@@ -258,6 +261,11 @@ That thought/action/observation/request brings up nothing. Us Too has a limited 
 >pry more
 That thought/action/observation/request brings up nothing. Us Too has a limited set of verbs, and the main thing is to guess a two-word phrase. To see what verbs are used, try VERBS.
 
+#testcase-check-pre-punch-urn-rule-if-player-is-not-in-beach-ill
+#testcase-reject-end-table-of-main-oronyms-pre-punch-urn-rule
+>punch urn
+That thought/action/observation/request brings up nothing. Us Too has a limited set of verbs, and the main thing is to guess a two-word phrase. To see what verbs are used, try VERBS.
+
 #testcase-check-pre-punt-weaker-rule-if-player-is-not-in-beach-ill-and-once-now-hunt-is-false
 #testcase-reject-start-table-of-main-oronyms-pre-punt-weaker-rule
 >punt weaker
@@ -338,6 +346,9 @@ That thought/action/observation/request brings up nothing. Us Too has a limited 
 >wheat rye
 That thought/action/observation/request brings up nothing. Us Too has a limited set of verbs, and the main thing is to guess a two-word phrase. To see what verbs are used, try VERBS.
 
+>nope on
+That thought/action/observation/request brings up nothing. Us Too has a limited set of verbs, and the main thing is to guess a two-word phrase. To see what verbs are used, try VERBS.
+
 #testcase-check-pre-board-red-rule-if-player-is-not-in-bore-dread
 >bore dread
 That thought/action/observation/request brings up nothing. Us Too has a limited set of verbs, and the main thing is to guess a two-word phrase. To see what verbs are used, try VERBS.
@@ -355,7 +366,7 @@ by a point
 
 >x
 
-#testcase-check-pre-a-stew-rule-if-number-of-not-discovered-stewitems->-0-and-debug-win-is-false
+#testcase-check-pre-a-stew-rule-if-nds-<-number-of-necessary-stewitems-and-debug-win-is-false
 >a stew
 You don't have all the stew ingredients you need! Currently, you have zero out of fourteen.
 
@@ -381,6 +392,11 @@ by a point
 #testcase-check-pre-summon-cheese-rule-if-sco-summon-cheese-is-true
 >summon cheese
 You already got some munchies! No need to be greedy.
+
+>x row
+
+>get all
+war pawn
 
 >u
 
@@ -698,6 +714,13 @@ You can get a PUNT WEAKER now you are able to help the pun tweaker fix the ship 
 #testcase-think-nownear-table-of-main-oronyms-pre-punt-weaker-rule
 >think
 You can get a PUNT WEAKER now you are able to help the pun tweaker fix the ship here.
+
+>punch urn
+by a bonus point
+
+#testcase-check-pre-punch-urn-rule-if-sco-punch-urn-is-true
+>punch urn
+You already have more powdered punch than you could possible use in the near future!
 
 >punt weaker
 by a point
@@ -1516,6 +1539,10 @@ That thought/action/observation/request brings up nothing. Us Too has a limited 
 >pry more
 That thought/action/observation/request brings up nothing. Us Too has a limited set of verbs, and the main thing is to guess a two-word phrase. To see what verbs are used, try VERBS.
 
+#testcase-reject-start-table-of-main-oronyms-pre-punch-urn-rule
+>punch urn
+That thought/action/observation/request brings up nothing. Us Too has a limited set of verbs, and the main thing is to guess a two-word phrase. To see what verbs are used, try VERBS.
+
 #testcase-reject-end-table-of-main-oronyms-pre-punt-weaker-rule
 >punt weaker
 That thought/action/observation/request brings up nothing. Us Too has a limited set of verbs, and the main thing is to guess a two-word phrase. To see what verbs are used, try VERBS.
@@ -1587,6 +1614,9 @@ by a bonus point
 >think
 You can make A STEW here now you have all the ingredients you need. X should list them.
 
+>nope on
+That thought/action/observation/request brings up nothing. Us Too has a limited set of verbs, and the main thing is to guess a two-word phrase. To see what verbs are used, try VERBS.
+
 >blah cough
 now
 
@@ -1617,4 +1647,9 @@ Nothing left to duplicate.
 >a stew
 by a point
 
+# test ending stuff everywhere
 Would you like to
+by a point
+
+Would you like to RESTART, RESTORE a saved game, QUIT or UNDO the last command?
+

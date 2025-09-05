@@ -22,6 +22,9 @@ The lucent row here contains, if you look at it right, something with more subje
 
 >i
 
+>x row
+take them with TAKE ALL
+
 >z
 
 >try quest
@@ -36,7 +39,7 @@ by a point
 by a bonus point
 
 >drop jot
-You haven't examined the Urgh-Ought-'Er Jot yet, though you don't need to, to win the game. Drop it anyway?
+You haven't examined the Urge-Ought-'Er Jot yet, though you don't need to, to win the game. Drop it anyway?
 Next time, you'll drop it without this nag.
 
 >undo
@@ -48,7 +51,7 @@ It's a note from Aunt Rickie-Anne: "The items on the row/ledge may help when nee
 
 >drop jot
 You actually just crumple it up and put it in your pocket, in case you need to start a fire later to, I don't know, cook stuff. Plus, littering isn't cool!
-The Urgh-Ought-'Er Jot is out of your conscious inventory, now.
+The Urge-Ought-'Er Jot is out of your conscious inventory, now.
 
 >drop jot
 Nothing (significant) here like that.
@@ -124,6 +127,11 @@ You already discarded the loose intro that discusses design and such for Us Too,
 
 >summon cheese
 by a point
+
+>x row
+
+>get all
+war pawn
 
 >u
 
@@ -221,6 +229,9 @@ by a point
 >nw
 
 >e
+
+>punch urn
+by a bonus point
 
 >punt weaker
 by a point
@@ -321,9 +332,9 @@ by a point
 >x sign
 ***SHORTCUT COMMANDS***
 N2 or 2N or NN gets you all the way back north.
-"Ugh?! Lo, a Glow": S (command)
-Sage Oaks: SS (command)
-"Grasp, Ace: Grass" Space: SSS (command)
+"Ugh?! Lo, a Glow": S
+Sage Oaks: SS
+"Grasp, Ace: Grass" Space: SSS
 There's also a note that R cycles/rotates between "Grasp, Ace: Grass" Space, "Ugh?! Lo, a Glow" and Sage Oaks, and RR does the reverse, with no penalty for forgetting the rotation order.
 
 >sss
@@ -529,4 +540,9 @@ by a bonus point
 >a stew
 by a point
 
+# test ending stuff everywhere
 Would you like to
+by a point
+
+Would you like to RESTART, RESTORE a saved game, QUIT or UNDO the last command?
+
