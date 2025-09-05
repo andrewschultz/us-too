@@ -1958,10 +1958,12 @@ final question wording	only if victorious	topic	final response rule	final respon
 "see points [b]MISSED[r]" 	true	"missed"	track missed points rule	--
 
 this is the track missed points rule:
-	say "[one of]This list will spell out the solutions (except for the pawn) if you type [b]MISSED[r] again[or]Here are the specific commands you missed[stopping]:[paragraph break]";
+	if nonpawn-left:
+		say "[one of]This list will spell out the solutions (except for the pawn) if you type [b]MISSED[r] again[or]Here are the specific commands you missed[stopping]:[paragraph break]";
 	if sco-loose-intro is false, say "--[one of]The lucent row could be changed[or]You could've made a [b]LOOSE INTRO[r] fall from the lucent row in [mine][stopping].";
 	if sco-meh-skit is false, say "--[one of]The mess kit let you do something silly[or]You could've performed a [b]MEH SKIT[r] once you uncovered the mess pot/kit[stopping].";
 	if sco-pea-pod is false, say "--[one of]There was an optional food item in Pea Stalks[or]You could've discovered a [b]PEA POD[r] in Pea Stalks when you wondered if you could peep odd things, for a bit more food[stopping].";
+	if sco-punch-urn is false, say "--[one of]You could've acted on the pun tweaker's pun churn after getting rid of Sir Freddie[or]You could've asked for a [b]PUNCH URN[r] around the pun tweaker's pun churn[stopping] (must restart to achieve).";
 	if sco-tour-boaters is false, say "--[one of]Turbo Tours could've used a rebrand[or]You could've made Turbo Tours more relaxed by renaming it [b]TOUR BOATERS[r][stopping].";
 	if opt-blah-cough is false:
 		if blocked-bonus > 0:
@@ -1976,7 +1978,7 @@ final question wording	only if victorious	topic	final response rule	final respon
 
 this is the poker cheat rule:
 	if gs-found-real-win is false:
-		say "Well, your friends didn't believe your whole tale of how you got here, and how you provided this nice meal, so they'd never believe you could cheat like this.[paragraph break]Of course, you're not playing for high stakes, but it's the principle of the thing. Next time when you all go out to eat, it's your treat. Your friends applaud your generosity, but you say it wa nothing. It really was, too.";
+		say "You manage to discover a few aces and twos that weren't there, when you need them. You're not sure where they go, or where they came from. But the lawyers catch on, smiling. You start winning, and before it's over, they say 'Well done. A little extra for you. [ara] had a magic gem, one passed down only to those who were fully worthy. It provided insight into people's hearts.'[paragraph break]You ask what it could be.[paragraph break]They show you. You nod politely, saying it's very nice.[paragraph break]'It is a whinge-you'll-win jewel. It causes greedy people to overreact. Some will say they must have it. Some will say they own better jewels. Some will say they deserve it more than So-and-So. Even if they can't see it or ar near it, they will show their seedy side. Some may manage to keep the mask up for a while.'[paragraph break]You mention you're not sure you want that kind of power, and they say--well, yes, it's no fun to carry around. But it will be there when you need it. Why, [ara] used it to help sort out ... certain family members. Not exclusively. But to confirm her suspicions. For better or worse. You shake hands with the lawyers again, and they leave. You receive the jewel a week later.";
 	else:
 		say "You already cheated to win, but you did so because it was the right thing to do. You have everything you want. Don't get greedy. What would [ara] say?";
 	now gs-found-real-win is true;
@@ -1984,9 +1986,12 @@ this is the poker cheat rule:
 The hack to say one word right rule is listed before the standard respond to final question rule in for handling the final question.
 
 This is the hack to say one word right rule:
-	if the player's command includes "ace" or the player's command includes "two":
-		if gs-found-real-win is true:
-			say "An interesting idea.";
+	let temp be 0;
+	if the player's command includes "ace", increment temp;
+	if the player's command includes "two", increment temp;
+	if temp is 1:
+		if gs-found-real-win is false:
+			say "An interesting idea forms halfway in your mind.";
 		else:
 			say "There is/was no other way to cheat.";
 		the rule succeeds;

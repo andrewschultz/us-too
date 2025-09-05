@@ -266,7 +266,12 @@ to decide which number is toon-guess-score:
 	decide on (boolval of gs-toon-guess-1) + (boolval of gs-toon-guess-2);
 
 to decide which number is blocked-bonus:
-	decide on (boolval of sco-pea-pod) + (boolval of sco-tour-boaters);
+	let temp be (boolval of sco-pea-pod) + (boolval of sco-tour-boaters);
+	decide on 2 - temp;
+
+to decide whether nonpawn-left:
+	if (cur-bonus + 1 - (boolval of sco-nope-on)) is max-bonus, no;
+	yes;
 
 book composite booleans
 

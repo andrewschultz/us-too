@@ -163,8 +163,7 @@ this is the post-a-stew rule:
 	wfas;
 	say "So you make the stew to pass the time until then. You try to avoid thinking of it as [i]my stew[r], because eww, that'd be a me-ill meal. [i]Our stew[r] might be, too.[paragraph break]You're no natural cook, but you do your best. (You make other random seeming stews over the years, and people always seem to appreciate them, but none quite has the flavor of this one.) After the meal, the announcement -- the mine is yours, and you can sell it now. You wonder if there's anything else, but you don't want to be greedy.";
 	wfas;
-	say "Everyone winds down by playing poker. The lawyers are, unsurprisingly, all quite good at it. Well, you're not playing with real money, so you don't mind losing. You got enough today, right? Someone asks you offhand what you call the stew. [ara] surprisingly didn't specify it. You give your answer, and you wonder if maybe there is one more subtle odd test. The lawyers seem to have an inside joke going as they finish the remains of your...";
-	follow the score and thinking changes rule;
+	say "Everyone winds down by playing poker. The lawyers are, unsurprisingly, all quite good at it. Well, you're not playing with real money, so you don't mind losing. The lawyers needle you a bit about losing.[paragraph break]You respond you got enough today, right? I wouldn't want to get greedy.[paragraph break]One of the lawyers chuckles and asks you offhand what you call the stew. [ara] surprisingly didn't specify it. You give your answer, and you wonder if maybe there is one more subtle odd test. The lawyers seem to have an inside joke going as your chips dwindle slowly. You need a miracle this hand to survive as they finish the remains of your...";
 	end the story finally saying "Place-to-Play Stew";
 	follow the shutdown rules;
 
