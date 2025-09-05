@@ -572,10 +572,10 @@ check going west in Ur Branch when sco-hike-up is true and west is not branchdon
 
 check going inside in Ur Branch when sco-guard-entry is false and garden tree is in location of player: say "The garden tree blocks you. It doesn't allow just any old visitors." instead;
 
-check going south in Ur Branch when sco-hike-up is true and extra-turns is 0 and not ordrooms-seen:
+check going south in Ur Branch when sco-hike-up is true and extra-turns is 0 and Tude Ark is not visited:
 	say "The way south gets tangled very quickly. You sense there are a lot of predators you won't be able to run from, at least, not in your current condition.";
 	if number of visited ordrooms > 0:
-		say "[line break]But all the same, you've been somewhere. There wasn't a lot to do once you got there. You wonder if there could be more.";
+		say "[line break]But all the same, you've been somewhere. Somewhere further along. Perhaps you just need to change things up, to find somewhere nearer to the south.";
 	the rule succeeds;
 
 chapter herbs
@@ -608,11 +608,11 @@ report examining sign ought sigh not:
 
 after printing the locale description of ur branch when player was in a rotroom:
 	if sign ought sigh not is off-stage:
-		say "Ooh! There's a sign you didn't see before. A SIGN OUGHT-SIGH-NOT. It tells you how to get back to [random visited ordroom].";
+		say "[line break]Ooh! There's a sign you didn't see before. A SIGN OUGHT-SIGH-NOT. It tells you how to get back to [random visited ordroom].";
 		move sign ought to ur branch;
 	if room south of ur branch is nowhere and ordrooms-seen:
 		reveal tude ark to south;
-		say "Ooh! There's something new on the sign. A new command, to make traversing easier.";
+		say "[line break]Ooh! There's something new on the sign. A new command, to make traversing easier.";
 	continue the action;
 
 this is the south-block rule:
@@ -681,9 +681,9 @@ understand the command "ss" as something new.
 understand the command "s2" as something new.
 understand the command "2s" as something new.
 
-understand "ss" as ssing when south-sorted.
-understand "s2" as ssing when south-sorted.
-understand "2s" as ssing when south-sorted.
+understand "ss" as ssing when Sage Oaks is visited.
+understand "s2" as ssing when Sage Oaks is visited.
+understand "2s" as ssing when Sage Oaks is visited.
 
 carry out ssing:
 	abide by the south-block rule;
@@ -698,9 +698,9 @@ understand the command "sss" as something new.
 understand the command "s3" as something new.
 understand the command "3s" as something new.
 
-understand "sss" as sssing when south-sorted.
-understand "3s" as sssing when south-sorted.
-understand "s3" as sssing when south-sorted.
+understand "sss" as sssing when Tube Rod is visited.
+understand "3s" as sssing when Tube Rod is visited.
+understand "s3" as sssing when Tube Rod is visited.
 
 carry out sssing:
 	abide by the south-block rule;
@@ -1374,6 +1374,9 @@ there is a stewitem called a variety of berries. description of variety is "A bu
 
 book south branch
 
+after printing the locale description when player is in an unvisited ordroom:
+	say "[i][bracket][b]NOTE[r][i]: you can get back here with [b][which-south of location of player][r][i] to save time. No need to revisit [fort].[close bracket][r]";
+	continue the action;
 after printing the locale description when gs-nn-noted is false and (player is in a rotroom) and (player is not in an ordroom):
 	now gs-nn-noted is true;
 	say "[i][bracket][b]NOTE[r][i]: you can use [b]NN[r][i] to go back to Ur-Branch from here or (spoiler alert) any other room in the south not directly connected to Ur-Branch. Also, you can use [b]R[r][i] or [b]RR[r][i] to rotate between these rooms once you've found them all.[close bracket][i][line break]";

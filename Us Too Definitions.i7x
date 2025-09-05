@@ -117,24 +117,17 @@ to list-which-room:
 		say "with no penalty for forgetting the rotation order.";
 
 to say which-south of (orm - an ordroom):
-	if south-sorted:
-		repeat with X running from 1 to rmord of orm:
-			say "S";
-		say " (command)";
-	else:
-		say "[rmord of orm] south, [roomdirs of orm]";
+	repeat with X running from 1 to rmord of orm:
+		say "S";
 
 check going south in ur branch when extra-turns > 0 and number of visited ordrooms < 3:
 	let rm be entry extra-turns in ordrooms-in-order;
 	let is-seen be whether or not rm is visited;
 	move player to rm;
 	if is-seen is false:
-		say "You take a look around your new surroundings. [if player is in tude ark]Well, it's somewhere new, you guess.[else]Yup, somewhere new. Nice![end if]";
-		say "[line break][one of]You ran past a lot to get here. Maybe you missed something you can find later.[or]You wonder if there was a bit more to look for.[or]You take a break to look inside the pro ball. Three passages lit up to the south. You look for a fourth. Nothing. Looks like you've navigated things well and found everything south of Ur-Branch! Well, each initial passage.[stopping]";
-	else:
-		say "You've been here before. It's nice not to get lost, but you wonder where else there is.";
+		say "[line break]You realize you're somewhere new, and you look at the pro ball. A new passage lights up inside it, [one of]but the area's still mostly dim[or]but there's still some dimness nearby[or]making the whole area lit[stopping]. Looks like you've navigated things well and found everything south of Ur-Branch! Well, each initial passage.";
 	if extra-turns > 0:
-		say "[line break]You spend time pacing around [if rm is visited]the new place[else]hoping the place was new, wondering how to get somewhere else[end if]. So much time, your burst of speed vanishes.";
+		say "[line break]You spend time pacing around[if rm is visited] the new place[else], wondering how to get somewhere else[end if]. So much time, your burst of speed vanishes.";
 		now extra-turns is 0;
 	the rule succeeds;
 
