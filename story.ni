@@ -46,6 +46,8 @@ include Us Too Tables by Andrew Schultz.
 
 include Us Too Mistakes by Andrew Schultz.
 
+include Us Too I6 Replacements by Andrew Schultz.
+
 section beta testing - not for release
 
 include Us Too Beta Testing by Andrew Schultz.
