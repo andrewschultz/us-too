@@ -166,6 +166,7 @@ part "item using"
 Aight Amusing Item Using is a proper-named startthing. description of Aight is "It's a list of all the things [ara] said you need to provide a feast.". printed name of Aight is "[i]A'ight, Amusing Item Using[r]". eyes-number of Aight Amusing Item Using is 66. eyes-rule of aight is pre-summon-cheese rule.
 
 check drop2ing aight: say "[if sco-summon-cheese is true]You could still win [this-game] without [aight], now you summoned the cheese. However[else][aight] clues a specific item to find. Also[end if], it's useful for general organization, so you need to keep it, or it'd be hard to keep track of what you need." instead;
+
 to say aight-count: say "You have [nds in words] of [number of necessary stewitems in words] items"
 
 to say new-aight-bold: if nds > last-nds-x, say " ([b]BOLD[r]ing stuff found since last time)";
@@ -1172,7 +1173,7 @@ Cell Urban is a room in universal. printed name is "Cell, Urban". "[one of]THUD!
 
 part Cellar Bin
 
-Cellar Bin is a room in universal. "The only way out is back up[if gs-up-cellar-bin is true]. You know it's one-way, of course[end if].". eyes-number of Cellar Bin is -1.
+Cellar Bin is a room in universal. "[one of]You're in a bin. Not a particularly interesting one, but if your name were Abe, why, then you'd be Abe in a bin! [or][stopping]The only way out is back up[if gs-up-cellar-bin is true]. You know it's one-way, of course[end if].". eyes-number of Cellar Bin is -1.
 
 check going up in Cellar Bin:
 	if gs-up-cellar-bin is false:
@@ -1377,6 +1378,7 @@ book south branch
 after printing the locale description when player is in an unvisited ordroom:
 	say "[i][bracket][b]NOTE[r][i]: you can get back here with [b][which-south of location of player][r][i] to save time. No need to revisit [fort].[close bracket][r]";
 	continue the action;
+
 after printing the locale description when gs-nn-noted is false and (player is in a rotroom) and (player is not in an ordroom):
 	now gs-nn-noted is true;
 	say "[i][bracket][b]NOTE[r][i]: you can use [b]NN[r][i] to go back to Ur-Branch from here or (spoiler alert) any other room in the south not directly connected to Ur-Branch. Also, you can use [b]R[r][i] or [b]RR[r][i] to rotate between these rooms once you've found them all.[close bracket][i][line break]";
@@ -1720,7 +1722,9 @@ book listening
 check listening (this is the game specific ambient sound rule):
 	if forest team is touchable, say "Annoying banter from [the team]. They continued to knock you and knock you, well, verbally." instead;
 	if nigh swarm is touchable, say "The nigh swarm buzzes aggressively, which leaves you feeling slightly frozen.";
-	if player is in isle and freddie is in isle and tweaker is in isle, say "Occasional squabbling between Sir Freddie and the pun tweaker." instead;
+	if player is in isle:
+		if freddie is in isle and tweaker is in isle, say "Occasional squabbling between Sir Freddie and the pun tweaker." instead;
+		if pun churn is in isle, say "The pun tweaker is treating you to a steady pun-churn." instead;
 	if player is in deli stern, say "The [owners] talk between themselves how to drum up more business." instead;
 	if player is in scribe room, say "The occasional scratching of quills, or philosophical discussion." instead;
 	if player is in groan odes, say "[if sco-grow-nodes is false]The groan odes continue.[else]From the numbered nodes, threats of imminent destruction. But when?[end if]" instead;
@@ -1733,6 +1737,7 @@ book drinking
 the block drinking rule is not listed in any rulebook.
 
 check drinking:
+	if noun is punch urn, say "Well, you'd need water for the powder, but you realize once you got water, it'd probably be a lot healthier than this stuff." instead;
 	if noun is tea leaves, say "But they aren't properly prepared! And they don't need to be, in this game." instead;
 	if noun is an alcoholic stewitem, say "Get yourself together, man! Now is not the time![paragraph break]Anyway, uh, ... I hope I didn't drive you to drink with an unfair puzzle." instead;
 	say "You don't need to drink anything in this game." instead;
@@ -1762,7 +1767,7 @@ check ting:
 	if player is in beach and freddie is in beach:
 		if noun is pun tweaker or noun is Sir Freddie:
 			say "You don't have the skills to talk out a detente." instead;
-	if noun is pun tweaker, say "[if sir freddie is in beach]Not in the mood to chat with Sir Freddie around[else]You punch at pun chat but can't keep up with the pun tweaker[end if]." instead;
+	if noun is pun tweaker, say "[if sir freddie is in beach]Not in the mood to chat with Sir Freddie around[else if sir freddie is moot]You punch at pun chat but can't keep up with the pun tweaker's pun-churn[else]Not very punny with the ship broken[end if]." instead;
 	if noun is sageoakscen, say "[if sco-say-jokes is false]The oaks just don't seem to be bothered with regular talk[else]You wonder if you should say 'Forge, oaks, for jokes,' or ask for kludge-oaks that might clue jokes. But the oaks don't seem interested in talking[end if]." instead;
 	if noun is fey loners, say "They [if sco-dell-eastern is false]grouse about how the salesman lied that this deli had location[else if gs-deli-dell-left is false]grouse about how business had better pick up, now that the location's less dismal[else if gs-deli-ale-left is false]moan about business picked up slightly, but still not enough[else if gs-deli-beef-left is false and toon is in deli]point to the new toon they made[else if sco-wheat-rye is false and whee try is in deli]point to the WHEE TRY sign, eager to give some handouts[else]talk about how good business has gotten[end if]." instead;
 	if noun is scribes, say "The scribes more or less ignore you while continuing their scribing. [if sco-scry-broom is false]You've offered them nothing, yet.[else if sco-pro-sweeping is false]You haven't figured what to do with their broom.[else]Why, they gave you that belt (rusted) and broom, and that should really be enough![end if]" instead;

@@ -126,7 +126,7 @@ a wordtwisting rule (this is the pre-mess-pot rule):
 
 this is the post-mess-pot rule:
 	now sco-mess-pot is true;
-	say "Consulting with the pro ball, you eventually learn to understand how it displays things and, yes, you find that mess pot! And not just a mess pot, but a whole mess kit![paragraph break]But it's not just about finding a mess kit. It's about the process! You feel like you could use it better now aboveground.";
+	say "Consulting with the pro ball, you eventually learn to understand how it displays things and, yes, you find that mess pot! You're a bit worried it might be THAT kind of mess pot, but no. It's cookware. Not just a mess pot, in fact, but a whole mess kit![paragraph break]But it's not just about finding a mess kit. It's about the process! You feel like you could use it better now aboveground.";
 	move mess kit to mine ooh;
 	moot meh spot;
 
