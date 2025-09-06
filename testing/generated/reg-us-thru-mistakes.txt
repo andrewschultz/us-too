@@ -469,6 +469,38 @@ You've deciphered the toon partway but haven't guessed what to do with it. Right
 >undo
 >undo
 
+#testcase-mistake-us-too-beef-or
+>beef or
+This feels right for the first part of the toon, but seems too indecisive. Maybe the second part can give some action.
+
+>think
+You've deciphered the toon partway but haven't guessed what to do with it. Right now, you know BEFORE ------.
+!can't think of anything
+
+>undo
+>undo
+
+#testcase-mistake-us-too-beef-ore-beef-oar
+>beef ore
+Yes, that first part of the toon's interpretation seems right. But there's more.
+
+>think
+You've deciphered the toon partway but haven't guessed what to do with it. Right now, you know BEFORE ------.
+!can't think of anything
+
+>undo
+>undo
+
+>beef oar
+Yes, that first part of the toon's interpretation seems right. But there's more.
+
+>think
+You've deciphered the toon partway but haven't guessed what to do with it. Right now, you know BEFORE ------.
+!can't think of anything
+
+>undo
+>undo
+
 >beef ordering
 by a point
 

@@ -488,13 +488,20 @@ Not quite -- don't need to look for people who've been forced to pay.
 >find rinks
 by a point
 
+#testcase-homonym-reject-table-of-main-oronyms-bare-spawned-pawned-hom-bear-respond-rule
 #testcase-homonym-reject-table-of-main-oronyms-bare-spawned-hom-bear-respond-rule
 >bare xxx
 Well, yes and no, your help doesn't need to wear clothes...
 
+#+testcase-homonym-reject-table-of-main-oronyms-bare-spawned-pawned-hom-bear-respond-rule
 #testcase-homonym-detail-hom-bear-respond-rule-if-the-player's-command-includes-spawned
 >xxx spawned
 But if something were spawned, it would only mean one measly berry. You need someone or something that can help you find a bunch.
+
+#+testcase-homonym-reject-table-of-main-oronyms-bare-spawned-pawned-hom-bear-respond-rule
+#testcase-homonym-detail-hom-bear-respond-rule-else-if-the-player's-command-includes-pawned
+>xxx pawned
+No, this is far from such shops.
 
 >bear respond
 by a point
@@ -609,6 +616,23 @@ No, you need to change the word's sound. And you don't have money to shop, eithe
 by a point
 
 >e
+
+#testcase-homonym-reject-table-of-main-oronyms-joined-ear-dear-deer-hom-join-aider-rule
+#testcase-homonym-detail-hom-join-aider-rule-if-the-player's-command-includes-joined
+>joined xxx
+You're not going to find anything already joined. You have to make it so. But you're very close.
+
+#testcase-homonym-reject-table-of-main-oronyms-joined-ear-dear-deer-hom-join-aider-rule
+>join ear
+A bit too grisly. You're looking for something more general.
+
+#+testcase-homonym-detail-hom-join-aider-rule-else-if-the-player's-command-includes-ear
+>join deer
+Cute animals joining might make you feel happy, but they might not be happy here. It's two items you need to join, and you just need to ask for help the right way.
+
+#+testcase-homonym-detail-hom-join-aider-rule-else-if-the-player's-command-includes-ear
+>join dear
+Cute animals joining might make you feel happy, but they might not be happy here. It's two items you need to join, and you just need to ask for help the right way.
 
 >join aider
 by a point

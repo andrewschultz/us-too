@@ -1310,6 +1310,10 @@ The pun tweaker says "You want transport, eh? Any sort of transport? Well, I nee
 #testcase-check-pre-probe-all-rule-if-sco-probe-all-is-true
 >probe all
 You already probed the pro ball enough to get a feel for hidden exits in your surroundings! More will appear as you need them, and later, you'll be able to use it to navigate slightly trickier area maps.
+\\
+#testcase-check-pre-punch-urn-rule-if-sir-freddie-is-not-moot
+>punch urn
+{$REJECT2}
 
 @hint
 #+testcase-values-eyes-number-of-pro-ball-is-53
@@ -2307,7 +2311,10 @@ by a bonus point
 @all
 #testcase-check-pre-pea-pod-rule-fallthrough
 #testcase-run-post-pea-pod-rule-default
+#testcase-run-post-pea-pod-rule-if-gs-optional-food-noted-is-false-and-sco-peace-talks-is-false
+#testcase-run-post-pea-pod-rule-fallthrough
 Oh wait! There is something that will add a bit of flavor! Actually, it's a weird giant pea pod!
+NOTE: this bonus meal item will appear at the end when you type X, but it wasn't on the main list because it was a bit obscure. Well done. There's another, too.
 
 @hint
 #testcase-values-eyes-number-of-pea-pod-is--1
@@ -2716,6 +2723,17 @@ You already pried and got the prime oar!
 
 >nw
 
+@rej
+##balance undos
+>ne
+\\
+#testcase-check-pre-dope-ale-rule-if-player-is-not-in-deli-stern-and-once-now-hunt-is-false-if-gs-deli-dell-left-is-true
+>dope ale
+Your promises of future alcohol fall on deaf ears. The maul tower's guardians are a cynical, untrusting bunch.
+\\
+>undo
+>undo
+
 @gt
 ##balance undos
 #+testcase-room-out-ur-branch
@@ -2775,12 +2793,46 @@ The eyes glow dimly green and show five dots, then three dots.
 >eye
 Nothing for the general area, though the sly size-slice eyes seem to wander between the pun-churn and the pun tweaker.
 
+@part
+##balance undos
+#testcase-one-right-table-of-main-oronyms-punch-urn-1-punch
+>punch xxx
+{$ONEWORD}
+\\
+>think
+You're pretty sure you have one word right for deciphering something fun behind the pun-churn.
+\\
+>undo
+>undo
+\\
+#testcase-one-right-table-of-main-oronyms-punch-urn-2-urn
+>xxx urn
+{$ONEWORD}
+\\
+>think
+You're pretty sure you have one word right for deciphering something fun behind the pun-churn.
+\\
+>undo
+>undo
+
+@all
+#testcase-run-post-punt-weaker-rule-if-sco-punch-urn-is-false
+>punt weaker
+Max-down (for testing).
+\\
+>undo
+
 @!min
 >>punch urn
 by a bonus point
 
+@all
+#testcase-check-pre-punch-urn-rule-fallthrough
+#testcase-run-post-punch-urn-rule-default
+!NOTE: this bonus meal item will
+
 @hint
-#testcase-values-eyes-number-of-pun-churn-is--53
+#+testcase-values-eyes-number-of-pun-churn-is--53
 >eye pun churn
 The eyes show nothing. You've changed up everything you need with the pun-churn.
 \\
@@ -2792,6 +2844,10 @@ The eyes show nothing. You've changed up everything you need with the punch urn.
 #testcase-check-pre-punch-urn-rule-if-sco-punch-urn-is-true
 >punch urn
 You already have more powdered punch than you could possible use in the near future!
+\\
+#testcase-check-pre-dope-ale-rule-if-player-is-not-in-deli-stern-and-once-now-hunt-is-false-if-gs-deli-dell-left-is-true
+>dope ale
+Hmm, you could exchange the dough pail for dope ale, but ... nobody here wants dough, and nobody here might have dope ale
 
 >>punt weaker
 by a point
@@ -4814,13 +4870,20 @@ It's too warm out for ice rinks, but then, you didn't expect any clues to be obv
 `Berries Pond
 
 @hom
+#testcase-homonym-reject-table-of-main-oronyms-bare-spawned-pawned-hom-bear-respond-rule
 #testcase-homonym-reject-table-of-main-oronyms-bare-spawned-hom-bear-respond-rule
 >bare xxx
 Well, yes and no, your help doesn't need to wear clothes...
 \\
+#+testcase-homonym-reject-table-of-main-oronyms-bare-spawned-pawned-hom-bear-respond-rule
 #testcase-homonym-detail-hom-bear-respond-rule-if-the-player's-command-includes-spawned
 >xxx spawned
 But if something were spawned, it would only mean one measly berry. You need someone or something that can help you find a bunch.
+\\
+#+testcase-homonym-reject-table-of-main-oronyms-bare-spawned-pawned-hom-bear-respond-rule
+#testcase-homonym-detail-hom-bear-respond-rule-else-if-the-player's-command-includes-pawned
+>xxx pawned
+No, this is far from such shops.
 
 @gt
 ##balance undos
@@ -4970,6 +5033,11 @@ You can transact with the BARN OPEN in Far-Miles Farm Isles now you have food to
 #testcase-homonym-detail-hom-barn-open-rule-default
 >xxx hopin
 You can do more than hopin' to get in the barn!
+
+@hint
+#testcase-values-eyes-number-of-variety-is--1
+>eye berries
+The eyes show nothing. You've changed up everything you need with the variety of berries.
 
 >>barn open
 by a point
@@ -5264,11 +5332,11 @@ The eyes light up green and show four dots, then three dots.
 Not that way. Out or east.
 
 @rej
-#testcase-think-nownear-table-of-main-oronyms-pre-dope-ale-rule
->think
-You can trade for some DOPE ALE now you've found find willing traders with a bit extra.
-\\
+#testcase-check-pre-dope-ale-rule-if-player-is-not-in-deli-stern-and-once-now-hunt-is-false-if-gs-deli-dell-left-is-true
 >e
+\\
+>dope ale
+Just go back inside the deli. They're ready to swap.
 \\
 #testcase-think-nowfar-table-of-main-oronyms-pre-dope-ale-rule
 >think
@@ -5411,6 +5479,40 @@ Yes, that feels like one part of what's on the Toon Eat-Too-Neat you need to cha
 \\
 >think
 You've deciphered the toon partway but haven't guessed what to do with it. Right now, you know ------ DURING.
+\\
+>undo
+>undo
+
+@mis+
+##balance undos
+#testcase-mistake-us-too-beef-or
+>beef or
+This feels right for the first part of the toon, but seems too indecisive. Maybe the second part can give some action.
+\\
+>think
+You've deciphered the toon partway but haven't guessed what to do with it. Right now, you know BEFORE ------.
+!can't think of anything
+\\
+>undo
+>undo
+\\
+#testcase-mistake-us-too-beef-ore-beef-oar
+>beef ore
+Yes, that first part of the toon's interpretation seems right. But there's more.
+\\
+>think
+You've deciphered the toon partway but haven't guessed what to do with it. Right now, you know BEFORE ------.
+!can't think of anything
+\\
+>undo
+>undo
+\\
+>beef oar
+Yes, that first part of the toon's interpretation seems right. But there's more.
+\\
+>think
+You've deciphered the toon partway but haven't guessed what to do with it. Right now, you know BEFORE ------.
+!can't think of anything
 \\
 >undo
 >undo
@@ -5863,6 +5965,24 @@ The only way out is back west.
 `Bore Dread
 \\
 >undo
+
+@hom
+#testcase-homonym-reject-table-of-main-oronyms-joined-ear-dear-deer-hom-join-aider-rule
+#testcase-homonym-detail-hom-join-aider-rule-if-the-player's-command-includes-joined
+>joined xxx
+You're not going to find anything already joined. You have to make it so. But you're very close.
+\\
+#testcase-homonym-reject-table-of-main-oronyms-joined-ear-dear-deer-hom-join-aider-rule
+>join ear
+A bit too grisly. You're looking for something more general.
+\\
+#+testcase-homonym-detail-hom-join-aider-rule-else-if-the-player's-command-includes-ear
+>join deer
+Cute animals joining might make you feel happy, but they might not be happy here. It's two items you need to join, and you just need to ask for help the right way.
+\\
+#+testcase-homonym-detail-hom-join-aider-rule-else-if-the-player's-command-includes-ear
+>join dear
+Cute animals joining might make you feel happy, but they might not be happy here. It's two items you need to join, and you just need to ask for help the right way.
 
 @part
 ##balance undos
@@ -6567,9 +6687,7 @@ by a point
 
 @all
 #testcase-check-pre-a-stew-rule-fallthrough
-#testcase-run-post-a-stew-rule-fallthrough
 #testcase-run-post-a-stew-rule-default
-#testcase-run-post-a-stew-rule-follow-the-score-and-thinking-changes-rule
 #testcase-run-post-a-stew-rule-follow-the-shutdown-rules
 You look at A'ight, Amusing Item Using. You have everything you need, but you don't have, well, a cohesive dish. You remember the lawyers needling you with "us too." Yes, that's what it has to be. You call them and your friends. They're prepared -- the mine is only an hour's drive from the city.
 So you make the stew to pass the time until then. You try to avoid thinking of it as my stew, because eww, that'd be a me-ill meal. Our stew might be, too.

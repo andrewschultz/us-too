@@ -477,6 +477,10 @@ The pun tweaker says "You want transport, eh? Any sort of transport? Well, I nee
 >probe all
 You already probed the pro ball enough to get a feel for hidden exits in your surroundings! More will appear as you need them, and later, you'll be able to use it to navigate slightly trickier area maps.
 
+#testcase-check-pre-punch-urn-rule-if-sir-freddie-is-not-moot
+>punch urn
+That thought/action/observation/request brings up nothing. Us Too has a limited set of verbs, and the main thing is to guess a two-word phrase. To see what verbs are used, try VERBS.
+
 #testcase-think-once-table-of-main-oronyms-pre-punt-weaker-rule
 >think
 You can get a PUNT WEAKER once you are able to help the pun tweaker fix the ship here.
@@ -705,6 +709,15 @@ You already pried and got the prime oar!
 
 >nw
 
+>ne
+
+#testcase-check-pre-dope-ale-rule-if-player-is-not-in-deli-stern-and-once-now-hunt-is-false-if-gs-deli-dell-left-is-true
+>dope ale
+Your promises of future alcohol fall on deaf ears. The maul tower's guardians are a cynical, untrusting bunch.
+
+>undo
+>undo
+
 #testcase-think-nowfar-table-of-main-oronyms-pre-punt-weaker-rule
 >think
 You can get a PUNT WEAKER now you are able to help the pun tweaker fix the ship in Bless-and-Bleah Sand.
@@ -721,6 +734,10 @@ by a bonus point
 #testcase-check-pre-punch-urn-rule-if-sco-punch-urn-is-true
 >punch urn
 You already have more powdered punch than you could possible use in the near future!
+
+#testcase-check-pre-dope-ale-rule-if-player-is-not-in-deli-stern-and-once-now-hunt-is-false-if-gs-deli-dell-left-is-true
+>dope ale
+Hmm, you could exchange the dough pail for dope ale, but ... nobody here wants dough, and nobody here might have dope ale
 
 >punt weaker
 by a point
@@ -1177,11 +1194,11 @@ The fey loners/fail-owners almost look bright for a minute. "Hey, we could pull 
 
 >w
 
-#testcase-think-nownear-table-of-main-oronyms-pre-dope-ale-rule
->think
-You can trade for some DOPE ALE now you've found find willing traders with a bit extra.
-
+#testcase-check-pre-dope-ale-rule-if-player-is-not-in-deli-stern-and-once-now-hunt-is-false-if-gs-deli-dell-left-is-true
 >e
+
+>dope ale
+Just go back inside the deli. They're ready to swap.
 
 #testcase-think-nowfar-table-of-main-oronyms-pre-dope-ale-rule
 >think

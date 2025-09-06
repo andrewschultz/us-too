@@ -753,6 +753,26 @@ You're pretty sure you have one word right for trading with the pun tweaker.
 >undo
 >undo
 
+#testcase-one-right-table-of-main-oronyms-punch-urn-1-punch
+>punch xxx
+A voice in your head encourages you: "Seem, or see, more!" You've got SOMETHING right, here.
+
+>think
+You're pretty sure you have one word right for deciphering something fun behind the pun-churn.
+
+>undo
+>undo
+
+#testcase-one-right-table-of-main-oronyms-punch-urn-2-urn
+>xxx urn
+A voice in your head encourages you: "Seem, or see, more!" You've got SOMETHING right, here.
+
+>think
+You're pretty sure you have one word right for deciphering something fun behind the pun-churn.
+
+>undo
+>undo
+
 >punch urn
 by a bonus point
 

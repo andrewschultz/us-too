@@ -53,7 +53,7 @@ w1 (text)	w2 (text)	first-hom (text)	second-hom	hom-txt-rule (rule)	first-exact	
 "tour"	"boaters"	--	--	--	false	false	false	false	"bringing more business to Turbo Tours"	false	true	false	false	false	turbo tours	pre-tour-boaters rule	post-tour-boaters rule	--	--
 "find"	"rinks"	"fined"	--	hom-find-rinks rule	false	false	false	false	"seeing another place on the Farm Isles"	false	true	true	false	false	far miles farm isles	pre-find-rinks rule	post-find-rinks rule	--	--
 "barn"	"open"	--	"hopin"	hom-barn-open rule	false	false	false	false	"overcoming rejection from the bar"	false	true	true	false	false	far miles farm isles	pre-barn-open rule	post-barn-open rule	--	"You can transact with the [b]BARN OPEN[r] [here-in of Farm Isles] [once-now of pre-barn-open rule] you have food to barter."
-"bear"	"respond"	"bare"	"spawned"	hom-bear-respond rule	false	false	false	false	"getting the berries in Berries Pond"	false	true	true	false	false	berries pond	pre-bear-respond rule	post-bear-respond rule	--	--
+"bear"	"respond"	"bare"	"spawned|pawned"	hom-bear-respond rule	false	false	false	false	"getting the berries in Berries Pond"	false	true	true	false	false	berries pond	pre-bear-respond rule	post-bear-respond rule	--	--
 "saw"	"bakers"	--	--	--	false	false	false	false	"finding signs of life in Sob Acres"	false	true	true	false	false	sob acres	pre-saw-bakers rule	post-saw-bakers rule	--	--
 "dell"	"eastern"	"delist"	"urn|turn|tern"	hom-dell-eastern rule	false	false	false	false	"making Sob Acres less forbidding"	false	true	true	false	false	deli stern	pre-dell-eastern rule	post-dell-eastern rule	--	--
 "dope"	"ale"	--	"ail"	hom-dope-ale rule	false	false	false	false	"finding something to trade your dough pail for"	false	true	true	false	false	deli stern	pre-dope-ale rule	post-dope-ale rule	--	"You can trade for some [b]DOPE ALE[r] [once-now of pre-dope-ale rule] you've found find willing traders with a bit extra."
@@ -490,7 +490,7 @@ chapter joy nadir scoring
 
 this is the hom-join-aider rule:
 	if the player's command includes "joined":
-		say "You're not going to find anything joined. You need to join something actively.";
+		say "You're not going to find anything already joined. You have to make it so. But you're very close.";
 	else if the player's command includes "ear":
 		say "A bit too grisly. You're looking for something more general.";
 	else:
@@ -679,7 +679,7 @@ this is the post-pea-pod rule:
 
 to note-optional-food:
 	if gs-optional-food-noted is false:
-		say "[i][bracket][b]NOTE[r][i]: this bonus meal item will appear at the end when you type [b]X[r][i], but it wasn't on the main list because it was a bit obscure. Well done.[close bracket][line break]";
+		say "[i][bracket][b]NOTE[r][i]: this bonus meal item will appear at the end when you type [b]X[r][i], but it wasn't on the main list because it was a bit obscure. Well done. There's another, too.[close bracket][line break]";
 		now gs-optional-food-noted is true;
 
 to inside-block-back:

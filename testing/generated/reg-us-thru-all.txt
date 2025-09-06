@@ -330,7 +330,10 @@ by a bonus point
 
 #testcase-check-pre-pea-pod-rule-fallthrough
 #testcase-run-post-pea-pod-rule-default
+#testcase-run-post-pea-pod-rule-if-gs-optional-food-noted-is-false-and-sco-peace-talks-is-false
+#testcase-run-post-pea-pod-rule-fallthrough
 Oh wait! There is something that will add a bit of flavor! Actually, it's a weird giant pea pod!
+NOTE: this bonus meal item will appear at the end when you type X, but it wasn't on the main list because it was a bit obscure. Well done. There's another, too.
 
 >e
 
@@ -394,8 +397,18 @@ Surely there must be some way to get the oar, you think. And you pry constructiv
 
 >e
 
+#testcase-run-post-punt-weaker-rule-if-sco-punch-urn-is-false
+>punt weaker
+Max-down (for testing).
+
+>undo
+
 >punch urn
 by a bonus point
+
+#testcase-check-pre-punch-urn-rule-fallthrough
+#testcase-run-post-punch-urn-rule-default
+!NOTE: this bonus meal item will
 
 >punt weaker
 by a point
@@ -935,9 +948,7 @@ by a bonus point
 by a point
 
 #testcase-check-pre-a-stew-rule-fallthrough
-#testcase-run-post-a-stew-rule-fallthrough
 #testcase-run-post-a-stew-rule-default
-#testcase-run-post-a-stew-rule-follow-the-score-and-thinking-changes-rule
 #testcase-run-post-a-stew-rule-follow-the-shutdown-rules
 You look at A'ight, Amusing Item Using. You have everything you need, but you don't have, well, a cohesive dish. You remember the lawyers needling you with "us too." Yes, that's what it has to be. You call them and your friends. They're prepared -- the mine is only an hour's drive from the city.
 So you make the stew to pass the time until then. You try to avoid thinking of it as my stew, because eww, that'd be a me-ill meal. Our stew might be, too.

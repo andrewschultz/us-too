@@ -509,7 +509,7 @@ Nothing for the general area, though the sly size-slice eyes seem to wander betw
 >punch urn
 by a bonus point
 
-#testcase-values-eyes-number-of-pun-churn-is--53
+#+testcase-values-eyes-number-of-pun-churn-is--53
 >eye pun churn
 The eyes show nothing. You've changed up everything you need with the pun-churn.
 
@@ -941,6 +941,10 @@ The eyes show nothing. You've changed up everything you need with the fine drink
 #+testcase-values-eyes-number-of-bar-nopin-is-44
 >eye bar nopin
 The eyes light up green and show four dots, then four dots.
+
+#testcase-values-eyes-number-of-variety-is--1
+>eye berries
+The eyes show nothing. You've changed up everything you need with the variety of berries.
 
 >barn open
 by a point
