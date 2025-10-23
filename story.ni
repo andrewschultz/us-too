@@ -77,17 +77,42 @@ part House Well So Swell
 
 House Well How Swell is a room in intro. printed name is "House Well-How-Swell". "The lawyers look at you expectantly. You fiddle with your envelope. You hope you haven't come all this way for nothing!". eyes-number of House Well How Swell is 1.
 
+start-exam-words is a list of indexed texts that varies. start-exam-words is { "envelope", "help", "hint", "i", "inventory", "read", "think" }.
+
+to decide whether skippable-basic-meta: (- checkmeta() -)
+
+Include (-
+
+[ checkmeta i;
+  if (parse->1 == 0) rfalse;
+  i = parse-->1;
+
+  if (+in-beta+) {
+    if ((i=='j//') || (i=='jsouth//')) {
+      rtrue;
+    }
+  }
+
+  if (+debug-state+) {
+    if ((i=='test//') || (i=='gonear//')) {
+      print "!!";
+      rtrue;
+    }
+  }
+
+  if ((i=='about//') || (i=='credit//') || (i=='credits//') || (i=='ext//') || (i=='exts//') || (i=='l') || (i=='look//') || (i=='quit//')  || (i=='restart//')  || (i=='restore//')  || (i=='save//')  || (i=='transcript//') || (i=='verb//') || (i=='verbs//') || (i=='version//') || (i=='versions//')) {
+    rtrue;
+  }
+
+  rfalse;
+
+];
+
+-).
+
 after reading a command when player is in House Well How Swell:
+	if skippable-basic-meta, continue the action;
 	let w1 be word number 1 in the player's command;
-	if in-beta is true:
-		if w1 is "j" or w1 is "jsouth", continue the action;
-	if debug-state is true:
-		if w1 is "test" or w1 is "gonear":
-			continue the action;
-	if w1 is "about" or w1 is "credit" or w1 is "credits" or w1 is "verb" or w1 is "verbs" or w1 is "version" or w1 is "versions" or w1 is "ext" or w1 is "exts" or w1 is "transcript" or w1 is "quit" or w1 is "restart" or w1 is "save":
-		continue the action;
-	if the player's command exactly matches the text "look" or the player's command exactly matches the text "l" or the player's command exactly matches the text "quit" or the player's command exactly matches the text "restore":
-		continue the action;
 	if w1 is "how" and word number 2 in the player's command is "so":
 		say "One lawyer stands up and snaps their fingers. 'There you go! I knew you'd get it.";
 		increment core-score;
@@ -105,12 +130,14 @@ after reading a command when player is in House Well How Swell:
 		wfas;
 		move player to My New Mine Ooh;
 		reject the player's command;
-	if the player's command includes "envelope" or the player's command includes "think" or the player's command includes "hint" or the player's command includes "help" or w1 is "read" or w1 is "i" or w1 is "inventory":
-		say "You glance at your envelope, pretty much all you have on you, [one of][or]once again [stopping]worried you might be cheating. But you can't imagine what other clue you have.[paragraph break]The lawyers [one of]still [or][stopping]look nonchalant, fortunately. It says [hohs], contrasting [hwhs] on most of other guests['] invites.";
-		now gs-envelope is true;
-		if starter-counter > 3, now starter-counter is 3;
-		reject the player's command;
-	if number of words in the player's command > 2:
+	repeat with yy running through start-exam-words:
+		if the player's command matches the text yy:
+			say "You glance at your envelope, pretty much all you have on you, [one of][or]once again [stopping]worried you might be cheating. But you can't imagine what other clue you have.[paragraph break]The lawyers [one of]still [or][stopping]look nonchalant, fortunately. It says [hohs], contrasting [hwhs] on most of other guests['] invites.";
+			now gs-envelope is true;
+			if starter-counter > 3, now starter-counter is 3;
+			reject the player's command;
+	let nwc be number of words in the player's command;
+	if nwc > 2:
 		say "The lawyers yawn. All those words! You really are talking too much[if first-command-points > 0], though there MAY have been something in what you said...[else]![end if]";
 	else if first-command-points > 0:
 		if first-command-points is 2:
@@ -119,7 +146,7 @@ after reading a command when player is in House Well How Swell:
 			say "The lawyers['] ears seem to perk up for a second. You must be on the right track!";
 	else if the number of characters in the player's command > 8:
 		say "One of the lawyers casually remarks [ara] was never big on unnecessarily long words.";
-	else if number of words in the player's command < 2:
+	else if nwc < 2:
 		say "One of the lawyers tells you to speak up a little, there, and don't cut yourself off after just one word.";
 	else if the player's command includes "lawyers" or the player's command includes "lawyer":
 		say "The lawyers sit, stone-faced. You will get no clues from them.";
