@@ -1728,6 +1728,12 @@ check listening (this is the game specific ambient sound rule):
 	if player is in throne ow, say "[if thronescen is in throne ow]'YOU! SIT! YOU! SIT!'[else]Quiet now.[end if]" instead;
 	if location of player is pea stalks, say "Quiet and serene." instead;
 
+book attacking
+
+check attacking:
+	if noun is sageoakscen, say "You're not even violent to roar 'WEEP, OAKS' with wee pokes." instead;
+	if noun is bar nopin, say "Bar fight? Barf, aight?" instead;
+
 book drinking
 
 the block drinking rule is not listed in any rulebook.
@@ -1748,6 +1754,7 @@ check noteating:
 	if noun is egg of a guv, say "But then you wouldn't have an egg at all." instead;
 	if noun is life roots, say "High in fiber, but ... well, there's food beneath them." instead;
 	if noun is an alcoholic stewitem, say "Alcohol shouldn't replace meals." instead;
+	if noun is meat rack, say "'Eh, meat? Aim: eat,' you say to yourself, looking forward to enjoying it once everyone's there for the meal." instead;
 	if noun is an eatworthy stewitem, say "Some host you are. Wait until the meal is started." instead;
 	if noun is ingredient stewitem, say "Ugh ... needs preparation." instead;
 	if noun is uneatable stewitem, say "Can't eat that, but it'll help prepare food." instead;
