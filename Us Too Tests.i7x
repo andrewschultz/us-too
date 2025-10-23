@@ -98,17 +98,17 @@ every turn when extra-turns > 0: say "(DEBUG GAUGE) [extra-turns] extra turns, [
 
 volume test commands
 
-test wa with "test w1/test w2/meh skit/loose intro/x ledge/get all/nope on/test w3/pea pod/test w4a/punch urn/test w4b/test w5/test w61/test w7/test w8/tour boaters/test w9/test w10/test w11".
+test wa with "test w1/test w2/try quest/meh skit/loose intro/x ledge/get all/nope on/test w3/pea pod/test w4a/punch urn/test w4b/test w5/test w61/test w7/test w8/tour boaters/test w9/test w10/test w11".
 test w with "test w1/test w2/test w3//test w4a/test w4b/test w5/test w61/test w7/test w8/test w9/test w10/test w11".
 test deli with "test w1/test w2/test w3/test w4a/test w4b/test w5/test w61/test w7/test w8/test w9".
 
 chapter eyes
 
-test ey with "how so/x row/get all/eye me/eye/try quest/eye beast/eye"
+test ey with "how so/x row/get all/eye me/eye/a drawer/eye beast/eye"
 
 chapter implemented/placed
 
-test w1 with "how so/try quest/be strong/i/x/summon cheese/u/herb ranch/summer bay/e".
+test w1 with "how so/a drawer/be strong/i/x/summon cheese/u/herb ranch/summer bay/e".
 
 test w2 with "be chill/nice warm/probe all/w/d/mess pot".
 

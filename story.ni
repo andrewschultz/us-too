@@ -165,7 +165,7 @@ after printing the locale description for house when house is unvisited:
 	continue the action;
 
 this is the explain the house rule:
-	say "[i][bracket][b][one of]NOTE[or]REMINDER[stopping][r][i]: standard commands aren't necessary or useful here. You have to figure what to say. But it's not very long. Remember, you have that envelope on you, which has a clue. You can also try [b]ABOUT[r][i] or [b]VERBS[r][i] for an introduction, though they won't help with the puzzle.[close bracket][line break]";
+	say "[i][bracket][b][one of]NOTE[or]REMINDER[stopping][r][i]: standard actions beyond [b]EXAMINE[r][i] or [b]INVENTORY[r][i] aren't very useful here. You have to figure what to say. But it's not very long. Remember, you have that envelope on you, which has a clue. You can also try [b]ABOUT[r][i] or [b]VERBS[r][i] for an introduction, though they won't help with the puzzle.[close bracket][line break]";
 	now starter-counter is 0;
 	now gs-explained-house is true;
 	continue the action;
@@ -176,7 +176,7 @@ rule for printing a parser error when the latest parser error is the I Beg Your 
 
 part Trike West (you)
 
-Trike West is a person in House Well How Swell. the player is Trike West. description of Trike West is "You are 'Trike' West. People (well, except [ara], even when provoked) always said it was a weird nickname, but it was one you embraced, after being about the only kid in your neighborhood without a Big Wheel and then almost riding it into the school on the first day of first grade, then holding out on riding a real bicycle. It persisted even after you rode your bike as other kids got their drivers['] licenses.[paragraph break]'What the heck would you want to be named like that for? It stands out, yeah, but not in a good way.'[paragraph break][if player is in house]Right now, you've got just that envelope on you, trying to figure from it (and from the location) what the lawyers want from you[else if sco-try-quest is true]You've sort of proven them wrong[else]Maybe you can snap out of your funk and prove them wrong[end if].". eyes-number of Trike West is 35. eyes-rule of Trike West is pre-try-quest rule.
+Trike West is a person in House Well How Swell. the player is Trike West. description of Trike West is "You are 'Trike' West. People (well, except [ara], even when provoked) always said it was a weird nickname, but it was one you embraced, after being about the only kid in your neighborhood without a Big Wheel and then almost riding it into the school on the first day of first grade, then holding out on riding a real bicycle. It persisted even after you rode your bike as other kids got their drivers['] licenses.[paragraph break]'What the heck would you want to be named like that for? It stands out, yeah, but not in a good way.'[paragraph break][if player is in house]Right now, you've got just that envelope on you, trying to figure from it (and from the location) what the lawyers want from you[else if sco-try-quest is true]You've found something special about your name, though[else]Maybe finding something special about your name would give a small, if non-critical, boost[end if].". eyes-number of Trike West is 35. eyes-rule of Trike West is pre-try-quest rule.
 
 report examining trike when player has dense pecs:
 	say "You've also grown some dense pecs from hauling items around and navigating manual water vessels. But you know it's your mind that got you this far, and it's your mind that will see you through.";
@@ -248,10 +248,6 @@ Trike West carries Aight Amusing Item Using.
 
 check examining aight for the first time:
 	say "On inspection, you realize [aight] is sort of a recipe, full of food and food preparation items.";
-
-check examining aight when sco-try-quest is false:
-	now gs-too-soon-x-aight is true;
-	say "[aight] seems to require you to go look for all manner of weird stuff. You're just not up to fetching stuff at the moment. You don't want to feel like a gofer. You want something more purposeful. Something that at least in part relies on what makes you YOU.[paragraph break]You think you need to take a good look at yourself, what makes you unique, and so forth, to get started." instead;
 
 to default-x-to-aight:
 	say "For future reference, [b]X[r] will default to [using] in the future. It will be about as helpful to you as [b]I[r]/[b]INVENTORY[r].";
@@ -337,11 +333,7 @@ after printing the locale description for Mine Ooh when core-score is core-max -
 	say "Okay, so what do you DO with all these ingredients? What can they make? Well, the ones that are still a bit raw... perhaps you have overlooked a clue somewhere in [ara]'s original documents. A common, innocuous phrase...";
 	continue the action;
 
-My New Mine Ooh is a room in intro. printed name is "My New Mine, Ooh!". description is "You're down in your new mine, with a passage up back to the great wide world[if sco-be-strong is true]. You've cleared the way--you can't be sure of the direction, as the path twists a bit[else if sco-try-quest is false]. Fortunately it's more 'Ooh' than 'Eew.' It could go either way, you realize. But you're still finding your bearings and purpose. You feel a bit blown away being given such a big mine, and you'd feel silly wandering purposelessly[end if].". eyes-number of Mine Ooh is 1.
-
-after printing the locale description for Mine Ooh when sco-try-quest is false:
-	say "You remember the advice the lawyers gave you. Focus on you first, and don't feel you need to look around the mine too much to get started.";
-	continue the action;
+My New Mine Ooh is a room in intro. printed name is "My New Mine, Ooh!". description is "You're down in your new mine, with a passage up back to the great wide world[if sco-be-strong is true]. You've cleared the way--you can't be sure of the direction, as the path twists a bit[else if sco-a-drawer is false]. Fortunately it's more 'Ooh' than 'Eew.' It could go either way, you realize. But you're still finding your bearings and purpose. You feel a bit blown away being given such a big mine, and you'd feel silly wandering purposelessly[end if].". eyes-number of Mine Ooh is 1.
 
 After choosing notable locale objects when player is in Mine Ooh:
 	if war pawn is in mine ooh, set locale priority of war pawn to 0;
@@ -351,12 +343,15 @@ after examining lucent row:
 	now ledge is examined;
 	continue the action;
 
-check thinking in Mine Ooh when sco-try-quest is false:
+check thinking in Mine Ooh when sco-a-drawer is false:
 	say "You're a bit lost, but you track what you know:[paragraph break]";
 	say "--you went to [hwhs], called [hohs], and your response 'How so?' impressed the lawyers.";
 	say "--[the jot] and [using], given to you at the start, are ... oddly named, to say the least.";
 	say "--the lawyers reacted positively to 'My new mine, ooh!'";
-	say "--your name is Trike West. [ara] said she REALLY liked that name.";
+	if sco-try-quest is true:
+		say "--you may've figured why [ara] liked your name, Trike West ('try quest.')";
+	else:
+		say "--there may be something about your name, Trike West, which can help you with other things.";
 	if doable-hinted is 1, say "[line break]--you also figured to need to make [b]A STEW[r] from the lawyers' 'Us too,' which is down the road, but it's good to have a goal in mind.";
 	process the partial-oronym-check rule;
 	if gs-taken-inventory is false:
@@ -366,10 +361,10 @@ check thinking in Mine Ooh when sco-try-quest is false:
 	the rule succeeds;
 
 check going up in Mine Ooh:
-	if sco-try-quest is false, say "You'll probably want to go outside soon enough. But the problem is ... it's still weird, being dropped in this mine, even though you knew what was going to happen. You don't want to go wandering.[paragraph break]You need a purpose. Something unique to you. Perhaps focusing on yourself with [b]X ME[r] will help you get started." instead;
+	if sco-a-drawer is false, say "You'll probably want to go outside soon enough. But the problem is ... it's still weird, being dropped in this mine, even though you knew what was going to happen. You don't want to go wandering without a bit of help to get you started. Something concrete, beyond the aid roar." instead;
 	if sco-be-strong is false, say "[The beast] blocks your way. How wrong of it! You try shifting around, but it's unmoved. It seems to have a physical edge.[paragraph break]Maybe adjusting your mental attitude will shoo the beast (wrong)." instead;
 	if aight is not examined:
-		say "You're eager to rush out there, but perhaps you should peruse the ... documentation you were given, first. You haven't really looked at [item using] from your inventory, yet[if gs-too-soon-x-aight is true]. Well, you did, but you weren't in the right headspace to concentrate then. You are now[end if].[paragraph break]And sure, you could go out there and find stuff scattershot, but why not have some direction?" instead;
+		say "You're eager to rush out there, but perhaps you should peruse the ... documentation the beast left behond, first. You haven't really looked at [item using] from your inventory, yet.[paragraph break]And sure, you could go out there and find stuff scattershot, but why not have some direction?" instead;
 	if ur branch is unvisited, say "So you begin your quest...";
 	if test-mine-only is true:
 		say "Or you would, if this wasn't a test version. Thanks for getting through.";
@@ -381,6 +376,12 @@ check going up in Mine Ooh:
 chapter beast wrong
 
 the beast wrong is a sentient. printed name is "beast (wrong)". "A beast (wrong) blocks your way out. You know it shouldn't be there. You know you shouldn't be afraid of it. But you are.". description is "You feel as though you shouldn't be as frightened as you are by it, but you just can't flip that switch.". eyes-number of beast wrong is 26. eyes-rule of beast wrong is pre-be-strong rule.
+
+chapter roar/drawer
+
+the aid roar is a thing in Mine Ooh. "[one of]An aid roar[or]That aid roar still[stopping] echoes through the mine.". description is "The aid roar [one of]goes[or]continues[stopping] 'Daze-tough-day stuff!' What is it cluing you to?". eyes-number of aid roar is 16. eyes-rule of aid roar is pre-a-drawer rule.
+
+check listening to aid roar: try examining aid roar instead;
 
 chapter hintthings in mine
 
@@ -1561,9 +1562,9 @@ volume unsorted
 
 volume warp on modification(s)
 
-check warponing when player is not examined and sco-try-quest is false:
+check warponing when player is not examined and sco-a-drawer is false:
 	if word number 1 in the player's command is not "wp":
-		say "[one of]The war pawn wags its finger, then points its finger at you, at its eyes, and at you again. Sounds like a suggestion to [b]X ME[r] before using the pawn. Well, it's good to know where to start[or]The war pawn isn't going to help until you [b]X ME[r] or figure the first point. The two are related[stopping]." instead;
+		say "[one of]The war pawn wags a finger, then cups its hand over both ears, as if to say: listen, and don't use me too early![or]The war pawn cups its hands over bothe ears again. This must be a hint about the first point.[stopping]." instead;
 
 check warponing when lucent row is in mine and player is in mine and gs-warn-mine-pawn is false:
 	now gs-warn-mine-pawn is true;
@@ -1743,6 +1744,7 @@ report eyering when player is in throne and thronescen is in throne:
 book listening
 
 check listening (this is the game specific ambient sound rule):
+	if aid roar is touchable, try examining aid roar instead;
 	if forest team is touchable, say "Annoying banter from [the team]. They continued to knock you and knock you, well, verbally." instead;
 	if nigh swarm is touchable, say "The nigh swarm buzzes aggressively, which leaves you feeling slightly frozen.";
 	if player is in isle:
@@ -1992,9 +1994,10 @@ table of final question options (continued)
 final question wording	only if victorious	topic	final response rule	final response activity
 "see points [b]MISSED[r]" 	true	"missed"	track missed points rule	--
 
-this is the track missed points rule:
+this is the track missed points rule: [remember, one bonus point for not using the war pawn]
 	if nonpawn-left:
 		say "[one of]This list will spell out the solutions (except for the pawn) if you type [b]MISSED[r] again[or]Here are the specific commands you missed[stopping]:[paragraph break]";
+	if sco-try-quest is false, say "--[one of]You could have riffed on your own name for a small but useless emotional boost[or]You could've said [b]TRY QUEST[r] to yourself at any time[stopping].";
 	if sco-loose-intro is false, say "--[one of]The lucent row could be changed[or]You could've made a [b]LOOSE INTRO[r] fall from the lucent row in [mine][stopping].";
 	if sco-meh-skit is false, say "--[one of]The mess kit let you do something silly[or]You could've performed a [b]MEH SKIT[r] once you uncovered the mess pot/kit[stopping].";
 	if sco-pea-pod is false, say "--[one of]There was an optional food item in Pea Stalks[or]You could've discovered a [b]PEA POD[r] in Pea Stalks when you wondered if you could peep odd things, for a bit more food[stopping].";

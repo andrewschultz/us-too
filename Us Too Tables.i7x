@@ -10,8 +10,9 @@ volume the main table
 
 table of main oronyms
 w1 (text)	w2 (text)	first-hom (text)	second-hom	hom-txt-rule (rule)	first-exact	first-close	second-exact	second-close	part-explain	think-cue	okflip	core	idid	everfail	best-room	check-rule	run-rule	wfull (topic)	think-advice (text)
+"a|eh"	"drawer"	--	--	--	false	false	false	false	"figuring where the aid roar is guiding you"	false	true	true	false	false	mine ooh	pre-a-drawer rule	post-a-drawer rule	--	--
 "loose"	"intro"	"loosed|loosened"	--	hom-loose-intro rule	false	false	false	false	"finding something hidden in the lucent row"	false	true	false	false	false	my new mine ooh	pre-loose-intro rule	post-loose-intro rule	--	--
-"try"	"quest"	--	--	--	false	false	false	false	"how to get started and what to do"	false	true	true	false	false	mine ooh	pre-try-quest rule	post-try-quest rule	--	--
+"try"	"quest"	--	--	--	false	false	false	false	"how to get started and what to do"	false	true	false	false	false	--	pre-try-quest rule	post-try-quest rule	--	--
 "be"	"strong"	"bee"	--	hom-be-strong rule	false	false	false	false	"getting rid of the beast"	false	true	true	false	false	mine ooh	pre-be-strong rule	post-be-strong rule	--	--
 "mess"	"pot"	--	--	--	false	false	false	false	"making the meh spot into something more useful"	false	true	true	false	false	mine ooh	pre-mess-pot rule	post-mess-pot rule	--	--
 "meh"	"skit"	--	--	--	false	false	false	false	"having harmless, useless fun with the mess kit"	false	true	false	false	false	mine ooh	pre-meh-skit rule	post-meh-skit rule	--	--
@@ -79,20 +80,26 @@ w1 (text)	w2 (text)	first-hom (text)	second-hom	hom-txt-rule (rule)	first-exact	
 "use"	"it"	"yews|yew"	--	--	false	false	false	false	"disobeying the throne's orders"	false	true	true	false	false	throne	pre-use-it rule	post-use-it rule	--	"You can [b]USE IT[r] [here-in of Throne Ow] [once-now of pre-use-it rule] you have an item of power to use."
 "lie"	"fruits"	"lye"	--	hom-lie-fruits rule	false	false	false	false	"getting something useful from the life roots"	false	true	true	false	false	throne	pre-lie-fruits rule	post-lie-fruits rule	--	--
 
+book intro scoring
+
 chapter mine ooh scoring
 
-a wordtwisting rule (this is the pre-try-quest rule):
-	if sco-try-quest is true:
-		vcal "You already have an idea of your quest!";
+a wordtwisting rule (this is the pre-a-drawer rule):
+	if player is not in mine ooh, unavailable;
+	if sco-a-drawer is true:
+		vcal "You can't hear the aid roar any more, and the drawer held enough, anyway.";
 		already-done;
 	ready;
 
-this is the post-try-quest rule:
-	now sco-try-quest is true;
-	say "Yes, yes. That's what really matters. Your quest.[paragraph break]You doze off, and when you awake, you find ... well, a beast, wrong, blocking your way.";
+this is the post-a-drawer rule:
+	now sco-a-drawer is true;
+	say "'A drawer,' you mutter to yourself, and then, to cover all the bases, 'Eh?! Drawer?!'";
+	say "[line break]Now you know what to look for, your stumbling around has more purpose. You find that drawer, and in it, there are two items: [eyes] and a war pawn! You look at them a bit, struggling to figure them out. They seem helpful, but with all this stuff, you doze off from overload.";
+	say "[line break]When you wake up, you notice a beast (wrong) blocking the way up and out of the mine. Oh, great.";
 	move beast wrong to mine ooh;
-	now player has aight;
-	declue the player;
+	now player has eyes;
+	now player has war pawn;
+	moot aid roar;
 
 a wordtwisting rule (this is the pre-nice-warm rule):
 	if nigh swarm is not touchable, unavailable;
@@ -114,8 +121,10 @@ a wordtwisting rule (this is the pre-be-strong rule):
 
 this is the post-be-strong rule:
 	now sco-be-strong is true;
-	say "You manage to stand up to the beast a bit. It could beat you, sure, but you're not worth the effort. It trudges off, no longer blocking you from leaving. It has easier prey. 'Be stranger, beast-ranger,' you call out, gaining confidence.";
+	say "You manage to stand up to the beast a bit. It could beat you, sure, but you're not worth the effort. After tearing up the entrance a bit, it trudges off, no longer blocking you from leaving. It has easier prey. 'Be stranger, beast-ranger,' you call out, gaining confidence.";
+	say "[line break]But what's this? The beast's ending tantrum uncovered something. [aight]. You pick it up.";
 	moot beast wrong;
+	now player has aight;
 
 a wordtwisting rule (this is the pre-mess-pot rule):
 	if meh spot is not touchable and mess kit is not touchable, unavailable;
@@ -1376,6 +1385,19 @@ this is the post-lie-fruits rule:
 	now player has assortment;
 	block-and-back;
 
+book room-variant scoring
+
+a wordtwisting rule (this is the pre-try-quest rule):
+	if sco-try-quest is true:
+		vcal "You already pep-talked your task[if sco-be-strong is false], whatever it is,[end if] into a quest!";
+		already-done;
+	ready;
+
+this is the post-try-quest rule:
+	now sco-try-quest is true;
+	say "You take time to reframe your task as a quest. It doesn't have any concrete results, but you feel a surge of motivation and a sense of being glad you're you and have the name you do.";
+	declue the player;
+
 volume loose intro
 
 to say ur-branch-desc: say "the [if branch is visited]Ur-Branch[else]hub room just after the mine[end if]"
@@ -1395,7 +1417,7 @@ volume directions
 
 table of noways
 noway-rm	noway-txt
-My New Mine Ooh	"There are no secret passages in the mine. The only way out is up. Right now, you [if sco-try-quest is false]need to find a purpose, or errand, or ... there's another word, here[else if sco-be-strong is false]really should get rid of that beast, so you can actually go up[else if branch is unvisited]should probably just go that way[else if at-last-point]don't need to go back, since you're close to done[else]probably want to return aboveground[end if]."
+My New Mine Ooh	"There are no secret passages in the mine. The only way out is up. Right now, you [if sco-a-drawer is false]are still getting oriented. You need to find anything that will help you get around[else if sco-be-strong is false]really should get rid of that beast, so you can actually go up[else if branch is unvisited]should probably just go that way[else if at-last-point]don't need to go back out, since you're close to done[else]probably want to return aboveground[end if]."
 Ur Branch	"You can't go [noun][if noun is eventual] yet[end if][if south is branchdone and west is branchdone]. There are no new ways to go[end if]."
 Beach Ill	"You can only walk back west[if sco-punt-weaker is true] or take the punt east[end if]."
 Pile Up Isle	"You can't see land anywhere except back to the west."

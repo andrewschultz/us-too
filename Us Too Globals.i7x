@@ -10,9 +10,9 @@ chapter scoring
 
 core-max is a number that varies. core-max is 64.
 
-cur-max-bonus is a number that varies. cur-max-bonus is 6.
+cur-max-bonus is a number that varies. cur-max-bonus is 7.
 
-max-bonus is a number that varies. max-bonus is 6.
+max-bonus is a number that varies. max-bonus is 7.
 
 chapter game states
 
@@ -58,7 +58,6 @@ chapter after prologue, optional and unlikely, mostly to funnel player to the ri
 
 undo-okayed is a truth state that varies.
 gs-loose-intro-read is a truth state that varies.
-gs-too-soon-x-aight is a truth state that varies.
 gs-warn-mine-pawn is a truth state that varies.
 
 chapter game-critical, or definitely seen in the course of the game
@@ -282,6 +281,8 @@ sco-lie-fruits is a truth state that varies.
 sco-tea-leaves is a truth state that varies.
 
 sco-punch-urn is a truth state that varies.
+
+sco-a-drawer is a truth state that varies.
 
 book unsorted
 
