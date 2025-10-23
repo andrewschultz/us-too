@@ -13,7 +13,6 @@ w1 (text)	w2 (text)	first-hom (text)	second-hom	hom-txt-rule (rule)	first-exact	
 "loose"	"intro"	"loosed|loosened"	--	hom-loose-intro rule	false	false	false	false	"finding something hidden in the lucent row"	false	true	false	false	false	my new mine ooh	pre-loose-intro rule	post-loose-intro rule	--	--
 "try"	"quest"	--	--	--	false	false	false	false	"how to get started and what to do"	false	true	true	false	false	mine ooh	pre-try-quest rule	post-try-quest rule	--	--
 "be"	"strong"	"bee"	--	hom-be-strong rule	false	false	false	false	"getting rid of the beast"	false	true	true	false	false	mine ooh	pre-be-strong rule	post-be-strong rule	--	--
-"nice"	"warm"	--	--	--	false	false	false	false	"making the swarm less aggressive"	false	true	true	false	false	mine ooh	pre-nice-warm rule	post-nice-warm rule	--	--
 "mess"	"pot"	--	--	--	false	false	false	false	"making the meh spot into something more useful"	false	true	true	false	false	mine ooh	pre-mess-pot rule	post-mess-pot rule	--	--
 "meh"	"skit"	--	--	--	false	false	false	false	"having harmless, useless fun with the mess kit"	false	true	false	false	false	mine ooh	pre-meh-skit rule	post-meh-skit rule	--	--
 "a"	"stew"	"uh|uhh|uhhh"	--	hom-a-stew rule	false	false	false	false	"[if at-last-point]achieving the game's objective[else]something down the road with the word A[end if]"	false	true	true	false	false	mine ooh	pre-a-stew rule	post-a-stew rule	--	"You can make [b]A STEW[r] [here-in of mine ooh] [once-now of pre-a-stew rule] you have all the ingredients you need. [b]X[r] should list them."
@@ -22,6 +21,7 @@ w1 (text)	w2 (text)	first-hom (text)	second-hom	hom-txt-rule (rule)	first-exact	
 "blah|bleh|bleah|bla|blaa|blaah"	"copse"	"cops"	--	hom-blah-copse rule	false	false	false	false	"avoiding the black ops"	false	true	true	false	false	ur branch	pre-blah-copse rule	post-blah-copse rule	--	--
 "guard"	"entry"	--	"entree"	hom-guard-entry rule	false	false	false	false	"finding a way past the garden tree"	false	true	true	false	false	ur branch	pre-guard-entry rule	post-guard-entry rule	--	--
 "be"	"chill"	"bee"	--	--	false	false	false	false	"dealing with the beach, ill"	false	true	true	false	false	Beach Ill	pre-be-chill rule	post-be-chill rule	--	--
+"nice"	"warm"	--	--	--	false	false	false	false	"making the swarm less aggressive"	false	true	true	false	false	beach ill	pre-nice-warm rule	post-nice-warm rule	--	--
 "punt"	"weaker"	--	--	--	false	false	false	false	"trading with the pun tweaker"	false	true	true	false	false	Beach Ill	pre-punt-weaker rule	post-punt-weaker rule	--	"You can get a [b]PUNT WEAKER[r] [once-now of pre-punt-weaker rule] you are able to help the pun tweaker fix the ship [here-in of Beach Ill]."
 "punch"	"urn"	--	--	--	false	false	false	false	"deciphering something fun behind the pun-churn"	false	true	false	false	false	Beach Ill	pre-punch-urn rule	post-punch-urn rule	--	--
 "base"	"pikes"	--	--	--	false	false	false	false	"figuring a way through the bay spikes"	false	true	true	false	false	a pile up isle	pre-base-pikes rule	post-base-pikes rule	--	--

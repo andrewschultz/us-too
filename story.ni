@@ -1,7 +1,5 @@
 "Us Too" by Hugh Morris
 
-[Ace Plitt and Ike Whipp]
-
 volume includes
 
 the release number is 1.
@@ -72,8 +70,6 @@ when play begins:
 	wfas;
 
 book you
-
-[ho-pal-hope-al]
 
 volume introductory
 
