@@ -111,10 +111,10 @@ to list-which-room:
 		say "[line break]";
 	if ordrooms-seen:
 		now gs-noted-r is true;
-		say "[line break]There's also a note that [b]R[r] cycles/rotates between [tube rod], [tude ark] and Sage Oaks, and [b]RR[r] does the reverse, ";
+		say "[line break]There's also a note that [b]R[r] cycles/rotates between [tube rod], [tude ark] and Sage Oaks. ";
 		if number of visited rotrooms is 6:
-			say "and what's more, it notes [b]R[r] also cycles/rotates between [dam pink], [scribe room] and [dust which], with [b]RR[r] doing the reverse, ";
-		say "with no penalty for forgetting the rotation order.";
+			say "And what's more, that's true for [dam pink], [scribe room] and [dust which] as well! ";
+		say "[b]RR[r] does the reverse, with no penalty for forgetting the rotation order.";
 
 to say which-south of (orm - an ordroom):
 	repeat with X running from 1 to rmord of orm:

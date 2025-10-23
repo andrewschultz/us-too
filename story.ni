@@ -872,7 +872,7 @@ check going west in Pile Up Isle:
 
 chapter punch urn
 
-the pun churn is scenery. printed name is "pun-churn". "The pun-churn is quite enjoyable. The pun tweaker's reallly good at this punny stuff, especially now they're in a better mood.". eyes-number of pun churn is -53. eyes-rule of pun churn is pre-punch-urn rule.
+the pun churn is scenery. printed name is "pun-churn". "The pun-churn is quite enjoyable. The pun tweaker's really good at this punny stuff, especially now they're in a better mood.". eyes-number of pun churn is -53. eyes-rule of pun churn is pre-punch-urn rule.
 
 the punch urn is an unnecessary stewitem. "An urn full of all the powdered drinks you imagined and then some. A total rainbow of artificial colors and garish cartoons and logos and the occasional ZERO CALORIES note.". eyes-number of punch urn is -1.
 
@@ -1159,7 +1159,7 @@ check examining fell trap:
 	say "Thud! But you're a bit more prepared for the drop this time.";
 	if extra-turns > 0:
 		if gs-bin-while-fast is true:
-			say "[line break]Unfortunately, falling down two times in quick succession knocked the speed out of you.";
+			say "[line break]Unfortunately, falling down two times in quick succession was a real hey-stop-haste op. It knocked the speed out of you.";
 			now extra-turns is 0;
 		else:
 			say "[line break]Ouch! That hurt, but you still have your speed intact. In fact, the fall was so brief, you don't think you lost any serious time. You wouldn't want to fall quickly again, though. That'd leave you dazed, even though you knew what was coming.";
@@ -1285,7 +1285,7 @@ the toon partial thinking rule is listed before the summarize thinkings rule in 
 
 chapter meat
 
-the Me Track Meat Rack is an edible stewitem. description is "It's a sample of all different sorts of meats, prepared different ways, all organized for tracking like a good rack should be.". printed name is "me-track-meat rack". eyes-number of meat rack is -1.
+the Me Track Meat Rack is an edible stewitem. description is "It's a sample of all different sorts of meats, prepared different ways, all organized for tracking like a good rack should be, with 'Meat? Ooh, Me Too!' inscribed on it.". printed name is "me-track-meat rack". eyes-number of meat rack is -1.
 
 invtext of Me Track Meat Rack is "[if sco-beef-ordering is false]a variety of meats[else]that [rack] from [deli][end if]".
 
