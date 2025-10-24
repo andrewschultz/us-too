@@ -391,6 +391,20 @@ chapter roar/drawer
 
 the aid roar is a thing in Mine Ooh. "[one of]An aid roar[or]That aid roar still[stopping] echoes through the mine.". description is "The aid roar [one of]goes[or]continues[stopping] 'Daze-tough-day stuff!' What is it cluing you to?". eyes-number of aid roar is 16. eyes-rule of aid roar is pre-a-drawer rule.
 
+roar-examines is a number that varies.
+
+report examining aid roar when roar-examines < 4:
+	increment roar-examines;
+	if roar-examines is 1:
+		say "[i][bracket][b]NOTE[r][i]: repeatedly listening to the roar will dislodge a hint item that would otherwise appear after you figure what to do with the roar.[close bracket][r]";
+	else if roar-examines is 2:
+		say "You hear rattling from ... somewhere.";
+	else if roar-examines is 3:
+		say "The rattling you heard before grows louder.";
+	else if roar-examines is 4:
+		say "You hear a rattling from somewhere. Out roll ... a pair of eyes. Somehow, you know  them to be [eyes]. Perhaps they can help you to figure what the roar is pointing to, even though they seem better at seeing than hearing.";
+		now player has eyes;
+
 check listening to aid roar: try examining aid roar instead;
 
 chapter hintthings in mine

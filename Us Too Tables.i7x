@@ -91,10 +91,17 @@ a wordtwisting rule (this is the pre-a-drawer rule):
 		already-done;
 	ready;
 
+to say it-them-pawn: say "[if eyes are off-stage]them[else]it[end if]"
+
 this is the post-a-drawer rule:
 	now sco-a-drawer is true;
 	say "'A drawer,' you mutter to yourself, and then, to cover all the bases, 'Eh?! Drawer?!'";
-	say "[line break]Now you know what to look for, your stumbling around has more purpose. You find that drawer, and in it, there are two items: [eyes] and a war pawn! You look at them a bit, struggling to figure them out. They seem helpful, but with all this stuff, you doze off from overload.";
+	say "[line break]Now you know what to look for, your stumbling around has more purpose. You find that drawer, and in it, there ";
+	if player has eyes:
+		say "is another odd item to go with [the eyes]: a war pawn! ";
+	else:
+		say "are two items: [eyes] and a war pawn! ";
+	say "You look at [it-them-pawn] a bit, struggling to figure [it-them-pawn] out. Your thoughts twist about themselves a bit, and you doze off from the overload.";
 	say "[line break]When you wake up, you notice a beast (wrong) blocking the way up and out of the mine. Oh, great.";
 	move beast wrong to mine ooh;
 	now player has eyes;
