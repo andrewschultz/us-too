@@ -286,7 +286,13 @@ chapter cheese
 
 the cheese is an eatworthy stewitem. description is "All sorts of cheese, really. Everyone is sure to like one of the types. They're probably sure to hate another, what with some types of cheese being really really polarizing, but that just leaves more for everyone else.". eyes-number of cheese is 1. indefinite article of cheese is "some".
 
-invtext of cheese is "some munchies ([if sco-summon-cheese is false]the kind is not specified. What's up with that?[run paragraph on][else][b]SUMMON[r]ed the [b]CHEESE[end if][if cheese is listed-yet][r][end if])".
+invtext of cheese is "[if sco-summon-cheese is false]some munchies[else][summoned-cheese][end if]".
+
+to say summoned-cheese:
+	if cheese is listed-yet:
+		say "[b]SUMMON[r]ed the [b]CHEESE";
+	else:
+		say "[b][i]SUMMON[r][b]ed the [b][i]CHEESE[r][b]";
 
 chapter dense pecs / den specs
 
@@ -329,7 +335,12 @@ book introduction
 part my new mine ooh
 
 after printing the locale description for Mine Ooh when core-score is core-max - 1:
-	say "Okay, so what do you DO with all these ingredients? What can they make? Well, the ones that are still a bit raw... perhaps you have overlooked a clue somewhere in [ara]'s original documents. A common, innocuous phrase...";
+	say "And you HAVE found everything. ";
+	choose row with check-rule of pre-a-stew rule in table of main oronyms;
+	if think-cue entry is true:
+		say "You've figured what to do, but you weren't ready, yet. You can [b]THINK[r] to recall what they were.";
+	else:
+		say "But what do you DO with all these ingredients? What can they make? Well, the ones that are still a bit raw ... perhaps you have overlooked a clue somewhere in [ara]'s original documents. A common, innocuous phrase...";
 	continue the action;
 
 My New Mine Ooh is a room in intro. printed name is "My New Mine, Ooh!". description is "You're down in your new mine, with a passage up back to the great wide world[if sco-be-strong is true]. You've cleared the way--you can't be sure of the direction, as the path twists a bit[else if sco-a-drawer is false]. Fortunately it's more 'Ooh' than 'Eew.' It could go either way, you realize. But you're still finding your bearings and purpose. You feel a bit blown away being given such a big mine, and you'd feel silly wandering purposelessly[end if].". eyes-number of Mine Ooh is 1.
