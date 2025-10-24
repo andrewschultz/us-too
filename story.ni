@@ -1,5 +1,7 @@
 "Us Too" by Hugh Morris
 
+[rip urge ought er jot, goal edge go ledge, lucent row (sort of)]
+
 volume includes
 
 the release number is 1.
@@ -121,11 +123,11 @@ after reading a command when player is in House Well How Swell:
 		say "Then 'MY new mine?! Ooh...'[paragraph break]'Bingo! Again! But she just wants to make sure you're worthy, so you'll have to visit there.'";
 		say "[line break]You're a bit worried. You can't just up and leave your job like that. What if it's a scam? The lawyers assure you the mine is not going anywhere. You've built up vacation time from work. You call some trusted friends. 'You're getting shafted,' a few laugh. Enough don't.";
 		wfas;
-		say "[line break]You meet up with the lawyers again. They inform you you may need to carry a lot of stuff around. They offer you an odd-looking item. '[ara] figured you would need this. It's an [ugh].' The lawyers then squabble over whether the 'A' is a short or long a. They argue over how important the pronunciation is. 'It can go either way,' one says, trying to be a peacemaker. 'At least, for other phrases. Anyway, before we forget, she wrote a [jot], too. Just introductory stuff.'";
+		say "[line break]You meet up with the lawyers again. They inform you you may need to carry a lot of stuff around. They offer you an odd-looking item. '[ara] figured you would need this. It's an [ugh].' The lawyers then squabble over whether the 'A' is a short or long a. They argue over how important the pronunciation is. 'It can go either way,' one says, trying to be a peacemaker. 'At least, for other phrases. Anyway, there'll be help down there.'";
 		say "[line break]The squabbling dies down, after some debate over whether or not you can just pronounce a word slightly differently to suit your needs. They all have to admit they've done it to prove a point.[paragraph break]'Oh ... one other thing? Invite your friends when you have everything on [ara]'s list. And, of course, invite ...'";
 		wfas;
 		say "'Us too!' the lawyers yell together, in unison.";
-		say "[line break]You check your belongings. The [ugh], to carry stuff. The [jot], for early help. You set aside vacation time... before the flight, the lawyers call you and say [ara] has made other provisions, if you need them. They tell you if you just look at yourself and be yourself, you'll figure what to do. You realize they're the sort of good lawyers that help people cover all the bases. They're not jerks who find loopholes to make rich people richer. They didn't even judge your nickname, 'Trike' West.";
+		say "[line break]You set aside vacation time... before the flight, the lawyers call you and say [ara] has made other provisions, if you need them. They tell you if you just look at yourself and be yourself, you'll figure what to do. You realize they're the sort of good lawyers that help people cover all the bases. They're not jerks who find loopholes to make rich people richer. They didn't even judge your nickname, 'Trike' West.";
 		wfas;
 		move player to My New Mine Ooh;
 		reject the player's command;
@@ -185,7 +187,7 @@ does the player mean examining Trike when player has meat rack: it is likely.
 
 part "item using"
 
-Aight Amusing Item Using is a proper-named startthing. description of Aight is "It's a list of all the things [ara] said you need to provide a feast.". printed name of Aight is "[i]A'ight, Amusing Item Using[r]". eyes-number of Aight Amusing Item Using is 66. eyes-rule of aight is pre-summon-cheese rule.
+Aight Amusing Item Using is a proper-named thing. description of Aight is "It's a list of all the things [ara] said you need to provide a feast.". printed name of Aight is "[i]A'ight, Amusing Item Using[r]". eyes-number of Aight Amusing Item Using is 66. eyes-rule of aight is pre-summon-cheese rule.
 
 check drop2ing aight: say "[if sco-summon-cheese is true]You could still win [this-game] without [aight], now you summoned the cheese. However[else][aight] clues a specific item to find. Also[end if], it's useful for general organization, so you need to keep it, or it'd be hard to keep track of what you need." instead;
 
@@ -302,32 +304,6 @@ the den specs are a plural-named thing. description is "You have no idea how coo
 
 check wearing den specs: say "[if gs-den-seen is true]No need. You found where the den was.[else][one of]Whoah! They make everything look a bit weird. [or][stopping]You'll use them to have a look around when you visit somewhere new.[end if]" instead;
 
-part urge ought er jot
-
-the urge ought er jot is a startthing. eyes-number of er jot is 1.
-
-check drop2ing urge ought er jot:
-	if er jot is not examined:
-		say "You haven't examined [the jot] yet, though you don't need to, to win the game. Drop it anyway?";
-		unless the player no-consents:
-			say "Next time, you'll drop it without this nag.";
-			the rule succeeds;
-	moot jot;
-	say "[crumple-it].";
-	the rule succeeds;
-
-to say crumple-it: say "You actually just crumple it up and put it in your pocket, in case you need to start a fire later to, I don't know, cook stuff. Plus, littering isn't cool![paragraph break][The noun] is out of your conscious inventory, now"
-
-Trike West carries the urge ought er jot. printed name of er jot is "Urge-Ought-[']Er Jot".
-
-description of Jot is "[one of]It's a[or]You reread the[stopping] note from [ara]: 'The items on the row/ledge may help when needed. No shame using them everywhere, and I won't be offended if you find them useless or even drop them. Or drop this, now you've read it. One less thing to worry about in your inventory.[paragraph break]'You can change the row/ledge itself if you want, but you don't need to. Some subjective information about your surroudings. Maybe with experience you'll have an a-ha moment, and you'll see this whole area in a new light.[paragraph break]'You could say it's a welcome of sorts.'". eyes-number of jot is 1.
-
-report examining jot:
-	if gs-jot-row-ledge is false and lucent row is in mine:
-		say "Wait? Row/ledge? You only [if player is in mine]see[else]saw[end if] a row ... hmm, small mystery, here.";
-		now gs-jot-row-ledge is true;
-	continue the action;
-
 volume main rooms
 
 book introduction
@@ -349,14 +325,9 @@ After choosing notable locale objects when player is in Mine Ooh:
 	if war pawn is in mine ooh, set locale priority of war pawn to 0;
 	if slice eyes are in mine ooh, set locale priority of slice eyes to 0;
 
-after examining lucent row:
-	now ledge is examined;
-	continue the action;
-
 check thinking in Mine Ooh when sco-a-drawer is false:
 	say "You're a bit lost, but you track what you know:[paragraph break]";
 	say "--you went to [hwhs], called [hohs], and your response 'How so?' impressed the lawyers.";
-	say "--[the jot] and [using], given to you at the start, are ... oddly named, to say the least.";
 	say "--the lawyers reacted positively to 'My new mine, ooh!'";
 	if sco-try-quest is true:
 		say "--you may've figured why [ara] liked your name, Trike West ('try quest.')";
@@ -406,69 +377,6 @@ report examining aid roar when roar-examines < 4:
 		now player has eyes;
 
 check listening to aid roar: try examining aid roar instead;
-
-chapter hintthings in mine
-
-section lucent row
-
-the lucent row is a startprop in My New Mine Ooh. eyes-number of lucent row is -55. eyes-rule of lucent row is pre-loose-intro rule.
-
-rule for deciding whether all includes startprop when taking: if lucent row is examined, it does not.
-
-check taking startprop: say "It's part of the mine. [if war pawn is off-stage][b]EXAMINE[r] it, though, for some hint items[else]Its main purpose is to display hint items, and it's probably too unwieldy for your [ugh][end if]." instead;
-
-check examining lucent row when lucent row is examined and number of hintthings in My New Mine Ooh is 0:
-	say "There's nothing on the lucent row now that you took the eyes and pawn, but it seems to hold a small mystery.";
-	say "[line break]";
-	if jot is unexamined:
-		if jot is moot:
-			say "It was there at the start. Maybe it could've helped you start, in a sense?";
-		else:
-			say "Perhaps the [er jot] would offer a clue." instead;
-	else:
-		say "Lucent is a weird word -- but you read [ara]'s jot, and it was for practice, but she wouldn't have had you do something weird early." instead;
-
-report examining lucent row:
-	if jot is unexamined:
-		say "Oh. The glare and brightness seem a bit unaesthetic, like [the noun] could even be hiding something, but it can't be a huge deal.";
-	else:
-		say "[The jot] noted it was for practice, if you wanted. But not critical. So it may hold a silly secret or two.";
-	continue the action;
-
-section goal edge go ledge
-
-the goal edge go ledge is a startprop. printed name is "Goal-Edge-Go Ledge". eyes-number of Goal Edge Go Ledge is 1. description is "It's just there to hold hint items for you. It's less noticeable than the lucent row it replaced."
-
-check taking a startprop:
-	if slice eyes are off-stage, say "You can't, but if you [b]EXAMINE[r] [the noun], you may find something on it." instead;
-	if number of hintthings in Mine Ooh is 0, say "You already took what was on [the noun]." instead;
-	say "You can just take [the list of hintthings in Mine Ooh] if you want." instead;
-
-check examining startprop when the noun is unexamined:
-	say "The items on [the noun] look weird at first, but after having a thought, you see they are [eyes] and [a war pawn]. You're free to take them with [b]TAKE ALL[r], if you want.";
-	move slice eyes to mine ooh;
-	move war pawn to mine ooh;
-	now ledge is examined;
-	now lucent row is examined;
-	the rule succeeds;
-
-chapter taking hintthings
-
-report taking a hintthing when gs-take-hintthing-note is false:
-	say "Done. (By the way, [b]TAKE[r] is only used for these helper items. For game-critical items, you [b]TAKE[r] automatically.)";
-	now gs-take-hintthing-note is true;
-	the rule succeeds;
-
-to say this-intro-supporter: say "[the random startprop in mine ooh]";
-
-report taking a hintthing when gs-take-hintthing-note is true:
-	if sco-loose-intro is true:
-		say "On taking [the noun], you see the ledge recede, as it has nothing more to offer.";
-		moot ledge;
-	else:
-		say "The lucent row starts to recede, then stops. [if jot is examined]You remember what was on [the jot], where [ara] called it a row/ledge[else]What's with that? Maybe [the jot] [ara] gave you can explain[end if].";
-	now gs-take-hintthing-note is true;
-	the rule succeeds;
 
 chapter loose intro
 
@@ -1615,12 +1523,6 @@ check warponing when player is not examined and sco-a-drawer is false:
 	if word number 1 in the player's command is not "wp":
 		say "[one of]The war pawn wags a finger, then cups its hand over both ears, as if to say: listen, and don't use me too early![or]The war pawn cups its hands over bothe ears again. This must be a hint about the first point.[stopping]." instead;
 
-check warponing when lucent row is in mine and player is in mine and gs-warn-mine-pawn is false:
-	now gs-warn-mine-pawn is true;
-	say "[b]NOTE[r]: if you are trying to figure out the lucent row, it's an optional puzzle, which the war pawn ignores. Continue anyway?";
-	unless the player yes-consents:
-		say "Okay, next time you use the war pawn in the mine, will not get this nag." instead;
-
 volume going out
 
 understand the command "o" as something new. understand "o" as outside.
@@ -1686,7 +1588,6 @@ to say x-aight: say "[b]X[if gs-using-known is false] AIGHT[end if][r]"
 
 carry out taking inventory (this is the UT specific inventory rule):
 	now all things carried by player are marked for listing;
-	now all startthings are not marked for listing;
 	now all hintthings are not marked for listing;
 	now Aw Lug All Ugh is not marked for listing;
 	if number of ughlistable things is 0:
@@ -1713,7 +1614,6 @@ carry out taking inventory (this is the UT specific inventory rule):
 	if nch > 0, say "[line break]You also have [the list of carried hintthings] [if nch is 1]is[else]are[end if] to help you solve puzzles.";
 	if cas > 0 and sco-malt-hour is false, say "[line break]You've got more than enough alcohol in the form of [the list of carried alcoholic stewitems], so maybe you can use [if cas is 1]it[else]them[end if] to bribe someone or a group of people.";
 	if player has dense pecs and sco-den-specs is false, say "[line break]You're infused with dense pecs from all your carrying stuff and using the prime oar. They may be useful in some other weird way.";
-	if player has er jot, say "[line break]You [if core-score > 10]still [end if]have that [er jot] flopping about, too. It [if er jot is examined]didn't seem too important, though, so you can drop it[else]probably only had stuff to help you get started, which [jot-usefulness][end if].";
 	now gs-taken-inventory is true;
 	the rule succeeds;
 

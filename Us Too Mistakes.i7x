@@ -16,7 +16,7 @@ volume puzzle-specific mistakes
 
 book lucent row
 
-understand "loosen trou" and "loosen trow" as a mistake ("Goodness no this isn't that sort of game, but goodness yes that's a really close guess.") when lucent row is touchable.
+understand "loosen trou" and "loosen trow" as a mistake ("Goodness no this isn't that sort of game[if sco-loose-intro is true]. You got the loose intro[else], but goodness yes that's a really close guess[end if].") when sign ought is touchable or loose intro is touchable.
 
 book forest team
 

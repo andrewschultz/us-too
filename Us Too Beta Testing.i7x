@@ -68,10 +68,7 @@ to perform (x - a number):
 		if player is not in mine:
 			say "Test 1 needs to start in mine/house.";
 			continue the action;
-		try examining lucent row;
 		score-point;
-		score-point;
-		try examining trike west;
 		try taking inventory;
 		try examining aight;
 		try taking eyes;

@@ -188,11 +188,6 @@ this is the post-loose-intro rule:
 	now sco-loose-intro is true;
 	say "A loose intro flutters down from the lucent row. You pick it up. As you do, the lucent row stops glowing and becomes a ledge. A Goal-Edge-Go Ledge, to be precise.";
 	now player has loose intro;
-	moot lucent row;
-	if lucent row is examined and eyes are not in mine and pawn is not in mine:
-		say "[line break]But then [the ledge], containing nothing, retracts after a bit. Well, you got everything you could want from it.";
-	else:
-		move ledge to My New Mine Ooh;
 
 chapter ur branch scoring
 

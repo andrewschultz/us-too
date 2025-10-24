@@ -42,7 +42,7 @@ definition: a thing (called th) is eyeable:
 	if th is not touchable, no;
 	if ur branch is visited:
 		if th is Trike west, no;
-		if th is amusing or th is er jot, no;
+		if th is amusing, no;
 		if th is war pawn, no;
 		if th is eyes, no;
 		if th is cheese or th is loose intro, no;
@@ -64,16 +64,6 @@ definition: a stewitem (called st) is discovered:
 	if st is carried, yes;
 	if st is in kitchen, yes;
 	no;
-
-a startprop is a kind of thing.
-
-initial appearance of a startprop is usually "A [item described] juts out here. [if the item described is unexamined]Looks like it's not empty[else]You see [the list of hintthings in mine ooh] on it[end if].". description of a startprop is usually "You see [the list of hintthings in mine ooh] on it.".
-
-After choosing notable locale objects when player is in mine ooh:
-	if lucent row is in mine ooh, set the locale priority of lucent row to 2;
-	if ledge is in mine ooh, set the locale priority of ledge to 2;
-
-a startthing is a kind of thing. description of a startthing is usually "You see [the list of hintthings in mine ooh] on [the item described].".
 
 volume rotroom and ordroom
 
@@ -138,7 +128,6 @@ definition: a thing (called th) is ughlistable:
 	unless th is carried, no;
 	if th is ugh, no;
 	if th is aight, no;
-	if th is er jot, no;
 	if th is dense pecs, no;
 	if th is a stewitem, no;
 	if th is a hintthing, no;
