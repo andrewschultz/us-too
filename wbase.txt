@@ -33,21 +33,20 @@ That is the mystery which drives the whole game's mechanic.
 
 Aunt Rickie-Anne liked when you said tricky.
 
-Your name is "Trike" West.
-
 Put these together...
 
 > HOW SO (1)
 
-Okay, you're wondering why, etc. Am I just being ordered around?
+Okay, so you're wondering why you're in the mine. Perhaps the aid roar can help out.
 
-Looking at yourself reminds you of your name, which is mentioned in the introduction.
+> A DRAWER (1)
 
-> X ME
+There's a standard command that can clue you to a bonus point.
 
-(Or just X).
-
-Since you are "Trike" West, this may indicate what to do. You can score your first point. But first, use two command will help you get your bearing. You can get through the game without them, just by following this walkthrough, but I think they're a good reference.
+@max
+Since you are "Trike" West, this may indicate what to do. You can earn this point at any time.
+\\
+> TRY QUEST (1)
 
 > I
 

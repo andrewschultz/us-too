@@ -177,6 +177,26 @@ There are no secret passages in the mine. The only way out is up. Right now, you
 You'll probably want to go outside soon enough. But the problem is ... it's still weird, being dropped in this mine, even though you knew what was going to happen. You don't want to go wandering.
 
 @part
+#testcase-one-right-table-of-main-oronyms-a-eh-drawer-1-a-eh
+>eh xxx
+{$ONEWORD}
+\\
+>think
+You must have one word right for figuring where the aid roar is guiding you.
+\\
+>undo
+>undo
+\\
+#testcase-one-right-table-of-main-oronyms-a-eh-drawer-2-drawer
+>xxx drawer
+{$ONEWORD}
+\\
+>think
+You must have one word right for figuring where the aid roar is guiding you.
+\\
+>undo
+>undo
+\\
 #testcase-one-right-table-of-main-oronyms-try-quest-1-try
 >try xxx
 {$ONEWORD}
@@ -198,19 +218,31 @@ You're pretty sure you have one word right for how to get started and what to do
 >undo
 
 @hint
-#testcase-values-eyes-number-of-trike-west-is-35
+#testcase-values-eyes-number-of-trike-west-is--35
 >eye me
 The eyes light up green and show three dots, then five dots.
 \\
 >eye trike west
 The eyes light up green and show three dots, then five dots.
 
->>try quest
+@alt
+#testcase-alt-words-table-of-main-oronyms-1-a-eh-drawer
+>eh drawer
+by a point
+\\
+>undo
+
+@hint
+#testcase-values-eyes-number-of-aid-roar-is-16
+>eye aid roar
+The eyes light up green and show 1 dot, then 6 dots.
+
+>>a drawer
 by a point
 
 @all
-#testcase-check-pre-try-quest-rule-fallthrough
-#testcase-run-post-try-quest-rule-default
+#testcase-check-pre-a-drawer-rule-fallthrough
+#testcase-run-post-a-drawer-rule-default
 Yes, yes. That's what really matters. Your quest.
 You doze off, and when you awake, you find ... well, a beast, wrong, blocking your way.
 
@@ -560,6 +592,21 @@ You feel you've got the words right on separate occasions for something down the
 #testcase-check-pre-board-red-rule-if-player-is-not-in-bore-dread
 >bore dread
 {$REJECT2}
+
+@rej+
+#testcase-check-pre-a-drawer-rule-if-sco-a-drawer-is-true
+>a drawer
+You can't hear the aid roar any more, and the drawer held enough, anyway.
+
+@!min
+>>try quest
+by a bonus point
+
+@all
+#testcase-check-pre-try-quest-rule-fallthrough
+#testcase-run-post-try-quest-rule-default
+Yes, yes. That's what really matters. Your quest.
+You doze off, and when you awake, you find ... well, a beast, wrong, blocking your way.
 
 @rej+
 #testcase-check-pre-try-quest-rule-if-sco-try-quest-is-true
@@ -989,6 +1036,12 @@ war pawn
 !eyes
 
 >u
+
+@rej
+#testcase-reject-start-table-of-main-oronyms-pre-a-drawer-rule
+#testcase-check-pre-a-drawer-rule-if-player-is-not-in-mine-ooh
+>a drawer
+{$REJECT2}
 
 @all
 #testcase-room-names-ur-branch
@@ -1768,7 +1821,7 @@ The eyes light up green and show three dots, then five dots.
 Hmm, that seems a bit short. Can't be them. Maybe what they're saying.
 
 @alt
-#testcase-alt-words-table-of-main-oronyms-25-nah-naw-queue
+#testcase-alt-words-table-of-main-oronyms-26-nah-naw-queue
 >naw queue
 by a point
 \\
@@ -1985,7 +2038,7 @@ You're pretty sure you have one word right for activating the morph lairs.
 >undo
 
 @alt
-#testcase-alt-words-table-of-main-oronyms-28-more-flares-flare
+#testcase-alt-words-table-of-main-oronyms-29-more-flares-flare
 >more flare
 by a point
 \\
@@ -2476,7 +2529,7 @@ You're pretty sure you have one word right for discover what the Great Inn holds
 >undo
 
 @alt
-#testcase-alt-words-table-of-main-oronyms-34-gray-grey-tin
+#testcase-alt-words-table-of-main-oronyms-35-gray-grey-tin
 >grey tin
 by a point
 \\
@@ -2573,7 +2626,7 @@ You already made enough dough!
 \\
 #testcase-think-once-table-of-main-oronyms-pre-dope-ale-rule
 >think
-You can trade for some DOPE ALE once you've found find willing traders with a bit extra.
+You can trade for some DOPE ALE once you've found willing traders with a bit extra.
 
 @part
 ##balance undos
@@ -2845,7 +2898,7 @@ The eyes show nothing. You've changed up everything you need with the punch urn.
 >punch urn
 You already have more powdered punch than you could possible use in the near future!
 \\
-#testcase-check-pre-dope-ale-rule-if-player-is-not-in-deli-stern-and-once-now-hunt-is-false-if-gs-deli-dell-left-is-true
+#+testcase-check-pre-dope-ale-rule-if-player-is-not-in-deli-stern-and-once-now-hunt-is-false-if-gs-deli-dell-left-is-true
 >dope ale
 Hmm, you could exchange the dough pail for dope ale, but ... nobody here wants dough, and nobody here might have dope ale
 
@@ -3374,7 +3427,7 @@ You're pretty sure you have one word right for operating the oak lever.
 The eyes light up green and show two dots, then six dots.
 
 @alt
-#testcase-alt-words-table-of-main-oronyms-38-oh-o-clever
+#testcase-alt-words-table-of-main-oronyms-39-oh-o-clever
 >o clever
 by a point
 \\
@@ -3590,7 +3643,7 @@ You're pretty sure you have one word right for dealing with the paralyzing whole
 >undo
 
 @alt
-#testcase-alt-words-table-of-main-oronyms-55-ho-languor-langour
+#testcase-alt-words-table-of-main-oronyms-56-ho-languor-langour
 >ho languor
 by a point
 \\
@@ -4871,7 +4924,6 @@ It's too warm out for ice rinks, but then, you didn't expect any clues to be obv
 
 @hom
 #testcase-homonym-reject-table-of-main-oronyms-bare-spawned-pawned-hom-bear-respond-rule
-#testcase-homonym-reject-table-of-main-oronyms-bare-spawned-hom-bear-respond-rule
 >bare xxx
 Well, yes and no, your help doesn't need to wear clothes...
 \\
@@ -5332,7 +5384,7 @@ The eyes light up green and show four dots, then three dots.
 Not that way. Out or east.
 
 @rej
-#testcase-check-pre-dope-ale-rule-if-player-is-not-in-deli-stern-and-once-now-hunt-is-false-if-gs-deli-dell-left-is-true
+#+testcase-check-pre-dope-ale-rule-if-player-is-not-in-deli-stern-and-once-now-hunt-is-false-if-gs-deli-dell-left-is-true
 >e
 \\
 >dope ale
@@ -5340,7 +5392,7 @@ Just go back inside the deli. They're ready to swap.
 \\
 #testcase-think-nowfar-table-of-main-oronyms-pre-dope-ale-rule
 >think
-You can trade for some DOPE ALE now you've found find willing traders with a bit extra.
+You can trade for some DOPE ALE now you've found willing traders with a bit extra.
 \\
 >w
 
@@ -5349,6 +5401,11 @@ You can trade for some DOPE ALE now you've found find willing traders with a bit
 #testcase-homonym-detail-hom-dope-ale-rule-default
 >xxx ail
 Making people sick would be wack.
+
+@rej
+#testcase-think-nownear-table-of-main-oronyms-pre-dope-ale-rule
+>think
+You can trade for some DOPE ALE now you've found willing traders with a bit extra.
 
 >>dope ale
 by a point
@@ -5972,11 +6029,11 @@ The only way out is back west.
 >joined xxx
 You're not going to find anything already joined. You have to make it so. But you're very close.
 \\
-#testcase-homonym-reject-table-of-main-oronyms-joined-ear-dear-deer-hom-join-aider-rule
+#+testcase-homonym-reject-table-of-main-oronyms-joined-ear-dear-deer-hom-join-aider-rule
 >join ear
 A bit too grisly. You're looking for something more general.
 \\
-#+testcase-homonym-detail-hom-join-aider-rule-else-if-the-player's-command-includes-ear
+#testcase-homonym-detail-hom-join-aider-rule-else-if-the-player's-command-includes-ear
 >join deer
 Cute animals joining might make you feel happy, but they might not be happy here. It's two items you need to join, and you just need to ask for help the right way.
 \\
@@ -6056,7 +6113,7 @@ You can call a JOIN AIDER in Joy Nadir now you have two items of power to join.
 You can call a JOIN AIDER here now you have two items of power to join.
 
 @alt
-#testcase-alt-words-table-of-main-oronyms-23-join-aider-adder
+#testcase-alt-words-table-of-main-oronyms-24-join-aider-adder
 >join adder
 by a point
 \\
@@ -6340,6 +6397,11 @@ Mapping outside to down, since it is the only worthwhile direction to go.
 #testcase-think-nowfar-table-of-main-oronyms-pre-a-stew-rule
 >think
 You can make A STEW in My New Mine, Ooh! now you have all the ingredients you need. X should list them.
+
+@rej
+#testcase-reject-end-table-of-main-oronyms-pre-a-drawer-rule
+>a drawer
+{$REJECT2}
 
 >d
 
