@@ -62,6 +62,7 @@ definition: a stewitem (called st) is discovered:
 	if st is mess kit:
 		if sco-mess-pot is true, yes;
 	if st is carried, yes;
+	if st is in kitchen, yes;
 	no;
 
 a startprop is a kind of thing.

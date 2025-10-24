@@ -505,6 +505,31 @@ the mess kit is a stewitem. "The mess kit you found lies here. [if at-last-point
 
 understand "mess pot" and "pot" as mess kit.
 
+chapter kitchen
+
+the kitchen is a container. "Everything you've found for [aight][if sco-meh-skit is false], including the mess kit,[end if] is in the kitchen.". description is "It could be a kitchen-gauged-kitsch-engaged or a kitsch-interest kitchen, tressed.[paragraph break]For practical purposes, though, best to think of it as where you've placed [list of things in kitchen].". eyes-number of kitchen is -1.
+
+the examine containers rule is not listed in any rulebook.
+
+check entering kitchen: say "You don't need to explicitly. When you need to work in the kitchen, just mention what you want to make.";
+
+definition: a stewitem (called li) is unkitchened:
+	if li is in kitchen, no;
+	if li is carried, yes;
+	no;
+
+after printing the locale description of ur branch (this is the drop off at kitchen rule):
+	kitchenmove;
+	continue the action;
+
+to kitchenmove:
+	if mess kit is off-stage, continue the action;
+	if number of unkitchened stewitems is 0, continue the action;
+	if extra-turns > 0, continue the action;
+	if player is not in mine ooh, say "You take a brief detour to the mine to drop off [the list of unkitchened stewitems] in the kitchen.";
+	repeat with X running through unkitchened stewitems:
+		move X to kitchen;
+
 part ur branch
 
 Ur Branch is a room in universal. It is above My New Mine Ooh. printed name is "Ur-Branch". "[if all necessary stewitems are discovered]You seem to have nothing critical left to do. You've visited all the branches and done what you need. It's likely time to go back [b]DOWN[r] to the mine and finish what remains[else][urdesc][end if].". eyes-number of Ur Branch is 45. eyes-rule of Ur Branch is pre-herb-ranch rule.

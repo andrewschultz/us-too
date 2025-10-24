@@ -131,9 +131,11 @@ a wordtwisting rule (this is the pre-mess-pot rule):
 
 this is the post-mess-pot rule:
 	now sco-mess-pot is true;
-	say "Consulting with the pro ball, you eventually learn to understand how it displays things and, yes, you find that mess pot! You're a bit worried it might be THAT kind of mess pot, but no. It's cookware. Not just a mess pot, in fact, but a whole mess kit![paragraph break]But it's not just about finding a mess kit. It's about the process! You feel like you could use it better now aboveground.";
-	move mess kit to mine ooh;
+	say "Consulting with the pro ball, you eventually learn to understand how it displays things and, yes, you find that mess pot! You're a bit worried it might be THAT kind of mess pot, but no. It's cookware. Not just a mess pot, in fact, but a whole mess kit![paragraph break]And it's not just the mess pot, but where you find it. You uncover a small kitchen, where you can stow stuff like this until you're ready.[paragraph break]But it's not just about finding a mess kit. It's about the process! You feel like you could use the pro ball better now aboveground, too.[paragraph break]In the meantime, you dump everything you have so far from [aight] into the kitchen.";
+	now player has mess kit;
+	move kitchen to mine ooh;
 	moot meh spot;
+	kitchenmove;
 
 a wordtwisting rule (this is the pre-meh-skit rule):
 	if mess kit is not touchable, unavailable;
