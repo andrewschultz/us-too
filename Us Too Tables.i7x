@@ -101,17 +101,6 @@ this is the post-a-drawer rule:
 	now player has war pawn;
 	moot aid roar;
 
-a wordtwisting rule (this is the pre-nice-warm rule):
-	if nigh swarm is not touchable, unavailable;
-	ready;
-
-this is the post-nice-warm rule:
-	now sco-nice-warm is true;
-	say "The nigh swarm grows less volatile and, yes, more nice, warm. It rises in the air, then buzzes off to somewhere to maybe be nice, cool, too. Perhaps there is a nigh school![paragraph break]Behind where the swarm was, a pro ball has rolled into view. You're not sure what sport it could be for, but it's marked PRO.";
-	moot nigh swarm;
-	move pro ball to beach ill;
-	print-the-loc;
-
 this is the hom-be-strong rule:
 	say "You fail to summon bees. Maybe you got two-thirds of the way there. Or three-fourths."
 
@@ -195,39 +184,6 @@ this is the post-loose-intro rule:
 		say "[line break]But then [the ledge], containing nothing, retracts after a bit. Well, you got everything you could want from it.";
 	else:
 		move ledge to My New Mine Ooh;
-
-book room-variant scoring
-
-a wordtwisting rule (this is the pre-den-specs rule):
-	if player does not have dense pecs, unavailable;
-	if sco-den-specs is true:
-		vcal "You don't need two pairs.";
-		already-done;
-	ready;
-
-this is the post-den-specs rule:
-	now sco-den-specs is true;
-	say "You lose a bit of strength, strength you didn't really need, and wind up with a pair of glasses that may help you find a secret passage somewhere. You hope. You're secretly happy your dense pecs remain, though you don't really pay attention to them now they got you something.";
-	now player has den specs;
-
-a wordtwisting rule (this is the pre-summon-cheese rule):
-	if aight is not examined, unavailable;
-	if sco-summon-cheese is true:
-		vcal "You already got some munchies! No need to be greedy.";
-		already-done;
-	ready;
-
-this is the post-summon-cheese rule:
-	now sco-summon-cheese is true;
-	say "You're confident you've figured what the munchies are. And you know what? You're right! You have all sorts of cheese now.";
-	now player has cheese;
-	declue Aight;
-	aight-ping;
-
-to aight-ping:
-	if gs-aight-ping is false:
-		say "[line break][i][bracket][b]NOTE[r][i]: you just found your first item [ara] requested from [aight][i]. It's now divided into items you've found and ones you haven't. You can [if gs-using-known is false]use [b]I[r][i] to take inventory and abbreviate [b]X AIGHT[r][i] to [end if][b]X[r][i] to see it all.[close bracket][r][line break]";
-		now gs-aight-ping is true;
 
 chapter ur branch scoring
 
@@ -333,6 +289,17 @@ this is the post-be-chill rule:
 	say "Your general sense of malaise disperses, which makes you more observant. Observant enough to notice a nigh swarm which ... keeps things from being perfect.";
 	move sand to Beach Ill;
 	declue-here;
+
+a wordtwisting rule (this is the pre-nice-warm rule):
+	if nigh swarm is not touchable, unavailable;
+	ready;
+
+this is the post-nice-warm rule:
+	now sco-nice-warm is true;
+	say "The nigh swarm grows less volatile and, yes, more nice, warm. It rises in the air, then buzzes off to somewhere to maybe be nice, cool, too. Perhaps there is a nigh school![paragraph break]Behind where the swarm was, a pro ball has rolled into view. You're not sure what sport it could be for, but it's marked PRO.";
+	moot nigh swarm;
+	move pro ball to beach ill;
+	print-the-loc;
 
 a wordtwisting rule (this is the pre-punch-urn rule):
 	if player is not in Beach Ill, unavailable;
@@ -643,7 +610,6 @@ this is the post-rope-ladder rule:
 	block-and-back;
 	say "[line break]And when you do, you feel [the ladder] tug you off in an odd direction. There you find a very steep ascent you'd have missed otherwise. The rope ladder seems to uncoil and go upwards briefly before returning. So now you know a way up!";
 	reveal Throne Ow Throw Now to up;
-
 
 book inside scoring
 
@@ -1397,6 +1363,37 @@ this is the post-try-quest rule:
 	now sco-try-quest is true;
 	say "You take time to reframe your task as a quest. It doesn't have any concrete results, but you feel a surge of motivation and a sense of being glad you're you and have the name you do.";
 	declue the player;
+
+a wordtwisting rule (this is the pre-den-specs rule):
+	if player does not have dense pecs, unavailable;
+	if sco-den-specs is true:
+		vcal "You don't need two pairs.";
+		already-done;
+	ready;
+
+this is the post-summon-cheese rule:
+	now sco-summon-cheese is true;
+	say "You're confident you've figured what the munchies are. And you know what? You're right! You have all sorts of cheese now.";
+	now player has cheese;
+	declue Aight;
+	aight-ping;
+
+to aight-ping:
+	if gs-aight-ping is false:
+		say "[line break][i][bracket][b]NOTE[r][i]: you just found your first item [ara] requested from [aight][i]. It's now divided into items you've found and ones you haven't. You can [if gs-using-known is false]use [b]I[r][i] to take inventory and abbreviate [b]X AIGHT[r][i] to [end if][b]X[r][i] to see it all.[close bracket][r][line break]";
+		now gs-aight-ping is true;
+
+this is the post-den-specs rule:
+	now sco-den-specs is true;
+	say "You lose a bit of strength, strength you didn't really need, and wind up with a pair of glasses that may help you find a secret passage somewhere. You hope. You're secretly happy your dense pecs remain, though you don't really pay attention to them now they got you something.";
+	now player has den specs;
+
+a wordtwisting rule (this is the pre-summon-cheese rule):
+	if aight is not examined, unavailable;
+	if sco-summon-cheese is true:
+		vcal "You already got some munchies! No need to be greedy.";
+		already-done;
+	ready;
 
 volume loose intro
 

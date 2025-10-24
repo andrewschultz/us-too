@@ -95,7 +95,6 @@ Include (-
 
   if (+debug-state+) {
     if ((i=='test//') || (i=='gonear//')) {
-      print "!!";
       rtrue;
     }
   }
