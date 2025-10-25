@@ -16,6 +16,11 @@ to decide which region is mrlp: decide on map region of location of player.
 
 book game specific (re)definitions
 
+definition: a rule (called ru) is pawnskipping:
+	if ru is pre-try-quest rule, yes;
+	if ru is pre-a-stew rule and player is not in mine, yes;
+	no;
+
 definition: a rule (called ru) is thinknoteblocking:
 	no;
 

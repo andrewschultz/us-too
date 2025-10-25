@@ -497,6 +497,7 @@ after printing the locale description for Mine Ooh when core-score is core-max -
 	now eyes-number of Mine Ooh is 14;
 	now eyes-rule of Mine Ooh is pre-a-stew rule;
 	continue the action;
+
 after printing the locale description for Ur Branch when sco-hike-up is true and southwest is branchcant (this is the second proball southwestish rule):
 	say "You track down the southwest passage pretty easily, with the help of your pro ball. It's clearly the shortest and least treacherous.";
 	reveal Fort Earns Four Turns to southwest;
