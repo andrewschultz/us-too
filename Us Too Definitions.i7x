@@ -315,7 +315,7 @@ volume command parsing
 
 rule for printing a parser error when the latest parser error is the not a verb I recognise error or the latest parser error is the didn't understand error (this is the catch bad verbs rule):
 	if player is in mine ooh and sco-a-drawer is false:
-		say "You're not quite sure how to get started and get focused. There are almost too many possibilities. The help left for you in the mine -- well, that may help make sense of things later. Right now, the aid roar is your main clue, and recapping what you know with [b]THINK[r] may be a help, too.";
+		say "You're not quite sure how to get started and get focused. It would be nice to have some concrete help. Perhaps the aid roar, if you [b]LISTEN[r], may give a clue. Recapping what you know with [b]THINK[r] may be a help, too.";
 		the rule succeeds;
 	say "[generic-parser-error].";
 	the rule succeeds;

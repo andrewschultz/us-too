@@ -12,7 +12,7 @@ table of main oronyms
 w1 (text)	w2 (text)	first-hom (text)	second-hom	hom-txt-rule (rule)	first-exact	first-close	second-exact	second-close	part-explain	think-cue	okflip	core	idid	everfail	best-room	check-rule	run-rule	wfull (topic)	think-advice (text)
 "a|eh"	"drawer"	--	--	--	false	false	false	false	"figuring where the aid roar is guiding you"	false	true	true	false	false	mine ooh	pre-a-drawer rule	post-a-drawer rule	--	--
 "loose"	"intro"	"loosed|loosened"	--	hom-loose-intro rule	false	false	false	false	"finding something hidden in the lucent row"	false	true	false	false	false	my new mine ooh	pre-loose-intro rule	post-loose-intro rule	--	--
-"try"	"quest"	--	--	--	false	false	false	false	"how to get started and what to do"	false	true	false	false	false	--	pre-try-quest rule	post-try-quest rule	--	--
+"try"	"quest"	--	--	--	false	false	false	false	"the significance of your name"	false	true	false	false	false	--	pre-try-quest rule	post-try-quest rule	--	--
 "be"	"strong"	"bee"	--	hom-be-strong rule	false	false	false	false	"getting rid of the beast"	false	true	true	false	false	mine ooh	pre-be-strong rule	post-be-strong rule	--	--
 "mess"	"pot"	--	--	--	false	false	false	false	"making the meh spot into something more useful"	false	true	true	false	false	mine ooh	pre-mess-pot rule	post-mess-pot rule	--	--
 "meh"	"skit"	--	--	--	false	false	false	false	"having harmless, useless fun with the mess kit"	false	true	false	false	false	mine ooh	pre-meh-skit rule	post-meh-skit rule	--	--
@@ -118,7 +118,7 @@ a wordtwisting rule (this is the pre-be-strong rule):
 this is the post-be-strong rule:
 	now sco-be-strong is true;
 	say "You manage to stand up to the beast a bit. It could beat you, sure, but you're not worth the effort. After tearing up the entrance a bit, it trudges off, no longer blocking you from leaving. It has easier prey. 'Be stranger, beast-ranger,' you call out, gaining confidence.";
-	say "[line break]But what's this? The beast's ending tantrum uncovered something. [aight]. You pick it up.";
+	say "[line break]You look out to see the beast off. As you do, you notice something by the entrance. [aight]. You pick it up. It seems worth reading.";
 	moot beast wrong;
 	now player has aight;
 
@@ -1419,7 +1419,7 @@ volume directions
 
 table of noways
 noway-rm	noway-txt
-My New Mine Ooh	"There are no secret passages in the mine. The only way out is up. Right now, you [if sco-a-drawer is false]are still getting oriented. You need to find anything that will help you get around[else if sco-be-strong is false]really should get rid of that beast, so you can actually go up[else if branch is unvisited]should probably just go that way[else if at-last-point]don't need to go back out, since you're close to done[else]probably want to return aboveground[end if]."
+My New Mine Ooh	"There are no secret passages in the mine. The only way out is up. [if sco-a-drawer is false]Perhaps you should look for something to help. Where is the aid roar directing you?[else if sco-be-strong is false]That beast is blocking you right now, so you need to figure how to get rid of it.[else if branch is unvisited]You should just see what's that way.[else if at-last-point]But you don't need to go back out, since you're close to done.[else]There's plenty more to explore there, still.[end if]"
 Ur Branch	"You can't go [noun][if noun is eventual] yet[end if][if south is branchdone and west is branchdone]. There are no new ways to go[end if]."
 Beach Ill	"You can only walk back west[if sco-punt-weaker is true] or take the punt east[end if]."
 Pile Up Isle	"You can't see land anywhere except back to the west."

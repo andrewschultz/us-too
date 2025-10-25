@@ -345,7 +345,7 @@ check going up in Mine Ooh:
 	if sco-a-drawer is false, say "You'll probably want to go outside soon enough. But the problem is ... it's still weird, being dropped in this mine, even though you knew what was going to happen. You don't want to go wandering without a bit of help to get you started. Something concrete, beyond the aid roar." instead;
 	if sco-be-strong is false, say "[The beast] blocks your way. How wrong of it! You try shifting around, but it's unmoved. It seems to have a physical edge.[paragraph break]Maybe adjusting your mental attitude will shoo the beast (wrong)." instead;
 	if aight is not examined:
-		say "You're eager to rush out there, but perhaps you should peruse the ... documentation the beast left behond, first. You haven't really looked at [item using] from your inventory, yet.[paragraph break]And sure, you could go out there and find stuff scattershot, but why not have some direction?" instead;
+		say "You're eager to rush out there, but perhaps you should peruse the ... documentation the beast left behind, first. You haven't really looked at [item using] from your inventory, yet.[paragraph break]And sure, you could go out there and find stuff scattershot, but why not have some direction?" instead;
 	if ur branch is unvisited, say "So you begin your quest...";
 	if test-mine-only is true:
 		say "Or you would, if this wasn't a test version. Thanks for getting through.";
@@ -373,7 +373,7 @@ report examining aid roar when roar-examines < 4:
 	else if roar-examines is 3:
 		say "The rattling you heard before grows louder.";
 	else if roar-examines is 4:
-		say "You hear a rattling from somewhere. Out roll ... a pair of eyes. Somehow, you know  them to be [eyes]. Perhaps they can help you to figure what the roar is pointing to, even though they seem better at seeing than hearing.";
+		say "You hear a rattling from somewhere. Out roll ... a pair of eyes. Somehow, you know them to be [eyes]. Perhaps they can help you to figure what the roar is pointing to, even though they seem better at seeing than hearing.";
 		now player has eyes;
 
 check listening to aid roar: try examining aid roar instead;
@@ -1843,15 +1843,15 @@ carry out abouting:
 	say "[line break]Like most of my games, [this-game] rates merciful on the Zarfian cruelty scale, which only means it's not intended to get in an unwinnable state. There are also no deaths, not even joke deaths.";
 	say "[line break][email] is my email if you wish to send transcripts or whatever, or you can report bugs there or at the GitHub site mentioned above, [ghbase]/us-too. I plan to release a post-comp version, and if enough bugs pile up after that, I may release another one.";
 
-report abouting:
+report abouting (this is the Us Too abouting rule):
 	if player is in house well:
 		say "Once you figure what to say to the lawyers (a short phrase with short words,) you will have the opportunity to uncover a small in-game document with my general relatively non-spoilery thoughts on [this-game]'s design. It's not necessary, of course, but attaining the bonus point may help gear you up for the other puzzles.";
 	else if loose intro is moot:
 		say "You already discarded the loose intro that discusses design and such for [this-game], so you'll need to restart to read it again.";
 	else if player has loose intro:
 		say "You can [if loose intro is examined]re-[end if]read the loose intro to get more creative details on [this-game].";
-	else:
-		say "The lucent row [here-in of Mine Ooh] contains, if you look at it right, something with more subjective details and opinions. It's a bonus point, but it might help prepare you for the rest of the game.";
+	else if ur branch is visited:
+		say "The [sign ought] [here-in of Ur Branch] contains, if you look at it right, something with more subjective details and opinions. It's a bonus point, but it might help prepare you for the rest of the game.";
 	continue the action;
 
 book credits
@@ -1954,7 +1954,7 @@ book versions
 
 carry out versioning:
 	say "Release 1 was sent to IFComp.org on August 28, 2025, for publishing on September 1st.";
-	say "Release 2 is slated for (hopefully) very soon after IFComp. It will include a holdall where you can drop off the list items, as well as specific cluing rejects for some of the trickier puzzles.";
+	say "Release 2 is slated for November, 2025. It changed the first puzzle (the old one is now a bonus,) revamped intro-help items drastically, and added [if sco-mess-pot is false]a holdall in the mine where you can drop off items needed for the endgame[else]the kitchen once you got the mess pot[end if], to ease temporary inventory bloat. There were other bug fixes, too. Fixes.txt should list them.";
 
 volume ending tweak(s)
 
