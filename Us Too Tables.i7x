@@ -228,7 +228,7 @@ this is the post-probe-all rule:
 	[some passages you hadn't even considered away from the Ur-Branch. You lose yourself in it for a while, and then, when you look up, you see ]
 
 a wordtwisting rule (this is the pre-summer-bay rule):
-	if player does not have herbs, unavailable;
+	unless player has herbs or (player is in mine and herbs are in kitchen), unavailable;
 	if sco-summer-bay is true:
 		vcal "You already used the herb to expand your mind! It is only good for seasoning now.";
 		already-done;
@@ -455,7 +455,7 @@ a wordtwisting rule (this is the pre-malt-hour rule):
 		vcp "You would like to call out that there are alcoholic refreshments, but you don't have any.";
 		not-yet;
 	if booze-score is 1:
-		vcp "The [if player has cold rum]cold rum[else]dope ale[end if] isn't quite enough. A rumbling from the maul tower suggests they want variety, if they can't specifically get malt. They have a point, you guess. There are probably quite a few of them there.";
+		vcp "The [if dope ale is off-stage]cold rum[else]dope ale[end if] isn't quite enough. A rumbling from the maul tower suggests they want variety, if they can't specifically get malt. They have a point, you guess. There are probably quite a few of them there.";
 		not-yet;
 	if sco-malt-hour is true:
 		vcal "You already called out to share refreshments. You need to save some for the final meet-up.";

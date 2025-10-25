@@ -1538,9 +1538,9 @@ volume unsorted
 
 volume warp on modification(s)
 
-check warponing when player is not examined and sco-a-drawer is false:
+check warponing when sco-a-drawer is true and sco-be-strong is false:
 	if word number 1 in the player's command is not "wp":
-		say "[one of]The war pawn wags a finger, then cups its hand over both ears, as if to say: listen, and don't use me too early![or]The war pawn cups its hands over bothe ears again. This must be a hint about the first point.[stopping]." instead;
+		say "The war pawn wags a finger, then flexes, then points at you. Perhaps it is trying to tell you something. Perhaps you don't want to use it too soon." instead;
 
 volume going out
 
@@ -1607,6 +1607,7 @@ to say x-aight: say "[b]X[if gs-using-known is false] AIGHT[end if][r]"
 
 carry out taking inventory (this is the UT specific inventory rule):
 	now all things carried by player are marked for listing;
+	now aight is not marked for listing;
 	now all hintthings are not marked for listing;
 	now Aw Lug All Ugh is not marked for listing;
 	if number of ughlistable things is 0:
