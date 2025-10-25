@@ -150,7 +150,7 @@ this is the post-meh-skit rule:
 	declue mess kit;
 
 this is the hom-a-stew rule:
-	say "Oddly, your uhh-ing leaves you feeling you close to knowing what to do [if at-last-point]here at the end[else]down the road[end if]."
+	say "Oddly, your uhh-ing leaves you feeling you're close to knowing what to go for [if at-last-point]here at the end[else]down the road[end if]. Perhaps it's even simpler than an uhh."
 
 a wordtwisting rule (this is the pre-a-stew rule):
 	if player is not in mine ooh and once-now-hunt is false:

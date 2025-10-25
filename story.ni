@@ -493,6 +493,10 @@ after printing the locale description of ur branch when sco-hike-up is true and 
 		say "The south and west both seemed to have treacherous terrain. How to minimize its risks?";
 	continue the action;
 
+after printing the locale description for Mine Ooh when core-score is core-max - 1:
+	now eyes-number of Mine Ooh is 14;
+	now eyes-rule of Mine Ooh is pre-a-stew rule;
+	continue the action;
 after printing the locale description for Ur Branch when sco-hike-up is true and southwest is branchcant (this is the second proball southwestish rule):
 	say "You track down the southwest passage pretty easily, with the help of your pro ball. It's clearly the shortest and least treacherous.";
 	reveal Fort Earns Four Turns to southwest;
@@ -605,6 +609,7 @@ after printing the locale description of ur branch when sign ought is off-stage:
 	say "As you look around, you notice a sign has fallen into the ground. It points to the LUCENT ROW, wherever it is. However, since the sign is on the ground, you don't know which way it points. Perhaps the lucent row is a clue for something else, but it can't be too critical.";
 	move sign ought to ur branch;
 	continue the action;
+
 after printing the locale description of ur branch when player was in a rotroom:
 	if room south of ur branch is nowhere and ordrooms-seen:
 		reveal tude ark to south;
