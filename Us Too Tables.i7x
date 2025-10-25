@@ -178,16 +178,17 @@ this is the hom-loose-intro rule:
 	say "Loosened, loosed ... hmm, a word like that might be too complex to start. And you need to change the row, too. But you must be on the right track."
 
 a wordtwisting rule (this is the pre-loose-intro rule):
-	if player is not in my new mine ooh, unavailable;
+	if player is not in ur branch, unavailable;
 	if loose intro is not off-stage:
-		vcal "There is no more intro.";
+		vcal "There is nothing to add to the loose intro.";
 		already-done;
 	ready;
 
 this is the post-loose-intro rule:
 	now sco-loose-intro is true;
-	say "A loose intro flutters down from the lucent row. You pick it up. As you do, the lucent row stops glowing and becomes a ledge. A Goal-Edge-Go Ledge, to be precise.";
+	say "A loose intro flutters down from [the sign]. You pick it up. As you do, the 'lucent row' note on [the sign] fades.";
 	now player has loose intro;
+	declue sign ought;
 
 chapter ur branch scoring
 

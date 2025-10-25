@@ -380,7 +380,7 @@ check listening to aid roar: try examining aid roar instead;
 
 chapter loose intro
 
-the loose intro is a hintthing. description is "[intro-table]". eyes-number of loose intro is -1. drop-poke of loose intro is "You've currently [if loose intro is unexamined]not examined it yet[else if gs-loose-intro-read is false]read [intro-row - 1 in words] of [number of rows in table of intro jabber in words] pages[else]read it all[end if].[paragraph break]Are you sure you want to drop the loose intro? It's not game-critical.". drop-notify-text of loose intro is "[crumple-it]."
+the loose intro is a hintthing. description is "[intro-table]". eyes-number of loose intro is -1. drop-poke of loose intro is "You've currently [if loose intro is unexamined]not examined it yet[else if gs-loose-intro-read is false]read [intro-row - 1 in words] of [number of rows in table of intro jabber in words] pages[else]read it all[end if].[paragraph break]Are you sure you want to drop the loose intro? It's not game-critical.". drop-notify-text of loose intro is "You actually just crumple it up and put it in your pocket, in case you need to start a fire later to, I don't know, cook stuff. Plus, littering isn't cool![paragraph break][The noun] is out of your conscious inventory, now."
 
 check examining loose intro when loose intro is unexamined:
 	say "It's an introduction to your world, not from [ara], but from one Hugh Morris AKA Mick Stupp. Before reading the intro proper, you note a small warning that while no puzzles are spoiled or hinted, the author does discuss his views on how [this-game] compares to [wp] (length, plot, etc.) and also mentions how two or three puzzles break the mold a bit.";
@@ -582,16 +582,30 @@ the garden tree is a thing. "[if sco-pea-pod is false and all necessary stewitem
 
 chapter sign and south area verbs
 
-the sign ought sigh not is a thing. printed name is "Sign Ought-Sigh-Not". "[one of]A new sign titled SIGN OUGHT-SIGH-NOT stands here.[or]The SIGN OUGHT-SIGH-NOT stands here for reference.[stopping]". description of sign ought sigh not is "[if south-sorted][b]***SHORTCUT COMMANDS***[paragraph break]N2 or 2N or NN gets you all the way back north.[r][else]WAYS SOUTH:[end if]". eyes-number of Sign Ought Sigh Not is 1.
+the sign ought sigh not is a thing. printed name is "Sign Ought-Sigh-Not". "[one of]A new sign titled SIGN OUGHT-SIGH-NOT stands here.[or]The SIGN OUGHT-SIGH-NOT stands here for reference.[stopping]". description of sign ought sigh not is "[sosnheader]". eyes-number of Sign Ought Sigh Not is -55. eyes-rule of Sign Ought Sigh Not is pre-loose-intro rule.
 
-report examining sign ought sigh not:
+to say sosnheader:
+	if sco-loose-intro is false:
+		if number of visited rotrooms is 0:
+			say "It advertises a way to LUCENT ROW, though perhaps that is hiding something else.";
+		else:
+			say "In addition to advertising LUCENT ROW, it has more concrete help.";
+	else:
+		if number of visited rotrooms < 0:
+			say "It's blank at the moment.";
+		else:
+			say "Instructions below.";
+
+report examining sign ought sigh not when number of visited rotrooms > 0:
+	say "[if south-sorted][b]***SHORTCUT COMMANDS***[paragraph break]N2 or 2N or NN gets you all the way back north.[r][else]WAYS SOUTH:[end if]";
 	list-which-room;
 	continue the action;
 
+after printing the locale description of ur branch when sign ought is off-stage:
+	say "As you look around, you notice a sign has fallen into the ground. It points to the LUCENT ROW, wherever it is. However, since the sign is on the ground, you don't know which way it points. Perhaps the lucent row is a clue for something else, but it can't be too critical.";
+	move sign ought to ur branch;
+	continue the action;
 after printing the locale description of ur branch when player was in a rotroom:
-	if sign ought sigh not is off-stage:
-		say "[line break]Ooh! There's a sign you didn't see before. A SIGN OUGHT-SIGH-NOT. It tells you how to get back to [random visited ordroom].";
-		move sign ought to ur branch;
 	if room south of ur branch is nowhere and ordrooms-seen:
 		reveal tude ark to south;
 		say "[line break]Ooh! There's something new on the sign. A new command, to make traversing easier.";
